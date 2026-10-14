@@ -1,0 +1,647 @@
+{
+ "status": "Simulated company liquidity paths withheld pending re-acceptance of the company module.",
+ "companies": [
+  {
+   "company": "Microsoft",
+   "ticker": "MSFT",
+   "sourceIds": [
+    "MSFT_10K_FY2026"
+   ],
+   "observations": {
+    "balanceDate": "2026-06-30",
+    "cashAndCashEquivalents": 20.935,
+    "shortTermInvestments": 55.908,
+    "liquidResourcesTotal": 76.843,
+    "restrictedCash": {
+     "value": null,
+     "status": "not separately quantified in cited balance-sheet table",
+     "unit": "USD billion"
+    },
+    "debtCurrentCarrying": 9.227,
+    "debtLongTermCarrying": 31.067,
+    "debtCarryingTotal": 40.294,
+    "debtFacePrincipalTotal": 46.136,
+    "financeLeaseLiabilityCarrying": 66.594,
+    "financeLeasePrincipalCashPaid": {
+     "value": 3.101,
+     "period": "FY2026 ended 2026-06-30"
+    }
+   },
+   "principalMaturities": [
+    {
+     "period": "FY2027 ended 2027-06-30",
+     "value": 9.25,
+     "unit": "USD billion",
+     "status": "published issuer fiscal-year ladder"
+    },
+    {
+     "period": "FY2028 ended 2028-06-30",
+     "value": 0.0,
+     "unit": "USD billion",
+     "status": "reported as zero in Note 10 annual debt principal schedule"
+    },
+    {
+     "period": "FY2029 ended 2029-06-30",
+     "value": 2.001,
+     "unit": "USD billion",
+     "status": "published issuer fiscal-year ladder"
+    },
+    {
+     "period": "FY2030 ended 2030-06-30",
+     "value": 0.0,
+     "unit": "USD billion",
+     "status": "reported as zero in Note 10 annual debt principal schedule"
+    },
+    {
+     "period": "FY2031 ended 2031-06-30",
+     "value": 0.5,
+     "unit": "USD billion",
+     "status": "published issuer fiscal-year ladder"
+    },
+    {
+     "period": "thereafter (after FY2031)",
+     "value": 34.385,
+     "unit": "USD billion",
+     "status": "published issuer bucket"
+    }
+   ],
+   "couponAndReset": {
+    "fixedRateDebt": "Note 10 tranche table; fixed coupon tranches; exact tranche-level maturity dates/rates listed in filing. No material floating-rate borrowing identified in cited debt table.",
+    "floatingRateDebt": "not disclosed as material in cited debt table",
+    "locator": "Note 10, debt tranche table and contractual obligations table"
+   },
+   "commitments": [
+    {
+     "category": "construction commitments",
+     "amount": 34.566,
+     "timing": "FY2027 29.848; thereafter 4.718",
+     "cancelability": "terms vary; filing does not quantify cancellable share",
+     "includesInterest": false
+    },
+    {
+     "category": "operating and finance lease payments",
+     "amount": 443.506,
+     "timing": "FY2027 32.411; thereafter 411.095",
+     "cancelability": "lease contracts; not treated as ordinary cancellable POs",
+     "includesInterest": true,
+     "financeLeasePrincipalLiability": 66.594
+    },
+    {
+     "category": "purchase commitments",
+     "amount": 194.06,
+     "timing": "FY2027 169.008; thereafter 25.052",
+     "cancelability": "primarily open POs and take-or-pay contracts; specific cancelability not quantified",
+     "includesInterest": false
+    }
+   ],
+   "locator": "FY2026 Form 10-K, Note 10, Future Principal Payments table (FY2027–FY2031/Thereafter); Note 10 contractual obligations; Note 13 leases; balance sheet"
+  },
+  {
+   "company": "Amazon",
+   "ticker": "AMZN",
+   "sourceIds": [
+    "AMZN_10Q_Q2_2026"
+   ],
+   "observations": {
+    "balanceDate": "2026-06-30",
+    "cashAndCashEquivalents": 78.213,
+    "marketableSecurities": 44.775,
+    "liquidResourcesTotal": 122.988,
+    "restrictedCash": {
+     "value": 2.714,
+     "unit": "USD billion",
+     "components": "0.283 included in receivables/other current assets; 2.431 in other assets; restricted from unrestricted liquidity total"
+    },
+    "debtCurrentCarrying": 3.33,
+    "debtLongTermCarrying": 128.894,
+    "debtCarryingTotal": 132.224,
+    "debtFacePrincipalTotal": 132.995,
+    "financeLeaseLiabilityCarrying": 13.451,
+    "financeLeasePrincipalCashPaid": {
+     "value": 1.599,
+     "period": "six months ended 2026-06-30"
+    }
+   },
+   "principalMaturities": [
+    {
+     "period": "2026 remainder",
+     "value": null,
+     "unit": "USD billion",
+     "status": "only principal plus interest combined is published for this bucket (2.361)"
+    },
+    {
+     "period": "2027",
+     "value": null,
+     "unit": "USD billion",
+     "status": "only principal plus interest combined (14.060)"
+    },
+    {
+     "period": "2028",
+     "value": null,
+     "unit": "USD billion",
+     "status": "only principal plus interest combined (17.087)"
+    },
+    {
+     "period": "2029",
+     "value": null,
+     "unit": "USD billion",
+     "status": "only principal plus interest combined (13.528)"
+    },
+    {
+     "period": "2030",
+     "value": null,
+     "unit": "USD billion",
+     "status": "only principal plus interest combined (11.112)"
+    },
+    {
+     "period": "Thereafter",
+     "value": null,
+     "unit": "USD billion",
+     "status": "only principal plus interest combined (162.161)"
+    }
+   ],
+   "debtPrincipalAndInterestSchedule": {
+    "2026 remainder": 2.361,
+    "2027": 14.06,
+    "2028": 17.087,
+    "2029": 13.528,
+    "2030": 11.112,
+    "thereafter": 162.161,
+    "total": 220.309,
+    "unit": "USD billion",
+    "includesInterest": true
+   },
+   "couponAndReset": {
+    "fixedRateDebt": "Fixed-rate tranche table includes coupons by issuance/maturity; 2026 issuance fixed notes stated coupons 4.60%–6.25%, effective 4.67%–6.33%; later July 2026 issuance is subsequent and excluded from June stock.",
+    "floatingRateDebt": "USD $2.8bn notes due 2028 and 2029: compounded SOFR +0.44% and +0.59%, respectively, payable quarterly in arrears; EUR €1.8bn floating notes due 2028: EURIBOR +0.35%, payable quarterly in arrears. Subsequent July 2026 issuance $0.75bn floating note due 2029 at compounded SOFR +0.58% is subsequent to balance date and excluded from June debt stock.",
+    "locator": "Q2 2026 Form 10-Q Note 5 debt and footnotes; subsequent events paragraph"
+   },
+   "commitments": [
+    {
+     "category": "long-term debt principal and interest (separate debt-service line)",
+     "amount": 220.309,
+     "timing": "2026 remainder 2.361; 2027 14.060; 2028 17.087; 2029 13.528; 2030 11.112; thereafter 162.161",
+     "cancelability": "contractual debt service; not a purchase commitment",
+     "includesInterest": true,
+     "note": "Face debt principal and interest combined; avoid interpreting as principal-only."
+    },
+    {
+     "category": "operating leases",
+     "amount": 116.35,
+     "timing": "2026 remainder 9.336; 2027 14.765; 2028 13.924; 2029 12.599; 2030 11.269; thereafter 54.457",
+     "cancelability": "lease liability, not cancellable at will",
+     "includesInterest": true
+    },
+    {
+     "category": "finance leases",
+     "amount": 16.66,
+     "timing": "2026 remainder 1.088; 2027 1.775; 2028 1.885; 2029 1.482; 2030 1.269; thereafter 9.161",
+     "cancelability": "lease liability, not cancellable at will",
+     "includesInterest": true
+    },
+    {
+     "category": "financing obligations",
+     "amount": 11.07,
+     "timing": "2026 remainder 0.352; 2027 0.682; 2028 0.694; 2029 0.706; 2030 0.720; thereafter 7.916",
+     "cancelability": "non-cancellable obligations noted for fulfillment and data-center facilities",
+     "includesInterest": true
+    },
+    {
+     "category": "leases not yet commenced",
+     "amount": 137.214,
+     "timing": "2026 remainder 4.018; 2027 11.732; 2028 9.278; 2029 9.483; 2030 9.227; thereafter 93.476",
+     "cancelability": "contracted future leases; no separate cancellation amount reported",
+     "includesInterest": false
+    },
+    {
+     "category": "unconditional purchase obligations",
+     "amount": 130.065,
+     "timing": "2026 remainder 23.452; 2027 33.026; 2028 9.326; 2029 7.961; 2030 7.659; thereafter 48.641",
+     "cancelability": "unconditional; legal cancellation terms not itemized",
+     "includesInterest": false
+    },
+    {
+     "category": "other commitments",
+     "amount": 18.366,
+     "timing": "2026 remainder 2.145; 2027 2.044; 2028 1.212; 2029 1.008; 2030 0.963; thereafter 10.994",
+     "cancelability": "not disaggregated",
+     "includesInterest": false
+    }
+   ],
+   "locator": "Q2 2026 Form 10-Q, Notes 4/5; contractual obligations table; Note 5 debt tranche table; lease note"
+  },
+  {
+   "company": "Alphabet",
+   "ticker": "GOOGL",
+   "sourceIds": [
+    "GOOG_10Q_Q2_2026"
+   ],
+   "observations": {
+    "balanceDate": "2026-06-30",
+    "cashAndCashEquivalents": 55.911,
+    "marketableSecurities": 186.563,
+    "liquidResourcesTotal": 242.474,
+    "restrictedCash": {
+     "value": null,
+     "status": "not separately quantified in cited balance-sheet table",
+     "unit": "USD billion"
+    },
+    "debtCurrentCarrying": 1.999,
+    "debtLongTermCarrying": 98.165,
+    "debtCarryingTotal": 100.164,
+    "debtFacePrincipalTotal": 101.085,
+    "financeLeaseLiabilityCarrying": 2.59,
+    "financeLeasePrincipalCashPaid": {
+     "value": 0.84,
+     "period": "six months ended 2026-06-30"
+    }
+   },
+   "principalMaturities": [
+    {
+     "period": "2026",
+     "value": 2.0,
+     "unit": "USD billion",
+     "status": "face principal due 2026; note tranche table"
+    },
+    {
+     "period": "2027-2030",
+     "value": null,
+     "unit": "USD billion",
+     "status": "not separately published as annual totals; tranche maturity ranges published"
+    },
+    {
+     "period": "Thereafter",
+     "value": null,
+     "unit": "USD billion",
+     "status": "not separately totaled apart from tranche maturities"
+    }
+   ],
+   "couponAndReset": {
+    "fixedRateDebt": "USD, EUR, GBP, CHF, CAD and JPY fixed-rate notes; Note 7 tranche table gives stated coupons and maturities.",
+    "floatingRateDebt": "USD 0.5bn note due 2028 at SOFR +0.52%, quarterly reset.",
+    "locator": "Note 7 Long-Term Debt tranche table"
+   },
+   "commitments": [
+    {
+     "category": "purchase commitments and other contractual obligations",
+     "amount": 811.0,
+     "timing": "200.7 short-term; remaining 610.3 beyond short-term, annual split not disclosed in Q2 2026 10-Q",
+     "cancelability": "not quantified; includes long-term supply agreements/open POs, content licenses, energy take-or-pay",
+     "includesInterest": false,
+     "note": "Does not add separate backstop guarantees or 24.1 future estimated backstops because these are contingent/subject to final terms and may overlap."
+    }
+   ],
+   "locator": "Q2 2026 Form 10-Q, MD&A Purchase Commitments and Other Contractual Obligations; Note 7 debt; Note 9 leases"
+  },
+  {
+   "company": "Meta",
+   "ticker": "META",
+   "sourceIds": [
+    "META_10Q_Q2_2026"
+   ],
+   "observations": {
+    "balanceDate": "2026-06-30",
+    "cashAndCashEquivalents": 15.462,
+    "marketableSecurities": 74.798,
+    "liquidResourcesTotal": 90.26,
+    "restrictedCash": {
+     "value": 13.809,
+     "unit": "USD billion",
+     "components": "0.702 in prepaid/current assets and 13.107 in other assets; includes escrow for infrastructure purchase agreements; 10.8 specifically reported restricted and expected release 2028-2030"
+    },
+    "debtCurrentCarrying": null,
+    "debtLongTermCarrying": 83.664,
+    "debtCarryingTotal": 83.664,
+    "debtFacePrincipalTotal": 84.0,
+    "financeLeaseLiabilityCarrying": null,
+    "financeLeasePrincipalCashPaid": {
+     "value": 1.805,
+     "period": "six months ended 2026-06-30"
+    }
+   },
+   "principalMaturities": [
+    {
+     "period": "remainder 2026",
+     "value": 0.0,
+     "unit": "USD billion",
+     "status": "issuer explicitly reports none"
+    },
+    {
+     "period": "2027",
+     "value": 2.75,
+     "unit": "USD billion",
+     "status": "face principal"
+    },
+    {
+     "period": "2028",
+     "value": 1.5,
+     "unit": "USD billion",
+     "status": "face principal"
+    },
+    {
+     "period": "2029",
+     "value": 1.0,
+     "unit": "USD billion",
+     "status": "face principal"
+    },
+    {
+     "period": "2030",
+     "value": 5.0,
+     "unit": "USD billion",
+     "status": "face principal"
+    },
+    {
+     "period": "thereafter",
+     "value": 73.75,
+     "unit": "USD billion",
+     "status": "face principal"
+    }
+   ],
+   "couponAndReset": {
+    "fixedRateDebt": "All listed notes are fixed rate. Full Note 8 effective interest range 3.63%–6.48% p.a. (stated coupon range 3.50%–6.45%); 4.27% is the lower endpoint of November-2025 subset only.",
+    "floatingRateDebt": "None disclosed in Note 8 tranche table.",
+    "locator": "Note 8 Long-Term Debt tranche table"
+   },
+   "commitments": [
+    {
+     "category": "non-cancelable contractual commitments",
+     "amount": 349.31,
+     "timing": "Short-/long-term total disclosed; part of annual summary due 2026 53.520 and 2027 81.650; balance not annually allocated in cited 10-Q",
+     "cancelability": "explicitly non-cancelable",
+     "includesInterest": false,
+     "note": "Primarily third-party cloud capacity and technical infrastructure; do not add the separate $278.99bn future lease schedule if that schedule is included within contractual obligations."
+    },
+    {
+     "category": "lease commitments not yet commenced",
+     "amount": 278.99,
+     "timing": "commencement from remainder 2026 through 2036; exact annual payments/timing not fully allocated in excerpt",
+     "cancelability": "committed future leases; contract-specific remedies not quantified",
+     "includesInterest": false
+    }
+   ],
+   "locator": "Q2 2026 Form 10-Q, cash flow statement, Notes 8 and 9; Note 9 commitments narrative and schedule"
+  },
+  {
+   "company": "Oracle",
+   "ticker": "ORCL",
+   "sourceIds": [
+    "ORCL_10K_FY2026",
+    "ORCL_10Q_Q1_FY2027"
+   ],
+   "observations": {
+    "latestBalanceDate": "2026-08-31",
+    "cashAndCashEquivalents": 36.369,
+    "marketableSecurities": 0.708,
+    "liquidResourcesTotal": 37.077,
+    "restrictedCash": {
+     "value": null,
+     "status": "not separately quantified in cited current balance sheet",
+     "unit": "USD billion"
+    },
+    "currentDebtCarrying": 7.625,
+    "longTermDebtCarrying": 117.712,
+    "totalDebtCarrying": 125.337,
+    "annualDebtScheduleDate": "2026-05-31",
+    "annualDebtCurrentCarrying": 7.199,
+    "annualDebtLongTermCarrying": 122.342,
+    "annualDebtCarryingTotal": 129.541,
+    "annualDebtPrincipalFaceTotal": 130.105,
+    "financeLeaseLiabilityCarrying": {
+     "value": 9.185,
+     "asOf": "2026-08-31"
+    },
+    "financeLeasePrincipalCashPaid": {
+     "value": 0.452,
+     "period": "FY2026 ended 2026-05-31"
+    }
+   },
+   "principalMaturities": [
+    {
+     "period": "FY2027 ended 2027-05-31",
+     "value": 7.21,
+     "unit": "USD billion",
+     "status": "face principal as of 2026-05-31"
+    },
+    {
+     "period": "FY2028 ended 2028-05-31",
+     "value": 10.145,
+     "unit": "USD billion"
+    },
+    {
+     "period": "FY2029 ended 2029-05-31",
+     "value": 5.5,
+     "unit": "USD billion"
+    },
+    {
+     "period": "FY2030 ended 2030-05-31",
+     "value": 7.25,
+     "unit": "USD billion"
+    },
+    {
+     "period": "FY2031 ended 2031-05-31",
+     "value": 9.75,
+     "unit": "USD billion"
+    },
+    {
+     "period": "thereafter",
+     "value": 90.25,
+     "unit": "USD billion"
+    }
+   ],
+   "couponAndReset": {
+    "fixedRateDebt": "Senior notes fixed coupons as itemized in Note 7, including 2.65% due July 2026, 2.80%/3.25%/etc; broad issuance tranche rates shown in filing.",
+    "floatingRateDebt": "USD 0.5bn compounded SOFR +0.76% due Aug 2028; USD 0.5bn SOFR +1.11% due Feb 2029; term loan SOFR +1.35% due Aug 2027.",
+    "locator": "FY2026 Form 10-K, Note 7 senior note and floating-rate debt schedules"
+   },
+   "commitments": [
+    {
+     "category": "unconditional purchase and certain other obligations",
+     "amount": 13.309,
+     "timing": "FY2027 1.841; FY2028 1.034; FY2029 1.053; FY2030 0.952; FY2031 0.896; thereafter 7.533",
+     "cancelability": "agreements enforceable and legally binding; unconditional",
+     "includesInterest": false,
+     "note": "As of 2026-05-31; primarily data-center power arrangements. Additional 19bn unconditional purchase commitments entered into after year-end commencing FY2027 over five-year term; kept separate, not retrofitted into 2026-05-31 schedule."
+    },
+    {
+     "category": "operating and finance lease payments",
+     "amount": 53.327,
+     "timing": "FY2027 4.368; FY2028 4.279; FY2029 4.247; FY2030 4.268; FY2031 4.259; thereafter 31.906",
+     "cancelability": "lease liability schedule",
+     "includesInterest": true,
+     "financeLeasePrincipalLiability": 7.701
+    }
+   ],
+   "locator": "FY2026 Form 10-K Notes 7 and 9; Q1 FY2027 Form 10-Q balance sheet and Note 9 lease liabilities"
+  }
+ ],
+ "asOfCutoff": "2026-10-14",
+ "amountUnit": "USD billion",
+ "scope": "Issuer consolidated statements. Cash, debt carrying values, principal ladders, contractual obligations and lease balances are distinct and not summed into a single liability measure. Fiscal-year labels are retained where issuers report them. Microsoft principal ladder is fiscal-year ended June 30, not calendar-year; Amazon dollar and euro face amounts are presented as USD equivalents in the filing debt tables; foreign-currency principal conversion can vary with FX.",
+ "commitments": [
+  {
+   "company": "Microsoft",
+   "category": "construction commitments",
+   "gross_amount_usd_bn": 34.566,
+   "reported_timing": "FY2027 29.848; thereafter 4.718",
+   "cancelability": "terms vary; filing does not quantify cancellable share",
+   "includes_interest": false,
+   "source_id": "MSFT_10K_FY2026",
+   "source_pointer": "/companies/0/commitments/0",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Microsoft",
+   "category": "operating and finance lease payments",
+   "gross_amount_usd_bn": 443.506,
+   "reported_timing": "FY2027 32.411; thereafter 411.095",
+   "cancelability": "lease contracts; not treated as ordinary cancellable POs",
+   "includes_interest": true,
+   "source_id": "MSFT_10K_FY2026",
+   "source_pointer": "/companies/0/commitments/1",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Microsoft",
+   "category": "purchase commitments",
+   "gross_amount_usd_bn": 194.06,
+   "reported_timing": "FY2027 169.008; thereafter 25.052",
+   "cancelability": "primarily open POs and take-or-pay contracts; specific cancelability not quantified",
+   "includes_interest": false,
+   "source_id": "MSFT_10K_FY2026",
+   "source_pointer": "/companies/0/commitments/2",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "long-term debt principal and interest (separate debt-service line)",
+   "gross_amount_usd_bn": 220.309,
+   "reported_timing": "2026 remainder 2.361; 2027 14.060; 2028 17.087; 2029 13.528; 2030 11.112; thereafter 162.161",
+   "cancelability": "contractual debt service; not a purchase commitment",
+   "includes_interest": true,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/0",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "operating leases",
+   "gross_amount_usd_bn": 116.35,
+   "reported_timing": "2026 remainder 9.336; 2027 14.765; 2028 13.924; 2029 12.599; 2030 11.269; thereafter 54.457",
+   "cancelability": "lease liability, not cancellable at will",
+   "includes_interest": true,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/1",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "finance leases",
+   "gross_amount_usd_bn": 16.66,
+   "reported_timing": "2026 remainder 1.088; 2027 1.775; 2028 1.885; 2029 1.482; 2030 1.269; thereafter 9.161",
+   "cancelability": "lease liability, not cancellable at will",
+   "includes_interest": true,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/2",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "financing obligations",
+   "gross_amount_usd_bn": 11.07,
+   "reported_timing": "2026 remainder 0.352; 2027 0.682; 2028 0.694; 2029 0.706; 2030 0.720; thereafter 7.916",
+   "cancelability": "non-cancellable obligations noted for fulfillment and data-center facilities",
+   "includes_interest": true,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/3",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "leases not yet commenced",
+   "gross_amount_usd_bn": 137.214,
+   "reported_timing": "2026 remainder 4.018; 2027 11.732; 2028 9.278; 2029 9.483; 2030 9.227; thereafter 93.476",
+   "cancelability": "contracted future leases; no separate cancellation amount reported",
+   "includes_interest": false,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/4",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "unconditional purchase obligations",
+   "gross_amount_usd_bn": 130.065,
+   "reported_timing": "2026 remainder 23.452; 2027 33.026; 2028 9.326; 2029 7.961; 2030 7.659; thereafter 48.641",
+   "cancelability": "unconditional; legal cancellation terms not itemized",
+   "includes_interest": false,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/5",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Amazon",
+   "category": "other commitments",
+   "gross_amount_usd_bn": 18.366,
+   "reported_timing": "2026 remainder 2.145; 2027 2.044; 2028 1.212; 2029 1.008; 2030 0.963; thereafter 10.994",
+   "cancelability": "not disaggregated",
+   "includes_interest": false,
+   "source_id": "AMZN_10Q_Q2_2026",
+   "source_pointer": "/companies/1/commitments/6",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Alphabet",
+   "category": "purchase commitments and other contractual obligations",
+   "gross_amount_usd_bn": 811.0,
+   "reported_timing": "200.7 short-term; remaining 610.3 beyond short-term, annual split not disclosed in Q2 2026 10-Q",
+   "cancelability": "not quantified; includes long-term supply agreements/open POs, content licenses, energy take-or-pay",
+   "includes_interest": false,
+   "source_id": "GOOG_10Q_Q2_2026",
+   "source_pointer": "/companies/2/commitments/0",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Meta",
+   "category": "non-cancelable contractual commitments",
+   "gross_amount_usd_bn": 349.31,
+   "reported_timing": "Short-/long-term total disclosed; part of annual summary due 2026 53.520 and 2027 81.650; balance not annually allocated in cited 10-Q",
+   "cancelability": "explicitly non-cancelable",
+   "includes_interest": false,
+   "source_id": "META_10Q_Q2_2026",
+   "source_pointer": "/companies/3/commitments/0",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Meta",
+   "category": "lease commitments not yet commenced",
+   "gross_amount_usd_bn": 278.99,
+   "reported_timing": "commencement from remainder 2026 through 2036; exact annual payments/timing not fully allocated in excerpt",
+   "cancelability": "committed future leases; contract-specific remedies not quantified",
+   "includes_interest": false,
+   "source_id": "META_10Q_Q2_2026",
+   "source_pointer": "/companies/3/commitments/1",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Oracle",
+   "category": "unconditional purchase and certain other obligations",
+   "gross_amount_usd_bn": 13.309,
+   "reported_timing": "FY2027 1.841; FY2028 1.034; FY2029 1.053; FY2030 0.952; FY2031 0.896; thereafter 7.533",
+   "cancelability": "agreements enforceable and legally binding; unconditional",
+   "includes_interest": false,
+   "source_id": "ORCL_10K_FY2026;ORCL_10Q_Q1_FY2027",
+   "source_pointer": "/companies/4/commitments/0",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+   "company": "Oracle",
+   "category": "operating and finance lease payments",
+   "gross_amount_usd_bn": 53.327,
+   "reported_timing": "FY2027 4.368; FY2028 4.279; FY2029 4.247; FY2030 4.268; FY2031 4.259; thereafter 31.906",
+   "cancelability": "lease liability schedule",
+   "includes_interest": true,
+   "source_id": "ORCL_10K_FY2026;ORCL_10Q_Q1_FY2027",
+   "source_pointer": "/companies/4/commitments/1",
+   "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  }
+ ]
+}

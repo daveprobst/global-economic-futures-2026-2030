@@ -1,0 +1,468 @@
+{
+  "name": "Global Economic Futures, 2026–2030: public deployment bundle",
+  "asOf": "2026-10-14",
+  "fileCount": 92,
+  "totalBytes": 4001596,
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 104,
+      "sha256": "46e670d2d659cf319ea8514fd6ef8fba2a3e31275d002190aab87ef4559183d3"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 1129,
+      "sha256": "0eedee538ac1b516505e581b62ca9e8fd00ccd5d4344d156b6c50e7665c603ab"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2414,
+      "sha256": "38c753a50b9ec5a5d7e94ee34d7ba73989c07760f63dc779d0235aa797230f92"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 1023,
+      "sha256": "0e190375774e7da548b2f985652619a996a89bec4184dc36549156de584f7bc3"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "bytes": 10360,
+      "sha256": "959041be9dbe8ccb15296cead10d7c6848ae5e56a5082069aa15c83027e12cfc"
+    },
+    {
+      "path": "docs/MODEL_RISK.md",
+      "bytes": 7247,
+      "sha256": "40297aa89643f49dcc36ac0a43d7c22b9ec87597e58a2b67238d3a3a5e5932b2"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 629,
+      "sha256": "f3a7e3b2977fb1dfca3303bdefad79962545ef702ef922bf0f14596b7a314a97"
+    },
+    {
+      "path": "serve.py",
+      "bytes": 4993,
+      "sha256": "94b9237ea51faae79b968cd4df5ea3a4a2b9438a6efa25f1adec49157feed3a4"
+    },
+    {
+      "path": "site/app.js",
+      "bytes": 34970,
+      "sha256": "8cdaa1e0f7c4a375215d5fa069036fc57817380deb07ced82c3181a6e6e49aba"
+    },
+    {
+      "path": "site/data/china.json",
+      "bytes": 62407,
+      "sha256": "b6bd4a7a1f821fcaebc381633333f936b810b429220869f8f94fe3e7935eba27"
+    },
+    {
+      "path": "site/data/claims.json",
+      "bytes": 54221,
+      "sha256": "c6314dcd4be119007f0f18a086a79f16d906e9e0909892d3c0c07bec6ad47d38"
+    },
+    {
+      "path": "site/data/company.json",
+      "bytes": 25985,
+      "sha256": "57dccfd759db7fe0d0e66dedfd0e917f14cf9f2e6683ffa7e1af8d7d90d4e7fd"
+    },
+    {
+      "path": "site/data/company_chart.json",
+      "bytes": 1410,
+      "sha256": "c77ae4fa65c55879d786bceecd27c9f151f2f7da7b65b01ccc863e7f96ca79dc"
+    },
+    {
+      "path": "site/data/eu.json",
+      "bytes": 525537,
+      "sha256": "2b4cc66522618fb756c7850cc3eb7dff12370dcb9e479f12a49b8179e00b814e"
+    },
+    {
+      "path": "site/data/facts.json",
+      "bytes": 5661,
+      "sha256": "ea6adfa5eef9092c17d668f63c15af718bb6be03b1c9e1e1f177f3da95a248d9"
+    },
+    {
+      "path": "site/data/global.json",
+      "bytes": 254384,
+      "sha256": "9cd920c7413fdc8474de7aae4a81f34d4594f1bec21431e837a0d38666665248"
+    },
+    {
+      "path": "site/data/mechanisms.json",
+      "bytes": 173151,
+      "sha256": "5b4b0cafa7b74e0b9485968cc64d527a736c267049e451e2cc437f19faa2b03a"
+    },
+    {
+      "path": "site/data/observations.json",
+      "bytes": 101906,
+      "sha256": "00b82ce4043d6f99e6701955f264e60d23158d47c6717b3225539696f9b1b897"
+    },
+    {
+      "path": "site/data/search.json",
+      "bytes": 231260,
+      "sha256": "e8655b22157cf58cfab46acf7896bf348522f0a68ee8797009e44c2e4a74f31b"
+    },
+    {
+      "path": "site/data/sources.json",
+      "bytes": 194566,
+      "sha256": "beb05f94b34f3eacdc43fdc54179efcbe9ee7a2dee30356fa0c96dab9ec3290c"
+    },
+    {
+      "path": "site/data/swiss.json",
+      "bytes": 109142,
+      "sha256": "ff79aa224a51447924cd3fde7bf7c34d4313e9724c8d67e25de84fa267a8cc98"
+    },
+    {
+      "path": "site/data/telecom.json",
+      "bytes": 7641,
+      "sha256": "36fc9fcb0082dda1467fdfa955e1dd7529ea407e059ac73f4e10a221f947b0a4"
+    },
+    {
+      "path": "site/downloads/china/china_deterministic_scenarios.csv",
+      "bytes": 13729,
+      "sha256": "ee73f392cbe02220945ab122c1a1b20729022f7ed3b8d01fc588eeb911e2c6f9"
+    },
+    {
+      "path": "site/downloads/china/china_monte_carlo_summary.json",
+      "bytes": 10201,
+      "sha256": "f74d8ac1de0599e5ac3a70690f52b9e11f3aec3cbf06a2e16825330c5e3ad44b"
+    },
+    {
+      "path": "site/downloads/china/household_property_balance_sheet.csv",
+      "bytes": 5617,
+      "sha256": "2e30c8f83fbcffbc49fa2e0055edfbe218c63be0503a2110176bf8d68739c885"
+    },
+    {
+      "path": "site/downloads/company/commitment_inventory.json",
+      "bytes": 8930,
+      "sha256": "ae056a5bed9e10141390a63aecee8070c462e107d129c0a163c3771b72813d45"
+    },
+    {
+      "path": "site/downloads/eu/bank_sector_exposure_bounds.json",
+      "bytes": 65179,
+      "sha256": "eb1d6b08147657a291d8cab59cc3a79e1645329d5b4b511bcfdba7d0a7384459"
+    },
+    {
+      "path": "site/downloads/eu/eu_materials_scenario_2030.csv",
+      "bytes": 456,
+      "sha256": "1a607c9898cea1c487422be0033d4ea5110edcfed67657166b8e98b37b6205ad"
+    },
+    {
+      "path": "site/downloads/eu/eu_materials_scenario_2030.json",
+      "bytes": 264675,
+      "sha256": "d1ba7ef6c6bc64bfbca32d4d80a262c2219a2ffae6c79f0ac6130e9fda1b5428"
+    },
+    {
+      "path": "site/downloads/eu/eu_project_capacity_scenarios.csv",
+      "bytes": 93207,
+      "sha256": "e904fff35d3e83dfa765e6f9034a3b2a966f61c6e73cbae04cb73ade47825c84"
+    },
+    {
+      "path": "site/downloads/eu/magnet_mass_balance.csv",
+      "bytes": 13733,
+      "sha256": "bc1b16ee9293de0cc6c531c0d5965f1b6b9076f43356c702547ba1c43cf8a755"
+    },
+    {
+      "path": "site/downloads/eu/magnet_mass_balance.json",
+      "bytes": 27724,
+      "sha256": "d7c42e4cb22fcfde733a2c1c7e4947de433832f075afeec31ed015a4c0c38152"
+    },
+    {
+      "path": "site/downloads/evidence/accepted_bundle.json",
+      "bytes": 27518,
+      "sha256": "e50e4a6314c9f14a6b3b271b4a7a27ae508fb4d8b8dc133755467bd3b976809e"
+    },
+    {
+      "path": "site/downloads/evidence/accepted_use_limits.json",
+      "bytes": 3940,
+      "sha256": "06f7ecf8cec51b793db45f902df70fc80e6bf507eb0f9a442a3c60e754afe3bc"
+    },
+    {
+      "path": "site/downloads/evidence/china_baseline.json",
+      "bytes": 27453,
+      "sha256": "05a1b6bedd51923045b9b024725ec90eebf1875453a2f810d73b13c646f5590b"
+    },
+    {
+      "path": "site/downloads/evidence/china_claim-ledger.json",
+      "bytes": 11398,
+      "sha256": "faa7b83e1af39042bbf8eec52735d801a0bfa318ac5e6e1ffc17537403be1bdd"
+    },
+    {
+      "path": "site/downloads/evidence/china_mechanism-coverage.json",
+      "bytes": 30932,
+      "sha256": "4e54999ef1d70b367aeac32daab733c5ed5738752bcbfa390341e02fb67d7642"
+    },
+    {
+      "path": "site/downloads/evidence/china_source-registry.json",
+      "bytes": 28228,
+      "sha256": "4e40080d187ebc780025bdd81cda83b10d1405fde6f2ccdebf9e0e5dfa918a07"
+    },
+    {
+      "path": "site/downloads/evidence/eu_baseline.json",
+      "bytes": 12189,
+      "sha256": "cedb206b5189b5691516f682b82aba8e78ff3deeb55cf442b540a8e75375b0a0"
+    },
+    {
+      "path": "site/downloads/evidence/eu_claim-ledger.json",
+      "bytes": 12420,
+      "sha256": "3478296593b8a653abce183bd105bae0683074652e1edac6d0286c7bcb6b05e6"
+    },
+    {
+      "path": "site/downloads/evidence/eu_mechanism-coverage.json",
+      "bytes": 40375,
+      "sha256": "574472a72a7da4b97fc34538609cd7a2d05b59cf17f569fed4bf734324ac2f33"
+    },
+    {
+      "path": "site/downloads/evidence/eu_source-registry.json",
+      "bytes": 53745,
+      "sha256": "9bf68bccdc6a08248b8a551ca6617534ca22722142e0208e9594ee215816f046"
+    },
+    {
+      "path": "site/downloads/evidence/global_baseline.json",
+      "bytes": 11351,
+      "sha256": "bd5f5f6a5b994d4fa73d41303bb38aa6740cca1cdf952e3110362409bc07cc2a"
+    },
+    {
+      "path": "site/downloads/evidence/global_claim-ledger.json",
+      "bytes": 7431,
+      "sha256": "5e7aa0e70646719af23cab02896450e51c48c3db37b2d56cf151bddb80d5af98"
+    },
+    {
+      "path": "site/downloads/evidence/global_mechanism-coverage.json",
+      "bytes": 18850,
+      "sha256": "e860e787c16692b219acb01c07c3b4248fa5d547d2ca686c1cb72e98a009190c"
+    },
+    {
+      "path": "site/downloads/evidence/global_source-registry.json",
+      "bytes": 29466,
+      "sha256": "9f307f74fedb474a777593bbac85498375dd8e66b878de796c2111ef60881842"
+    },
+    {
+      "path": "site/downloads/evidence/mechanism_depth_review.json",
+      "bytes": 54414,
+      "sha256": "ff47cb551f3651a95258ea3bd185f82d31e65b540505635293d3d1774d9ea3d4"
+    },
+    {
+      "path": "site/downloads/evidence/research_review_findings.md",
+      "bytes": 3371,
+      "sha256": "f3c7c99aab22ed51010de2122e1a453424867018e549f455b2a7d0ec51327f77"
+    },
+    {
+      "path": "site/downloads/evidence/reviewer_corrections.json",
+      "bytes": 3010,
+      "sha256": "8581df81bad59d3fa971645b1508752e708080b2f84f52a0d02254424e06cb14"
+    },
+    {
+      "path": "site/downloads/evidence/swiss_baseline.json",
+      "bytes": 10170,
+      "sha256": "0715c4552966f5020e1a585c87959de7185dee9c89105a8245924ed1fb3547af"
+    },
+    {
+      "path": "site/downloads/evidence/swiss_claim-ledger.json",
+      "bytes": 10139,
+      "sha256": "cd56999df4ac7a765165ea05a65cb5ba6926db19682df41ec58ec8dbdab4aa1f"
+    },
+    {
+      "path": "site/downloads/evidence/swiss_mechanism-coverage.json",
+      "bytes": 36513,
+      "sha256": "787e5ca413b762d5c546808b323e80c1b0a25096e54111be09a0d4e96cf8fa44"
+    },
+    {
+      "path": "site/downloads/evidence/swiss_source-registry.json",
+      "bytes": 36935,
+      "sha256": "7c1d3dad6636d612e9d1260438a63b107f24e1bc71abeb7d1a0b0a97a16464c9"
+    },
+    {
+      "path": "site/downloads/evidence/us_baseline.json",
+      "bytes": 48963,
+      "sha256": "781ed837e260bbe85e67c64a2b317f66d6eafbffbad17029730a016ae1540f62"
+    },
+    {
+      "path": "site/downloads/evidence/us_claim-ledger.json",
+      "bytes": 14843,
+      "sha256": "3eaa9bbb79857d08f419f0bec501d3b42980049ad627dc7f18bb1a6808c6107e"
+    },
+    {
+      "path": "site/downloads/evidence/us_mechanism-coverage.json",
+      "bytes": 31677,
+      "sha256": "084f6c00b2ecdd37ebfc296531a0618cfba9290ddb82056f982c4f036d0afa80"
+    },
+    {
+      "path": "site/downloads/evidence/us_source-registry.json",
+      "bytes": 48062,
+      "sha256": "234a4eec53106d3e391a6c352bb9d9f7c7b3cdceb8a7fbf295c4cf6a83987b03"
+    },
+    {
+      "path": "site/downloads/global/accounting_identities.json",
+      "bytes": 12416,
+      "sha256": "a4e2043eb75b510202758003021c687079406c90f5e18878d8a9d2df515425ab"
+    },
+    {
+      "path": "site/downloads/global/four_region_transmission_bounds.json",
+      "bytes": 24411,
+      "sha256": "e757b19acc38731f1fa7733007bf21c92f7ee30b6e6ac38da72c36a79d566b47"
+    },
+    {
+      "path": "site/downloads/global/global_dependence_sensitivity.csv",
+      "bytes": 2625,
+      "sha256": "5b0138ba1047289c1bbe9e6862b8881db2a4f8c4e307a1090bf443cf0ac7b9dc"
+    },
+    {
+      "path": "site/downloads/global/global_deterministic_paths.csv",
+      "bytes": 26781,
+      "sha256": "a4fe161aef4ed2e32e9c9a9c8b060204388d24529170aa8fe9d51cd93cd8ce88"
+    },
+    {
+      "path": "site/downloads/global/global_deterministic_paths.json",
+      "bytes": 83063,
+      "sha256": "415becb287bd417771f486e96f8507776bcec1f9c58eaa3a145fdd40497771c3"
+    },
+    {
+      "path": "site/downloads/global/global_monte_carlo_draws.json",
+      "bytes": 105685,
+      "sha256": "d94a0b249f99be19c908f1ddc968a63629e74cee28a7abb854fefa57e4b0ce41"
+    },
+    {
+      "path": "site/downloads/global/global_monte_carlo_summary.csv",
+      "bytes": 51069,
+      "sha256": "ab21036bbf9297c4d1b376cca94c1218584e2977f18af4af6a84d29e069889ab"
+    },
+    {
+      "path": "site/downloads/global/global_network_exposure.json",
+      "bytes": 6127,
+      "sha256": "a1f8825c324bd60092e51d3695861f87d5bc3fffd2ea2eefbf4e7756d315fb7a"
+    },
+    {
+      "path": "site/downloads/global/global_sensitivity_sweeps.csv",
+      "bytes": 44910,
+      "sha256": "79f45c8232b2ebc12a9dff1c7a1bd25af96ca08f1f8ab116dd3cd49bbd0b4a05"
+    },
+    {
+      "path": "site/downloads/global/global_sensitivity_sweeps.json",
+      "bytes": 104807,
+      "sha256": "65bf33348355d62f479aedf7a8b6f68d4be4b8ea1fd42a614217f225914b8f3d"
+    },
+    {
+      "path": "site/downloads/global/regional/china_deterministic.csv",
+      "bytes": 14186,
+      "sha256": "83095f40fcb6df44da9f765bbd4b49532ce86bd7303fee091fe12eeb58bae017"
+    },
+    {
+      "path": "site/downloads/global/regional/company_deterministic.csv",
+      "bytes": 128419,
+      "sha256": "dd83941a4c3ab6f0d2a42074253677084c184b5762d2f6f6b09ca2c624f1295f"
+    },
+    {
+      "path": "site/downloads/global/regional/eu_bank_exposure_bounds_used.json",
+      "bytes": 342,
+      "sha256": "64cb834e795aca5ae131413bce238a95aca537d8e288f122be0d8e415e4f4900"
+    },
+    {
+      "path": "site/downloads/global/regional/eu_project_rows_deterministic.csv",
+      "bytes": 10621,
+      "sha256": "a0fc782a8dfea5a9fd496efea68c047e968fe1d24988364d8991b4fa3f99826a"
+    },
+    {
+      "path": "site/downloads/global/regional/module_pins_and_sources.json",
+      "bytes": 334,
+      "sha256": "d8ff0ad5a8046f914b3359e486a988ac2a107a3cd6ff28c2b56a66e6f5a83147"
+    },
+    {
+      "path": "site/downloads/global/regional/swiss_deterministic.csv",
+      "bytes": 40993,
+      "sha256": "2244cf98e2fed5aacfa776495e2327e56f873a547cec6b675e5f1027ca8a2bc0"
+    },
+    {
+      "path": "site/downloads/global/telecom_analogue_comparison.json",
+      "bytes": 7953,
+      "sha256": "5478115c0d568e51620e3b93a07204050b1fa762ea7aa9095690dfe94d9805e3"
+    },
+    {
+      "path": "site/downloads/global/test_summary.json",
+      "bytes": 1918,
+      "sha256": "239f9cadac925c12b954962acebbe1d110e7dbdce04277feb2d850d2dde8789f"
+    },
+    {
+      "path": "site/downloads/global/verizon_source_excerpts.json",
+      "bytes": 2691,
+      "sha256": "55d252b858356a52bb5947331c17147a2e29d29b2066d4ade5baa2456b90290c"
+    },
+    {
+      "path": "site/downloads/hosting/deployment_runbook.md",
+      "bytes": 10360,
+      "sha256": "959041be9dbe8ccb15296cead10d7c6848ae5e56a5082069aa15c83027e12cfc"
+    },
+    {
+      "path": "site/downloads/hosting/hosting_status.md",
+      "bytes": 4465,
+      "sha256": "d80f6a818e521c0e2585c1f422509912e288433eb74784ea3053055c7d4816ee"
+    },
+    {
+      "path": "site/downloads/methods/model_risk_and_methods.md",
+      "bytes": 7247,
+      "sha256": "40297aa89643f49dcc36ac0a43d7c22b9ec87597e58a2b67238d3a3a5e5932b2"
+    },
+    {
+      "path": "site/downloads/models/execution_manifest.json",
+      "bytes": 4210,
+      "sha256": "a05c45307cadf95591a99be9673da2ce6801e56e66b61f7fefecc2549d801e1b"
+    },
+    {
+      "path": "site/downloads/models/model_re_review_findings.json",
+      "bytes": 1773,
+      "sha256": "c1a084f92658d59fc24467956c1a48605b38dc2775729f135624621c5f53fdb2"
+    },
+    {
+      "path": "site/downloads/swiss/observed_import_price_and_cpi_panel.csv",
+      "bytes": 6539,
+      "sha256": "1fe8dfb9aaac0a9f8c10254392ea22216118c0833144a6953beb43089dc740a0"
+    },
+    {
+      "path": "site/downloads/swiss/observed_import_price_and_cpi_panel.json",
+      "bytes": 10898,
+      "sha256": "54791f53b57abb94f03576e4825f1b2611699b23b2e611b54e78771865750cc7"
+    },
+    {
+      "path": "site/downloads/swiss/swiss_deterministic_branches.csv",
+      "bytes": 61463,
+      "sha256": "5ee736b2209161734847586fcf98e36e3ba7f25bafc6ab1b8caf44cdab2cfeb1"
+    },
+    {
+      "path": "site/downloads/swiss/swiss_deterministic_branches.json",
+      "bytes": 103185,
+      "sha256": "63c802c8f6d962ff430e00171b3997241b48e05f0d9ba4642c78f28f247de7a3"
+    },
+    {
+      "path": "site/downloads/swiss/swiss_monte_carlo_summary.json",
+      "bytes": 2823,
+      "sha256": "2a7bbe2237fc6671cfc77fa604d0d4de1d43fcc8099c9485237b23b97ce563ec"
+    },
+    {
+      "path": "site/downloads/us/debt_commitment_bridge.csv",
+      "bytes": 20376,
+      "sha256": "17f9045c10f740d00858d7023aa3d5a6dce682a541b321ce641c8bb44f6af918"
+    },
+    {
+      "path": "site/downloads/us/debt_commitment_bridge.json",
+      "bytes": 20496,
+      "sha256": "9a58375d613f6bc5ab09731f2b4b0b69ee319232e65bf3a18d79c6404791ddf2"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 84573,
+      "sha256": "d812c403bae696e28aabba0e62e64dcf8462297180bc7aa30c6cdf1b54e3d99b"
+    },
+    {
+      "path": "site/manifests/content_manifest.json",
+      "bytes": 23372,
+      "sha256": "54777ec098df78fa7ed6d4ccc100e8f8e4820fb0a457f4aae218a1589001bb55"
+    },
+    {
+      "path": "site/manifests/download_manifest.json",
+      "bytes": 28197,
+      "sha256": "4d7681081bc3d53ac8527900f24a80deaaafe3616f8f293306b21b4e90e4d725"
+    },
+    {
+      "path": "site/styles.css",
+      "bytes": 15284,
+      "sha256": "e7f7258835d70836359df402c0076ab90ba5ec1ef193133906429d24283873f1"
+    }
+  ]
+}

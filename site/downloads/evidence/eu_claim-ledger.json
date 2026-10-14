@@ -1,0 +1,159 @@
+{
+  "kind": "claimLedger",
+  "claims": [
+    {
+      "claimId": "eu_fiscal_positions_diverge",
+      "statement": "EU sovereign recession vulnerability is heterogeneous: 2026-Q1 gross debt ratios ranged from 25.2% of GDP in Estonia to 143.5% in Greece, while several large economies including France, Italy and Belgium exceeded 100%.",
+      "status": "supported",
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026",
+        "EUROSTAT_GOV_DEBT_METADATA"
+      ],
+      "counterEvidence": "Gross debt/GDP alone omits maturity, interest reset profile, domestic versus foreign holders, public assets, contingent liabilities, private balance sheets and fiscal capacity; it cannot rank recession vulnerability by itself."
+    },
+    {
+      "claimId": "ea_foreign_holdings_are_not_safe_haven_flows",
+      "statement": "Foreign ownership of euro-area government bonds is material, but the stock of nonresident holdings does not establish a general safe-haven flow or prove that the euro area will anchor capital during a future shock.",
+      "status": "supported",
+      "sourceIds": [
+        "ECB_INTERNATIONAL_ROLE_EURO_2025",
+        "ECB_PORTFOLIO_SAFE_HAVEN_2012",
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ],
+      "counterEvidence": "Foreign debt securities held by nonresidents were EUR 2,591.5bn by IIP (EUR 2,674.2bn in ECB SHS) at end-2024; ECB reports foreign holdings helped absorb sovereign issuance after Eurosystem net purchases ended in 2022. ECB analysis also finds geopolitical-holder reallocation since end-2021 small in aggregate and estimated yield effects negligible in that setting. These provide stabilizing counterevidence, but stock/period-specific evidence does not establish universal future safe-haven behavior; SHS has custodian and attribution limits."
+    },
+    {
+      "claimId": "crma_benchmarks_are_not_realized_output",
+      "statement": "The CRMA's 2030 extraction, processing and recycling benchmarks express EU capacity ambitions and do not demonstrate that usable annual output, qualified supply or utilization is already available.",
+      "status": "supported",
+      "sourceIds": [
+        "EU_CRMA_2024_1252",
+        "EC_CRMA_PROJECTS_2025",
+        "EC_CRMA_PROJECTS_2026"
+      ],
+      "counterEvidence": "The binding Act, strategic-project designation and new 2026 project cohort establish policy direction and a pipeline; these actions can shorten permitting and mobilize finance even though they do not equal commissioned capacity."
+    },
+    {
+      "claimId": "kiruna_resource_not_current_mine_output",
+      "statement": "LKAB's Per Geijer rare-earth estimate is a mineral resource and a prospective source, not a reserve or current mine production; conversion to market supply requires permitting, feasibility, construction, recovery and downstream separation.",
+      "status": "supported",
+      "sourceIds": [
+        "LKAB_PER_GEIJER_RESOURCE",
+        "LKAB_PER_GEIJER_2025_ANNUAL"
+      ],
+      "counterEvidence": "LKAB has existing iron-ore operations, processing know-how and a planned by-product pathway at Luleå that could lower some infrastructure barriers; feasibility and planned projects mean the long-run option is not zero."
+    },
+    {
+      "claimId": "europe_rare_earth_refining_pipeline_is_conditional",
+      "statement": "European rare-earth processing and magnet projects have moved beyond announcement at some stages—Narva began limited commercial magnet production in 2026—but evidence does not establish audited annual output or utilization. Caremag is financed and planned for late-2026 commissioning, not evidenced as operating by the 2026-10-14 cutoff. Narva is magnet manufacturing; Caremag is a planned recycling/separation/refining facility, and project designation is not throughput.",
+      "status": "supported",
+      "sourceIds": [
+        "NEO_NARVA_2025_OPENING",
+        "NEO_2024_AIF",
+        "NEO_2026_NARVA_COMMERCIAL",
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_INFRAVIA_2026",
+        "EC_CRMA_PROJECTS_2026",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026"
+      ],
+      "counterEvidence": "Narva has been reported as commercially producing and shipping magnets in 2026, and Caremag secured disclosed financing with specified design capacities; these are meaningful de-risking milestones, even though audited utilization and feedstock accounting remain unavailable."
+    },
+    {
+      "claimId": "recycling_30pct_sufficiency_unsubstantiated",
+      "statement": "The alleged roughly 30% EU permanent-magnet recycling sufficiency is not established. A primary source does report Solvay’s corporate objective to satisfy 30% of European rare-earth demand by 2030, but that is a forward-looking company objective for rare-earth production, not an observed EU-wide recycled-magnet input share; the source does not provide a matched denominator or audited throughput.",
+      "status": "supported",
+      "sourceIds": [
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025",
+        "EU_RESOURCEEU_2025",
+        "EU_CRMA_2024_1252",
+        "JRC_MATERIAL_SYSTEM_ANALYSIS_2021",
+        "JRC_MAGNET_RECYCLING_TECH_ASSESSMENT",
+        "MFA_MAGNETS_UK_2024",
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "JRC_FORESIGHT_2023"
+      ],
+      "counterEvidence": "Solvay reported commercial production beginning at its La Rochelle line from April 2025 and a 30% European-demand objective by 2030; Commission RESOurceEU separately projected around 3,800 tonnes of permanent magnets (~20% of then-current demand) from several projects conditional on feedstock and incentives. Both are material positive supply developments, yet neither validates 30% recycled share: they have different scope, stages, denominators and conditionality. JRC132889 reports end-of-life recycling input rate below 1% in its 2023 baseline discussion; this is a broader REE indicator, not an EU magnet-specific capacity/output measure."
+    },
+    {
+      "claimId": "automotive_hybrid_deal_misstates_status",
+      "statement": "No verified March 2026 EU-wide hybrid agreement was found in the primary legal record as of 2026-10-14. Regulation (EU) 2023/851 remains the enacted baseline; COM(2025) 995 proposes a 90% rather than 100% 2035 fleet reduction, but the ordinary legislative procedure 2025/0420/COD remained ongoing at retrieval. March and June 2026 Council records describe debate/progress, not adoption; the distinct 2025–27 compliance averaging measure is enacted.",
+      "status": "supported",
+      "sourceIds": [
+        "EU_CAR_CO2_REG_2023_851",
+        "EC_AUTO_PACKAGE_2025",
+        "COUNCIL_CAR_REVIEW_JUNE2026",
+        "COUNCIL_CAR_FLEX_2025",
+        "EU_CAR_TARGET_2022_REVIEW_CLAUSE",
+        "EURLEX_AUTO_PROCEDURE_2025_0420"
+      ],
+      "counterEvidence": "The proposal is a live legislative file and would introduce meaningful flexibility after adoption; it is not accurate to say EU law could never change. The already adopted 2025–27 compliance averaging is a real flexibility, and the 2026 statutory review clause explicitly required review. Neither constitutes a March 2026 hybrid-specific agreement or an adopted repeal of the 2035 target."
+    },
+    {
+      "claimId": "ea_growth_not_broad_demand_proof",
+      "statement": "Euro-area Q2 2026 GDP increased 0.6% quarter on quarter, but the expenditure composition included a negative inventory contribution and a positive net-export contribution, so headline growth alone is not evidence of broad domestic-demand resilience.",
+      "status": "supported",
+      "sourceIds": [
+        "EA_GDP_2026Q2"
+      ],
+      "counterEvidence": "Household consumption contributed positively and employment increased 0.1% in the euro area; these observations qualify a weak-demand interpretation and should be retained alongside the volatile inventory and trade contributions."
+    },
+    {
+      "claimId": "solvay_30pct_is_a_company_goal_not_recycling_observation",
+      "statement": "Solvay’s April 2025 statement that its La Rochelle expansion is a first step toward satisfying 30% of European rare-earth demand by 2030 is a company objective; the release does not report an achieved 30% share, disclose a tonnes-per-year plant output, or identify the objective as recycled permanent-magnet feed alone.",
+      "status": "supported",
+      "sourceIds": [
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ],
+      "counterEvidence": "The inaugurated line is stated to have begun commercial production, so this is a real process milestone. Without output, demand denominator, product mix, or share attribution between mined and recycled feed, the scale and 2030 realization remain unknown."
+    },
+    {
+      "claimId": "eu_private_debt_latest_q2_2026",
+      "statement": "ECB Q2 2026 euro-area sector accounts report non-financial corporation debt at 66.0% of GDP on a consolidated basis and 135.6% on a wider non-consolidated basis, while household debt was 80.3% of disposable income; these are euro-area aggregates, not EU27 totals.",
+      "status": "supported",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+      ],
+      "counterEvidence": "The release revises historical data and the broader measure includes inter-NFC claims; ratios do not measure near-term gross refinancing, debt service, or member-state dispersion."
+    },
+    {
+      "claimId": "eu_bank_resilience_perimeter_2026q2",
+      "statement": "Q2 2026 bank capital evidence is strong in both the ECB Significant Institution subset and the EBA EU/EEA dashboard, but the measures have different supervisory and geographic perimeters and do not identify country-level US/China credit exposure.",
+      "status": "supported",
+      "sourceIds": [
+        "ECB_SI_BANK_STATS_2026Q2",
+        "EBA_RISK_DASHBOARD_2026Q2"
+      ],
+      "counterEvidence": "ECB Q2 SI CET1 is 16.00%; EBA EU/EEA CET1 is 16.1%. The October 15 full SI+LSI ECB system-wide release falls after the 2026-10-14 cutoff; prudential ratios do not alone measure losses or liquidity stress."
+    },
+    {
+      "claimId": "eu_crossborder_bank_claims_us_china_partial",
+      "statement": "BIS Q1 2026 consolidated banking data identify material EU-reporter bank claims on US and China counterparties, but published coverage differs by country and risk basis and cannot be interpreted as complete EU totals.",
+      "status": "supported",
+      "sourceIds": [
+        "BIS_CBS_B4_2026Q1"
+      ],
+      "counterEvidence": "Immediate-counterparty US claims cover 12 of 27 EU reporters and China claims 9 of 27; missing/suppressed rows are not zero. All-sector claims are not net exposures, loss estimates, or exposures of non-bank investors."
+    },
+    {
+      "claimId": "eu_recycling_not_exact_30pct",
+      "statement": "A source-linked cohort and mass-balance review does not establish that EU magnet recycling can supply exactly 30% of demand in the 2030s; a 2022 selected-application model estimates 8–19% secondary supply/demand during 2025–2030, 16–34% in 2040 and 24–48% in 2050, subject to modeled assumptions and incomplete market coverage.",
+      "status": "supported",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022",
+        "JRC_FORESIGHT_2023"
+      ],
+      "counterEvidence": "The model excludes some applications, uses scenario sales, collection and chain-loss assumptions and does not report universal plant-specific separated-element yields or manufacturing scrap; these intervals are feasibility scenarios, not confidence intervals or calibrated probabilities."
+    },
+    {
+      "claimId": "eu_magnet_stock_flow_known_unknowns",
+      "statement": "Available lifetime and cohort evidence implies substantial lag between magnet deployment and end-of-life feed: modeled EV retirements become material around 2035, while 2020s feed is dominated by earlier product cohorts; manufacturing scrap and complete Nd/Pr/Dy/Tb composition remain unquantified in the located EU evidence.",
+      "status": "supported",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022",
+        "JRC_WIND_DECOMMISSIONING_2025",
+        "JRC_WIND_REE_OUTFLOWS_2026"
+      ],
+      "counterEvidence": "Lifetime and product-adoption parameters are model assumptions and may shift with early failure, repowering, exports, repair, and changing technology; JRC wind elemental outflows are not magnet output or processed secondary supply."
+    }
+  ]
+}

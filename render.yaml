@@ -1,0 +1,17 @@
+# Render Blueprint for the free Docker web service.
+# Source of truth lives in website/deploy/. export_public_bundle.py copies it to the bundle root as render.yaml,
+# which is where Render reads a Blueprint from. The operator applies it in the Render dashboard.
+# Free-plan limits and sleep behaviour: see docs/DEPLOYMENT.md. No secrets are stored here.
+services:
+  - type: web
+    name: global-economic-futures
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    autoDeploy: false
+    envVars:
+      - key: PORT
+        value: "10000"

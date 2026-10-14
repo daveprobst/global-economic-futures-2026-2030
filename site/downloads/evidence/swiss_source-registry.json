@@ -1,0 +1,560 @@
+{
+  "kind": "sourceRegistry",
+  "bundleIndexPath": "run-root/research/swiss/bundle.json",
+  "sources": [
+    {
+      "id": "SNB_DECISION_20260924",
+      "title": "Monetary policy assessment of 24 September 2026",
+      "publisher": "Swiss National Bank",
+      "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
+      "publishedAt": "2026-09-24",
+      "observedPeriod": "Swiss CPI through Aug 2026; policy decision 24 Sep 2026; conditional forecast 2026–2028",
+      "retrievedAt": "2026-10-14",
+      "revision": "September 2026 forecast vintage; conditional on policy rate 0% throughout forecast horizon",
+      "units": "Policy rate: % p.a.; CPI: % y/y and annual average",
+      "mechanismIds": [
+        "chf_appreciation",
+        "import_inflation_snb"
+      ],
+      "evidenceRole": "Primary policy and forecast source",
+      "scopeAndLimits": "Documents CPI, exchange-rate context, FX intervention willingness, policy setting, inflation forecast and growth outlook. Does not establish causal CHF effects; forecast is conditional, not realized observation."
+    },
+    {
+      "id": "SNB_SAFEHAVEN_2013",
+      "title": "Safe haven currencies and the euro",
+      "publisher": "Swiss National Bank (Working Paper 2013-04)",
+      "url": "https://www.snb.ch/en/publications/research/working-papers/2013/working_paper_2013_04",
+      "publishedAt": "2013-04-17",
+      "observedPeriod": "Historical exchange-rate and risk episodes covered by study (paper vintage 2013)",
+      "retrievedAt": "2026-10-14",
+      "revision": "Working-paper vintage; historical sample; inspect paper for exact end date and specifications",
+      "units": "Exchange-rate returns / risk measures",
+      "mechanismIds": [
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Scholarly empirical source (central-bank working paper)",
+      "scopeAndLimits": "Documents bilateral and time-varying safe-haven patterns; CHF does not uniformly appreciate against every currency in risk episodes. Historical correlation/decomposition does not identify a universal causal elasticity or future capital flow."
+    },
+    {
+      "id": "SNB_FX_PASS_2018",
+      "title": "The speed of exchange rate pass-through",
+      "publisher": "Swiss National Bank (Working Paper 2018-05)",
+      "url": "https://www.snb.ch/en/publications/research/working-papers/2018/working_paper_2018_05",
+      "publishedAt": "2018-05-18",
+      "observedPeriod": "Daily Swiss import transaction data around 15 Jan 2015 CHF appreciation",
+      "retrievedAt": "2026-10-14",
+      "revision": "Working-paper vintage; 2015 event study",
+      "units": "Import unit values; pass-through elasticities",
+      "mechanismIds": [
+        "chf_appreciation",
+        "import_inflation_snb"
+      ],
+      "evidenceRole": "Scholarly empirical source with transaction-level data",
+      "scopeAndLimits": "Studies unusually sharp 2015 shock and invoice currency. Import-price evidence is not a current CPI forecast or export elasticity; external validity to different shocks is uncertain."
+    },
+    {
+      "id": "SNB_FX_PASS_2007",
+      "title": "Exchange rate pass-through in Switzerland: Evidence from vector autoregressions",
+      "publisher": "Swiss National Bank (Economic Study 2007-04)",
+      "url": "https://www.snb.ch/en/publications/research/economic-studies/2007/03/economic_studies_2007_04",
+      "publishedAt": "2007-03-03",
+      "observedPeriod": "Monthly price data 1976–2004",
+      "retrievedAt": "2026-10-14",
+      "revision": "Historical sample ending 2004; model vintage 2007",
+      "units": "Import prices and consumer prices; impulse responses",
+      "mechanismIds": [
+        "import_inflation_snb",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Scholarly macro source",
+      "scopeAndLimits": "Finds pass-through to import prices exceeds pass-through to aggregate CPI, and CPI pass-through weakened in low/stable inflation period. Old sample and recursive VAR identification limit current quantitative transfer."
+    },
+    {
+      "id": "SNB_FX_EXPORTS_2022",
+      "title": "The exchange rate elasticity of the Swiss current account",
+      "publisher": "Swiss National Bank (Working Paper 2022-14)",
+      "url": "https://www.snb.ch/en/publications/research/working-papers/2022/working_paper_2022_14",
+      "publishedAt": "2022-12-23",
+      "observedPeriod": "Swiss current-account and exchange-rate historical sample (see paper tables)",
+      "retrievedAt": "2026-10-14",
+      "revision": "Working-paper vintage 2022; revisions not stated on landing page",
+      "units": "Current account components; exchange-rate elasticities",
+      "mechanismIds": [
+        "chf_appreciation",
+        "pharma_chemical_exports",
+        "commodity_trading"
+      ],
+      "evidenceRole": "Scholarly empirical source",
+      "scopeAndLimits": "Useful counterweight on aggregate current-account/exchange-rate responses. Current-account balances mix goods, services and incomes and do not map directly to GDP or firm profits."
+    },
+    {
+      "id": "SWISS_EXPORTS_2025",
+      "title": "2025: Exports hit a new record, driven by chemicals and pharmaceuticals",
+      "publisher": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+      "url": "https://www.bazg.admin.ch/en/newnsb/waOys9ZIOMsimr-iXmjwI",
+      "publishedAt": "2026-01-29",
+      "observedPeriod": "Swiss customs goods trade, calendar year 2025",
+      "retrievedAt": "2026-10-14",
+      "revision": "Annual 2025 release; customs statistics vintage released 29 Jan 2026",
+      "units": "Nominal goods exports/imports, CHF; growth rates",
+      "mechanismIds": [
+        "pharma_chemical_exports",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Primary official trade statistics release",
+      "scopeAndLimits": "Aggregate merchandise trade excludes services and does not show company-level currency exposure, domestic value added, real quantities or hedging. Use linked detailed tables for sector breakdown and note customs conventions."
+    },
+    {
+      "id": "SNB_BOP_2025",
+      "title": "Swiss balance of payments and international investment position: 2025 and Q4 2025",
+      "publisher": "Swiss National Bank",
+      "url": "https://www.snb.ch/en/publications/communication/press-releases/2026/pre_20260324",
+      "publishedAt": "2026-03-24",
+      "observedPeriod": "Balance of payments and IIP: 2025 and 2025-Q4",
+      "retrievedAt": "2026-10-14",
+      "revision": "Annual/Q4 release vintage 24 Mar 2026; SNB data may be revised",
+      "units": "CHF billion; current and financial account flows; IIP stocks",
+      "mechanismIds": [
+        "commodity_trading",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Primary official external accounts",
+      "scopeAndLimits": "Separates transaction flows and external positions; current-account balances do not equal domestic production or disposable income; non-monetary gold and merchanting can cause large gross flows."
+    },
+    {
+      "id": "SNB_BOP_2026Q2",
+      "title": "Swiss balance of payments and international investment position: Q2 2026",
+      "publisher": "Swiss National Bank",
+      "url": "https://www.snb.ch/en/publications/communication/press-releases/2026/pre_20260922",
+      "publishedAt": "2026-09-22",
+      "observedPeriod": "Balance of payments and IIP: 2026-Q2",
+      "retrievedAt": "2026-10-14T17:17:52.360344Z",
+      "revision": "Quarterly preliminary vintage released 22 Sep 2026; subject to revisions",
+      "units": "CHF billion; quarterly flows and positions",
+      "mechanismIds": [
+        "commodity_trading",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Primary official external accounts, latest identified quarterly vintage by cutoff",
+      "scopeAndLimits": "Q2 2026 results are flow/position statistics and not a causal commodity-trading shock measure. Release notes merchanting and non-monetary gold drove year-on-year goods balance movements."
+    },
+    {
+      "id": "SNB_MERCHANTING_METHOD",
+      "title": "Notes to the current account survey (CAS): merchanting definitions and reporting",
+      "publisher": "Swiss National Bank",
+      "url": "https://surveys.snb.ch/public/erlaeuterungen/E_CAS_1.1.html",
+      "publishedAt": null,
+      "observedPeriod": "Current account survey definitions; living methodological page",
+      "retrievedAt": "2026-10-14",
+      "revision": "Living methodology page accessed 2026-10-14; publication date not disclosed",
+      "units": "BPM6-aligned transactions; sales, purchases, services and merchanting",
+      "mechanismIds": [
+        "commodity_trading"
+      ],
+      "evidenceRole": "Primary statistical methodology",
+      "scopeAndLimits": "Defines merchanting as resident purchase and resale of goods abroad without goods entering Switzerland/Liechtenstein. Gross merchanting turnover is not domestic value added; distinguish merchanting margin, services and derivatives/margin payments."
+    },
+    {
+      "id": "SECO_COMMODITIES_2018",
+      "title": "The Swiss commodities sector: current situation and outlook",
+      "publisher": "State Secretariat for Economic Affairs (SECO), Interdepartmental Platform on Commodities",
+      "url": "https://www.seco.admin.ch/dam/seco/en/dokumente/Aussenwirtschaft/Wirtschaftsbeziehungen/Rohstoffe/rohstoffbericht_Standortbestimmung_Perspektiven.pdf.download.pdf/RS-BE-e.pdf",
+      "publishedAt": null,
+      "observedPeriod": "Swiss commodities sector; empirical inputs largely through 2016–2017 as documented in report",
+      "retrievedAt": "2026-10-14",
+      "revision": "Federal Council assessment/report 2018; contains dated legacy estimates and wide measurement uncertainty",
+      "units": "Employment, trade-finance funding, tax, transit trade; units vary by chapter",
+      "mechanismIds": [
+        "commodity_trading"
+      ],
+      "evidenceRole": "Primary government assessment with commissioned studies",
+      "scopeAndLimits": "Explicitly says firms not separately classified and sector size/value-added estimates vary materially; legacy employment and funding estimates must not be treated as current. Supports mapping data limitations, not a precise contemporary GDP share."
+    },
+    {
+      "id": "SNB_MERCHANTING_CA_2013",
+      "title": "Merchanting and Current Account Balances",
+      "publisher": "Swiss National Bank (Working Paper 2013-06)",
+      "url": "https://www.snb.ch/en/publications/research/working-papers/2013/working_paper_2013_06",
+      "publishedAt": "2013-06-12",
+      "observedPeriod": "Cross-country panel 53 countries, 1980–2011",
+      "retrievedAt": "2026-10-14",
+      "revision": "Working-paper vintage 2013; panel ends 2011",
+      "units": "Current-account balance (% GDP); panel estimates",
+      "mechanismIds": [
+        "commodity_trading"
+      ],
+      "evidenceRole": "Scholarly cross-country research",
+      "scopeAndLimits": "Finds merchanting can increase measured current-account surplus while earnings are reinvested abroad rather than domestic investment. Cross-country average is not a Switzerland-specific current causal estimate."
+    },
+    {
+      "id": "CH_EU_PACKAGE_202603",
+      "title": "Dispatch on the Switzerland-EU Package (Bilaterals III)",
+      "publisher": "Federal Department of Foreign Affairs (FDFA), Directorate for European Affairs",
+      "url": "https://www.europa.eda.admin.ch/en/dispatch-swiss-eu-package",
+      "publishedAt": "2026-03-13",
+      "observedPeriod": "Swiss–EU package status as of 13 Mar 2026; agreements signed 2 Mar 2026; parliamentary dispatch",
+      "retrievedAt": "2026-10-14",
+      "revision": "Official dispatch and agreement texts; signature is not ratification or entry into force",
+      "units": "Legal status and agreement text; no economic units",
+      "mechanismIds": "eu_market_access",
+      "evidenceRole": "Primary legal/policy source",
+      "scopeAndLimits": "Confirms 2 Mar 2026 signatures and 13 Mar dispatch to Parliament. Package remains subject to Swiss parliamentary/democratic approval and EU procedures; no general effective date established by the dispatch page. Do not model proposed provisions as already effective."
+    },
+    {
+      "id": "CH_EU_PACKAGE_STATUS_202608",
+      "title": "Federal Council adopts the Swiss–EU relations package: parliamentary and referendum status updates",
+      "publisher": "Federal Department of Foreign Affairs (FDFA)",
+      "url": "https://www.eda.admin.ch/en/development-relations-switzerland-eu",
+      "publishedAt": "2026-08-12",
+      "observedPeriod": "Package status and political/legal process through 12 Aug 2026",
+      "retrievedAt": "2026-10-14",
+      "revision": "Living official page; includes dated entries; accessed at 2026-10-14 cutoff",
+      "units": "Legal process milestones",
+      "mechanismIds": [
+        "eu_market_access"
+      ],
+      "evidenceRole": "Primary official status tracker",
+      "scopeAndLimits": "Documents parliamentary stage, Federal Council actions and referendum-related debate. Check each dated update and component; no blanket enactment/effective date may be inferred."
+    },
+    {
+      "id": "CH_ELECTRICITY_AGREEMENT_STATUS",
+      "title": "Electricity agreement Switzerland–EU",
+      "publisher": "Federal Office of Energy (SFOE/BFE)",
+      "url": "https://www.bfe.admin.ch/en/electricity-agreement-switzerland-eu",
+      "publishedAt": null,
+      "observedPeriod": "Negotiated agreement signed 2 Mar 2026; parliamentary phase began after Mar 2026 dispatch",
+      "retrievedAt": "2026-10-14",
+      "revision": "Living page; publication date not disclosed",
+      "units": "Legal status; electricity system integration and security-of-supply pathways",
+      "mechanismIds": [
+        "electricity_research_pathways",
+        "eu_market_access"
+      ],
+      "evidenceRole": "Primary official sector status and policy source",
+      "scopeAndLimits": "States Swiss grid is physically integrated but lacks legal guarantees under status quo, and describes agreement purpose. Signed agreement is still in parliamentary phase, so prospective benefits are not realized outcomes."
+    },
+    {
+      "id": "CH_HORIZON_STATUS",
+      "title": "Horizon package 2021–2027: Switzerland participation status",
+      "publisher": "State Secretariat for Education, Research and Innovation (SERI/SBFI)",
+      "url": "https://www.sbfi.admin.ch/en/horizon-package-2021-2027",
+      "publishedAt": null,
+      "observedPeriod": "EU programme participation from programme year 2025; status updated for 2026–2027 calls",
+      "retrievedAt": "2026-10-14",
+      "revision": "Living status page; EUPA signed 10 Nov 2025; accessed 2026-10-14",
+      "units": "Programme eligibility, contributions and grants; EUR/CHF where in programme documents",
+      "mechanismIds": [
+        "electricity_research_pathways",
+        "eu_market_access"
+      ],
+      "evidenceRole": "Primary official programme-status source",
+      "scopeAndLimits": "EUPA allows retroactive association to Horizon Europe, Euratom and Digital Europe from 1 Jan 2025; differs from package-wide ratification. Program-specific eligibility, funding commitments and implementation timing must be checked separately; grants do not instantaneously raise productivity."
+    },
+    {
+      "id": "OECD_CH_GVC_2024",
+      "title": "Strengthening economic resilience within global value chains: OECD Economic Surveys—Switzerland 2024",
+      "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+      "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2024_070d119b-en/full-report/component-8.html",
+      "publishedAt": "2024-03-14",
+      "observedPeriod": "Swiss trade openness, supply-chain and FDI evidence; underlying observations vary, primarily pre-2024",
+      "retrievedAt": "2026-10-14",
+      "revision": "Economic Survey 2024; underlying sources/years stated by chart and section",
+      "units": "Trade and FDI shares; value added; trade costs",
+      "mechanismIds": [
+        "friendshoring",
+        "eu_market_access",
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Intergovernmental analytical report using official data and cited studies",
+      "scopeAndLimits": "Documents openness and diversification/resilience trade-offs, EU access, and chemicals/pharma export concentration. Aggregates and cited literature do not identify causal friendshoring gains; report predates 2026 legal package status."
+    },
+    {
+      "id": "CH_MARKUPS_2025",
+      "title": "The impact of exchange rate fluctuations on markups: firm-level evidence for Switzerland",
+      "publisher": "Elizabeth Steiner and Yannic Stucki; Journal of International Money and Finance",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0261560625001573",
+      "publishedAt": null,
+      "observedPeriod": "Swiss manufacturing firm panel 2012–2017; Jan 2015 appreciation event",
+      "retrievedAt": "2026-10-14",
+      "revision": "Published 2025; study sample 2012–2017",
+      "units": "Firm markups, exchange rates, sales invoicing",
+      "mechanismIds": [
+        "chf_appreciation",
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Scholarly firm-level study",
+      "scopeAndLimits": "Reports heterogeneous markup adjustments after appreciation; large profitable exporters lower markups more, while average firm response is not significant. Event-study evidence does not establish present sector response or net GDP effect."
+    },
+    {
+      "id": "CH_EXPORT_SECTOR_2025",
+      "title": "Sectoral effects of exchange rate shocks: goods exports and the appreciation of the Swiss Franc in 2015",
+      "publisher": "Andreas Brunhart and Martin Geiger, Swiss Journal of Economics and Statistics",
+      "url": "https://link.springer.com/article/10.1186/s41937-025-00137-6",
+      "publishedAt": "2025-07-09",
+      "observedPeriod": "Swiss customs exports by sector; 2014–2016 around Jan 2015 appreciation",
+      "retrievedAt": "2026-10-14",
+      "revision": "Open-access paper published 9 Jul 2025; historical counterfactual/event-study",
+      "units": "Nominal exports in CHF/EUR; real quantities; sectoral prices",
+      "mechanismIds": [
+        "chf_appreciation",
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Scholarly sector-level study using granular customs data",
+      "scopeAndLimits": "Finds heterogeneous sector adjustment; chemicals/pharma aggregate resilience and engineering/instruments exposure differ. Counterfactual relies on continuation of exchange-rate floor assumption; 2015 shock is not a direct estimate for 2026–30."
+    },
+    {
+      "id": "OECD_SWISS_EU_2024",
+      "title": "OECD Economic Surveys: Switzerland 2024—EU integration and resilience",
+      "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+      "url": "https://www.oecd.org/en/publications/2024/03/oecd-economic-surveys-switzerland-2024_9410595b/full-report/component-8.html",
+      "publishedAt": null,
+      "observedPeriod": "Swiss–EU framework and global value chains; report uses earlier observation vintages",
+      "retrievedAt": "2026-10-14",
+      "revision": "Survey published 2024; legal status predates Bilaterals III signature",
+      "units": "Trade costs, supply-chain links; qualitative policy analysis",
+      "mechanismIds": [
+        "eu_market_access",
+        "friendshoring"
+      ],
+      "evidenceRole": "Intergovernmental analytical source",
+      "scopeAndLimits": "Provides counterarguments: openness exposes shocks but supports diversification/productivity; EU access matters, while inward FDI and trade restrictions can have costs. It is not ex post evaluation of 2026 package."
+    },
+    {
+      "id": "EU_MRA_MEDICAL_2021",
+      "title": "Notice to Stakeholders: Status of the EU-Switzerland Mutual Recognition Agreement for medical devices",
+      "publisher": "European Commission, Directorate-General for Health and Food Safety",
+      "url": "https://health.ec.europa.eu/latest-updates/notice-stakeholders-status-eu-switzerland-mutual-recognition-agreement-mra-medical-devices-2021-05-26_en",
+      "publishedAt": "2021-05-26",
+      "observedPeriod": "Medical-device MRA status from 26 May 2021",
+      "retrievedAt": "2026-10-14",
+      "revision": "Official legal notice; 2021 status, package updates must be checked against later operative acts",
+      "units": "Regulatory access status, not numeric",
+      "mechanismIds": [
+        "eu_market_access"
+      ],
+      "evidenceRole": "Primary EU legal/policy source",
+      "scopeAndLimits": "Documents a concrete example of bilateral-market access discontinuity under the earlier framework, but is sector-specific and historical; the 2026 signed package must be evaluated for actual entry into force before assuming a remedy."
+    },
+    {
+      "id": "SECO_FORECAST_20260917",
+      "title": "GDP forecast: Swiss economy to grow moderately",
+      "publisher": "State Secretariat for Economic Affairs (SECO), Expert Group on Business Cycles",
+      "url": "https://www.seco.admin.ch/en/newnsb/JUhtHgdQzukb",
+      "publishedAt": "2026-09-17",
+      "observedPeriod": "Official conditional outlook 2026–2027",
+      "retrievedAt": "2026-10-14",
+      "revision": "September 2026 forecast vintage; not observed outcomes",
+      "units": "Annual average CPI inflation and GDP growth, %",
+      "mechanismIds": [
+        "import_inflation_snb",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Primary official forecast",
+      "scopeAndLimits": "SECO conditional forecast reports average CPI inflation 0.6% in 2026 and 0.6% in 2027; this is distinct from SNB Sep 2026 forecast (0.7%, 0.8%) and realized monthly CPI. Forecast disagreement is evidence of vintage/model uncertainty, not contradiction in observed inflation."
+    },
+    {
+      "id": "CH_CPI_202609",
+      "title": "Consumer prices remained stable in September",
+      "publisher": "Swiss Federal Statistical Office (FSO), release distributed by SECO",
+      "url": "https://www.seco.admin.ch/en/newnsb/wNfni1DvzKuQ",
+      "publishedAt": "2026-10-01",
+      "observedPeriod": "Swiss CPI, September 2026",
+      "retrievedAt": "2026-10-14T17:16:04.069866Z",
+      "revision": "September 2026 release; later CPI revisions may occur",
+      "units": "CPI index points (Dec 2025=100); monthly and year-on-year percent change",
+      "scopeAndLimits": "September CPI headline and narrative price components (heating oil, petrol and diesel rose; international package holidays, car rental/car sharing and hotel prices fell). This release narrative does not quantify an imported-goods-only CPI component; no FX contribution is identified."
+    },
+    {
+      "id": "CH_GDP_2026Q2",
+      "title": "Gross domestic product, quarterly data: Q2 2026 release",
+      "publisher": "State Secretariat for Economic Affairs (SECO)",
+      "url": "https://www.seco.admin.ch/de/bruttoinlandprodukt",
+      "publishedAt": "2026-09-03",
+      "observedPeriod": "Swiss GDP, 2026-Q2; season/sport-event adjusted release",
+      "retrievedAt": "2026-10-14",
+      "revision": "Quarterly national accounts vintage published 3 Sep 2026, incorporating BFS annual data revisions from 25 Aug 2026",
+      "units": "Quarter-on-quarter percent change; GDP levels and contributions in linked tables",
+      "scopeAndLimits": "Sport-event-adjusted growth was exceptionally strong and pharma/chemicals were a large contributor. Quarterly national accounts are revised; sectoral value added is volatile."
+    },
+    {
+      "id": "SNB_FX_FACTOR_2020",
+      "title": "FX risk premiums and the Swiss franc: a time-varying factor model",
+      "publisher": "Swiss National Bank (Working Paper 2020-21)",
+      "url": "https://www.snb.ch/de/publications/research/working-papers/2020/working_paper_2020_21",
+      "publishedAt": null,
+      "observedPeriod": "Daily EUR/CHF and USD/CHF sample 2006–2018",
+      "retrievedAt": "2026-10-14",
+      "revision": "Working paper 2020-21; exact publication day not disclosed in reused preflight source metadata",
+      "units": "Exchange-rate returns; variance decomposition",
+      "scopeAndLimits": "Preflight literature notes risk factor contribution to CHF dynamics, especially under stress; historical decomposition is not a structural causal trade elasticity."
+    },
+    {
+      "id": "SNB_FX_MONTHLY_202609",
+      "title": "Foreign exchange rates – monthly average, September 2026 (SNB data cube devkum)",
+      "publisher": "Swiss National Bank",
+      "url": "https://data.snb.ch/api/cube/devkum/data/csv/en?dimSel=D0(M0),D1(EUR1)&fromDate=2026-09&toDate=2026-09",
+      "publishedAt": "2026-10-01",
+      "observedPeriod": "Monthly-average CHF per EUR and CHF per USD, September 2026; data cube released 1 Oct 2026",
+      "retrievedAt": "2026-10-14",
+      "revision": "CSV response identifies cube devkum and PublishingDate 2026-10-01 14:30; retrieved and parsed directly on 2026-10-14. Monthly mean, not a month-end spot observation.",
+      "units": "CHF per 1 EUR / CHF per 1 USD; monthly averages",
+      "mechanismIds": [
+        "chf_appreciation",
+        "import_inflation_snb",
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Primary SNB exchange-rate time series",
+      "scopeAndLimits": "Source URL selects EUR series; USD value retrieved with same cube and D1(USD1). Monthly average exchange rates do not measure firm-specific invoice exposure, realized hedging or effective exchange rate."
+    },
+    {
+      "id": "SNB_MERCHANTING_Q2_2026",
+      "title": "Swiss balance of payments: merchanting sales of goods by type, quarterly (SNB data cube bopmercatq)",
+      "publisher": "Swiss National Bank",
+      "url": "https://data.snb.ch/fr/topics/aube/cube/bopmercatq",
+      "publishedAt": "2026-09-22",
+      "observedPeriod": "Gross merchanting sales of goods by type, 2026-Q2; cube last updated with Q2 2026 balance-of-payments release",
+      "retrievedAt": "2026-10-14T17:22:17.676263Z",
+      "revision": "Direct CSV API export on 2026-10-14; API PublishingDate 2026-09-22 09:00. Reported unit in CHF millions; category GT selected. Quarterly balance-of-payments data subject to revisions.",
+      "units": "CHF million, current-price gross sales; not value added or balance",
+      "mechanismIds": [
+        "commodity_trading"
+      ],
+      "evidenceRole": "Primary SNB supplementary balance-of-payments data",
+      "scopeAndLimits": "GT is the total sales category per cube dimensions; value is gross sales of goods in merchanting, not merchanting margin, current-account balance, GDP contribution or trade-credit exposure. Interpret gross turnover separately from net earnings."
+    },
+    {
+      "id": "OECD_CH_GVC_DEPENDENCIES_2024",
+      "title": "Strengthening economic resilience within global value chains in Switzerland",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2024_070d119b-en/full-report/component-8.html",
+      "publishedAt": "2024-03-14",
+      "observedPeriod": "Foreign-input reliance and product-level import concentration: principally 2018 input-output and 2002–2021 product-trade data; report published 2024",
+      "retrievedAt": "2026-10-14",
+      "revision": "OECD 2024 Switzerland survey chapter; underlying data vintages/definitions cited at figure/table level. Product-level dependency filter applied to 2019 CEPII BACI data and persistence checked through 2021.",
+      "units": "Percent of foreign intermediate inputs by supplier region; import Herfindahl-Hirschman Index; product-country combinations",
+      "mechanismIds": [
+        "friendshoring",
+        "eu_market_access"
+      ],
+      "evidenceRole": "OECD analysis based on official input-output and CEPII product-level trade data",
+      "scopeAndLimits": "Foreign-input shares are 2018, not current. Report finds EU accounts for 54% of imported intermediate inputs on average, Asia 17%, North America 10%, rest of Europe 8%, other 11%; average import concentration fell 7% between 2002 and 2021. Roughly 60 country-product combinations remained at risk two years after 2019. These are structural exposure indicators, not observed 2026 relocation or causal friendshoring gains."
+    },
+    {
+      "id": "SCIENCEINDUSTRIES_EXPORTS_2025",
+      "title": "Chemical and pharmaceutical industries remain the backbone",
+      "publisher": "scienceindustries (Swiss business association; statistics sourced to Swiss customs / Swiss-Impex)",
+      "url": "https://www.scienceindustries.ch/en/article/49475/chemical-and-pharmaceutical-industries-remain-the-backbone",
+      "publishedAt": "2026-01-29",
+      "observedPeriod": "Chemical, pharmaceutical and life-science merchandise exports, calendar year 2025",
+      "retrievedAt": "2026-10-14",
+      "revision": "Association release dated 29 Jan 2026 reports Swiss-Impex/Federal Customs Administration data; classification combines chemical, pharmaceutical and life-science products.",
+      "units": "Nominal customs goods exports, CHF billion; share of total merchandise exports",
+      "mechanismIds": [
+        "pharma_chemical_exports",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Industry association release using Swiss-Impex customs totals; not national accounts",
+      "scopeAndLimits": "Reports CHF 152.1bn exports in 2025, +2.2% y/y and over 52% of total Swiss merchandise exports. Group definition can differ from FOCBS tariff group and export values are neither real volume nor Swiss value added; association has an industry-promotion role. Cross-check against official FOCBS 2024 data: CHF 149.1bn and 52.7% of exports."
+    },
+    {
+      "id": "CH_FOCBS_2024_TRADE_YEARBOOK",
+      "title": "Swiss foreign trade in 2024",
+      "publisher": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+      "url": "https://www.bazg.admin.ch/dam/en/sd-web/1TnZbTRz4WOh/912.5-02_jb_2024_1.1_en.pdf",
+      "publishedAt": null,
+      "observedPeriod": "Detailed customs merchandise exports by product group, calendar year 2024",
+      "retrievedAt": "2026-10-14",
+      "revision": "Annual report table/text: chemical and pharmaceutical product exports CHF 149.1bn, 52.7% of total merchandise exports in 2024; caution noted on tariff-structure simplifications for comparisons.",
+      "units": "Nominal customs merchandise exports, CHF billion and percent share",
+      "mechanismIds": [
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Primary official customs statistics yearbook",
+      "scopeAndLimits": "Nominal goods exports do not equal domestic value added, real quantities or company cash receipts; tariff classification changes constrain comparisons across years."
+    },
+    {
+      "id": "FOCBS_Q1_2026_SECTOR_RELEASE",
+      "title": "Swiss foreign trade, Q1 2026; seasonally adjusted exports, Annex Ia",
+      "publisher": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+      "url": "https://cms.news.admin.ch/fileservice/sdweb-docs-prod-nsbcch-files/files/2026/04/20/68c15f18-e88e-4288-8429-6226f2d1d5ab.pdf",
+      "publishedAt": "2026-04-21",
+      "observedPeriod": "2026-Q1 versus 2025-Q4, seasonally adjusted nominal quarter-on-quarter",
+      "retrievedAt": "2026-10-14T17:16:01.994492Z",
+      "revision": "Official FOCBS release PDF dated 21 Apr 2026; quarterly customs series subject to revision. Raw PDF archived at raw/focbs_q1_2026_annex.pdf (HTTP 200 application/pdf).",
+      "units": "CHF million seasonally adjusted nominal exports; percent q/q change",
+      "mechanismIds": [
+        "pharma_chemical_exports",
+        "chf_appreciation"
+      ],
+      "evidenceRole": "Primary FOCBS quarterly merchandise-trade annex, Annex Ia.",
+      "scopeAndLimits": "Chemical and pharmaceutical exports are customs flows, not output/value added or identified CHF effects. Annex Ia headings explicitly say seasonally adjusted and change vs prior quarter; no year-on-year rate is reported for this row."
+    },
+    {
+      "id": "OECD_SWISS_SURVEY_2026",
+      "title": "OECD Economic Surveys: Switzerland 2026",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2026_48b03aff-en.html",
+      "publishedAt": "2026-09-15",
+      "observedPeriod": "Current Swiss macroeconomic and structural assessment; report publication dated 15 Sep 2026; underlying data vintages vary by chapter",
+      "retrievedAt": "2026-10-14",
+      "revision": "OECD 2026 Switzerland Survey; current overview says recent shocks handled comparatively well, while trade/geopolitical uncertainty leaves small open economy vulnerable; no estimated causal friendshoring coefficient cited in reviewed summary.",
+      "units": "Qualitative macroeconomic assessment; units vary by chapter",
+      "mechanismIds": [
+        "friendshoring",
+        "eu_market_access",
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Recent intergovernmental country assessment",
+      "scopeAndLimits": "Useful current counterweight on resilience and external vulnerability; does not quantify supply-chain relocation or net friendshoring gains. Reviewed abstract/summary only; detailed sector evidence remains from older OECD chapter and must be cited as such."
+    },
+    {
+      "id": "FSO_IMPORT_PRICE_AUG2026",
+      "title": "Import Price Index, detailed results, August 2026 (FSO table 05.04.04.02)",
+      "publisher": "Swiss Federal Statistical Office (FSO)",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36853816/master",
+      "publishedAt": "2026-09-14",
+      "observedPeriod": "Monthly import price indices through 2026-08; Dec 2025=100 index basis; monthly and year-on-year comparisons computed from the source series",
+      "retrievedAt": "2026-10-14T17:17:52.188594Z",
+      "revision": "Direct FSO DAM XLSX downloaded 2026-10-14; workbook covers 2003-05 through 2026-08 and uses the 2025 index revision. Raw XLSX archived at raw/fso_import_detail_aug2026.xlsx (HTTP 200, 901053 bytes).",
+      "units": "Import-price index points (December 2025=100); computed percent change",
+      "mechanismIds": [
+        "import_inflation_snb",
+        "pharma_chemical_exports"
+      ],
+      "evidenceRole": "Primary FSO monthly series, detailed import-price categories.",
+      "scopeAndLimits": "Index levels and index changes are not CPI contributions or causal exchange-rate pass-through. August 2026 is the latest observation publicly released by cutoff; September series release was scheduled after 2026-10-14."
+    },
+    {
+      "id": "SNB_BOP_CURRENT_ACCOUNT_Q2_2026",
+      "title": "Balance of payments, current-account balance, quarterly (SNB cube bopoverq)",
+      "publisher": "Swiss National Bank",
+      "url": "https://data.snb.ch/api/cube/bopoverq/data/csv/en?fromDate=2026-Q2&toDate=2026-Q2",
+      "publishedAt": "2026-09-22",
+      "observedPeriod": "2026-Q2 net current-account balance; includes goods, services and income balances, not a merchanting-only series",
+      "retrievedAt": "2026-10-14T17:18:06.401295Z",
+      "revision": "SNB API CSV PublishingDate 2026-09-22 09:00; quarterly balance-of-payments estimates are subject to revisions. Raw CSV archived at raw/snb_bopoverq_q2.csv (HTTP 200).",
+      "units": "CHF million, net current-account balance",
+      "mechanismIds": [
+        "commodity_trading"
+      ],
+      "evidenceRole": "Primary SNB balance-of-payments cube; direct net balance series.",
+      "scopeAndLimits": "S0 is the total current-account net balance. Cube dimensions do not isolate merchanting. The Q2 release states merchanting balance increased significantly year on year but gives no numeric merchanting-only balance in its narrative; total current account is not a proxy for merchanting."
+    },
+    {
+      "id": "FSO_IPI_RELEASE_SCHEDULE_2026",
+      "title": "Publication dates for the Producer and Import Price Index in 2026",
+      "publisher": "Swiss Federal Statistical Office (FSO)",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36390871/master",
+      "publishedAt": null,
+      "observedPeriod": "2026 release calendar; September 2026 index release date",
+      "retrievedAt": "2026-10-14T17:23:22.074028Z",
+      "revision": "Official FSO schedule PDF retrieved 2026-10-14; raw copy at raw/fso_ipi_release_schedule_2026.pdf (HTTP 200 application/pdf).",
+      "units": "Scheduled publication date",
+      "mechanismIds": [
+        "import_inflation_snb"
+      ],
+      "evidenceRole": "Primary statistical release calendar.",
+      "scopeAndLimits": "Page 2 lists September import-price release on 15 October 2026, after this research cutoff of 14 October 2026; a schedule is not an observed index value."
+    }
+  ]
+}

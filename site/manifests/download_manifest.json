@@ -1,0 +1,632 @@
+{
+ "schema": "gef-download-manifest/1",
+ "asOf": "2026-10-14",
+ "builtAt": "2026-10-14T21:42:49Z",
+ "root": "site/",
+ "pathBase": "relative to the site root; serve at / (for example /downloads/global/global_monte_carlo_summary.csv)",
+ "files": [
+  {
+   "path": "downloads/global/global_deterministic_paths.csv",
+   "label": "Global transmission: deterministic paths (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 26781,
+   "sha256": "a4fe161aef4ed2e32e9c9a9c8b060204388d24529170aa8fe9d51cd93cd8ce88",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/deterministic.csv"
+  },
+  {
+   "path": "downloads/global/global_deterministic_paths.json",
+   "label": "Global transmission: deterministic paths (JSON)",
+   "mediaType": "application/json",
+   "bytes": 83063,
+   "sha256": "415becb287bd417771f486e96f8507776bcec1f9c58eaa3a145fdd40497771c3",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/deterministic.json"
+  },
+  {
+   "path": "downloads/global/global_monte_carlo_summary.csv",
+   "label": "Global: conditional design percentiles, 10,000 draws (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 51069,
+   "sha256": "ab21036bbf9297c4d1b376cca94c1218584e2977f18af4af6a84d29e069889ab",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/monte_carlo_summary.csv"
+  },
+  {
+   "path": "downloads/global/global_monte_carlo_draws.json",
+   "label": "Global: Monte Carlo output (JSON)",
+   "mediaType": "application/json",
+   "bytes": 105685,
+   "sha256": "d94a0b249f99be19c908f1ddc968a63629e74cee28a7abb854fefa57e4b0ce41",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/monte_carlo.json"
+  },
+  {
+   "path": "downloads/global/global_sensitivity_sweeps.csv",
+   "label": "Global: sensitivity and robustness sweeps (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 44910,
+   "sha256": "79f45c8232b2ebc12a9dff1c7a1bd25af96ca08f1f8ab116dd3cd49bbd0b4a05",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/sensitivity.csv"
+  },
+  {
+   "path": "downloads/global/global_sensitivity_sweeps.json",
+   "label": "Global: sensitivity sweeps (JSON)",
+   "mediaType": "application/json",
+   "bytes": 104807,
+   "sha256": "65bf33348355d62f479aedf7a8b6f68d4be4b8ea1fd42a614217f225914b8f3d",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/sensitivity.json"
+  },
+  {
+   "path": "downloads/global/global_dependence_sensitivity.csv",
+   "label": "Global: dependence (copula) sensitivity (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 2625,
+   "sha256": "5b0138ba1047289c1bbe9e6862b8881db2a4f8c4e307a1090bf443cf0ac7b9dc",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/sensitivity_dependence.csv"
+  },
+  {
+   "path": "downloads/global/accounting_identities.json",
+   "label": "Accounting identities (all identities passed; see file)",
+   "mediaType": "application/json",
+   "bytes": 12416,
+   "sha256": "a4e2043eb75b510202758003021c687079406c90f5e18878d8a9d2df515425ab",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/accounting.json"
+  },
+  {
+   "path": "downloads/global/test_summary.json",
+   "label": "Unit and identity test summary",
+   "mediaType": "application/json",
+   "bytes": 1918,
+   "sha256": "239f9cadac925c12b954962acebbe1d110e7dbdce04277feb2d850d2dde8789f",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/tests.json"
+  },
+  {
+   "path": "downloads/global/regional/china_deterministic.csv",
+   "label": "Regional adapter output: china_deterministic.csv",
+   "mediaType": "text/csv",
+   "bytes": 14186,
+   "sha256": "83095f40fcb6df44da9f765bbd4b49532ce86bd7303fee091fe12eeb58bae017",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/regional/china_deterministic.csv"
+  },
+  {
+   "path": "downloads/global/regional/company_deterministic.csv",
+   "label": "Regional adapter output: company_deterministic.csv",
+   "mediaType": "text/csv",
+   "bytes": 128419,
+   "sha256": "dd83941a4c3ab6f0d2a42074253677084c184b5762d2f6f6b09ca2c624f1295f",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/regional/company_deterministic.csv"
+  },
+  {
+   "path": "downloads/global/regional/eu_bank_exposure_bounds_used.json",
+   "label": "Regional adapter output: eu_bank_exposure_bounds_used.json",
+   "mediaType": "application/json",
+   "bytes": 342,
+   "sha256": "64cb834e795aca5ae131413bce238a95aca537d8e288f122be0d8e415e4f4900",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/regional/eu_bank_exposure_bounds_used.json"
+  },
+  {
+   "path": "downloads/global/regional/eu_project_rows_deterministic.csv",
+   "label": "Regional adapter output: eu_project_rows_deterministic.csv",
+   "mediaType": "text/csv",
+   "bytes": 10621,
+   "sha256": "a0fc782a8dfea5a9fd496efea68c047e968fe1d24988364d8991b4fa3f99826a",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/regional/eu_project_rows_deterministic.csv"
+  },
+  {
+   "path": "downloads/global/regional/module_pins_and_sources.json",
+   "label": "Regional adapter output: module_pins_and_sources.json",
+   "mediaType": "application/json",
+   "bytes": 334,
+   "sha256": "d8ff0ad5a8046f914b3359e486a988ac2a107a3cd6ff28c2b56a66e6f5a83147",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/regional/module_pins_and_sources.json"
+  },
+  {
+   "path": "downloads/global/regional/swiss_deterministic.csv",
+   "label": "Regional adapter output: swiss_deterministic.csv",
+   "mediaType": "text/csv",
+   "bytes": 40993,
+   "sha256": "2244cf98e2fed5aacfa776495e2327e56f873a547cec6b675e5f1027ca8a2bc0",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/global/outputs/regional/swiss_deterministic.csv"
+  },
+  {
+   "path": "downloads/company/commitment_inventory.json",
+   "label": "Gross commitment inventory (15 items, not added to cash uses)",
+   "mediaType": "application/json",
+   "bytes": 8930,
+   "sha256": "ae056a5bed9e10141390a63aecee8070c462e107d129c0a163c3771b72813d45",
+   "category": "evidence",
+   "sourceArtifact": "run-root/models/company/output/commitment_inventory.json"
+  },
+  {
+   "path": "downloads/china/china_deterministic_scenarios.csv",
+   "label": "China transmission: deterministic scenarios (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 13729,
+   "sha256": "ee73f392cbe02220945ab122c1a1b20729022f7ed3b8d01fc588eeb911e2c6f9",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/china/deterministic-scenarios.csv"
+  },
+  {
+   "path": "downloads/china/china_monte_carlo_summary.json",
+   "label": "China: 2,000-draw parameter-design percentiles (JSON)",
+   "mediaType": "application/json",
+   "bytes": 10201,
+   "sha256": "f74d8ac1de0599e5ac3a70690f52b9e11f3aec3cbf06a2e16825330c5e3ad44b",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/china/monte-carlo-summary.json"
+  },
+  {
+   "path": "downloads/china/household_property_balance_sheet.csv",
+   "label": "China household and property balance-sheet observations (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 5617,
+   "sha256": "2e30c8f83fbcffbc49fa2e0055edfbe218c63be0503a2110176bf8d68739c885",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.csv"
+  },
+  {
+   "path": "downloads/eu/eu_materials_scenario_2030.csv",
+   "label": "EU NdFeB scenario accounting (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 456,
+   "sha256": "1a607c9898cea1c487422be0033d4ea5110edcfed67657166b8e98b37b6205ad",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/eu/outputs/materials_scenario_2030.csv"
+  },
+  {
+   "path": "downloads/eu/eu_materials_scenario_2030.json",
+   "label": "EU NdFeB scenario accounting (JSON)",
+   "mediaType": "application/json",
+   "bytes": 264675,
+   "sha256": "d1ba7ef6c6bc64bfbca32d4d80a262c2219a2ffae6c79f0ac6130e9fda1b5428",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/eu/outputs/materials_scenario_2030.json"
+  },
+  {
+   "path": "downloads/eu/eu_project_capacity_scenarios.csv",
+   "label": "EU recycling-project capacity scenarios (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 93207,
+   "sha256": "e904fff35d3e83dfa765e6f9034a3b2a966f61c6e73cbae04cb73ade47825c84",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/eu/outputs/project_capacity_scenarios.csv"
+  },
+  {
+   "path": "downloads/eu/magnet_mass_balance.csv",
+   "label": "EU magnet mass balance and cohort inputs (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 13733,
+   "sha256": "bc1b16ee9293de0cc6c531c0d5965f1b6b9076f43356c702547ba1c43cf8a755",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.csv"
+  },
+  {
+   "path": "downloads/eu/magnet_mass_balance.json",
+   "label": "EU magnet mass balance and cohort inputs (JSON)",
+   "mediaType": "application/json",
+   "bytes": 27724,
+   "sha256": "d7c42e4cb22fcfde733a2c1c7e4947de433832f075afeec31ed015a4c0c38152",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.json"
+  },
+  {
+   "path": "downloads/eu/bank_sector_exposure_bounds.json",
+   "label": "EU bank exposure bounds to US/China (partial coverage, JSON)",
+   "mediaType": "application/json",
+   "bytes": 65179,
+   "sha256": "eb1d6b08147657a291d8cab59cc3a79e1645329d5b4b511bcfdba7d0a7384459",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/bank-sector-exposure-bounds.json"
+  },
+  {
+   "path": "downloads/swiss/swiss_deterministic_branches.csv",
+   "label": "Swiss GDP/CHF/CPI/market-access branches (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 61463,
+   "sha256": "5ee736b2209161734847586fcf98e36e3ba7f25bafc6ab1b8caf44cdab2cfeb1",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/swiss/outputs/deterministic.csv"
+  },
+  {
+   "path": "downloads/swiss/swiss_deterministic_branches.json",
+   "label": "Swiss deterministic branches (JSON)",
+   "mediaType": "application/json",
+   "bytes": 103185,
+   "sha256": "63c802c8f6d962ff430e00171b3997241b48e05f0d9ba4642c78f28f247de7a3",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/swiss/outputs/deterministic.json"
+  },
+  {
+   "path": "downloads/swiss/swiss_monte_carlo_summary.json",
+   "label": "Swiss severe-combined: 2,000-draw design percentiles (JSON)",
+   "mediaType": "application/json",
+   "bytes": 2823,
+   "sha256": "2a7bbe2237fc6671cfc77fa604d0d4de1d43fcc8099c9485237b23b97ce563ec",
+   "category": "model-output",
+   "sourceArtifact": "run-root/models/swiss/outputs/monte_carlo_summary.json"
+  },
+  {
+   "path": "downloads/swiss/observed_import_price_and_cpi_panel.csv",
+   "label": "Swiss observed import-price, CPI, FX and merchanting panel (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 6539,
+   "sha256": "1fe8dfb9aaac0a9f8c10254392ea22216118c0833144a6953beb43089dc740a0",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.csv"
+  },
+  {
+   "path": "downloads/swiss/observed_import_price_and_cpi_panel.json",
+   "label": "Swiss observed import-price, CPI, FX and merchanting panel (JSON)",
+   "mediaType": "application/json",
+   "bytes": 10898,
+   "sha256": "54791f53b57abb94f03576e4825f1b2611699b23b2e611b54e78771865750cc7",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.json"
+  },
+  {
+   "path": "downloads/us/debt_commitment_bridge.csv",
+   "label": "US five-firm debt and commitment bridge inputs (CSV)",
+   "mediaType": "text/csv",
+   "bytes": 20376,
+   "sha256": "17f9045c10f740d00858d7023aa3d5a6dce682a541b321ce641c8bb44f6af918",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.csv"
+  },
+  {
+   "path": "downloads/us/debt_commitment_bridge.json",
+   "label": "US five-firm debt and commitment bridge inputs (JSON)",
+   "mediaType": "application/json",
+   "bytes": 20496,
+   "sha256": "9a58375d613f6bc5ab09731f2b4b0b69ee319232e65bf3a18d79c6404791ddf2",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.json"
+  },
+  {
+   "path": "downloads/global/telecom_analogue_comparison.json",
+   "label": "Telecom 2001 analogue comparison (JSON)",
+   "mediaType": "application/json",
+   "bytes": 7953,
+   "sha256": "5478115c0d568e51620e3b93a07204050b1fa762ea7aa9095690dfe94d9805e3",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/telecom-analogue-comparison.json"
+  },
+  {
+   "path": "downloads/global/verizon_source_excerpts.json",
+   "label": "Verizon FY2001 source excerpts (JSON)",
+   "mediaType": "application/json",
+   "bytes": 2691,
+   "sha256": "55d252b858356a52bb5947331c17147a2e29d29b2066d4ade5baa2456b90290c",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/verizon-source-excerpts.json"
+  },
+  {
+   "path": "downloads/global/global_network_exposure.json",
+   "label": "Global network exposure evidence (JSON)",
+   "mediaType": "application/json",
+   "bytes": 6127,
+   "sha256": "a1f8825c324bd60092e51d3695861f87d5bc3fffd2ea2eefbf4e7756d315fb7a",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/global-network-exposure.json"
+  },
+  {
+   "path": "downloads/global/four_region_transmission_bounds.json",
+   "label": "Four-region transmission bounds (JSON)",
+   "mediaType": "application/json",
+   "bytes": 24411,
+   "sha256": "e757b19acc38731f1fa7733007bf21c92f7ee30b6e6ac38da72c36a79d566b47",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/four-region-transmission-bounds.json"
+  },
+  {
+   "path": "downloads/evidence/us_baseline.json",
+   "label": "US: baseline (JSON)",
+   "mediaType": "application/json",
+   "bytes": 48963,
+   "sha256": "781ed837e260bbe85e67c64a2b317f66d6eafbffbad17029730a016ae1540f62",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/baseline.json"
+  },
+  {
+   "path": "downloads/evidence/us_claim-ledger.json",
+   "label": "US: claim ledger (JSON)",
+   "mediaType": "application/json",
+   "bytes": 14843,
+   "sha256": "3eaa9bbb79857d08f419f0bec501d3b42980049ad627dc7f18bb1a6808c6107e",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/claim-ledger.json"
+  },
+  {
+   "path": "downloads/evidence/us_source-registry.json",
+   "label": "US: source registry (JSON)",
+   "mediaType": "application/json",
+   "bytes": 48062,
+   "sha256": "234a4eec53106d3e391a6c352bb9d9f7c7b3cdceb8a7fbf295c4cf6a83987b03",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/source-registry.json"
+  },
+  {
+   "path": "downloads/evidence/us_mechanism-coverage.json",
+   "label": "US: mechanism coverage (JSON)",
+   "mediaType": "application/json",
+   "bytes": 31677,
+   "sha256": "084f6c00b2ecdd37ebfc296531a0618cfba9290ddb82056f982c4f036d0afa80",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json"
+  },
+  {
+   "path": "downloads/evidence/china_baseline.json",
+   "label": "CHINA: baseline (JSON)",
+   "mediaType": "application/json",
+   "bytes": 27453,
+   "sha256": "05a1b6bedd51923045b9b024725ec90eebf1875453a2f810d73b13c646f5590b",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/baseline.json"
+  },
+  {
+   "path": "downloads/evidence/china_claim-ledger.json",
+   "label": "CHINA: claim ledger (JSON)",
+   "mediaType": "application/json",
+   "bytes": 11398,
+   "sha256": "faa7b83e1af39042bbf8eec52735d801a0bfa318ac5e6e1ffc17537403be1bdd",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/claim-ledger.json"
+  },
+  {
+   "path": "downloads/evidence/china_source-registry.json",
+   "label": "CHINA: source registry (JSON)",
+   "mediaType": "application/json",
+   "bytes": 28228,
+   "sha256": "4e40080d187ebc780025bdd81cda83b10d1405fde6f2ccdebf9e0e5dfa918a07",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/source-registry.json"
+  },
+  {
+   "path": "downloads/evidence/china_mechanism-coverage.json",
+   "label": "CHINA: mechanism coverage (JSON)",
+   "mediaType": "application/json",
+   "bytes": 30932,
+   "sha256": "4e54999ef1d70b367aeac32daab733c5ed5738752bcbfa390341e02fb67d7642",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json"
+  },
+  {
+   "path": "downloads/evidence/eu_baseline.json",
+   "label": "EU: baseline (JSON)",
+   "mediaType": "application/json",
+   "bytes": 12189,
+   "sha256": "cedb206b5189b5691516f682b82aba8e78ff3deeb55cf442b540a8e75375b0a0",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/baseline.json"
+  },
+  {
+   "path": "downloads/evidence/eu_claim-ledger.json",
+   "label": "EU: claim ledger (JSON)",
+   "mediaType": "application/json",
+   "bytes": 12420,
+   "sha256": "3478296593b8a653abce183bd105bae0683074652e1edac6d0286c7bcb6b05e6",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/claim-ledger.json"
+  },
+  {
+   "path": "downloads/evidence/eu_source-registry.json",
+   "label": "EU: source registry (JSON)",
+   "mediaType": "application/json",
+   "bytes": 53745,
+   "sha256": "9bf68bccdc6a08248b8a551ca6617534ca22722142e0208e9594ee215816f046",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/source-registry.json"
+  },
+  {
+   "path": "downloads/evidence/eu_mechanism-coverage.json",
+   "label": "EU: mechanism coverage (JSON)",
+   "mediaType": "application/json",
+   "bytes": 40375,
+   "sha256": "574472a72a7da4b97fc34538609cd7a2d05b59cf17f569fed4bf734324ac2f33",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json"
+  },
+  {
+   "path": "downloads/evidence/swiss_baseline.json",
+   "label": "SWISS: baseline (JSON)",
+   "mediaType": "application/json",
+   "bytes": 10170,
+   "sha256": "0715c4552966f5020e1a585c87959de7185dee9c89105a8245924ed1fb3547af",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/baseline.json"
+  },
+  {
+   "path": "downloads/evidence/swiss_claim-ledger.json",
+   "label": "SWISS: claim ledger (JSON)",
+   "mediaType": "application/json",
+   "bytes": 10139,
+   "sha256": "cd56999df4ac7a765165ea05a65cb5ba6926db19682df41ec58ec8dbdab4aa1f",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/claim-ledger.json"
+  },
+  {
+   "path": "downloads/evidence/swiss_source-registry.json",
+   "label": "SWISS: source registry (JSON)",
+   "mediaType": "application/json",
+   "bytes": 36935,
+   "sha256": "7c1d3dad6636d612e9d1260438a63b107f24e1bc71abeb7d1a0b0a97a16464c9",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/source-registry.json"
+  },
+  {
+   "path": "downloads/evidence/swiss_mechanism-coverage.json",
+   "label": "SWISS: mechanism coverage (JSON)",
+   "mediaType": "application/json",
+   "bytes": 36513,
+   "sha256": "787e5ca413b762d5c546808b323e80c1b0a25096e54111be09a0d4e96cf8fa44",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json"
+  },
+  {
+   "path": "downloads/evidence/global_baseline.json",
+   "label": "Global: baseline (JSON)",
+   "mediaType": "application/json",
+   "bytes": 11351,
+   "sha256": "bd5f5f6a5b994d4fa73d41303bb38aa6740cca1cdf952e3110362409bc07cc2a",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/baseline.json"
+  },
+  {
+   "path": "downloads/evidence/global_claim-ledger.json",
+   "label": "Global: claim ledger (JSON)",
+   "mediaType": "application/json",
+   "bytes": 7431,
+   "sha256": "5e7aa0e70646719af23cab02896450e51c48c3db37b2d56cf151bddb80d5af98",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/claim-ledger.json"
+  },
+  {
+   "path": "downloads/evidence/global_source-registry.json",
+   "label": "Global: source registry (JSON)",
+   "mediaType": "application/json",
+   "bytes": 29466,
+   "sha256": "9f307f74fedb474a777593bbac85498375dd8e66b878de796c2111ef60881842",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/source-registry.json"
+  },
+  {
+   "path": "downloads/evidence/global_mechanism-coverage.json",
+   "label": "Global: mechanism coverage (JSON)",
+   "mediaType": "application/json",
+   "bytes": 18850,
+   "sha256": "e860e787c16692b219acb01c07c3b4248fa5d547d2ca686c1cb72e98a009190c",
+   "category": "evidence",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json"
+  },
+  {
+   "path": "downloads/evidence/accepted_bundle.json",
+   "label": "Accepted research bundle (manifest, JSON)",
+   "mediaType": "application/json",
+   "bytes": 27518,
+   "sha256": "e50e4a6314c9f14a6b3b271b4a7a27ae508fb4d8b8dc133755467bd3b976809e",
+   "category": "governance",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-bundle.json"
+  },
+  {
+   "path": "downloads/evidence/accepted_use_limits.json",
+   "label": "Accepted use limits U01–U08 (JSON)",
+   "mediaType": "application/json",
+   "bytes": 3940,
+   "sha256": "06f7ecf8cec51b793db45f902df70fc80e6bf507eb0f9a442a3c60e754afe3bc",
+   "category": "governance",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-use-limits.json"
+  },
+  {
+   "path": "downloads/evidence/reviewer_corrections.json",
+   "label": "Reviewer corrections (JSON)",
+   "mediaType": "application/json",
+   "bytes": 3010,
+   "sha256": "8581df81bad59d3fa971645b1508752e708080b2f84f52a0d02254424e06cb14",
+   "category": "governance",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/reviewer-corrections.json"
+  },
+  {
+   "path": "downloads/evidence/mechanism_depth_review.json",
+   "label": "Mechanism depth review, 32 dispositions (JSON)",
+   "mediaType": "application/json",
+   "bytes": 54414,
+   "sha256": "ff47cb551f3651a95258ea3bd185f82d31e65b540505635293d3d1774d9ea3d4",
+   "category": "governance",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/mechanism-depth-review.json"
+  },
+  {
+   "path": "downloads/evidence/research_review_findings.md",
+   "label": "Research re-review findings (Markdown)",
+   "mediaType": "text/markdown",
+   "bytes": 3371,
+   "sha256": "f3c7c99aab22ed51010de2122e1a453424867018e549f455b2a7d0ec51327f77",
+   "category": "governance",
+   "sourceArtifact": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/findings.md"
+  },
+  {
+   "path": "downloads/models/execution_manifest.json",
+   "label": "Accepted model execution manifest (JSON)",
+   "mediaType": "application/json",
+   "bytes": 4210,
+   "sha256": "a05c45307cadf95591a99be9673da2ce6801e56e66b61f7fefecc2549d801e1b",
+   "category": "governance",
+   "sourceArtifact": "run-root/simulations/execution-rerun_models-1792005512896.json"
+  },
+  {
+   "path": "downloads/models/model_re_review_findings.json",
+   "label": "Model re-review acceptance findings (JSON)",
+   "mediaType": "application/json",
+   "bytes": 1773,
+   "sha256": "c1a084f92658d59fc24467956c1a48605b38dc2775729f135624621c5f53fdb2",
+   "category": "governance",
+   "sourceArtifact": "run-root/reviews/models/model_re_review/iteration-0/findings.json"
+  },
+  {
+   "path": "downloads/hosting/hosting_status.md",
+   "label": "Hosting status and free-tier terms, checked 2026-10-14 (Markdown)",
+   "mediaType": "text/markdown",
+   "bytes": 4465,
+   "sha256": "d80f6a818e521c0e2585c1f422509912e288433eb74784ea3053055c7d4816ee",
+   "category": "governance",
+   "sourceArtifact": "run-root/website/docs/HOSTING_STATUS.md"
+  },
+  {
+   "path": "downloads/hosting/deployment_runbook.md",
+   "label": "Deployment runbook and rollback (Markdown)",
+   "mediaType": "text/markdown",
+   "bytes": 10360,
+   "sha256": "959041be9dbe8ccb15296cead10d7c6848ae5e56a5082069aa15c83027e12cfc",
+   "category": "governance",
+   "sourceArtifact": "run-root/website/docs/DEPLOYMENT.md"
+  },
+  {
+   "path": "downloads/methods/model_risk_and_methods.md",
+   "label": "Methodology, model-risk and reproducibility notes (Markdown)",
+   "mediaType": "text/markdown",
+   "bytes": 7247,
+   "sha256": "40297aa89643f49dcc36ac0a43d7c22b9ec87597e58a2b67238d3a3a5e5932b2",
+   "category": "method",
+   "sourceArtifact": "run-root/website/docs/MODEL_RISK.md"
+  }
+ ],
+ "totalBytes": 2040030,
+ "excludedFromSite": [
+  {
+   "path": "models/swiss/outputs/monte_carlo.json",
+   "bytes": 43582425,
+   "reason": "Too large for a lightweight static download (43.6 MB raw draws). Summary percentiles are published as swiss_monte_carlo_summary.json."
+  },
+  {
+   "path": "models/company/output/conditional_monte_carlo_2030.csv",
+   "reason": "Accepted file predates the company-code correction on refinancing proceeds and is withheld until the company module is re-run and re-accepted."
+  },
+  {
+   "path": "models/company/output/deterministic_paths.csv",
+   "reason": "Withheld. The accepted snapshot omits refinancing proceeds (MR02), and the current-code regeneration (website/build/derived/company/) has not been re-accepted."
+  },
+  {
+   "path": "website/build/derived/company/",
+   "reason": "Withheld. Current-code regeneration is not part of the accepted execution; no company simulated values are published."
+  },
+  {
+   "path": "software-test fixture folder",
+   "reason": "Synthetic software-test fixtures; never used in research or site."
+  },
+  {
+   "path": "workflow runtime folders, prompts and logs",
+   "reason": "Workflow runtime, prompts and logs; not economic evidence."
+  }
+ ],
+ "classification": "Downloads are model outputs, evidence extracts and governance records; not forecasts."
+}

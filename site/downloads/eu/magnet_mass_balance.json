@@ -1,0 +1,722 @@
+{
+  "title": "EU NdFeB permanent-magnet research feasibility mass balance",
+  "asOf": "2026-10-14",
+  "units": "magnet mass in metric tonnes unless otherwise stated; elemental shares are mass fractions; REE output is not magnet mass",
+  "method": "Source-linked bounded research feasibility envelope based on Rizos et al. (2022) modelled selected applications. No probability is assigned. Demand and secondary supply are scenario outputs; yields are chain-level scenario outcomes, not plant recovery yield or observed throughput. This is not a forecast and not proof of exact 30% sufficiency.",
+  "scope": "Selected application cohorts in CEPS analysis, modeled as approximately 68% of overall EU NdFeB magnet market in 2020; incomplete application coverage means neither demand nor recycling share is whole-EU comprehensive.",
+  "annualBalances": [
+    {
+      "year": 2020,
+      "selectedApplicationDemandKt": {
+        "value": 12,
+        "status": "model estimate"
+      },
+      "theoreticalEndOfLifeAvailableKt": {
+        "value": 6,
+        "status": "model estimate"
+      },
+      "secondarySupplySharePct": {
+        "low": 13,
+        "high": 31,
+        "status": "scenario output"
+      },
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "locator": "PDF pp.38, 42; Figure 12; 2020 demand and TRP are selected-category model estimates.",
+      "derivedSecondarySupplyKt": {
+        "low": 1.56,
+        "high": 3.72,
+        "formula": "selected-application demand (kt) × source modeled secondary supply share (%) / 100",
+        "classification": "transparent arithmetic on source scenario bounds; not observed output"
+      }
+    },
+    {
+      "year": 2025,
+      "selectedApplicationDemandKt": {
+        "low": null,
+        "high": null,
+        "status": "not separately tabulated numerically in extracted source"
+      },
+      "secondarySupplySharePct": {
+        "low": 8,
+        "high": 19,
+        "status": "model scenario envelope for 2025-2030"
+      },
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "locator": "PDF p.42; 8-19% aggregate modeled secondary supply/demand over 2025-2030."
+    },
+    {
+      "year": 2030,
+      "selectedApplicationDemandKt": {
+        "value": 36,
+        "status": "model estimate"
+      },
+      "theoreticalEndOfLifeAvailableKt": {
+        "value": 10,
+        "status": "model estimate; about 27% of selected demand"
+      },
+      "secondarySupplySharePct": {
+        "low": 8,
+        "high": 19,
+        "status": "model scenario envelope"
+      },
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "locator": "PDF pp.38-40, 42; Figure 12. 36 kt modeled demand; ~10 kt theoretical EOL material; 8-19% secondary supply after chain losses.",
+      "derivedSecondarySupplyKt": {
+        "low": 2.88,
+        "high": 6.84,
+        "formula": "selected-application demand (kt) × source modeled secondary supply share (%) / 100",
+        "classification": "transparent arithmetic on source scenario bounds; not observed output"
+      }
+    },
+    {
+      "year": 2040,
+      "selectedApplicationDemandKt": {
+        "value": 51,
+        "status": "model estimate"
+      },
+      "theoreticalEndOfLifeAvailableKt": {
+        "value": null,
+        "status": "not stated as exact value in extracted text"
+      },
+      "secondarySupplySharePct": {
+        "low": 16,
+        "high": 34,
+        "status": "model scenario envelope"
+      },
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "locator": "PDF pp.38,40,42; first significant EV retirements start around 2035; EV EOL magnet availability about 10 kt/year by 2040.",
+      "derivedSecondarySupplyKt": {
+        "low": 8.16,
+        "high": 17.34,
+        "formula": "selected-application demand (kt) × source modeled secondary supply share (%) / 100",
+        "classification": "transparent arithmetic on source scenario bounds; not observed output"
+      }
+    },
+    {
+      "year": 2050,
+      "selectedApplicationDemandKt": {
+        "value": 58,
+        "status": "model estimate"
+      },
+      "theoreticalEndOfLifeAvailableKt": {
+        "low": 33,
+        "high": null,
+        "status": "model estimate; over 33 kt"
+      },
+      "secondarySupplySharePct": {
+        "low": 24,
+        "high": 48,
+        "status": "model scenario envelope"
+      },
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "locator": "PDF pp.38,40,42,44; 24-48% scenario range; high scenario close to 50%.",
+      "derivedSecondarySupplyKt": {
+        "low": 13.92,
+        "high": 27.84,
+        "formula": "selected-application demand (kt) × source modeled secondary supply share (%) / 100",
+        "classification": "transparent arithmetic on source scenario bounds; not observed output"
+      }
+    }
+  ],
+  "cohortsAndChainParameters": [
+    {
+      "parameter": "EV magnet mass per vehicle",
+      "low": 1.25,
+      "high": 2.25,
+      "unit": "kg magnet/vehicle",
+      "centralScenario": 1.9,
+      "locator": "PDF p.30; scenario mix estimate includes auxiliary magnets.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "source range and model assumption"
+    },
+    {
+      "parameter": "EV Nd content",
+      "low": 0.23,
+      "high": 0.23,
+      "unit": "fraction of magnet mass",
+      "centralScenario": 0.23,
+      "locator": "PDF p.30; scenario composition assumption.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "EV Dy content",
+      "low": 0.06,
+      "high": 0.06,
+      "unit": "fraction of magnet mass",
+      "centralScenario": 0.06,
+      "locator": "PDF p.30; scenario composition assumption.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "EV useful lifetime",
+      "low": 13,
+      "high": 13,
+      "unit": "years",
+      "centralScenario": 13,
+      "locator": "Table 3, PDF p.37. Retirements lag sales by modeled lifetime; first large EV EOL stream starts around 2035 under source sales cohorts.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "Conventional vehicle lifetime",
+      "low": 12,
+      "high": 12,
+      "unit": "years",
+      "centralScenario": 12,
+      "locator": "PDF p.32 and Table 3 p.37.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "Conventional vehicle magnet mass",
+      "low": 0.175,
+      "high": 0.25,
+      "unit": "kg magnet/vehicle",
+      "centralScenario": 0.225,
+      "locator": "PDF p.32; cited literature range 175-250g, scenario uses 225g.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "source range and model assumption"
+    },
+    {
+      "parameter": "Onshore wind lifetime",
+      "low": 25,
+      "high": 25,
+      "unit": "years",
+      "centralScenario": 25,
+      "locator": "PDF p.31 / Table 3 p.37.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "Offshore wind lifetime",
+      "low": 30,
+      "high": 30,
+      "unit": "years",
+      "centralScenario": 30,
+      "locator": "PDF p.31 / Table 3 p.37.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "Wind Nd share",
+      "low": 0.285,
+      "high": 0.285,
+      "unit": "fraction of magnet mass",
+      "centralScenario": 0.285,
+      "locator": "PDF p.31.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "Wind Dy share",
+      "low": 0.045,
+      "high": 0.045,
+      "unit": "fraction of magnet mass",
+      "centralScenario": 0.045,
+      "locator": "PDF p.31.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model assumption"
+    },
+    {
+      "parameter": "EV collection rate scenario 1 / scenario 2",
+      "low": 0.5,
+      "high": 0.9,
+      "unit": "fraction of end-of-life application magnets collected",
+      "centralScenario": null,
+      "locator": "Table 3, PDF p.37; scenario parameter, not EU measured rate. General ELV references on p.30 discuss 90-100% vehicle collection but unknown whereabouts and exports complicate effective magnet collection.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model scenarios"
+    },
+    {
+      "parameter": "EV dismantling rate scenario 1 / scenario 2",
+      "low": 0.85,
+      "high": 0.95,
+      "unit": "fraction of collected EOL magnets disassembled",
+      "centralScenario": null,
+      "locator": "Table 3, PDF p.37.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "model scenarios"
+    },
+    {
+      "parameter": "ELV extra-EU export and unknown whereabouts",
+      "low": 0.15,
+      "high": 0.2,
+      "unit": "fraction of ELVs with known whereabouts exported; roughly one-third whereabouts unknown",
+      "centralScenario": null,
+      "locator": "PDF p.30, discussion of ELV scenarios; do not multiply twice into Table 3 collection parameters.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "source-stated bounds/qualification"
+    },
+    {
+      "parameter": "Manufacturing scrap quantity",
+      "low": null,
+      "high": null,
+      "unit": "tonnes/year",
+      "centralScenario": null,
+      "locator": "No EU NdFeB manufacturing-scrap mass-flow total reported in this selected-EOL cohort model; excluded from EOL secondary supply. Unknown, not zero.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "unresolved evidence gap"
+    },
+    {
+      "parameter": "Nd/Pr/Dy/Tb composition coverage",
+      "low": null,
+      "high": null,
+      "unit": "element mass fraction of EU magnet demand",
+      "centralScenario": null,
+      "locator": "Rizos gives selected application Nd and Dy assumptions; no complete EU-wide Nd/Pr/Dy/Tb demand/stock composition series. Table must not impute Pr or Tb.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "unresolved evidence gap"
+    },
+    {
+      "parameter": "Physical recycling/refining element yields",
+      "low": null,
+      "high": null,
+      "unit": "fraction of feed recovered as separated oxide/metal",
+      "centralScenario": null,
+      "locator": "Study reports end-to-end secondary supply scenario results after collection, dismantling and physical recycling, but no general plant-level separated oxide/metal recovery yield suitable for universal use. Plant-private feed economics and output yields remain unavailable.",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "type": "unresolved evidence gap"
+    }
+  ],
+  "capacityAndStageLedger": [
+    {
+      "project": "Caremag magnet feed",
+      "stage": "planned input nameplate",
+      "capacityTonnesPerYear": 2000,
+      "material": "used magnets",
+      "statusAtCutoff": "planned; commissioning scheduled late 2026; no audited throughput located",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_INFRAVIA_2026"
+      ],
+      "locator": "Company project disclosures; magnet and concentrate streams are distinct."
+    },
+    {
+      "project": "Caremag concentrate feed",
+      "stage": "planned input nameplate",
+      "capacityTonnesPerYear": 5000,
+      "material": "mining concentrates",
+      "statusAtCutoff": "planned; primary concentrate feed, not recycled magnet feed; no audited throughput located",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_INFRAVIA_2026"
+      ],
+      "locator": "Company project disclosures; do not count as magnet recycling capacity."
+    },
+    {
+      "project": "Caremag mixed Dy/Tb oxide",
+      "stage": "designed output",
+      "capacityTonnesPerYear": 600,
+      "material": "mixed Dy/Tb oxide",
+      "statusAtCutoff": "planned output; not observed",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING"
+      ],
+      "locator": "Company design disclosure."
+    },
+    {
+      "project": "Caremag NdPr oxide",
+      "stage": "designed output",
+      "capacityTonnesPerYear": 800,
+      "material": "NdPr oxide",
+      "statusAtCutoff": "planned output; not observed",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING"
+      ],
+      "locator": "Company design disclosure."
+    },
+    {
+      "project": "Neo Silmet HREE line",
+      "stage": "small-scale separation line commissioned",
+      "capacityTonnesPerYear": null,
+      "material": "Tb/Dy process solutions",
+      "statusAtCutoff": "commissioned; first process solutions reported, capacity and throughput not disclosed; product solutions are not separated oxide/metal/magnet output",
+      "sourceIds": [
+        "NEO_SILMET_HREE_LINE_2026"
+      ],
+      "locator": "Company disclosure."
+    },
+    {
+      "project": "Neo Narva magnet facility",
+      "stage": "magnet-block nameplate",
+      "capacityTonnesPerYear": 2000,
+      "material": "NdFeB magnet blocks",
+      "statusAtCutoff": "commercial production reported; actual annual throughput/utilization not disclosed; downstream magnet manufacture is not recycling",
+      "sourceIds": [
+        "NEO_2024_AIF",
+        "NEO_NARVA_COMMERCIAL_2026"
+      ],
+      "locator": "Company/Estonian investment agency disclosures."
+    },
+    {
+      "project": "Solvay La Rochelle",
+      "stage": "operating separation expansion / company objective",
+      "capacityTonnesPerYear": null,
+      "material": "rare-earth separation; company states aim to meet 30% of European rare-earth demand by 2030",
+      "statusAtCutoff": "company objective; denominator, magnet-specific share and actual output not disclosed in located release",
+      "sourceIds": [
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ],
+      "locator": "Company release; not a 30% magnet recycling sufficiency observation."
+    }
+  ],
+  "identityChecks": {
+    "secondarySupplyShareDefinition": "secondary magnet mass / selected-application magnet demand × 100%; use model-reported scenario envelope rather than multiplying theoretical EOL potential by a fabricated yield",
+    "2030TheoreticalAvailabilityRatioPct": 27,
+    "calculation": "10 kt / 36 kt × 100 = 27.78%; source rounds to about 27%, small difference attributable to rounded reported inputs",
+    "elementToProductWarning": "Tonnes of separated oxide, contained element, magnet blocks, used magnets, ore or concentrate are not interchangeable."
+  },
+  "sources": [
+    {
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "retrieval": "Archived PDF; raw/ rizos_2022_eu_magnet_recycling.pdf",
+      "locators": [
+        "PDF pp.30-32: assumptions and cohort timing",
+        "PDF p.37 Table 3: lifetime, magnet intensity, collection/disassembly scenarios",
+        "PDF pp.38-42 Figures 10-12: demand, theoretical EOL potential, secondary supply scenarios",
+        "PDF pp.43-44: conclusions and long-run scenario range"
+      ]
+    },
+    {
+      "sourceId": "JRC_FORESIGHT_2023",
+      "retrieval": "Archived JRC132889 PDF; raw/jrc_foresight_2023.pdf",
+      "locators": [
+        "PDF p.54: end-of-life recycling input rate below 1%, and wind magnet lifetime/late deployment constrain near-term secondary sources",
+        "PDF p.152: cites Rizos et al. 2022 EU magnet recycling scenario ranges; detailed source-linked quantitative extraction is from Rizos itself"
+      ]
+    },
+    {
+      "sourceId": "JRC_WIND_DECOMMISSIONING_2025",
+      "locators": [
+        "JRC report on EU wind installation cohorts and material outflows to 2050; elemental flows, not magnet mass"
+      ]
+    },
+    {
+      "sourceId": "JRC_WIND_REE_OUTFLOWS_2026",
+      "locator": "JRC148174 handle, brief dated 2026-10-06; estimates 350 t/year aggregate REE outflow from wind turbines by 2050; elemental outflow, not processed recycled output; lifetime assumption sensitivity."
+    }
+  ],
+  "applicationCohorts": [
+    {
+      "application": "EVs",
+      "lifetimeYears": 13,
+      "magnetIntensity": 1.9,
+      "magnetIntensityUnit": "kg/vehicle",
+      "collectionRatePctScenario1": 50,
+      "collectionRatePctScenario2": 90,
+      "disassemblyEfficiencyPctScenario1": 85,
+      "disassemblyEfficiencyPctScenario2": 95,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Conventional vehicles",
+      "lifetimeYears": 12,
+      "magnetIntensity": 0.225,
+      "magnetIntensityUnit": "kg/vehicle",
+      "collectionRatePctScenario1": 50,
+      "collectionRatePctScenario2": 90,
+      "disassemblyEfficiencyPctScenario1": 40,
+      "disassemblyEfficiencyPctScenario2": 60,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Electric bicycles",
+      "lifetimeYears": 6,
+      "magnetIntensity": 0.27,
+      "magnetIntensityUnit": "kg/application",
+      "collectionRatePctScenario1": 50,
+      "collectionRatePctScenario2": 90,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Electric scooters",
+      "lifetimeYears": 6,
+      "magnetIntensity": 0.27,
+      "magnetIntensityUnit": "kg/application",
+      "collectionRatePctScenario1": 50,
+      "collectionRatePctScenario2": 90,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Electric motorbikes",
+      "lifetimeYears": 6,
+      "magnetIntensity": 0.27,
+      "magnetIntensityUnit": "kg/application",
+      "collectionRatePctScenario1": 50,
+      "collectionRatePctScenario2": 90,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Wind turbines (onshore)",
+      "lifetimeYears": 25,
+      "magnetIntensity": 160,
+      "magnetIntensityUnit": "kg/MW hybrid-drive turbine",
+      "collectionRatePctScenario1": 90,
+      "collectionRatePctScenario2": 99,
+      "disassemblyEfficiencyPctScenario1": 90,
+      "disassemblyEfficiencyPctScenario2": 95,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Wind turbines (offshore)",
+      "lifetimeYears": 30,
+      "magnetIntensity": 650,
+      "magnetIntensityUnit": "kg/MW direct-drive turbine",
+      "collectionRatePctScenario1": 90,
+      "collectionRatePctScenario2": 99,
+      "disassemblyEfficiencyPctScenario1": 90,
+      "disassemblyEfficiencyPctScenario2": 95,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Desktop computers",
+      "lifetimeYears": 8,
+      "magnetIntensity": 0.013,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Laptop computers",
+      "lifetimeYears": 6,
+      "magnetIntensity": 0.005,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Smartphones",
+      "lifetimeYears": 3,
+      "magnetIntensity": 0.001,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Printers",
+      "lifetimeYears": 5,
+      "magnetIntensity": 0.015,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Digital cameras",
+      "lifetimeYears": 6,
+      "magnetIntensity": 0.005,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Electric shavers",
+      "lifetimeYears": 4,
+      "magnetIntensity": 0.001,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Headphones and earphones",
+      "lifetimeYears": 9,
+      "magnetIntensity": 0.0017,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Microphones",
+      "lifetimeYears": 9,
+      "magnetIntensity": 0.0017,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Loudspeakers",
+      "lifetimeYears": 9,
+      "magnetIntensity": 0.026,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 60,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 60,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Washing and drying machines",
+      "lifetimeYears": 12,
+      "magnetIntensity": 0.135,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 48,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Air conditioners",
+      "lifetimeYears": 11,
+      "magnetIntensity": 0.325,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 48,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Refrigerators",
+      "lifetimeYears": 15,
+      "magnetIntensity": 0.2,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 48,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Dishwashing machines",
+      "lifetimeYears": 12,
+      "magnetIntensity": 0.05,
+      "magnetIntensityUnit": "kg/device",
+      "collectionRatePctScenario1": 48,
+      "collectionRatePctScenario2": 85,
+      "disassemblyEfficiencyPctScenario1": 75,
+      "disassemblyEfficiencyPctScenario2": 90,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Industrial robots",
+      "lifetimeYears": 12,
+      "magnetIntensity": 8.5,
+      "magnetIntensityUnit": "kg/application",
+      "collectionRatePctScenario1": 40,
+      "collectionRatePctScenario2": 80,
+      "disassemblyEfficiencyPctScenario1": 40,
+      "disassemblyEfficiencyPctScenario2": 60,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Industrial pumps",
+      "lifetimeYears": 22,
+      "magnetIntensity": 0.35,
+      "magnetIntensityUnit": "kg/application",
+      "collectionRatePctScenario1": 40,
+      "collectionRatePctScenario2": 80,
+      "disassemblyEfficiencyPctScenario1": 40,
+      "disassemblyEfficiencyPctScenario2": 60,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    },
+    {
+      "application": "Industrial motors",
+      "lifetimeYears": 13,
+      "magnetIntensity": 0.175,
+      "magnetIntensityUnit": "kg/application",
+      "collectionRatePctScenario1": 40,
+      "collectionRatePctScenario2": 80,
+      "disassemblyEfficiencyPctScenario1": 40,
+      "disassemblyEfficiencyPctScenario2": 60,
+      "sourceId": "RIZOS_MAGNET_CESEPS_2022",
+      "sourceLocator": "Table 3, PDF p.37; model input assumptions, not measured EU collection/output rates."
+    }
+  ],
+  "applicationCohortsLocator": "Rizos et al. 2022, Table 3, PDF p.37. Rates are percent of application-specific theoretical end-of-life magnet stream; reported in modeled scenarios. Wind magnet mass intensity distinguishes hybrid onshore and direct-drive offshore configurations."
+}

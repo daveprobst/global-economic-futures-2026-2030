@@ -1,0 +1,115 @@
+{
+  "title": "Bounded cross-region financial exposure extract",
+  "sourceId": "BIS_CBS_PUB_2026Q1",
+  "asOf": "2026-10-14",
+  "retrievedAt": "2026-10-14T17:21:59Z",
+  "measure": "BIS CBS consolidated international claims; reporter bank nationality; immediate counterparty residence; amounts outstanding; all instruments/maturities/sectors/booking currencies.",
+  "rows": [
+    {
+      "reporterNationality": "FR",
+      "counterpartyResidence": "DE",
+      "period": "2026-Q1",
+      "value": 337.859,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.FR.4O.F.I.A.A.TO1.A.DE",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    },
+    {
+      "reporterNationality": "FR",
+      "counterpartyResidence": "CH",
+      "period": "2026-Q1",
+      "value": 69.701,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.FR.4O.F.I.A.A.TO1.A.CH",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    },
+    {
+      "reporterNationality": "FR",
+      "counterpartyResidence": "US",
+      "period": "2026-Q1",
+      "value": 482.844,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.FR.4O.F.I.A.A.TO1.A.US",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    },
+    {
+      "reporterNationality": "GB",
+      "counterpartyResidence": "US",
+      "period": "2026-Q1",
+      "value": 1190.985,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.GB.4O.F.I.A.A.TO1.A.US",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    },
+    {
+      "reporterNationality": "GB",
+      "counterpartyResidence": "FR",
+      "period": "2026-Q1",
+      "value": 306.989,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.GB.4O.F.I.A.A.TO1.A.FR",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    },
+    {
+      "reporterNationality": "GB",
+      "counterpartyResidence": "DE",
+      "period": "2026-Q1",
+      "value": 112.712,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.GB.4O.F.I.A.A.TO1.A.DE",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    },
+    {
+      "reporterNationality": "GB",
+      "counterpartyResidence": "CH",
+      "period": "2026-Q1",
+      "value": 50.309,
+      "unit": "USD billion, gross international claims outstanding",
+      "status": "observed",
+      "seriesKey": "Q.S.GB.4O.F.I.A.A.TO1.A.CH",
+      "sourceId": "BIS_CBS_PUB_2026Q1",
+      "locator": "BIS WS_CBS_PUB API v2; selected CSV response, row dimensions FREQ=Q; L_MEASURE=S; CBS basis=F immediate-counterparty; position=I international claims; currencies=TO1 all; sector=A; all instruments/maturities."
+    }
+  ],
+  "coverageNote": "Fresh bounded query returned 7 numeric rows: FR and GB bank-nationality reporters against DE, CH and US counterpart residents. GB is not part of the EU. No numeric US, China or Swiss reporter rows, and no China counterpart rows, were returned in this selected query. These are missing/not returned, never zero. Gross bank-nationality claims cannot be attributed to the whole reporter country or used as net positions, funding flows or causal multipliers.",
+  "retrievalHistory": [
+    {
+      "timestamp": "2026-10-14T18:50:00Z",
+      "status": "rejected_unverifiable_future_stamp",
+      "reason": "This asserted time postdated the 2026-10-14 16:54 UTC stable rejection snapshot; exact original retrieval time not independently logged."
+    },
+    {
+      "timestamp": "2026-10-14T17:25:29Z",
+      "status": "reverified_partial",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/bis/bis-cbs-selected-pairs-q12026.csv",
+      "httpStatus": 200,
+      "returnedNumericRows": 7,
+      "meaning": "Only the 7 rows returned by the bounded multi-series query are in the current exposure table; non-returned combinations are not zero."
+    },
+    {
+      "timestamp": "2026-10-14T17:25:29Z",
+      "status": "superseded_unverifiable_alignment",
+      "reason": "Aggregate file timestamp had no corresponding raw request manifest timestamp; canonical time reset to the archived BIS request metadata timestamp."
+    },
+    {
+      "timestamp": "2026-10-14T17:21:59Z",
+      "status": "reverified_partial",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/bis/bis-cbs-selected-pairs-q12026.csv",
+      "httpStatus": 200,
+      "returnedNumericRows": 7,
+      "meaning": "Timestamp taken from the archived request manifest; selected query returned seven numeric FR/GB bank-nationality rows only. Missing combinations are not zero."
+    }
+  ]
+}

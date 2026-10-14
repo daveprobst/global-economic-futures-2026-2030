@@ -1,0 +1,3366 @@
+{
+  "kind": "sensitivity",
+  "runId": "gef-main-20261014",
+  "seed": 20261014,
+  "requestedSamples": 10000,
+  "generatedAt": "2026-10-14T19:18:32.531225+00:00",
+  "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+  "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+  "classification": "conditional simulation design; not a forecast; percentiles are not calibrated probabilities",
+  "moduleId": "global-transmission",
+  "unitMap": {
+    "company_liquidity": "USD bn levels; group pressure is a unitless ratio to opening group liquidity",
+    "china_consumption": "index, 2026=100; index points converted by a coefficient to demand fraction",
+    "china_cpi": "percent (pp deviation) and price-level index, 2026=100",
+    "eu_claims": "USD bn (reported BIS summary) converted to demand fraction by a coefficient",
+    "eu_materials": "tonnes per year; EU ledger only, never converted into demand",
+    "swiss": "CHF per EUR/USD; percent growth; GDP index 2026=100; pp converted by a coefficient",
+    "global_demand": "fraction deviation of normalized demand index, 2026=100"
+  },
+  "scopeNote": "four regions (US, China, EU27, Switzerland); nine conditional scenarios",
+  "parameters": [
+    {
+      "parameter": "channel_removed",
+      "values": [
+        "US",
+        "China",
+        "EU27",
+        "Switzerland"
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "channel switch"
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "values": [
+        0.0,
+        0.65,
+        1.0,
+        1.35
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "intensity multiplier",
+      "note": "US AI-loss path clipped at calibrated upper bound 0.7 for f>1"
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "values": [
+        0.0,
+        0.65,
+        1.0,
+        1.35
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "intensity multiplier"
+    },
+    {
+      "parameter": "feedback_design",
+      "values": [
+        "disabled",
+        "weak",
+        "strong",
+        "sign_reversal"
+      ],
+      "scenarioIds": [
+        "severe_combined_stress",
+        "ai_revenue_70pct_loss_stress",
+        "prolonged_high_rates"
+      ],
+      "unit": "matrix"
+    },
+    {
+      "parameter": "persistence",
+      "values": [
+        0.6,
+        0.8,
+        1.0
+      ],
+      "scenarioIds": [
+        "severe_combined_stress",
+        "ai_revenue_70pct_loss_stress"
+      ],
+      "unit": "retention"
+    },
+    {
+      "parameter": "coefficient_multiplier",
+      "values": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "multiplier on conversion coefficient",
+      "note": "EU coefficient bounded by prior design upper bound 1e-5 at 1.5x"
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "scenarioIds": [
+        "ai_revenue_70pct_loss_stress"
+      ],
+      "unit": "fraction of combined service already in OCF interest"
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "values": [
+        "lower_reported",
+        "upper_coverage_scaled"
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "USD bn stressed claims exposure bound",
+      "note": "upper bound is NOT an estimate; assumes non-reporting banks match reporters"
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "values": [
+        "swiss_status_quo_erosion",
+        "base_adaptation"
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "alias"
+    },
+    {
+      "parameter": "dependence_design",
+      "values": [
+        "independent",
+        "copula_base",
+        "copula_high"
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "copula loading",
+      "sampleCount": 2000
+    },
+    {
+      "parameter": "independent_seed",
+      "values": [
+        20261014,
+        20261015,
+        20261016
+      ],
+      "scenarioIds": [
+        "severe_combined_stress"
+      ],
+      "unit": "seed",
+      "sampleCount": 2000
+    }
+  ],
+  "results": [
+    {
+      "parameter": "channel_removed",
+      "value": "US",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0027172850559310548,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "US",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02763989348762035,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "US",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002089056755780959,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "US",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015520333707738357,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "China",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0045087158554067315,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "China",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00047400293199592277,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "China",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0006025181344434834,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "China",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015122473171876245,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "EU27",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006987673751475687,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "EU27",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027948204097500443,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "EU27",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002320308786662532,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "EU27",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01562876613213789,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "Switzerland",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006760414803406736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "Switzerland",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027791226898558355,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "Switzerland",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002055368526443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "Switzerland",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.0006215216738762465,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "none",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "none",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "none",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "channel_removed",
+      "value": "none",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0006529209761205991,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.0001857887091801792,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0003224738781394906,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015018619136593888,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.002273579681488261,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.01810843415537464,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0014882425180720972,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015351508509392564,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0031392576800516538,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02766579995680053,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0021111484259204493,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015529442956332245,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.003245283528704667,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02944148659190252,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002211816425941859,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015564729953696205,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0031567895351013874,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00037123967732276703,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0004814653786794644,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015084651730197489,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.004777448240469049,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.018293885123517227,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0016472340186120713,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015417541102996165,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.005643126239032442,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027851250924943116,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002270139926460423,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015595475549935844,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0057491520876854565,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.029626937560045107,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0023708079264818326,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=0.65;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015630762547299806,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.004505026451475682,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00047109789093800796,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0005670761866625283,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01512020774213789,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006125685156843344,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.01839374333713247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0017328448265951353,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015453097114936566,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00709738900405975,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.029726795773660348,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002456418734464897,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.0;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015666318559240205,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.004505026451475682,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00047109789093800796,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0005670761866625283,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01512020774213789,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006125685156843344,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.01839374333713247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0017328448265951353,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015453097114936566,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00709738900405975,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.029726795773660348,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002456418734464897,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_US_China_intensity",
+      "value": "fUS=1.35;fCN=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015666318559240205,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006756725399475687,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02778832185750044,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002019926578662532,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.0006192562441378912,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006906841828275686,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02789224531350044,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002215175013862532,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.010375437671337893,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006987673751475687,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027948204097500443,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002320308786662532,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01562876613213789,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.007068505674675686,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02800416288150044,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0024254425594625317,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.020882094592937897,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006759123512030869,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027790210134188087,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002042963844720153,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.0006207287734678221,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006909239940830869,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027894133590188087,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0022382122799201533,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.010376910200667824,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006990071864030869,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027950092374188086,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002343346052720153,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015630238661467823,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.007070903787230869,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.028006051158188085,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002448479825520153,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=0.65;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.020883567122267827,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006760414803406736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027791226898558355,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002055368526443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.0006215216738762465,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006910531232206736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027895150354558355,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002250616961643487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.010377703101076248,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.007072195078606736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.028007067922558356,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0024608845072434872,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.0;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.02088436002267625,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006761706094782604,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027792243662928626,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0020677732081668216,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.0006223145742846708,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006911822523582604,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027896167118928627,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0022630216433668217,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=0.65",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.010378496001484673,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006992654446782603,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027952125902928626,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0023681554161668213,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.0",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01563182446228467,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.007073486369982604,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.028008084686928628,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0024732891889668214,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "pair_EU27_Switzerland_intensity",
+      "value": "fEU=1.35;fCH=1.35",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.020885152923084675,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.004242088100947607,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027233869726562433,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -3.4912062000000003e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.005128808244138346,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.0274684630610117,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0009009127353154138,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015270027981190547,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0033281875796461967,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02737678853621079,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.00034433121971073194,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015223581127485147,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0038222933000024535,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": 0.0,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": 0.0,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": 0.0,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00382650577300252,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00011600005788894521,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -9.41529302066015e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -4.751434702374903e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0038521054753550745,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00028530918175782876,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.00024460230852303775,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.00010158860554400152,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0038211034353873357,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -9.07330479452233e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -6.950286897984641e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -2.4153958134761175e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "prolonged_high_rates",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00041979480094514503,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "prolonged_high_rates",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00399412874912116,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "prolonged_high_rates",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": 0.0,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "disabled",
+      "scenarioId": "prolonged_high_rates",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": 0.0,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "prolonged_high_rates",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0005253412165777409,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "prolonged_high_rates",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.004008216964460773,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "prolonged_high_rates",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -8.885358333646261e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "weak",
+      "scenarioId": "prolonged_high_rates",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -3.211557471714817e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "prolonged_high_rates",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0007439962966206,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "prolonged_high_rates",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.0040457965143013384,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "prolonged_high_rates",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.000247254145139491,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "strong",
+      "scenarioId": "prolonged_high_rates",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -7.281679534388862e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "prolonged_high_rates",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00029076746253989933,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "prolonged_high_rates",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.003999286478121689,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "prolonged_high_rates",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -5.6111796915753234e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "feedback_design",
+      "value": "sign_reversal",
+      "scenarioId": "prolonged_high_rates",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -2.8014519863089032e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0062731556938246565,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.02771948643126591,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0017366640538744695,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01544740281318425,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.007733333650213917,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.028219415458322922,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.003003208988056448,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015833138697105203,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.003824655247924257,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -8.673522729229812e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -7.014813324557962e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.6,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -3.531899917745397e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00382650577300252,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00011600005788894521,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -9.41529302066015e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 0.8,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -4.751434702374903e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0038288963116782076,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00014545832710491878,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0001184834477134764,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "persistence",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -5.992973665073864e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.004854324105668896,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027795501313089353,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002222403745112223,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015575682634807301,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.009128402205144576,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.028106716964027362,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0024890977237747515,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:US",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01568638048894519,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.005750039505406734,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.01421255603527714,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0014791344344434853,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015376752366876245,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.008232686805406739,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.041689662241839565,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.003232367034443489,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:China",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015885310756876245,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006989518453441212,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.0279496566180294,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0023380297605530096,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.01562989884700707,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00699320785737226,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027952561659087313,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002373471708333965,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:EU27",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015632164276745422,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006875888979406736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027871168018558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0022055596304434875,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 0.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.008126276617876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.0,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.007106837331406736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.028031050258558357,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002505941838443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "coefficient_multiplier:Switzerland",
+      "value": 1.5,
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.023135786505876246,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.003826505773002528,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00011600005788894486,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -9.415293020660124e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -4.75143470237489e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.5,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.00382650577300252,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.5,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00011600005788894521,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.5,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -9.41529302066015e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 0.5,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -4.751434702374903e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.003826505773002544,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.00011600005788894551,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -9.415293020660176e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "combined_service_overlap_fraction",
+      "value": 1.0,
+      "scenarioId": "ai_revenue_70pct_loss_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -4.751434702374916e-05,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "lower_reported",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "lower_reported",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "lower_reported",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "lower_reported",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "upper_coverage_scaled",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069987419632688355,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "upper_coverage_scaled",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027956919220674187,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "upper_coverage_scaled",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.0024266346300053972,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "eu_exposure_bound",
+      "value": "upper_coverage_scaled",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015635562421352958,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "swiss_status_quo_erosion",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.0069913631554067365,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "swiss_status_quo_erosion",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027951109138558358,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "swiss_status_quo_erosion",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002355750734443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "swiss_status_quo_erosion",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.015631031561876247,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "base_adaptation",
+      "scenarioId": "severe_combined_stress",
+      "region": "US",
+      "year": 2030,
+      "close2030": -0.006760414803406736,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "base_adaptation",
+      "scenarioId": "severe_combined_stress",
+      "region": "China",
+      "year": 2030,
+      "close2030": -0.027791226898558355,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "base_adaptation",
+      "scenarioId": "severe_combined_stress",
+      "region": "EU27",
+      "year": 2030,
+      "close2030": -0.002055368526443487,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    },
+    {
+      "parameter": "swiss_alias_for_severe",
+      "value": "base_adaptation",
+      "scenarioId": "severe_combined_stress",
+      "region": "Switzerland",
+      "year": 2030,
+      "close2030": -0.0006215216738762465,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "note": ""
+    }
+  ],
+  "dependenceAlternatives": [
+    {
+      "dependence": "independent",
+      "loading": 0.0,
+      "region": "US",
+      "sampleCount": 2000,
+      "p05_2030": -0.007143439477813885,
+      "p50_2030": -0.006726191444084996,
+      "p95_2030": -0.00585112909221796,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "independent",
+      "loading": 0.0,
+      "region": "China",
+      "sampleCount": 2000,
+      "p05_2030": -0.029175162917007506,
+      "p50_2030": -0.027747656493952593,
+      "p95_2030": -0.021283208400756433,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "independent",
+      "loading": 0.0,
+      "region": "EU27",
+      "sampleCount": 2000,
+      "p05_2030": -0.002496628639047852,
+      "p50_2030": -0.002336451264331336,
+      "p95_2030": -0.001929244566455395,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "independent",
+      "loading": 0.0,
+      "region": "Switzerland",
+      "sampleCount": 2000,
+      "p05_2030": -0.019101671261969214,
+      "p50_2030": -0.015518167543329827,
+      "p95_2030": -0.012159290670301503,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_base",
+      "loading": 0.5,
+      "region": "US",
+      "sampleCount": 2000,
+      "p05_2030": -0.007169784516082555,
+      "p50_2030": -0.0067586989321506315,
+      "p95_2030": -0.005772691143856919,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_base",
+      "loading": 0.5,
+      "region": "China",
+      "sampleCount": 2000,
+      "p05_2030": -0.02919229221875284,
+      "p50_2030": -0.027891198504337543,
+      "p95_2030": -0.021459733703013826,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_base",
+      "loading": 0.5,
+      "region": "EU27",
+      "sampleCount": 2000,
+      "p05_2030": -0.002530529793319437,
+      "p50_2030": -0.002345787283050753,
+      "p95_2030": -0.0019070370942472481,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_base",
+      "loading": 0.5,
+      "region": "Switzerland",
+      "sampleCount": 2000,
+      "p05_2030": -0.019168608248175897,
+      "p50_2030": -0.01557288685436944,
+      "p95_2030": -0.012058290042353169,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_high",
+      "loading": 0.8,
+      "region": "US",
+      "sampleCount": 2000,
+      "p05_2030": -0.0071971459649350636,
+      "p50_2030": -0.006831772805150876,
+      "p95_2030": -0.005574564078489311,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_high",
+      "loading": 0.8,
+      "region": "China",
+      "sampleCount": 2000,
+      "p05_2030": -0.029218766552400785,
+      "p50_2030": -0.027886950425019402,
+      "p95_2030": -0.02137309150098164,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_high",
+      "loading": 0.8,
+      "region": "EU27",
+      "sampleCount": 2000,
+      "p05_2030": -0.0025518742309012282,
+      "p50_2030": -0.0023574703784261858,
+      "p95_2030": -0.0018565141271704782,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    },
+    {
+      "dependence": "copula_high",
+      "loading": 0.8,
+      "region": "Switzerland",
+      "sampleCount": 2000,
+      "p05_2030": -0.019268648277570116,
+      "p50_2030": -0.015655529932508558,
+      "p95_2030": -0.011903265839761108,
+      "unit": "fraction deviation of normalized demand index, 2026=100",
+      "interpretation": "conditional design percentile; not a calibrated probability"
+    }
+  ],
+  "seedStability": [
+    {
+      "seed": 20261014,
+      "region": "US",
+      "sampleCount": 2000,
+      "p05_2030": -0.007169784516082555,
+      "p50_2030": -0.0067586989321506315,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261014,
+      "region": "China",
+      "sampleCount": 2000,
+      "p05_2030": -0.02919229221875284,
+      "p50_2030": -0.027891198504337543,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261014,
+      "region": "EU27",
+      "sampleCount": 2000,
+      "p05_2030": -0.002530529793319437,
+      "p50_2030": -0.002345787283050753,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261014,
+      "region": "Switzerland",
+      "sampleCount": 2000,
+      "p05_2030": -0.019168608248175897,
+      "p50_2030": -0.01557288685436944,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261015,
+      "region": "US",
+      "sampleCount": 2000,
+      "p05_2030": -0.0071735251784898115,
+      "p50_2030": -0.006777732195166523,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261015,
+      "region": "China",
+      "sampleCount": 2000,
+      "p05_2030": -0.02917508508029992,
+      "p50_2030": -0.02771448422652044,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261015,
+      "region": "EU27",
+      "sampleCount": 2000,
+      "p05_2030": -0.002523053620385596,
+      "p50_2030": -0.0023462409219646096,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261015,
+      "region": "Switzerland",
+      "sampleCount": 2000,
+      "p05_2030": -0.019327216818249972,
+      "p50_2030": -0.01575049451375933,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261016,
+      "region": "US",
+      "sampleCount": 2000,
+      "p05_2030": -0.007155205513066095,
+      "p50_2030": -0.0067794022094647775,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261016,
+      "region": "China",
+      "sampleCount": 2000,
+      "p05_2030": -0.029175816276268304,
+      "p50_2030": -0.027907680831645482,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261016,
+      "region": "EU27",
+      "sampleCount": 2000,
+      "p05_2030": -0.002520212303687754,
+      "p50_2030": -0.0023554970562765305,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    },
+    {
+      "seed": 20261016,
+      "region": "Switzerland",
+      "sampleCount": 2000,
+      "p05_2030": -0.01918024317430795,
+      "p50_2030": -0.015612826545640281,
+      "unit": "fraction deviation of normalized demand index, 2026=100"
+    }
+  ],
+  "seedStabilitySpreadP05_2030": {
+    "US": 1.8319665423716276e-05,
+    "China": 1.720713845292099e-05,
+    "EU27": 1.0317489631682993e-05,
+    "Switzerland": 0.0001586085700740758
+  },
+  "interpretation": "one-at-a-time and grid sweeps of conditional designs; not calibrated sensitivities"
+}

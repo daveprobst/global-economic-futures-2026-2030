@@ -1,0 +1,133 @@
+{
+  "kind": "claimLedger",
+  "claims": [
+    {
+      "claimId": "CN-FLOW-01",
+      "statement": "Revised SAFE 2025 BOP records a USD 735.0bn current-account surplus and USD 773.5bn capital-and-financial-account deficit; the H1 2026 vintage likewise records a USD 378.0bn current-account surplus and USD 345.2bn capital-and-financial-account deficit. Instrument-specific flows, reserves, errors/omissions and valuation must be separated before interpreting private outflows or risk aversion. The 2025 sector/maturity workbook further shows both resident foreign-debt-asset acquisitions and net decreases in bank/general-government portfolio-debt liabilities, so the aggregate deficit masks distinct simultaneous channels.",
+      "status": "supported",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025",
+        "SAFE_BOP_H1_2026",
+        "SAFE_IIP_202606",
+        "SAFE_BOP_TABLES_20260929"
+      ],
+      "counterEvidence": "In H1 2026 the balance-of-payments aggregate combines different instruments and includes reserve assets per table structure; end-June liabilities were mostly direct and portfolio investment positions, while gross external debt (USD 2.498tn) includes trade credit and intercompany loans. These data do not identify investor motivation, usable liquidity or Western risk aversion; BOP flows also differ from valuation-sensitive IIP stocks. SAFE broad-sector/original-maturity flows establish heterogeneity but do not identify foreign holder nationality, individual borrowers, remaining maturity or investor motivation."
+    },
+    {
+      "claimId": "CN-STOCK-01",
+      "statement": "At end-2025 China reported USD 11.786tn external financial assets, USD 7.715tn external liabilities, and USD 4.071tn net external assets; gross position mix and valuation must be kept distinct from liquid private funding capacity.",
+      "status": "supported",
+      "sourceIds": [
+        "SAFE_IIP_2025"
+      ],
+      "counterEvidence": "The aggregate net asset position can coexist with gross maturity, currency and sector mismatches; reserve assets are public-sector claims and the reported positions are valuation-sensitive stocks, not transaction flows."
+    },
+    {
+      "claimId": "CN-ONSHORE-01",
+      "statement": "Domestic RMB financing is large and distinct from cross-border funding: PBOC/SCIO reports end-June 2026 social financing of RMB 462.06tn, with RMB 279.16tn loans to the real economy and RMB 101.36tn government bonds. Weighted-average rates on newly issued corporate and personal housing loans were about 3.0% and 3.1% respectively in June; none is a borrower-specific LGFV/developer rate.",
+      "status": "supported",
+      "sourceIds": [
+        "PBOC_LPR_20260920",
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ],
+      "counterEvidence": "Aggregates conceal borrower allocation, collateral, nonperforming loans, maturity, local-government exposure and credit rationing. New-loan weighted averages do not capture legacy debt repricing or stressed borrower spreads; PBOC/SCIO notes ongoing structural support and low social-financing costs, which is counterevidence to a uniform onshore funding freeze."
+    },
+    {
+      "claimId": "CN-LGFV-01",
+      "statement": "China completed issuance of RMB 2.0tn in 2025 debt-swap bonds; the IMF 2026 Article IV estimates 2025 augmented debt at 126.6% of GDP and its estimated LGFV debt component at 50.9% of GDP. The swap changes maturity, cost and creditor/perimeter classification; it does not by itself extinguish consolidated public-sector liabilities.",
+      "status": "supported",
+      "sourceIds": [
+        "MOF_LOCAL_DEBT_SWAP_2025",
+        "MOF_DEBT_IMPLEMENTATION_2025",
+        "IMF_CHINA_ARTICLEIV_2026"
+      ],
+      "counterEvidence": "MOF reports that swaps reduced local interest expense/debt-service pressure and strengthened disclosure; maturity relief and transfers can prevent near-term distress. IMF augmented debt is a staff perimeter estimate, not a legally consolidated audited balance sheet; do not add it to separate LGFV liabilities or treat 50.9% of GDP as an official observed stock."
+    },
+    {
+      "claimId": "CN-PROPERTY-01",
+      "statement": "NBS Jan-August 2026 reports real-estate investment down 19.9% y/y, new commercial sales area down 12.1%, developer domestic-loan funding down 33.3% and deposits/advance receipts down 14.8% on comparable/cumulative bases, evidence of weak activity and funding flows but not a measurement of losses, household wealth or completion liabilities.",
+      "status": "supported",
+      "sourceIds": [
+        "NBS_PROPERTY_202608",
+        "IMF_CHINA_ARTICLEIV_2026"
+      ],
+      "counterEvidence": "Second-hand housing online transaction floor area rose 10.6% y/y Jan-August and unsold completed inventory was down 1.1% y/y at August end; national measures conceal major city/cohort differences. NBS funding categories are flows and do not reveal cash buffers, presale obligations, mortgage arrears or recovery values."
+    },
+    {
+      "claimId": "CN-DEMO-01",
+      "statement": "NBS's year-end 2025 annual communiqué reports 851.36m people aged 16–59 (60.6% of population), while the later 1% sample estimates 869.87m aged 15–59 (61.89%); the age bins and survey vintages differ and are not a directly comparable revision.",
+      "status": "supported",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025",
+        "NBS_POP_SAMPLE_2025"
+      ],
+      "counterEvidence": "The cohort stock does not identify near-term labor hours, participation, retirement timing, migration, productivity or demand; the reported difference is largely definition-bound and cannot be read as an 18.5m workforce increase."
+    },
+    {
+      "claimId": "CN-DEMAND-01",
+      "statement": "Evidence supports China domestic-demand weakness and deflationary pressure in the IMF 2026 diagnosis, but does not establish generalized household and healthy-firm balance-sheet deleveraging. September 2026 CPI was positive and latest September PPI was +5.0% y/y, while the living-materials PPI subcomponent remained -0.1% y/y.",
+      "status": "uncertain",
+      "sourceIds": [
+        "IMF_CHINA_ARTICLEIV_2025",
+        "IMF_CHINA_2023_AIV_DELEVERAGING",
+        "NBS_COMMUNIQUE_2025",
+        "NBS_CPI_202609",
+        "NBS_PPI_202609",
+        "PBOC_SCIO_FINSTATS_H1_2026",
+        "NBS_PROPERTY_202608"
+      ],
+      "counterEvidence": "Headline CPI +0.9% y/y and aggregate PPI +5.0% y/y in September 2026 contradict a claim of contemporaneous economy-wide consumer or producer price declines; living materials PPI was -0.1% y/y, so subcomponent pressure remains. The H1 household-loan decline is a flow, not proof of a stock-wide balance-sheet contraction. NBS 2025 real income and consumption grew; latest GDP deflator and household cohort balance-sheet distributions remain unavailable."
+    },
+    {
+      "claimId": "CN-JAPAN-01",
+      "statement": "Japan's post-bubble balance-sheet repair literature supports analyzing collateral losses, borrower demand and impaired bank transmission as possible channels, but does not identify a Japan-like Chinese trajectory or the probability of prolonged stagnation.",
+      "status": "uncertain",
+      "sourceIds": [
+        "BOJ_BALANCE_SHEET_2001",
+        "BIS_JAPAN_QR_2016",
+        "BIS_DEFLATION_HIST_2015",
+        "IMF_CHINA_ARTICLEIV_2025"
+      ],
+      "counterEvidence": "China's domestic-bank and state balance sheets, capital controls, income level, policy tools, property/LGFV institutions and current external surplus differ; 2026 IMF also reports resilience and strong exports, while historical deflation evidence separates goods-price declines from damaging asset-price collapses."
+    },
+    {
+      "claimId": "CN-EXTDEBT-01",
+      "statement": "At end-June 2026 SAFE measured USD 2.498tn gross external debt, of which USD 1.469tn (59%) was short-term on contractual original maturity; SAFE states 41% of that short-term amount is trade-related credit. Banks held USD 997.4bn and other sectors USD 1,012.7bn, the latter including intercompany lending.",
+      "status": "supported",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ],
+      "counterEvidence": "Original maturity is not remaining maturity; trade credit and intercompany positions are not equivalent to marketable refinancing debt. Gross external debt omits domestic RMB liabilities and cannot be directly mapped to LGFV or property-sector cash needs without matched borrower data."
+    },
+    {
+      "claimId": "CN-LGFV-PERIMETER-01",
+      "statement": "The IMF 2026 Article IV estimate of augmented debt at 126.6% of GDP in 2025 embeds an expanded public perimeter including government-guided funds and LGFV activity; it is not directly comparable to official budgetary debt or an observed stand-alone LGFV balance-sheet total.",
+      "status": "supported",
+      "sourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026",
+        "MOF_DEBT_IMPLEMENTATION_2025"
+      ],
+      "counterEvidence": "The IMF perimeter provides a useful macro-fiscal risk measure and can expose off-budget activity, but it depends on staff estimates, GDP denominator and classifications. Official swap policy reallocates obligations to on-budget local bonds and provides interest relief; perimeter changes must be reconciled before comparing vintages."
+    },
+    {
+      "claimId": "CN-HOUSEHOLD-BS-01",
+      "statement": "The latest populated PBOC national credit balance sheet located in this closure (November 2025) reports household loans of RMB 83.363tn and household deposits of RMB 163.308tn; these aggregate stocks do not identify mortgage-only exposure or liquidity held by distressed borrower cohorts. PBOC separately reports household loan flows down RMB 0.3668tn in H1 2026, but this is not a June-end stock.",
+      "status": "supported",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV",
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ],
+      "counterEvidence": "Household loans include short- and medium/long-term credit across consumption and operating purposes. Deposits are not matched to indebted households, and H1 deposits +RMB 7.58tn is a flow, not a June-end liquid-asset stock. Mortgage-specific balance and arrears by cohort are not verified."
+    },
+    {
+      "claimId": "CN-DEVELOPER-BS-01",
+      "statement": "China Vanke’s reviewed, unaudited 2026 interim group report text mirror shows 30 June 2026 cash RMB 53.083bn, current borrowings RMB 167.249bn, current bonds RMB 14.461bn, inventory/contract costs RMB 347.967bn, and contract liabilities RMB 77.553bn. The independent review flags RMB 178.86bn principal due within one year and material going-concern uncertainty. These scoped issuer observations demonstrate refinancing/liquidity mismatch for this group, not sector-wide losses or foreign-funding exposure.",
+      "status": "uncertain",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "counterEvidence": "This is a single issuer-group example, the report statements are reviewed but unaudited, and the table source was a secondary text mirror after direct issuer-page anti-bot and mirror HTTP 403 outcomes. JV/associate exposure, presale accounting and restricted deposits complicate net liquidity; it cannot be extrapolated to all developers or treated as a national property-loss measure."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "kind": "claimLedger",
+  "claims": [
+    {
+      "claimId": "global-bank-credit-not-contracting-q1-2026",
+      "statement": "At end-Q1 2026, the measured BIS cross-border bank-credit aggregate was expanding, so this specific available aggregate contradicts the proposition that the measured global bank-credit stock was already contracting.",
+      "status": "supported",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ],
+      "counterEvidence": "BIS reports cross-border bank credit of USD 39.5tn, up 11% year on year, and selected foreign-currency nonbank-credit stocks also grew. Aggregate expansion does not rule out funding stress, local credit contraction, declining market depth, concentration, impaired borrowers, or stress in unmeasured nonbank channels."
+    },
+    {
+      "claimId": "global-amplification-through-balance-sheets",
+      "statement": "A common rate, risk or currency shock can amplify real activity losses when repricing, maturity rollover, collateral valuation, leverage and intermediary liquidity constraints jointly weaken financing and cash flow.",
+      "status": "supported",
+      "sourceIds": [
+        "IMF_GFSR_APR2026",
+        "IMF_GFSR_OCT2025",
+        "FED_FINANCIAL_ACCELERATOR",
+        "BIS_SWAPLINES_2008"
+      ],
+      "counterEvidence": "The mechanism is conditional on exposed balance sheets and insufficient buffers; term funding, fixed coupons, hedges, capital, liquidity, policy facilities and borrower cash can attenuate or delay it."
+    },
+    {
+      "claimId": "usd-funding-mismatch-transmits-across-borders",
+      "statement": "Pre-crisis foreign-currency asset growth funded through short-term wholesale and FX-swap markets created dollar rollover needs for non-US banks, and market impairment transmitted dollar funding stress internationally in 2007–09.",
+      "status": "supported",
+      "sourceIds": [
+        "BIS_SWAPLINES_2008",
+        "FED_SWAPLINES_2020"
+      ],
+      "counterEvidence": "This is a documented historical bank funding structure, not proof that current corporates or banks have the same net currency mismatch, maturity profile, collateral terms or reliance on swaps; post-crisis regulation and central-bank arrangements alter the setting."
+    },
+    {
+      "claimId": "risk-sensitive-portfolio-flows-can-amplify-stress",
+      "statement": "Cross-border portfolio funding intermediated by some risk-sensitive nonbank investors can transmit global risk repricing into tighter financing conditions for recipient economies, especially where prior vulnerabilities are high.",
+      "status": "supported",
+      "sourceIds": [
+        "IMF_GFSR_APR2026",
+        "IMF_CPIS",
+        "IMF_IIP"
+      ],
+      "counterEvidence": "The IMF describes heterogeneous sensitivity by investor and recipient vulnerability, not a universal withdrawal. CPIS positions are voluntary reporter data and are not flow or ultimate-risk data; valuation effects, local investors, official flows and buffers can offset gross sales."
+    },
+    {
+      "claimId": "cross-region-network-co-movement-not-causal-multiplier",
+      "statement": "Selected 2024 official merchandise-trade flows and Q1 2026 BIS bank-nationality claims demonstrate cross-region links, but the partial links do not identify a complete bilateral exposure matrix, net positions, or a causal spillover coefficient for US, China, EU and Switzerland.",
+      "status": "uncertain",
+      "sourceIds": [
+        "NBER_GLOBAL_CYCLE_REY",
+        "NBER_US_MONETARY_GLOBAL_CYCLE",
+        "OECD_ICIO_2025",
+        "FED_SPILLOVER_UNION",
+        "BIS_CBS_PUB_2026Q1",
+        "OECD_CH_GVC_DEPENDENCIES_2024",
+        "UN_COMTRADE_BILATERAL_2024"
+      ],
+      "counterEvidence": "UN Comtrade reports US→China USD 143.546bn, China→US USD 525.649bn, EU27→US USD 571.114bn and EU27→China USD 227.172bn in 2024; the accepted OECD source separately reports EU supplier share of Swiss imported intermediate inputs at 54% based on 2018 IO data. Fresh BIS CBS response produced seven FR/GB bank-nationality gross claim edges on US, Swiss and German residents, but no numeric rows for US/China/Swiss reporters or China counterpart residents. Swiss reporter-directed trade requests returned no rows. Reported values differ by reporter, structure and year; no edge is converted to a causal multiplier."
+    },
+    {
+      "claimId": "positions-transactions-and-valuation-must-be-separated",
+      "statement": "External positions are stocks that change through transactions, exchange-rate and price valuation, and other volume/reclassification changes; gross claims and liabilities cannot be interpreted as net funding flows or losses without reconciliation.",
+      "status": "supported",
+      "sourceIds": [
+        "IMF_BOP",
+        "IMF_IIP",
+        "IMF_CPIS",
+        "IMF_CDIS",
+        "BIS_LBS_OVERVIEW",
+        "BIS_IBS_GEOGRAPHY"
+      ],
+      "counterEvidence": "Reported country datasets differ in coverage, residence versus nationality, immediate versus ultimate counterpart, instrument detail, frequency and BPM vintage; incomplete reporting can leave material exposures unobserved."
+    },
+    {
+      "claimId": "historical-credit-booms-inform-stress-not-probability",
+      "statement": "Long-run cross-country evidence finds credit-intensive expansions are followed on average by deeper recessions and slower recoveries, supporting a conditional balance-sheet stress mechanism but not a calibrated probability for this scenario.",
+      "status": "supported",
+      "sourceIds": [
+        "NBER_JST_CREDIT_CYCLES",
+        "NBER_ST_CREDIT_BOOMS",
+        "BIS_DEBT_REDUCTION"
+      ],
+      "counterEvidence": "Historical samples combine heterogeneous institutions, shocks, borrower mixes and policies; observational/local-projection evidence does not make every credit boom end in crisis or supply a transportable 2026–30 probability."
+    },
+    {
+      "claimId": "goods-price-deflation-is-not-automatically-debt-deflation",
+      "statement": "Historical BIS analysis finds a weak unconditional relation between consumer-price deflation and output growth, while asset/property-price deflation has a stronger adverse association and private debt can amplify property-price downturns.",
+      "status": "supported",
+      "sourceIds": [
+        "BIS_DEFLATION_HIST"
+      ],
+      "counterEvidence": "The broad historical sample has few postwar persistent deflations and prewar data limitations; episode-level correlations are not causal universal laws and do not remove possible debt-deflation risk in a specific leveraged borrower sector."
+    },
+    {
+      "claimId": "telecom-overbuild-analogue-has-limits",
+      "statement": "Telecom overbuild and bankrupt carrier cases can inform tests of synchronized capacity investment, utilization, price competition, debt service and asset recovery, but cannot establish hyperscaler losses or crisis likelihood.",
+      "status": "uncertain",
+      "sourceIds": [
+        "GAO_GLOBAL_CROSSING",
+        "FED_FINANCIAL_ACCELERATOR",
+        "BIS_DEBT_REDUCTION"
+      ],
+      "counterEvidence": "Global Crossing was a selected bankrupt firm and the GAO decision is a narrow administrative record; hyperscalers have diversified cash flows, different balance sheets, demand uncertainty, equipment cycles and possible asset reuse, while future data-center utilization and resale values remain unobserved."
+    }
+  ]
+}

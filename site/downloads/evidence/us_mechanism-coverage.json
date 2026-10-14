@@ -1,0 +1,176 @@
+{
+  "kind": "mechanismCoverage",
+  "mechanisms": [
+    {
+      "mechanismId": "ai_capex_revenue_mismatch",
+      "causalChain": "Cash capex for servers, buildings and power is paid before or during capacity ramp; if incremental AI receipts and margins do not catch up, net capex lowers group free cash flow and eventually constrains investment or requires financing. AI-specific revenue and capex attribution is not comparable across the candidate firms, so the hypothesized mismatch is not established by consolidated statements.",
+      "strongestSupportSourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025",
+        "META_10K_FY2025",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026"
+      ],
+      "counterEvidence": "FY2025 showed large operating cash generation at Amazon, Alphabet and Meta; Amazon AWS reported USD 128.725bn sales and USD 45.606bn operating income, Alphabet disclosed USD 242.8bn remaining performance obligations primarily related to Cloud, and Meta states funds and operating cash are expected to meet commitments. Those figures evidence platform cash engines, not AI unit economics.",
+      "stockFlowTransmission": "Opening cash and liquid securities + operating cash receipts − cash capex − operating/interest/tax outflows + debt/equity flows = closing liquidity. Capex purchases are period flows that add depreciable asset stocks; lease commitments create future payments with different timing and accounting. Do not equate depreciation with cash capex or assign all infrastructure capex to AI. New bridge identifies contractual purchases and future lease cash schedules that can transmit to cash through time, but these are consolidated obligations, not AI-attributed capex and must not be added to realized cash purchases or to future lease liability stocks.",
+      "identificationLimits": "AI-only incremental capex, AI-specific monetized revenue, inference costs, utilization, allocated depreciation and returns are not disclosed consistently. Consolidated capex also serves core cloud, advertising, consumer and network loads; noncash finance leases differ from cash capex. Company fiscal years differ. Latest source extraction still has non-aligned fiscal calendars and varying definitions; rounded values and overlap among lease/contract tables prohibit simple summation. Current planned capex and issuer guidance are not realized AI-only investment or project returns. Company filings do not attribute a common share of the obligations to AI infrastructure; commitment amounts cannot be treated as committed AI revenue/capex ratios.",
+      "modelability": "Company cash bridges are feasible from filings; AI attribution should be bounded as an explicit assumption.",
+      "scenarioRelevance": "Central exposure for AI correction and adaptation cases; include a conditional 70% AI subscription revenue decline only as the user-requested stress, with no estimated probability.",
+      "unresolvedUncertainty": "User capex/revenue amounts have unverified scope and period; AI revenue definitions, workload allocation, capex flexibility and salvage value remain unknown.",
+      "investigationNotes": "Latest reports now let us test parent-level resilience, not AI-only returns: Microsoft FY2026 reports OCF USD 182.9bn and cash PPE additions USD 115.948bn; Amazon TTM through 2026-06-30 reports OCF USD 161.403bn and net PPE purchases USD 169.007bn; Meta reports 6M OCF USD 64.088bn and capex including finance-lease principal USD 50.92bn; Oracle FY2026 OCF USD 32.0bn and cash capex USD 55.7bn. AI-specific recognized revenue, margin and capex allocations remain undisclosed, so $150–200bn vs $40bn cannot be made an audited like-for-like ratio. Budgeted capex includes general cloud, advertising, device, network and other workloads; retain user’s 70% AI revenue shock as a severity assumption. RR0 closure added dated company obligation ladders and separately disclosed lease principal; these improve parent-company liquidity stress inputs but do not resolve AI-specific utilization, unit economics or cancellation flexibility."
+    },
+    {
+      "mechanismId": "willingness_to_pay",
+      "causalChain": "Perceived incremental quality and workflow return influence adoption, paid-seat expansion, renewals, usage and realized price; lower value or abundant alternatives can reduce each, while compliance, integration and switching costs can support retention. Revenue converts to cash after billing/collection and may be bundled.",
+      "strongestSupportSourceIds": [
+        "MSFT_COPILOT_SEATS_FY26Q4",
+        "NBER_GENAI_AT_WORK_31161",
+        "OPENAI_API_PRICING",
+        "MSFT_10K_FY2025"
+      ],
+      "counterEvidence": "A staggered deployment study with 5,179 customer-support agents found an average 14% improvement in issues resolved per hour and 34% for novice/low-skilled workers, but minimal impact for experienced/high-skilled workers. This supports heterogeneous productivity value, not willingness to pay or provider capture. Enterprise contracts and bundled software may sustain value.",
+      "stockFlowTransmission": "For subscription: paid seats × realized price × retention plus metered usage; revenue recognition and cash collection can differ through annual prepayment, accounts receivable and deferred revenue. Lower renewals reduce future revenue flows; sunk model training and datacenter capital remain asset stocks.",
+      "identificationLimits": "Public vendor filings do not provide cohort retention, paid seats by model, realized discounts, customer ROI or causal price elasticity. A single customer-support setting and productivity outcome cannot be generalized to consumer subscriptions or enterprise margins.",
+      "modelability": "Use assumed, explicit price/retention/usage response ranges; no point elasticity estimated from the inspected evidence.",
+      "scenarioRelevance": "Use observed adoption only as context; 70% AI-revenue decline is a user-directed stress severity assumption, not an estimated demand shock probability.",
+      "unresolvedUncertainty": "Paid subscriptions versus API usage versus cloud-hosted workloads; customer value capture, price elasticity, cohort churn, bundling and adoption saturation.",
+      "investigationNotes": "Deepened disclosure review: Microsoft’s July 29, 2026 earnings release/call states >30m Microsoft 365 Copilot paid seats at FY26 year end; call supplies net adds, customer deployments, usage-intensity and satisfaction directional indicators, but no cohort churn/renewal, realized net price, stand-alone revenue, gross margin, ROI distribution or price-response. Productivity evidence for customer-support labor (NBER 31161; 5,179 agents; average +14% issues/hour, heterogeneous) supports possible value but not willingness-to-pay. Exact request: paid seat counts are management statement, no independent reconciliation or retention schedule. Price elasticity remains unidentified."
+    },
+    {
+      "mechanismId": "fixed_commitments",
+      "causalChain": "Long lead-time power, land, buildings, chips and lease commitments can obligate cash after expected demand weakens; unavoidable fixed costs then worsen operating leverage and defer capacity adjustment. Cancellation, deferral and resale rights determine the actual short-run rigidity.",
+      "strongestSupportSourceIds": [
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2025",
+        "AMZN_10K_FY2025",
+        "META_10K_FY2025",
+        "US_EIA_DATA_CENTER_ENERGY",
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "ORCL_10K_FY2026"
+      ],
+      "counterEvidence": "Amazon reports generally cancellable ordinary-course open purchase orders and has substantial liquid assets and operating cash; Meta describes planned capex and asserts cash sufficiency. DOE/LBNL scenarios provide national energy needs, not the individual hyperscalers’ contractual minimum payments.",
+      "stockFlowTransmission": "Committed purchases/leases create scheduled cash outflows; lease liabilities and asset additions enter balance sheets on applicable recognition dates. Power capacity is a flow constraint over time, while datacenters and chips are stocks with useful life, depreciation and resale/redeployment value. Avoid double-counting purchase commitments and recognized lease liabilities. The bridge separately records ordinary purchase obligations, take-or-pay and construction commitments, commenced lease liabilities, future leases, and contingent backstops. Interest-inclusive lease/debt schedules are not added to balance-sheet carrying liabilities as another debt stock.",
+      "identificationLimits": "Public aggregate commitment tables may mix cancellable, conditional and noncancelable obligations; terms, energy tariffs, minimum takes, chips, site-level schedules and termination penalties are incomplete or redacted. Latest source extraction still has non-aligned fiscal calendars and varying definitions; rounded values and overlap among lease/contract tables prohibit simple summation. Current planned capex and issuer guidance are not realized AI-only investment or project returns. Cancellation rights and termination amounts are not consistently disclosed. Google reports USD 811bn total and USD 200.7bn short-term but no annual detailed schedule in Q2 2026 10-Q; Meta has grouped non-cancellable commitments and lease commitments without complete year allocation.",
+      "modelability": "Model separately reported lease liabilities, purchase obligations and assumed avoidable/locked shares with delayed commissioning; vary sunk share transparently.",
+      "scenarioRelevance": "Amplifies demand or rate shock where contracted capacity cannot be paused, but cash-rich groups may renegotiate or finance growth.",
+      "unresolvedUncertainty": "Cancellation clauses, project commissioning dates, power purchase minimums, equipment prepayments, land value and repurposing/resale recovery.",
+      "investigationNotes": "Current filings materially improve the legal-category picture. Meta reports USD 278.99bn of not-yet-commenced operating/finance leases as of 2026-06-30 and USD 349.31bn non-cancelable contractual commitments, with USD 53.52bn and USD 81.65bn scheduled in 2026 and 2027; these are distinct/overlapping disclosures and must not be added mechanically. It also states USD 10.8bn of escrowed infrastructure cash is restricted until conditions expected during 2028–2030. Alphabet reports USD 85.2bn future payments for uncommenced leases, including a separately disclosed USD 5.8bn short-term non-cancelable lease commencing Q3 2026. Amazon’s 10-Q reports USD 130.065bn unconditional purchase obligations and says ordinary-course open orders generally are cancellable; distinguish binding categories and timing. Oracle FY26 borrowing/capex grew; its filing notes some discretionary capex timing flexibility. Contract obligation tables are not all immediate cash outflows; cancellation, cross-default and take-or-pay provisions require contract-level review. RR0 closure extracted the Amazon six-category annual table and Oracle FY2027–FY2031/thereafter unconditional obligations. Microsoft reports FY2027 versus thereafter only; Alphabet reports total/short-term only; Meta annual disclosure is partial. Missing years stay unallocated."
+    },
+    {
+      "mechanismId": "pricing_competition",
+      "causalChain": "New model entrants, open weights, efficiency gains or lower inference costs can drive down quality-adjusted prices; that may expand volume or compress vendor margins depending on demand elasticity, cost decline and differentiated service value.",
+      "strongestSupportSourceIds": [
+        "META_LLAMA_INFERENCE_COST_GUIDE",
+        "OPENAI_API_PRICING",
+        "META_LLAMA4_LICENSE",
+        "NVDA_10K_FY2026"
+      ],
+      "counterEvidence": "Open-weight models require compute, deployment engineering, safety, security and support; enterprise buyers may pay for uptime, governance, integration and performance. List prices do not include private discounts and token mix. NVIDIA supplier revenue/earnings demonstrates upstream demand but not downstream pricing power.",
+      "stockFlowTransmission": "Per-token/seat prices and usage are revenue flows; model training, serving clusters, chips and customer migration capabilities are capital or capability stocks. Lower price may increase usage and total revenue if elasticity and capacity permit; cost per task can fall with model and hardware efficiency.",
+      "identificationLimits": "Pricing pages are live and specific to product/model, token class, caching, processing tier and date; no standardized like-for-like quality-adjusted benchmark, transaction discounts, marginal serving costs or cross-provider share data were extracted. Llama license is not unrestricted public-domain use.",
+      "modelability": "Price compression can be tested with explicitly assumed relative price/quality/cost paths; no calibrated cross-vendor elasticity is available.",
+      "scenarioRelevance": "Determines whether AI correction mainly reduces revenue, or accelerates adoption while lowering unit margin.",
+      "unresolvedUncertainty": "Quality-adjusted substitution, open-weight deployment cost, price elasticity, inference efficiency and durable distribution advantages.",
+      "investigationNotes": "Investigated dated demand/pricing signals and substitution costs. Microsoft FY26 Q4 reports >30m M365 Copilot seats, E7 launch deployments and movement toward seat-plus-consumption billing; this indicates adoption and monetization experimentation, not a realized AI price series. Meta’s Llama 4 documentation gives a vendor cost estimate of $0.19 per million blended tokens assuming distributed inference; its deployment guide explains GPU/model/token volume, latency and operations matter. A 2026 concurrency-aware preprint reports 42 benchmarks but is not a market-wide or independently replicated cost curve. Such unit-cost/posted-price comparisons do not match model quality, context, modality, cache, throughput, latency, guardrails, support or utilization. No named issuer reported comparable realized price cuts or customer switching. Open-weight pricing pressure is plausible; zero-cost substitution is contradicted by infrastructure and operating costs."
+    },
+    {
+      "mechanismId": "refinancing_spreads",
+      "causalChain": "Higher benchmark yields or issuer spreads raise cost on new borrowing and reset/floating debt; at maturity, rollover turns new rates into debt service, reducing free cash flow and possibly investment, hiring or refinancing capacity. Cash buffers and long fixed coupons delay transmission.",
+      "strongestSupportSourceIds": [
+        "GOOG_10Q_Q2_2026",
+        "FED_CORP_DEBT_COSTS_2023",
+        "FED_MATURITY_2024",
+        "FED_DISTRESSED_FIRMS_2023",
+        "AMZN_10K_FY2025",
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "counterEvidence": "Fed literature emphasizes heterogeneous and maturity-dependent pass-through; Amazon reported USD 4.337bn interest income versus USD 2.3bn interest expense in 2025, USD 123.0bn cash/cash equivalents/marketable securities and no borrowings under revolver/CP facilities at year-end. This parent-level buffer sharply qualifies a distress analogy for Amazon.",
+      "stockFlowTransmission": "Debt principal is a liability stock; interest is a recurring cash flow; maturity schedule and reset shares translate marginal yield into expense over time. Cash and liquid assets generate offsetting interest income; lease principal, lease interest and bond debt must be separated. This closure distinguishes face principal due by issuer-reported year from carrying debt and from lease liabilities. It preserves Oracle FY2026 maturity vintage (May 31) separately from Q1 FY2027 cash/debt (Aug 31); Amazon annual maturity disclosure combines principal and interest, so cannot be used as a principal-only roll schedule.",
+      "identificationLimits": "Historical Fed samples cover publicly traded firms and selected advanced economies; they do not estimate hyperscaler forward rates. Company debt instruments, maturity ladders and coupons are disclosed but future credit spreads and policy paths are unknown. User’s 10–12% is not verified market data. Latest source extraction still has non-aligned fiscal calendars and varying definitions; rounded values and overlap among lease/contract tables prohibit simple summation. Current planned capex and issuer guidance are not realized AI-only investment or project returns. Published maturity and coupon ladders are not a refinancing-cost forecast: no issuer-specific future spread shock or refinancing share is observed here. Alphabet and Amazon annual principal-only maturity amounts, and several annual commitment splits, are not disclosed in the retrieved filings.",
+      "modelability": "Use each issuer debt maturity and fixed/floating share where available; apply new yields only to maturities/refinancing. 10–12% is a stress assumption, never an observed hyperscaler refinancing rate.",
+      "scenarioRelevance": "High for sustained high-rate and combined-stress cases, but likely less binding for firms with large cash and low leverage.",
+      "unresolvedUncertainty": "2026 market spreads, rollover amounts by year, floating debt, hedges, parent/subsidiary cash mobility and any AI project-level financing.",
+      "investigationNotes": "Latest filings replace the stale blanket 2025 maturity view with evidence of financing heterogeneity. Meta reports USD 84bn face value of fixed-rate notes (USD 83.664bn carrying amount) at 2026-06-30; note tranches have stated coupons 3.50–6.45%, effective 3.63–6.48%, principal USD 2.75bn due 2027 and USD 1.5bn due 2028, with USD 73.75bn thereafter. Alphabet reports USD 98.2bn long-term debt and issued USD 51.8bn fixed-rate senior notes in 1H2026; only USD 1.3bn of a SOFR+1.5–2.25% credit facility was drawn and USD 25bn commercial paper facility was undrawn. Amazon provides maturity table with principal and interest, not a universal reset rate. Microsoft current 10-K Note 10 has fixed coupons and maturity ladder. Recheck exact tranche tables before model; no evidence maps all debt to 10–12% cost. The stress rate remains an explicit assumption, delayed to actual maturities/refinancing and risk spread. RR0 closure: company bridge persisted at research/us/debt-commitment-bridge.json and .csv. Meta full Note 8 effective-rate range corrected to 3.63%–6.48% p.a. (November-2025 row alone starts at 4.27%); finance-lease principal USD 1.805bn in H1 2026 added. Oracle detailed debt ladder is May 31 vintage; Aug 31 balance sheet shown separately."
+    },
+    {
+      "mechanismId": "rd_displacement",
+      "causalChain": "A shortfall in internal cash or external finance can force management to ration discretionary spending; projects with long payback, weaker expected returns or less strategic priority may be delayed, including R&D. A rate shock can also reduce investment opportunities independently of financing constraints.",
+      "strongestSupportSourceIds": [
+        "FED_RND_FINANCIAL_FRICTIONS_NBER31521",
+        "FED_DISTRESSED_FIRMS_2023",
+        "META_10K_FY2025",
+        "GOOG_10K_FY2025"
+      ],
+      "counterEvidence": "Alphabet R&D increased to USD 61.087bn in 2025; Meta R&D increased 31% to USD 57.372bn, with the issuer attributing much of its rise to compensation and AI-related infrastructure. The companies have diversified, cash-generative operations and can prioritize strategic AI research.",
+      "stockFlowTransmission": "R&D expense is a current resource flow and often produces intangible knowledge/capability stocks not fully recognized as balance-sheet assets. Lower spending affects future productivity/revenue only with uncertain lags; R&D is not equivalent to capital expenditure and should not be added again to cash capex without accounting reconciliation.",
+      "identificationLimits": "Published finance/innovation studies use historical samples and crisis exposures; they do not identify which R&D lines or future hyperscaler budgets would be cut. R&D classification, capitalization, AI allocation and labor vs infrastructure components vary.",
+      "modelability": "Represent R&D cuts as a conditional management response, linked to cash shortfall or distress rather than mechanically to rates; parameter bounds remain assumptions.",
+      "scenarioRelevance": "Potential second-round reduction in innovation capacity after an AI/financing downturn, but not an observed current effect.",
+      "unresolvedUncertainty": "R&D protection priority, project elasticity, external funding dependence, AI-specific R&D share and delayed productivity effect.",
+      "investigationNotes": "Issuer data rebut immediate sector-wide R&D cuts: Meta reports FY2025 R&D USD 57.372bn, up 31% YoY, and 6M FY26 R&D USD 39.354bn, up 57% YoY; Alphabet FY2025 USD 61.087bn; Oracle FY26 total R&D including stock compensation USD 10.272bn (USD 7.467bn excluding SBC). Microsoft FY26 filing identifies continued R&D compute, AI talent and data spending. NBER WP31521 is correctly titled Research and/or Development? Financial Frictions and Innovation Investment (Mezzanotti & Simcoe; issue date Aug 2023 month only): Census-based U.S. company evidence around refinancing exposure in 2008 finds cuts concentrated in basic/applied research while development was essentially unchanged; citation-weighted patent effects 3–5 years later, with limits on alternatives and technology spillovers. Cloyne et al. WP25366 was December 2018 (month-only) and later JEEA 2023: U.S./U.K. study finds stronger investment response among young non-dividend payers; older firms hardly respond. These studies motivate conditional lagged responses, not a hyperscaler coefficient. Current R&D continues to grow and should not be projected down absent a distress/funding trigger."
+    },
+    {
+      "mechanismId": "distressed_asset_sales",
+      "causalChain": "If revenues fall while fixed obligations, debt service and financing constraints persist, a distressed owner may restructure, impair, sell, or abandon assets. Specialized assets may clear below replacement cost if site, grid, cooling, hardware generation or buyer access is limiting.",
+      "strongestSupportSourceIds": [
+        "IREN_FY2026_10K",
+        "FED_DISTRESSED_FIRMS_2023",
+        "WORLDCOM_2002_10Q",
+        "ORCL_10K_FY2025"
+      ],
+      "counterEvidence": "Consolidated cash buffers and multiple uses for compute and network facilities can support redeployment; an accounting impairment is not a cash sale, and sale proceeds could reflect strategic redeployment rather than distress. There is no observed hyperscaler datacenter fire sale in the mapped evidence.",
+      "stockFlowTransmission": "Asset impairment reduces carrying value/equity but is noncash at recognition; sale creates cash proceeds and removes asset stock; debt repayment/default reallocates losses to creditors. Recovery values and debt claims must reconcile so asset losses are not counted twice.",
+      "identificationLimits": "No comparable secondary-market transactions, distressed bid prices, GPU resale histories, site-level lien/lease information or probability data were inspected. WorldCom is not an AI datacenter sample.",
+      "modelability": "Use asset-specific haircut scenarios only as assumptions; model value recovery separately from annual operating losses and commitments.",
+      "scenarioRelevance": "Tail channel under severe combined stress; do not imply a base-case forced sale or valuation.",
+      "unresolvedUncertainty": "Hardware obsolescence, power/interconnection transfer rights, repurposability, creditor priority, site liquidity and recovery time.",
+      "investigationNotes": "Actual adjacent-operator investigation found no disclosed hyperscaler datacenter/GPU distressed transaction price or recovery series. IREN FY2026 Form 20-F reports USD 638.8m impairment (FY25 USD 7.2m), primarily Bitcoin-mining hardware, IT/electrical equipment and infrastructure displaced during planned conversion/retrofit for AI Cloud; this is noncash accounting impairment and strategic reuse, not forced sale. Hyperscale Data Q2 2026 filing reports USD 2.3m mining-equipment impairment when reallocating site power to contracted AI/neocloud service and had not finalized relocation/sale/disposal; fair value used comparable mining-equipment data. These support conversion/obsolescence and asset-specific recovery uncertainty but cannot calibrate GPU/datacenter fire-sale recovery. Search stopped after SEC filings, company reports, bankruptcy-court/auction queries for Chapter 11 GPU/datacenter sale records; no direct comparable matched transaction observed. Gaps: confidential private sales, liens/site rights, liquidation price, GPU generation and actual utilization."
+    },
+    {
+      "mechanismId": "telecom_2001_analogue",
+      "causalChain": "Telecom network construction, expectations about traffic and revenues, debt and fixed network costs, plus governance/accounting quality can interact; lower realized demand or financing access can produce write-downs, restructuring and creditor losses.",
+      "strongestSupportSourceIds": [
+        "WORLDCOM_2001_10K",
+        "WORLDCOM_2002_10Q",
+        "FCC_TELECOM_2003",
+        "WORLDCOM_RESTATED_FY2001_10K",
+        "GLOBAL_CROSSING_REORG_2002",
+        "MCI_POST_EMERGENCE_Q1_2004"
+      ],
+      "counterEvidence": "The failed issuers are not interchangeable: WorldCom accounting fraud/restatement and acquisition-funded expansion materially affect interpretation; Global Crossing entered Chapter 11 in January 2002, but a fiber-overbuild analogy alone does not establish common causes. Current large platforms have diversified operating cash flow and broader uses for facilities. Network assets and parts of the fiber estate survived or were reorganized, so bankruptcy is not equivalent to total asset destruction.",
+      "stockFlowTransmission": "Compare dated operating cash flow, capital expenditure, debt principal/maturities, interest and liquidity—not capex headlines. WorldCom FY2001 operating cash flow was restated from USD 7.994bn originally reported to USD 2.845bn; that correction changes the cash-flow/buildout narrative. Restated investing cash use was USD 6.122bn. A post-emergence MCI report separately records USD 7.36bn debt at 2004-Q1 and USD 5.7bn new senior notes at emergence; this is a restructuring-era balance sheet, not 2001 debt. Keep dates and predecessor/successor accounting distinct.",
+      "identificationLimits": "WorldCom FY2001 accounts were restated after fraudulent capitalization; historical cash flow cannot be read from the original 10-K. The later restatement gives corrected cash flows but remains entangled with acquisitions and business changes. Global Crossing filings have distinct corporate perimeters and bankruptcy/reorganization accounting. 2004 MCI new debt reflects fresh-start accounting and cannot stand in for WorldCom prepetition debt. Neither case identifies a causal effect of fiber overbuild alone or a hyperscaler default probability.",
+      "modelability": "Historical case is a qualitative stress-bound and a test of mismatch assumptions, not a probability distribution for present firms.",
+      "scenarioRelevance": "Useful for examining overbuild, committed costs and downside recoveries while constraining analogical claims.",
+      "unresolvedUncertainty": "Comparable utilization, fiber/datacenter replacement value, debt/cash-flow position at peak expansion and cross-firm survival differences.",
+      "investigationNotes": "Prior restatement evidence retained and compared with current FY2026 filing vintage. The WorldCom FY2001 OCF restatement (USD 7.994bn originally to USD 2.845bn) demonstrates why audited cash-flow quality and capitalization treatment matter; it is not a peer forecast. Current five firms have diversified platforms and substantial operating cash flow but current PPE outlays and non-cancelable commitments can exceed/reduce free cash flow at some issuers. Avoid mapping bankruptcy likelihood from the telecom analogy; compare annual cash OCF/PPE, debt maturity and contractual commitments with date/issuer perimeter matched."
+    },
+    {
+      "mechanismId": "utilization_disclosure",
+      "causalChain": "Capacity installed ahead of use creates depreciation, power and lease costs before serving revenue; utilization can improve unit economics as demand fills capacity, while idle or mismatched specialized assets reduce realized returns. Provisioned capacity, utilized accelerator time, power draw and revenue are different quantities.",
+      "strongestSupportSourceIds": [
+        "MSFT_10K_FY2026",
+        "US_EIA_DATA_CENTER_ENERGY",
+        "CLOUD_COMPUTE_UTILIZATION_ACADEMIC",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025"
+      ],
+      "counterEvidence": "EIA/DOE forecasts indicate aggregate U.S. data-center electricity use and capacity needs, and historical academic production-cloud traces show utilization is measurable; neither identifies present AI GPU utilization. Demand can be served by shared clusters and utilization can vary by workload/time.",
+      "stockFlowTransmission": "Installed server/GPU and data-center capacity are capital stocks; utilization is an operating ratio over a stated interval; electricity use is energy flow; depreciation, power bills and lease payments accrue even under low use. Revenue per accelerator-hour and energy per completed workload are needed for unit economics.",
+      "identificationLimits": "The mapped issuer filings do not report a harmonized accelerator/server utilization rate. National electricity consumption cannot infer utilization or AI share; older cloud server traces differ in hardware, workload, and era.",
+      "modelability": "Do not fill missing utilization with a proxy. Run explicit utilization bands only as assumptions with power and depreciation costs; label them uncalibrated.",
+      "scenarioRelevance": "Critical to capex returns, energy bottlenecks and resale stress; missing metric widens scenario uncertainty.",
+      "unresolvedUncertainty": "GPU-hour utilization, queueing, internal vs external workloads, accelerator generation, idle reserve policy, regional power constraints and depreciation useful life.",
+      "investigationNotes": "Issuer-by-issuer search in current filings: Microsoft FY26 Form 10-K MD&A, Azure capacity, PPE, commitments and risk factors; Amazon Q2 FY26 Form 10-Q, AWS/technology infrastructure, capex and leases; Alphabet Q2 FY26 Form 10-Q, technical infrastructure, leases and GPU/TPU; Meta Q2 FY26 Form 10-Q, servers/datacenters, capex and infrastructure; Oracle FY26 10-K/Q1 FY27 10-Q, cloud infrastructure capex and lease notes. No issuer gives a common accelerator-hour capacity vs used series or comparable GPU utilization ratio in those sections. Microsoft does say Azure demand exceeds available capacity, reports throughput improvement, and quarterly new capacity quickly monetized; that is useful company-specific evidence against assuming idle capacity but is not utilization. Google’s aggregate capacity/efficiency statements and EIA electricity totals are not GPU-hour denominators. Current physical use remains unavailable as a comparable disclosure; explicitly model utilization bands as assumptions."
+    }
+  ]
+}

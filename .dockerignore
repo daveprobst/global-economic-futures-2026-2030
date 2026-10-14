@@ -1,0 +1,6 @@
+# Send only the server and the built site to the Docker daemon.
+*
+!Dockerfile
+!serve.py
+!site/
+!site/**

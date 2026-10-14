@@ -1,0 +1,866 @@
+{
+  "kind": "baseline",
+  "observations": [
+    {
+      "metric": "China current-account balance, revised BOP",
+      "value": 735.0,
+      "unit": "USD billion",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "China capital and financial-account balance (includes reserve assets), revised BOP",
+      "value": -773.5,
+      "unit": "USD billion",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "China net errors and omissions, revised BOP",
+      "value": 38.5,
+      "unit": "USD billion",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "China external financial assets",
+      "value": 11786.0,
+      "unit": "USD billion, end-period stock",
+      "period": "end-2025",
+      "sourceIds": [
+        "SAFE_IIP_2025"
+      ]
+    },
+    {
+      "metric": "China external financial liabilities",
+      "value": 7714.7,
+      "unit": "USD billion, end-period stock",
+      "period": "end-2025",
+      "sourceIds": [
+        "SAFE_IIP_2025"
+      ]
+    },
+    {
+      "metric": "China net external financial assets",
+      "value": 4071.3,
+      "unit": "USD billion, end-period stock",
+      "period": "end-2025",
+      "sourceIds": [
+        "SAFE_IIP_2025"
+      ]
+    },
+    {
+      "metric": "China 1-year Loan Prime Rate",
+      "value": 3.0,
+      "unit": "percent per annum",
+      "period": "fixing 2026-09-20",
+      "sourceIds": [
+        "PBOC_LPR_20260920"
+      ]
+    },
+    {
+      "metric": "China over-5-year Loan Prime Rate",
+      "value": 3.5,
+      "unit": "percent per annum",
+      "period": "fixing 2026-09-20",
+      "sourceIds": [
+        "PBOC_LPR_20260920"
+      ]
+    },
+    {
+      "metric": "China population aged 16–59, annual communiqué",
+      "value": 851.36,
+      "unit": "million persons; 60.6% of population",
+      "period": "year-end 2025; annual communiqué vintage",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "China population aged 15–59, 1% sample survey",
+      "value": 869.87,
+      "unit": "million persons; 61.89% of population",
+      "period": "reference 2025-11-01; sample survey vintage",
+      "sourceIds": [
+        "NBS_POP_SAMPLE_2025"
+      ]
+    },
+    {
+      "metric": "Real estate development investment growth",
+      "value": -17.2,
+      "unit": "percent year-on-year, comparable basis",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "Newly built commercial floor area sold growth",
+      "value": -8.7,
+      "unit": "percent year-on-year, comparable basis",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "Developer domestic-loan funding growth",
+      "value": -7.3,
+      "unit": "percent year-on-year",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "Per-capita disposable income growth, real",
+      "value": 5.0,
+      "unit": "percent year-on-year",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "Per-capita consumption expenditure growth, real",
+      "value": 4.4,
+      "unit": "percent year-on-year",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "National CPI inflation",
+      "value": 0.9,
+      "unit": "percent year-on-year",
+      "period": "September 2026; January–September average also +0.9%",
+      "sourceIds": [
+        "NBS_CPI_202609"
+      ]
+    },
+    {
+      "metric": "Total retail sales of consumer goods growth",
+      "value": 3.7,
+      "unit": "percent year-on-year",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "Investment in fixed assets (excluding rural households) growth",
+      "value": -3.8,
+      "unit": "percent year-on-year, comparable basis",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025"
+      ]
+    },
+    {
+      "metric": "China current-account balance, Q2 2026",
+      "value": 193.7,
+      "unit": "USD billion, quarterly flow",
+      "period": "Q2 2026",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "China current-account balance, first half 2026",
+      "value": 378.0,
+      "unit": "USD billion, cumulative flow",
+      "period": "H1 2026",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "China capital and financial-account balance, first half 2026",
+      "value": -345.2,
+      "unit": "USD billion, cumulative flow",
+      "period": "H1 2026; reserve treatment per SAFE BOP table",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "China external financial net assets",
+      "value": 3824.9,
+      "unit": "USD billion, end-period stock",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_IIP_202606"
+      ]
+    },
+    {
+      "metric": "China external portfolio-investment liabilities",
+      "value": 2623.2,
+      "unit": "USD billion, end-period stock",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_IIP_202606"
+      ]
+    },
+    {
+      "metric": "China external direct-investment liabilities",
+      "value": 4170.0,
+      "unit": "USD billion, end-period stock",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_IIP_202606"
+      ]
+    },
+    {
+      "metric": "China gross external debt",
+      "value": 2498.2,
+      "unit": "USD billion, end-period stock",
+      "period": "end-June 2026; contractual original maturity basis",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "China short-term gross external debt",
+      "value": 1468.6,
+      "unit": "USD billion, end-period stock; 59% of external debt",
+      "period": "end-June 2026; original maturity <= 1 year; includes trade credit exposure",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "China banking-sector gross external debt",
+      "value": 997.4,
+      "unit": "USD billion, end-period stock",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "China external debt of other sectors",
+      "value": 1012.7,
+      "unit": "USD billion, end-period stock; includes direct-investment intercompany lending",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "China social financing outstanding",
+      "value": 462.06,
+      "unit": "RMB trillion, end-period stock; +7.4% y/y",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "RMB loans extended to real economy, social-financing balance",
+      "value": 279.16,
+      "unit": "RMB trillion, end-period stock; +5.3% y/y",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "Government bonds within social financing",
+      "value": 101.36,
+      "unit": "RMB trillion, end-period stock; +14.2% y/y",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "New corporate loan weighted-average rate",
+      "value": 3.0,
+      "unit": "percent per annum, weighted average for newly issued loans",
+      "period": "June 2026; about 20 basis points below June 2025",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "New personal housing loan weighted-average rate",
+      "value": 3.1,
+      "unit": "percent per annum, weighted average for newly issued loans",
+      "period": "June 2026; approximately unchanged y/y",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "China local debt-swap bonds issued",
+      "value": 2.0,
+      "unit": "RMB trillion; program issuance completed",
+      "period": "calendar 2025",
+      "sourceIds": [
+        "MOF_DEBT_IMPLEMENTATION_2025"
+      ]
+    },
+    {
+      "metric": "IMF estimated augmented government debt",
+      "value": 126.6,
+      "unit": "percent of GDP; IMF staff estimate including government-guided funds and LGFV activity",
+      "period": "2025 estimate, IMF 2026 Article IV vintage",
+      "sourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026"
+      ]
+    },
+    {
+      "metric": "IMF estimated LGFV debt",
+      "value": 50.9,
+      "unit": "percent of GDP; IMF staff estimated LGFV debt component, not official published LGFV balance sheet",
+      "period": "2025 estimate, IMF 2026 Article IV vintage",
+      "sourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026"
+      ]
+    },
+    {
+      "metric": "Industrial PPI inflation",
+      "value": 3.8,
+      "unit": "percent year-on-year; 0.4 percent month-on-month",
+      "period": "August 2026 (historical month; superseded as latest by September release)",
+      "sourceIds": [
+        "NBS_PPI_202608"
+      ]
+    },
+    {
+      "metric": "Real estate investment growth",
+      "value": -19.9,
+      "unit": "percent year-on-year, comparable basis",
+      "period": "January-August 2026 cumulative",
+      "sourceIds": [
+        "NBS_PROPERTY_202608"
+      ]
+    },
+    {
+      "metric": "New commercial building sales area growth",
+      "value": -12.1,
+      "unit": "percent year-on-year",
+      "period": "January-August 2026 cumulative",
+      "sourceIds": [
+        "NBS_PROPERTY_202608"
+      ]
+    },
+    {
+      "metric": "Developer domestic loan funding growth",
+      "value": -33.3,
+      "unit": "percent year-on-year",
+      "period": "January-August 2026 cumulative",
+      "sourceIds": [
+        "NBS_PROPERTY_202608"
+      ]
+    },
+    {
+      "metric": "Developer deposits and advance receipts growth",
+      "value": -14.8,
+      "unit": "percent year-on-year",
+      "period": "January-August 2026 cumulative",
+      "sourceIds": [
+        "NBS_PROPERTY_202608"
+      ]
+    },
+    {
+      "metric": "Commercial buildings for sale area",
+      "value": 753.49,
+      "unit": "million square metres, end-period completed unsold inventory measure",
+      "period": "end-August 2026; -1.1% y/y",
+      "sourceIds": [
+        "NBS_PROPERTY_202608"
+      ]
+    },
+    {
+      "metric": "Portfolio investment net flows, excluding reserves",
+      "value": -425.6,
+      "unit": "USD billion, annual flow; negative balance",
+      "period": "calendar 2025 revised BOP",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "Other investment net flows, excluding reserves",
+      "value": -293.2,
+      "unit": "USD billion, annual flow; negative balance",
+      "period": "calendar 2025 revised BOP",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "Reserve assets financial-account balance",
+      "value": 46.8,
+      "unit": "USD billion, annual flow; positive balance in SAFE BOP sign convention",
+      "period": "calendar 2025 revised BOP",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "Financial account excluding reserve assets",
+      "value": -820.1,
+      "unit": "USD billion, annual flow",
+      "period": "calendar 2025 revised BOP",
+      "sourceIds": [
+        "SAFE_BOP_REVISED_2025"
+      ]
+    },
+    {
+      "metric": "H1 portfolio investment balance, excluding reserves",
+      "value": -151.2,
+      "unit": "USD billion, cumulative flow",
+      "period": "first half 2026; SAFE BOP sign convention",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "H1 other investment balance, excluding reserves",
+      "value": -66.9,
+      "unit": "USD billion, cumulative flow",
+      "period": "first half 2026; SAFE BOP sign convention",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "H1 reserve assets financial-account balance",
+      "value": -122.5,
+      "unit": "USD billion, cumulative flow",
+      "period": "first half 2026; SAFE BOP sign convention",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "H1 direct investment balance, excluding reserves",
+      "value": -15.8,
+      "unit": "USD billion, cumulative flow",
+      "period": "first half 2026; SAFE BOP sign convention",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "H1 net errors and omissions",
+      "value": -32.8,
+      "unit": "USD billion, cumulative balance",
+      "period": "first half 2026; separate from financial account",
+      "sourceIds": [
+        "SAFE_BOP_H1_2026"
+      ]
+    },
+    {
+      "metric": "Foreign-currency-denominated gross external debt",
+      "value": 1094.4,
+      "unit": "USD billion, end-period stock; 44% of gross external debt",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "Domestic-currency-denominated gross external debt",
+      "value": 1403.8,
+      "unit": "USD billion, end-period stock; 56% of gross external debt",
+      "period": "end-June 2026",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "Short-term gross external debt that is trade-related",
+      "value": 41,
+      "unit": "percent of short-term gross external debt",
+      "period": "end-June 2026; original contractual maturity classification",
+      "sourceIds": [
+        "SAFE_EXTDEBT_202606"
+      ]
+    },
+    {
+      "metric": "2025 direct-investment liabilities, financial sector net flow",
+      "value": 15.0,
+      "unit": "USD billion, annual flow; positive means liability increase",
+      "period": "calendar 2025 revised SAFE sector table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 direct-investment liabilities, non-financial sector net flow",
+      "value": 65.0,
+      "unit": "USD billion, annual flow; positive means liability increase",
+      "period": "calendar 2025 revised SAFE sector table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 portfolio debt liabilities, banks short-term net flow",
+      "value": -53.9,
+      "unit": "USD billion, annual flow; negative means liability decrease",
+      "period": "calendar 2025 revised SAFE sector/maturity table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 portfolio debt liabilities, banks long-term net flow",
+      "value": -45.0,
+      "unit": "USD billion, annual flow; negative means liability decrease",
+      "period": "calendar 2025 revised SAFE sector/maturity table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 portfolio debt liabilities, general government short-term net flow",
+      "value": -15.4,
+      "unit": "USD billion, annual flow; negative means liability decrease",
+      "period": "calendar 2025 revised SAFE sector/maturity table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 portfolio debt assets acquired by banks, short-term",
+      "value": 41.8,
+      "unit": "USD billion, annual net asset acquisition",
+      "period": "calendar 2025 revised SAFE sector/maturity table; SAFE negative asset balance means net increase",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 portfolio debt assets acquired by banks, long-term",
+      "value": 89.6,
+      "unit": "USD billion, annual net asset acquisition",
+      "period": "calendar 2025 revised SAFE sector/maturity table; SAFE negative asset balance means net increase",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 bank loan liabilities net flow, short-term",
+      "value": -26.6,
+      "unit": "USD billion, annual flow; negative means liability decrease",
+      "period": "calendar 2025 revised SAFE sector/maturity table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 bank loan liabilities net flow, long-term",
+      "value": -5.0,
+      "unit": "USD billion, annual flow; negative means liability decrease",
+      "period": "calendar 2025 revised SAFE sector/maturity table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "2025 other-sector trade-credit liabilities net flow, short-term",
+      "value": 24.7,
+      "unit": "USD billion, annual flow; positive means liability increase",
+      "period": "calendar 2025 revised SAFE sector/maturity table",
+      "sourceIds": [
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "metric": "Industrial PPI inflation",
+      "value": 5.0,
+      "unit": "percent year-on-year",
+      "period": "September 2026 (latest NBS release available at 2026-10-14 cutoff)",
+      "sourceIds": [
+        "NBS_PPI_202609"
+      ]
+    },
+    {
+      "metric": "Industrial PPI inflation",
+      "value": 1.2,
+      "unit": "percent month-on-month",
+      "period": "September 2026",
+      "sourceIds": [
+        "NBS_PPI_202609"
+      ]
+    },
+    {
+      "metric": "Living-materials/consumer-goods PPI inflation",
+      "value": -0.1,
+      "unit": "percent year-on-year",
+      "period": "September 2026",
+      "sourceIds": [
+        "NBS_PPI_202609"
+      ]
+    },
+    {
+      "metric": "BIS debt service ratio, private non-financial sector (not household-only)",
+      "value": 19.1,
+      "unit": "percent of income available for debt service",
+      "period": "2026-Q1; latest observation in BIS DSR CSV snapshot 2026-09-14",
+      "sourceIds": [
+        "BIS_DSR_CHINA_PNF_2026Q1"
+      ]
+    },
+    {
+      "metric": "Household loans, financial institutions RMB credit balance sheet",
+      "value": 83.363103,
+      "unit": "RMB trillion outstanding",
+      "period": "End-November 2025; latest populated month in PBOC table archived here",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household medium/long-term loans (not mortgage-only)",
+      "value": 62.864418,
+      "unit": "RMB trillion outstanding",
+      "period": "End-November 2025",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household medium/long-term consumption loans (mortgage-inclusive category; not mortgage-only)",
+      "value": 48.804176,
+      "unit": "RMB trillion outstanding",
+      "period": "End-November 2025",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household deposits (liquidity proxy, not matched to borrowers)",
+      "value": 163.308444,
+      "unit": "RMB trillion outstanding",
+      "period": "End-November 2025",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household demand deposits (partial liquidity proxy)",
+      "value": 42.392976,
+      "unit": "RMB trillion outstanding",
+      "period": "End-November 2025",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household time and other deposits",
+      "value": 120.915468,
+      "unit": "RMB trillion outstanding",
+      "period": "End-November 2025",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household deposits / household loans (aggregate ratio; not household net worth)",
+      "value": 1.9590015021393818,
+      "unit": "times",
+      "period": "End-November 2025 (ratio calculated from same-month PBOC reported stocks)",
+      "sourceIds": [
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "metric": "Household loan change",
+      "value": -0.3668,
+      "unit": "RMB trillion net flow during half-year",
+      "period": "2026-H1 (not June-end debt stock)",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "Household short-term loan change",
+      "value": -0.5881,
+      "unit": "RMB trillion net flow during half-year",
+      "period": "2026-H1",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "Household medium/long-term loan change",
+      "value": 0.2212,
+      "unit": "RMB trillion net flow during half-year",
+      "period": "2026-H1",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "Household deposit change",
+      "value": 7.58,
+      "unit": "RMB trillion net flow during half-year",
+      "period": "2026-H1 (not June-end deposit stock)",
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "metric": "China Vanke consolidated group cash and cash equivalents",
+      "value": 53.082936,
+      "unit": "RMB billion stock",
+      "period": "2026-06-30; reviewed unaudited interim report",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke consolidated group current bank loans and financial-institution borrowings",
+      "value": 167.24908,
+      "unit": "RMB billion carrying amount",
+      "period": "2026-06-30; reviewed unaudited interim report",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke consolidated group current bonds payable",
+      "value": 14.460624,
+      "unit": "RMB billion carrying amount",
+      "period": "2026-06-30; reviewed unaudited interim report",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke consolidated group non-current bank loans and other financial-institution borrowings",
+      "value": 130.002189,
+      "unit": "RMB billion carrying amount",
+      "period": "2026-06-30; reviewed unaudited interim report",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke consolidated group inventories and other contract costs",
+      "value": 347.967248,
+      "unit": "RMB billion asset carrying amount",
+      "period": "2026-06-30; reviewed unaudited interim report",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke consolidated group contract liabilities",
+      "value": 77.553166,
+      "unit": "RMB billion liability carrying amount",
+      "period": "2026-06-30; reviewed unaudited interim report",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke consolidated group inventory write-down",
+      "value": 3.936992,
+      "unit": "RMB billion flow recognized in profit/loss",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke one-year debt principal cited in going-concern review",
+      "value": 178.86,
+      "unit": "RMB billion contractual principal due within one year",
+      "period": "As at 2026-06-30; report’s reviewer note",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke Shenzhen Metro Group related-party loan balance",
+      "value": 34.1,
+      "unit": "RMB billion balance",
+      "period": "2026-06-30; consolidated group note",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    },
+    {
+      "metric": "China Vanke Shenzhen Metro Group related-party loan balance",
+      "value": 30.5,
+      "unit": "RMB billion balance",
+      "period": "2025-12-31 comparator",
+      "sourceIds": [
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ],
+      "reviewUse": {
+        "classification": "provisional_secondary_located_issuer_illustration",
+        "modelCalibrationAllowed": false,
+        "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+      }
+    }
+  ]
+}

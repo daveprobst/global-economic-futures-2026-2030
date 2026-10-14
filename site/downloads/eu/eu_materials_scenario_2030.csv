@@ -1,0 +1,2 @@
+year,material,stage,demand_kt,supply_share_pct_low,supply_share_pct_high,supply_kt_low,supply_kt_high,theoretical_eol_available_kt,inventory_kt,sufficiency_pct_low,sufficiency_pct_high,classification,source_id,scope
+2030,NdFeB magnet mass,secondary usable magnet supply,36.0,8.0,19.0,2.88,6.84,10.0,,8.0,19.0,derived from source-model scenario bounds; not observed,RIZOS_MAGNET_CESEPS_2022,selected applications; about 68% of 2020 EU NdFeB market estimate

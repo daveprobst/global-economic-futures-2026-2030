@@ -1,0 +1,6 @@
+# Public source tree for the Global Economic Futures explorer.
+.venv*/
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp

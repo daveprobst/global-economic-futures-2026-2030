@@ -1,0 +1,338 @@
+{
+  "kind": "baseline",
+  "observations": [
+    {
+      "metric": "BIS cross-border bank claims, outstanding stock",
+      "value": 47.6,
+      "unit": "trillion USD",
+      "period": "end-2026-Q1; source release 2026-07-31; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS cross-border bank credit, outstanding stock",
+      "value": 39.5,
+      "unit": "trillion USD",
+      "period": "end-2026-Q1; source release 2026-07-31; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS cross-border bank credit, year-on-year growth",
+      "value": 11,
+      "unit": "percent y/y",
+      "period": "end-2026-Q1; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS USD-denominated foreign-currency credit to non-banks outside the United States, outstanding stock",
+      "value": 14.7,
+      "unit": "trillion USD",
+      "period": "end-2026-Q1; approximately 30% attributed to EMDE borrowers; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS USD-denominated foreign-currency credit to non-banks outside the United States, year-on-year growth",
+      "value": 7.3,
+      "unit": "percent y/y",
+      "period": "end-2026-Q1; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS EUR-denominated foreign-currency credit to non-banks outside the euro area, outstanding stock",
+      "value": 5.1,
+      "unit": "trillion EUR",
+      "period": "end-2026-Q1; approximately 17% attributed to EMDE borrowers; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS EUR-denominated foreign-currency credit to non-banks outside the euro area, year-on-year growth",
+      "value": 12,
+      "unit": "percent y/y",
+      "period": "end-2026-Q1; current vintage inspected 2026-10-14",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS cross-border bank credit to EMDEs, Q1 change",
+      "value": 148,
+      "unit": "billion USD",
+      "period": "2026-Q1; exchange-rate and break-adjusted BIS release coverage",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS cross-border bank credit to non-bank financial institutions, Q1 change",
+      "value": 651,
+      "unit": "billion USD",
+      "period": "2026-Q1; concentration in a handful of borrower and lender locations noted by BIS",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "Euro share of global foreign-currency credit in USD, EUR and JPY",
+      "value": 28,
+      "unit": "percent",
+      "period": "end-2026-Q1; up from 22% end-2022-Q3; BIS notes constant-FX calculation gives a somewhat smaller rise but same direction",
+      "sourceIds": [
+        "BIS_GLI_2026Q1"
+      ]
+    },
+    {
+      "metric": "Swiss imported intermediate-input supplier share from EU",
+      "value": 54.0,
+      "unit": "percent of imported intermediate inputs, average across Swiss sectors",
+      "period": "2018 input-output data; reported by OECD Economic Survey of Switzerland 2024, Figure 5.10 panel B",
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ]
+    },
+    {
+      "metric": "WorldCom long-term debt, net of current portion, restated FY2001 year-end",
+      "value": 29.31,
+      "unit": "USD billion, debt note balance",
+      "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "WorldCom cash and cash equivalents, restated FY2001 year-end",
+      "value": 1.29,
+      "unit": "USD billion",
+      "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "WorldCom operating cash flow, restated FY2001",
+      "value": 2.845,
+      "unit": "USD billion",
+      "period": "FY2001; restated in 2002 Form 10-K filed 2004",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "WorldCom additions to property, plant and equipment, restated FY2001",
+      "value": 6.465,
+      "unit": "USD billion cash outflow",
+      "period": "FY2001; restated in 2002 Form 10-K filed 2004",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Level 3 capital expenditures",
+      "value": 2.3,
+      "unit": "USD billion",
+      "period": "FY2001; company reported",
+      "sourceIds": [
+        "LEVEL3_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Level 3 year-end available funds (cash/marketable securities and undrawn secured facility)",
+      "value": 2.1,
+      "unit": "USD billion",
+      "period": "2001-12-31; company reported",
+      "sourceIds": [
+        "LEVEL3_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "WorldCom current portion of debt, restated FY2001 year-end",
+      "value": 1.309,
+      "unit": "USD billion",
+      "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "WorldCom total scheduled debt including current portion, restated FY2001 year-end",
+      "value": 30.619,
+      "unit": "USD billion; sum of debt-note long-term balance and current portion",
+      "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of FR nationality on residents of DE",
+      "value": 337.859,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of FR nationality on residents of CH",
+      "value": 69.701,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of FR nationality on residents of US",
+      "value": 482.844,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of GB nationality on residents of US",
+      "value": 1190.985,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of GB nationality on residents of FR",
+      "value": 306.989,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of GB nationality on residents of DE",
+      "value": 112.712,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "BIS CBS gross international claims: banks of GB nationality on residents of CH",
+      "value": 50.309,
+      "unit": "USD billion, outstanding gross stock",
+      "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+      "sourceIds": [
+        "BIS_CBS_PUB_2026Q1"
+      ]
+    },
+    {
+      "metric": "United States to China merchandise exports",
+      "value": 143.546,
+      "unit": "USD billion, current-value merchandise exports",
+      "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+      "sourceIds": [
+        "UN_COMTRADE_BILATERAL_2024"
+      ]
+    },
+    {
+      "metric": "China to United States merchandise exports",
+      "value": 525.649,
+      "unit": "USD billion, current-value merchandise exports",
+      "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+      "sourceIds": [
+        "UN_COMTRADE_BILATERAL_2024"
+      ]
+    },
+    {
+      "metric": "EU27 to United States merchandise exports",
+      "value": 571.114,
+      "unit": "USD billion, current-value merchandise exports",
+      "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+      "sourceIds": [
+        "UN_COMTRADE_BILATERAL_2024"
+      ]
+    },
+    {
+      "metric": "EU27 to China merchandise exports",
+      "value": 227.172,
+      "unit": "USD billion, current-value merchandise exports",
+      "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+      "sourceIds": [
+        "UN_COMTRADE_BILATERAL_2024"
+      ]
+    },
+    {
+      "metric": "Verizon cash and cash equivalents at year end",
+      "value": 0.979,
+      "unit": "USD billion",
+      "period": "2001-12-31",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Verizon net cash from operating activities",
+      "value": 19.773,
+      "unit": "USD billion",
+      "period": "FY2001",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Verizon cash capital expenditures",
+      "value": 17.371,
+      "unit": "USD billion cash outflow",
+      "period": "FY2001",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Verizon debt maturing within one year",
+      "value": 18.669,
+      "unit": "USD billion",
+      "period": "2001-12-31 balance sheet",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Verizon long-term debt excluding current maturities",
+      "value": 45.657,
+      "unit": "USD billion",
+      "period": "2001-12-31 balance sheet",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Verizon total debt, including current debt",
+      "value": 64.326,
+      "unit": "USD billion; 18.669 current plus 45.657 long term",
+      "period": "2001-12-31",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    },
+    {
+      "metric": "Federal funds target range midpoint (derived from range, not upper bound)",
+      "value": 3.875,
+      "unit": "percent per annum",
+      "period": "Target range 3.75–4.00%; effective 2026-09-17; midpoint = (3.75+4.00)/2",
+      "sourceIds": [
+        "FED_FOMC_20260916"
+      ]
+    }
+  ]
+}

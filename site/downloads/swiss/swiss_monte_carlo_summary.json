@@ -1,0 +1,100 @@
+{
+  "status": "executed_sensitivity_simulation_not_forecast",
+  "asOf": "2026-10-14",
+  "seed": 20261014,
+  "draws": 2000,
+  "scenarioId": "severe_combined",
+  "distribution": "triangular bounded design sensitivities; not probability calibrated",
+  "correlationDesign": "EUR risk overlay has positive common-factor loading 0.35; USD bilateral deviation is independent symmetric triangular; other uncertain parameters drawn independently. Design assumptions, not estimated correlations.",
+  "summary": {
+    "2027": {
+      "gdp_real_normalized_index": {
+        "p05": 101.6,
+        "p50": 101.6,
+        "p95": 101.6
+      },
+      "cpi_annual_average_pct": {
+        "p05": -0.3693452954003499,
+        "p50": 0.6044858611152383,
+        "p95": 1.4902502597411424
+      },
+      "eur_chf_chf_per_eur": {
+        "p05": 0.8140700427860293,
+        "p50": 0.8482096270696936,
+        "p95": 0.8821166877725937
+      },
+      "usd_chf_chf_per_usd": {
+        "p05": 0.7966960646763552,
+        "p50": 0.8194521922660172,
+        "p95": 0.84163654325083
+      }
+    },
+    "2028": {
+      "gdp_real_normalized_index": {
+        "p05": 103.2256,
+        "p50": 103.2256,
+        "p95": 103.2256
+      },
+      "cpi_annual_average_pct": {
+        "p05": -0.3693452954003499,
+        "p50": 0.6044858611152383,
+        "p95": 1.4902502597411424
+      },
+      "eur_chf_chf_per_eur": {
+        "p05": 0.7669140427860294,
+        "p50": 0.8010536270696936,
+        "p95": 0.8349606877725938
+      },
+      "usd_chf_chf_per_usd": {
+        "p05": 0.7554776225014459,
+        "p50": 0.7786156180124285,
+        "p95": 0.801400147010779
+      }
+    },
+    "2029": {
+      "gdp_real_normalized_index": {
+        "p05": 104.8772096,
+        "p50": 104.8772096,
+        "p95": 104.8772096
+      },
+      "cpi_annual_average_pct": {
+        "p05": -0.3693452954003499,
+        "p50": 0.6044858611152383,
+        "p95": 1.4902502597411424
+      },
+      "eur_chf_chf_per_eur": {
+        "p05": 0.754496,
+        "p50": 0.754496,
+        "p95": 0.7878046877725937
+      },
+      "usd_chf_chf_per_usd": {
+        "p05": 0.7152651967358712,
+        "p50": 0.7374275182905973,
+        "p95": 0.7590325342528831
+      }
+    },
+    "2030": {
+      "gdp_real_normalized_index": {
+        "p05": 106.5552449536,
+        "p50": 106.5552449536,
+        "p95": 106.5552449536
+      },
+      "cpi_annual_average_pct": {
+        "p05": -0.3693452954003499,
+        "p50": 0.6044858611152383,
+        "p95": 1.4902502597411424
+      },
+      "eur_chf_chf_per_eur": {
+        "p05": 0.7669140427860294,
+        "p50": 0.8010536270696936,
+        "p95": 0.8349606877725938
+      },
+      "usd_chf_chf_per_usd": {
+        "p05": 0.7553007952446474,
+        "p50": 0.7777469019144899,
+        "p95": 0.8014783635261432
+      }
+    }
+  },
+  "rows": 8000
+}

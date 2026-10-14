@@ -1,0 +1,52 @@
+{
+ "unit": "USD billion",
+ "label": "Observed",
+ "note": "Observed issuer values as reported. Liquid resources and debt face principal are shown side by side and are not summed or netted.",
+ "companies": [
+  {
+   "company": "Microsoft",
+   "ticker": "MSFT",
+   "liquidResourcesTotal": 76.843,
+   "liquidDate": "2026-06-30",
+   "debtFacePrincipal": 46.136,
+   "debtDate": "2026-06-30",
+   "debtBasis": "face principal at balance date"
+  },
+  {
+   "company": "Amazon",
+   "ticker": "AMZN",
+   "liquidResourcesTotal": 122.988,
+   "liquidDate": "2026-06-30",
+   "debtFacePrincipal": 132.995,
+   "debtDate": "2026-06-30",
+   "debtBasis": "face principal at balance date"
+  },
+  {
+   "company": "Alphabet",
+   "ticker": "GOOGL",
+   "liquidResourcesTotal": 242.474,
+   "liquidDate": "2026-06-30",
+   "debtFacePrincipal": 101.085,
+   "debtDate": "2026-06-30",
+   "debtBasis": "face principal at balance date"
+  },
+  {
+   "company": "Meta",
+   "ticker": "META",
+   "liquidResourcesTotal": 90.26,
+   "liquidDate": "2026-06-30",
+   "debtFacePrincipal": 84.0,
+   "debtDate": "2026-06-30",
+   "debtBasis": "face principal at balance date"
+  },
+  {
+   "company": "Oracle",
+   "ticker": "ORCL",
+   "liquidResourcesTotal": 37.077,
+   "liquidDate": "2026-08-31",
+   "debtFacePrincipal": 130.105,
+   "debtDate": "2026-05-31",
+   "debtBasis": "face principal from the annual debt schedule (earlier date than liquidity)"
+  }
+ ]
+}

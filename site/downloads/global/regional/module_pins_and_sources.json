@@ -1,0 +1,24 @@
+{
+  "pins": {
+    "checkedFiles": 3,
+    "mismatches": 0
+  },
+  "sourceIds": {
+    "us": {
+      "consumed": 7,
+      "resolved": 7
+    },
+    "china": {
+      "consumed": 18,
+      "resolved": 18
+    },
+    "swiss": {
+      "consumed": 15,
+      "resolved": 15
+    },
+    "eu": {
+      "consumed": 8,
+      "resolved": 8
+    }
+  }
+}

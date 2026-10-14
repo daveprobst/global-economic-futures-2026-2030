@@ -1,0 +1,106 @@
+{
+  "title": "Primary disclosure comparison for telecom infrastructure analogues",
+  "asOf": "2026-10-14",
+  "cases": [
+    {
+      "entity": "WorldCom / MCI",
+      "role": "Failed leveraged carrier; Chapter 11 filed 2002-07-21",
+      "period": "FY2001 restated; cash/debt at 2001-12-31",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+      ],
+      "metrics": {
+        "cash_and_equivalents_usd_bn": 1.29,
+        "operating_cash_flow_usd_bn": 2.845,
+        "cash_ppe_additions_usd_bn": 6.465,
+        "long_term_debt_less_current_usd_bn": 29.31,
+        "current_debt_usd_bn": 1.309,
+        "total_debt_usd_bn": 30.619,
+        "restatement_net_equity_reduction_usd_bn": 70.8,
+        "pp_and_e_plus_intangibles_book_value_adjusted_from_usd_bn": 44.4,
+        "pp_and_e_plus_intangibles_estimated_aggregate_value_usd_bn": 23.8,
+        "debt_identity_check": 30.619
+      },
+      "interpretation": "Total debt was USD 30.619bn (USD 29.310bn long-term excluding current maturities plus USD 1.309bn current); capex far exceeded year cash and OCF; however, this was a diversified carrier with major acquisitions, governance/accounting fraud, large impairment/restate items and other business segments. It cannot isolate fiber overbuild causality. FY2001 accounting data here is the later audited restatement."
+    },
+    {
+      "entity": "Level 3 Communications",
+      "role": "Fiber entrant; high buildout and funding need; later underwent financial restructuring",
+      "period": "FY2001 and year-end 2001 management disclosures",
+      "sourceIds": [
+        "LEVEL3_FY2001_10K_GLOBAL"
+      ],
+      "metrics": {
+        "cash_capex_usd_bn": 2.3,
+        "available_funds_including_undrawn_secured_facility_usd_bn": 2.1,
+        "estimated_cumulative_capital_need_to_free_cash_flow_breakeven_usd_bn_low": 13.0,
+        "estimated_cumulative_capital_need_to_free_cash_flow_breakeven_usd_bn_high": 14.0,
+        "estimated_base_capex_2002_usd_bn": 0.2
+      },
+      "interpretation": "Company expected significant capex decline after network completion and success-based future capex, but warned it might fail to raise funds or realize asset values. Estimates are contemporaneous management projections and not realized outcomes."
+    },
+    {
+      "entity": "Verizon Communications",
+      "role": "Surviving integrated incumbent comparator, fiscal-year aligned to WorldCom/Level 3 calendar 2001; not a matched long-haul fiber entrant",
+      "period": "FY2001; balance sheet and debt at 2001-12-31",
+      "sourceIds": [
+        "VERIZON_FY2001_10K_GLOBAL"
+      ],
+      "metrics": {
+        "cash_and_equivalents_usd_bn": 0.979,
+        "operating_cash_flow_usd_bn": 19.773,
+        "cash_capex_usd_bn": 17.371,
+        "operating_cash_flow_less_cash_capex_usd_bn": 2.402,
+        "debt_maturing_within_one_year_usd_bn": 18.669,
+        "long_term_debt_less_current_maturities_usd_bn": 45.657,
+        "total_debt_usd_bn": 64.326,
+        "long_term_debt_including_current_maturities_usd_bn": 51.494,
+        "current_maturities_in_note_usd_bn": 5.837,
+        "long_term_debt_maturity_schedule_usd_bn": {
+          "2002": 5.8,
+          "2003": 6.0,
+          "2004": 5.4,
+          "2005": 5.8,
+          "2006": 4.3,
+          "thereafter": 24.2
+        }
+      },
+      "interpretation": "SEC-filed company annual report: cash USD 979m, OCF USD 19,773m and cash capex USD 17,371m; balance sheet debt maturing within one year USD 18,669m and long-term debt excluding current maturities USD 45,657m. Sum gives total debt USD 64,326m. Note 14 long-term debt including current maturities USD 51,494m, less USD 5,837m maturing within a year, gives USD 45,657m. Its large local-access, wireless and international incumbent operations have different cash flows and asset mix from failed WorldCom/Global Crossing and long-haul entrant Level 3; this is a survivor balance-sheet counterexample, not a matched causal sample.",
+      "extractionLocator": "SEC accession 0000950109-02-001438, Exhibit 13, 2001 Verizon Annual Report: “Increase (Decrease) in Cash and Cash Equivalents” p.17; Consolidated Statements of Cash Flows (OCF/capex); consolidated balance sheet “Debt maturing within one year” and long-term debt; Note 14 “Debt” (table: long-term debt including current maturities; less maturing within one year; annual maturity schedule). SEC filing detail: Form 10-K filed 2002-03-20, report date 2001-12-31."
+    }
+  ],
+  "comparabilityLimits": [
+    "WorldCom restatement means contemporaneous reported data was materially unreliable; use the later audited restated statements.",
+    "WorldCom’s acquisition, governance and fraud story differs from a pure infrastructure oversupply shock.",
+    "Level 3 was itself restructured and management forward estimates are not actual asset recoveries.",
+    "Verizon was a regulated/local-access and wireless incumbent with different demand, customer mix and asset network economics.",
+    "No common utilization denominator, per-route-mile capacity, network lease commitments, or realized salvage price was found in these disclosures. Do not infer AI data-center asset recovery rates from telecom impairment/book values."
+  ],
+  "extractionLog": [
+    {
+      "sourceId": "WORLDCOM_RESTATED_FY2001_10K_GLOBAL",
+      "locator": "SEC Form 10-K, restated consolidated cash flow table (F-8); debt note (F-53); restatement overview; long-lived asset note. Cash $1,290m; OCF $2,845m; PP&E additions $6,465m; long-term debt excluding current portion $29,310m; current portion $1,309m; total debt $30,619m; equity reduction $70.8bn; PP&E/intangibles carrying amount $44.4bn adjusted to aggregate estimate about $23.8bn.",
+      "conversion": "USD millions divided by 1,000 to USD billions. Identity reconciled and checked: 29.310 + 1.309 = 30.619.",
+      "limitation": "Restated later; aggregate fair-value estimate reflects management/third-party appraisal and impairment process, not a sale transaction."
+    },
+    {
+      "sourceId": "LEVEL3_FY2001_10K_GLOBAL",
+      "locator": "SEC Form 10-K PDF, MD&A liquidity and capital expenditures (pp. 49–53): FY2001 capital expenditures about $2.3bn; year-end funds available about $2.1bn including cash/securities and undrawn credit; cumulative capital required to FCF breakeven $13–14bn; 2002 base capex estimate $0.2bn.",
+      "conversion": "Reported USD billions as stated.",
+      "limitation": "Management plan estimate, not realized cash need, asset recovery, or utilization."
+    },
+    {
+      "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+      "locator": "SEC accession 0000950109-02-001438, FY2001 annual report: MD&A cash narrative; Consolidated Financial Condition cash flow summary; Consolidated Balance Sheets; Note 14 Long-term Debt. Short source passages persisted in verizon-source-excerpts.json.",
+      "conversion": "USD millions divided by 1,000. OCF 19.773 less cash capex 17.371 = 2.402; current debt maturing within one year 18.669 plus balance-sheet long-term debt 45.657 = total debt 64.326. Note 14 independently reconciles 51.494 including current maturities less 5.837 = 45.657; 18.669 current liabilities are broader than the note long-term-maturity amount and must not be added twice.",
+      "limitation": "Diversified regulated/local-access and wireless incumbent, not a matched pure fiber entrant. No utilization measure was found in this extraction; the filing does not isolate fiber overbuild causality."
+    }
+  ],
+  "correctionHistory": [
+    {
+      "at": "2026-10-14T17:25:29Z",
+      "correction": "Prior text labelled USD 29.31bn as WorldCom total debt. Correct interpretation is long-term debt excluding current maturities; total debt including current portion is USD 30.619bn. Added Verizon FY2001 cash/debt/OCF/capex/maturity schedule extracted from SEC Exhibit 13."
+    }
+  ],
+  "sourceExcerptPath": "run-root/research/global/synthesis/verizon-source-excerpts.json"
+}

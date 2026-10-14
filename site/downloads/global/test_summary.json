@@ -1,0 +1,54 @@
+{
+  "kind": "tests",
+  "runId": "gef-main-20261014",
+  "seed": 20261014,
+  "requestedSamples": 10000,
+  "generatedAt": "2026-10-14T19:18:32.889616+00:00",
+  "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+  "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+  "classification": "conditional simulation design; not a forecast; percentiles are not calibrated probabilities",
+  "moduleId": "global-transmission",
+  "unitMap": {
+    "company_liquidity": "USD bn levels; group pressure is a unitless ratio to opening group liquidity",
+    "china_consumption": "index, 2026=100; index points converted by a coefficient to demand fraction",
+    "china_cpi": "percent (pp deviation) and price-level index, 2026=100",
+    "eu_claims": "USD bn (reported BIS summary) converted to demand fraction by a coefficient",
+    "eu_materials": "tonnes per year; EU ledger only, never converted into demand",
+    "swiss": "CHF per EUR/USD; percent growth; GDP index 2026=100; pp converted by a coefficient",
+    "global_demand": "fraction deviation of normalized demand index, 2026=100"
+  },
+  "scopeNote": "four regions (US, China, EU27, Switzerland); nine conditional scenarios",
+  "passed": 50,
+  "failed": 0,
+  "total": 50,
+  "suites": [
+    {
+      "suite": "global",
+      "directory": "run-root/models/global",
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "failing": []
+    },
+    {
+      "suite": "company",
+      "directory": "run-root/models/company",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "failing": []
+    },
+    {
+      "suite": "china",
+      "directory": "run-root/models/china",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "failing": []
+    }
+  ],
+  "note": "unittest counts only; custom assertion receipts are in accounting.json"
+}

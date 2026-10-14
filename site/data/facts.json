@@ -1,0 +1,228 @@
+{
+ "title": "Global Economic Futures, 2026–2030",
+ "asOf": "2026-10-14",
+ "timezone": "Europe/Zurich",
+ "builtAt": "2026-10-14T21:42:49Z",
+ "runId": "gef-main-20261014",
+ "seed": 20261014,
+ "requestedGlobalSamples": 10000,
+ "execution": {
+  "state": "passed",
+  "checks": [
+   {
+    "kind": "deterministic",
+    "status": "passed",
+    "exitCode": 0
+   },
+   {
+    "kind": "monte_carlo",
+    "status": "passed",
+    "exitCode": 0
+   },
+   {
+    "kind": "sensitivity",
+    "status": "passed",
+    "exitCode": 0
+   },
+   {
+    "kind": "accounting",
+    "status": "passed",
+    "exitCode": 0
+   },
+   {
+    "kind": "tests",
+    "status": "passed",
+    "exitCode": 0
+   }
+  ],
+  "accounting": {
+   "identities": 49,
+   "passed": true
+  },
+  "tests": {
+   "passed": 50,
+   "failed": 0,
+   "total": 50
+  },
+  "acceptedBy": "accepted",
+  "acceptedExecutionPath": "execution-rerun_models-1792005512896.json",
+  "residualLimits": [
+   "tests receipt covers only global/company/china suites; EU and Swiss suites not in executor receipt (re-run manually: pass). Recommend adding to runner.",
+   "~98% of severe 2030 EU27 response is from generic global feedback matrix; possible China->EU27 double counting; EU bank coefficient unestimated; safe-haven flows not quantified",
+   "US intensity clipped at 0.7 AI-loss bound",
+   "Swiss FX anchors hardcoded in model.py; models/swiss_spec non-consumed and divergent",
+   "Feedback matrices, copula loading, overlap A16 bounds, refinancing coupon are design assumptions; percentiles are conditional design percentiles, not calibrated probabilities or forecasts",
+   "Dependence/seed sweeps at 2000 draws",
+   "Receipt validator in repair was a Python port; this manifest is the executor's own output"
+  ]
+ },
+ "claims": {
+  "total": 66,
+  "supported": 52,
+  "uncertain": 14,
+  "contradicted": 0
+ },
+ "mechanisms": {
+  "total": 32,
+  "dispositions": {
+   "investigated_with_bounded_use": 32
+  },
+  "deEmphasisAuthorized": false
+ },
+ "sources": {
+  "total": 181,
+  "unique": 181,
+  "duplicateRegistrationsMerged": 1
+ },
+ "observations": {
+  "total": 284,
+  "byRegion": {
+   "us": 82,
+   "china": 89,
+   "eu": 41,
+   "swiss": 35,
+   "global": 37
+  }
+ },
+ "global": {
+  "scenarios": [
+   "base_adaptation",
+   "ai_correction",
+   "ai_revenue_70pct_loss_stress",
+   "prolonged_high_rates",
+   "severe_combined_stress",
+   "europe_adaptation",
+   "europe_fragmentation",
+   "swiss_package_conditional",
+   "swiss_status_quo_erosion"
+  ],
+  "regions": [
+   "China",
+   "EU27",
+   "Switzerland",
+   "US"
+  ],
+  "gfacts": {
+   "severe_2030_p05": {
+    "China": -0.02918442989740347,
+    "EU27": -0.002525158657025508,
+    "Switzerland": -0.019159076169507183,
+    "US": -0.0071676526159793
+   },
+   "severe_2030_p50": {
+    "China": -0.027917382627863793,
+    "EU27": -0.002348255889562723,
+    "Switzerland": -0.015583613851052731,
+    "US": -0.006761114113701427
+   },
+   "severe_2030_p95": {
+    "China": -0.02146897754397909,
+    "EU27": -0.0019106018371825375,
+    "Switzerland": -0.011995083354925502,
+    "US": -0.005769778112083814
+   },
+   "severe_2030_det": {
+    "China": -0.027951109138558358,
+    "EU27": -0.002355750734443487,
+    "Switzerland": -0.015631031561876247,
+    "US": -0.0069913631554067365
+   },
+   "ai70_2030_p50": {
+    "China": -0.00011600005788894453,
+    "EU27": -9.415293020660099e-05,
+    "Switzerland": -4.751434702374877e-05,
+    "US": -0.0038265057730025123
+   }
+  },
+  "deterministicRows": 144,
+  "mcRows": 144,
+  "sensitivityRows": 296,
+  "mcDraws": 10000
+ },
+ "company": {
+  "companies": [
+   "Microsoft",
+   "Amazon",
+   "Alphabet",
+   "Meta",
+   "Oracle"
+  ],
+  "observedAsOfCutoff": "2026-10-14",
+  "commitmentItems": 15,
+  "simulatedPathsStatus": "withheld: accepted company run predates the refinancing-proceeds correction; not re-accepted"
+ },
+ "eu": {
+  "share": [
+   {
+    "year": 2020,
+    "low": 13.0,
+    "high": 31.0,
+    "unit": "% of demand",
+    "sources": "RIZOS_MAGNET_CESEPS_2022",
+    "locator": "PDF pp.38, 42; Figure 12; 2020 demand and TRP are selected-category model estimates."
+   },
+   {
+    "year": 2025,
+    "low": 8.0,
+    "high": 19.0,
+    "unit": "% of demand",
+    "sources": "RIZOS_MAGNET_CESEPS_2022",
+    "locator": "PDF p.42; 8-19% aggregate modeled secondary supply/demand over 2025-2030."
+   },
+   {
+    "year": 2030,
+    "low": 8.0,
+    "high": 19.0,
+    "unit": "% of demand",
+    "sources": "RIZOS_MAGNET_CESEPS_2022",
+    "locator": "PDF pp.38-40, 42; Figure 12. 36 kt modeled demand; ~10 kt theoretical EOL material; 8-19% secondary supply after chain losses."
+   },
+   {
+    "year": 2040,
+    "low": 16.0,
+    "high": 34.0,
+    "unit": "% of demand",
+    "sources": "RIZOS_MAGNET_CESEPS_2022",
+    "locator": "PDF pp.38,40,42; first significant EV retirements start around 2035; EV EOL magnet availability about 10 kt/year by 2040."
+   },
+   {
+    "year": 2050,
+    "low": 24.0,
+    "high": 48.0,
+    "unit": "% of demand",
+    "sources": "RIZOS_MAGNET_CESEPS_2022",
+    "locator": "PDF pp.38,40,42,44; 24-48% scenario range; high scenario close to 50%."
+   }
+  ],
+  "mass2030": {
+   "demandKt": 36.0,
+   "eolKt": 10.0
+  },
+  "bankSummaryRows": 8
+ },
+ "swiss": {
+  "scenarios": [
+   "base_adaptation",
+   "severe_combined",
+   "swiss_package_conditional",
+   "swiss_safe_haven_reversal",
+   "swiss_status_quo_erosion"
+  ],
+  "mcDraws": 2000
+ },
+ "china": {
+  "scenarios": [
+   "base_adaptation",
+   "ai_correction",
+   "prolonged_high_rates",
+   "europe_adaptation",
+   "europe_fragmentation",
+   "swiss_package_conditional",
+   "swiss_status_quo_erosion",
+   "severe_combined",
+   "ai_70_revenue_loss"
+  ],
+  "mcDraws": 2000
+ },
+ "searchItems": 563
+}

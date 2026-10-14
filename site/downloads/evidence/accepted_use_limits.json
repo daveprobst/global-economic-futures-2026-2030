@@ -1,0 +1,47 @@
+{
+  "asOf": "2026-10-14",
+  "cutoffTimezone": "Europe/Zurich",
+  "restrictions": [
+    {
+      "id": "U01",
+      "scope": "company bridges",
+      "rule": "Use each stated reporting date/fiscal period and principal-versus-interest boundary. Null principal-only fields are unknown. Annual company cash flow cannot be summed as synchronized AI cash generation. Do not add overlapping commitments and lease liabilities or count restricted cash as unrestricted. Refinance only identified mature/reset debt, or use explicitly assumed bounded cash-service paths."
+    },
+    {
+      "id": "U02",
+      "scope": "China household/developer",
+      "rule": "PBOC November-2025 balances are lagged aggregate stocks, not June-2026 household net worth. BIS China 19.1% is private nonfinancial-sector DSR, not household-only. Vanke secondary-located values are provisional issuer illustration and excluded from calibration until primary table validation. No sector loss or national default coefficient inferred."
+    },
+    {
+      "id": "U03",
+      "scope": "EU banks",
+      "rule": "Different reporter subsets and immediate-counterparty/guarantor/transfer bases remain separate. Positive gross claim partial sums bound only the recorded reporter positions, not EU-wide loss or net exposure. Signed Q net transfers are partial signed sums, not lower bounds; reviewed JSON corrects this wording. ECB SI and EBA EU/EEA prudential perimeters are distinct."
+    },
+    {
+      "id": "U04",
+      "scope": "EU materials",
+      "rule": "CEPS demand, cohort assumptions and secondary shares are historical source-model scenarios, not observed output or calibrated probabilities. Selected applications approximate 68% of 2020 market; magnet mass, elemental REE, oxide, concentrate and plant input/output stages are distinct. Do not add project design capacity as realized production or claim exact EU 30% recycling sufficiency."
+    },
+    {
+      "id": "U05",
+      "scope": "Swiss panel",
+      "rule": "Use corrected nominal seasonally adjusted q/q export comparison. Import-price index changes are not CPI contributions or causal FX elasticity. Net total current account and gross merchanting turnover cannot substitute for a missing merchanting-only balance, value added or trader financing exposure. After-cutoff September import-price release is excluded."
+    },
+    {
+      "id": "U06",
+      "scope": "global network",
+      "rule": "Four numeric 2024 merchandise API aggregates and selected Q1-2026 bank nationality edges are partial exposure evidence. Official API TOTAL flags include isReported=false/isAggregate=true; preserve flags. Eight no-return trade cells are not zero or definitive unavailability. Do not confuse international claims (global) with total claims (EU), sum nationality/residence perimeters, or infer causal multipliers/probabilities. Verizon is an integrated survivor comparator, not a matched fiber counterfactual."
+    },
+    {
+      "id": "U07",
+      "scope": "provenance/cutoff",
+      "rule": "Use reviewed source registries and correction history. Unsupported exact US retrieval clocks are reduced to day precision without inventing replacement times. New verified CEPS publisher date supersedes inferred day 7; JRC148174 pre-cutoff date is independently verified. Actual later retrieval of pre-cutoff information is allowed if explicitly labeled; later publication/observation is not cutoff evidence. Missing publication days remain null."
+    },
+    {
+      "id": "U08",
+      "scope": "preflight and interpretation",
+      "rule": "Use derived Fed arithmetic-midpoint correction; original preliminary upper-bound label is not calibration authority. Previously checked source conclusions remain reusable, but no source/model/deployment execution beyond recorded evidence is asserted. The 70% AI revenue decline and 10–12% refinancing costs remain stress assumptions."
+    }
+  ],
+  "noMechanismRetired": true
+}

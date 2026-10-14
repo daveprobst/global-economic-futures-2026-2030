@@ -1,0 +1,3453 @@
+[
+ {
+  "region": "us",
+  "id": "MSFT_10K_FY2025",
+  "title": "Microsoft FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+  "publishedAt": "2025-07-30",
+  "observedPeriod": "Fiscal year ended 2025-06-30; selected comparative fiscal years",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC filing vintage; fiscal rather than calendar year",
+  "units": "USD unless stated; consolidated statements, capex, lease and purchase commitments, debt maturities, segment revenues",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "fixed_commitments",
+   "refinancing_spreads",
+   "rd_displacement",
+   "distressed_asset_sales",
+   "utilization_disclosure"
+  ],
+  "relevance": "Baseline for consolidated cash generation, capital spending, cloud segment revenue, leases and contractual obligations. AI revenue and capacity utilization attribution must be separately tested; do not equate Azure or total cloud revenue with AI revenue.",
+  "availabilityLimit": "Issuer does not publish a standardized physical utilization series or complete AI-specific margin/cash-flow bridge.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "AMZN_10K_FY2025",
+  "title": "Amazon.com FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+  "publishedAt": "2026-02-06",
+  "observedPeriod": "Fiscal year ended 2025-12-31; comparative fiscal years",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC 10-K filed 2026-02-06; inspect notes and period definitions",
+  "units": "USD; consolidated statements, AWS segment, leases and contractual commitments",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "fixed_commitments",
+   "refinancing_spreads",
+   "rd_displacement",
+   "distressed_asset_sales",
+   "utilization_disclosure"
+  ],
+  "relevance": "Cash flow/capex and AWS revenue/operating income; note the filing says many routine open purchase orders are generally cancellable, while reported unconditional obligations and leases have different terms. Useful for cancellation/commitment classification.",
+  "availabilityLimit": "Does not disclose AI-only AWS revenue, GPU utilization, or customer AI unit economics.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "GOOG_10K_FY2025",
+  "title": "Alphabet FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+  "publishedAt": "2026-02-05",
+  "observedPeriod": "Fiscal year ended 2025-12-31; comparative fiscal years",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC 10-K filed 2026-02-05; XBRL and footnotes are versioned with filing",
+  "units": "USD; consolidated and segment statements, capex, lease commitments, purchase obligations",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "fixed_commitments",
+   "refinancing_spreads",
+   "rd_displacement",
+   "distressed_asset_sales",
+   "utilization_disclosure"
+  ],
+  "relevance": "Supports consolidated cash/capex and Google Cloud revenue/profit bridge; reports infrastructure commitments and discusses multi-year power purchase agreements. Revenue disclosure is not AI-specific.",
+  "availabilityLimit": "No common AI utilization metric or stand-alone AI revenue/margin series.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "META_10K_FY2025",
+  "title": "Meta Platforms FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+  "publishedAt": "2026-01-29",
+  "observedPeriod": "Fiscal year ended 2025-12-31; comparative fiscal years",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC filing vintage; inspect capex guidance and lease commitments as dated",
+  "units": "USD; consolidated statements, capital expenditures, leases, commitments and debt",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "fixed_commitments",
+   "refinancing_spreads",
+   "rd_displacement",
+   "distressed_asset_sales",
+   "utilization_disclosure"
+  ],
+  "relevance": "Measures parent cash-generative advertising business and consolidated infrastructure investment; useful counterweight to a narrative that all spending relies on direct AI subscriptions. Meta AI revenue remains unsegmented.",
+  "availabilityLimit": "No AI-specific revenue, returns on AI capex, or data-center utilization disclosure.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "ORCL_10K_FY2025",
+  "title": "Oracle FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm",
+  "publishedAt": "2025-06-18",
+  "observedPeriod": "Fiscal year ended 2025-05-31; comparative fiscal years",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC filing vintage; fiscal year differs from calendar year and other issuers",
+  "units": "USD; consolidated statements, cloud and license segment, debt, capex and contractual obligations",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "fixed_commitments",
+   "refinancing_spreads",
+   "rd_displacement",
+   "distressed_asset_sales",
+   "utilization_disclosure"
+  ],
+  "relevance": "Adds a cloud infrastructure scale-up/comparative financing and obligation case. SEC correspondence on this filing is useful for evaluating capex disclosure specificity and forward-looking disclosure limits.",
+  "availabilityLimit": "Cloud revenue is not equivalent to AI revenue; physical utilization and workload attribution not reported as comparable series.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "NVDA_10K_FY2026",
+  "title": "NVIDIA FY2026 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+  "publishedAt": "2026-02-25",
+  "observedPeriod": "Fiscal year ended 2026-01-25",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Fiscal 2026 SEC 10-K; fiscal year ends in January",
+  "units": "USD; consolidated and Data Center segment revenues, inventory, receivables, customer concentration and cash flow",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "pricing_competition",
+   "distressed_asset_sales"
+  ],
+  "relevance": "Supply-side complement to cloud buyer filings: data center revenue and working-capital/cash-flow exposure can show who receives AI infrastructure spend. It cannot establish buyer AI profitability or final-demand willingness to pay.",
+  "availabilityLimit": "Supplier revenue is not end-user AI revenue; check customer concentration and inventory/cycle signals rather than treating sales as utilization.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "AAPL_10K_FY2025",
+  "title": "Apple FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "publishedAt": "2025-10-31",
+  "observedPeriod": "Fiscal year ended 2025-09-27",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC 10-K; fiscal year differs from calendar year",
+  "units": "USD; consolidated statements, R&D, capex, segment/geographic revenue and commitments",
+  "sourceType": "audited issuer filing",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "rd_displacement"
+  ],
+  "relevance": "Comparator for user-directed scope decision: Apple is a major technology company with AI features but its business model/hardware and services mix differs from cloud infrastructure hyperscalers; filing can inform inclusion as a downstream/platform exposure, not automatically as a top-five cloud-capacity builder.",
+  "availabilityLimit": "Does not separately disclose AI product revenue, AI-specific capex or utilization.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "FED_CORP_DEBT_COSTS_2023",
+  "title": "Monetary Policy Tightening and Debt Servicing Costs of Nonfinancial Companies",
+  "publisher": "Federal Reserve Board, FEDS Notes",
+  "url": "https://www.federalreserve.gov/econres/notes/feds-notes/monetary-policy-tightening-and-debt-servicing-costs-of-nonfinancial-companies-20231201.html",
+  "publishedAt": "2023-12-01",
+  "observedPeriod": "Publicly traded nonfinancial firms in selected advanced economies through 2023-Q1",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Research note vintage; data end 2023-Q1",
+  "units": "Policy/new borrowing yields and annualized interest expense relative to debt; rates and ratios",
+  "sourceType": "official empirical research",
+  "mechanismIds": [
+   "refinancing_spreads",
+   "rd_displacement"
+  ],
+  "relevance": "Maps how benchmark tightening reaches existing firm interest costs more slowly than new borrowing rates, with maturity and balance-sheet heterogeneity; use as transmission literature, not a hyperscaler-specific coefficient.",
+  "availabilityLimit": "Not company-specific nor a forecast of 2026 rates; historical sample ends 2023-Q1.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "FED_MATURITY_2024",
+  "title": "Corporate Debt Maturity Matters for Monetary Policy",
+  "publisher": "Federal Reserve Board, International Finance Discussion Papers 1402",
+  "url": "https://www.federalreserve.gov/econres/ifdp/corporate-debt-maturity-matters-for-monetary-policy.htm",
+  "publishedAt": null,
+  "observedPeriod": "Firm-level sample and model as described in paper",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Publication identified as Dec 2024; exact publication day not recorded.",
+  "units": "Debt maturity exposure and investment responses; paper-specific units",
+  "sourceType": "official empirical/model research",
+  "mechanismIds": [
+   "refinancing_spreads",
+   "rd_displacement"
+  ],
+  "relevance": "Investigates maturity structure and investment response to policy; grounds maturity-aware scenario bridges rather than applying a single new yield to all outstanding debt.",
+  "availabilityLimit": "Estimates are sample/model dependent and not direct forecasts for large cash-rich technology issuers.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "FED_DISTRESSED_FIRMS_2023",
+  "title": "Distressed Firms and the Large Effects of Monetary Policy Tightenings",
+  "publisher": "Federal Reserve Board, FEDS Notes",
+  "url": "https://www.federalreserve.gov/econres/notes/feds-notes/distressed-firms-and-the-large-effects-of-monetary-policy-tightenings-20230623.html",
+  "publishedAt": "2023-06-23",
+  "observedPeriod": "U.S. nonfinancial firms, 1990–2022",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "FEDS Notes vintage; historical firm panel through 2022",
+  "units": "Firm distress measures and estimated investment, employment and debt responses",
+  "sourceType": "official empirical research",
+  "mechanismIds": [
+   "refinancing_spreads",
+   "rd_displacement",
+   "distressed_asset_sales"
+  ],
+  "relevance": "Investigates stronger tightening transmission among financially distressed firms and investment/employment adjustment; frames conditional vulnerability and counteracts claims of uniform exposure.",
+  "availabilityLimit": "Firm-level broad sample; does not estimate hyperscaler fire-sale probability or exact technology-sector effect.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "FED_RND_FINANCIAL_FRICTIONS_NBER31521",
+  "title": "Research and/or Development? Financial Frictions and Innovation Investment",
+  "publisher": "NBER Working Paper 31521",
+  "url": "https://www.nber.org/papers/w31521",
+  "publishedAt": null,
+  "observedPeriod": "U.S. firm-level Census data distinguishing research from development; funding-cost exposure around 2008 financial crisis; working paper sample as described by authors.",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "NBER Working Paper 31521, Issue Date August 2023 (month only); official NBER page accessed 2026-10-14 supplies title, authors, abstract and working paper; later published version not checked.",
+  "units": "Firm R&D investment and financing exposures; paper-specific",
+  "sourceType": "scholarly empirical working paper",
+  "mechanismIds": [
+   "refinancing_spreads",
+   "rd_displacement"
+  ],
+  "relevance": "Studies refinancing exposure and R&D composition around the 2008 crisis; informs whether financing stress can change research versus development allocation.",
+  "availabilityLimit": "NBER page confirms external-funding-cost exposure/refinancing-demand identification and reported research-versus-development effects; NBER PDF is a working paper, and no hyperscaler-specific estimate.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "FED_FIRM_DEBT_MATURITY_NBER",
+  "title": "Monetary Policy, Corporate Finance and Investment",
+  "publisher": "NBER Working Paper 25366",
+  "url": "https://www.nber.org/papers/w25366",
+  "publishedAt": null,
+  "observedPeriod": "Firm-level monetary policy and finance; U.S. and U.K. working paper version; published version focuses on U.S. public firms.",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "NBER Working Paper 25366, Issue Date December 2018 (month only); published version in Journal of the European Economic Association 21(6), 2023. NBER 403/blocked direct open recorded as access limit; current official metadata searched 2026-10-14.",
+  "units": "Firm borrowing, net worth and investment; paper-specific",
+  "sourceType": "scholarly empirical working paper",
+  "mechanismIds": [
+   "refinancing_spreads",
+   "rd_displacement"
+  ],
+  "relevance": "Provides heterogeneity evidence for financial frictions in corporate investment after tightening; complements current maturity disclosures.",
+  "availabilityLimit": "Does not measure cloud capex or hyperscaler market risk.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "NBER_GENAI_AT_WORK_31161",
+  "title": "Generative AI at Work",
+  "publisher": "NBER Working Paper 31161; later published in Quarterly Journal of Economics",
+  "url": "https://www.nber.org/papers/w31161",
+  "publishedAt": null,
+  "observedPeriod": "5,179 customer-support agents; deployment setting described in study",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Issue month Apr 2023; revised Nov 2023; later QJE publication 2025. Exact first issue day not recorded.",
+  "units": "Issues resolved per hour; worker-level productivity and heterogeneity",
+  "sourceType": "scholarly field study",
+  "mechanismIds": "willingness_to_pay",
+  "relevance": "Primary demand-side counterevidence for potential enterprise value: adoption in one workplace raised productivity on average, especially for less-experienced workers. Productivity does not directly reveal provider willingness-to-pay, price elasticity or vendor capture of surplus.",
+  "availabilityLimit": "One firm/workflow; not an estimate of subscription churn or premium model willingness-to-pay.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "OPENAI_API_PRICING",
+  "title": "API pricing documentation",
+  "publisher": "OpenAI",
+  "url": "https://developers.openai.com/api/docs/pricing",
+  "publishedAt": null,
+  "observedPeriod": "Current posted API pricing at retrieval; live page, no fixed observation window",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Living documentation; snapshot the page with dated retrieval before using any numerical price",
+  "units": "USD per input/output token or tool call, model and tier specific",
+  "sourceType": "official product pricing",
+  "mechanismIds": "pricing_competition",
+  "relevance": "Primary posted price schedule for one provider; compare identical model/version, input/output mix, caching, batch and service tier before drawing price-trend conclusions.",
+  "availabilityLimit": "Living page can change; list prices are not realized prices, usage, gross margins or willingness-to-pay.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "META_LLAMA4_LICENSE",
+  "title": "Llama 4 Community License Agreement",
+  "publisher": "Meta Platforms",
+  "url": "https://dev.meta.ai/llama/llama4/license",
+  "publishedAt": null,
+  "observedPeriod": "Terms applying to Llama 4 materials; live legal page",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Living license page; retrieve dated copy and record model/version/terms",
+  "units": "License provisions; no monetary units",
+  "sourceType": "official model license",
+  "mechanismIds": "pricing_competition",
+  "relevance": "Primary terms for commercial use and distribution of weights; establishes alternative supply and restrictions relevant to competitive substitution, not that a model is costless to deploy.",
+  "availabilityLimit": "License is version-specific; inference, hosting, support and compliance costs remain separate.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "FCC_TELECOM_2003",
+  "title": "Annual Assessment of the Status of Competition in the Market for the Delivery of Video Programming (FCC 03-150)",
+  "publisher": "Federal Communications Commission",
+  "url": "https://docs.fcc.gov/public/attachments/FCC-03-150A1.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Telecom and broadband competition context, report vintage 2003",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "FCC 03-150; historical regulatory record",
+  "units": "Industry/company counts and narrative; report-specific",
+  "sourceType": "official policy/regulatory report",
+  "mechanismIds": [
+   "telecom_2001_analogue"
+  ],
+  "relevance": "Historical background for telecommunications competition and capacity expansion/financial distress analogies. Pair with issuer bankruptcy filings and SEC restatements; avoid extracting a generalized AI equivalence from industry comparisons.",
+  "availabilityLimit": "Not a causal study of AI investment; period, technology, regulation and balance sheets differ. Automated HTTP HEAD returned 405 (method rejected); the official FCC PDF was returned in web search and should be fetched with GET for archival use.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "WORLDCOM_2002_10Q",
+  "title": "MCI (formerly WorldCom) 2004 third-quarter Form 10-Q, with post-reorganization financial and operating disclosures",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/723527/000119312504186293/d10q.htm",
+  "publishedAt": null,
+  "observedPeriod": "2004-Q3 filing with historical reorganization disclosures; Chapter 11 filing occurred 2002-07-21",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Later SEC filing recounts historical facts; distinguish filing date from historical event date",
+  "units": "USD financial and bankruptcy disclosures",
+  "sourceType": "issuer SEC filing",
+  "mechanismIds": [
+   "telecom_2001_analogue",
+   "distressed_asset_sales"
+  ],
+  "relevance": "Primary issuer filing source for bankruptcy context, liabilities and restructuring. Use with contemporaneous filings and court documents for timeline; fiber overbuild comparison requires independent capacity-demand evidence.",
+  "availabilityLimit": "This is a successor-company 2004 filing, not a contemporaneous 2002 filing; it reports 2004-Q3, while prior bankruptcy proceedings and revised values are covered in historical disclosures. Pair with SEC complaint and the restated 2002 10-K.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "WORLDCOM_2001_10K",
+  "title": "WorldCom 2001 Annual Report on Form 10-K405 (original filing; later restated)",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/723527/000100547702001226/0001005477-02-001226-index.html",
+  "publishedAt": "2002-03-13",
+  "observedPeriod": "Fiscal year ended 2001-12-31",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Original annual report; later accounting restatements require side-by-side version checks",
+  "units": "USD; issuer statements, network/operations and risks",
+  "sourceType": "issuer SEC filing",
+  "mechanismIds": [
+   "telecom_2001_analogue"
+  ],
+  "relevance": "Contemporaneous issuer account to compare debt, cash flow, capital investment and network economics in the telecommunications boom; reconcile to later restatements and bankruptcy documents.",
+  "availabilityLimit": "The company later restated its 2001 and 2000 financial statements; use the restated WorldCom 2002 10-K filed in 2004 for corrected figures and this original 2001 report only to document the contemporaneous information set.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "US_GDP_2026Q2_THIRD",
+  "title": "Gross Domestic Product, 2nd Quarter 2026 (Third Estimate)",
+  "publisher": "U.S. Bureau of Economic Analysis",
+  "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+  "publishedAt": "2026-09-30",
+  "observedPeriod": "2026-Q2 third estimate; calendar quarter",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "BEA annual/quarterly revisions apply; retrieval page may contain later updates; use release vintage archive for fixed historical comparison",
+  "units": "Real GDP percent change at seasonally adjusted annual rate; current-dollar measures in USD",
+  "sourceType": "official national statistics",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "rd_displacement"
+  ],
+  "relevance": "Macro context for national investment and output backdrop; not a specific AI-demand or causal shock measure. The preflight source bundle identifies the Q2 2026 third estimate publication date.",
+  "availabilityLimit": "Current landing page can revise historical observations; vintage release is needed for point-in-time replication.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "SEC_ORACLE_CAPEX_CORRESP_2025",
+  "title": "Oracle response to SEC staff comment letter on FY2025 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission; Oracle filing correspondence",
+  "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525233320/filename1.htm",
+  "publishedAt": "2025-10-07",
+  "observedPeriod": "Disclosure regarding FY2025 filing and subsequent capex disclosure approach",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC correspondence dated Oct 7, 2025",
+  "units": "Narrative disclosure; no standardized units",
+  "sourceType": "official issuer-regulator correspondence",
+  "mechanismIds": [
+   "ai_capex_revenue_mismatch",
+   "fixed_commitments",
+   "utilization_disclosure"
+  ],
+  "relevance": "Shows disclosure boundaries around capex explanations and expectations; guides how to treat later reporting and avoid retroactively inferring AI allocation from an aggregate capex line.",
+  "availabilityLimit": "Issuer response to staff comments, not independent verification of project economics.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "US_EIA_DATA_CENTER_ENERGY",
+  "title": "Data center energy use: U.S. Department of Energy and Lawrence Berkeley National Laboratory report materials",
+  "publisher": "U.S. Department of Energy; Lawrence Berkeley National Laboratory",
+  "url": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+  "publishedAt": null,
+  "observedPeriod": "Report estimates U.S. data-center electricity use through 2024 and scenario values for 2025–2030",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "2025 update report; historical estimates revised from 2024 report; confirm report title page date and publication metadata before pinning the exact date.",
+  "units": "TWh, GW, share of U.S. electricity use per report definitions",
+  "sourceType": "official energy statistics and analysis",
+  "mechanismIds": [
+   "fixed_commitments",
+   "utilization_disclosure"
+  ],
+  "relevance": "Physical energy and power-demand context for data center constraints; useful independent cross-check against company capacity build narratives. Electricity consumption is not server utilization and cannot attribute demand to AI alone.",
+  "availabilityLimit": "National power consumption is not server utilization or AI-specific load; scenarios depend on shipment, power-use effectiveness and inference-server assumptions.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "BIS_TECH_CREDIT_CONDITIONS",
+  "title": "Statistical release: BIS international banking statistics and global liquidity indicators at end-March 2026",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/202607-commentary-ibs-gli",
+  "publishedAt": "2026-07-31",
+  "observedPeriod": "Cross-border bank credit and foreign-currency credit stocks through 2026-Q1",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "BIS statistical release dated 2026-07-31; end-March 2026 observation vintage",
+  "units": "Credit stocks and growth rates in USD/EUR; amounts and definitions vary by table",
+  "sourceType": "official international financial statistics release",
+  "mechanismIds": [
+   "refinancing_spreads"
+  ],
+  "relevance": "Provides common official credit definitions and dated 2026-Q1 observations for the global funding backdrop; use the XLS source files and methodology for extraction, not this map as an observation.",
+  "availabilityLimit": "Cross-border and foreign-currency credit scope is specific; it is not aggregate domestic liquidity or a direct measure of hyperscaler borrowing conditions.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "CLOUD_COMPUTE_UTILIZATION_ACADEMIC",
+  "title": "An Analysis of the Server Characteristics and Resource Utilization in Google Cloud",
+  "publisher": "IEEE International Conference on Cloud Engineering; University of Leeds repository copy",
+  "url": "https://eprints.whiterose.ac.uk/id/eprint/76288/",
+  "publishedAt": null,
+  "observedPeriod": "Google production cloud trace study described in 2013 conference paper",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Proceedings paper, IC2E 2013, pp. 124–131; DOI 10.1109/IC2E.2013.40",
+  "units": "Server resource-utilization measures and workload trace statistics; paper-specific",
+  "sourceType": "scholarly empirical systems research",
+  "mechanismIds": [
+   "utilization_disclosure"
+  ],
+  "relevance": "A verified scholarly lead using disclosed Google cloud trace logs to examine utilization definitions and server-level workloads. Supports the methodological point that utilization is a technical, workload-specific measure—not a direct public financial metric.",
+  "availabilityLimit": "Historical trace and server mix are not current AI/GPU infrastructure; trace publication and definitions must be read before borrowing utilization values. No inference about present hyperscaler utilization follows. Repository search result confirmed proceedings citation and abstract; direct host may restrict automated fetch.",
+  "retrievalMethod": "Web search and source-page inspection; selected URLs were also probed directly on retrieval date.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "WORLDCOM_RESTATED_FY2001_10K",
+  "title": "WorldCom 2003 Form 10-K, including restated FY2001 cash-flow comparison",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/723527/000119312504039709/d10k.htm",
+  "publishedAt": null,
+  "observedPeriod": "Restated FY2001 and FY2000 statements; reorganization period disclosures",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC 2003 Form 10-K; exact publication date not independently confirmed; filing restates prior reported values",
+  "units": "USD millions unless stated",
+  "sourceType": "audited issuer filing / restated historical statements",
+  "mechanismIds": [
+   "telecom_2001_analogue",
+   "distressed_asset_sales",
+   "refinancing_spreads"
+  ],
+  "relevance": "Corrected WorldCom FY2001 operating cash flow was USD 2,845m versus USD 7,994m previously reported; filing attributes change primarily to improperly capitalized access and other costs.",
+  "availabilityLimit": "Not directly comparable to current hyperscalers; capitalization, acquisitions, network assets and bankruptcy accounting differ.",
+  "retrievalMethod": "SEC filing located through primary-source search and page inspection.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "GLOBAL_CROSSING_REORG_2002",
+  "title": "Global Crossing 2002 Form 10-K / reorganization filing",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1166720/000095012303001644/y83279sv1.htm",
+  "publishedAt": null,
+  "observedPeriod": "Chapter 11 case commenced 2002-01-28; filing covers reorganization-era disclosures",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "SEC filing; exact publication date not identified in retrieved metadata",
+  "units": "USD unless otherwise stated",
+  "sourceType": "issuer filing / reorganization disclosures",
+  "mechanismIds": [
+   "telecom_2001_analogue",
+   "distressed_asset_sales"
+  ],
+  "relevance": "Primary support for the date and legal status of Global Crossing bankruptcy, a separate telecom-network failure case.",
+  "availabilityLimit": "No comparable Global Crossing 2001 cash-flow series extracted in this task; do not pool values across issuer perimeters or fresh-start accounting.",
+  "retrievalMethod": "SEC primary filing search and page inspection.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "MCI_POST_EMERGENCE_Q1_2004",
+  "title": "MCI first-quarter 2004 results following emergence from Chapter 11",
+  "publisher": "MCI, Inc. / U.S. Securities and Exchange Commission exhibit",
+  "url": "https://www.sec.gov/Archives/edgar/data/723527/000095010304000707/may1104_ex9901.htm",
+  "publishedAt": "2004-05-11",
+  "observedPeriod": "Quarter ended 2004-03-31; post-emergence balance-sheet context",
+  "retrievedAt": "2026-10-14T16:21:48Z",
+  "revision": "Post-emergence MCI and fresh-start accounting; not continuous with predecessor WorldCom values",
+  "units": "USD millions unless stated",
+  "sourceType": "issuer earnings release filed as SEC exhibit",
+  "mechanismIds": [
+   "telecom_2001_analogue",
+   "refinancing_spreads"
+  ],
+  "relevance": "Reports Q1 2004 operating cash flow, capex, debt and $5.7bn senior notes issued upon emergence; dates post-reorganization.",
+  "availabilityLimit": "Post-emergence figures cannot represent 2001 prepetition WorldCom debt or continuous predecessor balance sheet.",
+  "retrievalMethod": "SEC exhibit search and page inspection.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "MSFT_10K_FY2026",
+  "title": "Microsoft FY2026 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+  "publishedAt": "2026-07-29",
+  "observedPeriod": "Fiscal year ended 2026-06-30; selected comparative fiscal years",
+  "retrievedAt": "2026-10-14T17:14:34.198942Z",
+  "revision": "Retrieved on cutoff date; see US repair report for extraction locator, source limitations and date handling.",
+  "units": "USD; consolidated cash, operating cash flow, additions to property and equipment, debt, R&D, leases, purchase commitments and cloud metrics",
+  "sourceType": "SEC audited issuer filing",
+  "retrievalMethod": "Direct SEC Archives fetch; actual UTC event and archived response hash in extract/retrieval-log.json.",
+  "correctionHistory": {
+   "originalReportedRetrievedAt": "2026-10-14T18:20:00Z",
+   "reason": "Original time asserted retrieval after RR0 review clock without event record; retained as unverified original metadata.",
+   "verifiedRetrievalEvent": "2026-10-14T17:14:34.198942+00:00",
+   "httpStatus": 200,
+   "sha256": "acfaf759e927955bd0dc749451da9f2b3303c39ca9ac96df6c27f6e75da189ca"
+  },
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "AMZN_10Q_Q2_2026",
+  "title": "Amazon Q2 2026 Form 10-Q",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+  "publishedAt": "2026-07-31",
+  "observedPeriod": "Quarter and six months ended 2026-06-30; trailing twelve months ended 2026-06-30",
+  "retrievedAt": "2026-10-14T17:14:34.568071Z",
+  "revision": "SEC Q2 FY2026 Form 10-Q; filing date verified from SEC accession cover. Interim unaudited; cash flow covers quarter/six months/TTM as labeled.",
+  "units": "USD; unaudited interim consolidated cash, operating cash flow, purchases of property/equipment, debt, R&D/technology and content expense, commitments, debt maturities, leases",
+  "sourceType": "SEC issuer filing",
+  "retrievalMethod": "Direct SEC Archives fetch; actual UTC event and archived response hash in extract/retrieval-log.json.",
+  "correctionHistory": {
+   "originalReportedRetrievedAt": "2026-10-14T18:20:00Z",
+   "reason": "Original time asserted retrieval after RR0 review clock without event record; retained as unverified original metadata.",
+   "verifiedRetrievalEvent": "2026-10-14T17:14:34.568071+00:00",
+   "httpStatus": 200,
+   "sha256": "fd7c65b552c111a9387f4aedb65b8c308c676e793a07a563f4ee115700b96682"
+  },
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "GOOG_10Q_Q2_2026",
+  "title": "Alphabet Q2 2026 Form 10-Q",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+  "publishedAt": "2026-07-23",
+  "observedPeriod": "Quarter and six months ended 2026-06-30",
+  "retrievedAt": "2026-10-14T17:14:34.951160Z",
+  "revision": "SEC Q2 FY2026 Form 10-Q, filed 2026-07-23; reporting period 2026-06-30; interim unaudited.",
+  "units": "USD; unaudited interim consolidated cash, operating cash flow, capital expenditures, debt, R&D expense, leases and contractual commitments",
+  "sourceType": "SEC issuer filing",
+  "retrievalMethod": "Direct SEC Archives fetch; actual UTC event and archived response hash in extract/retrieval-log.json.",
+  "correctionHistory": {
+   "originalReportedRetrievedAt": "2026-10-14T18:20:00Z",
+   "reason": "Original time asserted retrieval after RR0 review clock without event record; retained as unverified original metadata.",
+   "verifiedRetrievalEvent": "2026-10-14T17:14:34.951160+00:00",
+   "httpStatus": 200,
+   "sha256": "aab481d9485651befed0d3e182048d72164732c3539ec754ac055559c67a67c8"
+  },
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "META_10Q_Q2_2026",
+  "title": "Meta Platforms Q2 2026 Form 10-Q",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+  "publishedAt": "2026-07-30",
+  "observedPeriod": "Quarter and six months ended 2026-06-30",
+  "retrievedAt": "2026-10-14T17:14:35.465587Z",
+  "revision": "SEC Q2 FY2026 Form 10-Q, filed 2026-07-30; reporting period 2026-06-30; interim unaudited.",
+  "units": "USD; unaudited interim consolidated cash/securities, operating cash flow, cash purchases of PPE, finance lease principal, debt/coupons/maturities, R&D, commitments",
+  "sourceType": "SEC issuer filing",
+  "retrievalMethod": "Direct SEC Archives fetch; actual UTC event and archived response hash in extract/retrieval-log.json.",
+  "correctionHistory": {
+   "originalReportedRetrievedAt": "2026-10-14T18:20:00Z",
+   "reason": "Original time asserted retrieval after RR0 review clock without event record; retained as unverified original metadata.",
+   "verifiedRetrievalEvent": "2026-10-14T17:14:35.465587+00:00",
+   "httpStatus": 200,
+   "sha256": "88629accb9aff726617873cfb1b91c42ca0990b1f52c0f13aec57a9a9e9a7da7"
+  },
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "ORCL_10K_FY2026",
+  "title": "Oracle FY2026 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+  "publishedAt": "2026-06-22",
+  "observedPeriod": "Fiscal year ended 2026-05-31",
+  "retrievedAt": "2026-10-14T17:14:35.938638Z",
+  "revision": "Retrieved on cutoff date; see US repair report for extraction locator, source limitations and date handling.",
+  "units": "USD; audited consolidated cash, operating cash flow, capital expenditures, finance lease principal, debt and maturity schedule, R&D, leases and purchase obligations",
+  "sourceType": "SEC audited issuer filing",
+  "retrievalMethod": "Direct SEC Archives fetch; actual UTC event and archived response hash in extract/retrieval-log.json.",
+  "correctionHistory": {
+   "originalReportedRetrievedAt": "2026-10-14T18:20:00Z",
+   "reason": "Original time asserted retrieval after RR0 review clock without event record; retained as unverified original metadata.",
+   "verifiedRetrievalEvent": "2026-10-14T17:14:35.938638+00:00",
+   "httpStatus": 200,
+   "sha256": "6522dfaa8d783f7037aeb1efcf9598aa59177736b9f72adea0dc10756c0defe7"
+  },
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "ORCL_10Q_Q1_FY2027",
+  "title": "Oracle Q1 FY2027 Form 10-Q",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+  "publishedAt": "2026-09-10",
+  "observedPeriod": "Quarter ended 2026-08-31; balance sheet as of 2026-08-31",
+  "retrievedAt": "2026-10-14T17:14:36.370291Z",
+  "revision": "SEC Q1 FY2027 Form 10-Q; EDGAR accession listing and filing cover used to verify reporting quarter (2026-08-31).",
+  "units": "USD; unaudited interim balance sheet, operations, cash flow and debt/commitments where disclosed",
+  "sourceType": "SEC issuer filing",
+  "retrievalMethod": "Direct SEC Archives fetch; actual UTC event and archived response hash in extract/retrieval-log.json.",
+  "correctionHistory": {
+   "originalReportedRetrievedAt": "2026-10-14T18:20:00Z",
+   "reason": "Original time asserted retrieval after RR0 review clock without event record; retained as unverified original metadata.",
+   "verifiedRetrievalEvent": "2026-10-14T17:14:36.370291+00:00",
+   "httpStatus": 200,
+   "sha256": "a1c3b40383b519debaa9c6903a7087ad1f409604a088f1f7d91028d59b011401"
+  },
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "MSFT_COPILOT_SEATS_FY26Q4",
+  "title": "Microsoft FY2026 Q4 earnings release and call",
+  "publisher": "Microsoft Investor Relations",
+  "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+  "publishedAt": "2026-07-29",
+  "observedPeriod": "Quarter and fiscal year ended 2026-06-30",
+  "retrievedAt": "2026-10-14",
+  "revision": "Retrieved on cutoff date; see US repair report for extraction locator, source limitations and date handling.",
+  "units": "Paid seats, revenue growth, cash flow and capex; paid seats are adoption not revenue/retention/elasticity",
+  "sourceType": "Issuer earnings release",
+  "retrievalMethod": "Official SEC/issuer source page opened or indexed by web search on 2026-10-14; any access limit is stated in repair report.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "META_LLAMA_INFERENCE_COST_GUIDE",
+  "title": "Llama deployment cost projection guide",
+  "publisher": "Meta AI Developer Documentation",
+  "url": "https://dev.meta.ai/llama/docs/deployment/cost-projection",
+  "publishedAt": null,
+  "observedPeriod": "Undated live documentation accessed 2026-10-14; describes cost drivers, no reproducible named workload observation extracted",
+  "retrievedAt": "2026-10-14",
+  "revision": "Live undated technical page retrieved 2026-10-14; retrieval date is not publication date. Vendor guidance/estimate; model or documentation version is not durably specified.",
+  "units": "Qualitative inference cost components; vendor deployment guide, not independent realized cost or willingness-to-pay evidence",
+  "sourceType": "Technical documentation",
+  "retrievalMethod": "Official SEC/issuer source page opened or indexed by web search on 2026-10-14; any access limit is stated in repair report.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "META_LLAMA4_COST_ESTIMATE",
+  "title": "Llama 4 model overview and cost estimate",
+  "publisher": "Meta AI Developer Documentation",
+  "url": "https://dev.meta.ai/llama/models/llama-4",
+  "publishedAt": null,
+  "observedPeriod": "Undated live page accessed 2026-10-14; model and estimate vintage not independently confirmed",
+  "retrievedAt": "2026-10-14",
+  "revision": "Live undated technical page retrieved 2026-10-14; retrieval date is not publication date. Vendor guidance/estimate; model or documentation version is not durably specified.",
+  "units": "Vendor estimated cost per million tokens under distributed inference; workload/model/quality dependent, not observed end-user spend",
+  "sourceType": "Technical documentation",
+  "retrievalMethod": "Official SEC/issuer source page opened or indexed by web search on 2026-10-14; any access limit is stated in repair report.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "LLM_INFERENCE_COST_METHOD_2026",
+  "title": "Beyond Per-Token Pricing: A Concurrency-Aware Methodology for LLM Infrastructure Cost Estimation",
+  "publisher": "arXiv preprint",
+  "url": "https://arxiv.org/abs/2606.11690",
+  "publishedAt": "2026-06-10",
+  "observedPeriod": "Preprint dated 2026-06-10; reports 42 benchmarks; scope and independent replication not established",
+  "retrievedAt": "2026-10-14",
+  "revision": "Retrieved on cutoff date; see US repair report for extraction locator, source limitations and date handling.",
+  "units": "Cost estimate depends on hardware, model, quality, quantization, concurrency, workload and serving; method paper not market-wide price series",
+  "sourceType": "Scholarly preprint",
+  "retrievalMethod": "Official SEC/issuer source page opened or indexed by web search on 2026-10-14; any access limit is stated in repair report.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "IREN_FY2026_10K",
+  "title": "IREN FY2026 Form 20-F",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+  "publishedAt": "2026-08-27",
+  "observedPeriod": "Fiscal year ended 2026-06-30",
+  "retrievedAt": "2026-10-14",
+  "revision": "IREN Ltd Form 20-F filed 2026-08-27, SEC accession 0001878848-26-000052; FY ended 2026-06-30.",
+  "units": "USD; third-party AI cloud operator asset impairments and hardware/facility retrofit; not hyperscaler sale/recovery prices",
+  "sourceType": "Audited foreign issuer filing",
+  "retrievalMethod": "Official SEC/issuer source page opened or indexed by web search on 2026-10-14; any access limit is stated in repair report.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "us",
+  "id": "HYPERSCALE_DATA_IMPAIRMENT_Q2_2026",
+  "title": "Hyperscale Data Q2 2026 Form 10-Q",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/896493/000121465926010549/hd81126810q.htm",
+  "publishedAt": "2026-08-19",
+  "observedPeriod": "Six months ended 2026-06-30",
+  "retrievedAt": "2026-10-14",
+  "revision": "Hyperscale Data, Inc. (ticker GPUS), SEC 10-Q filed 2026-08-19 for 2026-06-30; company is a small data-center/mining operator, not CoreWeave or a hyperscaler.",
+  "units": "USD; small operator impairment of Bitcoin mining equipment linked to site power reallocation for AI compute; not hyperscaler distressed-sale/recovery data.",
+  "sourceType": "Issuer filing",
+  "retrievalMethod": "Official SEC/issuer source page opened or indexed by web search on 2026-10-14; any access limit is stated in repair report.",
+  "regions": [
+   "us"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "IMF_CHINA_ARTICLEIV_2025",
+  "title": "People’s Republic of China: 2025 Article IV Consultation, Staff Report (Country Report 26/044)",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.imf.org/en/publications/cr/issues/2026/02/17/peoples-republic-of-china-2025-article-iv-consultation-press-release-staff-report-and-574028",
+  "publishedAt": "2026-02-18",
+  "observedPeriod": "Staff discussions ended 2025-12-10; report completed 2026-01-28; 2025 assessment and 2026–31 projections",
+  "retrievedAt": "2026-10-14",
+  "revision": "2026 Article IV vintage; staff report is a diagnosis/projection, not a causal estimate",
+  "units": "Mixed; report-specific tables include percent of GDP, growth rates, RMB and financial-sector ratios",
+  "relevance": "Property/LG finance/debt-overhang and weak domestic demand, policy/external offsets, demographics; anchor source across all China mechanisms.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "NBS_COMMUNIQUE_2025",
+  "title": "Statistical Communiqué of the PRC on 2025 National Economic and Social Development",
+  "publisher": "National Bureau of Statistics of China",
+  "url": "https://www.stats.gov.cn/english/PressRelease/202602/t20260228_1962661.html",
+  "publishedAt": "2026-02-28",
+  "observedPeriod": "Calendar 2025; population at 2025 year-end",
+  "retrievedAt": "2026-10-14",
+  "revision": "Preliminary national accounts and annual statistics; subsequent benchmark/revision possible",
+  "units": "RMB, percent, persons (tables commonly in 10,000 persons), per-thousand rates",
+  "relevance": "Observed macro, household consumption contribution, prices, population/age composition and labor; use category definitions as printed.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "NBS_CPI_202609",
+  "title": "September 2026 Consumer Price Index release",
+  "publisher": "National Bureau of Statistics of China",
+  "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html",
+  "publishedAt": "2026-10-14",
+  "observedPeriod": "September 2026; monthly and year-to-date through September",
+  "retrievedAt": "2026-10-14",
+  "revision": "2026 CPI rebased to 2025; release published 09:30 China time on cutoff date",
+  "units": "Percent m/m, y/y and Jan–Sep average; index and expenditure weights",
+  "relevance": "Latest available consumer-price release at cutoff; not evidence of broad GDP/asset-price deflation; pair with PPI/GDP deflator.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "NBS_POP_SAMPLE_2025",
+  "title": "Communiqué of the 1% National Population Sample Survey in 2025",
+  "publisher": "National Bureau of Statistics of China",
+  "url": "https://www.stats.gov.cn/english/PressRelease/202605/t20260522_1963789.html",
+  "publishedAt": "2026-05-22",
+  "observedPeriod": "Population estimate from 2025 1% sample survey",
+  "retrievedAt": "2026-10-14",
+  "revision": "Sample-survey estimate; differs in scope/age bins from annual statistical communiqué and is not a directly interchangeable revision",
+  "units": "Persons (millions) and population shares (%)",
+  "relevance": "Demographic cohort stock and age structure; supports alternate current population vintage with survey basis explicitly retained.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_BOP_PRELIM_2025",
+  "title": "Preliminary Balance of Payments for Q4 and full year 2025",
+  "publisher": "State Administration of Foreign Exchange",
+  "url": "https://www.safe.gov.cn/en/2026/0213/2389.html",
+  "publishedAt": "2026-02-13",
+  "observedPeriod": "2025 annual and 2025-Q4 flows",
+  "retrievedAt": "2026-10-14",
+  "revision": "Preliminary release; superseded/revised by SAFE March 27, 2026 BOP release; includes net errors and omissions in reported capital/financial balance",
+  "units": "RMB billion, USD billion and SDR billion",
+  "relevance": "External current, capital and financial-account flow categories; shows why a current-account surplus does not mechanically mean capital inflow.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_BOP_REVISED_2025",
+  "title": "Balance of Payments, Q4 and full year 2025 (revised tables)",
+  "publisher": "State Administration of Foreign Exchange",
+  "url": "https://www.safe.gov.cn/en/2026/0327/2406.html",
+  "publishedAt": "2026-03-27",
+  "observedPeriod": "Quarterly series since 2019; annual 2025",
+  "retrievedAt": "2026-10-14",
+  "revision": "SAFE says quarterly BOP since 2019 revised using latest data; report financial-account breakdowns by sector and maturity",
+  "units": "RMB 100 million, USD 100 million and SDR 100 million",
+  "relevance": "Current-account and capital/financial transaction flows; use latest vintage rather than Feb preliminary summary.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_IIP_2025",
+  "title": "International Investment Position at end-2025",
+  "publisher": "State Administration of Foreign Exchange",
+  "url": "https://www.safe.gov.cn/en/2026/0327/2405.html",
+  "publishedAt": "2026-03-27",
+  "observedPeriod": "Positions at 2025 year-end",
+  "retrievedAt": "2026-10-14",
+  "revision": "SAFE revised quarterly IIP from 2024 onward and added year-end sector/maturity breakdowns; stock positions affected by valuation as well as transactions",
+  "units": "USD 100 million or SDR 100 million; end-period stocks",
+  "relevance": "External asset/liability stocks, instruments, sectors and maturities; do not equate net external assets or reserves with liquid private-sector capacity.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_DATA_STATISTICS",
+  "title": "SAFE official data and statistics portal (BOP, IIP, external debt, reserves, FX settlement and bank cross-border receipts)",
+  "publisher": "State Administration of Foreign Exchange",
+  "url": "https://www.safe.gov.cn/en/DataandStatistics/",
+  "publishedAt": "2026-09-29",
+  "observedPeriod": "Series include monthly 2026 releases, 2025 annual data, and quarterly through 2026-Q2 depending on table",
+  "retrievedAt": "2026-10-14",
+  "revision": "Living data index; listed table releases are not a single consistent vintage; selected portal tables updated 2026-09-29",
+  "units": "Series-specific; flow and stock units differ by table",
+  "relevance": "Primary entry point for availability and extraction of external flows, reserve assets, gross external debt and banking/currency channels; data definition must be captured at table level.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "PBOC_LPR_FRAMEWORK",
+  "title": "Loan Prime Rate formation and benchmark lending-rate framework",
+  "publisher": "People’s Bank of China",
+  "url": "https://www.pbc.gov.cn/en/3688229/3688335/3730276/3883798/19e15ae1-4.html",
+  "publishedAt": null,
+  "observedPeriod": "Framework as posted; benchmark formed from quoting banks and reported by National Interbank Funding Center",
+  "retrievedAt": "2026-10-14",
+  "revision": "Living methodology page; access date 2026-10-14",
+  "units": "Percent annualized; LPR tenor-specific benchmark",
+  "relevance": "Instrument definitions for onshore RMB loan pricing; LPR is a benchmark/reference, not each borrower’s effective rate or a single policy rate.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "PBOC_LPR_20260920",
+  "title": "Loan Prime Rate quotation for September 2026",
+  "publisher": "National Interbank Funding Center, reported by State Council of China",
+  "url": "https://english.www.gov.cn/archive/statistics/202609/20/content_WS6aaf80b4c6d00ca5f9a0d458.html",
+  "publishedAt": "2026-09-20",
+  "observedPeriod": "Fixing 2026-09-20",
+  "retrievedAt": "2026-10-14",
+  "revision": "Monthly fixing; superseded by later fixing only after 2026-10-20 (outside cutoff)",
+  "units": "Percent per year: 1-year and over-5-year LPR",
+  "relevance": "Latest onshore lending benchmark available by cutoff; interpret alongside actual bank/sector loan pricing and PBoC operations.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "IMF_CHINA_2023_AIV_DELEVERAGING",
+  "title": "China 2023 Article IV, Box 4: Balance Sheet Deleveraging in China",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.imf.org/-/media/files/publications/cr/2024/english/1chnea2024001.pdf",
+  "publishedAt": "2024-01-10",
+  "observedPeriod": "Firm/household balance-sheet evidence mainly through 2023-Q3",
+  "retrievedAt": "2026-10-14",
+  "revision": "2023 Article IV vintage; mixed administrative and commercial firm data, not 2026 data",
+  "units": "Debt-to-asset ratios (%); survey/administrative measures and report-specific ratios",
+  "relevance": "Material counterevidence: did not find widespread deleveraging by healthy firms/households; localized property/LGFV stress, precautionary saving and weak confidence are alternative channels.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "IMF_CHINA_2024_AIV",
+  "title": "People’s Republic of China: 2024 Article IV Consultation, Staff Report (Country Report 24/258)",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.elibrary.imf.org/abstract/journals/002/2024/258/article-A001-en.xml",
+  "publishedAt": "2024-08-02",
+  "observedPeriod": "Assessment largely using 2023 outcomes and 2024 outlook",
+  "retrievedAt": "2026-10-14",
+  "revision": "2024 report vintage; corporate debt/household debt values are not current baselines",
+  "units": "Percent of GDP, debt ratios, growth and price statistics",
+  "relevance": "Property and LGFV debt-service/asset-quality vulnerabilities; household savings and balance-sheet counterevidence; historical ratios only.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "IMF_CHINA_CORP_VULN_2024",
+  "title": "Assessing Vulnerabilities of China’s Corporate Sector (Country Report 24/276, Selected Issues)",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.elibrary.imf.org/view/journals/002/2024/276/article-A005-en.xml",
+  "publishedAt": "2024-09-20",
+  "observedPeriod": "Firm debt, profitability and financing-source evidence through 2024-Q1",
+  "retrievedAt": "2026-10-14",
+  "revision": "IMF staff analysis using BIS/firm datasets; LGFV perimeter and firm-data coverage limit interpretation",
+  "units": "Debt as percent of GDP; financing shares (%) and corporate ratios",
+  "relevance": "Domestic/onshore finance reliance and concentration of corporate/LGFV risk; older matched exposure vintage and not a causal external shock estimate.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "MOF_LOCAL_DEBT_SWAP_2025",
+  "title": "Report on the implementation of the 2025 central and local budgets (local debt risk measures)",
+  "publisher": "Ministry of Finance of the People’s Republic of China",
+  "url": "https://www.mof.gov.cn/en/reports/202605/P020260520551662345438.pdf",
+  "publishedAt": "2026-05-20",
+  "observedPeriod": "Debt swap issuance and implementation during 2025; report to 2026 legislative session",
+  "retrievedAt": "2026-10-14",
+  "revision": "Annual budget implementation report; policy-reported authorization and completion; does not consolidate all LGFV liabilities",
+  "units": "RMB trillion/billion, debt quota and annual fiscal flows",
+  "relevance": "Official record of debt replacement as refinancing/term-cost relief and risk management; replacement does not itself erase consolidated public-sector obligations.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "BIS_LBS_CHINA",
+  "title": "Locational Banking Statistics: cross-border positions involving China",
+  "publisher": "Bank for International Settlements",
+  "url": "https://data.bis.org/topics/LBS/tables-and-dashboards/BIS%2CLBS_A4%2C1.0",
+  "publishedAt": "2026-09-30",
+  "observedPeriod": "Quarterly, coverage through 2026-Q1 in portal snapshot",
+  "retrievedAt": "2026-10-14",
+  "revision": "BIS data are revised; residence vs nationality tables differ; select counterparty China and bank reporting jurisdiction in export",
+  "units": "US dollars; stocks/outstanding positions and transaction-adjusted changes depend on measure",
+  "relevance": "Cross-border bank claims/positions to test offshore creditor channels; not onshore RMB credit, FDI, portfolio flows or total Chinese corporate funding.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "BIS_JAPAN_QR_2016",
+  "title": "Macroprudential policy as a blunt instrument: evidence from the Japanese credit restriction episodes",
+  "publisher": "Bank for International Settlements, Working Paper 536",
+  "url": "https://www.bis.org/publications/working-paper-536-macroprudential-policy-instrument-blunt",
+  "publishedAt": "2016-01-14",
+  "observedPeriod": "Japan quantitative credit restriction episodes and subsequent macro/financial outcomes",
+  "retrievedAt": "2026-10-14",
+  "revision": "Working paper; historical episode-specific quasi-experimental identification, not a China forecast coefficient",
+  "units": "Study-specific credit restriction, lending, real estate and balance-sheet measures",
+  "relevance": "Scholarly causal identification for one Japan policy episode; useful historical comparison and evidence that credit allocation tools spill beyond targets.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "BIS_DEFLATION_HIST_2015",
+  "title": "The costs of deflations: a historical perspective",
+  "publisher": "Bank for International Settlements, BIS Quarterly Review",
+  "url": "https://www.bis.org/publ/qtrpdf/r_qt1503e.htm",
+  "publishedAt": null,
+  "observedPeriod": "Historical deflation episodes across countries; analysis published 2015",
+  "retrievedAt": "2026-10-14",
+  "revision": "BIS Quarterly Review, March 2015 issue; exact publication day not verified. Historical sample and episode definitions; distinguish consumer-price from asset-price deflation.",
+  "units": "Annual price changes and real GDP growth, study-specific",
+  "relevance": "Counterweight to mechanical debt-deflation claims: goods-price deflation has mixed growth association; asset-price collapses pose clearer collateral/wealth risk.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "BIS_DEBT_REDUCTION_2010",
+  "title": "Debt reduction after crises",
+  "publisher": "Bank for International Settlements, BIS Quarterly Review",
+  "url": "https://www.bis.org/publ/qtrpdf/r_qt1009e.htm",
+  "publishedAt": "2010-09-01",
+  "observedPeriod": "20 systemic banking crises and post-crisis debt/GDP paths through historical sample",
+  "retrievedAt": "2026-10-14",
+  "revision": "Descriptive cross-crisis sample; average is not a causal estimate or prediction for China",
+  "units": "Percentage points of GDP and episode counts",
+  "relevance": "Useful for historical debt repair pathways; selection, denominator effects and crisis comparability limit transport.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "BOJ_BALANCE_SHEET_2001",
+  "title": "Monetary Policy Under the Zero Interest Rate Constraint and Balance Sheet Adjustment",
+  "publisher": "Bank of Japan, Institute for Monetary and Economic Studies Discussion Paper 2001-E-1",
+  "url": "https://www.boj.or.jp/en/research/brp/ron_2001/ron0106a.htm",
+  "publishedAt": "2001-06-01",
+  "observedPeriod": "Japan monetary policy and balance-sheet adjustment in the 1990s/early 2000s",
+  "retrievedAt": "2026-10-14",
+  "revision": "Historical research discussion paper; episode and model vintage, not a consensus forecast",
+  "units": "Japan interest rates, money/credit and balance-sheet variables, paper-specific",
+  "relevance": "Primary central-bank scholarly analysis of policy transmission when private balance-sheet adjustment constrains monetary easing; contrast institution/capital structure before analogy.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_BOP_H1_2026",
+  "title": "China’s Balance of Payments, Q2 and first half 2026",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "url": "https://www.safe.gov.cn/en/2026/0929/2458.html",
+  "publishedAt": "2026-09-29",
+  "observedPeriod": "Q2 and first half 2026; quarterly and half-year BOP flows",
+  "retrievedAt": "2026-10-14",
+  "revision": "Official 2026 Q2/H1 vintage; BOP flows, not IIP stocks. SAFE report says historical revision details are table-specific.",
+  "units": "RMB billion, USD billion and SDR billion; quarterly flow values",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_IIP_202606",
+  "title": "China’s International Investment Position at end-June 2026",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "url": "https://www.safe.gov.cn/en/2026/0929/2455.html",
+  "publishedAt": "2026-09-29",
+  "observedPeriod": "End-June 2026 stock positions; direct, portfolio, derivatives, other investment and reserve assets/liabilities",
+  "retrievedAt": "2026-10-14",
+  "revision": "Latest verified IIP vintage available at cutoff; positions include valuation effects and are not transaction flows.",
+  "units": "USD billion; end-period stock",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_EXTDEBT_202606",
+  "title": "China’s External Debt Data at end-June 2026",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "url": "https://www.safe.gov.cn/en/2026/0929/2454.html",
+  "publishedAt": "2026-09-29",
+  "observedPeriod": "End-June 2026 external debt by institutional sector, debt instrument and original maturity",
+  "retrievedAt": "2026-10-14",
+  "revision": "Official SAFE gross external-debt position; short/long split uses contractual original maturity, not remaining maturity. Excludes Hong Kong SAR, Macao SAR and Taiwan Province of China.",
+  "units": "RMB billion and USD billion; end-period stock",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "PBOC_SCIO_FINSTATS_H1_2026",
+  "title": "SCIO press conference transcript on monetary policy and financial statistics, first half 2026",
+  "publisher": "State Council Information Office (SCIO), quoting People’s Bank of China (PBOC) officials",
+  "url": "https://english.scio.gov.cn/pressroom/node_8021725.html",
+  "publishedAt": "2026-07-15",
+  "observedPeriod": "End-June 2026 financing stocks, H1 2026 financing flows, and June 2026 weighted-average new-loan rates",
+  "retrievedAt": "2026-10-14",
+  "revision": "Official government press conference transcript; preliminary financial aggregates and PBOC spokesperson statements. Rates are weighted averages for newly issued loans, not borrower-specific all-in costs.",
+  "units": "RMB trillion or billion; year-on-year percent; annualized loan-rate percent",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "MOF_DEBT_IMPLEMENTATION_2025",
+  "title": "Report on implementation of China’s 2025 central and local budgets",
+  "publisher": "Ministry of Finance of the People’s Republic of China",
+  "url": "https://www.mof.gov.cn/en/reports/202605/t20260520_3990222.htm",
+  "publishedAt": "2026-05-20",
+  "observedPeriod": "2025 debt-resolution program execution and fiscal implementation",
+  "retrievedAt": "2026-10-14",
+  "revision": "Government report; reports 2025 debt-swap bond issuance completed and qualitative interest-cost/debt-service relief. It does not provide a consolidated LGFV maturity or loss perimeter.",
+  "units": "RMB trillion for bond issuance; qualitative outcomes",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "NBS_PPI_202608",
+  "title": "Industrial Producer Price Indexes in August 2026",
+  "publisher": "National Bureau of Statistics of China",
+  "url": "https://www.stats.gov.cn/english/PressRelease/202609/t20260910_1965274.html",
+  "publishedAt": "2026-09-10",
+  "observedPeriod": "August 2026 monthly and year-on-year industrial PPI; January-August average",
+  "retrievedAt": "2026-10-14",
+  "revision": "2026 series uses 2025 base period; PPI measures first-sale prices of industrial products and is not GDP deflator or household cost of living.",
+  "units": "Percent month-on-month and year-on-year",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "NBS_PROPERTY_202608",
+  "title": "Investment in Real Estate Development from January to August 2026",
+  "publisher": "National Bureau of Statistics of China",
+  "url": "https://www.stats.gov.cn/english/PressRelease/202609/t20260916_1965342.html",
+  "publishedAt": "2026-09-16",
+  "observedPeriod": "January-August 2026 cumulative real-estate development activity, sales, inventory and funding flows; end-August inventory stock",
+  "retrievedAt": "2026-10-14",
+  "revision": "Comparable year-on-year rates reflect revisions to prior-period data; development-funding indicators are cumulative cash-flow categories, not developer balance sheets or presale completion obligations.",
+  "units": "RMB billion; million square metres; percent year-on-year; end-period inventory stock",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "IMF_CHINA_ARTICLEIV_2026",
+  "title": "People’s Republic of China: 2025 Article IV Consultation, Staff Report, Country Report 26/044",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf",
+  "publishedAt": "2026-02-18",
+  "observedPeriod": "2025 estimates and medium-term projections; fiscal and augmented government perimeter; staff discussions ended 2025-12-10",
+  "retrievedAt": "2026-10-14",
+  "revision": "IMF staff estimate/projection, not official Chinese debt statistics or causal identification. Augmented debt includes government-guided funds and LGFV activity; annex explicitly defines perimeter and estimates.",
+  "units": "Percent of GDP for debt/fiscal series; RMB billion for fiscal table",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_FX_POLICY_H1_2026",
+  "title": "Foreign Exchange Receipts and Payments Data for First Half 2026 — Press Conference Transcript",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "url": "https://www.safe.gov.cn/en/2026/0717/2441.html",
+  "publishedAt": "2026-07-17",
+  "observedPeriod": "H1 2026 cross-border receipts/payments, FX settlements, capital-account facilitation and regulatory channels",
+  "retrievedAt": "2026-10-14",
+  "revision": "SAFE/SCIO transcript; describes policy tools and flows but not an independent measure of control effectiveness or circumvention.",
+  "units": "USD trillion; percentages; policy descriptions",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "SAFE_BOP_TABLES_20260929",
+  "title": "SAFE time-series workbook: Balance of Payments of China (annual and quarterly; revised through Q2 2026)",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "url": "https://www.safe.gov.cn/en/file/file/20260929/20c1e5e45d704a77b302ba234211a75b.xlsx",
+  "publishedAt": "2026-09-29",
+  "observedPeriod": "Annual BOP 2010–2025 and quarterly BOP 2010Q1–2026Q2; includes instrument detail and sector/maturity rows where reported",
+  "retrievedAt": "2026-10-14",
+  "revision": "Downloaded SAFE workbook linked from official BOP Data and Statistics page. Annual USD worksheet, 2025 column Q; BOP sign convention: positive asset value=net decrease and negative=net increase; positive liability=net increase, negative=net decrease. The workbook displays slash markers rather than numerical values in some 2025 sector/maturity subrows; these were not imputed.",
+  "units": "USD 100 million (annual USD worksheet), converted to USD billion by dividing by 10",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "NBS_PPI_202609",
+  "title": "Producer Price Index for Industrial Products in September 2026",
+  "publisher": "National Bureau of Statistics of China",
+  "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965476.html",
+  "publishedAt": "2026-10-14",
+  "observedPeriod": "September 2026; monthly and year-on-year industrial PPI",
+  "retrievedAt": "2026-10-14T17:19:46.661978Z",
+  "revision": "NBS release available 09:30 China Standard Time on evidence cutoff date. Archived HTML response; table category 生活资料 is living materials/consumer goods.",
+  "units": "Percent month-on-month and year-on-year",
+  "relevance": "Corrects the false assertion that August 2026 remained latest at cutoff; September headline industrial PPI +5.0% y/y and +1.2% m/m; living-materials PPI -0.1% y/y.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "BIS_DSR_CHINA_PNF_2026Q1",
+  "title": "China debt service ratio, private non-financial sector, BIS WS_DSR 1.0 Q:CN:P",
+  "publisher": "Bank for International Settlements",
+  "url": "https://data.bis.org/topics/DSR/BIS%2CWS_DSR%2C1.0/Q.CN.P",
+  "publishedAt": "2026-09-14",
+  "observedPeriod": "Quarterly 1999-Q1 to 2026-Q1; China private non-financial sector",
+  "retrievedAt": "2026-10-14T17:19:46.661978Z",
+  "revision": "Official bulk CSV snapshot dated 14 September 2026. Exported series code Q:CN:P; no China household-only row in the topic CSV.",
+  "units": "Percent of income available for debt service",
+  "relevance": "Exports latest public China private non-financial-sector DSR; composite is not household-only and is not interchangeable with debt stock or credit flows.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "PBOC_CREDIT_RMB_2025NOV",
+  "title": "Financial Institutions RMB Credit Balance Sheet",
+  "publisher": "People’s Bank of China, Survey and Statistics Department",
+  "url": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2025/12/2025121517273312027.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Monthly balance sheet; latest populated month November 2025",
+  "retrievedAt": "2026-10-14T17:19:46.661978Z",
+  "revision": "Official one-page PDF, table units RMB 100 million. Institutional perimeter includes PBOC, banking depository and non-depository institutions; December 2025 columns were blank in this release. The attachment path includes 2025/12, but exact public posting day was not independently verified.",
+  "units": "RMB 100 million; stocks at month end",
+  "relevance": "Household loan/deposit stocks and short/medium-long credit composition, not loan-purpose collateral-level mortgage stock. Latest populated observation is older than the 2026 H1 flow release.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "VANKE_IR_ANNOUNCEMENTS_2026",
+  "title": "China Vanke investor announcements index",
+  "publisher": "China Vanke Co., Ltd.",
+  "url": "https://www.vanke.com/en/investor/announcement",
+  "publishedAt": null,
+  "observedPeriod": "Issuer announcement list; includes 2026 Interim Report dated 16 September 2026",
+  "retrievedAt": "2026-10-14T17:19:46.661978Z",
+  "revision": "Issuer site page returned anti-bot slider in direct local request; search-indexed issuer listing locates the report but not its tables.",
+  "units": null,
+  "relevance": "Primary issuer source for interim-report existence/date; direct report retrieval was blocked during closure.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "china",
+  "id": "VANKE_INTERIM_2026_TEXT_MIRROR",
+  "title": "China Vanke Co., Ltd. 2026 Interim Report (issuer report text mirror)",
+  "publisher": "FinancialFilings.com (secondary text mirror of China Vanke Co., Ltd. report)",
+  "url": "https://financialfilings.com/filings/china-vanke-co-ltd/interim-quarterly-report/2026/60160513/",
+  "publishedAt": "2026-09-16",
+  "observedPeriod": "Consolidated financial position as at 30 June 2026; six months ended 30 June 2026",
+  "retrievedAt": "2026-10-14T17:19:46.661978Z",
+  "revision": "Transcribed report-text mirror. Issuer listing independently shows report date; mirror states reviewed interim statements (not audited), approved 27 Aug 2026. Direct HTTP request to mirror returned 403; values were extracted from indexed/web-accessible report text. Treat as secondary-located figures pending primary-host validation.",
+  "units": "RMB thousand in statements; normalized to RMB billion in closure table",
+  "relevance": "Issuer group perimeter balance-sheet and financing illustration, not representative sector total. Does not disclose full foreign/onshore funding split.",
+  "regions": [
+   "china"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EUROSTAT_GOV_DEBT_Q1_2026",
+  "title": "Government debt at 88.9% of GDP in euro area (Q1 2026 release and linked dataset)",
+  "publisher": "Eurostat",
+  "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-21072026-ap",
+  "publishedAt": "2026-07-21",
+  "observedPeriod": "End-2026-Q1; quarterly government gross debt under ESA 2010/EDP, nominal face value, consolidated general government; EU aggregate 82.9% and euro-area 88.9% of GDP; national ratios available in release/table",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Release is based on quarterly dataset; annual EDP notifications can revise past quarters. Q2 2026 release scheduled 2026-10-20, after cutoff. EU and euro area aggregates have changing membership (EA21 from 2026).",
+  "units": "EUR and national currency; percent of GDP",
+  "relevance": "Source map only; mapped mechanisms: debt_exposures. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "debt_exposures"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Sovereign gross debt/GDP is not a complete recession-vulnerability measure: maturity, currency, holder, net assets, contingent liabilities and private-sector exposures differ. No Q2 2026 government-debt observation was available by 2026-10-14.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EUROSTAT_GOV_DEBT_METADATA",
+  "title": "Quarterly government debt (gov_10q_ggdebt) metadata",
+  "publisher": "Eurostat",
+  "url": "https://ec.europa.eu/eurostat/cache/metadata/en/gov_10q_ggdebt_esms.htm",
+  "publishedAt": "2026-07-21",
+  "observedPeriod": "Quarter-end general government debt; dataset metadata and coverage through 2026-Q1 at the cutoff",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Metadata updated 2026-07-21; member states transmit quarterly data; annual EDP notifications may revise prior quarterly observations.",
+  "units": "Million euro, million national currency, percent of GDP and percent of consolidated debt",
+  "relevance": "Source map only; mapped mechanisms: debt_exposures. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "debt_exposures"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Some countries publish creditor residency and maturity splits, but availability is not uniform. Debt definition excludes broader public/private balance-sheet risks.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025",
+  "title": "Geopolitics and foreign holdings of euro area government debt",
+  "publisher": "European Central Bank",
+  "url": "https://www.ecb.europa.eu/press/other-publications/ire/article/html/ecb.ireart202506_01~a8b7241329.pt.html",
+  "publishedAt": null,
+  "observedPeriod": "ECB Securities Holdings Statistics; foreign official holdings analysis; euro-area government debt held by non-residents approximately EUR 2.6tn / 23% at end-2024",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Published as part of The international role of the euro, June 2025; exact day not disclosed. Uses ECB SHS security-by-security holdings. Non-resident holdings are not synonymous with safe-haven flows and include diverse holders; custodial bias noted for some international holdings.",
+  "units": "EUR stocks and percent of outstanding euro-area government debt",
+  "relevance": "Source map only; mapped mechanisms: debt_exposures, safe_haven_flows. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "debt_exposures",
+   "safe_haven_flows"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Stock holdings at one date do not identify direction, motive, marginal flow response, or safe-haven status; flow and holder decomposition required. Page language is Portuguese but article identifiers and figures were checked.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_PORTFOLIO_SAFE_HAVEN_2012",
+  "title": "Recent trends in global portfolio flows amid sovereign tensions in the euro area",
+  "publisher": "European Central Bank",
+  "url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/focus/2012/pdf/ecb~14913afdc3.fsrbox201212_01.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Global portfolio reallocations and euro-area sovereign tensions, principally 2011–2012",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Historical ECB Financial Stability Review focus box, December 2012; exact day not disclosed. Older crisis-period evidence, not a contemporary flow estimate.",
+  "units": "Portfolio holdings and flows; see document tables/figures",
+  "relevance": "Source map only; mapped mechanisms: safe_haven_flows. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "safe_haven_flows"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Reports evidence consistent with safe-haven flows in that episode; it cannot establish that EU/euro-area assets are always a safe haven under a different shock or identify current response elasticities.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EU_CRMA_2024_1252",
+  "title": "Regulation (EU) 2024/1252 establishing a framework for a secure and sustainable supply of critical raw materials",
+  "publisher": "European Parliament and Council / EUR-Lex",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1252",
+  "publishedAt": "2024-05-03",
+  "observedPeriod": "Legal benchmarks for 2030; strategic raw-material value chains",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Binding regulation, Official Journal L 2024/1252. Article 5 benchmarks are EU capacities that approach or reach 10% extraction, 40% processing and 25% recycling of annual Union consumption; diversification aims for no one third country above 65%. By 2027 Commission is to set recycling-capacity benchmarks against relevant waste streams.",
+  "units": "Capacity shares of annual Union consumption; percent",
+  "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Legal capacity benchmarks are goals, not evidence of realized supply, utilization or feedstock. Benchmarks are per strategic raw material / chain stage, and denominators must be matched. Recycling capacity benchmark is distinct from actual end-of-life recycled input.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EC_CRMA_PROJECTS_2025",
+  "title": "Selected strategic projects under the Critical Raw Materials Act",
+  "publisher": "European Commission, DG GROW",
+  "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+  "publishedAt": "2025-03-25",
+  "observedPeriod": "First EU strategic-project selections under CRMA; project stages include extraction, processing, recycling and substitution",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Commission approved 47 EU projects 2025-03-25; a separate 13 projects in third countries selected 2025-06-04. Project list may be updated as later selections occur.",
+  "units": "Project counts by stage/material; not annual tonnes",
+  "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Designation confers strategic-project status and permitting/support facilitation; it does not certify financing close, construction completion, qualified feedstock, commercial throughput or target contribution.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EC_CRMA_PROJECTS_2026",
+  "title": "Commission selects 46 new Strategic Projects to bolster EU supply of critical raw materials",
+  "publisher": "European Commission Representation in Luxembourg",
+  "url": "https://luxembourg.representation.ec.europa.eu/actualites-et-evenements/actualites/commission-selects-46-new-strategic-projects-bolster-eus-supply-critical-raw-materials-2026-10-09_en",
+  "publishedAt": "2026-10-09",
+  "observedPeriod": "Second EU strategic-project call; projects across 16 Member States, including four rare-earth projects",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "As of 2026-10-09, adds 46 EU projects to 47 EU projects selected in 2025 and 13 third-country projects. Source says projects are expected to contribute to benchmarks.",
+  "units": "Project counts; no harmonized annual output series",
+  "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Selection is pipeline evidence, not commissioned capacity. Do not sum diverse materials/stages as if comparable supply or assert 2030 delivery absent project-level schedules and feedstock.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "LKAB_PER_GEIJER_RESOURCE",
+  "title": "Europe’s largest deposit of rare earth metals is located in the Kiruna area",
+  "publisher": "LKAB",
+  "url": "https://lkab.com/en/press/europes-largest-deposit-of-rare-earth-metals-is-located-in-the-kiruna-area/",
+  "publishedAt": "2023-01-12",
+  "observedPeriod": "Per Geijer mineral resource estimate and planned project steps; resource estimate reported under PERC 2021",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Company release reports >1 million tonnes rare-earth oxides in a mineral resource, not a mineral reserve. At publication, exploitation concession application and further investigation were next steps; company states route to possible mine is long. Luleå industrial park production start was then planned for 2027.",
+  "units": "Tonnes in-situ rare-earth oxides; dates are project plans",
+  "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Geological resource is a stock, not recoverable saleable annual output. Permits, mine plan, recovery, processing, infrastructure, financing and commissioning remain necessary. Do not use the 2027 plan as achieved production.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "LKAB_PER_GEIJER_2025_ANNUAL",
+  "title": "LKAB Annual and Sustainability Report 2025",
+  "publisher": "LKAB",
+  "url": "https://lkab.com/wp-content/uploads/2026/04/LKAB_Annual-and-Sustainability-Report-2025_260423.pdf",
+  "publishedAt": "2026-04-23",
+  "observedPeriod": "LKAB FY2025 operations and project portfolio; Per Geijer and critical-minerals plans",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Audited annual reporting, published 2026-04-23; project forward dates remain management plans, not observations.",
+  "units": "As reported by LKAB; units vary by table and project",
+  "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Use financial/operating statements for realized LKAB results; strategic project descriptions do not disclose validated Per Geijer annual REE production or an operating mine.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "NEO_NARVA_2025_OPENING",
+  "title": "Neo Performance Materials opens state-of-the-art magnet facility in Europe",
+  "publisher": "Neo Performance Materials Inc.",
+  "url": "https://www.neomaterials.com/neo-opens-state-of-the-art-magnet-facility-europe/",
+  "publishedAt": "2025-09-22",
+  "observedPeriod": "Narva, Estonia permanent magnet facility opening; Bosch capacity reservation and commercial ramp-up context",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Company announcement of opening is distinct from mass-production qualification and sustained utilization; see 2025 Q1 results for planned 2026 mass production.",
+  "units": "Facility capacity described in company filings in tonnes/year; announcement itself provides no observed annual output",
+  "relevance": "Source map only; mapped mechanisms: refining_capacity. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "refining_capacity"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "This is downstream magnet manufacturing, not rare-earth mining or oxide separation. An opening ceremony does not prove actual output, customer qualification or utilization.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "NEO_2024_AIF",
+  "title": "Neo Performance Materials Inc. 2024 Annual Information Form",
+  "publisher": "Neo Performance Materials Inc. / Canadian securities filing",
+  "url": "https://www.neomaterials.com/wp-content/uploads/2025/03/Neo-AIF-2025-vF.pdf",
+  "publishedAt": null,
+  "observedPeriod": "FY2024 company operations and Narva magnet plant construction plans",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Neo 2024 Annual Information Form, final 2025 version; exact filing/publication date is not established here. Planned Phase 1 capacity 2,000 tonnes/year and potential cumulative Phase 2 capacity 5,000 tonnes/year; not observed throughput.",
+  "units": "Tonnes per year nameplate capacity",
+  "relevance": "Source map only; mapped mechanisms: refining_capacity. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "refining_capacity"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Annual information form differentiates planned capacity from actual output. Narva uses rare-earth materials; it is not EU mine production. Follow current filings for commissioning and utilization.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "NEO_2026_NARVA_COMMERCIAL",
+  "title": "Neo begins commercial magnet production in Narva",
+  "publisher": "Invest in Estonia / Estonian Investment Agency",
+  "url": "https://investinestonia.com/neo-new-magent-factory-narva-production/",
+  "publishedAt": null,
+  "observedPeriod": "Narva permanent magnet facility commercialization reported in 2026; article states commercial production and shipments to an EV traction-motor Tier 1 customer",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Living/late-2026 page; exact publication date not disclosed in retrieved record. At retrieval it also described Phase 1B design work to lift capacity to about 5,000 tonnes; this is a company plan, not installed/running capacity.",
+  "units": "Tonnes/year capacity, no observed full-year throughput reported",
+  "relevance": "Source map only; mapped mechanisms: refining_capacity. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "refining_capacity"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Operator/government investment-promotion report provides milestone evidence but no audited 2026 output/utilization or feedstock origin reconciliation. Date is deliberately null because the page did not disclose publication date.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EU_RESOURCEEU_2025",
+  "title": "RESOurceEU Action Plan (COM(2025) 945 final)",
+  "publisher": "European Commission",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52025DC0945",
+  "publishedAt": "2025-12-03",
+  "observedPeriod": "EU critical raw-material supply actions and recycling status, 2025 onward; project expectations for coming years",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Commission communication (not itself a binding production obligation). Reports <1% of rare earth elements recycled in the EU and, subject to appropriate feedstock/incentives, Carester, Solvay and Inspiree could ramp up activities contributing about 3,800 tonnes of rare-earth permanent magnets in coming years (~20% of then-current demand).",
+  "units": "Percent of REE recycled; tonnes of rare-earth permanent magnets; stated share of current demand",
+  "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "The approximately 20% claim is conditional projected capacity/output and different from the CRMA 25% recycling-capacity benchmark; neither means 30% sufficiency. Text itself makes feedstock and incentives conditions explicit; magnet tonnes are not directly comparable to oxide/feedstock tonnes.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "CARESTER_CAREMAG_2025_FINANCING",
+  "title": "Caremag project financing and plant plan, Lacq France",
+  "publisher": "Carester / Caremag SAS",
+  "url": "https://www.carester.fr/wp-content/uploads/2025/03/press-release-ENG-without-embargo.pdf",
+  "publishedAt": "2025-03-17",
+  "observedPeriod": "Construction and planned late-2026 start of rare-earth recycling/refining plant in Lacq",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Company release says €216m financing secured, 2,000 tonnes/year magnets recycled and 5,000 tonnes/year mining concentrates refined, with operations expected by late 2026. These are design/plan values, not realized output.",
+  "units": "EUR financing; tonnes/year magnet feed and concentrate feed",
+  "relevance": "Source map only; mapped mechanisms: refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Feedstock sourcing, commissioning, ramp, product mix and process yield determine saleable rare-earth outputs. Magnet input tonnage, concentrate input tonnage and oxide output are different units/stages.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "CARESTER_CAREMAG_CURRENT",
+  "title": "Caremag plant overview",
+  "publisher": "Carester",
+  "url": "https://www.carester.fr/en/our-plant/",
+  "publishedAt": null,
+  "observedPeriod": "Current project description for Lacq; recycled permanent magnets and mineral concentrates are planned feedstocks",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Living company project page; exact publication/revision date not disclosed.",
+  "units": "Plant product description; no independently verified current annual output",
+  "relevance": "Source map only; mapped mechanisms: refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Company project material, not audited production data. Explicitly describes two feedstocks: permanent magnets and heavy-REE mineral concentrates.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "JRC_MATERIAL_SYSTEM_ANALYSIS_2021",
+  "title": "Towards Recycling Indicators based on EU flows and Raw Materials System Analysis data (JRC112720; EUR 29435 EN)",
+  "publisher": "European Commission Joint Research Centre",
+  "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC112720",
+  "publishedAt": "2018-11-20",
+  "observedPeriod": "EU-28 recycling indicators and material-flow data; underlying data vintages vary, including some series dated to 2012",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Corrected on 2026-10-14 after primary landing-page/PDF check: JRC112720, EUR 29435 EN, issued 2018-11-20; DOI 10.2760/092885. It distinguishes end-of-life recycling input rate from end-of-life recycling efficiency. The former URL JRC125101 identifies a different 2021 nine-material report and was a citation mismatch; see EU_JRC125101_NINE_MATERIALS_2021.",
+  "units": "Material stocks and flows; report-specific units",
+  "relevance": "Source map only; mapped mechanisms: magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Methodological, not a current EU permanent-magnet-specific rate. Material-system datasets are mixed vintage; no current stock/cohort/yield estimate can be inferred.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "JRC_MAGNET_RECYCLING_TECH_ASSESSMENT",
+  "title": "Material streams from wind energy decommissioning to 2050",
+  "publisher": "European Commission Joint Research Centre",
+  "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC139814/JRC139814_01.pdf",
+  "publishedAt": null,
+  "observedPeriod": "JRC modeled EU wind-turbine material decommissioning through 2050 based on installations through 2023; permanent-magnet REEs and boron detail",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "JRC report EUR 40324, 2025; exact publication date not disclosed. Models future end-of-life flows, finding slow increase through 2030 and stronger growth thereafter; excludes future repowering in conservative estimates.",
+  "units": "Tonnes/year by material and year; turbine material intensity in kg/MW; report-specific scenarios",
+  "relevance": "Substantive official stock-flow source: cumulative installed wind capacity and asset lifetimes determine future end-of-life magnet waste; supports examining whether recycling capacity can be fed by actual retired magnets.",
+  "mechanismIds": [
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "This concerns wind turbine stock only, not all EU magnets, EVs or e-waste. Technical recovery potential is not available feedstock: report distinguishes collection, disassembly and recycling steps and notes secondary REE streams may remain below growing demand. Exact publication date is not disclosed.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "MFA_MAGNETS_UK_2024",
+  "title": "Mapping the flows and stocks of permanent magnets rare earth elements for powering a circular economy in the UK",
+  "publisher": "Sustainable Production and Consumption (peer-reviewed scholarly article)",
+  "url": "https://doi.org/10.1016/j.spc.2024.03.027",
+  "publishedAt": null,
+  "observedPeriod": "UK rare-earth permanent-magnet value-chain material flow analysis, 2017–2021",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Peer-reviewed dynamic material-flow study, 2024; exact publication day not disclosed. UK case. Reports large in-use stocks, low end-of-life recovery and substantial data gaps; not EU-wide estimate.",
+  "units": "Tonnes of REE and NdFeB magnets; study-specific",
+  "relevance": "Source map only; mapped mechanisms: magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "UK results cannot be applied numerically to EU without harmonized product stock, trade, collection and lifetime data; useful evidence on lagged end-of-life flows and traceability limitations.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EU_CAR_CO2_REG_2023_851",
+  "title": "Regulation (EU) 2023/851 amending CO2 emission performance standards for new cars and vans",
+  "publisher": "European Parliament and Council / EUR-Lex",
+  "url": "https://eur-lex.europa.eu/eli/reg/2023/851/oj/eng",
+  "publishedAt": "2023-04-25",
+  "observedPeriod": "Fleet-average CO2 standards for new cars/vans; 2030 and 2035 target periods; 2026 Commission review clause includes plug-in hybrid technologies",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Enacted regulation; original legal act sets 100% reduction target from 2035 and review clause. It is not a negotiated hybrid exemption or blanket hybrid continuation agreement.",
+  "units": "Percent fleet-average CO2 reduction targets relative to 2021; g CO2/km",
+  "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "automotive_hybrid_agreement_status"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "The 2026 review clause asks for an assessment and possible review; it does not itself amend the operative 2035 target. Distinguish existing law from subsequent proposals and amendments.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EC_AUTO_PACKAGE_2025",
+  "title": "Automotive package: review of existing CO2 emission standards for cars and vans",
+  "publisher": "European Commission, DG MOVE",
+  "url": "https://transport.ec.europa.eu/transport-themes/action-plan-future-automotive-sector/automotive-package_en",
+  "publishedAt": "2025-12-16",
+  "observedPeriod": "Commission automotive-package proposal for post-2035 car CO2 target flexibility and other measures",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Commission proposal says from 2035 a 90% tailpipe-emission reduction target, remaining 10% compensated by specified low-carbon steel/e-fuels/biofuels. Legislative proposal; as of cutoff not enacted.",
+  "units": "Percent tailpipe reduction target; proposal status",
+  "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "automotive_hybrid_agreement_status"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Not an adopted law. It could permit some combustion-engine/hybrid configurations if final law and implementation conditions allow, but no enacted hybrid exemption may be inferred from proposal or political agreement alone.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "COUNCIL_CAR_REVIEW_JUNE2026",
+  "title": "Council progress report on revision of car CO2 standards and plug-in hybrid utility factor",
+  "publisher": "Council of the European Union",
+  "url": "https://data.consilium.europa.eu/doc/document/ST-10065-2026-REV-1/en/pdf",
+  "publishedAt": null,
+  "observedPeriod": "Council deliberations on Commission proposal and 2026 review; document ahead of Environment Council 25 June 2026",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Council progress report dated June 2026 (document ST 10065/1/26 REV 1); exact day not established here. Records divergent member-state views. It says proposal does not include PHEV utility-factor freeze; a group requested it and another opposed. Utility-factor update adopted in secondary legislation applies from 2026-11-29.",
+  "units": "Legal/policy status and effective date; no economic output units",
+  "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "automotive_hybrid_agreement_status"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Progress report and divergent positions are not Council/Parliament adoption. The 2026 Commission review, 2025 flexibility law for 2025–27 averaging, and 2025 proposed 2035 revision are distinct measures; no evidence here of a March 2026 hybrid deal.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "COUNCIL_CAR_FLEX_2025",
+  "title": "CO2 emissions in cars: Council gives final approval to additional flexibility for carmakers",
+  "publisher": "Council of the European Union",
+  "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/05/27/co2-emissions-in-cars-council-gives-final-approval-to-additional-flexibility-for-carmakers/",
+  "publishedAt": "2025-05-27",
+  "observedPeriod": "Compliance averaging for manufacturers’ 2025, 2026 and 2027 car CO2 targets",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Council confirms adopted amendment permits averaging each manufacturer’s performance over 2025–2027 instead of annual compliance.",
+  "units": "Three-year compliance period",
+  "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "automotive_hybrid_agreement_status"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "This is compliance timing flexibility, not hybrid-vehicle exemption and not amendment of the 2035 fleet target.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EU_CAR_TARGET_2022_REVIEW_CLAUSE",
+  "title": "Fit for 55: Council and Parliament provisional agreement on car and van CO2 standards",
+  "publisher": "Council of the European Union",
+  "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/10/27/first-fit-for-55-proposal-agreed-the-eu-strengthens-targets-for-co2-emissions-for-new-cars-and-vans/",
+  "publishedAt": "2022-10-27",
+  "observedPeriod": "Political agreement later enacted in Regulation (EU) 2023/851; review clause for 2026 and synthetic-fuel pathway",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "This is contemporaneous provisional political agreement release; use final regulation for binding law. Explicitly mentions 2026 review and plug-in hybrid technologies.",
+  "units": "Percent emissions reductions; policy dates",
+  "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+  "mechanismIds": [
+   "automotive_hybrid_agreement_status"
+  ],
+  "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+  "availabilityLimit": "Review clause is not a predetermined outcome. It references plug-in hybrid technologies in review, which may be the source of claims about a supposed hybrid deal.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EA_GDP_2026Q2",
+  "title": "Euro-area GDP and employment, Q2 2026 flash estimate",
+  "publisher": "Eurostat",
+  "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap",
+  "publishedAt": "2026-09-07",
+  "observedPeriod": "Euro-area Q2 2026 GDP estimate: +0.6% q/q and +1.2% y/y; inventory contribution -0.5 percentage points, net exports +0.9 percentage points",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Q2 estimate available as of cutoff; Eurostat scheduled GDP Q2 update for 2026-10-20, after cutoff. EA21 from Jan 2026 vs EA20 through 2025.",
+  "units": "Real GDP percent change quarter-on-quarter and year-on-year; percentage-point contributions",
+  "mechanismIds": [
+   "debt_exposures"
+  ],
+  "sourceType": "official statistical release",
+  "relevance": "Source map only; maps macro denominator, activity and fiscal-capacity context. Headline growth can mask weak domestic demand given composition; this does not demonstrate sovereign stress or resilience.",
+  "availabilityLimit": "Estimate subject to revision; Q3 GDP flash scheduled 2026-10-30. The release composition (inventories and net exports) cautions against treating the headline as broad private-demand strength.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_DECISION_20260910",
+  "title": "Monetary policy decisions and staff projections, 10 September 2026",
+  "publisher": "European Central Bank",
+  "url": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is260910~6a45359cfc.en.html",
+  "publishedAt": "2026-09-10",
+  "observedPeriod": "ECB decision 2026-09-10, rates effective 2026-09-16; staff projections 2026–2028",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Policy decision raised key rates by 25bp; deposit 2.50%, main refinancing 2.65%, marginal lending 2.90%. Statement is data-dependent and gives no pre-committed path; policy rates are not sovereign bond yields or firm borrowing rates.",
+  "units": "Percent per annum",
+  "mechanismIds": [
+   "debt_exposures",
+   "safe_haven_flows"
+  ],
+  "sourceType": "central-bank policy decision and projections",
+  "relevance": "Source map only; maps monetary/financial conditions to sovereign refinancing and risk analysis. ECB rates are shared policy settings; spreads and national financing transmission remain country-specific.",
+  "availabilityLimit": "Policy rates alone do not measure marginal sovereign funding costs, maturity structure, investor flows, or credit transmission.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+  "title": "Selected strategic projects under the Critical Raw Materials Act (live Commission project register)",
+  "publisher": "European Commission, Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs",
+  "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+  "publishedAt": null,
+  "observedPeriod": "Official selected-project register; includes second EU project wave approved 2026-10-09, with decision C(2026)8051 and annex linked from page",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Living page; on 2026-10-14 it states 106 strategic projects overall, including the 2025 EU/third-country rounds and the 2026 EU round. Designation is not commissioning.",
+  "units": "Project counts, not capacity or output",
+  "relevance": "Canonical official register for project designation and status distinction.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "official Commission register",
+  "availabilityLimit": "Project count aggregates different materials, stages and project maturity; no comparable annual capacity or realized production follows from the count.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EURLEX_AUTO_PROCEDURE_2025_0420",
+  "title": "Procedure 2025/0420/COD: COM(2025) 995 car and van CO2 standards proposal",
+  "publisher": "EUR-Lex, Publications Office of the European Union",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=intcom%3ASEC%282025%29995",
+  "publishedAt": null,
+  "observedPeriod": "Living legislative procedure status checked 2026-10-14; status shown as ongoing; proposal published 2025-12-16; latest retrieved official status page reviewed at cutoff",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Dynamic procedure history; not itself a new act. Its current status at retrieval is ongoing.",
+  "units": null,
+  "relevance": "Primary procedural record used to distinguish Commission proposal from adopted regulation.",
+  "mechanismIds": [
+   "automotive_hybrid_agreement_status"
+  ],
+  "sourceType": "official EU legislative procedure record",
+  "availabilityLimit": "The page may update after the research cutoff; this record represents the 2026-10-14 retrieval only.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "CARESTER_INFRAVIA_2026",
+  "title": "InfraVia reaches agreement to invest in Carester; Caremag remains scheduled for late-2026 commissioning",
+  "publisher": "Carester",
+  "url": "https://www.carester.fr/en/infravia-critical-metals-fund-has-reached-an-agreement-to-invest-in-carester-leader-in-rare-earth-recycling-and-separation/",
+  "publishedAt": "2026-04-09",
+  "observedPeriod": "Project schedule and financing update published 2026-04-09; as of 2026-10-14 the company still described commissioning as scheduled for late 2026",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "Company announcement; transaction subject to due diligence/conditions and definitive documentation. Project throughput figures are planned nameplate feed capacities, not production.",
+  "units": "EUR financing/equity; tonnes per year planned feed",
+  "relevance": "Latest dated company update found for Caremag commissioning and planned recycling/refining capacity.",
+  "mechanismIds": [
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "company project disclosure",
+  "availabilityLimit": "No independently audited installed capacity, commissioning completion, feedstock sourcing, utilization or output was located by cutoff.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "NEO_NARVA_COMMERCIAL_2026",
+  "title": "Neo begins commercial magnet production in Narva",
+  "publisher": "Invest in Estonia (Estonian Investment Agency)",
+  "url": "https://investinestonia.com/neo-new-magent-factory-narva-production/",
+  "publishedAt": null,
+  "observedPeriod": "Commercial production and initial Tier 1 EV traction-motor supply reported in 2026; page crawled/retrieved 2026-10-14 but gives no explicit publication date",
+  "retrievedAt": "2026-10-14T16:22:41Z",
+  "revision": "The agency reports commercial production, one programme in production and other programmes expected to qualify later; it does not report observed annual output. Neo corporate 2025 opening release independently reports qualification-sample production/shipment.",
+  "units": "Company planned expansion about 5,000 tonnes/year; not current observed output",
+  "relevance": "Evidence that Narva has passed beyond announcement/opening to limited commercial production, while not establishing capacity utilization or output volume.",
+  "mechanismIds": [
+   "refining_capacity"
+  ],
+  "sourceType": "government investment promotion, reporting company milestone",
+  "availabilityLimit": "Not an audited company production filing; no tonnes, yield, utilization or full-year data disclosed.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EU_JRC125101_NINE_MATERIALS_2021",
+  "title": "Material system analysis of nine raw materials: Barytes, Bismuth, Hafnium, Helium, Natural Rubber, Phosphorus, Scandium, Tantalum and Vanadium",
+  "publisher": "European Commission Joint Research Centre",
+  "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC125101",
+  "publishedAt": "2021-07-08",
+  "observedPeriod": "Material system analysis for nine named materials; not permanent magnets or rare-earth magnet recycling",
+  "retrievedAt": "2026-10-14T16:40:00Z",
+  "revision": "Canonical landing page identifies JRC125101 and publication date 2021-07-08. Previously misattributed to JRC112720; retained here as distinct document, not support for magnet recycling claims.",
+  "units": "Report-specific material-system stocks and flows",
+  "relevance": "Citation correction / document identity check; not used as evidence for EU magnet recycling.",
+  "mechanismIds": [
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "JRC technical report",
+  "availabilityLimit": "Nine-material scope does not cover rare-earth permanent magnet recycling; no magnet-specific extraction made.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "NEO_SILMET_HREE_LINE_2026",
+  "title": "Neo Successfully Commissions Heavy Rare Earth Separation Production Line in Europe",
+  "publisher": "Neo Performance Materials",
+  "url": "https://www.neomaterials.com/neo-successfully-commissions-heavy-rare-earth-separation-small-scale-production-line-in-europe/",
+  "publishedAt": "2026-04-10",
+  "observedPeriod": "Silmet, Estonia small-scale HREE solvent-extraction line; commissioning and first process solutions reported 2026-04-10",
+  "retrievedAt": "2026-10-14T16:40:00Z",
+  "revision": "Company states line was operating at nameplate capacity during commissioning and had produced first separated terbium and dysprosium process solutions from mixed rare-earth carbonate feed. Stable product purity remained a focus before transition to routine production. No public annual tonnes, utilization series, feed origin split, yield or audited economics provided in this release.",
+  "units": "Process milestone; no throughput volume disclosed",
+  "relevance": "Direct Estonian separation/refining evidence, distinct from Neo Narva magnet manufacturing.",
+  "mechanismIds": [
+   "critical_minerals_production",
+   "refining_capacity"
+  ],
+  "sourceType": "issuer press release",
+  "availabilityLimit": "Company-reported small-scale commissioning milestone; nameplate volume is undisclosed, precursor process solutions are not finished metals/magnets, and routine production/purity had not yet been established.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025",
+  "title": "Solvay advances European rare earths production through capacity expansion",
+  "publisher": "Solvay",
+  "url": "https://www.solvay.com/sites/g/files/srpend616/files/2025-04/20250408%20Inauguration%20La%20Rochelle%20PR%20-%20EN_0.pdf",
+  "publishedAt": "2025-04-08",
+  "observedPeriod": "La Rochelle, France; new rare-earth production line for permanent magnets inaugurated and commercial production announced from 2025-04-08",
+  "retrievedAt": "2026-10-14T16:40:00Z",
+  "revision": "Company states commercial production begins at the inaugurated line and frames an objective to satisfy 30% of European demand by 2030. Release gives no tonnes/year, audited realized output, utilization, product-specific demand denominator, capital/operating cost, feed contract volumes or price economics. The 30% is a company objective for rare earth production, not an EU-wide recycling sufficiency result or observed share.",
+  "units": "Qualitative commercial-production milestone; stated share objective (% European demand) without disclosed denominator or realized annual volume",
+  "relevance": "French separation/refining operator and direct provenance for a 30% European-demand objective often liable to be confused with recycled-magnet sufficiency.",
+  "mechanismIds": [
+   "refining_capacity",
+   "magnet_recycling_stock_flow"
+  ],
+  "sourceType": "company press release",
+  "availabilityLimit": "Self-reported launch and strategic objective; no independently audited throughput or matched demand/market definition. The source combines rare-earth production and sourcing from mines and recycled materials; it does not say 30% demand is met by recycling.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_EA_SECTOR_ACCOUNTS_2025Q4",
+  "title": "Euro area economic and financial developments by institutional sector: fourth quarter of 2025",
+  "publisher": "European Central Bank",
+  "url": "https://www.ecb.europa.eu/press/stats/ffi/html/ecb.eaefd_full2025q4~9cc7fb565f.en.html",
+  "publishedAt": "2026-04-28",
+  "observedPeriod": "Euro-area institutional sector accounts; stocks at 2025-Q4 and annual 2025 transactions/flows",
+  "retrievedAt": "2026-10-14T16:40:00Z",
+  "revision": "Second Q4 2025 sector-accounts release, incorporating revisions/completed sector data. Page locators: debt ratios paras 121-142; NFC creditor-sector shares para 169; holdings and external sector tables. NFC consolidated debt excludes positions between NFCs; household and NFC balance-sheet scope differs.",
+  "units": "EUR billions, percent of GDP or disposable income, annual growth rates",
+  "relevance": "Comparable euro-area private-sector debt/creditor context; does not provide a country-matched bank/corporate/household exposure matrix or country-specific maturity ladders.",
+  "mechanismIds": [
+   "debt_exposures",
+   "safe_haven_flows"
+  ],
+  "sourceType": "official central-bank sector accounts",
+  "availabilityLimit": "Euro-area aggregate only for this release; EU non-euro members not included. Flow and debt measures differ in consolidation/scope; do not compare directly with Maastricht general-government gross debt.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_INTERNATIONAL_ROLE_EURO_2025",
+  "title": "The international role of the euro, June 2025",
+  "publisher": "European Central Bank",
+  "url": "https://www.ecb.europa.eu/pub/pdf/ire/ecb.ire202506.en.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Latest foreign euro-area government-debt holder stocks in this report: end-2024; analysis also discusses post-2022 trends",
+  "retrievedAt": "2026-10-14T16:40:00Z",
+  "revision": "Report month June 2025; exact day not asserted. Special feature reports Q4 2024 EA general-government securities EUR 11,186.3bn; nonresident holdings EUR 2,591.5bn by IIP and EUR 2,674.2bn via ECB Securities Holdings Statistics (SHS); SHS foreign official holdings EUR 952.4bn. In flow/ownership interpretation, SHS third-party holdings have custodian coverage limits; securities stocks alone do not identify motive or crisis response. PDF locators pp. 39-41 / printed pages; table A.1 and chart A.1.",
+  "units": "EUR billions; percent of outstanding debt",
+  "relevance": "English-language primary-source locator for foreign-held debt amounts and holder-composition caveats.",
+  "mechanismIds": [
+   "debt_exposures",
+   "safe_haven_flows"
+  ],
+  "sourceType": "ECB report",
+  "availabilityLimit": "End-2024 stocks, not 2026 flows; issuer-level and holder geography detail has coverage/attribution limits. No causal safe-haven elasticity.",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_EA_SECTOR_ACCOUNTS_2026Q2",
+  "title": "Households and non-financial corporations in the euro area: second quarter of 2026",
+  "publisher": "European Central Bank",
+  "url": "https://www.ecb.europa.eu/press/stats/ffi/html/ecb.eaefd_early2026q2~444dc6a8ee.en.html",
+  "publishedAt": "2026-10-02",
+  "observedPeriod": "2026-Q2",
+  "retrievedAt": "2026-10-14T17:15:44.002511Z",
+  "revision": "Q2 2026 release; revised historical series including since 2022-Q1",
+  "units": "percent of GDP; percent of household disposable income",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "ECB_SI_BANK_STATS_2026Q2",
+  "title": "Supervisory banking statistics, second quarter 2026",
+  "publisher": "European Central Bank / Single Supervisory Mechanism",
+  "url": "https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/ssm.pr260915~7917ca1416.en.html",
+  "publishedAt": "2026-09-15",
+  "observedPeriod": "2026-Q2",
+  "retrievedAt": "2026-10-14T17:15:44.274192Z",
+  "revision": "Significant institutions only; SI statistics release; full SI+LSI system-wide Q2 release dated 2026-10-15 is after cutoff",
+  "units": "percent ratios",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "EBA_RISK_DASHBOARD_2026Q2",
+  "title": "EU/EEA Risk Dashboard, Q2 2026",
+  "publisher": "European Banking Authority",
+  "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-display-strength-amid-challenging-risk-environment",
+  "publishedAt": "2026-09-25",
+  "observedPeriod": "2026-Q2",
+  "retrievedAt": "2026-10-14T17:15:44.718834Z",
+  "revision": "EU/EEA dashboard aggregation; not interchangeable with ECB SI perimeter",
+  "units": "percent ratios",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "BIS_CBS_B4_2026Q1",
+  "title": "Consolidated banking statistics: published data, flat CSV",
+  "publisher": "Bank for International Settlements",
+  "url": "https://data.bis.org/static/bulk/WS_CBS_PUB_csv_flat.zip",
+  "publishedAt": null,
+  "observedPeriod": "2026-Q1",
+  "retrievedAt": "2026-10-14T17:17:01.011266Z",
+  "revision": "Bulk dataset vintage last updated 2026-09-14; latest observed quarter in extracted series 2026-Q1; EU27 reporters individually summed, not a consolidated EU total",
+  "units": "USD millions; unit multiplier 6",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "RIZOS_MAGNET_CESEPS_2022",
+  "title": "Developing a supply chain for recycled rare earth permanent magnets in the EU: Challenges and opportunities",
+  "publisher": "CEPS / Susmagpro",
+  "url": "https://circulareconomy.europa.eu/platform/sites/default/files/2023-01/Developing%20a%20supply%20chain%20for%20recycled%20rare%20earth%20permanent%20magnets%20in%20the%20EU.pdf",
+  "publishedAt": "2022-12-16",
+  "observedPeriod": "Model scenarios 2020-2050; report published 2022-12-07",
+  "retrievedAt": "2026-10-14T17:24:22.542533Z",
+  "revision": "Scenario-based MFA for selected applications; values are model results, not observations Reviewer date correction: publisher landing page gives 16 Dec 2022; previously inferred day 7 is superseded.",
+  "units": "magnet tonnes; Nd/Dy content shares; years",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "JRC_WIND_DECOMMISSIONING_2025",
+  "title": "Material streams from wind energy decommissioning to 2050",
+  "publisher": "European Commission Joint Research Centre",
+  "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC139814/JRC139814_01.pdf",
+  "publishedAt": "2025-05-27",
+  "observedPeriod": "EU wind installations through 2023; model horizon to 2050",
+  "retrievedAt": "2026-10-14T17:24:22.542533Z",
+  "revision": "Wind REE flows; not equivalent to NdFeB magnet tonnes or processed secondary supply",
+  "units": "tonnes of REE",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "JRC_WIND_REE_OUTFLOWS_2026",
+  "title": "Material streams from wind energy decommissioning at national level - Focus on glass/carbon composites and rare earth elements",
+  "publisher": "European Commission Joint Research Centre",
+  "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC148174",
+  "publishedAt": null,
+  "observedPeriod": "JRC148174 issued 2026; publication record accessible 2026-10-06; projected EU wind material outflows to 2050",
+  "retrievedAt": "2026-10-14T17:15:49.818966Z",
+  "revision": "Brief estimate; highly sensitive to assumed lifetime; elemental outflow, not recycling output",
+  "units": "tonnes REE per year",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "eu",
+  "id": "JRC_FORESIGHT_2023",
+  "title": "Supply chain analysis and material demand forecast in strategic technologies and sectors in the EU – A foresight study",
+  "publisher": "European Commission Joint Research Centre",
+  "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC132889",
+  "publishedAt": null,
+  "observedPeriod": "JRC132889 report issued 2023; strategic-technology supply chain scenarios",
+  "retrievedAt": "2026-10-14T17:25:29.217421Z",
+  "revision": "JRC132889 PDF checked; report identifies end-of-life recycling input rate below 1% and cites Rizos et al. 2022 scenarios of 8-19% by 2030 and 24-48% by 2050",
+  "units": "percent and as stated in report",
+  "regions": [
+   "eu"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_DECISION_20260924",
+  "title": "Monetary policy assessment of 24 September 2026",
+  "publisher": "Swiss National Bank",
+  "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
+  "publishedAt": "2026-09-24",
+  "observedPeriod": "Swiss CPI through Aug 2026; policy decision 24 Sep 2026; conditional forecast 2026–2028",
+  "retrievedAt": "2026-10-14",
+  "revision": "September 2026 forecast vintage; conditional on policy rate 0% throughout forecast horizon",
+  "units": "Policy rate: % p.a.; CPI: % y/y and annual average",
+  "mechanismIds": [
+   "chf_appreciation",
+   "import_inflation_snb"
+  ],
+  "evidenceRole": "Primary policy and forecast source",
+  "scopeAndLimits": "Documents CPI, exchange-rate context, FX intervention willingness, policy setting, inflation forecast and growth outlook. Does not establish causal CHF effects; forecast is conditional, not realized observation.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_SAFEHAVEN_2013",
+  "title": "Safe haven currencies and the euro",
+  "publisher": "Swiss National Bank (Working Paper 2013-04)",
+  "url": "https://www.snb.ch/en/publications/research/working-papers/2013/working_paper_2013_04",
+  "publishedAt": "2013-04-17",
+  "observedPeriod": "Historical exchange-rate and risk episodes covered by study (paper vintage 2013)",
+  "retrievedAt": "2026-10-14",
+  "revision": "Working-paper vintage; historical sample; inspect paper for exact end date and specifications",
+  "units": "Exchange-rate returns / risk measures",
+  "mechanismIds": [
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Scholarly empirical source (central-bank working paper)",
+  "scopeAndLimits": "Documents bilateral and time-varying safe-haven patterns; CHF does not uniformly appreciate against every currency in risk episodes. Historical correlation/decomposition does not identify a universal causal elasticity or future capital flow.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_FX_PASS_2018",
+  "title": "The speed of exchange rate pass-through",
+  "publisher": "Swiss National Bank (Working Paper 2018-05)",
+  "url": "https://www.snb.ch/en/publications/research/working-papers/2018/working_paper_2018_05",
+  "publishedAt": "2018-05-18",
+  "observedPeriod": "Daily Swiss import transaction data around 15 Jan 2015 CHF appreciation",
+  "retrievedAt": "2026-10-14",
+  "revision": "Working-paper vintage; 2015 event study",
+  "units": "Import unit values; pass-through elasticities",
+  "mechanismIds": [
+   "chf_appreciation",
+   "import_inflation_snb"
+  ],
+  "evidenceRole": "Scholarly empirical source with transaction-level data",
+  "scopeAndLimits": "Studies unusually sharp 2015 shock and invoice currency. Import-price evidence is not a current CPI forecast or export elasticity; external validity to different shocks is uncertain.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_FX_PASS_2007",
+  "title": "Exchange rate pass-through in Switzerland: Evidence from vector autoregressions",
+  "publisher": "Swiss National Bank (Economic Study 2007-04)",
+  "url": "https://www.snb.ch/en/publications/research/economic-studies/2007/03/economic_studies_2007_04",
+  "publishedAt": "2007-03-03",
+  "observedPeriod": "Monthly price data 1976–2004",
+  "retrievedAt": "2026-10-14",
+  "revision": "Historical sample ending 2004; model vintage 2007",
+  "units": "Import prices and consumer prices; impulse responses",
+  "mechanismIds": [
+   "import_inflation_snb",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Scholarly macro source",
+  "scopeAndLimits": "Finds pass-through to import prices exceeds pass-through to aggregate CPI, and CPI pass-through weakened in low/stable inflation period. Old sample and recursive VAR identification limit current quantitative transfer.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_FX_EXPORTS_2022",
+  "title": "The exchange rate elasticity of the Swiss current account",
+  "publisher": "Swiss National Bank (Working Paper 2022-14)",
+  "url": "https://www.snb.ch/en/publications/research/working-papers/2022/working_paper_2022_14",
+  "publishedAt": "2022-12-23",
+  "observedPeriod": "Swiss current-account and exchange-rate historical sample (see paper tables)",
+  "retrievedAt": "2026-10-14",
+  "revision": "Working-paper vintage 2022; revisions not stated on landing page",
+  "units": "Current account components; exchange-rate elasticities",
+  "mechanismIds": [
+   "chf_appreciation",
+   "pharma_chemical_exports",
+   "commodity_trading"
+  ],
+  "evidenceRole": "Scholarly empirical source",
+  "scopeAndLimits": "Useful counterweight on aggregate current-account/exchange-rate responses. Current-account balances mix goods, services and incomes and do not map directly to GDP or firm profits.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SWISS_EXPORTS_2025",
+  "title": "2025: Exports hit a new record, driven by chemicals and pharmaceuticals",
+  "publisher": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+  "url": "https://www.bazg.admin.ch/en/newnsb/waOys9ZIOMsimr-iXmjwI",
+  "publishedAt": "2026-01-29",
+  "observedPeriod": "Swiss customs goods trade, calendar year 2025",
+  "retrievedAt": "2026-10-14",
+  "revision": "Annual 2025 release; customs statistics vintage released 29 Jan 2026",
+  "units": "Nominal goods exports/imports, CHF; growth rates",
+  "mechanismIds": [
+   "pharma_chemical_exports",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Primary official trade statistics release",
+  "scopeAndLimits": "Aggregate merchandise trade excludes services and does not show company-level currency exposure, domestic value added, real quantities or hedging. Use linked detailed tables for sector breakdown and note customs conventions.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_BOP_2025",
+  "title": "Swiss balance of payments and international investment position: 2025 and Q4 2025",
+  "publisher": "Swiss National Bank",
+  "url": "https://www.snb.ch/en/publications/communication/press-releases/2026/pre_20260324",
+  "publishedAt": "2026-03-24",
+  "observedPeriod": "Balance of payments and IIP: 2025 and 2025-Q4",
+  "retrievedAt": "2026-10-14",
+  "revision": "Annual/Q4 release vintage 24 Mar 2026; SNB data may be revised",
+  "units": "CHF billion; current and financial account flows; IIP stocks",
+  "mechanismIds": [
+   "commodity_trading",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Primary official external accounts",
+  "scopeAndLimits": "Separates transaction flows and external positions; current-account balances do not equal domestic production or disposable income; non-monetary gold and merchanting can cause large gross flows.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_BOP_2026Q2",
+  "title": "Swiss balance of payments and international investment position: Q2 2026",
+  "publisher": "Swiss National Bank",
+  "url": "https://www.snb.ch/en/publications/communication/press-releases/2026/pre_20260922",
+  "publishedAt": "2026-09-22",
+  "observedPeriod": "Balance of payments and IIP: 2026-Q2",
+  "retrievedAt": "2026-10-14T17:17:52.360344Z",
+  "revision": "Quarterly preliminary vintage released 22 Sep 2026; subject to revisions",
+  "units": "CHF billion; quarterly flows and positions",
+  "mechanismIds": [
+   "commodity_trading",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Primary official external accounts, latest identified quarterly vintage by cutoff",
+  "scopeAndLimits": "Q2 2026 results are flow/position statistics and not a causal commodity-trading shock measure. Release notes merchanting and non-monetary gold drove year-on-year goods balance movements.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_MERCHANTING_METHOD",
+  "title": "Notes to the current account survey (CAS): merchanting definitions and reporting",
+  "publisher": "Swiss National Bank",
+  "url": "https://surveys.snb.ch/public/erlaeuterungen/E_CAS_1.1.html",
+  "publishedAt": null,
+  "observedPeriod": "Current account survey definitions; living methodological page",
+  "retrievedAt": "2026-10-14",
+  "revision": "Living methodology page accessed 2026-10-14; publication date not disclosed",
+  "units": "BPM6-aligned transactions; sales, purchases, services and merchanting",
+  "mechanismIds": [
+   "commodity_trading"
+  ],
+  "evidenceRole": "Primary statistical methodology",
+  "scopeAndLimits": "Defines merchanting as resident purchase and resale of goods abroad without goods entering Switzerland/Liechtenstein. Gross merchanting turnover is not domestic value added; distinguish merchanting margin, services and derivatives/margin payments.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SECO_COMMODITIES_2018",
+  "title": "The Swiss commodities sector: current situation and outlook",
+  "publisher": "State Secretariat for Economic Affairs (SECO), Interdepartmental Platform on Commodities",
+  "url": "https://www.seco.admin.ch/dam/seco/en/dokumente/Aussenwirtschaft/Wirtschaftsbeziehungen/Rohstoffe/rohstoffbericht_Standortbestimmung_Perspektiven.pdf.download.pdf/RS-BE-e.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Swiss commodities sector; empirical inputs largely through 2016–2017 as documented in report",
+  "retrievedAt": "2026-10-14",
+  "revision": "Federal Council assessment/report 2018; contains dated legacy estimates and wide measurement uncertainty",
+  "units": "Employment, trade-finance funding, tax, transit trade; units vary by chapter",
+  "mechanismIds": [
+   "commodity_trading"
+  ],
+  "evidenceRole": "Primary government assessment with commissioned studies",
+  "scopeAndLimits": "Explicitly says firms not separately classified and sector size/value-added estimates vary materially; legacy employment and funding estimates must not be treated as current. Supports mapping data limitations, not a precise contemporary GDP share.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_MERCHANTING_CA_2013",
+  "title": "Merchanting and Current Account Balances",
+  "publisher": "Swiss National Bank (Working Paper 2013-06)",
+  "url": "https://www.snb.ch/en/publications/research/working-papers/2013/working_paper_2013_06",
+  "publishedAt": "2013-06-12",
+  "observedPeriod": "Cross-country panel 53 countries, 1980–2011",
+  "retrievedAt": "2026-10-14",
+  "revision": "Working-paper vintage 2013; panel ends 2011",
+  "units": "Current-account balance (% GDP); panel estimates",
+  "mechanismIds": [
+   "commodity_trading"
+  ],
+  "evidenceRole": "Scholarly cross-country research",
+  "scopeAndLimits": "Finds merchanting can increase measured current-account surplus while earnings are reinvested abroad rather than domestic investment. Cross-country average is not a Switzerland-specific current causal estimate.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_EU_PACKAGE_202603",
+  "title": "Dispatch on the Switzerland-EU Package (Bilaterals III)",
+  "publisher": "Federal Department of Foreign Affairs (FDFA), Directorate for European Affairs",
+  "url": "https://www.europa.eda.admin.ch/en/dispatch-swiss-eu-package",
+  "publishedAt": "2026-03-13",
+  "observedPeriod": "Swiss–EU package status as of 13 Mar 2026; agreements signed 2 Mar 2026; parliamentary dispatch",
+  "retrievedAt": "2026-10-14",
+  "revision": "Official dispatch and agreement texts; signature is not ratification or entry into force",
+  "units": "Legal status and agreement text; no economic units",
+  "mechanismIds": "eu_market_access",
+  "evidenceRole": "Primary legal/policy source",
+  "scopeAndLimits": "Confirms 2 Mar 2026 signatures and 13 Mar dispatch to Parliament. Package remains subject to Swiss parliamentary/democratic approval and EU procedures; no general effective date established by the dispatch page. Do not model proposed provisions as already effective.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_EU_PACKAGE_STATUS_202608",
+  "title": "Federal Council adopts the Swiss–EU relations package: parliamentary and referendum status updates",
+  "publisher": "Federal Department of Foreign Affairs (FDFA)",
+  "url": "https://www.eda.admin.ch/en/development-relations-switzerland-eu",
+  "publishedAt": "2026-08-12",
+  "observedPeriod": "Package status and political/legal process through 12 Aug 2026",
+  "retrievedAt": "2026-10-14",
+  "revision": "Living official page; includes dated entries; accessed at 2026-10-14 cutoff",
+  "units": "Legal process milestones",
+  "mechanismIds": [
+   "eu_market_access"
+  ],
+  "evidenceRole": "Primary official status tracker",
+  "scopeAndLimits": "Documents parliamentary stage, Federal Council actions and referendum-related debate. Check each dated update and component; no blanket enactment/effective date may be inferred.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_ELECTRICITY_AGREEMENT_STATUS",
+  "title": "Electricity agreement Switzerland–EU",
+  "publisher": "Federal Office of Energy (SFOE/BFE)",
+  "url": "https://www.bfe.admin.ch/en/electricity-agreement-switzerland-eu",
+  "publishedAt": null,
+  "observedPeriod": "Negotiated agreement signed 2 Mar 2026; parliamentary phase began after Mar 2026 dispatch",
+  "retrievedAt": "2026-10-14",
+  "revision": "Living page; publication date not disclosed",
+  "units": "Legal status; electricity system integration and security-of-supply pathways",
+  "mechanismIds": [
+   "electricity_research_pathways",
+   "eu_market_access"
+  ],
+  "evidenceRole": "Primary official sector status and policy source",
+  "scopeAndLimits": "States Swiss grid is physically integrated but lacks legal guarantees under status quo, and describes agreement purpose. Signed agreement is still in parliamentary phase, so prospective benefits are not realized outcomes.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_HORIZON_STATUS",
+  "title": "Horizon package 2021–2027: Switzerland participation status",
+  "publisher": "State Secretariat for Education, Research and Innovation (SERI/SBFI)",
+  "url": "https://www.sbfi.admin.ch/en/horizon-package-2021-2027",
+  "publishedAt": null,
+  "observedPeriod": "EU programme participation from programme year 2025; status updated for 2026–2027 calls",
+  "retrievedAt": "2026-10-14",
+  "revision": "Living status page; EUPA signed 10 Nov 2025; accessed 2026-10-14",
+  "units": "Programme eligibility, contributions and grants; EUR/CHF where in programme documents",
+  "mechanismIds": [
+   "electricity_research_pathways",
+   "eu_market_access"
+  ],
+  "evidenceRole": "Primary official programme-status source",
+  "scopeAndLimits": "EUPA allows retroactive association to Horizon Europe, Euratom and Digital Europe from 1 Jan 2025; differs from package-wide ratification. Program-specific eligibility, funding commitments and implementation timing must be checked separately; grants do not instantaneously raise productivity.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "OECD_CH_GVC_2024",
+  "title": "Strengthening economic resilience within global value chains: OECD Economic Surveys—Switzerland 2024",
+  "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+  "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2024_070d119b-en/full-report/component-8.html",
+  "publishedAt": "2024-03-14",
+  "observedPeriod": "Swiss trade openness, supply-chain and FDI evidence; underlying observations vary, primarily pre-2024",
+  "retrievedAt": "2026-10-14",
+  "revision": "Economic Survey 2024; underlying sources/years stated by chart and section",
+  "units": "Trade and FDI shares; value added; trade costs",
+  "mechanismIds": [
+   "friendshoring",
+   "eu_market_access",
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Intergovernmental analytical report using official data and cited studies",
+  "scopeAndLimits": "Documents openness and diversification/resilience trade-offs, EU access, and chemicals/pharma export concentration. Aggregates and cited literature do not identify causal friendshoring gains; report predates 2026 legal package status.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_MARKUPS_2025",
+  "title": "The impact of exchange rate fluctuations on markups: firm-level evidence for Switzerland",
+  "publisher": "Elizabeth Steiner and Yannic Stucki; Journal of International Money and Finance",
+  "url": "https://www.sciencedirect.com/science/article/abs/pii/S0261560625001573",
+  "publishedAt": null,
+  "observedPeriod": "Swiss manufacturing firm panel 2012–2017; Jan 2015 appreciation event",
+  "retrievedAt": "2026-10-14",
+  "revision": "Published 2025; study sample 2012–2017",
+  "units": "Firm markups, exchange rates, sales invoicing",
+  "mechanismIds": [
+   "chf_appreciation",
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Scholarly firm-level study",
+  "scopeAndLimits": "Reports heterogeneous markup adjustments after appreciation; large profitable exporters lower markups more, while average firm response is not significant. Event-study evidence does not establish present sector response or net GDP effect.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_EXPORT_SECTOR_2025",
+  "title": "Sectoral effects of exchange rate shocks: goods exports and the appreciation of the Swiss Franc in 2015",
+  "publisher": "Andreas Brunhart and Martin Geiger, Swiss Journal of Economics and Statistics",
+  "url": "https://link.springer.com/article/10.1186/s41937-025-00137-6",
+  "publishedAt": "2025-07-09",
+  "observedPeriod": "Swiss customs exports by sector; 2014–2016 around Jan 2015 appreciation",
+  "retrievedAt": "2026-10-14",
+  "revision": "Open-access paper published 9 Jul 2025; historical counterfactual/event-study",
+  "units": "Nominal exports in CHF/EUR; real quantities; sectoral prices",
+  "mechanismIds": [
+   "chf_appreciation",
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Scholarly sector-level study using granular customs data",
+  "scopeAndLimits": "Finds heterogeneous sector adjustment; chemicals/pharma aggregate resilience and engineering/instruments exposure differ. Counterfactual relies on continuation of exchange-rate floor assumption; 2015 shock is not a direct estimate for 2026–30.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "OECD_SWISS_EU_2024",
+  "title": "OECD Economic Surveys: Switzerland 2024—EU integration and resilience",
+  "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+  "url": "https://www.oecd.org/en/publications/2024/03/oecd-economic-surveys-switzerland-2024_9410595b/full-report/component-8.html",
+  "publishedAt": null,
+  "observedPeriod": "Swiss–EU framework and global value chains; report uses earlier observation vintages",
+  "retrievedAt": "2026-10-14",
+  "revision": "Survey published 2024; legal status predates Bilaterals III signature",
+  "units": "Trade costs, supply-chain links; qualitative policy analysis",
+  "mechanismIds": [
+   "eu_market_access",
+   "friendshoring"
+  ],
+  "evidenceRole": "Intergovernmental analytical source",
+  "scopeAndLimits": "Provides counterarguments: openness exposes shocks but supports diversification/productivity; EU access matters, while inward FDI and trade restrictions can have costs. It is not ex post evaluation of 2026 package.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "EU_MRA_MEDICAL_2021",
+  "title": "Notice to Stakeholders: Status of the EU-Switzerland Mutual Recognition Agreement for medical devices",
+  "publisher": "European Commission, Directorate-General for Health and Food Safety",
+  "url": "https://health.ec.europa.eu/latest-updates/notice-stakeholders-status-eu-switzerland-mutual-recognition-agreement-mra-medical-devices-2021-05-26_en",
+  "publishedAt": "2021-05-26",
+  "observedPeriod": "Medical-device MRA status from 26 May 2021",
+  "retrievedAt": "2026-10-14",
+  "revision": "Official legal notice; 2021 status, package updates must be checked against later operative acts",
+  "units": "Regulatory access status, not numeric",
+  "mechanismIds": [
+   "eu_market_access"
+  ],
+  "evidenceRole": "Primary EU legal/policy source",
+  "scopeAndLimits": "Documents a concrete example of bilateral-market access discontinuity under the earlier framework, but is sector-specific and historical; the 2026 signed package must be evaluated for actual entry into force before assuming a remedy.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SECO_FORECAST_20260917",
+  "title": "GDP forecast: Swiss economy to grow moderately",
+  "publisher": "State Secretariat for Economic Affairs (SECO), Expert Group on Business Cycles",
+  "url": "https://www.seco.admin.ch/en/newnsb/JUhtHgdQzukb",
+  "publishedAt": "2026-09-17",
+  "observedPeriod": "Official conditional outlook 2026–2027",
+  "retrievedAt": "2026-10-14",
+  "revision": "September 2026 forecast vintage; not observed outcomes",
+  "units": "Annual average CPI inflation and GDP growth, %",
+  "mechanismIds": [
+   "import_inflation_snb",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Primary official forecast",
+  "scopeAndLimits": "SECO conditional forecast reports average CPI inflation 0.6% in 2026 and 0.6% in 2027; this is distinct from SNB Sep 2026 forecast (0.7%, 0.8%) and realized monthly CPI. Forecast disagreement is evidence of vintage/model uncertainty, not contradiction in observed inflation.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_CPI_202609",
+  "title": "Consumer prices remained stable in September",
+  "publisher": "Swiss Federal Statistical Office (FSO), release distributed by SECO",
+  "url": "https://www.seco.admin.ch/en/newnsb/wNfni1DvzKuQ",
+  "publishedAt": "2026-10-01",
+  "observedPeriod": "Swiss CPI, September 2026",
+  "retrievedAt": "2026-10-14T17:16:04.069866Z",
+  "revision": "September 2026 release; later CPI revisions may occur",
+  "units": "CPI index points (Dec 2025=100); monthly and year-on-year percent change",
+  "scopeAndLimits": "September CPI headline and narrative price components (heating oil, petrol and diesel rose; international package holidays, car rental/car sharing and hotel prices fell). This release narrative does not quantify an imported-goods-only CPI component; no FX contribution is identified.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_GDP_2026Q2",
+  "title": "Gross domestic product, quarterly data: Q2 2026 release",
+  "publisher": "State Secretariat for Economic Affairs (SECO)",
+  "url": "https://www.seco.admin.ch/de/bruttoinlandprodukt",
+  "publishedAt": "2026-09-03",
+  "observedPeriod": "Swiss GDP, 2026-Q2; season/sport-event adjusted release",
+  "retrievedAt": "2026-10-14",
+  "revision": "Quarterly national accounts vintage published 3 Sep 2026, incorporating BFS annual data revisions from 25 Aug 2026",
+  "units": "Quarter-on-quarter percent change; GDP levels and contributions in linked tables",
+  "scopeAndLimits": "Sport-event-adjusted growth was exceptionally strong and pharma/chemicals were a large contributor. Quarterly national accounts are revised; sectoral value added is volatile.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_FX_FACTOR_2020",
+  "title": "FX risk premiums and the Swiss franc: a time-varying factor model",
+  "publisher": "Swiss National Bank (Working Paper 2020-21)",
+  "url": "https://www.snb.ch/de/publications/research/working-papers/2020/working_paper_2020_21",
+  "publishedAt": null,
+  "observedPeriod": "Daily EUR/CHF and USD/CHF sample 2006–2018",
+  "retrievedAt": "2026-10-14",
+  "revision": "Working paper 2020-21; exact publication day not disclosed in reused preflight source metadata",
+  "units": "Exchange-rate returns; variance decomposition",
+  "scopeAndLimits": "Preflight literature notes risk factor contribution to CHF dynamics, especially under stress; historical decomposition is not a structural causal trade elasticity.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_FX_MONTHLY_202609",
+  "title": "Foreign exchange rates – monthly average, September 2026 (SNB data cube devkum)",
+  "publisher": "Swiss National Bank",
+  "url": "https://data.snb.ch/api/cube/devkum/data/csv/en?dimSel=D0(M0),D1(EUR1)&fromDate=2026-09&toDate=2026-09",
+  "publishedAt": "2026-10-01",
+  "observedPeriod": "Monthly-average CHF per EUR and CHF per USD, September 2026; data cube released 1 Oct 2026",
+  "retrievedAt": "2026-10-14",
+  "revision": "CSV response identifies cube devkum and PublishingDate 2026-10-01 14:30; retrieved and parsed directly on 2026-10-14. Monthly mean, not a month-end spot observation.",
+  "units": "CHF per 1 EUR / CHF per 1 USD; monthly averages",
+  "mechanismIds": [
+   "chf_appreciation",
+   "import_inflation_snb",
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Primary SNB exchange-rate time series",
+  "scopeAndLimits": "Source URL selects EUR series; USD value retrieved with same cube and D1(USD1). Monthly average exchange rates do not measure firm-specific invoice exposure, realized hedging or effective exchange rate.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_MERCHANTING_Q2_2026",
+  "title": "Swiss balance of payments: merchanting sales of goods by type, quarterly (SNB data cube bopmercatq)",
+  "publisher": "Swiss National Bank",
+  "url": "https://data.snb.ch/fr/topics/aube/cube/bopmercatq",
+  "publishedAt": "2026-09-22",
+  "observedPeriod": "Gross merchanting sales of goods by type, 2026-Q2; cube last updated with Q2 2026 balance-of-payments release",
+  "retrievedAt": "2026-10-14T17:22:17.676263Z",
+  "revision": "Direct CSV API export on 2026-10-14; API PublishingDate 2026-09-22 09:00. Reported unit in CHF millions; category GT selected. Quarterly balance-of-payments data subject to revisions.",
+  "units": "CHF million, current-price gross sales; not value added or balance",
+  "mechanismIds": [
+   "commodity_trading"
+  ],
+  "evidenceRole": "Primary SNB supplementary balance-of-payments data",
+  "scopeAndLimits": "GT is the total sales category per cube dimensions; value is gross sales of goods in merchanting, not merchanting margin, current-account balance, GDP contribution or trade-credit exposure. Interpret gross turnover separately from net earnings.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "OECD_CH_GVC_DEPENDENCIES_2024",
+  "title": "Strengthening economic resilience within global value chains in Switzerland",
+  "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+  "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2024_070d119b-en/full-report/component-8.html",
+  "publishedAt": "2024-03-14",
+  "observedPeriod": "Foreign-input reliance and product-level import concentration: principally 2018 input-output and 2002–2021 product-trade data; report published 2024",
+  "retrievedAt": "2026-10-14",
+  "revision": "OECD 2024 Switzerland survey chapter; underlying data vintages/definitions cited at figure/table level. Product-level dependency filter applied to 2019 CEPII BACI data and persistence checked through 2021.",
+  "units": "Percent of foreign intermediate inputs by supplier region; import Herfindahl-Hirschman Index; product-country combinations",
+  "mechanismIds": [
+   "friendshoring",
+   "eu_market_access"
+  ],
+  "evidenceRole": "OECD analysis based on official input-output and CEPII product-level trade data",
+  "scopeAndLimits": "Foreign-input shares are 2018, not current. Report finds EU accounts for 54% of imported intermediate inputs on average, Asia 17%, North America 10%, rest of Europe 8%, other 11%; average import concentration fell 7% between 2002 and 2021. Roughly 60 country-product combinations remained at risk two years after 2019. These are structural exposure indicators, not observed 2026 relocation or causal friendshoring gains.",
+  "regions": [
+   "swiss",
+   "global"
+  ],
+  "registeredVariants": [
+   {
+    "region": "global",
+    "title": "Strengthening economic resilience within global value chains in Switzerland",
+    "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+    "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2024_070d119b-en/full-report/component-8.html",
+    "publishedAt": "2024-03-14",
+    "observedPeriod": "Foreign-input reliance primarily 2018 input-output data; import concentration 2002–2021; report published 2024",
+    "retrievedAt": "2026-10-14",
+    "revision": "OECD Economic Surveys: Switzerland 2024, global-value-chain chapter; figure 5.10 panel B reports regional source shares for imported intermediate inputs, based on 2018 input-output data. Prior generated 18:50:00Z retrieval field was unsupported (it postdated the rejection snapshot); exact UTC time was not preserved. Corrected to date-only precision from the execution date; no observation values changed.",
+    "units": "Percent of imported intermediate inputs by source region",
+    "scopeAndLimits": "OECD reports EU 54%, Asia 17%, North America 10%, rest of Europe 8%, other 11% of imported intermediate inputs averaged across Swiss sectors, based on 2018 input-output data. This is a lagged structural dependency, not a current-year bilateral gross trade value, a financial exposure, or an identified causal effect."
+   }
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SCIENCEINDUSTRIES_EXPORTS_2025",
+  "title": "Chemical and pharmaceutical industries remain the backbone",
+  "publisher": "scienceindustries (Swiss business association; statistics sourced to Swiss customs / Swiss-Impex)",
+  "url": "https://www.scienceindustries.ch/en/article/49475/chemical-and-pharmaceutical-industries-remain-the-backbone",
+  "publishedAt": "2026-01-29",
+  "observedPeriod": "Chemical, pharmaceutical and life-science merchandise exports, calendar year 2025",
+  "retrievedAt": "2026-10-14",
+  "revision": "Association release dated 29 Jan 2026 reports Swiss-Impex/Federal Customs Administration data; classification combines chemical, pharmaceutical and life-science products.",
+  "units": "Nominal customs goods exports, CHF billion; share of total merchandise exports",
+  "mechanismIds": [
+   "pharma_chemical_exports",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Industry association release using Swiss-Impex customs totals; not national accounts",
+  "scopeAndLimits": "Reports CHF 152.1bn exports in 2025, +2.2% y/y and over 52% of total Swiss merchandise exports. Group definition can differ from FOCBS tariff group and export values are neither real volume nor Swiss value added; association has an industry-promotion role. Cross-check against official FOCBS 2024 data: CHF 149.1bn and 52.7% of exports.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "CH_FOCBS_2024_TRADE_YEARBOOK",
+  "title": "Swiss foreign trade in 2024",
+  "publisher": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+  "url": "https://www.bazg.admin.ch/dam/en/sd-web/1TnZbTRz4WOh/912.5-02_jb_2024_1.1_en.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Detailed customs merchandise exports by product group, calendar year 2024",
+  "retrievedAt": "2026-10-14",
+  "revision": "Annual report table/text: chemical and pharmaceutical product exports CHF 149.1bn, 52.7% of total merchandise exports in 2024; caution noted on tariff-structure simplifications for comparisons.",
+  "units": "Nominal customs merchandise exports, CHF billion and percent share",
+  "mechanismIds": [
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Primary official customs statistics yearbook",
+  "scopeAndLimits": "Nominal goods exports do not equal domestic value added, real quantities or company cash receipts; tariff classification changes constrain comparisons across years.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "FOCBS_Q1_2026_SECTOR_RELEASE",
+  "title": "Swiss foreign trade, Q1 2026; seasonally adjusted exports, Annex Ia",
+  "publisher": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+  "url": "https://cms.news.admin.ch/fileservice/sdweb-docs-prod-nsbcch-files/files/2026/04/20/68c15f18-e88e-4288-8429-6226f2d1d5ab.pdf",
+  "publishedAt": "2026-04-21",
+  "observedPeriod": "2026-Q1 versus 2025-Q4, seasonally adjusted nominal quarter-on-quarter",
+  "retrievedAt": "2026-10-14T17:16:01.994492Z",
+  "revision": "Official FOCBS release PDF dated 21 Apr 2026; quarterly customs series subject to revision. Raw PDF archived at raw/focbs_q1_2026_annex.pdf (HTTP 200 application/pdf).",
+  "units": "CHF million seasonally adjusted nominal exports; percent q/q change",
+  "mechanismIds": [
+   "pharma_chemical_exports",
+   "chf_appreciation"
+  ],
+  "evidenceRole": "Primary FOCBS quarterly merchandise-trade annex, Annex Ia.",
+  "scopeAndLimits": "Chemical and pharmaceutical exports are customs flows, not output/value added or identified CHF effects. Annex Ia headings explicitly say seasonally adjusted and change vs prior quarter; no year-on-year rate is reported for this row.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "OECD_SWISS_SURVEY_2026",
+  "title": "OECD Economic Surveys: Switzerland 2026",
+  "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+  "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-switzerland-2026_48b03aff-en.html",
+  "publishedAt": "2026-09-15",
+  "observedPeriod": "Current Swiss macroeconomic and structural assessment; report publication dated 15 Sep 2026; underlying data vintages vary by chapter",
+  "retrievedAt": "2026-10-14",
+  "revision": "OECD 2026 Switzerland Survey; current overview says recent shocks handled comparatively well, while trade/geopolitical uncertainty leaves small open economy vulnerable; no estimated causal friendshoring coefficient cited in reviewed summary.",
+  "units": "Qualitative macroeconomic assessment; units vary by chapter",
+  "mechanismIds": [
+   "friendshoring",
+   "eu_market_access",
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Recent intergovernmental country assessment",
+  "scopeAndLimits": "Useful current counterweight on resilience and external vulnerability; does not quantify supply-chain relocation or net friendshoring gains. Reviewed abstract/summary only; detailed sector evidence remains from older OECD chapter and must be cited as such.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "FSO_IMPORT_PRICE_AUG2026",
+  "title": "Import Price Index, detailed results, August 2026 (FSO table 05.04.04.02)",
+  "publisher": "Swiss Federal Statistical Office (FSO)",
+  "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36853816/master",
+  "publishedAt": "2026-09-14",
+  "observedPeriod": "Monthly import price indices through 2026-08; Dec 2025=100 index basis; monthly and year-on-year comparisons computed from the source series",
+  "retrievedAt": "2026-10-14T17:17:52.188594Z",
+  "revision": "Direct FSO DAM XLSX downloaded 2026-10-14; workbook covers 2003-05 through 2026-08 and uses the 2025 index revision. Raw XLSX archived at raw/fso_import_detail_aug2026.xlsx (HTTP 200, 901053 bytes).",
+  "units": "Import-price index points (December 2025=100); computed percent change",
+  "mechanismIds": [
+   "import_inflation_snb",
+   "pharma_chemical_exports"
+  ],
+  "evidenceRole": "Primary FSO monthly series, detailed import-price categories.",
+  "scopeAndLimits": "Index levels and index changes are not CPI contributions or causal exchange-rate pass-through. August 2026 is the latest observation publicly released by cutoff; September series release was scheduled after 2026-10-14.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "SNB_BOP_CURRENT_ACCOUNT_Q2_2026",
+  "title": "Balance of payments, current-account balance, quarterly (SNB cube bopoverq)",
+  "publisher": "Swiss National Bank",
+  "url": "https://data.snb.ch/api/cube/bopoverq/data/csv/en?fromDate=2026-Q2&toDate=2026-Q2",
+  "publishedAt": "2026-09-22",
+  "observedPeriod": "2026-Q2 net current-account balance; includes goods, services and income balances, not a merchanting-only series",
+  "retrievedAt": "2026-10-14T17:18:06.401295Z",
+  "revision": "SNB API CSV PublishingDate 2026-09-22 09:00; quarterly balance-of-payments estimates are subject to revisions. Raw CSV archived at raw/snb_bopoverq_q2.csv (HTTP 200).",
+  "units": "CHF million, net current-account balance",
+  "mechanismIds": [
+   "commodity_trading"
+  ],
+  "evidenceRole": "Primary SNB balance-of-payments cube; direct net balance series.",
+  "scopeAndLimits": "S0 is the total current-account net balance. Cube dimensions do not isolate merchanting. The Q2 release states merchanting balance increased significantly year on year but gives no numeric merchanting-only balance in its narrative; total current account is not a proxy for merchanting.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "swiss",
+  "id": "FSO_IPI_RELEASE_SCHEDULE_2026",
+  "title": "Publication dates for the Producer and Import Price Index in 2026",
+  "publisher": "Swiss Federal Statistical Office (FSO)",
+  "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36390871/master",
+  "publishedAt": null,
+  "observedPeriod": "2026 release calendar; September 2026 index release date",
+  "retrievedAt": "2026-10-14T17:23:22.074028Z",
+  "revision": "Official FSO schedule PDF retrieved 2026-10-14; raw copy at raw/fso_ipi_release_schedule_2026.pdf (HTTP 200 application/pdf).",
+  "units": "Scheduled publication date",
+  "mechanismIds": [
+   "import_inflation_snb"
+  ],
+  "evidenceRole": "Primary statistical release calendar.",
+  "scopeAndLimits": "Page 2 lists September import-price release on 15 October 2026, after this research cutoff of 14 October 2026; a schedule is not an observed index value.",
+  "regions": [
+   "swiss"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_GLI_2026Q1",
+  "title": "Statistical release: BIS international banking statistics and global liquidity indicators at end-March 2026",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/202607-commentary-ibs-gli",
+  "publishedAt": "2026-07-31",
+  "observedPeriod": "Cross-border banking and foreign-currency nonbank credit; stocks/end-March 2026 and flows/Q1 2026",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Quarterly release; underlying BIS LBS, IDS and national accounts can revise historical values. Latest vintage inspected 2026-10-14.",
+  "units": "USD/EUR stocks and quarterly changes; percent year-on-year; stocks and seasonally/exchange/break-adjusted flows",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_GLI_OVERVIEW",
+  "title": "Global liquidity indicators: overview, definitions, sources and revision policy",
+  "publisher": "Bank for International Settlements Data Portal",
+  "url": "https://data.bis.org/topics/GLI",
+  "publishedAt": null,
+  "observedPeriod": "Living metadata page; current indicator coverage and definitions",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Living page; data updated quarterly and historical values revised when input data revise.",
+  "units": "Definitions cover USD, EUR and JPY credit, bank loans and international debt securities",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_GLI_CONCEPT",
+  "title": "Global liquidity indicators: background and interpretation",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/global-liquidity-indicators-background-and-interpretation",
+  "publishedAt": null,
+  "observedPeriod": "Conceptual and measurement discussion drawing on prior research; page presents no single observation period",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "BIS Quarterly Review feature, March 2015; date disclosed at month precision only.",
+  "units": "Conceptual definitions; no common quantitative unit",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_LBS_OVERVIEW",
+  "title": "Locational banking statistics: overview, metadata and reporting guidelines",
+  "publisher": "Bank for International Settlements Data Portal",
+  "url": "https://data.bis.org/topics/LBS",
+  "publishedAt": null,
+  "observedPeriod": "Quarterly international claims and liabilities, country and counterparty coverage; current portal page as retrieved",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Living dataset/metadata; break-adjusted flows and historical amounts may change with revisions, reporting breaks and coverage.",
+  "units": "Primarily USD positions; quarterly frequency",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_IBS_GEOGRAPHY",
+  "title": "Geographic dimensions in BIS international banking statistics",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/geographic-dimensions-bis-international-banking-statistics",
+  "publishedAt": null,
+  "observedPeriod": "Methodological exposition on locational and consolidated dimensions; includes data framework introduced in 2024",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Current page does not disclose a precise publication day in the retrieved metadata.",
+  "units": "Not a numerical series; residence, nationality, counterparty and ultimate-risk dimensions",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "IMF_CPIS",
+  "title": "Portfolio Investment Positions by Counterpart Economy (formerly Coordinated Portfolio Investment Survey)",
+  "publisher": "International Monetary Fund, Statistics Department",
+  "url": "https://data.imf.org/datasets/IMF.STA%3APIP",
+  "publishedAt": null,
+  "observedPeriod": "Voluntary participant submissions; portfolio investment position data by counterpart economy and instrument; availability as of October 2026 shown on page",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Living dataset; observation coverage and release/vintage vary by reporting economy. No common publication date stated for the dataset landing page.",
+  "units": "Position values split between equity/fund shares, long-term debt and short-term debt; dataset units/scale vary by series",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "IMF_CDIS",
+  "title": "Direct Investment Positions by Counterpart Economy (formerly Coordinated Direct Investment Survey)",
+  "publisher": "International Monetary Fund, Statistics Department",
+  "url": "https://data.imf.org/en/datasets/IMF.STA%3ADIP",
+  "publishedAt": null,
+  "observedPeriod": "Direct investment positions by immediate counterpart economy and instrument; reporting-period availability varies by economy",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Living dataset; country reporting and historical revisions vary.",
+  "units": "Position values by equity/debt instrument and immediate investor/investment economy; series-specific scale",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "IMF_BOP",
+  "title": "Balance of Payments Statistics",
+  "publisher": "International Monetary Fund, Statistics Department",
+  "url": "https://data.imf.org/Datasets/BOP",
+  "publishedAt": null,
+  "observedPeriod": "Country-reported external transactions; observation coverage and latest vintage differ by reporter",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Living dataset; country releases and benchmark/revision cycles differ; check BPM edition and reporter-specific vintage.",
+  "units": "Transactions are flows; units, currencies and scale vary by series",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "IMF_IIP",
+  "title": "International Investment Position Statistics",
+  "publisher": "International Monetary Fund, Statistics Department",
+  "url": "https://data.imf.org/Datasets/IIP",
+  "publishedAt": null,
+  "observedPeriod": "Country-reported international asset/liability positions; annual or quarterly coverage varies by reporter",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Living dataset; historical IIP positions may be revised; current transition from BPM6 to BPM7 requires attention to each reporter/vintage.",
+  "units": "End-period external asset/liability positions; series-specific currencies and scale",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "FED_SWAPLINES_2020",
+  "title": "Recent Developments: Central bank liquidity swaps and Federal Reserve crisis actions",
+  "publisher": "Board of Governors of the Federal Reserve System",
+  "url": "https://www.federalreserve.gov/monetarypolicy/bsd-recent-developments-202008.htm",
+  "publishedAt": null,
+  "observedPeriod": "2020 COVID-19 dollar funding stress; weekly/daily swap operations and outstanding balances through August 2020",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Federal Reserve staff retrospective page; exact publication day not disclosed in page slug/metadata reviewed.",
+  "units": "USD swap balances, maturity and fee terms",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_SWAPLINES_2008",
+  "title": "The US dollar shortage in global banking and the international policy response",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/working-paper-291-us-dollar-shortage-global-banking-and-international-policy-response",
+  "publishedAt": "2009-10-14",
+  "observedPeriod": "International bank balance sheets and USD funding structure from 2000 through the 2007–09 crisis",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "BIS Working Paper 291, published 14 October 2009.",
+  "units": "Bank balance-sheet positions and cross-border funding; values vary by table",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "IMF_GFSR_APR2026",
+  "title": "Global Financial Stability Report, April 2026: Global Financial Markets Confront the War in the Middle East and Amplification Risks",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.imf.org/-/media/files/publications/gfsr/2026/april/english/text.pdf",
+  "publishedAt": "2026-04-14",
+  "observedPeriod": "Global financial stability and capital-flow evidence across recent stress episodes; report chapters use multiple samples and episodes",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "April 2026 report edition; staff analysis, not a continually updated dataset.",
+  "units": "Chapter-specific positions, flows, event windows and ratios; units vary by figure/table",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "IMF_GFSR_OCT2025",
+  "title": "Global Financial Stability Report, October 2025: Shifting Ground beneath the Calm",
+  "publisher": "International Monetary Fund",
+  "url": "https://www.imf.org/en/publications/gfsr/issues/2025/10/14/global-financial-stability-report-october-2025",
+  "publishedAt": "2025-10-14",
+  "observedPeriod": "Global financial conditions and vulnerabilities around 2025; event-specific FX evidence in Chapter 2",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "October 2025 report edition.",
+  "units": "Report-specific; stress tests, market measures, currency and institution-level indicators",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "OECD_ICIO_2025",
+  "title": "Inter-Country Input-Output Tables, 2025 edition",
+  "publisher": "Organisation for Economic Co-operation and Development (OECD)",
+  "url": "https://www.oecd.org/en/data/datasets/inter-country-input-output-tables.html",
+  "publishedAt": null,
+  "observedPeriod": "Annual inter-country input-output tables through 2022; 80 economies plus rest of world in regular dataset; China and Mexico split in extended version",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Current page says 2025 edition second revision released mid-January 2026, after initial August 2025 release and October 2025 revision; exact day not disclosed.",
+  "units": "Current-price national currency/equivalent table flows by industry and country; consult edition README for scaling, valuation and concordance",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BEA_IO_ACCOUNTS",
+  "title": "Input-Output Accounts Data and revision information",
+  "publisher": "U.S. Bureau of Economic Analysis",
+  "url": "https://www.bea.gov/data/industries/input-output-accounts-data",
+  "publishedAt": null,
+  "observedPeriod": "Annual industry accounts and benchmark input-output tables; latest current page includes annual update/revision notices through 2026",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Annual update in September; page identifies 2026 corrections to selected historical quarterly industry series (2015Q1–2018Q4); retrieve archived vintage before time-series comparisons.",
+  "units": "Current-dollar supply, use, make and requirements tables; detail and industry aggregation vary",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "FED_FINANCIAL_ACCELERATOR",
+  "title": "The Financial Accelerator and the Credit Channel",
+  "publisher": "Board of Governors of the Federal Reserve System",
+  "url": "https://www.federalreserve.gov/newsevents/speech/bernanke20070615a.htm",
+  "publishedAt": "2007-06-15",
+  "observedPeriod": "Synthesis of prior theoretical and empirical research; no new common observation period",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "Ben S. Bernanke speech delivered 15 June 2007.",
+  "units": "Conceptual discussion and reviewed empirical literature; no new common unit",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "FED_SPILLOVER_UNION",
+  "title": "Monetary Policy and the Financial Accelerator in a Monetary Union",
+  "publisher": "Board of Governors of the Federal Reserve System, International Finance Discussion Papers",
+  "url": "https://www.federalreserve.gov/econres/ifdp/monetary-policy-and-the-financial-accelerator-in-a-monetary-union.htm",
+  "publishedAt": null,
+  "observedPeriod": "Calibrated two-country monetary-union model; publication month December 2002",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "IFDP paper; month-only publication date as recorded in the reused preflight source registry.",
+  "units": "Model-based country output, inflation, and financial-conditions responses",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "NBER_BGG_FLIGHT_TO_QUALITY",
+  "title": "The Financial Accelerator and the Flight to Quality",
+  "publisher": "Federal Reserve Bank of Kansas City / NBER Working Paper 4789",
+  "url": "https://www.nber.org/papers/w4789",
+  "publishedAt": null,
+  "observedPeriod": "Theory and panel evidence using large and small US manufacturing firms; historical firm sample in the paper",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "NBER Working Paper 4789, issue July 1994; journal version Review of Economics and Statistics 1996. NBER page date precision is month only.",
+  "units": "Firm-level financing and activity measures; model parameters depend on specification",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "FED_FINANCIAL_ACCELERATOR_QBC",
+  "title": "The Financial Accelerator in a Quantitative Business Cycle Framework",
+  "publisher": "Federal Reserve Board authors / National Bureau of Economic Research",
+  "url": "https://www.nber.org/papers/w6455",
+  "publishedAt": null,
+  "observedPeriod": "Dynamic general-equilibrium model and firm heterogeneity; paper first issued March 1998",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "NBER Working Paper 6455; issue month March 1998; published Handbook of Macroeconomics chapter 1999.",
+  "units": "Calibrated/model quantities; not a directly measured macro coefficient",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "NBER_GLOBAL_CYCLE_REY",
+  "title": "Dilemma not Trilemma: The Global Financial Cycle and Monetary Policy Independence",
+  "publisher": "National Bureau of Economic Research",
+  "url": "https://www.nber.org/papers/w21162",
+  "publishedAt": null,
+  "observedPeriod": "International asset-price, credit and capital-flow evidence; original working paper issued May 2015",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "NBER Working Paper 21162, revised February 2018; journal version published 2016. Page identifies issue/revision by month, not exact day.",
+  "units": "VAR and cross-country asset-price/credit-flow measures; specification-specific",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "NBER_US_MONETARY_GLOBAL_CYCLE",
+  "title": "U.S. Monetary Policy and the Global Financial Cycle",
+  "publisher": "National Bureau of Economic Research",
+  "url": "https://www.nber.org/papers/w21722",
+  "publishedAt": null,
+  "observedPeriod": "International financial variables and capital flows around identified US monetary-policy shocks; paper issued November 2015",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "NBER Working Paper 21722, revised March 2019; published in Review of Economic Studies 2020. NBER date precision is month only.",
+  "units": "Identified monetary surprises, global risky asset factor, credit provision and international credit flows",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_DEBT_REDUCTION",
+  "title": "Debt reduction after crises",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/debt-reduction-after-crises",
+  "publishedAt": null,
+  "observedPeriod": "Historical cross-country post-crisis debt adjustment; period and samples vary by chapter/series",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "BIS publication dated September 2010 at month precision on preflight record; no exact day retained.",
+  "units": "Debt stocks/ratios and post-crisis adjustments; publication-specific country coverage",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_DEFLATION_HIST",
+  "title": "The costs of deflations: a historical perspective",
+  "publisher": "Bank for International Settlements",
+  "url": "https://www.bis.org/publications/costs-deflations-historical-perspective",
+  "publishedAt": null,
+  "observedPeriod": "Historical deflation episodes across multiple economies and periods; article in BIS Quarterly Review, March 2015",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "BIS Quarterly Review March 2015 feature; the primary landing page and original article identify the March 2015 issue but provide no independently verified publication day. Earlier conflicting day-level aliases are normalized to month-only.",
+  "units": "Episode-specific price, output and debt measures",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "GAO_GLOBAL_CROSSING",
+  "title": "B-288413.6; B-288413.10, Global Crossing Telecommunications, Inc.",
+  "publisher": "U.S. Government Accountability Office",
+  "url": "https://www.gao.gov/assets/b-288413.6,b-288413.10.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Government contract risk assessment of Global Crossing in bankruptcy; includes company financial condition and industry overcapacity evidence around 2001–2002",
+  "retrievedAt": "2026-10-14T16:27:16Z",
+  "revision": "GAO bid protest/contract decision record; retrieved document metadata did not disclose a complete publication date. It is a contemporaneous administrative record, not a comprehensive telecom sector history.",
+  "units": "Document-specific; qualitative assessments and USD financial references where stated",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "NBER_JST_CREDIT_CYCLES",
+  "title": "When Credit Bites Back: Leverage, Business Cycles, and Crises",
+  "publisher": "National Bureau of Economic Research",
+  "url": "https://www.nber.org/papers/w17621",
+  "publishedAt": null,
+  "observedPeriod": "More than 200 recession episodes in 14 advanced economies, 1870–2008; working paper with later journal version",
+  "retrievedAt": "2026-10-14",
+  "revision": "NBER WP 17621 issued November 2011, revised October 2012; journal version December 2013. The NBER page identifies month, so YYYY-MM-01 is not a verified day and must not be used as exact publication date.",
+  "units": "Historical local-projection estimates and episode-level output/recession outcomes; specification-specific",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "NBER_ST_CREDIT_BOOMS",
+  "title": "Credit Booms Gone Bust: Monetary Policy, Leverage Cycles and Financial Crises, 1870–2008",
+  "publisher": "National Bureau of Economic Research",
+  "url": "https://www.nber.org/papers/w15512",
+  "publishedAt": null,
+  "observedPeriod": "14 advanced economies, 1870–2008",
+  "retrievedAt": "2026-10-14",
+  "revision": "NBER WP 15512 issued November 2009, revised December 2011; journal version 2012. Exact publication date not disclosed in day precision on source page.",
+  "units": "Historical country-level annual credit and crisis indicators; specification-specific",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "BIS_CBS_PUB_2026Q1",
+  "title": "Consolidated banking statistics (BIS CBS), international claims by reporting bank nationality and immediate counterparty country",
+  "publisher": "Bank for International Settlements",
+  "url": "https://data.bis.org/topics/CBS/tables-and-dashboards",
+  "publishedAt": null,
+  "observedPeriod": "Quarterly bank international claims outstanding; selected country series through 2026-Q1; current data portal vintage retrieved 2026-10-14",
+  "retrievedAt": "2026-10-14T17:21:59Z",
+  "revision": "Queried BIS SDMX REST API v2 dataset BIS,WS_CBS_PUB,1.0. Filter: quarterly; amounts outstanding/stocks; reporting-bank nationality; international claims; all instruments; all maturities; all booking currencies; all counterparty sectors; immediate counterparty basis. Individual series codes and extraction stored in global-network-exposure.json. Re-queried with a single bounded SDMX API v2 request at 2026-10-14T17:21:59Z; 7 numeric observations returned in requested selected set. This refresh supersedes unsupported 18:50:00Z timestamp; raw response archived under retrievals/bis/.",
+  "units": "USD millions in source (multiplier 6); converted to USD billions in extracted table",
+  "scopeAndLimits": "Gross consolidated international claims, not net bilateral positions, funding flows, country total external debt, or ultimate-risk positions. Immediate-counterparty basis can differ from guarantor basis. National reporting coverage varies; no causal pass-through inferred. NaN observations retained as suppressed/not published, never converted to zero. Current refresh returned 7 numeric series only for FR/GB nationalities against DE/CH/US counterpart residents; no numeric CN, CH or US reporter rows were returned in the selected combination query. Non-return is not zero and is not a complete survey of reporter availability.",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "WORLDCOM_RESTATED_FY2001_10K_GLOBAL",
+  "title": "WorldCom, Inc. 2002 Form 10-K with restated FY2001 financial statements",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/723527/000119312504039709/d10k.htm",
+  "publishedAt": "2004-03-09",
+  "observedPeriod": "Restated year ended 2001-12-31; comparative 2000; reorganization filings through 2002",
+  "retrievedAt": "2026-10-14",
+  "revision": "SEC-filed 2002 Form 10-K, filed 2004-03-09, audited by KPMG after restatement. Extracted cash, debt, restatement and impairment values use the filing’s restated FY2001 statements and debt note. Prior generated 18:50:00Z retrieval field was unsupported (it postdated the rejection snapshot); exact UTC time was not preserved. Corrected to date-only precision from the execution date; no observation values changed.",
+  "units": "USD millions unless stated",
+  "scopeAndLimits": "WorldCom was a diversified telecom operator with major acquisition activity and accounting fraud/restatement. Its filing states a $70.8bn cumulative equity reduction from restatement adjustments as of 2001 and restated PP&E/intangibles; it is not a clean causal observation of fiber overbuild losses.",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "LEVEL3_FY2001_10K_GLOBAL",
+  "title": "Level 3 Communications 2001 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/794323/000079432302000015/f10kpdf_12312001.pdf",
+  "publishedAt": null,
+  "observedPeriod": "Fiscal year ended 2001-12-31; financing and business-plan disclosures through filing date in 2002",
+  "retrievedAt": "2026-10-14",
+  "revision": "SEC-filed annual report PDF. Filing reports 2001 capex of $2.3bn, total funds available at year end of $2.1bn including cash/marketable securities and undrawn secured facility, and $13–14bn cumulative funding requirement to cash-flow breakeven. Prior generated 18:50:00Z retrieval field was unsupported (it postdated the rejection snapshot); exact UTC time was not preserved. Corrected to date-only precision from the execution date; no observation values changed.",
+  "units": "USD billions, company-reported",
+  "scopeAndLimits": "An ambitious fiber-network entrant that later required financial restructuring; management projections are contemporaneous expectations, not outcomes. Values are not directly comparable to WorldCom consolidated results or current hyperscalers.",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "VERIZON_FY2001_10K_GLOBAL",
+  "title": "Verizon Communications 2001 Form 10-K",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "url": "https://www.sec.gov/Archives/edgar/data/732712/000095010902001438/0000950109-02-001438-index.htm",
+  "publishedAt": "2002-03-20",
+  "observedPeriod": "Fiscal year ended 2001-12-31",
+  "retrievedAt": "2026-10-14T17:20:46Z",
+  "revision": "SEC filing detail; FY2001 Form 10-K and annual report listed in accession 0000950109-02-001438. Financial statements are a surviving integrated local-access/wireless incumbent comparator, not a matched competitive fiber entrant. Re-fetched the SEC 10-K text and its SEC Exhibit 13 annual report at 2026-10-14T17:20:37Z and 17:20:46Z UTC respectively; the statements/Note 14 tables were extracted for cash, debt, OCF, capex and maturity schedule. Raw SEC text and retrieval metadata are archived in retrievals/verizon/.",
+  "units": "Company statements in USD millions",
+  "scopeAndLimits": "The Verizon group had regulated/local-access and wireless operations, unlike a pure long-haul fiber entrant. Filing identity verified, but no comparable utilization measure or normalized cash/debt schedule extracted in this repair; no direct cash-flow ranking is claimed.",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "UN_COMTRADE_BILATERAL_2024",
+  "title": "UN Comtrade annual merchandise trade by reporter, partner and flow (2024 selected bilateral series)",
+  "publisher": "United Nations Statistics Division",
+  "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+  "publishedAt": null,
+  "observedPeriod": "Calendar year 2024; annual total merchandise exports; selected reporter-partner directions",
+  "retrievedAt": "2026-10-14T17:20:06Z",
+  "revision": "UN Comtrade public preview API, classification HS, annual frequency, commodity TOTAL, flow X. Selected 12 directed queries retrieved 17:19:25Z–17:20:06Z; raw responses retained one file per request. Reporter codes: 842 US, 156 China, 97 EU, 756 Switzerland.",
+  "units": "Current USD, primaryValue; converted to USD billions by dividing by 1,000,000,000",
+  "scopeAndLimits": "Reported gross merchandise exports, not services, value-added trade, net exposure or financial claims. Reporter/partner mirror values differ. HTTP 200 with count=0 is retained as no returned observation, not zero. EU aggregate is Comtrade reporter code 97; Swiss code 756 requests returned count=0 for the queried pair directions.",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "EUROSTAT_EXT_LT_MAINEU",
+  "title": "Extra-EU trade by partner (Eurostat Comext dataset ext_lt_maineu)",
+  "publisher": "Eurostat",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ext_lt_maineu",
+  "publishedAt": null,
+  "observedPeriod": "Annual EU27 extra-EU trade by partner; 2024 values; API dataset vintage last updated 2026-09-15",
+  "retrievedAt": "2026-10-14",
+  "revision": "Endpoint was queried in this closure: one successful dimensionless-by-indicator query returned the US partner series, but the response body was not durably captured; later one-call multi-partner query returned HTTP 200 with zero selected partner cells. No Eurostat value is used in the closure table. Date-only retrieval precision retained because the exact retrieval time for the successful query was not logged.",
+  "units": "Dataset provides exports/imports and trade balance in million EUR",
+  "scopeAndLimits": "Official alternative to OECD ICIO for EU goods trade. This attempt is logged as a source-search outcome, not a numeric observation; raw successful response was not archived, so no value is carried into baseline.",
+  "regions": [
+   "global"
+  ]
+ },
+ {
+  "region": "global",
+  "id": "FED_FOMC_20260916",
+  "title": "Federal Reserve FOMC statement, September 16, 2026",
+  "publisher": "Board of Governors of the Federal Reserve System",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+  "publishedAt": "2026-09-16",
+  "observedPeriod": "Target federal funds range effective 2026-09-17; decision 2026-09-16",
+  "retrievedAt": "2026-10-14",
+  "revision": "Derived reuse copy corrects preflight semantic label: 3.875% is the arithmetic midpoint of 3.75–4.00%, not the upper bound. Preflight source metadata records date-only retrieval; precise time not available.",
+  "units": "Percent per annum",
+  "scopeAndLimits": "Policy target range is not a market yield, debt coupon or marginal borrowing rate.",
+  "regions": [
+   "global"
+  ]
+ }
+]

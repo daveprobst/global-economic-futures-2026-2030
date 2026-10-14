@@ -1,0 +1,39 @@
+{
+  "kind": "sourceLocatedExcerpts",
+  "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/732712/000095010902001438/",
+  "retrievalMetadataPath": "run-root/research/global/synthesis/retrievals/verizon/verizon-retrieval.json",
+  "extractionMethod": "Python regex against archived SEC exhibit text; only short adjacent table/narrative passages retained. Values in source are USD millions; divided by 1,000 for comparison table.",
+  "excerpts": [
+    {
+      "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/verizon/verizon-2001-annual-report-ex13.txt",
+      "locator": "MD&A, Increase (Decrease) in Cash and Cash Equivalents",
+      "passage": "Our cash and cash equivalents at December 31, 2001 totaled $979 million, a $222 million increase over cash and cash equivalents at December 31, 2000 of $757 million."
+    },
+    {
+      "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/verizon/verizon-2001-annual-report-ex13.txt",
+      "locator": "Consolidated Financial Condition, cash flow summary; dollars in millions",
+      "passage": "Cash Flows Provided By (Used In) Operating activities $ 19,773 $ 15,827 $ 17,017 Investing activities (21,626) (16,055) (17,420) Financing activities 2,075 (1,048) 1,732"
+    },
+    {
+      "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/verizon/verizon-2001-annual-report-ex13.txt",
+      "locator": "Consolidated Statements of Cash Flows, Investing Activities; dollars in millions",
+      "passage": "Capital expenditures (17,371) (17,633) (13,013)"
+    },
+    {
+      "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/verizon/verizon-2001-annual-report-ex13.txt",
+      "locator": "Consolidated Balance Sheets, liabilities and shareowners investment; dollars in millions",
+      "passage": "Debt maturing within one year $ 18,669 $ 14,838 Accounts payable and accrued liabilities 13,947 13,965 Other 5,404 5,433 ------------------------- Total current liabilities 38,020 34,236 Long-term debt 45,657"
+    },
+    {
+      "sourceId": "VERIZON_FY2001_10K_GLOBAL",
+      "rawResponsePath": "run-root/research/global/synthesis/retrievals/verizon/verizon-2001-annual-report-ex13.txt",
+      "locator": "Note 14, Long-term Debt; dollars in millions",
+      "passage": "Total long-term debt, including current maturities 51,494 44,310 Less maturing within one year (5,837) (1,819) ------------------------ Total long-term debt $ 45,657 $ 42,491"
+    }
+  ]
+}

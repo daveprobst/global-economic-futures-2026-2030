@@ -1,0 +1,375 @@
+{
+  "kind": "baseline",
+  "observations": [
+    {
+      "metric": "Euro-area general government gross debt",
+      "value": 88.9,
+      "unit": "percent of GDP",
+      "period": "end-2026-Q1; EA21; provisional",
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026"
+      ]
+    },
+    {
+      "metric": "EU general government gross debt",
+      "value": 82.9,
+      "unit": "percent of GDP",
+      "period": "end-2026-Q1; provisional",
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026"
+      ]
+    },
+    {
+      "metric": "France general government gross debt",
+      "value": 117.6,
+      "unit": "percent of GDP",
+      "period": "end-2026-Q1; provisional",
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026"
+      ]
+    },
+    {
+      "metric": "Italy general government gross debt",
+      "value": 138.9,
+      "unit": "percent of GDP",
+      "period": "end-2026-Q1; provisional",
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026"
+      ]
+    },
+    {
+      "metric": "Estonia general government gross debt",
+      "value": 25.2,
+      "unit": "percent of GDP",
+      "period": "end-2026-Q1; provisional",
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026"
+      ]
+    },
+    {
+      "metric": "Euro-area government debt held by nonresidents",
+      "value": 23,
+      "unit": "percent of euro-area government debt; approximate share; stock",
+      "period": "end-2024",
+      "sourceIds": [
+        "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025"
+      ]
+    },
+    {
+      "metric": "Euro-area nonresident holdings of government debt",
+      "value": 2.6,
+      "unit": "trillion EUR; approximate stock",
+      "period": "end-2024",
+      "sourceIds": [
+        "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025"
+      ]
+    },
+    {
+      "metric": "Euro-area deposit facility rate",
+      "value": 2.5,
+      "unit": "percent per annum",
+      "period": "decision 2026-09-10; effective 2026-09-16",
+      "sourceIds": [
+        "ECB_DECISION_20260910"
+      ]
+    },
+    {
+      "metric": "Euro-area real GDP growth",
+      "value": 0.6,
+      "unit": "percent quarter on quarter; seasonally adjusted estimate",
+      "period": "2026-Q2; next update scheduled 2026-10-20",
+      "sourceIds": [
+        "EA_GDP_2026Q2"
+      ]
+    },
+    {
+      "metric": "Euro-area Q2 GDP inventory contribution",
+      "value": -0.5,
+      "unit": "percentage points",
+      "period": "2026-Q2",
+      "sourceIds": [
+        "EA_GDP_2026Q2"
+      ]
+    },
+    {
+      "metric": "Euro-area Q2 GDP net exports contribution",
+      "value": 0.9,
+      "unit": "percentage points",
+      "period": "2026-Q2",
+      "sourceIds": [
+        "EA_GDP_2026Q2"
+      ]
+    },
+    {
+      "metric": "EU critical raw material extraction capacity benchmark",
+      "value": 10,
+      "unit": "percent of annual EU consumption (capacity benchmark)",
+      "period": "2030 target under CRMA; not realized output",
+      "sourceIds": [
+        "EU_CRMA_2024_1252"
+      ]
+    },
+    {
+      "metric": "EU critical raw material processing capacity benchmark",
+      "value": 40,
+      "unit": "percent of annual EU consumption (capacity benchmark)",
+      "period": "2030 target under CRMA; not realized output",
+      "sourceIds": [
+        "EU_CRMA_2024_1252"
+      ]
+    },
+    {
+      "metric": "EU critical raw material recycling capacity benchmark",
+      "value": 25,
+      "unit": "percent of annual EU consumption (capacity benchmark)",
+      "period": "2030 target under CRMA; not realized end-of-life input",
+      "sourceIds": [
+        "EU_CRMA_2024_1252"
+      ]
+    },
+    {
+      "metric": "EU rare-earth permanent magnet supply potentially contributed by Carester, Solvay and Inspiree",
+      "value": 20,
+      "unit": "percent of then-current demand; conditional projected contribution",
+      "period": "coming years, per 2025 Commission Action Plan; not achieved output",
+      "sourceIds": [
+        "EU_RESOURCEEU_2025"
+      ]
+    },
+    {
+      "metric": "Caremag magnet recycling design feed capacity",
+      "value": 2000,
+      "unit": "tonnes of permanent magnets per year; company plan",
+      "period": "planned late-2026 operations; no observed throughput",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING"
+      ]
+    },
+    {
+      "metric": "Caremag concentrate refining design feed capacity",
+      "value": 5000,
+      "unit": "tonnes of mining concentrates per year; company plan",
+      "period": "planned late-2026 operations; no observed throughput",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING"
+      ]
+    },
+    {
+      "metric": "Caremag mining-concentrate refining design feed capacity",
+      "value": 5000,
+      "unit": "tonnes of mining-concentrate feed per year; company planned nameplate input, separate stream from magnet feed",
+      "period": "late-2026 commissioning schedule as reported 2026-04-09; no observed throughput by 2026-10-14",
+      "sourceIds": [
+        "CARESTER_INFRAVIA_2026"
+      ]
+    },
+    {
+      "metric": "Caremag planned dysprosium and terbium oxide output",
+      "value": 600,
+      "unit": "tonnes of mixed Dy/Tb oxides per year; company design output",
+      "period": "planned operation from late 2026; not observed production",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING"
+      ]
+    },
+    {
+      "metric": "Caremag planned neodymium and praseodymium oxide output",
+      "value": 800,
+      "unit": "tonnes of NdPr oxides per year; company design output",
+      "period": "planned operation from late 2026; not observed production",
+      "sourceIds": [
+        "CARESTER_CAREMAG_2025_FINANCING"
+      ]
+    },
+    {
+      "metric": "Euro-area consolidated NFC debt",
+      "value": 65.8,
+      "unit": "percent of GDP; consolidated loans and debt securities, inter-NFC debt excluded",
+      "period": "2025-Q4",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ]
+    },
+    {
+      "metric": "Euro-area NFC wider non-consolidated debt",
+      "value": 135.8,
+      "unit": "percent of GDP; wider non-consolidated measure",
+      "period": "2025-Q4",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ]
+    },
+    {
+      "metric": "Euro-area household debt",
+      "value": 50.5,
+      "unit": "percent of GDP",
+      "period": "2025-Q4",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ]
+    },
+    {
+      "metric": "Euro-area household debt-to-income",
+      "value": 81.4,
+      "unit": "percent of household disposable income",
+      "period": "2025-Q4",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ]
+    },
+    {
+      "metric": "Euro-area nonresident holdings of general-government debt securities (ECB IIP)",
+      "value": 2591.5,
+      "unit": "EUR billion; stock",
+      "period": "2024-Q4",
+      "sourceIds": [
+        "ECB_INTERNATIONAL_ROLE_EURO_2025"
+      ]
+    },
+    {
+      "metric": "Euro-area foreign official holdings of general-government debt securities (ECB SHS)",
+      "value": 952.4,
+      "unit": "EUR billion; stock, third-party holdings measure",
+      "period": "2024-Q4",
+      "sourceIds": [
+        "ECB_INTERNATIONAL_ROLE_EURO_2025"
+      ]
+    },
+    {
+      "metric": "Euro-area government securities held by nonresidents (ECB SHS)",
+      "value": 2674.2,
+      "unit": "EUR billion; stock, third-party holdings measure",
+      "period": "2024-Q4",
+      "sourceIds": [
+        "ECB_INTERNATIONAL_ROLE_EURO_2025"
+      ]
+    },
+    {
+      "metric": "Euro-area NFC debt, consolidated",
+      "value": 66.0,
+      "unit": "percent of GDP",
+      "period": "2026-Q2; ECB euro-area aggregate; released 2026-10-02; revised series",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+      ]
+    },
+    {
+      "metric": "Euro-area NFC debt, non-consolidated broader measure",
+      "value": 135.6,
+      "unit": "percent of GDP",
+      "period": "2026-Q2; ECB euro-area aggregate; released 2026-10-02; revised series",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+      ]
+    },
+    {
+      "metric": "Euro-area household debt",
+      "value": 80.3,
+      "unit": "percent of household disposable income",
+      "period": "2026-Q2; ECB euro-area aggregate; released 2026-10-02; revised series",
+      "sourceIds": [
+        "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+      ]
+    },
+    {
+      "metric": "ECB-supervised Significant Institution CET1 ratio",
+      "value": 16.0,
+      "unit": "percent",
+      "period": "2026-Q2; ECB Significant Institutions only; release 2026-09-15",
+      "sourceIds": [
+        "ECB_SI_BANK_STATS_2026Q2"
+      ]
+    },
+    {
+      "metric": "ECB-supervised Significant Institution non-performing loan ratio excluding cash",
+      "value": 2.17,
+      "unit": "percent",
+      "period": "2026-Q2; ECB Significant Institutions only; release 2026-09-15",
+      "sourceIds": [
+        "ECB_SI_BANK_STATS_2026Q2"
+      ]
+    },
+    {
+      "metric": "ECB-supervised Significant Institution liquidity coverage ratio",
+      "value": 154.91,
+      "unit": "percent",
+      "period": "2026-Q2; ECB Significant Institutions only; release 2026-09-15",
+      "sourceIds": [
+        "ECB_SI_BANK_STATS_2026Q2"
+      ]
+    },
+    {
+      "metric": "EBA EU/EEA banking sector CET1 ratio",
+      "value": 16.1,
+      "unit": "percent",
+      "period": "2026-Q2; EBA EU/EEA dashboard perimeter; release 2026-09-25",
+      "sourceIds": [
+        "EBA_RISK_DASHBOARD_2026Q2"
+      ]
+    },
+    {
+      "metric": "EU reporter-group BIS consolidated bank claims on China, immediate counterparty basis",
+      "value": 69.824124,
+      "unit": "USD billions; sum of 9/27 reporters with values",
+      "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+      "sourceIds": [
+        "BIS_CBS_B4_2026Q1"
+      ]
+    },
+    {
+      "metric": "EU reporter-group BIS consolidated bank claims on China, guarantor basis",
+      "value": 75.740397,
+      "unit": "USD billions; sum of 9/27 reporters with values",
+      "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+      "sourceIds": [
+        "BIS_CBS_B4_2026Q1"
+      ]
+    },
+    {
+      "metric": "EU reporter-group BIS consolidated bank claims on United States, immediate counterparty basis",
+      "value": 2280.999076,
+      "unit": "USD billions; sum of 12/27 reporters with values",
+      "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+      "sourceIds": [
+        "BIS_CBS_B4_2026Q1"
+      ]
+    },
+    {
+      "metric": "EU reporter-group BIS consolidated bank claims on United States, guarantor basis",
+      "value": 2275.925114,
+      "unit": "USD billions; sum of 11/27 reporters with values",
+      "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+      "sourceIds": [
+        "BIS_CBS_B4_2026Q1"
+      ]
+    },
+    {
+      "metric": "CEPS modeled selected-application EU NdFeB magnet demand",
+      "value": 36,
+      "unit": "thousand tonnes of magnets",
+      "period": "2030 model scenario; selected applications, not observed full-EU demand",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ]
+    },
+    {
+      "metric": "CEPS modeled selected-application theoretical end-of-life NdFeB magnets available",
+      "value": 10,
+      "unit": "thousand tonnes of magnets",
+      "period": "2030 model scenario; about 27% as rounded in source of selected-application demand",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ]
+    },
+    {
+      "metric": "CEPS modeled NdFeB secondary-supply share of selected application demand",
+      "value": 13.5,
+      "unit": "percent; midpoint of 8-19% scenario envelope, arithmetic convenience only; not a point estimate",
+      "period": "2025-2030 model scenarios; range 8-19%; midpoint not used as empirical estimate",
+      "sourceIds": [
+        "RIZOS_MAGNET_CESEPS_2022"
+      ],
+      "assumption": "Midpoint 13.5% is calculated from cited scenario bounds only for numeric summary convenience; use the 8-19% range in modeling."
+    }
+  ]
+}

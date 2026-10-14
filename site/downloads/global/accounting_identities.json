@@ -1,0 +1,466 @@
+{
+  "kind": "accounting",
+  "runId": "gef-main-20261014",
+  "seed": 20261014,
+  "requestedSamples": 10000,
+  "generatedAt": "2026-10-14T19:18:32.627621+00:00",
+  "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+  "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+  "classification": "conditional simulation design; not a forecast; percentiles are not calibrated probabilities",
+  "moduleId": "global-transmission",
+  "unitMap": {
+    "company_liquidity": "USD bn levels; group pressure is a unitless ratio to opening group liquidity",
+    "china_consumption": "index, 2026=100; index points converted by a coefficient to demand fraction",
+    "china_cpi": "percent (pp deviation) and price-level index, 2026=100",
+    "eu_claims": "USD bn (reported BIS summary) converted to demand fraction by a coefficient",
+    "eu_materials": "tonnes per year; EU ledger only, never converted into demand",
+    "swiss": "CHF per EUR/USD; percent growth; GDP index 2026=100; pp converted by a coefficient",
+    "global_demand": "fraction deviation of normalized demand index, 2026=100"
+  },
+  "scopeNote": "four regions (US, China, EU27, Switzerland); nine conditional scenarios",
+  "passed": true,
+  "identities": [
+    {
+      "name": "global.persistence_applied_once.direct_undamped.base_adaptation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.base_adaptation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.base_adaptation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.ai_correction",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.ai_correction",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.ai_correction",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.ai_revenue_70pct_loss_stress",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.ai_revenue_70pct_loss_stress",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.ai_revenue_70pct_loss_stress",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.prolonged_high_rates",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.prolonged_high_rates",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.prolonged_high_rates",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.severe_combined_stress",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.severe_combined_stress",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.severe_combined_stress",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.europe_adaptation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.europe_adaptation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.europe_adaptation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.europe_fragmentation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.europe_fragmentation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.europe_fragmentation",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.swiss_status_quo_erosion",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.swiss_status_quo_erosion",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.swiss_status_quo_erosion",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.direct_undamped.swiss_package_conditional",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.persistence_applied_once.lag_recomputed.swiss_package_conditional",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.close_equals_direct_plus_lagged.swiss_package_conditional",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.zero_persistence_collapses_to_direct",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.row_abs_sum_le_0.4.disabled",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.row_abs_sum_le_0.4.weak",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.row_abs_sum_le_0.4.strong",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "global.row_abs_sum_le_0.4.sign_reversal",
+      "category": "global",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "levels.base_adaptation_zero_by_construction",
+      "category": "regional",
+      "residual": 0.0,
+      "tolerance": 1e-12,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "company.cash_identity_residual_max",
+      "category": "company",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "unit": "USD bn",
+      "note": ""
+    },
+    {
+      "name": "company.face_debt_identity_residual_max",
+      "category": "company",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "unit": "USD bn",
+      "note": ""
+    },
+    {
+      "name": "company.validate_failures",
+      "category": "company",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": "records checked=720"
+    },
+    {
+      "name": "china.cpi_level_identity",
+      "category": "china",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "unit": "index",
+      "note": ""
+    },
+    {
+      "name": "china.real_burden_identity",
+      "category": "china",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "unit": "index",
+      "note": ""
+    },
+    {
+      "name": "china.property_index_bounded_nonincreasing",
+      "category": "china",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": ""
+    },
+    {
+      "name": "swiss.fx_identity_anchor_times_one_minus_appreciation",
+      "category": "swiss",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "unit": "CHF per unit",
+      "note": ""
+    },
+    {
+      "name": "swiss.gdp_index_identity",
+      "category": "swiss",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "passed": true,
+      "unit": "index 2026=100",
+      "note": ""
+    },
+    {
+      "name": "eu.capacity_cap_production_le_nameplate_x_utilization",
+      "category": "eu",
+      "residual": 0.0,
+      "tolerance": 1e-06,
+      "passed": true,
+      "unit": "tonnes per year",
+      "note": ""
+    },
+    {
+      "name": "eu.channel_equals_coefficient_times_stressed_claims_usd_bn",
+      "category": "eu",
+      "residual": 0.0,
+      "tolerance": 1e-15,
+      "passed": true,
+      "unit": "fraction",
+      "note": ""
+    },
+    {
+      "name": "eu.exposure_bounds_ordered",
+      "category": "eu",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "USD bn",
+      "note": ""
+    },
+    {
+      "name": "ownership.unique_event_owner_per_region",
+      "category": "integration",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": ""
+    },
+    {
+      "name": "sources.all_consumed_ids_resolved",
+      "category": "integration",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": ""
+    },
+    {
+      "name": "pins.accepted_snapshot_mismatches",
+      "category": "integration",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": ""
+    },
+    {
+      "name": "inputs.consumed_files_present",
+      "category": "integration",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": ""
+    },
+    {
+      "name": "ownership.every_adapter_reachable_by_perturbation",
+      "category": "integration",
+      "residual": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "unit": "count",
+      "note": "unused=[]"
+    }
+  ],
+  "note": "custom assertion receipts; unittest counts are reported separately in tests.json"
+}

@@ -1,0 +1,153 @@
+{
+  "kind": "claimLedger",
+  "claims": [
+    {
+      "claimId": "CHF_SAFE_HAVEN_BILATERAL",
+      "statement": "CHF appreciation during global risk episodes is bilateral and time-varying, rather than a universal rise against every currency.",
+      "status": "supported",
+      "sourceIds": [
+        "SNB_SAFEHAVEN_2013",
+        "SNB_DECISION_20260924"
+      ],
+      "counterEvidence": "The SNB study finds CHF appreciation against EUR and carry currencies but depreciation against USD, JPY and GBP in its historical regressions; the 2026 SNB release reports recent CHF depreciation supporting exports."
+    },
+    {
+      "claimId": "CHF_IMPORT_DISINFLATION",
+      "statement": "A CHF appreciation can lower Swiss import prices and consumer inflation, but pass-through depends on invoice currency and is attenuated at aggregate CPI level.",
+      "status": "supported",
+      "sourceIds": [
+        "SNB_FX_PASS_2018",
+        "SNB_FX_PASS_2007",
+        "SNB_FX_EXPORTS_2022"
+      ],
+      "counterEvidence": "The 2015 shock produced immediate complete pass-through for euro-invoiced import unit values but only partial fast pass-through for CHF-invoiced goods; aggregate CPI pass-through has historically been weaker, and higher energy prices can dominate current inflation."
+    },
+    {
+      "claimId": "SWISS_INFLATION_FORECAST_06",
+      "statement": "SECO's September 2026 forecast supports 0.6% average inflation in both 2026 and 2027, while the SNB's later September policy assessment projects 0.7% and 0.8% conditional averages.",
+      "status": "uncertain",
+      "sourceIds": [
+        "SECO_FORECAST_20260917",
+        "SNB_DECISION_20260924",
+        "CH_CPI_202609"
+      ],
+      "counterEvidence": "September realized CPI was 1.0% year on year, and SNB's conditional forecast differs from SECO's forecast. These are different forecast models and vintages, not a realized 2027 outcome; the 0.6% thesis is a forecast, not an observed fact."
+    },
+    {
+      "claimId": "PHARMA_EXPORTS_ANCHOR",
+      "statement": "Chemicals and pharmaceuticals materially support Swiss merchandise exports and drove an unusually large portion of Q2 2026 GDP growth, making aggregate resilience sensitive to volatile sector output.",
+      "status": "supported",
+      "sourceIds": [
+        "SWISS_EXPORTS_2025",
+        "CH_GDP_2026Q2",
+        "SECO_FORECAST_20260917",
+        "SNB_DECISION_20260924"
+      ],
+      "counterEvidence": "SECO and SNB describe Q2 growth as broad-based beyond chemicals/pharma, while noting the sector's exceptional and volatile contribution. Record nominal exports do not establish real volume, domestic value added, firm profitability or CHF resilience."
+    },
+    {
+      "claimId": "MERCHANTING_CA_NOT_GDP",
+      "statement": "Swiss commodity merchanting can materially move measured goods and current-account balances without an equivalent change in domestic production or GDP.",
+      "status": "supported",
+      "sourceIds": [
+        "SNB_BOP_2026Q2",
+        "SNB_MERCHANTING_METHOD",
+        "SNB_MERCHANTING_CA_2013",
+        "SECO_COMMODITIES_2018"
+      ],
+      "counterEvidence": "Merchanting firms generate Swiss-resident margins, services, employment and tax receipts; the issue is that gross trade turnover and current-account surplus alone do not measure those domestic contributions, whose current magnitude is not well classified."
+    },
+    {
+      "claimId": "EU_PACKAGE_SIGNED_NOT_IN_FORCE",
+      "statement": "The Switzerland–EU package agreements were signed in March 2026 and sent to Parliament, but signature and dispatch do not establish general ratification or entry into force.",
+      "status": "supported",
+      "sourceIds": [
+        "CH_EU_PACKAGE_202603",
+        "CH_EU_PACKAGE_STATUS_202608",
+        "CH_ELECTRICITY_AGREEMENT_STATUS"
+      ],
+      "counterEvidence": "The separate EU programmes agreement was signed in November 2025 and applies immediately, associating Switzerland retroactively to several programmes from 1 January 2025; this is a component-specific exception and cannot be generalized to the rest of the package."
+    },
+    {
+      "claimId": "ELECTRICITY_MARKET_ACCESS_STATUS_QUO",
+      "statement": "Switzerland's physical integration with the EU electricity system without legal guarantees creates a plausible security-of-supply and trading friction channel; a signed electricity agreement is a prospective pathway pending process.",
+      "status": "supported",
+      "sourceIds": [
+        "CH_ELECTRICITY_AGREEMENT_STATUS",
+        "CH_EU_PACKAGE_STATUS_202608"
+      ],
+      "counterEvidence": "Physical interconnection and existing coordination already support cross-border trade, so the status quo is not equivalent to isolation or an observed outage. Benefits of the agreement remain prospective until its legal status changes and implementation effects are measured."
+    },
+    {
+      "claimId": "FRIENDSHORING_RESILIENCE",
+      "statement": "Swiss openness, specialized exports and EU market access create both supply-chain resilience options and exposure to external demand, regulatory and concentration shocks; a net friendshoring gain is not established by available aggregate evidence.",
+      "status": "uncertain",
+      "sourceIds": [
+        "OECD_CH_GVC_2024",
+        "OECD_SWISS_EU_2024",
+        "CH_EXPORT_SECTOR_2025",
+        "SWISS_EXPORTS_2025",
+        "OECD_SWISS_SURVEY_2026"
+      ],
+      "counterEvidence": "OECD evidence recognizes diversification benefits from open GVC participation as well as concentration and disruption risks; it does not causally estimate the net effect of future near/friendshoring for Switzerland. Pharma export concentration can support current totals while amplifying sector-specific volatility. Latest OECD Switzerland Survey (15 Sep 2026) describes resilience through recent shocks and ongoing exposure to trade/geopolitical uncertainty, but offers no causal relocation or net friendshoring estimate."
+    },
+    {
+      "claimId": "HORIZON_PROGRAMME_ACCESS_DISTINCT_FROM_PACKAGE",
+      "statement": "Swiss participation in Horizon Europe, Euratom and Digital Europe from programme year 2025 follows the separately signed EU Programmes Agreement, provisionally applied retroactively from 1 January 2025; this does not put the full March 2026 Bilaterals III package into force, and programme-call exceptions remain.",
+      "status": "supported",
+      "sourceIds": [
+        "CH_HORIZON_STATUS",
+        "CH_EU_PACKAGE_STATUS_202608"
+      ],
+      "counterEvidence": "Access is not universal: call-level eligibility and Commission validation apply; some Horizon space calls and Digital Europe objectives remain inaccessible, and funding eligibility does not itself establish research output or productivity gains."
+    },
+    {
+      "claimId": "SWISS_2015_EXPORT_QUANTITY_RESILIENCE",
+      "statement": "The 2015 CHF appreciation did not produce a statistically significant decline in aggregate real Swiss goods export quantities in a synthetic-control study, while nominal CHF exports fell about 7% in the short run and sector responses differed sharply.",
+      "status": "supported",
+      "sourceIds": [
+        "CH_EXPORT_SECTOR_2025"
+      ],
+      "counterEvidence": "The study is a single historical EUR shock over Jan 2015–Jul 2017, cannot directly identify future response or sectoral real quantities, and found material adverse nominal effects in engineering and precision instruments; current composition and trade policy differ."
+    },
+    {
+      "claimId": "SWISS_MERCHANTING_GROSS_TURNOVER",
+      "statement": "SNB balance-of-payments data record large gross merchanting sales flows, but those gross flows are not equivalent to Swiss domestic value added, GDP or local financing exposure.",
+      "status": "supported",
+      "sourceIds": [
+        "SNB_MERCHANTING_Q2_2026",
+        "SNB_MERCHANTING_METHOD"
+      ],
+      "counterEvidence": "Merchanting businesses can earn domestic margins, employ Swiss workers and buy local services; current data do not establish their present value-added or financing contribution."
+    },
+    {
+      "claimId": "SWISS_INPUT_DIVERSIFICATION",
+      "statement": "Pre-2022 evidence indicates Swiss import dependencies were generally diversified and average product-level import concentration fell, although some critical country-product dependencies persisted and external-input reliance remained concentrated in EU-sourced inputs.",
+      "status": "supported",
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ],
+      "counterEvidence": "The OECD metrics mostly use 2018–2021 observations and cannot establish 2026 supplier concentration, firm relocation, exposure to a particular shock or a causal net return from friendshoring."
+    },
+    {
+      "claimId": "FOCBS_Q1_2026_CHEM_PHARMA_QQ",
+      "statement": "FOCBS Annex Ia reports seasonally adjusted nominal Swiss chemical and pharmaceutical exports of CHF 33,652 million in 2026-Q1, down 8.1% quarter on quarter from 2025-Q4.",
+      "status": "supported",
+      "sourceIds": [
+        "FOCBS_Q1_2026_SECTOR_RELEASE"
+      ],
+      "counterEvidence": "This is a quarterly nominal customs-export series; it does not establish real output, Swiss value added, firm profits, bilateral market-access effects, or a causal CHF contribution."
+    },
+    {
+      "claimId": "MERCHANTING_NET_Q2_2026_QUANTIFICATION",
+      "statement": "The SNB reports that the merchanting balance rose significantly year on year in 2026-Q2, but the located current-account cube gives only the aggregate net current-account balance and the located merchanting cube gives gross sales.",
+      "status": "uncertain",
+      "sourceIds": [
+        "SNB_BOP_2026Q2",
+        "SNB_BOP_CURRENT_ACCOUNT_Q2_2026",
+        "SNB_MERCHANTING_Q2_2026"
+      ],
+      "counterEvidence": "SNB release language confirms the direction of the merchanting balance but not its amount; the CHF 23,657.6 million net current-account aggregate includes other goods, services and income, while CHF 238,247.4 million merchanting sales are gross turnover."
+    }
+  ]
+}

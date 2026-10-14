@@ -1,0 +1,13 @@
+dependence,loading,region,sampleCount,p05_2030,p50_2030,p95_2030,unit,interpretation
+independent,0.0,US,2000,-0.007143439477813885,-0.006726191444084996,-0.00585112909221796,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+independent,0.0,China,2000,-0.029175162917007506,-0.027747656493952593,-0.021283208400756433,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+independent,0.0,EU27,2000,-0.002496628639047852,-0.002336451264331336,-0.001929244566455395,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+independent,0.0,Switzerland,2000,-0.019101671261969214,-0.015518167543329827,-0.012159290670301503,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_base,0.5,US,2000,-0.007169784516082555,-0.0067586989321506315,-0.005772691143856919,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_base,0.5,China,2000,-0.02919229221875284,-0.027891198504337543,-0.021459733703013826,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_base,0.5,EU27,2000,-0.002530529793319437,-0.002345787283050753,-0.0019070370942472481,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_base,0.5,Switzerland,2000,-0.019168608248175897,-0.01557288685436944,-0.012058290042353169,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_high,0.8,US,2000,-0.0071971459649350636,-0.006831772805150876,-0.005574564078489311,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_high,0.8,China,2000,-0.029218766552400785,-0.027886950425019402,-0.02137309150098164,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_high,0.8,EU27,2000,-0.0025518742309012282,-0.0023574703784261858,-0.0018565141271704782,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability
+copula_high,0.8,Switzerland,2000,-0.019268648277570116,-0.015655529932508558,-0.011903265839761108,"fraction deviation of normalized demand index, 2026=100",conditional design percentile; not a calibrated probability

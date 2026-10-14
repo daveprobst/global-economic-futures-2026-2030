@@ -1,0 +1,167 @@
+[
+  {
+    "company": "Microsoft",
+    "category": "construction commitments",
+    "gross_amount_usd_bn": 34.566,
+    "reported_timing": "FY2027 29.848; thereafter 4.718",
+    "cancelability": "terms vary; filing does not quantify cancellable share",
+    "includes_interest": false,
+    "source_id": "MSFT_10K_FY2026",
+    "source_pointer": "/companies/0/commitments/0",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Microsoft",
+    "category": "operating and finance lease payments",
+    "gross_amount_usd_bn": 443.506,
+    "reported_timing": "FY2027 32.411; thereafter 411.095",
+    "cancelability": "lease contracts; not treated as ordinary cancellable POs",
+    "includes_interest": true,
+    "source_id": "MSFT_10K_FY2026",
+    "source_pointer": "/companies/0/commitments/1",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Microsoft",
+    "category": "purchase commitments",
+    "gross_amount_usd_bn": 194.06,
+    "reported_timing": "FY2027 169.008; thereafter 25.052",
+    "cancelability": "primarily open POs and take-or-pay contracts; specific cancelability not quantified",
+    "includes_interest": false,
+    "source_id": "MSFT_10K_FY2026",
+    "source_pointer": "/companies/0/commitments/2",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "long-term debt principal and interest (separate debt-service line)",
+    "gross_amount_usd_bn": 220.309,
+    "reported_timing": "2026 remainder 2.361; 2027 14.060; 2028 17.087; 2029 13.528; 2030 11.112; thereafter 162.161",
+    "cancelability": "contractual debt service; not a purchase commitment",
+    "includes_interest": true,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/0",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "operating leases",
+    "gross_amount_usd_bn": 116.35,
+    "reported_timing": "2026 remainder 9.336; 2027 14.765; 2028 13.924; 2029 12.599; 2030 11.269; thereafter 54.457",
+    "cancelability": "lease liability, not cancellable at will",
+    "includes_interest": true,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/1",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "finance leases",
+    "gross_amount_usd_bn": 16.66,
+    "reported_timing": "2026 remainder 1.088; 2027 1.775; 2028 1.885; 2029 1.482; 2030 1.269; thereafter 9.161",
+    "cancelability": "lease liability, not cancellable at will",
+    "includes_interest": true,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/2",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "financing obligations",
+    "gross_amount_usd_bn": 11.07,
+    "reported_timing": "2026 remainder 0.352; 2027 0.682; 2028 0.694; 2029 0.706; 2030 0.720; thereafter 7.916",
+    "cancelability": "non-cancellable obligations noted for fulfillment and data-center facilities",
+    "includes_interest": true,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/3",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "leases not yet commenced",
+    "gross_amount_usd_bn": 137.214,
+    "reported_timing": "2026 remainder 4.018; 2027 11.732; 2028 9.278; 2029 9.483; 2030 9.227; thereafter 93.476",
+    "cancelability": "contracted future leases; no separate cancellation amount reported",
+    "includes_interest": false,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/4",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "unconditional purchase obligations",
+    "gross_amount_usd_bn": 130.065,
+    "reported_timing": "2026 remainder 23.452; 2027 33.026; 2028 9.326; 2029 7.961; 2030 7.659; thereafter 48.641",
+    "cancelability": "unconditional; legal cancellation terms not itemized",
+    "includes_interest": false,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/5",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Amazon",
+    "category": "other commitments",
+    "gross_amount_usd_bn": 18.366,
+    "reported_timing": "2026 remainder 2.145; 2027 2.044; 2028 1.212; 2029 1.008; 2030 0.963; thereafter 10.994",
+    "cancelability": "not disaggregated",
+    "includes_interest": false,
+    "source_id": "AMZN_10Q_Q2_2026",
+    "source_pointer": "/companies/1/commitments/6",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Alphabet",
+    "category": "purchase commitments and other contractual obligations",
+    "gross_amount_usd_bn": 811.0,
+    "reported_timing": "200.7 short-term; remaining 610.3 beyond short-term, annual split not disclosed in Q2 2026 10-Q",
+    "cancelability": "not quantified; includes long-term supply agreements/open POs, content licenses, energy take-or-pay",
+    "includes_interest": false,
+    "source_id": "GOOG_10Q_Q2_2026",
+    "source_pointer": "/companies/2/commitments/0",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Meta",
+    "category": "non-cancelable contractual commitments",
+    "gross_amount_usd_bn": 349.31,
+    "reported_timing": "Short-/long-term total disclosed; part of annual summary due 2026 53.520 and 2027 81.650; balance not annually allocated in cited 10-Q",
+    "cancelability": "explicitly non-cancelable",
+    "includes_interest": false,
+    "source_id": "META_10Q_Q2_2026",
+    "source_pointer": "/companies/3/commitments/0",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Meta",
+    "category": "lease commitments not yet commenced",
+    "gross_amount_usd_bn": 278.99,
+    "reported_timing": "commencement from remainder 2026 through 2036; exact annual payments/timing not fully allocated in excerpt",
+    "cancelability": "committed future leases; contract-specific remedies not quantified",
+    "includes_interest": false,
+    "source_id": "META_10Q_Q2_2026",
+    "source_pointer": "/companies/3/commitments/1",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Oracle",
+    "category": "unconditional purchase and certain other obligations",
+    "gross_amount_usd_bn": 13.309,
+    "reported_timing": "FY2027 1.841; FY2028 1.034; FY2029 1.053; FY2030 0.952; FY2031 0.896; thereafter 7.533",
+    "cancelability": "agreements enforceable and legally binding; unconditional",
+    "includes_interest": false,
+    "source_id": "ORCL_10K_FY2026;ORCL_10Q_Q1_FY2027",
+    "source_pointer": "/companies/4/commitments/0",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  },
+  {
+    "company": "Oracle",
+    "category": "operating and finance lease payments",
+    "gross_amount_usd_bn": 53.327,
+    "reported_timing": "FY2027 4.368; FY2028 4.279; FY2029 4.247; FY2030 4.268; FY2031 4.259; thereafter 31.906",
+    "cancelability": "lease liability schedule",
+    "includes_interest": true,
+    "source_id": "ORCL_10K_FY2026;ORCL_10Q_Q1_FY2027",
+    "source_pointer": "/companies/4/commitments/1",
+    "cash_bridge_treatment": "inventory only unless separately passed as incremental commitment_cash_not_in_baseline_ocf; overlap not resolved by issuer schedule"
+  }
+]

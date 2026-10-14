@@ -1,0 +1,321 @@
+{
+  "kind": "baseline",
+  "observations": [
+    {
+      "metric": "Swiss National Bank policy rate",
+      "value": 0.0,
+      "unit": "percent per annum",
+      "period": "Decision announced 2026-09-24; policy rate left unchanged at 0%",
+      "sourceIds": [
+        "SNB_DECISION_20260924"
+      ]
+    },
+    {
+      "metric": "Swiss CPI inflation, year on year",
+      "value": 1.0,
+      "unit": "percent",
+      "period": "2026-09 versus 2025-09",
+      "sourceIds": [
+        "CH_CPI_202609"
+      ]
+    },
+    {
+      "metric": "Swiss CPI index",
+      "value": 101.5,
+      "unit": "index points (Dec 2025=100)",
+      "period": "2026-09 monthly index; unchanged from 2026-08",
+      "sourceIds": [
+        "CH_CPI_202609"
+      ]
+    },
+    {
+      "metric": "Swiss CPI monthly change",
+      "value": 0.0,
+      "unit": "percent month on month",
+      "period": "2026-09",
+      "sourceIds": [
+        "CH_CPI_202609"
+      ]
+    },
+    {
+      "metric": "Swiss GDP, sport-event-adjusted growth",
+      "value": 1.5,
+      "unit": "percent quarter on quarter",
+      "period": "2026-Q2; exceptionally strong quarterly growth; SECO vintage 2026-09-03",
+      "sourceIds": [
+        "CH_GDP_2026Q2",
+        "SECO_FORECAST_20260917"
+      ]
+    },
+    {
+      "metric": "SECO Swiss GDP forecast, sport-event adjusted",
+      "value": 1.7,
+      "unit": "percent annual growth",
+      "period": "Calendar year 2026 forecast finalized 2026-09-08, published 2026-09-17",
+      "sourceIds": [
+        "SECO_FORECAST_20260917"
+      ]
+    },
+    {
+      "metric": "SECO Swiss GDP forecast, sport-event adjusted",
+      "value": 1.6,
+      "unit": "percent annual growth",
+      "period": "Calendar year 2027 forecast finalized 2026-09-08, published 2026-09-17",
+      "sourceIds": [
+        "SECO_FORECAST_20260917"
+      ]
+    },
+    {
+      "metric": "SECO Swiss CPI forecast",
+      "value": 0.6,
+      "unit": "percent annual average inflation",
+      "period": "Calendar year 2026 forecast finalized 2026-09-08, published 2026-09-17",
+      "sourceIds": [
+        "SECO_FORECAST_20260917"
+      ]
+    },
+    {
+      "metric": "SECO Swiss CPI forecast",
+      "value": 0.6,
+      "unit": "percent annual average inflation",
+      "period": "Calendar year 2027 forecast finalized 2026-09-08, published 2026-09-17",
+      "sourceIds": [
+        "SECO_FORECAST_20260917"
+      ]
+    },
+    {
+      "metric": "SNB conditional Swiss CPI forecast",
+      "value": 0.7,
+      "unit": "percent annual average inflation",
+      "period": "Calendar year 2026 forecast conditional on SNB policy rate 0% through horizon; published 2026-09-24",
+      "sourceIds": [
+        "SNB_DECISION_20260924"
+      ]
+    },
+    {
+      "metric": "SNB conditional Swiss CPI forecast",
+      "value": 0.8,
+      "unit": "percent annual average inflation",
+      "period": "Calendar year 2027 forecast conditional on SNB policy rate 0% through horizon; published 2026-09-24",
+      "sourceIds": [
+        "SNB_DECISION_20260924"
+      ]
+    },
+    {
+      "metric": "Swiss merchandise exports",
+      "value": 287.0,
+      "unit": "CHF billion, nominal customs value",
+      "period": "Calendar year 2025; +1.4% from 2024",
+      "sourceIds": [
+        "SWISS_EXPORTS_2025"
+      ]
+    },
+    {
+      "metric": "Swiss merchandise imports",
+      "value": 232.7,
+      "unit": "CHF billion, nominal customs value",
+      "period": "Calendar year 2025; +4.5% from 2024",
+      "sourceIds": [
+        "SWISS_EXPORTS_2025"
+      ]
+    },
+    {
+      "metric": "Swiss customs merchandise trade surplus",
+      "value": 54.3,
+      "unit": "CHF billion, nominal customs value",
+      "period": "Calendar year 2025",
+      "sourceIds": [
+        "SWISS_EXPORTS_2025"
+      ]
+    },
+    {
+      "metric": "Swiss current account balance",
+      "value": 24.0,
+      "unit": "CHF billion",
+      "period": "2026-Q2; up CHF 13 billion year on year from unusually low 2025-Q2 comparator",
+      "sourceIds": [
+        "SNB_BOP_2026Q2"
+      ]
+    },
+    {
+      "metric": "Swiss net international investment position",
+      "value": 986.0,
+      "unit": "CHF billion",
+      "period": "End-2026-Q2; increase CHF 22 billion quarter on quarter",
+      "sourceIds": [
+        "SNB_BOP_2026Q2"
+      ]
+    },
+    {
+      "metric": "Swiss net reduction in financial assets",
+      "value": -6.0,
+      "unit": "CHF billion transactions",
+      "period": "2026-Q2; financial account",
+      "sourceIds": [
+        "SNB_BOP_2026Q2"
+      ]
+    },
+    {
+      "metric": "Swiss net reduction in financial liabilities",
+      "value": -12.0,
+      "unit": "CHF billion transactions",
+      "period": "2026-Q2; financial account",
+      "sourceIds": [
+        "SNB_BOP_2026Q2"
+      ]
+    },
+    {
+      "metric": "Swiss francs per euro appreciation response",
+      "value": 11.0,
+      "unit": "percent or more, CHF appreciation versus EUR",
+      "period": "Unanticipated SNB floor removal on 2015-01-15; historical event study reports >11% shock",
+      "sourceIds": [
+        "SNB_FX_PASS_2018"
+      ]
+    },
+    {
+      "metric": "EUR/CHF monthly average exchange rate",
+      "value": 0.94312,
+      "unit": "CHF per 1 EUR",
+      "period": "2026-09 monthly average; SNB devkum CSV PublishingDate 2026-10-01 14:30; observation vintage released 1 Oct",
+      "sourceIds": [
+        "SNB_FX_MONTHLY_202609"
+      ]
+    },
+    {
+      "metric": "USD/CHF monthly average exchange rate",
+      "value": 0.81926,
+      "unit": "CHF per 1 USD",
+      "period": "2026-09 monthly average; SNB devkum CSV PublishingDate 2026-10-01 14:30; observation vintage released 1 Oct",
+      "sourceIds": [
+        "SNB_FX_MONTHLY_202609"
+      ]
+    },
+    {
+      "metric": "Swiss chemical, pharmaceutical and life-science merchandise exports",
+      "value": 152.1,
+      "unit": "CHF billion, nominal customs value",
+      "period": "Calendar year 2025; +2.2% y/y; association aggregation using Swiss-Impex data; reported 2026-01-29",
+      "sourceIds": [
+        "SCIENCEINDUSTRIES_EXPORTS_2025"
+      ]
+    },
+    {
+      "metric": "Chemical/pharmaceutical share of Swiss merchandise exports",
+      "value": 52.7,
+      "unit": "percent of nominal customs merchandise exports",
+      "period": "Calendar year 2024; FOCBS tariff group; reported in official foreign-trade yearbook",
+      "sourceIds": [
+        "CH_FOCBS_2024_TRADE_YEARBOOK"
+      ]
+    },
+    {
+      "metric": "Swiss chemical and pharmaceutical exports, quarter-on-quarter change",
+      "value": -8.1,
+      "unit": "percent, seasonally adjusted nominal q/q",
+      "period": "2026-Q1 versus 2025-Q4",
+      "sourceIds": [
+        "FOCBS_Q1_2026_SECTOR_RELEASE"
+      ]
+    },
+    {
+      "metric": "Swiss merchanting gross sales of goods (all categories, GT)",
+      "value": 238247.40877308,
+      "unit": "CHF million, gross current-price sales",
+      "period": "2026-Q2; SNB cube bopmercatq, GT category; CSV retrieved 2026-10-14; PublishingDate 2026-09-22 09:00",
+      "sourceIds": [
+        "SNB_MERCHANTING_Q2_2026"
+      ]
+    },
+    {
+      "metric": "Imported intermediate input supplier share: EU",
+      "value": 54.0,
+      "unit": "percent of imported intermediate inputs (average across Swiss sectors)",
+      "period": "2018 input-output data, as reported by OECD Switzerland Survey 2024, Figure 5.10 panel B",
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ]
+    },
+    {
+      "metric": "Imported intermediate input supplier share: Asia",
+      "value": 17.0,
+      "unit": "percent of imported intermediate inputs (average across Swiss sectors)",
+      "period": "2018 input-output data, as reported by OECD Switzerland Survey 2024, Figure 5.10 panel B",
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ]
+    },
+    {
+      "metric": "Change in average Swiss import concentration (HHI)",
+      "value": -7.0,
+      "unit": "percent change in index level",
+      "period": "2002 to 2021; OECD analysis of CEPII trade data, indexed comparison",
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ]
+    },
+    {
+      "metric": "Swiss high-concentration product-country combinations remaining at risk",
+      "value": 60.0,
+      "unit": "approximate number of country-product combinations",
+      "period": "2019 import risk screen still flagged two years later, through 2021; OECD/CEPII method requires import HHI>0.4, global export HHI>0.4 and imports>exports",
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ]
+    },
+    {
+      "metric": "Swiss current account balance, net",
+      "value": 23657.55439121,
+      "unit": "CHF million, net",
+      "period": "2026-Q2",
+      "sourceIds": [
+        "SNB_BOP_CURRENT_ACCOUNT_Q2_2026"
+      ]
+    },
+    {
+      "metric": "Swiss import price index, total",
+      "value": 102.6024,
+      "unit": "index points (December 2025=100)",
+      "period": "2026-08 monthly observation; latest available by 2026-10-14",
+      "sourceIds": [
+        "FSO_IMPORT_PRICE_AUG2026"
+      ]
+    },
+    {
+      "metric": "Swiss import price index, total, monthly change",
+      "value": 1.9,
+      "unit": "percent month on month, computed from index levels",
+      "period": "2026-08 versus 2026-07",
+      "sourceIds": [
+        "FSO_IMPORT_PRICE_AUG2026"
+      ]
+    },
+    {
+      "metric": "Swiss import price index, other organic basic chemicals",
+      "value": 111.797,
+      "unit": "index points (December 2025=100)",
+      "period": "2026-08 monthly observation",
+      "sourceIds": [
+        "FSO_IMPORT_PRICE_AUG2026"
+      ]
+    },
+    {
+      "metric": "Swiss CPI index",
+      "value": 101.5,
+      "unit": "index points (December 2025=100)",
+      "period": "2026-09 monthly observation; latest available by 2026-10-14",
+      "sourceIds": [
+        "CH_CPI_202609"
+      ]
+    },
+    {
+      "metric": "Swiss chemical and pharmaceutical exports, seasonally adjusted nominal",
+      "value": 33652,
+      "unit": "CHF million",
+      "period": "2026-Q1 level; comparison with 2025-Q4 is seasonally adjusted q/q in Annex Ia",
+      "sourceIds": [
+        "FOCBS_Q1_2026_SECTOR_RELEASE"
+      ]
+    }
+  ]
+}

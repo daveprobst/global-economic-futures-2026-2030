@@ -1,0 +1,1179 @@
+{
+  "kind": "baseline",
+  "observations": [
+    {
+      "metric": "Amazon net cash provided by operating activities",
+      "value": 139.514,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; reported in USD millions as 139,514",
+      "sourceIds": [
+        "AMZN_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Amazon cash capital expenditures (management definition)",
+      "value": 128.3,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; primarily technology infrastructure and fulfillment capacity; differs from gross cash purchases of PPE",
+      "sourceIds": [
+        "AMZN_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Amazon AWS net sales",
+      "value": 128.725,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; segment revenue, not AI-specific revenue",
+      "sourceIds": [
+        "AMZN_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Alphabet operating cash flow",
+      "value": 164.7,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31",
+      "sourceIds": [
+        "GOOG_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Alphabet capital expenditures",
+      "value": 91.4,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; primarily technical infrastructure",
+      "sourceIds": [
+        "GOOG_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Alphabet research and development expense",
+      "value": 61.087,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; reported in USD millions as 61,087",
+      "sourceIds": [
+        "GOOG_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Meta capital expenditures including principal payments on finance leases",
+      "value": 72.22,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; includes USD 69.691bn purchases of property and equipment and USD 2.524bn finance-lease principal payments",
+      "sourceIds": [
+        "META_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Meta net cash provided by operating activities",
+      "value": 115.8,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31",
+      "sourceIds": [
+        "META_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Meta research and development expense",
+      "value": 57.372,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-12-31; increased 31% year over year, increase mostly attributed by issuer to employee compensation and infrastructure costs including AI initiatives",
+      "sourceIds": [
+        "META_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Oracle net cash provided by operating activities",
+      "value": 20.821,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-05-31",
+      "sourceIds": [
+        "ORCL_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Oracle capital expenditures",
+      "value": 21.215,
+      "unit": "USD billion",
+      "period": "FY2025, year ended 2025-05-31",
+      "sourceIds": [
+        "ORCL_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Oracle additional lease commitments primarily for data centers",
+      "value": 43.4,
+      "unit": "USD billion",
+      "period": "As of 2025-05-31; expected commencement FY2026–FY2028 with 10–16 year terms; off-balance-sheet as of reporting date per filing",
+      "sourceIds": [
+        "ORCL_10K_FY2025"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Federal Reserve study: share of publicly listed firms classified as distressed",
+      "value": 37.0,
+      "unit": "percent of sample firms",
+      "period": "Historical firm-panel estimate around 2022 in June 2023 analysis; not a 2026 observation or hyperscaler-specific",
+      "sourceIds": [
+        "FED_DISTRESSED_FIRMS_2023"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Federal Reserve study: investment response for distressed firms after a one-standard-deviation monetary tightening",
+      "value": -3.7,
+      "unit": "percent of initial capital stock, cumulative after 2 years",
+      "period": "Estimated historical firm-panel response; model/sample estimate, not a forecast or hyperscaler estimate",
+      "sourceIds": [
+        "FED_DISTRESSED_FIRMS_2023"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Generative AI field study: average worker productivity change",
+      "value": 14.0,
+      "unit": "percent change in issues resolved per hour",
+      "period": "Study of staggered deployment among 5,179 customer-support agents; NBER Working Paper 31161, 2023 version; not a vendor willingness-to-pay or AI revenue measure",
+      "sourceIds": [
+        "NBER_GENAI_AT_WORK_31161"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "WorldCom net cash from operating activities, restated",
+      "value": 2.845,
+      "unit": "USD billion",
+      "period": "FY2001 ended 2001-12-31; restated in 2003 Form 10-K; originally reported USD 7.994bn",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "WorldCom net cash used in investing activities, restated",
+      "value": -6.122,
+      "unit": "USD billion",
+      "period": "FY2001 ended 2001-12-31; restated in 2003 Form 10-K",
+      "sourceIds": [
+        "WORLDCOM_RESTATED_FY2001_10K"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "MCI long-term debt including current maturities after emergence",
+      "value": 7.36,
+      "unit": "USD billion",
+      "period": "As of 2004-03-31; post-emergence MCI with fresh-start accounting; not WorldCom 2001 debt",
+      "sourceIds": [
+        "MCI_POST_EMERGENCE_Q1_2004"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "MCI new senior notes issued at emergence",
+      "value": 5.7,
+      "unit": "USD billion",
+      "period": "Issued upon emergence 2004-04-20; described in 2004-Q1 release; post-reorganization MCI",
+      "sourceIds": [
+        "MCI_POST_EMERGENCE_Q1_2004"
+      ],
+      "extraction": {
+        "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+        "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Microsoft cash, cash equivalents and short-term investments",
+      "value": 76.843,
+      "unit": "USD billion",
+      "period": "As of FY2026 year end 2026-06-30; SEC 10-K reports USD 76,843 million",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "MD&A, Cash, Cash Equivalents, and Investments; balance sheet",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft net cash from operating activities",
+      "value": 182.9,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-06-30; filing reports USD 182.9 billion",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "MD&A, Cash Flows; consolidated cash flow statement",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft additions to property and equipment, cash flow statement",
+      "value": 115.948,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-06-30; gross cash additions to PPE reported USD 115,948 million",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Consolidated cash flow statement, Investing activities",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Amazon cash, cash equivalents and marketable securities",
+      "value": 123.0,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; issuer reports fair value USD 123.0 billion",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A, Liquidity and Capital Resources",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon net cash from operating activities, trailing twelve months",
+      "value": 161.403,
+      "unit": "USD billion",
+      "period": "TTM ended 2026-06-30; issuer cash flow table reports USD 161,403 million",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A cash flow table, Twelve Months Ended June 30, 2026",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon net purchases of property and equipment, trailing twelve months",
+      "value": 169.007,
+      "unit": "USD billion",
+      "period": "TTM ended 2026-06-30; issuer free-cash-flow reconciliation reports net PPE purchases",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Free cash flow reconciliation; distinguish purchases less sales from management cash-capex definition",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon debt principal and interest contractual payments",
+      "value": 220.309,
+      "unit": "USD billion",
+      "period": "Contractual payment schedule as of 2026-06-30, includes principal and interest through thereafter",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Contractual Obligations table, long-term debt principal and interest; not debt stock",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon unconditional purchase obligations",
+      "value": 130.065,
+      "unit": "USD billion",
+      "period": "Contractual obligation table as of 2026-06-30; timing buckets extend to thereafter",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Contractual Obligations table, unconditional purchase obligations; legal category, not all immediately cancellable",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Alphabet long-term debt carrying value",
+      "value": 98.2,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; rounded issuer disclosure",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Financing",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet uncommenced data-center-related lease payments",
+      "value": 85.2,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; future leases commencing 2026–2031, non-cancelable terms 1–26 years",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Leases; Note 4 leases",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet new debt issued during first half 2026",
+      "value": 51.8,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; USD 20.0bn US-dollar plus USD 31.8bn FX-denominated fixed-rate senior unsecured notes",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Financing",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Meta cash, cash equivalents and marketable securities",
+      "value": 90.26,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; marketable securities included",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Liquidity and Capital Resources",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta restricted cash equivalents for infrastructure purchase escrows",
+      "value": 10.8,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; restricted from general corporate use; expected release 2028–2030 upon obligations",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 4 and MD&A; do not include in unrestricted liquidity",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta net cash from operating activities",
+      "value": 64.088,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Condensed consolidated statements of cash flows",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta cash PPE purchases",
+      "value": 49.11,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; cash purchase of property and equipment, excludes finance lease principal",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Cash Used in Investing Activities",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta capex including finance lease principal payments",
+      "value": 50.92,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; issuer definition includes PPE purchases and finance lease principal",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A liquidity bridge",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta finance lease and operating lease commitments not yet commenced",
+      "value": 278.99,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; commencement remainder 2026 through 2036, lease terms >1 to 30 years",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 9 Commitments and Contingencies; lease obligations not on balance sheet yet",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta non-cancelable contractual commitments",
+      "value": 349.31,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; USD 53.52bn due 2026 and USD 81.65bn due 2027; includes third-party cloud, servers, network, data centers and Reality Labs products",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 9 Commitments and Contingencies; overlapping categories may not be additive to uncommenced lease amount",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta long-term debt carrying value",
+      "value": 83.664,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; face amount USD 84.0bn, net of discount/issuance cost USD 0.336bn",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 8 Long-term Debt",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta R&D expense",
+      "value": 39.354,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Research and Development; reported up 57% year over year",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Oracle cash and cash equivalents",
+      "value": 36.369,
+      "unit": "USD billion",
+      "period": "As of 2026-08-31; includes USD 0.708bn marketable securities separately reported",
+      "sourceIds": [
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "extraction": {
+        "locator": "Condensed consolidated balance sheets",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:36.370291Z"
+      }
+    },
+    {
+      "metric": "Oracle R&D expense excluding stock-based compensation",
+      "value": 7.467,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-05-31; total R&D including stock-based compensation is USD 10.272bn",
+      "sourceIds": [
+        "ORCL_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Research and Development Expenses table",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.938638Z"
+      }
+    },
+    {
+      "metric": "Oracle FY2026 operating cash flow",
+      "value": 32.0,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-05-31; rounded issuer value",
+      "sourceIds": [
+        "ORCL_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "FY2026 audited cash-flow summary/MD&A; issuer reports USD 32.0bn",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.938638Z"
+      }
+    },
+    {
+      "metric": "Oracle FY2026 cash capital expenditures",
+      "value": 55.7,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-05-31; cash used for capital expenditures",
+      "sourceIds": [
+        "ORCL_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "MD&A liquidity discussion; property/equipment cash purchase and capital expenditure definition need separation",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.938638Z"
+      }
+    },
+    {
+      "metric": "Microsoft Copilot paid seats",
+      "value": 30.0,
+      "unit": "million paid seats, lower bound",
+      "period": "FY2026 ended 2026-06-30; Microsoft reports more than 30 million Microsoft 365 Copilot paid seats",
+      "sourceIds": [
+        "MSFT_COPILOT_SEATS_FY26Q4"
+      ],
+      "extraction": {
+        "locator": "FY26 Q4 release/earnings call; issuer-stated lower bound, not exact seat count, retention or recognized revenue",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14"
+      }
+    },
+    {
+      "metric": "Meta R&D year-over-year change",
+      "value": 57.0,
+      "unit": "percent",
+      "period": "Six months ended 2026-06-30 vs six months ended 2025-06-30; issuer reports 57% increase",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Research and Development table; counterevidence to current blanket claim of R&D displacement",
+        "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta June 2026 debt note effective interest rate range",
+      "value": 3.63,
+      "unit": "percent per year lower endpoint",
+      "period": "As of 2026-06-30; full Note 8 effective-rate range is 3.63%–6.48%; Nov-2025 subset lower endpoint 4.27% is not full-note bound",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 8 long-term debt tranche table, full note including May 2026 Notes row",
+        "method": "Re-extracted from archived SEC filing HTML; 4.27% identified only in November 2025 Notes subset",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      },
+      "correctionHistory": {
+        "previousValue": 4.27,
+        "previousPeriod": "As of 2026-06-30",
+        "correction": "4.27% corresponds to November 2025 Notes alone; full Note 8 range minimum is 3.63%."
+      }
+    },
+    {
+      "metric": "Microsoft total debt principal",
+      "value": 40.294,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; includes current USD 9.227bn and long-term USD 31.067bn; debt table total USD 40.294bn",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Note 10—Debt: total debt, current portion, long-term debt; Balance Sheet",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft R&D expense",
+      "value": 35.562,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-06-30; reported USD 35,562m, +9% YoY",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Operating Expenses—Research and Development; Consolidated Statements of Income",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft construction commitments",
+      "value": 34.566,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; obligations by 2027 USD 29.848bn and thereafter USD 4.718bn",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Material Cash Requirements table; Note 6 property and equipment; primarily data centers",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft operating and finance lease cash obligations including imputed interest",
+      "value": 443.506,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; USD 32.411bn in 2027 and USD 411.095bn thereafter",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Material Cash Requirements table; Note 13 Leases; undiscounted future cash obligations",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft purchase commitments",
+      "value": 194.06,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; USD 169.008bn in 2027, USD 25.052bn thereafter",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Material Cash Requirements table; includes datacenter open purchase orders and take-or-pay contracts; section notes category definition",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Amazon cash capital expenditures",
+      "value": 96.3,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; issuer cash capex definition; compared with USD 53.1bn Q2 cash capex",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Cash Flows; cash capital expenditures are not PPE additions; include capex and other adjustments",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon gross net additions to property and equipment",
+      "value": 118.648,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; sum of North America USD 23.265bn, International USD 4.267bn and AWS USD 90.120bn; net additions may include unpaid PPE and therefore are not cash purchases",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 4 Property and Equipment—Total net additions to property and equipment by segment",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      },
+      "interpretation": "Segment rows sum to consolidated USD 118.648bn; includes noncash finance-lease additions (USD 2.172bn in first half) and other noncash PPE acquired but unpaid, so it is not cash capex."
+    },
+    {
+      "metric": "Amazon finance lease principal repayments",
+      "value": 1.599,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Consolidated statements of cash flows, financing activities; principal payments on finance leases",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Alphabet net cash from operating activities",
+      "value": 84.859,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Consolidated statements of cash flows",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet cash purchases of property and equipment",
+      "value": 80.598,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Consolidated statements of cash flows; purchases of PPE; excludes finance-lease additions",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet long-term debt carrying value",
+      "value": 98.165,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; current portion reported separately",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Condensed consolidated balance sheets, long-term debt; Note 7 debt for individual coupons and maturity schedule",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet floating-rate notes",
+      "value": 0.5,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; due 2028; SOFR + 0.52%, resets quarterly",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 7 Long-Term Debt; tranche table",
+        "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Amazon long-term debt carrying value",
+      "value": 128.894,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30; current portion of long-term debt USD 3.330bn; excludes separate short-term debt",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 5 Long-Term Debt: total debt note table; USD 129.665bn gross outstanding before unamortized issuance/discounts; long-term balance after current portion",
+        "method": "Direct SEC filing HTML extraction; source values in USD millions converted to billions where stated.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Alphabet research and development expense",
+      "value": 35.251,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; reported USD 35,251 million, up from USD 27,364 million in 2025 first half",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A Research and Development table; 10-Q filing",
+        "method": "SEC table value in USD millions divided by 1,000",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Amazon cash provided by financing activities",
+      "value": 62.913,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Consolidated cash flow statement; MD&A Financing activities",
+        "method": "SEC reported USD 62,913 million divided by 1,000",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Microsoft cash financing outflow for finance leases",
+      "value": 3.101,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-06-30; cash paid through financing cash flow",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Note 13 Leases: supplemental cash flow information; financing cash flows from finance leases",
+        "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Microsoft right-of-use assets obtained under finance leases",
+      "value": 24.608,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-06-30; noncash ROU asset additions",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Note 13 Leases: ROU assets obtained in exchange for lease obligations",
+        "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Amazon property and equipment acquired under finance leases",
+      "value": 2.1,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30; noncash additions reported approximately USD 2.1bn",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "MD&A financing activities; PPE acquired under finance leases",
+        "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Oracle future principal payments on borrowings",
+      "value": 130.105,
+      "unit": "USD billion",
+      "period": "As of 2026-05-31; fiscal 2027 USD 7.210bn, FY2028 USD 10.145bn, FY2029 USD 5.500bn, FY2030 USD 7.250bn, FY2031 USD 9.750bn, thereafter USD 90.250bn",
+      "sourceIds": [
+        "ORCL_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Note 7 Debt; Future principal payments for all borrowings table",
+        "method": "USD millions divided by 1,000; includes all borrowing principal, not carrying debt.",
+        "retrievedAt": "2026-10-14T17:14:35.938638Z"
+      }
+    },
+    {
+      "metric": "Oracle finance-lease cash payments",
+      "value": 0.452,
+      "unit": "USD billion",
+      "period": "FY2026 ended 2026-05-31; cash paid related to finance lease liabilities",
+      "sourceIds": [
+        "ORCL_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Note 9 Leases; cash paid for amounts included in measurement of lease liabilities",
+        "method": "USD millions divided by 1,000; cash payment is not equal to principal only.",
+        "retrievedAt": "2026-10-14T17:14:35.938638Z"
+      }
+    },
+    {
+      "metric": "MSFT unrestricted cash and short-term investments",
+      "value": 76.843,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Balance-sheet table; excludes restricted/noncurrent assets",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "MSFT debt carrying value total",
+      "value": 40.294,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Current portion 9.227 plus long-term 31.067",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "MSFT face principal debt",
+      "value": 46.136,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "MSFT_10K_FY2026"
+      ],
+      "extraction": {
+        "locator": "Note 10 principal schedule; FY2027 9.250 plus thereafter 36.886",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.198942Z"
+      }
+    },
+    {
+      "metric": "Amazon unrestricted cash and marketable securities",
+      "value": 122.988,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 5 cash table excludes separately listed restricted 2.714",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon restricted cash and securities",
+      "value": 2.714,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Cash table restricted amount; not general liquidity",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Amazon total debt carrying value",
+      "value": 132.224,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "AMZN_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Current portion 3.330 plus long-term debt 128.894",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.568071Z"
+      }
+    },
+    {
+      "metric": "Alphabet cash and marketable securities",
+      "value": 242.474,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Balance sheet table",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet face long-term debt",
+      "value": 101.085,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 7 face value",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Alphabet debt carrying value total",
+      "value": 100.164,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Face 101.085 less 0.921 unamortized discount/issuance costs",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:34.951160Z"
+      }
+    },
+    {
+      "metric": "Meta restricted cash and equivalents",
+      "value": 13.809,
+      "unit": "USD billion",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Cash flow reconciliation; restricted from general use",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta finance-lease principal payments",
+      "value": 1.805,
+      "unit": "USD billion",
+      "period": "Six months ended 2026-06-30",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Cash-flow statement financing activities",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Meta full-note effective-rate minimum",
+      "value": 3.63,
+      "unit": "percent per year",
+      "period": "As of 2026-06-30",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "extraction": {
+        "locator": "Note 8 full-note range 3.63%–6.48%; distinct from November 2025 subset",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:35.465587Z"
+      }
+    },
+    {
+      "metric": "Oracle Q1 FY2027 unrestricted cash plus marketable securities",
+      "value": 37.077,
+      "unit": "USD billion",
+      "period": "As of 2026-08-31",
+      "sourceIds": [
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "extraction": {
+        "locator": "Interim balance sheet; current date explicitly separated from annual maturity ladder",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:36.370291Z"
+      }
+    },
+    {
+      "metric": "Oracle Q1 FY2027 current debt carrying value",
+      "value": 7.625,
+      "unit": "USD billion",
+      "period": "As of 2026-08-31",
+      "sourceIds": [
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "extraction": {
+        "locator": "Interim balance sheet",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:36.370291Z"
+      }
+    },
+    {
+      "metric": "Oracle Q1 FY2027 noncurrent debt carrying value",
+      "value": 117.712,
+      "unit": "USD billion",
+      "period": "As of 2026-08-31",
+      "sourceIds": [
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "extraction": {
+        "locator": "Interim balance sheet",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:36.370291Z"
+      }
+    },
+    {
+      "metric": "Oracle finance lease liabilities",
+      "value": 9.185,
+      "unit": "USD billion",
+      "period": "As of 2026-08-31",
+      "sourceIds": [
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "extraction": {
+        "locator": "Note 9 current 0.749 plus noncurrent 8.436",
+        "method": "Re-extracted from SEC filing HTML archived for this closure.",
+        "retrievedAt": "2026-10-14T17:14:36.370291Z"
+      }
+    }
+  ],
+  "correctionHistory": {
+    "removedDuplicateRows": [
+      {
+        "metric": "Oracle additional data-center lease commitments from FY2025 baseline",
+        "value": 43.4,
+        "period": "As of 2025-05-31; scheduled commencement FY2026–FY2028, 10–16 year terms; superseded vintage retained for history",
+        "reason": "Duplicate Oracle FY2025 lease commitment row duplicated the preceding 43.4bn historical observation; retained original observation once."
+      }
+    ],
+    "dateRepair": "For baseline rows sourced from the six issuer filings re-fetched in this closure, extraction timestamps now reference the actual retrieval-log UTC completion event. Other source rows retain original times; future-dated source rows outside this issuer scope were not rewritten.",
+    "originalBadMetadataObserved": {
+      "registryRetrievedAt": "2026-10-14T18:20:00Z",
+      "baselineExtractionRetrievedAtValuesObserved": [
+        "2026-10-14T18:25:00Z",
+        "2026-10-14T18:30:00Z",
+        "2026-10-14T18:40:00Z"
+      ],
+      "note": "These exact future-stamped values were visible in the pre-repair canonical artifact-root/sample rows. The registry preserves each source row original value in source-registry.json correctionHistory. For baseline rows whose source tables were re-fetched and re-extracted, the prior row-specific timestamp-to-observation mapping was not independently persisted before repair; no row mapping is inferred here."
+    }
+  }
+}

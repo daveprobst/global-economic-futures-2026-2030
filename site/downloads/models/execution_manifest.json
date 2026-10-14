@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-10-14T19:18:32.896Z",
+  "runId": "gef-main-20261014",
+  "seed": 20261014,
+  "requestedSamples": 10000,
+  "commandSpecPath": "run-root/models/global/command-spec.json",
+  "state": "passed",
+  "checks": [
+    {
+      "kind": "deterministic",
+      "commandName": "python3",
+      "commandHash": "0957993cea",
+      "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+      "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "run-root/validations/logs/1792005485573-0957993cea.log",
+      "expectedOutputs": [
+        "run-root/models/global/outputs/deterministic.json",
+        "run-root/models/global/outputs/deterministic.csv"
+      ],
+      "verifiedOutputs": [
+        "run-root/models/global/outputs/deterministic.json",
+        "run-root/models/global/outputs/deterministic.csv"
+      ],
+      "missingOutputs": [],
+      "stdoutTail": "deterministic: 9 scenarios, 144 rows\n",
+      "stderrTail": "",
+      "error": null
+    },
+    {
+      "kind": "monte_carlo",
+      "commandName": "python3",
+      "commandHash": "7e0c634419",
+      "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+      "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "run-root/validations/logs/1792005507499-7e0c634419.log",
+      "expectedOutputs": [
+        "run-root/models/global/outputs/monte_carlo.json",
+        "run-root/models/global/outputs/monte_carlo_summary.csv"
+      ],
+      "verifiedOutputs": [
+        "run-root/models/global/outputs/monte_carlo.json",
+        "run-root/models/global/outputs/monte_carlo_summary.csv"
+      ],
+      "missingOutputs": [],
+      "stdoutTail": "monte_carlo: n=10000, rows=144\n",
+      "stderrTail": "",
+      "error": null
+    },
+    {
+      "kind": "sensitivity",
+      "commandName": "python3",
+      "commandHash": "948ce16a4e",
+      "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+      "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "run-root/validations/logs/1792005512538-948ce16a4e.log",
+      "expectedOutputs": [
+        "run-root/models/global/outputs/sensitivity.json",
+        "run-root/models/global/outputs/sensitivity.csv"
+      ],
+      "verifiedOutputs": [
+        "run-root/models/global/outputs/sensitivity.json",
+        "run-root/models/global/outputs/sensitivity.csv"
+      ],
+      "missingOutputs": [],
+      "stdoutTail": "sensitivity: params=11 results=296\n",
+      "stderrTail": "",
+      "error": null
+    },
+    {
+      "kind": "accounting",
+      "commandName": "python3",
+      "commandHash": "38be1c167b",
+      "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+      "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "run-root/validations/logs/1792005512632-38be1c167b.log",
+      "expectedOutputs": [
+        "run-root/models/global/outputs/accounting.json"
+      ],
+      "verifiedOutputs": [
+        "run-root/models/global/outputs/accounting.json"
+      ],
+      "missingOutputs": [],
+      "stdoutTail": "accounting: identities=49 passed=True\n",
+      "stderrTail": "",
+      "error": null
+    },
+    {
+      "kind": "tests",
+      "commandName": "python3",
+      "commandHash": "dae3947d0e",
+      "codeHash": "f04d10abd0356a78409271ae878fdafd568cb28f1e2fa7f9ed928dc7a7a3cee1",
+      "inputHash": "593b0507c7ec7a2ad34a62b40c0893177b00359ad295f771f1d0c00f71b21322",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "run-root/validations/logs/1792005512895-dae3947d0e.log",
+      "expectedOutputs": [
+        "run-root/models/global/outputs/tests.json"
+      ],
+      "verifiedOutputs": [
+        "run-root/models/global/outputs/tests.json"
+      ],
+      "missingOutputs": [],
+      "stdoutTail": "tests: total=50 passed=50 failed=0\n",
+      "stderrTail": "",
+      "error": null
+    }
+  ],
+  "excludedKinds": []
+}

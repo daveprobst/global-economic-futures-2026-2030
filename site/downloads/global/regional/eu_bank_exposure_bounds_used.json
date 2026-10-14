@@ -1,0 +1,11 @@
+{
+  "sourceId": "BIS_CBS_B4_2026Q1",
+  "period": "2026-Q1",
+  "unit": "USD billions",
+  "reportedClaimsUSD_bn": 69.824124,
+  "availableReporters": 9,
+  "reporterCountEU27": 27,
+  "lower_bound_usd_bn": 69.824124,
+  "upper_bound_usd_bn_coverage_scaled": 209.472372,
+  "classification": "reported_lower_bound_with_coverage_scaled_upper_bound"
+}

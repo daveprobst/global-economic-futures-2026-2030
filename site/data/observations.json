@@ -1,0 +1,3320 @@
+[
+ {
+  "region": "us",
+  "metric": "Amazon net cash provided by operating activities",
+  "value": 139.514,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; reported in USD millions as 139,514",
+  "sourceIds": [
+   "AMZN_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon cash capital expenditures (management definition)",
+  "value": 128.3,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; primarily technology infrastructure and fulfillment capacity; differs from gross cash purchases of PPE",
+  "sourceIds": [
+   "AMZN_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon AWS net sales",
+  "value": 128.725,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; segment revenue, not AI-specific revenue",
+  "sourceIds": [
+   "AMZN_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet operating cash flow",
+  "value": 164.7,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31",
+  "sourceIds": [
+   "GOOG_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet capital expenditures",
+  "value": 91.4,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; primarily technical infrastructure",
+  "sourceIds": [
+   "GOOG_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet research and development expense",
+  "value": 61.087,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; reported in USD millions as 61,087",
+  "sourceIds": [
+   "GOOG_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta capital expenditures including principal payments on finance leases",
+  "value": 72.22,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; includes USD 69.691bn purchases of property and equipment and USD 2.524bn finance-lease principal payments",
+  "sourceIds": [
+   "META_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta net cash provided by operating activities",
+  "value": 115.8,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31",
+  "sourceIds": [
+   "META_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta research and development expense",
+  "value": 57.372,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-12-31; increased 31% year over year, increase mostly attributed by issuer to employee compensation and infrastructure costs including AI initiatives",
+  "sourceIds": [
+   "META_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle net cash provided by operating activities",
+  "value": 20.821,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-05-31",
+  "sourceIds": [
+   "ORCL_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle capital expenditures",
+  "value": 21.215,
+  "unit": "USD billion",
+  "period": "FY2025, year ended 2025-05-31",
+  "sourceIds": [
+   "ORCL_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle additional lease commitments primarily for data centers",
+  "value": 43.4,
+  "unit": "USD billion",
+  "period": "As of 2025-05-31; expected commencement FY2026–FY2028 with 10–16 year terms; off-balance-sheet as of reporting date per filing",
+  "sourceIds": [
+   "ORCL_10K_FY2025"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Federal Reserve study: share of publicly listed firms classified as distressed",
+  "value": 37.0,
+  "unit": "percent of sample firms",
+  "period": "Historical firm-panel estimate around 2022 in June 2023 analysis; not a 2026 observation or hyperscaler-specific",
+  "sourceIds": [
+   "FED_DISTRESSED_FIRMS_2023"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Federal Reserve study: investment response for distressed firms after a one-standard-deviation monetary tightening",
+  "value": -3.7,
+  "unit": "percent of initial capital stock, cumulative after 2 years",
+  "period": "Estimated historical firm-panel response; model/sample estimate, not a forecast or hyperscaler estimate",
+  "sourceIds": [
+   "FED_DISTRESSED_FIRMS_2023"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Generative AI field study: average worker productivity change",
+  "value": 14.0,
+  "unit": "percent change in issues resolved per hour",
+  "period": "Study of staggered deployment among 5,179 customer-support agents; NBER Working Paper 31161, 2023 version; not a vendor willingness-to-pay or AI revenue measure",
+  "sourceIds": [
+   "NBER_GENAI_AT_WORK_31161"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "WorldCom net cash from operating activities, restated",
+  "value": 2.845,
+  "unit": "USD billion",
+  "period": "FY2001 ended 2001-12-31; restated in 2003 Form 10-K; originally reported USD 7.994bn",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "WorldCom net cash used in investing activities, restated",
+  "value": -6.122,
+  "unit": "USD billion",
+  "period": "FY2001 ended 2001-12-31; restated in 2003 Form 10-K",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "MCI long-term debt including current maturities after emergence",
+  "value": 7.36,
+  "unit": "USD billion",
+  "period": "As of 2004-03-31; post-emergence MCI with fresh-start accounting; not WorldCom 2001 debt",
+  "sourceIds": [
+   "MCI_POST_EMERGENCE_Q1_2004"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "MCI new senior notes issued at emergence",
+  "value": 5.7,
+  "unit": "USD billion",
+  "period": "Issued upon emergence 2004-04-20; described in 2004-Q1 release; post-reorganization MCI",
+  "sourceIds": [
+   "MCI_POST_EMERGENCE_Q1_2004"
+  ],
+  "extraction": {
+   "locator": "See source-specific filing and topic in source map; prior extraction did not retain page/table locators.",
+   "method": "Carry-forward from prior bundle; not independently re-extracted in this repair unless report specifies otherwise.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft cash, cash equivalents and short-term investments",
+  "value": 76.843,
+  "unit": "USD billion",
+  "period": "As of FY2026 year end 2026-06-30; SEC 10-K reports USD 76,843 million",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "MD&A, Cash, Cash Equivalents, and Investments; balance sheet",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft net cash from operating activities",
+  "value": 182.9,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-06-30; filing reports USD 182.9 billion",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "MD&A, Cash Flows; consolidated cash flow statement",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft additions to property and equipment, cash flow statement",
+  "value": 115.948,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-06-30; gross cash additions to PPE reported USD 115,948 million",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Consolidated cash flow statement, Investing activities",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon cash, cash equivalents and marketable securities",
+  "value": 123.0,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; issuer reports fair value USD 123.0 billion",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A, Liquidity and Capital Resources",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon net cash from operating activities, trailing twelve months",
+  "value": 161.403,
+  "unit": "USD billion",
+  "period": "TTM ended 2026-06-30; issuer cash flow table reports USD 161,403 million",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A cash flow table, Twelve Months Ended June 30, 2026",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon net purchases of property and equipment, trailing twelve months",
+  "value": 169.007,
+  "unit": "USD billion",
+  "period": "TTM ended 2026-06-30; issuer free-cash-flow reconciliation reports net PPE purchases",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Free cash flow reconciliation; distinguish purchases less sales from management cash-capex definition",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon debt principal and interest contractual payments",
+  "value": 220.309,
+  "unit": "USD billion",
+  "period": "Contractual payment schedule as of 2026-06-30, includes principal and interest through thereafter",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Contractual Obligations table, long-term debt principal and interest; not debt stock",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon unconditional purchase obligations",
+  "value": 130.065,
+  "unit": "USD billion",
+  "period": "Contractual obligation table as of 2026-06-30; timing buckets extend to thereafter",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Contractual Obligations table, unconditional purchase obligations; legal category, not all immediately cancellable",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet long-term debt carrying value",
+  "value": 98.2,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; rounded issuer disclosure",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Financing",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet uncommenced data-center-related lease payments",
+  "value": 85.2,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; future leases commencing 2026–2031, non-cancelable terms 1–26 years",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Leases; Note 4 leases",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet new debt issued during first half 2026",
+  "value": 51.8,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; USD 20.0bn US-dollar plus USD 31.8bn FX-denominated fixed-rate senior unsecured notes",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Financing",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta cash, cash equivalents and marketable securities",
+  "value": 90.26,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; marketable securities included",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Liquidity and Capital Resources",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta restricted cash equivalents for infrastructure purchase escrows",
+  "value": 10.8,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; restricted from general corporate use; expected release 2028–2030 upon obligations",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 4 and MD&A; do not include in unrestricted liquidity",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta net cash from operating activities",
+  "value": 64.088,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Condensed consolidated statements of cash flows",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta cash PPE purchases",
+  "value": 49.11,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; cash purchase of property and equipment, excludes finance lease principal",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Cash Used in Investing Activities",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta capex including finance lease principal payments",
+  "value": 50.92,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; issuer definition includes PPE purchases and finance lease principal",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A liquidity bridge",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta finance lease and operating lease commitments not yet commenced",
+  "value": 278.99,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; commencement remainder 2026 through 2036, lease terms >1 to 30 years",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 9 Commitments and Contingencies; lease obligations not on balance sheet yet",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta non-cancelable contractual commitments",
+  "value": 349.31,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; USD 53.52bn due 2026 and USD 81.65bn due 2027; includes third-party cloud, servers, network, data centers and Reality Labs products",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 9 Commitments and Contingencies; overlapping categories may not be additive to uncommenced lease amount",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta long-term debt carrying value",
+  "value": 83.664,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; face amount USD 84.0bn, net of discount/issuance cost USD 0.336bn",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 8 Long-term Debt",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta R&D expense",
+  "value": 39.354,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Research and Development; reported up 57% year over year",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle cash and cash equivalents",
+  "value": 36.369,
+  "unit": "USD billion",
+  "period": "As of 2026-08-31; includes USD 0.708bn marketable securities separately reported",
+  "sourceIds": [
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "extraction": {
+   "locator": "Condensed consolidated balance sheets",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:36.370291Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle R&D expense excluding stock-based compensation",
+  "value": 7.467,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-05-31; total R&D including stock-based compensation is USD 10.272bn",
+  "sourceIds": [
+   "ORCL_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Research and Development Expenses table",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.938638Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle FY2026 operating cash flow",
+  "value": 32.0,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-05-31; rounded issuer value",
+  "sourceIds": [
+   "ORCL_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "FY2026 audited cash-flow summary/MD&A; issuer reports USD 32.0bn",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.938638Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle FY2026 cash capital expenditures",
+  "value": 55.7,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-05-31; cash used for capital expenditures",
+  "sourceIds": [
+   "ORCL_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "MD&A liquidity discussion; property/equipment cash purchase and capital expenditure definition need separation",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.938638Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft Copilot paid seats",
+  "value": 30.0,
+  "unit": "million paid seats, lower bound",
+  "period": "FY2026 ended 2026-06-30; Microsoft reports more than 30 million Microsoft 365 Copilot paid seats",
+  "sourceIds": [
+   "MSFT_COPILOT_SEATS_FY26Q4"
+  ],
+  "extraction": {
+   "locator": "FY26 Q4 release/earnings call; issuer-stated lower bound, not exact seat count, retention or recognized revenue",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta R&D year-over-year change",
+  "value": 57.0,
+  "unit": "percent",
+  "period": "Six months ended 2026-06-30 vs six months ended 2025-06-30; issuer reports 57% increase",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Research and Development table; counterevidence to current blanket claim of R&D displacement",
+   "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta June 2026 debt note effective interest rate range",
+  "value": 3.63,
+  "unit": "percent per year lower endpoint",
+  "period": "As of 2026-06-30; full Note 8 effective-rate range is 3.63%–6.48%; Nov-2025 subset lower endpoint 4.27% is not full-note bound",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 8 long-term debt tranche table, full note including May 2026 Notes row",
+   "method": "Re-extracted from archived SEC filing HTML; 4.27% identified only in November 2025 Notes subset",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  },
+  "correctionHistory": {
+   "previousValue": 4.27,
+   "previousPeriod": "As of 2026-06-30",
+   "correction": "4.27% corresponds to November 2025 Notes alone; full Note 8 range minimum is 3.63%."
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft total debt principal",
+  "value": 40.294,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; includes current USD 9.227bn and long-term USD 31.067bn; debt table total USD 40.294bn",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Note 10—Debt: total debt, current portion, long-term debt; Balance Sheet",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft R&D expense",
+  "value": 35.562,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-06-30; reported USD 35,562m, +9% YoY",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Operating Expenses—Research and Development; Consolidated Statements of Income",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft construction commitments",
+  "value": 34.566,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; obligations by 2027 USD 29.848bn and thereafter USD 4.718bn",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Material Cash Requirements table; Note 6 property and equipment; primarily data centers",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft operating and finance lease cash obligations including imputed interest",
+  "value": 443.506,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; USD 32.411bn in 2027 and USD 411.095bn thereafter",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Material Cash Requirements table; Note 13 Leases; undiscounted future cash obligations",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft purchase commitments",
+  "value": 194.06,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; USD 169.008bn in 2027, USD 25.052bn thereafter",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Material Cash Requirements table; includes datacenter open purchase orders and take-or-pay contracts; section notes category definition",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon cash capital expenditures",
+  "value": 96.3,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; issuer cash capex definition; compared with USD 53.1bn Q2 cash capex",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Cash Flows; cash capital expenditures are not PPE additions; include capex and other adjustments",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon gross net additions to property and equipment",
+  "value": 118.648,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; sum of North America USD 23.265bn, International USD 4.267bn and AWS USD 90.120bn; net additions may include unpaid PPE and therefore are not cash purchases",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 4 Property and Equipment—Total net additions to property and equipment by segment",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  },
+  "interpretation": "Segment rows sum to consolidated USD 118.648bn; includes noncash finance-lease additions (USD 2.172bn in first half) and other noncash PPE acquired but unpaid, so it is not cash capex."
+ },
+ {
+  "region": "us",
+  "metric": "Amazon finance lease principal repayments",
+  "value": 1.599,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Consolidated statements of cash flows, financing activities; principal payments on finance leases",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet net cash from operating activities",
+  "value": 84.859,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Consolidated statements of cash flows",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet cash purchases of property and equipment",
+  "value": 80.598,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Consolidated statements of cash flows; purchases of PPE; excludes finance-lease additions",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet long-term debt carrying value",
+  "value": 98.165,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; current portion reported separately",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Condensed consolidated balance sheets, long-term debt; Note 7 debt for individual coupons and maturity schedule",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet floating-rate notes",
+  "value": 0.5,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; due 2028; SOFR + 0.52%, resets quarterly",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 7 Long-Term Debt; tranche table",
+   "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon long-term debt carrying value",
+  "value": 128.894,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30; current portion of long-term debt USD 3.330bn; excludes separate short-term debt",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 5 Long-Term Debt: total debt note table; USD 129.665bn gross outstanding before unamortized issuance/discounts; long-term balance after current portion",
+   "method": "Direct SEC filing HTML extraction; source values in USD millions converted to billions where stated.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet research and development expense",
+  "value": 35.251,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; reported USD 35,251 million, up from USD 27,364 million in 2025 first half",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A Research and Development table; 10-Q filing",
+   "method": "SEC table value in USD millions divided by 1,000",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon cash provided by financing activities",
+  "value": 62.913,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Consolidated cash flow statement; MD&A Financing activities",
+   "method": "SEC reported USD 62,913 million divided by 1,000",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft cash financing outflow for finance leases",
+  "value": 3.101,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-06-30; cash paid through financing cash flow",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Note 13 Leases: supplemental cash flow information; financing cash flows from finance leases",
+   "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Microsoft right-of-use assets obtained under finance leases",
+  "value": 24.608,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-06-30; noncash ROU asset additions",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Note 13 Leases: ROU assets obtained in exchange for lease obligations",
+   "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon property and equipment acquired under finance leases",
+  "value": 2.1,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30; noncash additions reported approximately USD 2.1bn",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "MD&A financing activities; PPE acquired under finance leases",
+   "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle future principal payments on borrowings",
+  "value": 130.105,
+  "unit": "USD billion",
+  "period": "As of 2026-05-31; fiscal 2027 USD 7.210bn, FY2028 USD 10.145bn, FY2029 USD 5.500bn, FY2030 USD 7.250bn, FY2031 USD 9.750bn, thereafter USD 90.250bn",
+  "sourceIds": [
+   "ORCL_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Note 7 Debt; Future principal payments for all borrowings table",
+   "method": "USD millions divided by 1,000; includes all borrowing principal, not carrying debt.",
+   "retrievedAt": "2026-10-14T17:14:35.938638Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle finance-lease cash payments",
+  "value": 0.452,
+  "unit": "USD billion",
+  "period": "FY2026 ended 2026-05-31; cash paid related to finance lease liabilities",
+  "sourceIds": [
+   "ORCL_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Note 9 Leases; cash paid for amounts included in measurement of lease liabilities",
+   "method": "USD millions divided by 1,000; cash payment is not equal to principal only.",
+   "retrievedAt": "2026-10-14T17:14:35.938638Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "MSFT unrestricted cash and short-term investments",
+  "value": 76.843,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Balance-sheet table; excludes restricted/noncurrent assets",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "MSFT debt carrying value total",
+  "value": 40.294,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Current portion 9.227 plus long-term 31.067",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "MSFT face principal debt",
+  "value": 46.136,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "MSFT_10K_FY2026"
+  ],
+  "extraction": {
+   "locator": "Note 10 principal schedule; FY2027 9.250 plus thereafter 36.886",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.198942Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon unrestricted cash and marketable securities",
+  "value": 122.988,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 5 cash table excludes separately listed restricted 2.714",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon restricted cash and securities",
+  "value": 2.714,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Cash table restricted amount; not general liquidity",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Amazon total debt carrying value",
+  "value": 132.224,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "AMZN_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Current portion 3.330 plus long-term debt 128.894",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.568071Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet cash and marketable securities",
+  "value": 242.474,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Balance sheet table",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet face long-term debt",
+  "value": 101.085,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 7 face value",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Alphabet debt carrying value total",
+  "value": 100.164,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "GOOG_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Face 101.085 less 0.921 unamortized discount/issuance costs",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:34.951160Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta restricted cash and equivalents",
+  "value": 13.809,
+  "unit": "USD billion",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Cash flow reconciliation; restricted from general use",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta finance-lease principal payments",
+  "value": 1.805,
+  "unit": "USD billion",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Cash-flow statement financing activities",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Meta full-note effective-rate minimum",
+  "value": 3.63,
+  "unit": "percent per year",
+  "period": "As of 2026-06-30",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "extraction": {
+   "locator": "Note 8 full-note range 3.63%–6.48%; distinct from November 2025 subset",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:35.465587Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle Q1 FY2027 unrestricted cash plus marketable securities",
+  "value": 37.077,
+  "unit": "USD billion",
+  "period": "As of 2026-08-31",
+  "sourceIds": [
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "extraction": {
+   "locator": "Interim balance sheet; current date explicitly separated from annual maturity ladder",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:36.370291Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle Q1 FY2027 current debt carrying value",
+  "value": 7.625,
+  "unit": "USD billion",
+  "period": "As of 2026-08-31",
+  "sourceIds": [
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "extraction": {
+   "locator": "Interim balance sheet",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:36.370291Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle Q1 FY2027 noncurrent debt carrying value",
+  "value": 117.712,
+  "unit": "USD billion",
+  "period": "As of 2026-08-31",
+  "sourceIds": [
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "extraction": {
+   "locator": "Interim balance sheet",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:36.370291Z"
+  }
+ },
+ {
+  "region": "us",
+  "metric": "Oracle finance lease liabilities",
+  "value": 9.185,
+  "unit": "USD billion",
+  "period": "As of 2026-08-31",
+  "sourceIds": [
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "extraction": {
+   "locator": "Note 9 current 0.749 plus noncurrent 8.436",
+   "method": "Re-extracted from SEC filing HTML archived for this closure.",
+   "retrievedAt": "2026-10-14T17:14:36.370291Z"
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China current-account balance, revised BOP",
+  "value": 735.0,
+  "unit": "USD billion",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China capital and financial-account balance (includes reserve assets), revised BOP",
+  "value": -773.5,
+  "unit": "USD billion",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China net errors and omissions, revised BOP",
+  "value": 38.5,
+  "unit": "USD billion",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China external financial assets",
+  "value": 11786.0,
+  "unit": "USD billion, end-period stock",
+  "period": "end-2025",
+  "sourceIds": [
+   "SAFE_IIP_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China external financial liabilities",
+  "value": 7714.7,
+  "unit": "USD billion, end-period stock",
+  "period": "end-2025",
+  "sourceIds": [
+   "SAFE_IIP_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China net external financial assets",
+  "value": 4071.3,
+  "unit": "USD billion, end-period stock",
+  "period": "end-2025",
+  "sourceIds": [
+   "SAFE_IIP_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China 1-year Loan Prime Rate",
+  "value": 3.0,
+  "unit": "percent per annum",
+  "period": "fixing 2026-09-20",
+  "sourceIds": [
+   "PBOC_LPR_20260920"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China over-5-year Loan Prime Rate",
+  "value": 3.5,
+  "unit": "percent per annum",
+  "period": "fixing 2026-09-20",
+  "sourceIds": [
+   "PBOC_LPR_20260920"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China population aged 16–59, annual communiqué",
+  "value": 851.36,
+  "unit": "million persons; 60.6% of population",
+  "period": "year-end 2025; annual communiqué vintage",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China population aged 15–59, 1% sample survey",
+  "value": 869.87,
+  "unit": "million persons; 61.89% of population",
+  "period": "reference 2025-11-01; sample survey vintage",
+  "sourceIds": [
+   "NBS_POP_SAMPLE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Real estate development investment growth",
+  "value": -17.2,
+  "unit": "percent year-on-year, comparable basis",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Newly built commercial floor area sold growth",
+  "value": -8.7,
+  "unit": "percent year-on-year, comparable basis",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Developer domestic-loan funding growth",
+  "value": -7.3,
+  "unit": "percent year-on-year",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Per-capita disposable income growth, real",
+  "value": 5.0,
+  "unit": "percent year-on-year",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Per-capita consumption expenditure growth, real",
+  "value": 4.4,
+  "unit": "percent year-on-year",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "National CPI inflation",
+  "value": 0.9,
+  "unit": "percent year-on-year",
+  "period": "September 2026; January–September average also +0.9%",
+  "sourceIds": [
+   "NBS_CPI_202609"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Total retail sales of consumer goods growth",
+  "value": 3.7,
+  "unit": "percent year-on-year",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Investment in fixed assets (excluding rural households) growth",
+  "value": -3.8,
+  "unit": "percent year-on-year, comparable basis",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China current-account balance, Q2 2026",
+  "value": 193.7,
+  "unit": "USD billion, quarterly flow",
+  "period": "Q2 2026",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China current-account balance, first half 2026",
+  "value": 378.0,
+  "unit": "USD billion, cumulative flow",
+  "period": "H1 2026",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China capital and financial-account balance, first half 2026",
+  "value": -345.2,
+  "unit": "USD billion, cumulative flow",
+  "period": "H1 2026; reserve treatment per SAFE BOP table",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China external financial net assets",
+  "value": 3824.9,
+  "unit": "USD billion, end-period stock",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_IIP_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China external portfolio-investment liabilities",
+  "value": 2623.2,
+  "unit": "USD billion, end-period stock",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_IIP_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China external direct-investment liabilities",
+  "value": 4170.0,
+  "unit": "USD billion, end-period stock",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_IIP_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China gross external debt",
+  "value": 2498.2,
+  "unit": "USD billion, end-period stock",
+  "period": "end-June 2026; contractual original maturity basis",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China short-term gross external debt",
+  "value": 1468.6,
+  "unit": "USD billion, end-period stock; 59% of external debt",
+  "period": "end-June 2026; original maturity <= 1 year; includes trade credit exposure",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China banking-sector gross external debt",
+  "value": 997.4,
+  "unit": "USD billion, end-period stock",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China external debt of other sectors",
+  "value": 1012.7,
+  "unit": "USD billion, end-period stock; includes direct-investment intercompany lending",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China social financing outstanding",
+  "value": 462.06,
+  "unit": "RMB trillion, end-period stock; +7.4% y/y",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "RMB loans extended to real economy, social-financing balance",
+  "value": 279.16,
+  "unit": "RMB trillion, end-period stock; +5.3% y/y",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Government bonds within social financing",
+  "value": 101.36,
+  "unit": "RMB trillion, end-period stock; +14.2% y/y",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "New corporate loan weighted-average rate",
+  "value": 3.0,
+  "unit": "percent per annum, weighted average for newly issued loans",
+  "period": "June 2026; about 20 basis points below June 2025",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "New personal housing loan weighted-average rate",
+  "value": 3.1,
+  "unit": "percent per annum, weighted average for newly issued loans",
+  "period": "June 2026; approximately unchanged y/y",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China local debt-swap bonds issued",
+  "value": 2.0,
+  "unit": "RMB trillion; program issuance completed",
+  "period": "calendar 2025",
+  "sourceIds": [
+   "MOF_DEBT_IMPLEMENTATION_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "IMF estimated augmented government debt",
+  "value": 126.6,
+  "unit": "percent of GDP; IMF staff estimate including government-guided funds and LGFV activity",
+  "period": "2025 estimate, IMF 2026 Article IV vintage",
+  "sourceIds": [
+   "IMF_CHINA_ARTICLEIV_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "IMF estimated LGFV debt",
+  "value": 50.9,
+  "unit": "percent of GDP; IMF staff estimated LGFV debt component, not official published LGFV balance sheet",
+  "period": "2025 estimate, IMF 2026 Article IV vintage",
+  "sourceIds": [
+   "IMF_CHINA_ARTICLEIV_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Industrial PPI inflation",
+  "value": 3.8,
+  "unit": "percent year-on-year; 0.4 percent month-on-month",
+  "period": "August 2026 (historical month; superseded as latest by September release)",
+  "sourceIds": [
+   "NBS_PPI_202608"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Real estate investment growth",
+  "value": -19.9,
+  "unit": "percent year-on-year, comparable basis",
+  "period": "January-August 2026 cumulative",
+  "sourceIds": [
+   "NBS_PROPERTY_202608"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "New commercial building sales area growth",
+  "value": -12.1,
+  "unit": "percent year-on-year",
+  "period": "January-August 2026 cumulative",
+  "sourceIds": [
+   "NBS_PROPERTY_202608"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Developer domestic loan funding growth",
+  "value": -33.3,
+  "unit": "percent year-on-year",
+  "period": "January-August 2026 cumulative",
+  "sourceIds": [
+   "NBS_PROPERTY_202608"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Developer deposits and advance receipts growth",
+  "value": -14.8,
+  "unit": "percent year-on-year",
+  "period": "January-August 2026 cumulative",
+  "sourceIds": [
+   "NBS_PROPERTY_202608"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Commercial buildings for sale area",
+  "value": 753.49,
+  "unit": "million square metres, end-period completed unsold inventory measure",
+  "period": "end-August 2026; -1.1% y/y",
+  "sourceIds": [
+   "NBS_PROPERTY_202608"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Portfolio investment net flows, excluding reserves",
+  "value": -425.6,
+  "unit": "USD billion, annual flow; negative balance",
+  "period": "calendar 2025 revised BOP",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Other investment net flows, excluding reserves",
+  "value": -293.2,
+  "unit": "USD billion, annual flow; negative balance",
+  "period": "calendar 2025 revised BOP",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Reserve assets financial-account balance",
+  "value": 46.8,
+  "unit": "USD billion, annual flow; positive balance in SAFE BOP sign convention",
+  "period": "calendar 2025 revised BOP",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Financial account excluding reserve assets",
+  "value": -820.1,
+  "unit": "USD billion, annual flow",
+  "period": "calendar 2025 revised BOP",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "H1 portfolio investment balance, excluding reserves",
+  "value": -151.2,
+  "unit": "USD billion, cumulative flow",
+  "period": "first half 2026; SAFE BOP sign convention",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "H1 other investment balance, excluding reserves",
+  "value": -66.9,
+  "unit": "USD billion, cumulative flow",
+  "period": "first half 2026; SAFE BOP sign convention",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "H1 reserve assets financial-account balance",
+  "value": -122.5,
+  "unit": "USD billion, cumulative flow",
+  "period": "first half 2026; SAFE BOP sign convention",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "H1 direct investment balance, excluding reserves",
+  "value": -15.8,
+  "unit": "USD billion, cumulative flow",
+  "period": "first half 2026; SAFE BOP sign convention",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "H1 net errors and omissions",
+  "value": -32.8,
+  "unit": "USD billion, cumulative balance",
+  "period": "first half 2026; separate from financial account",
+  "sourceIds": [
+   "SAFE_BOP_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Foreign-currency-denominated gross external debt",
+  "value": 1094.4,
+  "unit": "USD billion, end-period stock; 44% of gross external debt",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Domestic-currency-denominated gross external debt",
+  "value": 1403.8,
+  "unit": "USD billion, end-period stock; 56% of gross external debt",
+  "period": "end-June 2026",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Short-term gross external debt that is trade-related",
+  "value": 41,
+  "unit": "percent of short-term gross external debt",
+  "period": "end-June 2026; original contractual maturity classification",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 direct-investment liabilities, financial sector net flow",
+  "value": 15.0,
+  "unit": "USD billion, annual flow; positive means liability increase",
+  "period": "calendar 2025 revised SAFE sector table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 direct-investment liabilities, non-financial sector net flow",
+  "value": 65.0,
+  "unit": "USD billion, annual flow; positive means liability increase",
+  "period": "calendar 2025 revised SAFE sector table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 portfolio debt liabilities, banks short-term net flow",
+  "value": -53.9,
+  "unit": "USD billion, annual flow; negative means liability decrease",
+  "period": "calendar 2025 revised SAFE sector/maturity table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 portfolio debt liabilities, banks long-term net flow",
+  "value": -45.0,
+  "unit": "USD billion, annual flow; negative means liability decrease",
+  "period": "calendar 2025 revised SAFE sector/maturity table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 portfolio debt liabilities, general government short-term net flow",
+  "value": -15.4,
+  "unit": "USD billion, annual flow; negative means liability decrease",
+  "period": "calendar 2025 revised SAFE sector/maturity table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 portfolio debt assets acquired by banks, short-term",
+  "value": 41.8,
+  "unit": "USD billion, annual net asset acquisition",
+  "period": "calendar 2025 revised SAFE sector/maturity table; SAFE negative asset balance means net increase",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 portfolio debt assets acquired by banks, long-term",
+  "value": 89.6,
+  "unit": "USD billion, annual net asset acquisition",
+  "period": "calendar 2025 revised SAFE sector/maturity table; SAFE negative asset balance means net increase",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 bank loan liabilities net flow, short-term",
+  "value": -26.6,
+  "unit": "USD billion, annual flow; negative means liability decrease",
+  "period": "calendar 2025 revised SAFE sector/maturity table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 bank loan liabilities net flow, long-term",
+  "value": -5.0,
+  "unit": "USD billion, annual flow; negative means liability decrease",
+  "period": "calendar 2025 revised SAFE sector/maturity table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "2025 other-sector trade-credit liabilities net flow, short-term",
+  "value": 24.7,
+  "unit": "USD billion, annual flow; positive means liability increase",
+  "period": "calendar 2025 revised SAFE sector/maturity table",
+  "sourceIds": [
+   "SAFE_BOP_TABLES_20260929"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Industrial PPI inflation",
+  "value": 5.0,
+  "unit": "percent year-on-year",
+  "period": "September 2026 (latest NBS release available at 2026-10-14 cutoff)",
+  "sourceIds": [
+   "NBS_PPI_202609"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Industrial PPI inflation",
+  "value": 1.2,
+  "unit": "percent month-on-month",
+  "period": "September 2026",
+  "sourceIds": [
+   "NBS_PPI_202609"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Living-materials/consumer-goods PPI inflation",
+  "value": -0.1,
+  "unit": "percent year-on-year",
+  "period": "September 2026",
+  "sourceIds": [
+   "NBS_PPI_202609"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "BIS debt service ratio, private non-financial sector (not household-only)",
+  "value": 19.1,
+  "unit": "percent of income available for debt service",
+  "period": "2026-Q1; latest observation in BIS DSR CSV snapshot 2026-09-14",
+  "sourceIds": [
+   "BIS_DSR_CHINA_PNF_2026Q1"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household loans, financial institutions RMB credit balance sheet",
+  "value": 83.363103,
+  "unit": "RMB trillion outstanding",
+  "period": "End-November 2025; latest populated month in PBOC table archived here",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household medium/long-term loans (not mortgage-only)",
+  "value": 62.864418,
+  "unit": "RMB trillion outstanding",
+  "period": "End-November 2025",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household medium/long-term consumption loans (mortgage-inclusive category; not mortgage-only)",
+  "value": 48.804176,
+  "unit": "RMB trillion outstanding",
+  "period": "End-November 2025",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household deposits (liquidity proxy, not matched to borrowers)",
+  "value": 163.308444,
+  "unit": "RMB trillion outstanding",
+  "period": "End-November 2025",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household demand deposits (partial liquidity proxy)",
+  "value": 42.392976,
+  "unit": "RMB trillion outstanding",
+  "period": "End-November 2025",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household time and other deposits",
+  "value": 120.915468,
+  "unit": "RMB trillion outstanding",
+  "period": "End-November 2025",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household deposits / household loans (aggregate ratio; not household net worth)",
+  "value": 1.9590015021393818,
+  "unit": "times",
+  "period": "End-November 2025 (ratio calculated from same-month PBOC reported stocks)",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household loan change",
+  "value": -0.3668,
+  "unit": "RMB trillion net flow during half-year",
+  "period": "2026-H1 (not June-end debt stock)",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household short-term loan change",
+  "value": -0.5881,
+  "unit": "RMB trillion net flow during half-year",
+  "period": "2026-H1",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household medium/long-term loan change",
+  "value": 0.2212,
+  "unit": "RMB trillion net flow during half-year",
+  "period": "2026-H1",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "Household deposit change",
+  "value": 7.58,
+  "unit": "RMB trillion net flow during half-year",
+  "period": "2026-H1 (not June-end deposit stock)",
+  "sourceIds": [
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ]
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group cash and cash equivalents",
+  "value": 53.082936,
+  "unit": "RMB billion stock",
+  "period": "2026-06-30; reviewed unaudited interim report",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group current bank loans and financial-institution borrowings",
+  "value": 167.24908,
+  "unit": "RMB billion carrying amount",
+  "period": "2026-06-30; reviewed unaudited interim report",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group current bonds payable",
+  "value": 14.460624,
+  "unit": "RMB billion carrying amount",
+  "period": "2026-06-30; reviewed unaudited interim report",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group non-current bank loans and other financial-institution borrowings",
+  "value": 130.002189,
+  "unit": "RMB billion carrying amount",
+  "period": "2026-06-30; reviewed unaudited interim report",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group inventories and other contract costs",
+  "value": 347.967248,
+  "unit": "RMB billion asset carrying amount",
+  "period": "2026-06-30; reviewed unaudited interim report",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group contract liabilities",
+  "value": 77.553166,
+  "unit": "RMB billion liability carrying amount",
+  "period": "2026-06-30; reviewed unaudited interim report",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke consolidated group inventory write-down",
+  "value": 3.936992,
+  "unit": "RMB billion flow recognized in profit/loss",
+  "period": "Six months ended 2026-06-30",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke one-year debt principal cited in going-concern review",
+  "value": 178.86,
+  "unit": "RMB billion contractual principal due within one year",
+  "period": "As at 2026-06-30; report’s reviewer note",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke Shenzhen Metro Group related-party loan balance",
+  "value": 34.1,
+  "unit": "RMB billion balance",
+  "period": "2026-06-30; consolidated group note",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "china",
+  "metric": "China Vanke Shenzhen Metro Group related-party loan balance",
+  "value": 30.5,
+  "unit": "RMB billion balance",
+  "period": "2025-12-31 comparator",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "reviewUse": {
+   "classification": "provisional_secondary_located_issuer_illustration",
+   "modelCalibrationAllowed": false,
+   "reason": "Primary-host table validation unresolved; do not extrapolate to developer sector or treat as authenticated national calibration."
+  }
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area general government gross debt",
+  "value": 88.9,
+  "unit": "percent of GDP",
+  "period": "end-2026-Q1; EA21; provisional",
+  "sourceIds": [
+   "EUROSTAT_GOV_DEBT_Q1_2026"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU general government gross debt",
+  "value": 82.9,
+  "unit": "percent of GDP",
+  "period": "end-2026-Q1; provisional",
+  "sourceIds": [
+   "EUROSTAT_GOV_DEBT_Q1_2026"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "France general government gross debt",
+  "value": 117.6,
+  "unit": "percent of GDP",
+  "period": "end-2026-Q1; provisional",
+  "sourceIds": [
+   "EUROSTAT_GOV_DEBT_Q1_2026"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Italy general government gross debt",
+  "value": 138.9,
+  "unit": "percent of GDP",
+  "period": "end-2026-Q1; provisional",
+  "sourceIds": [
+   "EUROSTAT_GOV_DEBT_Q1_2026"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Estonia general government gross debt",
+  "value": 25.2,
+  "unit": "percent of GDP",
+  "period": "end-2026-Q1; provisional",
+  "sourceIds": [
+   "EUROSTAT_GOV_DEBT_Q1_2026"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area government debt held by nonresidents",
+  "value": 23,
+  "unit": "percent of euro-area government debt; approximate share; stock",
+  "period": "end-2024",
+  "sourceIds": [
+   "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area nonresident holdings of government debt",
+  "value": 2.6,
+  "unit": "trillion EUR; approximate stock",
+  "period": "end-2024",
+  "sourceIds": [
+   "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area deposit facility rate",
+  "value": 2.5,
+  "unit": "percent per annum",
+  "period": "decision 2026-09-10; effective 2026-09-16",
+  "sourceIds": [
+   "ECB_DECISION_20260910"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area real GDP growth",
+  "value": 0.6,
+  "unit": "percent quarter on quarter; seasonally adjusted estimate",
+  "period": "2026-Q2; next update scheduled 2026-10-20",
+  "sourceIds": [
+   "EA_GDP_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area Q2 GDP inventory contribution",
+  "value": -0.5,
+  "unit": "percentage points",
+  "period": "2026-Q2",
+  "sourceIds": [
+   "EA_GDP_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area Q2 GDP net exports contribution",
+  "value": 0.9,
+  "unit": "percentage points",
+  "period": "2026-Q2",
+  "sourceIds": [
+   "EA_GDP_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU critical raw material extraction capacity benchmark",
+  "value": 10,
+  "unit": "percent of annual EU consumption (capacity benchmark)",
+  "period": "2030 target under CRMA; not realized output",
+  "sourceIds": [
+   "EU_CRMA_2024_1252"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU critical raw material processing capacity benchmark",
+  "value": 40,
+  "unit": "percent of annual EU consumption (capacity benchmark)",
+  "period": "2030 target under CRMA; not realized output",
+  "sourceIds": [
+   "EU_CRMA_2024_1252"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU critical raw material recycling capacity benchmark",
+  "value": 25,
+  "unit": "percent of annual EU consumption (capacity benchmark)",
+  "period": "2030 target under CRMA; not realized end-of-life input",
+  "sourceIds": [
+   "EU_CRMA_2024_1252"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU rare-earth permanent magnet supply potentially contributed by Carester, Solvay and Inspiree",
+  "value": 20,
+  "unit": "percent of then-current demand; conditional projected contribution",
+  "period": "coming years, per 2025 Commission Action Plan; not achieved output",
+  "sourceIds": [
+   "EU_RESOURCEEU_2025"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Caremag magnet recycling design feed capacity",
+  "value": 2000,
+  "unit": "tonnes of permanent magnets per year; company plan",
+  "period": "planned late-2026 operations; no observed throughput",
+  "sourceIds": [
+   "CARESTER_CAREMAG_2025_FINANCING"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Caremag concentrate refining design feed capacity",
+  "value": 5000,
+  "unit": "tonnes of mining concentrates per year; company plan",
+  "period": "planned late-2026 operations; no observed throughput",
+  "sourceIds": [
+   "CARESTER_CAREMAG_2025_FINANCING"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Caremag mining-concentrate refining design feed capacity",
+  "value": 5000,
+  "unit": "tonnes of mining-concentrate feed per year; company planned nameplate input, separate stream from magnet feed",
+  "period": "late-2026 commissioning schedule as reported 2026-04-09; no observed throughput by 2026-10-14",
+  "sourceIds": [
+   "CARESTER_INFRAVIA_2026"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Caremag planned dysprosium and terbium oxide output",
+  "value": 600,
+  "unit": "tonnes of mixed Dy/Tb oxides per year; company design output",
+  "period": "planned operation from late 2026; not observed production",
+  "sourceIds": [
+   "CARESTER_CAREMAG_2025_FINANCING"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Caremag planned neodymium and praseodymium oxide output",
+  "value": 800,
+  "unit": "tonnes of NdPr oxides per year; company design output",
+  "period": "planned operation from late 2026; not observed production",
+  "sourceIds": [
+   "CARESTER_CAREMAG_2025_FINANCING"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area consolidated NFC debt",
+  "value": 65.8,
+  "unit": "percent of GDP; consolidated loans and debt securities, inter-NFC debt excluded",
+  "period": "2025-Q4",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area NFC wider non-consolidated debt",
+  "value": 135.8,
+  "unit": "percent of GDP; wider non-consolidated measure",
+  "period": "2025-Q4",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area household debt",
+  "value": 50.5,
+  "unit": "percent of GDP",
+  "period": "2025-Q4",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area household debt-to-income",
+  "value": 81.4,
+  "unit": "percent of household disposable income",
+  "period": "2025-Q4",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area nonresident holdings of general-government debt securities (ECB IIP)",
+  "value": 2591.5,
+  "unit": "EUR billion; stock",
+  "period": "2024-Q4",
+  "sourceIds": [
+   "ECB_INTERNATIONAL_ROLE_EURO_2025"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area foreign official holdings of general-government debt securities (ECB SHS)",
+  "value": 952.4,
+  "unit": "EUR billion; stock, third-party holdings measure",
+  "period": "2024-Q4",
+  "sourceIds": [
+   "ECB_INTERNATIONAL_ROLE_EURO_2025"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area government securities held by nonresidents (ECB SHS)",
+  "value": 2674.2,
+  "unit": "EUR billion; stock, third-party holdings measure",
+  "period": "2024-Q4",
+  "sourceIds": [
+   "ECB_INTERNATIONAL_ROLE_EURO_2025"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area NFC debt, consolidated",
+  "value": 66.0,
+  "unit": "percent of GDP",
+  "period": "2026-Q2; ECB euro-area aggregate; released 2026-10-02; revised series",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area NFC debt, non-consolidated broader measure",
+  "value": 135.6,
+  "unit": "percent of GDP",
+  "period": "2026-Q2; ECB euro-area aggregate; released 2026-10-02; revised series",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "Euro-area household debt",
+  "value": 80.3,
+  "unit": "percent of household disposable income",
+  "period": "2026-Q2; ECB euro-area aggregate; released 2026-10-02; revised series",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "ECB-supervised Significant Institution CET1 ratio",
+  "value": 16.0,
+  "unit": "percent",
+  "period": "2026-Q2; ECB Significant Institutions only; release 2026-09-15",
+  "sourceIds": [
+   "ECB_SI_BANK_STATS_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "ECB-supervised Significant Institution non-performing loan ratio excluding cash",
+  "value": 2.17,
+  "unit": "percent",
+  "period": "2026-Q2; ECB Significant Institutions only; release 2026-09-15",
+  "sourceIds": [
+   "ECB_SI_BANK_STATS_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "ECB-supervised Significant Institution liquidity coverage ratio",
+  "value": 154.91,
+  "unit": "percent",
+  "period": "2026-Q2; ECB Significant Institutions only; release 2026-09-15",
+  "sourceIds": [
+   "ECB_SI_BANK_STATS_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EBA EU/EEA banking sector CET1 ratio",
+  "value": 16.1,
+  "unit": "percent",
+  "period": "2026-Q2; EBA EU/EEA dashboard perimeter; release 2026-09-25",
+  "sourceIds": [
+   "EBA_RISK_DASHBOARD_2026Q2"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU reporter-group BIS consolidated bank claims on China, immediate counterparty basis",
+  "value": 69.824124,
+  "unit": "USD billions; sum of 9/27 reporters with values",
+  "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+  "sourceIds": [
+   "BIS_CBS_B4_2026Q1"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU reporter-group BIS consolidated bank claims on China, guarantor basis",
+  "value": 75.740397,
+  "unit": "USD billions; sum of 9/27 reporters with values",
+  "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+  "sourceIds": [
+   "BIS_CBS_B4_2026Q1"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU reporter-group BIS consolidated bank claims on United States, immediate counterparty basis",
+  "value": 2280.999076,
+  "unit": "USD billions; sum of 12/27 reporters with values",
+  "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+  "sourceIds": [
+   "BIS_CBS_B4_2026Q1"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "EU reporter-group BIS consolidated bank claims on United States, guarantor basis",
+  "value": 2275.925114,
+  "unit": "USD billions; sum of 11/27 reporters with values",
+  "period": "2026-Q1; dataset vintage 2026-09-14; partial EU27 country reporter coverage; not EU consolidated",
+  "sourceIds": [
+   "BIS_CBS_B4_2026Q1"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "CEPS modeled selected-application EU NdFeB magnet demand",
+  "value": 36,
+  "unit": "thousand tonnes of magnets",
+  "period": "2030 model scenario; selected applications, not observed full-EU demand",
+  "sourceIds": [
+   "RIZOS_MAGNET_CESEPS_2022"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "CEPS modeled selected-application theoretical end-of-life NdFeB magnets available",
+  "value": 10,
+  "unit": "thousand tonnes of magnets",
+  "period": "2030 model scenario; about 27% as rounded in source of selected-application demand",
+  "sourceIds": [
+   "RIZOS_MAGNET_CESEPS_2022"
+  ]
+ },
+ {
+  "region": "eu",
+  "metric": "CEPS modeled NdFeB secondary-supply share of selected application demand",
+  "value": 13.5,
+  "unit": "percent; midpoint of 8-19% scenario envelope, arithmetic convenience only; not a point estimate",
+  "period": "2025-2030 model scenarios; range 8-19%; midpoint not used as empirical estimate",
+  "sourceIds": [
+   "RIZOS_MAGNET_CESEPS_2022"
+  ],
+  "assumption": "Midpoint 13.5% is calculated from cited scenario bounds only for numeric summary convenience; use the 8-19% range in modeling."
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss National Bank policy rate",
+  "value": 0.0,
+  "unit": "percent per annum",
+  "period": "Decision announced 2026-09-24; policy rate left unchanged at 0%",
+  "sourceIds": [
+   "SNB_DECISION_20260924"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss CPI inflation, year on year",
+  "value": 1.0,
+  "unit": "percent",
+  "period": "2026-09 versus 2025-09",
+  "sourceIds": [
+   "CH_CPI_202609"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss CPI index",
+  "value": 101.5,
+  "unit": "index points (Dec 2025=100)",
+  "period": "2026-09 monthly index; unchanged from 2026-08",
+  "sourceIds": [
+   "CH_CPI_202609"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss CPI monthly change",
+  "value": 0.0,
+  "unit": "percent month on month",
+  "period": "2026-09",
+  "sourceIds": [
+   "CH_CPI_202609"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss GDP, sport-event-adjusted growth",
+  "value": 1.5,
+  "unit": "percent quarter on quarter",
+  "period": "2026-Q2; exceptionally strong quarterly growth; SECO vintage 2026-09-03",
+  "sourceIds": [
+   "CH_GDP_2026Q2",
+   "SECO_FORECAST_20260917"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "SECO Swiss GDP forecast, sport-event adjusted",
+  "value": 1.7,
+  "unit": "percent annual growth",
+  "period": "Calendar year 2026 forecast finalized 2026-09-08, published 2026-09-17",
+  "sourceIds": [
+   "SECO_FORECAST_20260917"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "SECO Swiss GDP forecast, sport-event adjusted",
+  "value": 1.6,
+  "unit": "percent annual growth",
+  "period": "Calendar year 2027 forecast finalized 2026-09-08, published 2026-09-17",
+  "sourceIds": [
+   "SECO_FORECAST_20260917"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "SECO Swiss CPI forecast",
+  "value": 0.6,
+  "unit": "percent annual average inflation",
+  "period": "Calendar year 2026 forecast finalized 2026-09-08, published 2026-09-17",
+  "sourceIds": [
+   "SECO_FORECAST_20260917"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "SECO Swiss CPI forecast",
+  "value": 0.6,
+  "unit": "percent annual average inflation",
+  "period": "Calendar year 2027 forecast finalized 2026-09-08, published 2026-09-17",
+  "sourceIds": [
+   "SECO_FORECAST_20260917"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "SNB conditional Swiss CPI forecast",
+  "value": 0.7,
+  "unit": "percent annual average inflation",
+  "period": "Calendar year 2026 forecast conditional on SNB policy rate 0% through horizon; published 2026-09-24",
+  "sourceIds": [
+   "SNB_DECISION_20260924"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "SNB conditional Swiss CPI forecast",
+  "value": 0.8,
+  "unit": "percent annual average inflation",
+  "period": "Calendar year 2027 forecast conditional on SNB policy rate 0% through horizon; published 2026-09-24",
+  "sourceIds": [
+   "SNB_DECISION_20260924"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss merchandise exports",
+  "value": 287.0,
+  "unit": "CHF billion, nominal customs value",
+  "period": "Calendar year 2025; +1.4% from 2024",
+  "sourceIds": [
+   "SWISS_EXPORTS_2025"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss merchandise imports",
+  "value": 232.7,
+  "unit": "CHF billion, nominal customs value",
+  "period": "Calendar year 2025; +4.5% from 2024",
+  "sourceIds": [
+   "SWISS_EXPORTS_2025"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss customs merchandise trade surplus",
+  "value": 54.3,
+  "unit": "CHF billion, nominal customs value",
+  "period": "Calendar year 2025",
+  "sourceIds": [
+   "SWISS_EXPORTS_2025"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss current account balance",
+  "value": 24.0,
+  "unit": "CHF billion",
+  "period": "2026-Q2; up CHF 13 billion year on year from unusually low 2025-Q2 comparator",
+  "sourceIds": [
+   "SNB_BOP_2026Q2"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss net international investment position",
+  "value": 986.0,
+  "unit": "CHF billion",
+  "period": "End-2026-Q2; increase CHF 22 billion quarter on quarter",
+  "sourceIds": [
+   "SNB_BOP_2026Q2"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss net reduction in financial assets",
+  "value": -6.0,
+  "unit": "CHF billion transactions",
+  "period": "2026-Q2; financial account",
+  "sourceIds": [
+   "SNB_BOP_2026Q2"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss net reduction in financial liabilities",
+  "value": -12.0,
+  "unit": "CHF billion transactions",
+  "period": "2026-Q2; financial account",
+  "sourceIds": [
+   "SNB_BOP_2026Q2"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss francs per euro appreciation response",
+  "value": 11.0,
+  "unit": "percent or more, CHF appreciation versus EUR",
+  "period": "Unanticipated SNB floor removal on 2015-01-15; historical event study reports >11% shock",
+  "sourceIds": [
+   "SNB_FX_PASS_2018"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "EUR/CHF monthly average exchange rate",
+  "value": 0.94312,
+  "unit": "CHF per 1 EUR",
+  "period": "2026-09 monthly average; SNB devkum CSV PublishingDate 2026-10-01 14:30; observation vintage released 1 Oct",
+  "sourceIds": [
+   "SNB_FX_MONTHLY_202609"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "USD/CHF monthly average exchange rate",
+  "value": 0.81926,
+  "unit": "CHF per 1 USD",
+  "period": "2026-09 monthly average; SNB devkum CSV PublishingDate 2026-10-01 14:30; observation vintage released 1 Oct",
+  "sourceIds": [
+   "SNB_FX_MONTHLY_202609"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss chemical, pharmaceutical and life-science merchandise exports",
+  "value": 152.1,
+  "unit": "CHF billion, nominal customs value",
+  "period": "Calendar year 2025; +2.2% y/y; association aggregation using Swiss-Impex data; reported 2026-01-29",
+  "sourceIds": [
+   "SCIENCEINDUSTRIES_EXPORTS_2025"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Chemical/pharmaceutical share of Swiss merchandise exports",
+  "value": 52.7,
+  "unit": "percent of nominal customs merchandise exports",
+  "period": "Calendar year 2024; FOCBS tariff group; reported in official foreign-trade yearbook",
+  "sourceIds": [
+   "CH_FOCBS_2024_TRADE_YEARBOOK"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss chemical and pharmaceutical exports, quarter-on-quarter change",
+  "value": -8.1,
+  "unit": "percent, seasonally adjusted nominal q/q",
+  "period": "2026-Q1 versus 2025-Q4",
+  "sourceIds": [
+   "FOCBS_Q1_2026_SECTOR_RELEASE"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss merchanting gross sales of goods (all categories, GT)",
+  "value": 238247.40877308,
+  "unit": "CHF million, gross current-price sales",
+  "period": "2026-Q2; SNB cube bopmercatq, GT category; CSV retrieved 2026-10-14; PublishingDate 2026-09-22 09:00",
+  "sourceIds": [
+   "SNB_MERCHANTING_Q2_2026"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Imported intermediate input supplier share: EU",
+  "value": 54.0,
+  "unit": "percent of imported intermediate inputs (average across Swiss sectors)",
+  "period": "2018 input-output data, as reported by OECD Switzerland Survey 2024, Figure 5.10 panel B",
+  "sourceIds": [
+   "OECD_CH_GVC_DEPENDENCIES_2024"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Imported intermediate input supplier share: Asia",
+  "value": 17.0,
+  "unit": "percent of imported intermediate inputs (average across Swiss sectors)",
+  "period": "2018 input-output data, as reported by OECD Switzerland Survey 2024, Figure 5.10 panel B",
+  "sourceIds": [
+   "OECD_CH_GVC_DEPENDENCIES_2024"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Change in average Swiss import concentration (HHI)",
+  "value": -7.0,
+  "unit": "percent change in index level",
+  "period": "2002 to 2021; OECD analysis of CEPII trade data, indexed comparison",
+  "sourceIds": [
+   "OECD_CH_GVC_DEPENDENCIES_2024"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss high-concentration product-country combinations remaining at risk",
+  "value": 60.0,
+  "unit": "approximate number of country-product combinations",
+  "period": "2019 import risk screen still flagged two years later, through 2021; OECD/CEPII method requires import HHI>0.4, global export HHI>0.4 and imports>exports",
+  "sourceIds": [
+   "OECD_CH_GVC_DEPENDENCIES_2024"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss current account balance, net",
+  "value": 23657.55439121,
+  "unit": "CHF million, net",
+  "period": "2026-Q2",
+  "sourceIds": [
+   "SNB_BOP_CURRENT_ACCOUNT_Q2_2026"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss import price index, total",
+  "value": 102.6024,
+  "unit": "index points (December 2025=100)",
+  "period": "2026-08 monthly observation; latest available by 2026-10-14",
+  "sourceIds": [
+   "FSO_IMPORT_PRICE_AUG2026"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss import price index, total, monthly change",
+  "value": 1.9,
+  "unit": "percent month on month, computed from index levels",
+  "period": "2026-08 versus 2026-07",
+  "sourceIds": [
+   "FSO_IMPORT_PRICE_AUG2026"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss import price index, other organic basic chemicals",
+  "value": 111.797,
+  "unit": "index points (December 2025=100)",
+  "period": "2026-08 monthly observation",
+  "sourceIds": [
+   "FSO_IMPORT_PRICE_AUG2026"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss CPI index",
+  "value": 101.5,
+  "unit": "index points (December 2025=100)",
+  "period": "2026-09 monthly observation; latest available by 2026-10-14",
+  "sourceIds": [
+   "CH_CPI_202609"
+  ]
+ },
+ {
+  "region": "swiss",
+  "metric": "Swiss chemical and pharmaceutical exports, seasonally adjusted nominal",
+  "value": 33652,
+  "unit": "CHF million",
+  "period": "2026-Q1 level; comparison with 2025-Q4 is seasonally adjusted q/q in Annex Ia",
+  "sourceIds": [
+   "FOCBS_Q1_2026_SECTOR_RELEASE"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS cross-border bank claims, outstanding stock",
+  "value": 47.6,
+  "unit": "trillion USD",
+  "period": "end-2026-Q1; source release 2026-07-31; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS cross-border bank credit, outstanding stock",
+  "value": 39.5,
+  "unit": "trillion USD",
+  "period": "end-2026-Q1; source release 2026-07-31; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS cross-border bank credit, year-on-year growth",
+  "value": 11,
+  "unit": "percent y/y",
+  "period": "end-2026-Q1; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS USD-denominated foreign-currency credit to non-banks outside the United States, outstanding stock",
+  "value": 14.7,
+  "unit": "trillion USD",
+  "period": "end-2026-Q1; approximately 30% attributed to EMDE borrowers; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS USD-denominated foreign-currency credit to non-banks outside the United States, year-on-year growth",
+  "value": 7.3,
+  "unit": "percent y/y",
+  "period": "end-2026-Q1; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS EUR-denominated foreign-currency credit to non-banks outside the euro area, outstanding stock",
+  "value": 5.1,
+  "unit": "trillion EUR",
+  "period": "end-2026-Q1; approximately 17% attributed to EMDE borrowers; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS EUR-denominated foreign-currency credit to non-banks outside the euro area, year-on-year growth",
+  "value": 12,
+  "unit": "percent y/y",
+  "period": "end-2026-Q1; current vintage inspected 2026-10-14",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS cross-border bank credit to EMDEs, Q1 change",
+  "value": 148,
+  "unit": "billion USD",
+  "period": "2026-Q1; exchange-rate and break-adjusted BIS release coverage",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS cross-border bank credit to non-bank financial institutions, Q1 change",
+  "value": 651,
+  "unit": "billion USD",
+  "period": "2026-Q1; concentration in a handful of borrower and lender locations noted by BIS",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Euro share of global foreign-currency credit in USD, EUR and JPY",
+  "value": 28,
+  "unit": "percent",
+  "period": "end-2026-Q1; up from 22% end-2022-Q3; BIS notes constant-FX calculation gives a somewhat smaller rise but same direction",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Swiss imported intermediate-input supplier share from EU",
+  "value": 54.0,
+  "unit": "percent of imported intermediate inputs, average across Swiss sectors",
+  "period": "2018 input-output data; reported by OECD Economic Survey of Switzerland 2024, Figure 5.10 panel B",
+  "sourceIds": [
+   "OECD_CH_GVC_DEPENDENCIES_2024"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "WorldCom long-term debt, net of current portion, restated FY2001 year-end",
+  "value": 29.31,
+  "unit": "USD billion, debt note balance",
+  "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "WorldCom cash and cash equivalents, restated FY2001 year-end",
+  "value": 1.29,
+  "unit": "USD billion",
+  "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "WorldCom operating cash flow, restated FY2001",
+  "value": 2.845,
+  "unit": "USD billion",
+  "period": "FY2001; restated in 2002 Form 10-K filed 2004",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "WorldCom additions to property, plant and equipment, restated FY2001",
+  "value": 6.465,
+  "unit": "USD billion cash outflow",
+  "period": "FY2001; restated in 2002 Form 10-K filed 2004",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Level 3 capital expenditures",
+  "value": 2.3,
+  "unit": "USD billion",
+  "period": "FY2001; company reported",
+  "sourceIds": [
+   "LEVEL3_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Level 3 year-end available funds (cash/marketable securities and undrawn secured facility)",
+  "value": 2.1,
+  "unit": "USD billion",
+  "period": "2001-12-31; company reported",
+  "sourceIds": [
+   "LEVEL3_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "WorldCom current portion of debt, restated FY2001 year-end",
+  "value": 1.309,
+  "unit": "USD billion",
+  "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "WorldCom total scheduled debt including current portion, restated FY2001 year-end",
+  "value": 30.619,
+  "unit": "USD billion; sum of debt-note long-term balance and current portion",
+  "period": "2001-12-31; restated in 2002 Form 10-K filed 2004",
+  "sourceIds": [
+   "WORLDCOM_RESTATED_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of FR nationality on residents of DE",
+  "value": 337.859,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of FR nationality on residents of CH",
+  "value": 69.701,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of FR nationality on residents of US",
+  "value": 482.844,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of GB nationality on residents of US",
+  "value": 1190.985,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of GB nationality on residents of FR",
+  "value": 306.989,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of GB nationality on residents of DE",
+  "value": 112.712,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "BIS CBS gross international claims: banks of GB nationality on residents of CH",
+  "value": 50.309,
+  "unit": "USD billion, outstanding gross stock",
+  "period": "2026-Q1; all booking currencies USD-equivalent; immediate-counterparty basis; refreshed 2026-10-14T17:21:59Z",
+  "sourceIds": [
+   "BIS_CBS_PUB_2026Q1"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "United States to China merchandise exports",
+  "value": 143.546,
+  "unit": "USD billion, current-value merchandise exports",
+  "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+  "sourceIds": [
+   "UN_COMTRADE_BILATERAL_2024"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "China to United States merchandise exports",
+  "value": 525.649,
+  "unit": "USD billion, current-value merchandise exports",
+  "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+  "sourceIds": [
+   "UN_COMTRADE_BILATERAL_2024"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "EU27 to United States merchandise exports",
+  "value": 571.114,
+  "unit": "USD billion, current-value merchandise exports",
+  "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+  "sourceIds": [
+   "UN_COMTRADE_BILATERAL_2024"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "EU27 to China merchandise exports",
+  "value": 227.172,
+  "unit": "USD billion, current-value merchandise exports",
+  "period": "Calendar 2024; UN Comtrade reporter value; current USD",
+  "sourceIds": [
+   "UN_COMTRADE_BILATERAL_2024"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Verizon cash and cash equivalents at year end",
+  "value": 0.979,
+  "unit": "USD billion",
+  "period": "2001-12-31",
+  "sourceIds": [
+   "VERIZON_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Verizon net cash from operating activities",
+  "value": 19.773,
+  "unit": "USD billion",
+  "period": "FY2001",
+  "sourceIds": [
+   "VERIZON_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Verizon cash capital expenditures",
+  "value": 17.371,
+  "unit": "USD billion cash outflow",
+  "period": "FY2001",
+  "sourceIds": [
+   "VERIZON_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Verizon debt maturing within one year",
+  "value": 18.669,
+  "unit": "USD billion",
+  "period": "2001-12-31 balance sheet",
+  "sourceIds": [
+   "VERIZON_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Verizon long-term debt excluding current maturities",
+  "value": 45.657,
+  "unit": "USD billion",
+  "period": "2001-12-31 balance sheet",
+  "sourceIds": [
+   "VERIZON_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Verizon total debt, including current debt",
+  "value": 64.326,
+  "unit": "USD billion; 18.669 current plus 45.657 long term",
+  "period": "2001-12-31",
+  "sourceIds": [
+   "VERIZON_FY2001_10K_GLOBAL"
+  ]
+ },
+ {
+  "region": "global",
+  "metric": "Federal funds target range midpoint (derived from range, not upper bound)",
+  "value": 3.875,
+  "unit": "percent per annum",
+  "period": "Target range 3.75–4.00%; effective 2026-09-17; midpoint = (3.75+4.00)/2",
+  "sourceIds": [
+   "FED_FOMC_20260916"
+  ]
+ }
+]

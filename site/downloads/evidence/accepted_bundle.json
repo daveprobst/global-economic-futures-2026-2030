@@ -1,0 +1,360 @@
+{
+  "generatedAt": "2026-10-14T17:37:01.936769Z",
+  "asOf": "2026-10-14",
+  "cutoffTimezone": "Europe/Zurich",
+  "acceptanceState": "accepted",
+  "authority": "Reviewed research checkpoint snapshot. Its canonical contracts supersede only metadata precision/date corrections identified here; quantitative tables retain dated scope and explicit use restrictions. Original regional data and rejection remain preserved.",
+  "sourceAssemblyPath": "run-root/evidence/bundle.json",
+  "stablePriorRejectionPath": "run-root/incident/rejected-findings.json",
+  "acceptedUseLimitsPath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-use-limits.json",
+  "reviewerCorrectionsPath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/reviewer-corrections.json",
+  "regionalArtifacts": [
+    {
+      "region": "us",
+      "bundlePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us",
+      "artifactPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.csv"
+      ],
+      "files": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.csv"
+      ],
+      "coveragePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json",
+      "canonicalContractPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json"
+      ],
+      "hasBundle": true,
+      "coverageValidated": true,
+      "schemasComplete": true,
+      "reviewedHashes": {
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/baseline.json": "aae12532b0742a9563df2e8f9c687209b573c4b529465bc069620d13827c8919",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/claim-ledger.json": "3eaa9bbb79857d08f419f0bec501d3b42980049ad627dc7f18bb1a6808c6107e",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.json": "9a58375d613f6bc5ab09731f2b4b0b69ee319232e65bf3a18d79c6404791ddf2",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json": "084f6c00b2ecdd37ebfc296531a0618cfba9290ddb82056f982c4f036d0afa80",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/source-registry.json": "234a4eec53106d3e391a6c352bb9d9f7c7b3cdceb8a7fbf295c4cf6a83987b03",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/debt-commitment-bridge.csv": "c0e2a3b241d44f74620038790663bce7bbfa2dcdee8972bbeda33b918419fcc3"
+      }
+    },
+    {
+      "region": "china",
+      "bundlePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china",
+      "artifactPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.csv"
+      ],
+      "files": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.csv"
+      ],
+      "coveragePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json",
+      "canonicalContractPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json"
+      ],
+      "hasBundle": true,
+      "coverageValidated": true,
+      "schemasComplete": true,
+      "reviewedHashes": {
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/baseline.json": "05a1b6bedd51923045b9b024725ec90eebf1875453a2f810d73b13c646f5590b",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/claim-ledger.json": "faa7b83e1af39042bbf8eec52735d801a0bfa318ac5e6e1ffc17537403be1bdd",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.json": "42d2231ededdde109123b376700b2f9db077e2505988ae3ef6e2b563afb0da31",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json": "4e54999ef1d70b367aeac32daab733c5ed5738752bcbfa390341e02fb67d7642",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/source-registry.json": "4e40080d187ebc780025bdd81cda83b10d1405fde6f2ccdebf9e0e5dfa918a07",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/household-property-balance-sheet.csv": "08a8069f39aee687b7e3cb01d721144c21a00f429532a5bc83373d80bdd63e12"
+      }
+    },
+    {
+      "region": "eu",
+      "bundlePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu",
+      "artifactPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/bank-sector-exposure-bounds.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.csv"
+      ],
+      "files": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/bank-sector-exposure-bounds.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.csv"
+      ],
+      "coveragePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json",
+      "canonicalContractPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json"
+      ],
+      "hasBundle": true,
+      "coverageValidated": true,
+      "schemasComplete": true,
+      "reviewedHashes": {
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/bank-sector-exposure-bounds.json": "eb1d6b08147657a291d8cab59cc3a79e1645329d5b4b511bcfdba7d0a7384459",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/baseline.json": "cedb206b5189b5691516f682b82aba8e78ff3deeb55cf442b540a8e75375b0a0",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/claim-ledger.json": "3478296593b8a653abce183bd105bae0683074652e1edac6d0286c7bcb6b05e6",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.json": "d7c42e4cb22fcfde733a2c1c7e4947de433832f075afeec31ed015a4c0c38152",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json": "574472a72a7da4b97fc34538609cd7a2d05b59cf17f569fed4bf734324ac2f33",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/source-registry.json": "9bf68bccdc6a08248b8a551ca6617534ca22722142e0208e9594ee215816f046",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/magnet-mass-balance.csv": "d8f86e40b14de52062564ac1844bb1f02d4669675e96468babd8675646a08bee"
+      }
+    },
+    {
+      "region": "swiss",
+      "bundlePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss",
+      "artifactPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.csv"
+      ],
+      "files": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.csv"
+      ],
+      "coveragePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json",
+      "canonicalContractPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json"
+      ],
+      "hasBundle": true,
+      "coverageValidated": true,
+      "schemasComplete": true,
+      "reviewedHashes": {
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/baseline.json": "0715c4552966f5020e1a585c87959de7185dee9c89105a8245924ed1fb3547af",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/claim-ledger.json": "cd56999df4ac7a765165ea05a65cb5ba6926db19682df41ec58ec8dbdab4aa1f",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json": "787e5ca413b762d5c546808b323e80c1b0a25096e54111be09a0d4e96cf8fa44",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.json": "54791f53b57abb94f03576e4825f1b2611699b23b2e611b54e78771865750cc7",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/source-registry.json": "64fdb45a70fcb38029b138c758380d8294dfefd57e5779efc6f0dfde469a0898",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/merchanting-import-price-panel.csv": "db992fff756fa5a1ade0018f26a7bb57abcb4ccf852ea941ec894c8ed9e1262e"
+      }
+    },
+    {
+      "region": "global",
+      "bundlePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global",
+      "artifactPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/fed-policy-reuse-correction.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/four-region-transmission-bounds.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/global-network-exposure.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/telecom-analogue-comparison.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/verizon-source-excerpts.json"
+      ],
+      "files": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/fed-policy-reuse-correction.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/four-region-transmission-bounds.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/global-network-exposure.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/telecom-analogue-comparison.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/verizon-source-excerpts.json"
+      ],
+      "coveragePath": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json",
+      "canonicalContractPaths": [
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/source-registry.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/claim-ledger.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/baseline.json",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json"
+      ],
+      "hasBundle": true,
+      "coverageValidated": true,
+      "schemasComplete": true,
+      "reviewedHashes": {
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/baseline.json": "bd5f5f6a5b994d4fa73d41303bb38aa6740cca1cdf952e3110362409bc07cc2a",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/claim-ledger.json": "5e7aa0e70646719af23cab02896450e51c48c3db37b2d56cf151bddb80d5af98",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/fed-policy-reuse-correction.json": "b059b11de5b4f253fa037fc63578c553a4e4308ab3a43e075484f28e5201ab0d",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/four-region-transmission-bounds.json": "947638333119343fa641777cad13233824342a27d50add3c975baeade6dd4a49",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/global-network-exposure.json": "d5c06da567e8624522de2073a9ed0b72ac1b24517b218fdde58ed162e78f22d2",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json": "e860e787c16692b219acb01c07c3b4248fa5d547d2ca686c1cb72e98a009190c",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/source-registry.json": "9f307f74fedb474a777593bbac85498375dd8e66b878de796c2111ef60881842",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/telecom-analogue-comparison.json": "0d181c25ed9dae4d646447e475d6c78a49d442bb032e82cf52425e141c2a6df6",
+        "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/verizon-source-excerpts.json": "e5358c812a53e9318fc7f489214f38c1ed6af781d67f119076f3750132655e92"
+      }
+    }
+  ],
+  "schemaChecks": [
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/source-registry.json",
+      "kind": "sourceRegistry",
+      "valid": true,
+      "errors": [],
+      "itemCount": 38
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/claim-ledger.json",
+      "kind": "claimLedger",
+      "valid": true,
+      "errors": [],
+      "itemCount": 17
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/baseline.json",
+      "kind": "baseline",
+      "valid": true,
+      "errors": [],
+      "itemCount": 82
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/us/mechanism-coverage.json",
+      "kind": "mechanismCoverage",
+      "valid": true,
+      "errors": [],
+      "itemCount": 9
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/source-registry.json",
+      "kind": "sourceRegistry",
+      "valid": true,
+      "errors": [],
+      "itemCount": 34
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/claim-ledger.json",
+      "kind": "claimLedger",
+      "valid": true,
+      "errors": [],
+      "itemCount": 12
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/baseline.json",
+      "kind": "baseline",
+      "valid": true,
+      "errors": [],
+      "itemCount": 89
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/china/mechanism-coverage.json",
+      "kind": "mechanismCoverage",
+      "valid": true,
+      "errors": [],
+      "itemCount": 7
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/source-registry.json",
+      "kind": "sourceRegistry",
+      "valid": true,
+      "errors": [],
+      "itemCount": 42
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/claim-ledger.json",
+      "kind": "claimLedger",
+      "valid": true,
+      "errors": [],
+      "itemCount": 14
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/baseline.json",
+      "kind": "baseline",
+      "valid": true,
+      "errors": [],
+      "itemCount": 41
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/eu/mechanism-coverage.json",
+      "kind": "mechanismCoverage",
+      "valid": true,
+      "errors": [],
+      "itemCount": 6
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/source-registry.json",
+      "kind": "sourceRegistry",
+      "valid": true,
+      "errors": [],
+      "itemCount": 34
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/claim-ledger.json",
+      "kind": "claimLedger",
+      "valid": true,
+      "errors": [],
+      "itemCount": 14
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/baseline.json",
+      "kind": "baseline",
+      "valid": true,
+      "errors": [],
+      "itemCount": 35
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/swiss/mechanism-coverage.json",
+      "kind": "mechanismCoverage",
+      "valid": true,
+      "errors": [],
+      "itemCount": 7
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/source-registry.json",
+      "kind": "sourceRegistry",
+      "valid": true,
+      "errors": [],
+      "itemCount": 34
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/claim-ledger.json",
+      "kind": "claimLedger",
+      "valid": true,
+      "errors": [],
+      "itemCount": 9
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/baseline.json",
+      "kind": "baseline",
+      "valid": true,
+      "errors": [],
+      "itemCount": 37
+    },
+    {
+      "path": "run-root/reviews/research/research_re_review/iteration-0/checkpoint-recovery-1/accepted-evidence/global/mechanism-coverage.json",
+      "kind": "mechanismCoverage",
+      "valid": true,
+      "errors": [],
+      "itemCount": 3
+    }
+  ],
+  "calibrationAcceptance": false,
+  "modelExecutionClaimed": false,
+  "deploymentClaimed": false
+}

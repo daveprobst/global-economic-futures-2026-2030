@@ -1,0 +1,692 @@
+{
+  "kind": "sourceRegistry",
+  "sources": [
+    {
+      "id": "EUROSTAT_GOV_DEBT_Q1_2026",
+      "title": "Government debt at 88.9% of GDP in euro area (Q1 2026 release and linked dataset)",
+      "publisher": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-21072026-ap",
+      "publishedAt": "2026-07-21",
+      "observedPeriod": "End-2026-Q1; quarterly government gross debt under ESA 2010/EDP, nominal face value, consolidated general government; EU aggregate 82.9% and euro-area 88.9% of GDP; national ratios available in release/table",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Release is based on quarterly dataset; annual EDP notifications can revise past quarters. Q2 2026 release scheduled 2026-10-20, after cutoff. EU and euro area aggregates have changing membership (EA21 from 2026).",
+      "units": "EUR and national currency; percent of GDP",
+      "relevance": "Source map only; mapped mechanisms: debt_exposures. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "debt_exposures"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Sovereign gross debt/GDP is not a complete recession-vulnerability measure: maturity, currency, holder, net assets, contingent liabilities and private-sector exposures differ. No Q2 2026 government-debt observation was available by 2026-10-14."
+    },
+    {
+      "id": "EUROSTAT_GOV_DEBT_METADATA",
+      "title": "Quarterly government debt (gov_10q_ggdebt) metadata",
+      "publisher": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/cache/metadata/en/gov_10q_ggdebt_esms.htm",
+      "publishedAt": "2026-07-21",
+      "observedPeriod": "Quarter-end general government debt; dataset metadata and coverage through 2026-Q1 at the cutoff",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Metadata updated 2026-07-21; member states transmit quarterly data; annual EDP notifications may revise prior quarterly observations.",
+      "units": "Million euro, million national currency, percent of GDP and percent of consolidated debt",
+      "relevance": "Source map only; mapped mechanisms: debt_exposures. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "debt_exposures"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Some countries publish creditor residency and maturity splits, but availability is not uniform. Debt definition excludes broader public/private balance-sheet risks."
+    },
+    {
+      "id": "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025",
+      "title": "Geopolitics and foreign holdings of euro area government debt",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/other-publications/ire/article/html/ecb.ireart202506_01~a8b7241329.pt.html",
+      "publishedAt": null,
+      "observedPeriod": "ECB Securities Holdings Statistics; foreign official holdings analysis; euro-area government debt held by non-residents approximately EUR 2.6tn / 23% at end-2024",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Published as part of The international role of the euro, June 2025; exact day not disclosed. Uses ECB SHS security-by-security holdings. Non-resident holdings are not synonymous with safe-haven flows and include diverse holders; custodial bias noted for some international holdings.",
+      "units": "EUR stocks and percent of outstanding euro-area government debt",
+      "relevance": "Source map only; mapped mechanisms: debt_exposures, safe_haven_flows. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "debt_exposures",
+        "safe_haven_flows"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Stock holdings at one date do not identify direction, motive, marginal flow response, or safe-haven status; flow and holder decomposition required. Page language is Portuguese but article identifiers and figures were checked."
+    },
+    {
+      "id": "ECB_PORTFOLIO_SAFE_HAVEN_2012",
+      "title": "Recent trends in global portfolio flows amid sovereign tensions in the euro area",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/focus/2012/pdf/ecb~14913afdc3.fsrbox201212_01.pdf",
+      "publishedAt": null,
+      "observedPeriod": "Global portfolio reallocations and euro-area sovereign tensions, principally 2011–2012",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Historical ECB Financial Stability Review focus box, December 2012; exact day not disclosed. Older crisis-period evidence, not a contemporary flow estimate.",
+      "units": "Portfolio holdings and flows; see document tables/figures",
+      "relevance": "Source map only; mapped mechanisms: safe_haven_flows. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "safe_haven_flows"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Reports evidence consistent with safe-haven flows in that episode; it cannot establish that EU/euro-area assets are always a safe haven under a different shock or identify current response elasticities."
+    },
+    {
+      "id": "EU_CRMA_2024_1252",
+      "title": "Regulation (EU) 2024/1252 establishing a framework for a secure and sustainable supply of critical raw materials",
+      "publisher": "European Parliament and Council / EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1252",
+      "publishedAt": "2024-05-03",
+      "observedPeriod": "Legal benchmarks for 2030; strategic raw-material value chains",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Binding regulation, Official Journal L 2024/1252. Article 5 benchmarks are EU capacities that approach or reach 10% extraction, 40% processing and 25% recycling of annual Union consumption; diversification aims for no one third country above 65%. By 2027 Commission is to set recycling-capacity benchmarks against relevant waste streams.",
+      "units": "Capacity shares of annual Union consumption; percent",
+      "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Legal capacity benchmarks are goals, not evidence of realized supply, utilization or feedstock. Benchmarks are per strategic raw material / chain stage, and denominators must be matched. Recycling capacity benchmark is distinct from actual end-of-life recycled input."
+    },
+    {
+      "id": "EC_CRMA_PROJECTS_2025",
+      "title": "Selected strategic projects under the Critical Raw Materials Act",
+      "publisher": "European Commission, DG GROW",
+      "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+      "publishedAt": "2025-03-25",
+      "observedPeriod": "First EU strategic-project selections under CRMA; project stages include extraction, processing, recycling and substitution",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Commission approved 47 EU projects 2025-03-25; a separate 13 projects in third countries selected 2025-06-04. Project list may be updated as later selections occur.",
+      "units": "Project counts by stage/material; not annual tonnes",
+      "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Designation confers strategic-project status and permitting/support facilitation; it does not certify financing close, construction completion, qualified feedstock, commercial throughput or target contribution."
+    },
+    {
+      "id": "EC_CRMA_PROJECTS_2026",
+      "title": "Commission selects 46 new Strategic Projects to bolster EU supply of critical raw materials",
+      "publisher": "European Commission Representation in Luxembourg",
+      "url": "https://luxembourg.representation.ec.europa.eu/actualites-et-evenements/actualites/commission-selects-46-new-strategic-projects-bolster-eus-supply-critical-raw-materials-2026-10-09_en",
+      "publishedAt": "2026-10-09",
+      "observedPeriod": "Second EU strategic-project call; projects across 16 Member States, including four rare-earth projects",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "As of 2026-10-09, adds 46 EU projects to 47 EU projects selected in 2025 and 13 third-country projects. Source says projects are expected to contribute to benchmarks.",
+      "units": "Project counts; no harmonized annual output series",
+      "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Selection is pipeline evidence, not commissioned capacity. Do not sum diverse materials/stages as if comparable supply or assert 2030 delivery absent project-level schedules and feedstock."
+    },
+    {
+      "id": "LKAB_PER_GEIJER_RESOURCE",
+      "title": "Europe’s largest deposit of rare earth metals is located in the Kiruna area",
+      "publisher": "LKAB",
+      "url": "https://lkab.com/en/press/europes-largest-deposit-of-rare-earth-metals-is-located-in-the-kiruna-area/",
+      "publishedAt": "2023-01-12",
+      "observedPeriod": "Per Geijer mineral resource estimate and planned project steps; resource estimate reported under PERC 2021",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Company release reports >1 million tonnes rare-earth oxides in a mineral resource, not a mineral reserve. At publication, exploitation concession application and further investigation were next steps; company states route to possible mine is long. Luleå industrial park production start was then planned for 2027.",
+      "units": "Tonnes in-situ rare-earth oxides; dates are project plans",
+      "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Geological resource is a stock, not recoverable saleable annual output. Permits, mine plan, recovery, processing, infrastructure, financing and commissioning remain necessary. Do not use the 2027 plan as achieved production."
+    },
+    {
+      "id": "LKAB_PER_GEIJER_2025_ANNUAL",
+      "title": "LKAB Annual and Sustainability Report 2025",
+      "publisher": "LKAB",
+      "url": "https://lkab.com/wp-content/uploads/2026/04/LKAB_Annual-and-Sustainability-Report-2025_260423.pdf",
+      "publishedAt": "2026-04-23",
+      "observedPeriod": "LKAB FY2025 operations and project portfolio; Per Geijer and critical-minerals plans",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Audited annual reporting, published 2026-04-23; project forward dates remain management plans, not observations.",
+      "units": "As reported by LKAB; units vary by table and project",
+      "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Use financial/operating statements for realized LKAB results; strategic project descriptions do not disclose validated Per Geijer annual REE production or an operating mine."
+    },
+    {
+      "id": "NEO_NARVA_2025_OPENING",
+      "title": "Neo Performance Materials opens state-of-the-art magnet facility in Europe",
+      "publisher": "Neo Performance Materials Inc.",
+      "url": "https://www.neomaterials.com/neo-opens-state-of-the-art-magnet-facility-europe/",
+      "publishedAt": "2025-09-22",
+      "observedPeriod": "Narva, Estonia permanent magnet facility opening; Bosch capacity reservation and commercial ramp-up context",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Company announcement of opening is distinct from mass-production qualification and sustained utilization; see 2025 Q1 results for planned 2026 mass production.",
+      "units": "Facility capacity described in company filings in tonnes/year; announcement itself provides no observed annual output",
+      "relevance": "Source map only; mapped mechanisms: refining_capacity. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "refining_capacity"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "This is downstream magnet manufacturing, not rare-earth mining or oxide separation. An opening ceremony does not prove actual output, customer qualification or utilization."
+    },
+    {
+      "id": "NEO_2024_AIF",
+      "title": "Neo Performance Materials Inc. 2024 Annual Information Form",
+      "publisher": "Neo Performance Materials Inc. / Canadian securities filing",
+      "url": "https://www.neomaterials.com/wp-content/uploads/2025/03/Neo-AIF-2025-vF.pdf",
+      "publishedAt": null,
+      "observedPeriod": "FY2024 company operations and Narva magnet plant construction plans",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Neo 2024 Annual Information Form, final 2025 version; exact filing/publication date is not established here. Planned Phase 1 capacity 2,000 tonnes/year and potential cumulative Phase 2 capacity 5,000 tonnes/year; not observed throughput.",
+      "units": "Tonnes per year nameplate capacity",
+      "relevance": "Source map only; mapped mechanisms: refining_capacity. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "refining_capacity"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Annual information form differentiates planned capacity from actual output. Narva uses rare-earth materials; it is not EU mine production. Follow current filings for commissioning and utilization."
+    },
+    {
+      "id": "NEO_2026_NARVA_COMMERCIAL",
+      "title": "Neo begins commercial magnet production in Narva",
+      "publisher": "Invest in Estonia / Estonian Investment Agency",
+      "url": "https://investinestonia.com/neo-new-magent-factory-narva-production/",
+      "publishedAt": null,
+      "observedPeriod": "Narva permanent magnet facility commercialization reported in 2026; article states commercial production and shipments to an EV traction-motor Tier 1 customer",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Living/late-2026 page; exact publication date not disclosed in retrieved record. At retrieval it also described Phase 1B design work to lift capacity to about 5,000 tonnes; this is a company plan, not installed/running capacity.",
+      "units": "Tonnes/year capacity, no observed full-year throughput reported",
+      "relevance": "Source map only; mapped mechanisms: refining_capacity. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "refining_capacity"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Operator/government investment-promotion report provides milestone evidence but no audited 2026 output/utilization or feedstock origin reconciliation. Date is deliberately null because the page did not disclose publication date."
+    },
+    {
+      "id": "EU_RESOURCEEU_2025",
+      "title": "RESOurceEU Action Plan (COM(2025) 945 final)",
+      "publisher": "European Commission",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52025DC0945",
+      "publishedAt": "2025-12-03",
+      "observedPeriod": "EU critical raw-material supply actions and recycling status, 2025 onward; project expectations for coming years",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Commission communication (not itself a binding production obligation). Reports <1% of rare earth elements recycled in the EU and, subject to appropriate feedstock/incentives, Carester, Solvay and Inspiree could ramp up activities contributing about 3,800 tonnes of rare-earth permanent magnets in coming years (~20% of then-current demand).",
+      "units": "Percent of REE recycled; tonnes of rare-earth permanent magnets; stated share of current demand",
+      "relevance": "Source map only; mapped mechanisms: critical_minerals_production, refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "The approximately 20% claim is conditional projected capacity/output and different from the CRMA 25% recycling-capacity benchmark; neither means 30% sufficiency. Text itself makes feedstock and incentives conditions explicit; magnet tonnes are not directly comparable to oxide/feedstock tonnes."
+    },
+    {
+      "id": "CARESTER_CAREMAG_2025_FINANCING",
+      "title": "Caremag project financing and plant plan, Lacq France",
+      "publisher": "Carester / Caremag SAS",
+      "url": "https://www.carester.fr/wp-content/uploads/2025/03/press-release-ENG-without-embargo.pdf",
+      "publishedAt": "2025-03-17",
+      "observedPeriod": "Construction and planned late-2026 start of rare-earth recycling/refining plant in Lacq",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Company release says €216m financing secured, 2,000 tonnes/year magnets recycled and 5,000 tonnes/year mining concentrates refined, with operations expected by late 2026. These are design/plan values, not realized output.",
+      "units": "EUR financing; tonnes/year magnet feed and concentrate feed",
+      "relevance": "Source map only; mapped mechanisms: refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Feedstock sourcing, commissioning, ramp, product mix and process yield determine saleable rare-earth outputs. Magnet input tonnage, concentrate input tonnage and oxide output are different units/stages."
+    },
+    {
+      "id": "CARESTER_CAREMAG_CURRENT",
+      "title": "Caremag plant overview",
+      "publisher": "Carester",
+      "url": "https://www.carester.fr/en/our-plant/",
+      "publishedAt": null,
+      "observedPeriod": "Current project description for Lacq; recycled permanent magnets and mineral concentrates are planned feedstocks",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Living company project page; exact publication/revision date not disclosed.",
+      "units": "Plant product description; no independently verified current annual output",
+      "relevance": "Source map only; mapped mechanisms: refining_capacity, magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Company project material, not audited production data. Explicitly describes two feedstocks: permanent magnets and heavy-REE mineral concentrates."
+    },
+    {
+      "id": "JRC_MATERIAL_SYSTEM_ANALYSIS_2021",
+      "title": "Towards Recycling Indicators based on EU flows and Raw Materials System Analysis data (JRC112720; EUR 29435 EN)",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC112720",
+      "publishedAt": "2018-11-20",
+      "observedPeriod": "EU-28 recycling indicators and material-flow data; underlying data vintages vary, including some series dated to 2012",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Corrected on 2026-10-14 after primary landing-page/PDF check: JRC112720, EUR 29435 EN, issued 2018-11-20; DOI 10.2760/092885. It distinguishes end-of-life recycling input rate from end-of-life recycling efficiency. The former URL JRC125101 identifies a different 2021 nine-material report and was a citation mismatch; see EU_JRC125101_NINE_MATERIALS_2021.",
+      "units": "Material stocks and flows; report-specific units",
+      "relevance": "Source map only; mapped mechanisms: magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Methodological, not a current EU permanent-magnet-specific rate. Material-system datasets are mixed vintage; no current stock/cohort/yield estimate can be inferred."
+    },
+    {
+      "id": "JRC_MAGNET_RECYCLING_TECH_ASSESSMENT",
+      "title": "Material streams from wind energy decommissioning to 2050",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC139814/JRC139814_01.pdf",
+      "publishedAt": null,
+      "observedPeriod": "JRC modeled EU wind-turbine material decommissioning through 2050 based on installations through 2023; permanent-magnet REEs and boron detail",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "JRC report EUR 40324, 2025; exact publication date not disclosed. Models future end-of-life flows, finding slow increase through 2030 and stronger growth thereafter; excludes future repowering in conservative estimates.",
+      "units": "Tonnes/year by material and year; turbine material intensity in kg/MW; report-specific scenarios",
+      "relevance": "Substantive official stock-flow source: cumulative installed wind capacity and asset lifetimes determine future end-of-life magnet waste; supports examining whether recycling capacity can be fed by actual retired magnets.",
+      "mechanismIds": [
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "This concerns wind turbine stock only, not all EU magnets, EVs or e-waste. Technical recovery potential is not available feedstock: report distinguishes collection, disassembly and recycling steps and notes secondary REE streams may remain below growing demand. Exact publication date is not disclosed."
+    },
+    {
+      "id": "MFA_MAGNETS_UK_2024",
+      "title": "Mapping the flows and stocks of permanent magnets rare earth elements for powering a circular economy in the UK",
+      "publisher": "Sustainable Production and Consumption (peer-reviewed scholarly article)",
+      "url": "https://doi.org/10.1016/j.spc.2024.03.027",
+      "publishedAt": null,
+      "observedPeriod": "UK rare-earth permanent-magnet value-chain material flow analysis, 2017–2021",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Peer-reviewed dynamic material-flow study, 2024; exact publication day not disclosed. UK case. Reports large in-use stocks, low end-of-life recovery and substantial data gaps; not EU-wide estimate.",
+      "units": "Tonnes of REE and NdFeB magnets; study-specific",
+      "relevance": "Source map only; mapped mechanisms: magnet_recycling_stock_flow. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "UK results cannot be applied numerically to EU without harmonized product stock, trade, collection and lifetime data; useful evidence on lagged end-of-life flows and traceability limitations."
+    },
+    {
+      "id": "EU_CAR_CO2_REG_2023_851",
+      "title": "Regulation (EU) 2023/851 amending CO2 emission performance standards for new cars and vans",
+      "publisher": "European Parliament and Council / EUR-Lex",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/851/oj/eng",
+      "publishedAt": "2023-04-25",
+      "observedPeriod": "Fleet-average CO2 standards for new cars/vans; 2030 and 2035 target periods; 2026 Commission review clause includes plug-in hybrid technologies",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Enacted regulation; original legal act sets 100% reduction target from 2035 and review clause. It is not a negotiated hybrid exemption or blanket hybrid continuation agreement.",
+      "units": "Percent fleet-average CO2 reduction targets relative to 2021; g CO2/km",
+      "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "automotive_hybrid_agreement_status"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "The 2026 review clause asks for an assessment and possible review; it does not itself amend the operative 2035 target. Distinguish existing law from subsequent proposals and amendments."
+    },
+    {
+      "id": "EC_AUTO_PACKAGE_2025",
+      "title": "Automotive package: review of existing CO2 emission standards for cars and vans",
+      "publisher": "European Commission, DG MOVE",
+      "url": "https://transport.ec.europa.eu/transport-themes/action-plan-future-automotive-sector/automotive-package_en",
+      "publishedAt": "2025-12-16",
+      "observedPeriod": "Commission automotive-package proposal for post-2035 car CO2 target flexibility and other measures",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Commission proposal says from 2035 a 90% tailpipe-emission reduction target, remaining 10% compensated by specified low-carbon steel/e-fuels/biofuels. Legislative proposal; as of cutoff not enacted.",
+      "units": "Percent tailpipe reduction target; proposal status",
+      "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "automotive_hybrid_agreement_status"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Not an adopted law. It could permit some combustion-engine/hybrid configurations if final law and implementation conditions allow, but no enacted hybrid exemption may be inferred from proposal or political agreement alone."
+    },
+    {
+      "id": "COUNCIL_CAR_REVIEW_JUNE2026",
+      "title": "Council progress report on revision of car CO2 standards and plug-in hybrid utility factor",
+      "publisher": "Council of the European Union",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-10065-2026-REV-1/en/pdf",
+      "publishedAt": null,
+      "observedPeriod": "Council deliberations on Commission proposal and 2026 review; document ahead of Environment Council 25 June 2026",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Council progress report dated June 2026 (document ST 10065/1/26 REV 1); exact day not established here. Records divergent member-state views. It says proposal does not include PHEV utility-factor freeze; a group requested it and another opposed. Utility-factor update adopted in secondary legislation applies from 2026-11-29.",
+      "units": "Legal/policy status and effective date; no economic output units",
+      "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "automotive_hybrid_agreement_status"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Progress report and divergent positions are not Council/Parliament adoption. The 2026 Commission review, 2025 flexibility law for 2025–27 averaging, and 2025 proposed 2035 revision are distinct measures; no evidence here of a March 2026 hybrid deal."
+    },
+    {
+      "id": "COUNCIL_CAR_FLEX_2025",
+      "title": "CO2 emissions in cars: Council gives final approval to additional flexibility for carmakers",
+      "publisher": "Council of the European Union",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/05/27/co2-emissions-in-cars-council-gives-final-approval-to-additional-flexibility-for-carmakers/",
+      "publishedAt": "2025-05-27",
+      "observedPeriod": "Compliance averaging for manufacturers’ 2025, 2026 and 2027 car CO2 targets",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Council confirms adopted amendment permits averaging each manufacturer’s performance over 2025–2027 instead of annual compliance.",
+      "units": "Three-year compliance period",
+      "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "automotive_hybrid_agreement_status"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "This is compliance timing flexibility, not hybrid-vehicle exemption and not amendment of the 2035 fleet target."
+    },
+    {
+      "id": "EU_CAR_TARGET_2022_REVIEW_CLAUSE",
+      "title": "Fit for 55: Council and Parliament provisional agreement on car and van CO2 standards",
+      "publisher": "Council of the European Union",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/10/27/first-fit-for-55-proposal-agreed-the-eu-strengthens-targets-for-co2-emissions-for-new-cars-and-vans/",
+      "publishedAt": "2022-10-27",
+      "observedPeriod": "Political agreement later enacted in Regulation (EU) 2023/851; review clause for 2026 and synthetic-fuel pathway",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "This is contemporaneous provisional political agreement release; use final regulation for binding law. Explicitly mentions 2026 review and plug-in hybrid technologies.",
+      "units": "Percent emissions reductions; policy dates",
+      "relevance": "Source map only; mapped mechanisms: automotive_hybrid_agreement_status. The source does not by itself prove a mechanism.",
+      "mechanismIds": [
+        "automotive_hybrid_agreement_status"
+      ],
+      "sourceType": "official statistical dataset, law, publication, company/project disclosure, or scholarly literature",
+      "availabilityLimit": "Review clause is not a predetermined outcome. It references plug-in hybrid technologies in review, which may be the source of claims about a supposed hybrid deal."
+    },
+    {
+      "id": "EA_GDP_2026Q2",
+      "title": "Euro-area GDP and employment, Q2 2026 flash estimate",
+      "publisher": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap",
+      "publishedAt": "2026-09-07",
+      "observedPeriod": "Euro-area Q2 2026 GDP estimate: +0.6% q/q and +1.2% y/y; inventory contribution -0.5 percentage points, net exports +0.9 percentage points",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Q2 estimate available as of cutoff; Eurostat scheduled GDP Q2 update for 2026-10-20, after cutoff. EA21 from Jan 2026 vs EA20 through 2025.",
+      "units": "Real GDP percent change quarter-on-quarter and year-on-year; percentage-point contributions",
+      "mechanismIds": [
+        "debt_exposures"
+      ],
+      "sourceType": "official statistical release",
+      "relevance": "Source map only; maps macro denominator, activity and fiscal-capacity context. Headline growth can mask weak domestic demand given composition; this does not demonstrate sovereign stress or resilience.",
+      "availabilityLimit": "Estimate subject to revision; Q3 GDP flash scheduled 2026-10-30. The release composition (inventories and net exports) cautions against treating the headline as broad private-demand strength."
+    },
+    {
+      "id": "ECB_DECISION_20260910",
+      "title": "Monetary policy decisions and staff projections, 10 September 2026",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is260910~6a45359cfc.en.html",
+      "publishedAt": "2026-09-10",
+      "observedPeriod": "ECB decision 2026-09-10, rates effective 2026-09-16; staff projections 2026–2028",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Policy decision raised key rates by 25bp; deposit 2.50%, main refinancing 2.65%, marginal lending 2.90%. Statement is data-dependent and gives no pre-committed path; policy rates are not sovereign bond yields or firm borrowing rates.",
+      "units": "Percent per annum",
+      "mechanismIds": [
+        "debt_exposures",
+        "safe_haven_flows"
+      ],
+      "sourceType": "central-bank policy decision and projections",
+      "relevance": "Source map only; maps monetary/financial conditions to sovereign refinancing and risk analysis. ECB rates are shared policy settings; spreads and national financing transmission remain country-specific.",
+      "availabilityLimit": "Policy rates alone do not measure marginal sovereign funding costs, maturity structure, investor flows, or credit transmission."
+    },
+    {
+      "id": "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+      "title": "Selected strategic projects under the Critical Raw Materials Act (live Commission project register)",
+      "publisher": "European Commission, Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs",
+      "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/strategic-projects-under-crma/selected-projects_en",
+      "publishedAt": null,
+      "observedPeriod": "Official selected-project register; includes second EU project wave approved 2026-10-09, with decision C(2026)8051 and annex linked from page",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Living page; on 2026-10-14 it states 106 strategic projects overall, including the 2025 EU/third-country rounds and the 2026 EU round. Designation is not commissioning.",
+      "units": "Project counts, not capacity or output",
+      "relevance": "Canonical official register for project designation and status distinction.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "official Commission register",
+      "availabilityLimit": "Project count aggregates different materials, stages and project maturity; no comparable annual capacity or realized production follows from the count."
+    },
+    {
+      "id": "EURLEX_AUTO_PROCEDURE_2025_0420",
+      "title": "Procedure 2025/0420/COD: COM(2025) 995 car and van CO2 standards proposal",
+      "publisher": "EUR-Lex, Publications Office of the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/HIS/?uri=intcom%3ASEC%282025%29995",
+      "publishedAt": null,
+      "observedPeriod": "Living legislative procedure status checked 2026-10-14; status shown as ongoing; proposal published 2025-12-16; latest retrieved official status page reviewed at cutoff",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Dynamic procedure history; not itself a new act. Its current status at retrieval is ongoing.",
+      "units": null,
+      "relevance": "Primary procedural record used to distinguish Commission proposal from adopted regulation.",
+      "mechanismIds": [
+        "automotive_hybrid_agreement_status"
+      ],
+      "sourceType": "official EU legislative procedure record",
+      "availabilityLimit": "The page may update after the research cutoff; this record represents the 2026-10-14 retrieval only."
+    },
+    {
+      "id": "CARESTER_INFRAVIA_2026",
+      "title": "InfraVia reaches agreement to invest in Carester; Caremag remains scheduled for late-2026 commissioning",
+      "publisher": "Carester",
+      "url": "https://www.carester.fr/en/infravia-critical-metals-fund-has-reached-an-agreement-to-invest-in-carester-leader-in-rare-earth-recycling-and-separation/",
+      "publishedAt": "2026-04-09",
+      "observedPeriod": "Project schedule and financing update published 2026-04-09; as of 2026-10-14 the company still described commissioning as scheduled for late 2026",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "Company announcement; transaction subject to due diligence/conditions and definitive documentation. Project throughput figures are planned nameplate feed capacities, not production.",
+      "units": "EUR financing/equity; tonnes per year planned feed",
+      "relevance": "Latest dated company update found for Caremag commissioning and planned recycling/refining capacity.",
+      "mechanismIds": [
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "company project disclosure",
+      "availabilityLimit": "No independently audited installed capacity, commissioning completion, feedstock sourcing, utilization or output was located by cutoff."
+    },
+    {
+      "id": "NEO_NARVA_COMMERCIAL_2026",
+      "title": "Neo begins commercial magnet production in Narva",
+      "publisher": "Invest in Estonia (Estonian Investment Agency)",
+      "url": "https://investinestonia.com/neo-new-magent-factory-narva-production/",
+      "publishedAt": null,
+      "observedPeriod": "Commercial production and initial Tier 1 EV traction-motor supply reported in 2026; page crawled/retrieved 2026-10-14 but gives no explicit publication date",
+      "retrievedAt": "2026-10-14T16:22:41Z",
+      "revision": "The agency reports commercial production, one programme in production and other programmes expected to qualify later; it does not report observed annual output. Neo corporate 2025 opening release independently reports qualification-sample production/shipment.",
+      "units": "Company planned expansion about 5,000 tonnes/year; not current observed output",
+      "relevance": "Evidence that Narva has passed beyond announcement/opening to limited commercial production, while not establishing capacity utilization or output volume.",
+      "mechanismIds": [
+        "refining_capacity"
+      ],
+      "sourceType": "government investment promotion, reporting company milestone",
+      "availabilityLimit": "Not an audited company production filing; no tonnes, yield, utilization or full-year data disclosed."
+    },
+    {
+      "id": "EU_JRC125101_NINE_MATERIALS_2021",
+      "title": "Material system analysis of nine raw materials: Barytes, Bismuth, Hafnium, Helium, Natural Rubber, Phosphorus, Scandium, Tantalum and Vanadium",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC125101",
+      "publishedAt": "2021-07-08",
+      "observedPeriod": "Material system analysis for nine named materials; not permanent magnets or rare-earth magnet recycling",
+      "retrievedAt": "2026-10-14T16:40:00Z",
+      "revision": "Canonical landing page identifies JRC125101 and publication date 2021-07-08. Previously misattributed to JRC112720; retained here as distinct document, not support for magnet recycling claims.",
+      "units": "Report-specific material-system stocks and flows",
+      "relevance": "Citation correction / document identity check; not used as evidence for EU magnet recycling.",
+      "mechanismIds": [
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "JRC technical report",
+      "availabilityLimit": "Nine-material scope does not cover rare-earth permanent magnet recycling; no magnet-specific extraction made."
+    },
+    {
+      "id": "NEO_SILMET_HREE_LINE_2026",
+      "title": "Neo Successfully Commissions Heavy Rare Earth Separation Production Line in Europe",
+      "publisher": "Neo Performance Materials",
+      "url": "https://www.neomaterials.com/neo-successfully-commissions-heavy-rare-earth-separation-small-scale-production-line-in-europe/",
+      "publishedAt": "2026-04-10",
+      "observedPeriod": "Silmet, Estonia small-scale HREE solvent-extraction line; commissioning and first process solutions reported 2026-04-10",
+      "retrievedAt": "2026-10-14T16:40:00Z",
+      "revision": "Company states line was operating at nameplate capacity during commissioning and had produced first separated terbium and dysprosium process solutions from mixed rare-earth carbonate feed. Stable product purity remained a focus before transition to routine production. No public annual tonnes, utilization series, feed origin split, yield or audited economics provided in this release.",
+      "units": "Process milestone; no throughput volume disclosed",
+      "relevance": "Direct Estonian separation/refining evidence, distinct from Neo Narva magnet manufacturing.",
+      "mechanismIds": [
+        "critical_minerals_production",
+        "refining_capacity"
+      ],
+      "sourceType": "issuer press release",
+      "availabilityLimit": "Company-reported small-scale commissioning milestone; nameplate volume is undisclosed, precursor process solutions are not finished metals/magnets, and routine production/purity had not yet been established."
+    },
+    {
+      "id": "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025",
+      "title": "Solvay advances European rare earths production through capacity expansion",
+      "publisher": "Solvay",
+      "url": "https://www.solvay.com/sites/g/files/srpend616/files/2025-04/20250408%20Inauguration%20La%20Rochelle%20PR%20-%20EN_0.pdf",
+      "publishedAt": "2025-04-08",
+      "observedPeriod": "La Rochelle, France; new rare-earth production line for permanent magnets inaugurated and commercial production announced from 2025-04-08",
+      "retrievedAt": "2026-10-14T16:40:00Z",
+      "revision": "Company states commercial production begins at the inaugurated line and frames an objective to satisfy 30% of European demand by 2030. Release gives no tonnes/year, audited realized output, utilization, product-specific demand denominator, capital/operating cost, feed contract volumes or price economics. The 30% is a company objective for rare earth production, not an EU-wide recycling sufficiency result or observed share.",
+      "units": "Qualitative commercial-production milestone; stated share objective (% European demand) without disclosed denominator or realized annual volume",
+      "relevance": "French separation/refining operator and direct provenance for a 30% European-demand objective often liable to be confused with recycled-magnet sufficiency.",
+      "mechanismIds": [
+        "refining_capacity",
+        "magnet_recycling_stock_flow"
+      ],
+      "sourceType": "company press release",
+      "availabilityLimit": "Self-reported launch and strategic objective; no independently audited throughput or matched demand/market definition. The source combines rare-earth production and sourcing from mines and recycled materials; it does not say 30% demand is met by recycling."
+    },
+    {
+      "id": "ECB_EA_SECTOR_ACCOUNTS_2025Q4",
+      "title": "Euro area economic and financial developments by institutional sector: fourth quarter of 2025",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/stats/ffi/html/ecb.eaefd_full2025q4~9cc7fb565f.en.html",
+      "publishedAt": "2026-04-28",
+      "observedPeriod": "Euro-area institutional sector accounts; stocks at 2025-Q4 and annual 2025 transactions/flows",
+      "retrievedAt": "2026-10-14T16:40:00Z",
+      "revision": "Second Q4 2025 sector-accounts release, incorporating revisions/completed sector data. Page locators: debt ratios paras 121-142; NFC creditor-sector shares para 169; holdings and external sector tables. NFC consolidated debt excludes positions between NFCs; household and NFC balance-sheet scope differs.",
+      "units": "EUR billions, percent of GDP or disposable income, annual growth rates",
+      "relevance": "Comparable euro-area private-sector debt/creditor context; does not provide a country-matched bank/corporate/household exposure matrix or country-specific maturity ladders.",
+      "mechanismIds": [
+        "debt_exposures",
+        "safe_haven_flows"
+      ],
+      "sourceType": "official central-bank sector accounts",
+      "availabilityLimit": "Euro-area aggregate only for this release; EU non-euro members not included. Flow and debt measures differ in consolidation/scope; do not compare directly with Maastricht general-government gross debt."
+    },
+    {
+      "id": "ECB_INTERNATIONAL_ROLE_EURO_2025",
+      "title": "The international role of the euro, June 2025",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/pub/pdf/ire/ecb.ire202506.en.pdf",
+      "publishedAt": null,
+      "observedPeriod": "Latest foreign euro-area government-debt holder stocks in this report: end-2024; analysis also discusses post-2022 trends",
+      "retrievedAt": "2026-10-14T16:40:00Z",
+      "revision": "Report month June 2025; exact day not asserted. Special feature reports Q4 2024 EA general-government securities EUR 11,186.3bn; nonresident holdings EUR 2,591.5bn by IIP and EUR 2,674.2bn via ECB Securities Holdings Statistics (SHS); SHS foreign official holdings EUR 952.4bn. In flow/ownership interpretation, SHS third-party holdings have custodian coverage limits; securities stocks alone do not identify motive or crisis response. PDF locators pp. 39-41 / printed pages; table A.1 and chart A.1.",
+      "units": "EUR billions; percent of outstanding debt",
+      "relevance": "English-language primary-source locator for foreign-held debt amounts and holder-composition caveats.",
+      "mechanismIds": [
+        "debt_exposures",
+        "safe_haven_flows"
+      ],
+      "sourceType": "ECB report",
+      "availabilityLimit": "End-2024 stocks, not 2026 flows; issuer-level and holder geography detail has coverage/attribution limits. No causal safe-haven elasticity."
+    },
+    {
+      "id": "ECB_EA_SECTOR_ACCOUNTS_2026Q2",
+      "title": "Households and non-financial corporations in the euro area: second quarter of 2026",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/stats/ffi/html/ecb.eaefd_early2026q2~444dc6a8ee.en.html",
+      "publishedAt": "2026-10-02",
+      "observedPeriod": "2026-Q2",
+      "retrievedAt": "2026-10-14T17:15:44.002511Z",
+      "revision": "Q2 2026 release; revised historical series including since 2022-Q1",
+      "units": "percent of GDP; percent of household disposable income"
+    },
+    {
+      "id": "ECB_SI_BANK_STATS_2026Q2",
+      "title": "Supervisory banking statistics, second quarter 2026",
+      "publisher": "European Central Bank / Single Supervisory Mechanism",
+      "url": "https://www.bankingsupervision.europa.eu/press/pr/date/2026/html/ssm.pr260915~7917ca1416.en.html",
+      "publishedAt": "2026-09-15",
+      "observedPeriod": "2026-Q2",
+      "retrievedAt": "2026-10-14T17:15:44.274192Z",
+      "revision": "Significant institutions only; SI statistics release; full SI+LSI system-wide Q2 release dated 2026-10-15 is after cutoff",
+      "units": "percent ratios"
+    },
+    {
+      "id": "EBA_RISK_DASHBOARD_2026Q2",
+      "title": "EU/EEA Risk Dashboard, Q2 2026",
+      "publisher": "European Banking Authority",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-display-strength-amid-challenging-risk-environment",
+      "publishedAt": "2026-09-25",
+      "observedPeriod": "2026-Q2",
+      "retrievedAt": "2026-10-14T17:15:44.718834Z",
+      "revision": "EU/EEA dashboard aggregation; not interchangeable with ECB SI perimeter",
+      "units": "percent ratios"
+    },
+    {
+      "id": "BIS_CBS_B4_2026Q1",
+      "title": "Consolidated banking statistics: published data, flat CSV",
+      "publisher": "Bank for International Settlements",
+      "url": "https://data.bis.org/static/bulk/WS_CBS_PUB_csv_flat.zip",
+      "publishedAt": null,
+      "observedPeriod": "2026-Q1",
+      "retrievedAt": "2026-10-14T17:17:01.011266Z",
+      "revision": "Bulk dataset vintage last updated 2026-09-14; latest observed quarter in extracted series 2026-Q1; EU27 reporters individually summed, not a consolidated EU total",
+      "units": "USD millions; unit multiplier 6"
+    },
+    {
+      "id": "RIZOS_MAGNET_CESEPS_2022",
+      "title": "Developing a supply chain for recycled rare earth permanent magnets in the EU: Challenges and opportunities",
+      "publisher": "CEPS / Susmagpro",
+      "url": "https://circulareconomy.europa.eu/platform/sites/default/files/2023-01/Developing%20a%20supply%20chain%20for%20recycled%20rare%20earth%20permanent%20magnets%20in%20the%20EU.pdf",
+      "publishedAt": "2022-12-16",
+      "observedPeriod": "Model scenarios 2020-2050; report published 2022-12-07",
+      "retrievedAt": "2026-10-14T17:24:22.542533Z",
+      "revision": "Scenario-based MFA for selected applications; values are model results, not observations Reviewer date correction: publisher landing page gives 16 Dec 2022; previously inferred day 7 is superseded.",
+      "units": "magnet tonnes; Nd/Dy content shares; years"
+    },
+    {
+      "id": "JRC_WIND_DECOMMISSIONING_2025",
+      "title": "Material streams from wind energy decommissioning to 2050",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC139814/JRC139814_01.pdf",
+      "publishedAt": "2025-05-27",
+      "observedPeriod": "EU wind installations through 2023; model horizon to 2050",
+      "retrievedAt": "2026-10-14T17:24:22.542533Z",
+      "revision": "Wind REE flows; not equivalent to NdFeB magnet tonnes or processed secondary supply",
+      "units": "tonnes of REE"
+    },
+    {
+      "id": "JRC_WIND_REE_OUTFLOWS_2026",
+      "title": "Material streams from wind energy decommissioning at national level - Focus on glass/carbon composites and rare earth elements",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC148174",
+      "publishedAt": null,
+      "observedPeriod": "JRC148174 issued 2026; publication record accessible 2026-10-06; projected EU wind material outflows to 2050",
+      "retrievedAt": "2026-10-14T17:15:49.818966Z",
+      "revision": "Brief estimate; highly sensitive to assumed lifetime; elemental outflow, not recycling output",
+      "units": "tonnes REE per year"
+    },
+    {
+      "id": "JRC_FORESIGHT_2023",
+      "title": "Supply chain analysis and material demand forecast in strategic technologies and sectors in the EU – A foresight study",
+      "publisher": "European Commission Joint Research Centre",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC132889",
+      "publishedAt": null,
+      "observedPeriod": "JRC132889 report issued 2023; strategic-technology supply chain scenarios",
+      "retrievedAt": "2026-10-14T17:25:29.217421Z",
+      "revision": "JRC132889 PDF checked; report identifies end-of-life recycling input rate below 1% and cites Rizos et al. 2022 scenarios of 8-19% by 2030 and 24-48% by 2050",
+      "units": "percent and as stated in report"
+    }
+  ]
+}

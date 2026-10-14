@@ -1,0 +1,222 @@
+{
+  "kind": "claimLedger",
+  "claims": [
+    {
+      "claimId": "us_ai_capex_revenue_scope",
+      "statement": "The five candidate firms disclose large consolidated infrastructure investment, but their audited reports do not provide a harmonized AI-only capex and directly comparable AI revenue series; the user’s $150–200bn capex versus $40bn AI revenue comparison is therefore unverified at issuer-set, period, and accounting-scope level.",
+      "status": "uncertain",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "MSFT_COPILOT_SEATS_FY26Q4"
+      ],
+      "counterEvidence": "Cloud and advertising revenue, operating cash flow and stated customer demand can fund infrastructure; hyperscaler capex supports core cloud and non-AI workloads as well as AI, so consolidated capex cannot be assigned wholly to AI."
+    },
+    {
+      "claimId": "us_cloud_cash_generates",
+      "statement": "Latest verified reports show substantial consolidated cash generation/liquid resources across the five selected infrastructure operators, while current capex and financing needs differ and some firms are issuing debt or holding restricted escrow; group resources are a buffer, not proof of AI project returns or immunity to a persistent shock.",
+      "status": "supported",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026"
+      ],
+      "counterEvidence": "Amazon TTM operating cash flow was USD 161.403bn against net PPE purchases USD 169.007bn through 2026-06-30; Oracle FY2026 cash capex USD 55.7bn exceeded its USD 32.0bn OCF; Meta had USD 10.8bn restricted cash and raised USD 25bn fixed-rate notes. Consolidated strong OCF does not remove investment/commitment funding risk."
+    },
+    {
+      "claimId": "us_ai_willingness_to_pay_unknown",
+      "statement": "Public disclosures now report adoption indicators, including Microsoft more than 30 million M365 Copilot paid seats at FY2026 year-end, but do not identify paid-seat retention/churn, willingness-to-pay elasticity, net AI revenue or margins; productivity evidence does not identify vendor capture.",
+      "status": "uncertain",
+      "sourceIds": [
+        "NBER_GENAI_AT_WORK_31161",
+        "MSFT_COPILOT_SEATS_FY26Q4",
+        "MSFT_10K_FY2026"
+      ],
+      "counterEvidence": "Microsoft reports paid-seat net adds more than doubled sequentially, Copilot engagement and enterprise deployment wins, and premium offerings drove ARPU growth; these are real adoption signals but not causal demand elasticity or AI-specific financial returns."
+    },
+    {
+      "claimId": "us_commitments_are_heterogeneous",
+      "statement": "Disclosed capital and lease commitments can make infrastructure adjustment costly and delayed, but reported obligations differ in legal firmness, cancellation rights, commencement timing, and whether they are cash or noncash lease commitments; treating all as fixed cash outflows would overstate rigidity.",
+      "status": "supported",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "counterEvidence": "Current filings quantify materially different legal categories: Meta uncommenced leases and non-cancelable commitments, Google uncommenced/non-cancelable leases, Amazon unconditional POs and generally cancellable ordinary-course open orders, Microsoft purchase orders including some take-or-pay and open orders, and Oracle data-center power obligations and discretionary capex timing. These categories differ in commencement, cash timing and cancellation rights."
+    },
+    {
+      "claimId": "us_quality_adjusted_price_competition",
+      "statement": "Posted API prices, open-weight releases and vendor serving-cost guidance establish credible competitive channels, but quality-, latency-, context-, modality-, batch-, concurrency- and support-adjusted cost per completed workload remains heterogeneous; no matched realized customer switching/price series was found.",
+      "status": "uncertain",
+      "sourceIds": [
+        "OPENAI_API_PRICING",
+        "META_LLAMA4_COST_ESTIMATE",
+        "META_LLAMA_INFERENCE_COST_GUIDE",
+        "LLM_INFERENCE_COST_METHOD_2026",
+        "META_LLAMA4_LICENSE"
+      ],
+      "counterEvidence": "Meta’s deployment guide identifies GPU, token volume, latency and operating/maintenance costs as determinants; open weights do not eliminate serving, engineering, security, or support costs. Model-cost benchmarks are not end-user willingness to pay."
+    },
+    {
+      "claimId": "us_refinancing_transmission_is_lagged",
+      "statement": "Monetary tightening transmits to corporate investment heterogeneously through debt maturity, rollover needs, floating-rate exposure, and distress; a policy-rate increase does not immediately reset every firm’s effective coupon or imply a 10–12% refinancing rate for these hyperscalers.",
+      "status": "supported",
+      "sourceIds": [
+        "FED_CORP_DEBT_COSTS_2023",
+        "FED_MATURITY_2024",
+        "FED_DISTRESSED_FIRMS_2023",
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026"
+      ],
+      "counterEvidence": "Large cash buffers, fixed-rate long-dated debt, interest income and operating cash generation can delay or absorb financing-cost transmission; the Fed firm samples are not specific to the five highly rated hyperscalers."
+    },
+    {
+      "claimId": "us_rd_displacement_not_yet_observed",
+      "statement": "The inspected 2025 issuer filings disclose substantial R&D spending and, for Meta and Alphabet, increases rather than cuts; they do not establish that a future AI correction or refinancing shock will displace R&D at these firms.",
+      "status": "uncertain",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "FED_RND_FINANCIAL_FRICTIONS_NBER31521",
+        "FED_DISTRESSED_FIRMS_2023"
+      ],
+      "counterEvidence": "Firm-level finance literature links financing constraints to investment and innovation responses, especially for more constrained firms, but large liquid parent companies may protect R&D and reallocate other investment first; historic estimates do not identify a current hyperscaler response."
+    },
+    {
+      "claimId": "us_distressed_sales_not_established",
+      "statement": "The inspected evidence finds no realized distressed hyperscaler datacenter/GPU sale price or recovery sample. Third-party IREN reports FY2026 impairment of USD 638.8m, mainly mining hardware and facility equipment amid conversion to AI cloud; Hyperscale Data disclosed a small mining-equipment impairment during power reallocation to AI compute. These are accounting impairments/strategic conversions, not fire-sale prices or recovery discounts.",
+      "status": "uncertain",
+      "sourceIds": [
+        "FED_DISTRESSED_FIRMS_2023",
+        "WORLDCOM_2002_10Q",
+        "MSFT_10K_FY2026",
+        "ORCL_10K_FY2026",
+        "IREN_FY2026_10K",
+        "HYPERSCALE_DATA_IMPAIRMENT_Q2_2026"
+      ],
+      "counterEvidence": "IREN identifies equipment/facility retrofit as strategic AI capacity conversion and does not report a distressed sale; hyperscaler assets may be reused and parent-level liquidity is substantial. Impairment accounting is not cash disposition."
+    },
+    {
+      "claimId": "telecom_analogue_limited",
+      "statement": "WorldCom is a cautionary comparator for network investment, debt service, governance, and restructuring, but its Chapter 11 outcome cannot be attributed to fiber overbuild alone and does not establish that cash-generative hyperscalers face equivalent failure risk.",
+      "status": "supported",
+      "sourceIds": [
+        "WORLDCOM_2001_10K",
+        "WORLDCOM_2002_10Q",
+        "FCC_TELECOM_2003",
+        "WORLDCOM_RESTATED_FY2001_10K",
+        "GLOBAL_CROSSING_REORG_2002",
+        "MCI_POST_EMERGENCE_Q1_2004"
+      ],
+      "counterEvidence": "WorldCom’s fraud/restatement, acquisition history, leverage and post-bankruptcy fresh-start accounting materially differ from current cloud platforms; telecom infrastructure demand and incumbent network cash flows also varied across firms."
+    },
+    {
+      "claimId": "us_utilization_not_comparable_publicly",
+      "statement": "Issuer documents searched through the latest available cutoff filings disclose capacity, capex, revenue, and selected efficiency/throughput indicators but no common named-firm accelerator-hour or server utilization ratio; absence of a comparable public disclosure is a disclosure gap, not evidence of idle capacity.",
+      "status": "uncertain",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10Q_Q1_FY2027",
+        "US_EIA_DATA_CENTER_ENERGY",
+        "CLOUD_COMPUTE_UTILIZATION_ACADEMIC"
+      ],
+      "counterEvidence": "Academic production-cloud traces demonstrate that compute utilization can be measured under a defined workload and platform, but an older single-platform study cannot substitute for current proprietary hyperscaler AI accelerator utilization."
+    },
+    {
+      "claimId": "us_apple_exclusion_scope",
+      "statement": "Apple is excluded from the five-firm infrastructure-operator cohort under an explicit scope rule: it is a major device, software, and services platform with cloud services, but its FY2025 filing does not present an external public-cloud infrastructure segment comparable to AWS, Azure, Google Cloud, or Oracle Cloud, nor a comparable AI infrastructure cash-flow bridge.",
+      "status": "supported",
+      "sourceIds": [
+        "AAPL_10K_FY2025",
+        "MSFT_10K_FY2025",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025",
+        "ORCL_10K_FY2025"
+      ],
+      "counterEvidence": "Apple operates cloud services and owns data-center/facility infrastructure, so it remains relevant as an ecosystem, device-distribution and potential private-compute comparator. This exclusion is a modeling-scope choice, not a claim that Apple has no AI exposure or infrastructure."
+    },
+    {
+      "claimId": "us_paid_seats_are_adoption_not_elasticity",
+      "statement": "Microsoft reports more than 30 million paid M365 Copilot seats at FY2026 year end and reported rapid net adds, enterprise wins and engagement growth; these are dated adoption indicators, not independent estimates of retention, net price, customer ROI, paid-seat churn, or stand-alone AI revenue.",
+      "status": "supported",
+      "sourceIds": [
+        "MSFT_COPILOT_SEATS_FY26Q4"
+      ],
+      "counterEvidence": "Management reported improved usage/satisfaction and paid seats, but the disclosure is issuer-reported, has no cohort retention or price-elasticity estimate, and is bundled with a broader commercial subscription business."
+    },
+    {
+      "claimId": "us_current_five_company_liquidity_not_uniform",
+      "statement": "The five firms have materially different cash, debt, maturity, financing and contractual exposure; consolidated cash and OCF must be paired with ongoing PPE outlays, scheduled debt, finance lease principal, not-yet-commenced leases, purchase obligations and restricted cash rather than summarized as one sector buffer.",
+      "status": "supported",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "counterEvidence": "Each issuer discloses current liquidity and generally states it expects funding sufficiency; legacy diversified operating cash flows and market access remain significant resilience channels."
+    },
+    {
+      "claimId": "us_distressed_asset_evidence_is_impairment_not_sale",
+      "statement": "The current non-hyperscaler evidence found impairment and infrastructure conversion events in adjacent GPU/data-center operators, but not a matched distressed sale with observable transaction price, liens, utilization, or recovery timing; no hyperscaler fire-sale observation is established.",
+      "status": "supported",
+      "sourceIds": [
+        "IREN_FY2026_10K",
+        "HYPERSCALE_DATA_IMPAIRMENT_Q2_2026"
+      ],
+      "counterEvidence": "The impairment events demonstrate asset obsolescence, conversion friction and possible book-value loss; private transactions may not be publicly disclosed, so searches cannot prove no sale exists."
+    },
+    {
+      "claimId": "us_contractual_cashflow_bridge_reconciled",
+      "statement": "Issuer filings publish meaningful but non-comparable company debt and contractual obligation schedules. Published face principal, balance-sheet carrying debt, lease liabilities, interest-inclusive obligations, and annual purchase commitments have been kept as distinct measures and dated to the source reporting period.",
+      "status": "supported",
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "counterEvidence": "Several firms do not publish principal-only annual ladders or full annual commitment timing. Their disclosed grouped buckets remain unallocated; principal-plus-interest schedules are not relabeled as principal."
+    },
+    {
+      "claimId": "us_meta_note8_effective_rate_full_range",
+      "statement": "Meta Note 8 at June 30, 2026 reports a full debt effective interest range of 3.63%–6.48% per year; the 4.27% lower bound applies only to the November 2025 issuance subset.",
+      "status": "supported",
+      "sourceIds": [
+        "META_10Q_Q2_2026"
+      ],
+      "counterEvidence": "The filing discloses issuance-level ranges and not a single portfolio-weighted refinancing coupon or market yield."
+    },
+    {
+      "claimId": "us_oracle_observation_vintages_separate",
+      "statement": "Oracle’s latest interim cash/debt/lease balances are dated August 31, 2026, whereas the published detailed principal maturity ladder is dated May 31, 2026; the bridge retains those vintages separately and does not imply a same-date reconciliation.",
+      "status": "supported",
+      "sourceIds": [
+        "ORCL_10K_FY2026",
+        "ORCL_10Q_Q1_FY2027"
+      ],
+      "counterEvidence": "The Q1 FY2027 filing does not provide a complete replacement annual face-principal schedule, so post-May issuance/repayment allocation by maturity remains unavailable."
+    }
+  ]
+}

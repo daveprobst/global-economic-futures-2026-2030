@@ -1,0 +1,961 @@
+{
+  "mechanisms": [
+    {
+      "owner": "us",
+      "mechanismId": "ai_capex_revenue_mismatch",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Current consolidated filings added; AI allocation unavailable is acceptable, but normalized company bridge remains incomplete.",
+      "priorEvidenceSourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025",
+        "META_10K_FY2025"
+      ],
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025",
+        "META_10K_FY2025",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "willingness_to_pay",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_disclosure_limits",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Paid seats and productivity/adoption counterevidence investigated; retention/elasticity remain undisclosed. No probability calibrated.",
+      "priorEvidenceSourceIds": [
+        "MSFT_COPILOT_SEATS_FY26Q4",
+        "NBER_GENAI_AT_WORK_31161",
+        "OPENAI_API_PRICING",
+        "MSFT_10K_FY2025"
+      ],
+      "sourceIds": [
+        "MSFT_COPILOT_SEATS_FY26Q4",
+        "NBER_GENAI_AT_WORK_31161",
+        "OPENAI_API_PRICING",
+        "MSFT_10K_FY2025"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "fixed_commitments",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Legal categories and restricted escrow investigated; timing/category bridge still incomplete.",
+      "priorEvidenceSourceIds": [
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2025",
+        "AMZN_10K_FY2025",
+        "META_10K_FY2025",
+        "US_EIA_DATA_CENTER_ENERGY"
+      ],
+      "sourceIds": [
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2025",
+        "AMZN_10K_FY2025",
+        "META_10K_FY2025",
+        "US_EIA_DATA_CENTER_ENERGY",
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "GOOG_10Q_Q2_2026",
+        "ORCL_10K_FY2026"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "pricing_competition",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Vendor serving costs and quality caveats investigated; live prices without archived dated workload comparison remain thin.",
+      "priorEvidenceSourceIds": [
+        "META_LLAMA_INFERENCE_COST_GUIDE",
+        "OPENAI_API_PRICING",
+        "META_LLAMA4_LICENSE",
+        "NVDA_10K_FY2026"
+      ],
+      "sourceIds": [
+        "META_LLAMA_INFERENCE_COST_GUIDE",
+        "OPENAI_API_PRICING",
+        "META_LLAMA4_LICENSE",
+        "NVDA_10K_FY2026"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "refinancing_spreads",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Available maturity/reset schedules not harmonized; baseline endpoint conflicts with filing.",
+      "priorEvidenceSourceIds": [
+        "GOOG_10Q_Q2_2026",
+        "FED_CORP_DEBT_COSTS_2023",
+        "FED_MATURITY_2024",
+        "FED_DISTRESSED_FIRMS_2023",
+        "AMZN_10K_FY2025"
+      ],
+      "sourceIds": [
+        "GOOG_10Q_Q2_2026",
+        "FED_CORP_DEBT_COSTS_2023",
+        "FED_MATURITY_2024",
+        "FED_DISTRESSED_FIRMS_2023",
+        "AMZN_10K_FY2025",
+        "MSFT_10K_FY2026",
+        "AMZN_10Q_Q2_2026",
+        "META_10Q_Q2_2026",
+        "ORCL_10K_FY2026",
+        "ORCL_10Q_Q1_FY2027"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "rd_displacement",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Current R&D growth and historical finance/innovation identification examined; direct hyperscaler response unidentified.",
+      "priorEvidenceSourceIds": [
+        "FED_RND_FINANCIAL_FRICTIONS_NBER31521",
+        "FED_DISTRESSED_FIRMS_2023",
+        "META_10K_FY2025",
+        "GOOG_10K_FY2025"
+      ],
+      "sourceIds": [
+        "FED_RND_FINANCIAL_FRICTIONS_NBER31521",
+        "FED_DISTRESSED_FIRMS_2023",
+        "META_10K_FY2025",
+        "GOOG_10K_FY2025"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "distressed_asset_sales",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_disclosure_limits",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Adjacent impairment and conversion cases distinguished from sale proceeds; no matched public recovery identified. Private recovery can remain unknown.",
+      "priorEvidenceSourceIds": [
+        "IREN_FY2026_10K",
+        "FED_DISTRESSED_FIRMS_2023",
+        "WORLDCOM_2002_10Q",
+        "ORCL_10K_FY2025"
+      ],
+      "sourceIds": [
+        "IREN_FY2026_10K",
+        "FED_DISTRESSED_FIRMS_2023",
+        "WORLDCOM_2002_10Q",
+        "ORCL_10K_FY2025"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "telecom_2001_analogue",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Restated cash-flow fraud and predecessor/successor limits examined; survivor comparison incomplete in global artifact.",
+      "priorEvidenceSourceIds": [
+        "WORLDCOM_2001_10K",
+        "WORLDCOM_2002_10Q",
+        "FCC_TELECOM_2003",
+        "WORLDCOM_RESTATED_FY2001_10K",
+        "GLOBAL_CROSSING_REORG_2002",
+        "MCI_POST_EMERGENCE_Q1_2004"
+      ],
+      "sourceIds": [
+        "WORLDCOM_2001_10K",
+        "WORLDCOM_2002_10Q",
+        "FCC_TELECOM_2003",
+        "WORLDCOM_RESTATED_FY2001_10K",
+        "GLOBAL_CROSSING_REORG_2002",
+        "MCI_POST_EMERGENCE_Q1_2004"
+      ]
+    },
+    {
+      "owner": "us",
+      "mechanismId": "utilization_disclosure",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "All five parent-company cash, carrying/face debt, available annual principal or combined-service schedules, coupon/reset descriptions, leases and legal-category timings are materialized. Meta full-note rate and lease principal corrected; duplicate Oracle lease removed; annual and interim Oracle vintages separated. Null principal-only buckets are accepted where only combined service or grouped tranches were extracted; models may use combined cash-service bounds, not invent principal splits.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_disclosure_limits",
+      "checkpointResolutionIds": [
+        "RR0-US-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Issuer-specific searched sections documented; physical common denominator not disclosed. Capacity demand is not utilization.",
+      "priorEvidenceSourceIds": [
+        "MSFT_10K_FY2026",
+        "US_EIA_DATA_CENTER_ENERGY",
+        "CLOUD_COMPUTE_UTILIZATION_ACADEMIC",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025"
+      ],
+      "sourceIds": [
+        "MSFT_10K_FY2026",
+        "US_EIA_DATA_CENTER_ENERGY",
+        "CLOUD_COMPUTE_UTILIZATION_ACADEMIC",
+        "AMZN_10K_FY2025",
+        "GOOG_10K_FY2025"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "foreign_capital_channels",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Revised BOP/IIP, instrument/sector/maturity sidecar and external-debt currency mix added; risk-aversion causality not identified.",
+      "priorEvidenceSourceIds": [
+        "SAFE_BOP_H1_2026",
+        "SAFE_IIP_202606",
+        "SAFE_EXTDEBT_202606",
+        "IMF_CHINA_ARTICLEIV_2026",
+        "SAFE_FX_POLICY_H1_2026",
+        "SAFE_BOP_TABLES_20260929"
+      ],
+      "sourceIds": [
+        "SAFE_BOP_H1_2026",
+        "SAFE_IIP_202606",
+        "SAFE_EXTDEBT_202606",
+        "IMF_CHINA_ARTICLEIV_2026",
+        "SAFE_FX_POLICY_H1_2026",
+        "SAFE_BOP_TABLES_20260929"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "onshore_funding",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "TSF/new-loan rates and controls distinguish onshore financing; located household debt-service public evidence deferred.",
+      "priorEvidenceSourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026",
+        "PBOC_LPR_20260920",
+        "IMF_CHINA_ARTICLEIV_2026",
+        "IMF_CHINA_CORP_VULN_2024"
+      ],
+      "sourceIds": [
+        "PBOC_SCIO_FINSTATS_H1_2026",
+        "PBOC_LPR_20260920",
+        "IMF_CHINA_ARTICLEIV_2026",
+        "IMF_CHINA_CORP_VULN_2024",
+        "PBOC_CREDIT_RMB_2025NOV",
+        "BIS_DSR_CHINA_PNF_2026Q1",
+        "VANKE_INTERIM_2026_TEXT_MIRROR"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "lgfv_deleveraging",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Swap issuance and IMF augmented-debt perimeter quantified; consolidated borrower cash/maturity/guarantee details legitimately uncertain.",
+      "priorEvidenceSourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026",
+        "MOF_DEBT_IMPLEMENTATION_2025",
+        "MOF_LOCAL_DEBT_SWAP_2025",
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ],
+      "sourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026",
+        "MOF_DEBT_IMPLEMENTATION_2025",
+        "MOF_LOCAL_DEBT_SWAP_2025",
+        "PBOC_SCIO_FINSTATS_H1_2026"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "property_balance_sheet",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Current activity/funding/inventory improves cycle evidence but available borrower stocks and household debt-service investigation left incomplete.",
+      "priorEvidenceSourceIds": [
+        "NBS_PROPERTY_202608",
+        "IMF_CHINA_ARTICLEIV_2026",
+        "NBS_COMMUNIQUE_2025"
+      ],
+      "sourceIds": [
+        "NBS_PROPERTY_202608",
+        "IMF_CHINA_ARTICLEIV_2026",
+        "NBS_COMMUNIQUE_2025",
+        "PBOC_CREDIT_RMB_2025NOV",
+        "VANKE_IR_ANNOUNCEMENTS_2026",
+        "VANKE_INTERIM_2026_TEXT_MIRROR",
+        "BIS_DSR_CHINA_PNF_2026Q1"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "demographics",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Annual versus sample-survey dates and age bins distinguished; stocks do not equal labor hours/productivity.",
+      "priorEvidenceSourceIds": [
+        "NBS_COMMUNIQUE_2025",
+        "NBS_POP_SAMPLE_2025",
+        "IMF_CHINA_ARTICLEIV_2025"
+      ],
+      "sourceIds": [
+        "NBS_COMMUNIQUE_2025",
+        "NBS_POP_SAMPLE_2025",
+        "IMF_CHINA_ARTICLEIV_2025"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "consumption_deflation",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Conditional debt/price chain and counterevidence covered; latest PPI cutoff false and deflator/debt-service extraction incomplete.",
+      "priorEvidenceSourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026",
+        "NBS_CPI_202609",
+        "NBS_PPI_202608",
+        "NBS_PROPERTY_202608",
+        "PBOC_SCIO_FINSTATS_H1_2026",
+        "IMF_CHINA_2023_AIV_DELEVERAGING",
+        "BIS_DEFLATION_HIST_2015"
+      ],
+      "sourceIds": [
+        "IMF_CHINA_ARTICLEIV_2026",
+        "NBS_CPI_202609",
+        "NBS_PPI_202608",
+        "NBS_PROPERTY_202608",
+        "PBOC_SCIO_FINSTATS_H1_2026",
+        "IMF_CHINA_2023_AIV_DELEVERAGING",
+        "BIS_DEFLATION_HIST_2015",
+        "NBS_PPI_202609",
+        "BIS_DSR_CHINA_PNF_2026Q1",
+        "PBOC_CREDIT_RMB_2025NOV"
+      ]
+    },
+    {
+      "owner": "china",
+      "mechanismId": "japan_balance_sheet_analogue",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest September PPI corrected using previously verified NBS release. BIS private-sector DSR exported and correctly distinguished from absent household-only series. PBOC household loan/deposit stocks and flows source-located without back-solving current stocks. Vanke is a specific secondary-located reviewed interim illustration, not sector calibration; primary access remains limited. No nonexistent matched household/private borrower matrix required.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CN-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Policy/property/aging parallels qualified by healthy-borrower counterevidence; no irreversible causal transport accepted.",
+      "priorEvidenceSourceIds": [
+        "BOJ_BALANCE_SHEET_2001",
+        "BIS_JAPAN_QR_2016",
+        "BIS_DEBT_REDUCTION_2010",
+        "IMF_CHINA_ARTICLEIV_2025"
+      ],
+      "sourceIds": [
+        "BOJ_BALANCE_SHEET_2001",
+        "BIS_JAPAN_QR_2016",
+        "BIS_DEBT_REDUCTION_2010",
+        "IMF_CHINA_ARTICLEIV_2025"
+      ]
+    },
+    {
+      "owner": "eu",
+      "mechanismId": "debt_exposures",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest ECB debt/bank vintages and partial EU27 bank reporter claims on US/China now quantified with basis-specific coverage. CEPS cohort/lifetime/collection/disassembly assumptions and demand/EOL/secondary-flow envelopes provide substantive feasibility investigation. Plant economics/throughput remain properly unknown; no exact whole-EU 30% sufficiency claimed. CEPS publication metadata and signed-transfer interpretation corrected in reviewed copy.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-EU-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Sovereign/private ratios added but stale and incomplete bank/country exposures remain.",
+      "priorEvidenceSourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026",
+        "EUROSTAT_GOV_DEBT_METADATA",
+        "ECB_DECISION_20260910",
+        "EA_GDP_2026Q2",
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4",
+        "ECB_INTERNATIONAL_ROLE_EURO_2025"
+      ],
+      "sourceIds": [
+        "EUROSTAT_GOV_DEBT_Q1_2026",
+        "EUROSTAT_GOV_DEBT_METADATA",
+        "ECB_DECISION_20260910",
+        "EA_GDP_2026Q2",
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4",
+        "ECB_INTERNATIONAL_ROLE_EURO_2025",
+        "ECB_EA_SECTOR_ACCOUNTS_2026Q2",
+        "ECB_SI_BANK_STATS_2026Q2",
+        "EBA_RISK_DASHBOARD_2026Q2",
+        "BIS_CBS_B4_2026Q1"
+      ]
+    },
+    {
+      "owner": "eu",
+      "mechanismId": "safe_haven_flows",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest ECB debt/bank vintages and partial EU27 bank reporter claims on US/China now quantified with basis-specific coverage. CEPS cohort/lifetime/collection/disassembly assumptions and demand/EOL/secondary-flow envelopes provide substantive feasibility investigation. Plant economics/throughput remain properly unknown; no exact whole-EU 30% sufficiency claimed. CEPS publication metadata and signed-transfer interpretation corrected in reviewed copy.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-EU-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Holdings versus flows and small episode-specific yield estimate investigated; no future causal elasticity required.",
+      "priorEvidenceSourceIds": [
+        "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025",
+        "ECB_PORTFOLIO_SAFE_HAVEN_2012",
+        "ECB_DECISION_20260910",
+        "ECB_INTERNATIONAL_ROLE_EURO_2025",
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ],
+      "sourceIds": [
+        "ECB_FOREIGN_OFFICIAL_EA_DEBT_2025",
+        "ECB_PORTFOLIO_SAFE_HAVEN_2012",
+        "ECB_DECISION_20260910",
+        "ECB_INTERNATIONAL_ROLE_EURO_2025",
+        "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+      ]
+    },
+    {
+      "owner": "eu",
+      "mechanismId": "critical_minerals_production",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest ECB debt/bank vintages and partial EU27 bank reporter claims on US/China now quantified with basis-specific coverage. CEPS cohort/lifetime/collection/disassembly assumptions and demand/EOL/secondary-flow envelopes provide substantive feasibility investigation. Plant economics/throughput remain properly unknown; no exact whole-EU 30% sufficiency claimed. CEPS publication metadata and signed-transfer interpretation corrected in reviewed copy.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-EU-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Resource versus output and permitting path investigated; demand/import/grade/recovery bounds unassembled.",
+      "priorEvidenceSourceIds": [
+        "EU_CRMA_2024_1252",
+        "EC_CRMA_PROJECTS_2025",
+        "EC_CRMA_PROJECTS_2026",
+        "LKAB_PER_GEIJER_RESOURCE",
+        "LKAB_PER_GEIJER_2025_ANNUAL",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+        "NEO_SILMET_HREE_LINE_2026",
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ],
+      "sourceIds": [
+        "EU_CRMA_2024_1252",
+        "EC_CRMA_PROJECTS_2025",
+        "EC_CRMA_PROJECTS_2026",
+        "LKAB_PER_GEIJER_RESOURCE",
+        "LKAB_PER_GEIJER_2025_ANNUAL",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+        "NEO_SILMET_HREE_LINE_2026",
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ]
+    },
+    {
+      "owner": "eu",
+      "mechanismId": "refining_capacity",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest ECB debt/bank vintages and partial EU27 bank reporter claims on US/China now quantified with basis-specific coverage. CEPS cohort/lifetime/collection/disassembly assumptions and demand/EOL/secondary-flow envelopes provide substantive feasibility investigation. Plant economics/throughput remain properly unknown; no exact whole-EU 30% sufficiency claimed. CEPS publication metadata and signed-transfer interpretation corrected in reviewed copy.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_disclosure_limits",
+      "checkpointResolutionIds": [
+        "RR0-EU-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Silmet vs Narva vs Solvay vs Caremag stages now investigated; routine tonnes/utilization/commercial costs not disclosed in located releases.",
+      "priorEvidenceSourceIds": [
+        "EU_CRMA_2024_1252",
+        "EC_CRMA_PROJECTS_2026",
+        "NEO_NARVA_2025_OPENING",
+        "NEO_2024_AIF",
+        "NEO_2026_NARVA_COMMERCIAL",
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_CAREMAG_CURRENT",
+        "CARESTER_INFRAVIA_2026",
+        "NEO_NARVA_COMMERCIAL_2026",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+        "NEO_SILMET_HREE_LINE_2026",
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ],
+      "sourceIds": [
+        "EU_CRMA_2024_1252",
+        "EC_CRMA_PROJECTS_2026",
+        "NEO_NARVA_2025_OPENING",
+        "NEO_2024_AIF",
+        "NEO_2026_NARVA_COMMERCIAL",
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_CAREMAG_CURRENT",
+        "CARESTER_INFRAVIA_2026",
+        "NEO_NARVA_COMMERCIAL_2026",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+        "NEO_SILMET_HREE_LINE_2026",
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ]
+    },
+    {
+      "owner": "eu",
+      "mechanismId": "magnet_recycling_stock_flow",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest ECB debt/bank vintages and partial EU27 bank reporter claims on US/China now quantified with basis-specific coverage. CEPS cohort/lifetime/collection/disassembly assumptions and demand/EOL/secondary-flow envelopes provide substantive feasibility investigation. Plant economics/throughput remain properly unknown; no exact whole-EU 30% sufficiency claimed. CEPS publication metadata and signed-transfer interpretation corrected in reviewed copy.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-EU-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Correct citation and 30% objective confusion resolved; quantitative cohort/feed/yield feasibility investigation still deferred.",
+      "priorEvidenceSourceIds": [
+        "EU_RESOURCEEU_2025",
+        "EU_CRMA_2024_1252",
+        "JRC_MATERIAL_SYSTEM_ANALYSIS_2021",
+        "JRC_MAGNET_RECYCLING_TECH_ASSESSMENT",
+        "MFA_MAGNETS_UK_2024",
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_INFRAVIA_2026",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+      ],
+      "sourceIds": [
+        "EU_RESOURCEEU_2025",
+        "EU_CRMA_2024_1252",
+        "JRC_MATERIAL_SYSTEM_ANALYSIS_2021",
+        "JRC_MAGNET_RECYCLING_TECH_ASSESSMENT",
+        "MFA_MAGNETS_UK_2024",
+        "CARESTER_CAREMAG_2025_FINANCING",
+        "CARESTER_INFRAVIA_2026",
+        "EC_CRMA_SELECTED_PROJECTS_LIVE_2026",
+        "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025",
+        "RIZOS_MAGNET_CESEPS_2022",
+        "JRC_FORESIGHT_2023",
+        "JRC_WIND_DECOMMISSIONING_2025",
+        "JRC_WIND_REE_OUTFLOWS_2026"
+      ]
+    },
+    {
+      "owner": "eu",
+      "mechanismId": "automotive_hybrid_agreement_status",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Latest ECB debt/bank vintages and partial EU27 bank reporter claims on US/China now quantified with basis-specific coverage. CEPS cohort/lifetime/collection/disassembly assumptions and demand/EOL/secondary-flow envelopes provide substantive feasibility investigation. Plant economics/throughput remain properly unknown; no exact whole-EU 30% sufficiency claimed. CEPS publication metadata and signed-transfer interpretation corrected in reviewed copy.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-EU-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Enacted law versus proposal/procedure and separate compliance flexibility carefully distinguished. Exact alleged deal remains unidentified.",
+      "priorEvidenceSourceIds": [
+        "EU_CAR_CO2_REG_2023_851",
+        "EC_AUTO_PACKAGE_2025",
+        "COUNCIL_CAR_REVIEW_JUNE2026",
+        "COUNCIL_CAR_FLEX_2025",
+        "EU_CAR_TARGET_2022_REVIEW_CLAUSE",
+        "EURLEX_AUTO_PROCEDURE_2025_0420"
+      ],
+      "sourceIds": [
+        "EU_CAR_CO2_REG_2023_851",
+        "EC_AUTO_PACKAGE_2025",
+        "COUNCIL_CAR_REVIEW_JUNE2026",
+        "COUNCIL_CAR_FLEX_2025",
+        "EU_CAR_TARGET_2022_REVIEW_CLAUSE",
+        "EURLEX_AUTO_PROCEDURE_2025_0420"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "chf_appreciation",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Current bilateral means and historical exporter effects added; effective index/firm hedges missing, bilateral response not universal.",
+      "priorEvidenceSourceIds": [
+        "SNB_FX_MONTHLY_202609",
+        "SNB_SAFEHAVEN_2013",
+        "CH_EXPORT_SECTOR_2025",
+        "CH_MARKUPS_2025",
+        "SNB_FX_EXPORTS_2022"
+      ],
+      "sourceIds": [
+        "SNB_FX_MONTHLY_202609",
+        "SNB_SAFEHAVEN_2013",
+        "CH_EXPORT_SECTOR_2025",
+        "CH_MARKUPS_2025",
+        "SNB_FX_EXPORTS_2022"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "import_inflation_snb",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Official forecast disagreement and invoice-currency event results examined; current import price evidence incomplete.",
+      "priorEvidenceSourceIds": [
+        "SNB_FX_MONTHLY_202609",
+        "SNB_FX_PASS_2018",
+        "SNB_FX_PASS_2007",
+        "SNB_DECISION_20260924"
+      ],
+      "sourceIds": [
+        "SNB_FX_MONTHLY_202609",
+        "SNB_FX_PASS_2018",
+        "SNB_FX_PASS_2007",
+        "SNB_DECISION_20260924",
+        "FSO_IMPORT_PRICE_AUG2026"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "pharma_chemical_exports",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Sector scale and historical heterogeneity investigated but q/q vs y/y source contradiction materially affects traceability.",
+      "priorEvidenceSourceIds": [
+        "CH_FOCBS_2024_TRADE_YEARBOOK",
+        "SCIENCEINDUSTRIES_EXPORTS_2025",
+        "FOCBS_Q1_2026_SECTOR_RELEASE",
+        "CH_EXPORT_SECTOR_2025",
+        "CH_MARKUPS_2025"
+      ],
+      "sourceIds": [
+        "CH_FOCBS_2024_TRADE_YEARBOOK",
+        "SCIENCEINDUSTRIES_EXPORTS_2025",
+        "FOCBS_Q1_2026_SECTOR_RELEASE",
+        "CH_EXPORT_SECTOR_2025",
+        "CH_MARKUPS_2025",
+        "FSO_IMPORT_PRICE_AUG2026"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "commodity_trading",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Gross turnover is qualified; net balance and source-level finance investigation incomplete.",
+      "priorEvidenceSourceIds": [
+        "SNB_MERCHANTING_Q2_2026",
+        "SNB_BOP_2026Q2",
+        "SNB_MERCHANTING_METHOD",
+        "SECO_COMMODITIES_2018",
+        "SNB_MERCHANTING_CA_2013"
+      ],
+      "sourceIds": [
+        "SNB_MERCHANTING_Q2_2026",
+        "SNB_BOP_2026Q2",
+        "SNB_MERCHANTING_METHOD",
+        "SECO_COMMODITIES_2018",
+        "SNB_MERCHANTING_CA_2013",
+        "SNB_BOP_CURRENT_ACCOUNT_Q2_2026"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "eu_market_access",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Signature/dispatch and programme-specific effectiveness separated; do not infer whole-package entry into force.",
+      "priorEvidenceSourceIds": [
+        "CH_EU_PACKAGE_202603",
+        "CH_EU_PACKAGE_STATUS_202608",
+        "EU_MRA_MEDICAL_2021",
+        "OECD_SWISS_EU_2024"
+      ],
+      "sourceIds": [
+        "CH_EU_PACKAGE_202603",
+        "CH_EU_PACKAGE_STATUS_202608",
+        "EU_MRA_MEDICAL_2021",
+        "OECD_SWISS_EU_2024"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "electricity_research_pathways",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Physical integration versus proposed legal access and distinct provisional programme access investigated.",
+      "priorEvidenceSourceIds": [
+        "CH_ELECTRICITY_AGREEMENT_STATUS",
+        "CH_HORIZON_STATUS",
+        "CH_EU_PACKAGE_STATUS_202608"
+      ],
+      "sourceIds": [
+        "CH_ELECTRICITY_AGREEMENT_STATUS",
+        "CH_HORIZON_STATUS",
+        "CH_EU_PACKAGE_STATUS_202608"
+      ]
+    },
+    {
+      "owner": "swiss",
+      "mechanismId": "friendshoring",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "FOCBS q/q period corrected; August detailed import indexes and computed changes verified. SNB net total current account, gross merchanting turnover and qualitative net-merchanting direction remain separate. Merchanting-only figure not located after documented endpoint searches; full search exhaustion is not claimed. Private finance/hedge data remain unknown. September import-price release falls after cutoff.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-CH-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Dated supplier/concentration evidence and counterevidence extracted; no current causal gain claimed. Lagged structural weights only.",
+      "priorEvidenceSourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024",
+        "OECD_CH_GVC_2024",
+        "OECD_SWISS_EU_2024",
+        "CH_EXPORT_SECTOR_2025",
+        "OECD_SWISS_SURVEY_2026"
+      ],
+      "sourceIds": [
+        "OECD_CH_GVC_DEPENDENCIES_2024",
+        "OECD_CH_GVC_2024",
+        "OECD_SWISS_EU_2024",
+        "CH_EXPORT_SECTOR_2025",
+        "OECD_SWISS_SURVEY_2026"
+      ]
+    },
+    {
+      "owner": "global",
+      "mechanismId": "global_liquidity_feedbacks",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Official merchandise API rows, explicit no-return states, lagged Swiss input share and separate gross bank-nationality edges constitute a bounded comparison. Query nonreturn is not economic zero or universal source unavailability. Verizon primary OCF/cash/capex/debt comparator completes survivor investigation; WorldCom total-debt definition reconciled. Full identified causal matrix and private hedge detail are not acceptance requirements.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "investigated_with_limits",
+      "checkpointResolutionIds": [
+        "RR0-GL-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Aggregate expanding bank credit, dollar rollover, accelerator and policy backstops investigated; no single liquidity collapse statistic accepted.",
+      "priorEvidenceSourceIds": [
+        "BIS_GLI_2026Q1",
+        "IMF_GFSR_APR2026",
+        "BIS_SWAPLINES_2008",
+        "FED_FINANCIAL_ACCELERATOR",
+        "BIS_DEFLATION_HIST"
+      ],
+      "sourceIds": [
+        "BIS_GLI_2026Q1",
+        "IMF_GFSR_APR2026",
+        "BIS_SWAPLINES_2008",
+        "FED_FINANCIAL_ACCELERATOR",
+        "BIS_DEFLATION_HIST"
+      ]
+    },
+    {
+      "owner": "global",
+      "mechanismId": "cross_border_capital_feedbacks",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Official merchandise API rows, explicit no-return states, lagged Swiss input share and separate gross bank-nationality edges constitute a bounded comparison. Query nonreturn is not economic zero or universal source unavailability. Verizon primary OCF/cash/capex/debt comparator completes survivor investigation; WorldCom total-debt definition reconciled. Full identified causal matrix and private hedge detail are not acceptance requirements.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "deficient",
+      "checkpointResolutionIds": [
+        "RR0-GL-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Authentic selected gross CBS edges but missing matched four-region trade and exposure structure.",
+      "priorEvidenceSourceIds": [
+        "IMF_GFSR_APR2026",
+        "BIS_GLI_2026Q1",
+        "BIS_IBS_GEOGRAPHY",
+        "IMF_CPIS",
+        "IMF_BOP",
+        "OECD_ICIO_2025",
+        "NBER_US_MONETARY_GLOBAL_CYCLE",
+        "BIS_CBS_PUB_2026Q1",
+        "OECD_CH_GVC_DEPENDENCIES_2024"
+      ],
+      "sourceIds": [
+        "IMF_GFSR_APR2026",
+        "BIS_GLI_2026Q1",
+        "BIS_IBS_GEOGRAPHY",
+        "IMF_CPIS",
+        "IMF_BOP",
+        "OECD_ICIO_2025",
+        "NBER_US_MONETARY_GLOBAL_CYCLE",
+        "BIS_CBS_PUB_2026Q1",
+        "OECD_CH_GVC_DEPENDENCIES_2024",
+        "UN_COMTRADE_BILATERAL_2024"
+      ]
+    },
+    {
+      "owner": "global",
+      "mechanismId": "historical_analogue_limits",
+      "disposition": "investigated_with_bounded_use",
+      "rationale": "Official merchandise API rows, explicit no-return states, lagged Swiss input share and separate gross bank-nationality edges constitute a bounded comparison. Query nonreturn is not economic zero or universal source unavailability. Verizon primary OCF/cash/capex/debt comparator completes survivor investigation; WorldCom total-debt definition reconciled. Full identified causal matrix and private hedge detail are not acceptance requirements.",
+      "deEmphasisAuthorized": false,
+      "editorialDecision": "No retirement or omission approved by this review; unavailable disclosures are not fabricated.",
+      "priorDisposition": "partial",
+      "checkpointResolutionIds": [
+        "RR0-GL-01"
+      ],
+      "reviewNote": "Prior substantive investigation reused; closure evidence and accepted-use limits govern unresolved quantities. No mechanism retired; presentation can be evidence-led.",
+      "priorRationale": "Restated WorldCom and Level 3 figures added; failed/surviving cash/debt comparison incomplete and debt definition inconsistent.",
+      "priorEvidenceSourceIds": [
+        "NBER_JST_CREDIT_CYCLES",
+        "NBER_ST_CREDIT_BOOMS",
+        "BIS_DEBT_REDUCTION",
+        "BIS_DEFLATION_HIST",
+        "BIS_SWAPLINES_2008",
+        "GAO_GLOBAL_CROSSING",
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL",
+        "LEVEL3_FY2001_10K_GLOBAL",
+        "VERIZON_FY2001_10K_GLOBAL"
+      ],
+      "sourceIds": [
+        "NBER_JST_CREDIT_CYCLES",
+        "NBER_ST_CREDIT_BOOMS",
+        "BIS_DEBT_REDUCTION",
+        "BIS_DEFLATION_HIST",
+        "BIS_SWAPLINES_2008",
+        "GAO_GLOBAL_CROSSING",
+        "WORLDCOM_RESTATED_FY2001_10K_GLOBAL",
+        "LEVEL3_FY2001_10K_GLOBAL",
+        "VERIZON_FY2001_10K_GLOBAL"
+      ]
+    }
+  ],
+  "total": 32,
+  "priorReviewReused": "run-root/reviews/research/research_re_review/iteration-0/mechanism-depth-review.json"
+}

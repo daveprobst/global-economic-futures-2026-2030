@@ -1,0 +1,251 @@
+{
+  "seed": 20261014,
+  "draws": 2000,
+  "sampling": "independent uniforms over explicit assumption bounds; no empirical probability calibration; dependence sensitivity is deferred to the coordinating model",
+  "scenarios": {
+    "base_adaptation": {
+      "2027": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 84.03426785151919,
+          "p50": 90.8749954489544,
+          "p95": 98.14145984192663,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.003820194044598593,
+          "p50": 0.03710500438774912,
+          "p95": 0.0717928447869884,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.007606391095898185,
+          "p50": 0.07490584217711033,
+          "p95": 0.14154173186042374,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 99.18908153268607,
+          "p50": 101.04649917909511,
+          "p95": 102.91296642925623,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      },
+      "2028": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 71.926186855923,
+          "p50": 83.66121895563893,
+          "p95": 96.9986335900895,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.003820194044598593,
+          "p50": 0.03710500438774912,
+          "p95": 0.0717928447869884,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.007606391095898185,
+          "p50": 0.07490584217711033,
+          "p95": 0.14154173186042374,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 98.38473895297847,
+          "p50": 102.10394996350867,
+          "p95": 105.9107865926922,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      },
+      "2029": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 61.543132931379326,
+          "p50": 76.95311218973359,
+          "p95": 96.17327709386012,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.003820194044598593,
+          "p50": 0.03710500438774912,
+          "p95": 0.0717928447869884,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.007606391095898185,
+          "p50": 0.07490584217711033,
+          "p95": 0.14154173186042374,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 97.58691893579017,
+          "p50": 103.17246696170047,
+          "p95": 108.99593225109852,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      },
+      "2030": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 52.598310887914145,
+          "p50": 70.79757835410183,
+          "p95": 95.22949823720855,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.003820194044598593,
+          "p50": 0.03710500438774912,
+          "p95": 0.0717928447869884,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.007606391095898185,
+          "p50": 0.07490584217711033,
+          "p95": 0.14154173186042374,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 96.79556858845719,
+          "p50": 104.25216598150683,
+          "p95": 112.1709471668279,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      }
+    },
+    "severe_combined": {
+      "2027": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 84.18203997858372,
+          "p50": 90.82352717765419,
+          "p95": 97.83531076156912,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.004901726781876026,
+          "p50": 0.050419583533065596,
+          "p95": 0.094620807912216,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.009803453563752052,
+          "p50": 0.10083916706613119,
+          "p95": 0.189241615824432,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 101.01010101010101,
+          "p50": 101.01010101010101,
+          "p95": 101.01010101010101,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      },
+      "2028": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 71.05943632412688,
+          "p50": 82.58981851261319,
+          "p95": 95.94382243018285,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.007352590172814038,
+          "p50": 0.07562937529959839,
+          "p95": 0.14193121186832397,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.014705180345628076,
+          "p50": 0.15125875059919677,
+          "p95": 0.28386242373664794,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 103.07153164296022,
+          "p50": 103.07153164296022,
+          "p95": 103.07153164296022,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      },
+      "2029": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 60.16652555174021,
+          "p50": 75.4837055570957,
+          "p95": 94.35057329130575,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.007352590172814038,
+          "p50": 0.07562937529959839,
+          "p95": 0.14193121186832397,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.014705180345628076,
+          "p50": 0.15125875059919677,
+          "p95": 0.28386242373664794,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 106.25931097212394,
+          "p50": 106.25931097212394,
+          "p95": 106.25931097212394,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      },
+      "2030": {
+        "real_consumption_index_2026_100": {
+          "n": 2000,
+          "p05": 51.47548310887526,
+          "p50": 69.31679216897223,
+          "p95": 93.2963369893129,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "domestic_residual_funding_stress_fraction_assumed_pool": {
+          "n": 2000,
+          "p05": 0.004901726781876026,
+          "p50": 0.050419583533065596,
+          "p95": 0.094620807912216,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "external_residual_funding_stress_fraction_assumed_maturity": {
+          "n": 2000,
+          "p05": 0.009803453563752052,
+          "p50": 0.10083916706613119,
+          "p95": 0.189241615824432,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        },
+        "fixed_nominal_debt_real_burden_index_2026_100": {
+          "n": 2000,
+          "p05": 108.42786833890197,
+          "p50": 108.42786833890197,
+          "p95": 108.42786833890197,
+          "interpretation": "conditional parameter-design percentiles; not forecast probabilities"
+        }
+      }
+    }
+  }
+}

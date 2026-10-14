@@ -1,0 +1,817 @@
+[
+ {
+  "region": "us",
+  "claimId": "us_ai_capex_revenue_scope",
+  "statement": "The five candidate firms disclose large consolidated infrastructure investment, but their audited reports do not provide a harmonized AI-only capex and directly comparable AI revenue series; the user’s $150–200bn capex versus $40bn AI revenue comparison is therefore unverified at issuer-set, period, and accounting-scope level.",
+  "status": "uncertain",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026",
+   "MSFT_COPILOT_SEATS_FY26Q4"
+  ],
+  "counterEvidence": "Cloud and advertising revenue, operating cash flow and stated customer demand can fund infrastructure; hyperscaler capex supports core cloud and non-AI workloads as well as AI, so consolidated capex cannot be assigned wholly to AI."
+ },
+ {
+  "region": "us",
+  "claimId": "us_cloud_cash_generates",
+  "statement": "Latest verified reports show substantial consolidated cash generation/liquid resources across the five selected infrastructure operators, while current capex and financing needs differ and some firms are issuing debt or holding restricted escrow; group resources are a buffer, not proof of AI project returns or immunity to a persistent shock.",
+  "status": "supported",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026"
+  ],
+  "counterEvidence": "Amazon TTM operating cash flow was USD 161.403bn against net PPE purchases USD 169.007bn through 2026-06-30; Oracle FY2026 cash capex USD 55.7bn exceeded its USD 32.0bn OCF; Meta had USD 10.8bn restricted cash and raised USD 25bn fixed-rate notes. Consolidated strong OCF does not remove investment/commitment funding risk."
+ },
+ {
+  "region": "us",
+  "claimId": "us_ai_willingness_to_pay_unknown",
+  "statement": "Public disclosures now report adoption indicators, including Microsoft more than 30 million M365 Copilot paid seats at FY2026 year-end, but do not identify paid-seat retention/churn, willingness-to-pay elasticity, net AI revenue or margins; productivity evidence does not identify vendor capture.",
+  "status": "uncertain",
+  "sourceIds": [
+   "NBER_GENAI_AT_WORK_31161",
+   "MSFT_COPILOT_SEATS_FY26Q4",
+   "MSFT_10K_FY2026"
+  ],
+  "counterEvidence": "Microsoft reports paid-seat net adds more than doubled sequentially, Copilot engagement and enterprise deployment wins, and premium offerings drove ARPU growth; these are real adoption signals but not causal demand elasticity or AI-specific financial returns."
+ },
+ {
+  "region": "us",
+  "claimId": "us_commitments_are_heterogeneous",
+  "statement": "Disclosed capital and lease commitments can make infrastructure adjustment costly and delayed, but reported obligations differ in legal firmness, cancellation rights, commencement timing, and whether they are cash or noncash lease commitments; treating all as fixed cash outflows would overstate rigidity.",
+  "status": "supported",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026",
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "counterEvidence": "Current filings quantify materially different legal categories: Meta uncommenced leases and non-cancelable commitments, Google uncommenced/non-cancelable leases, Amazon unconditional POs and generally cancellable ordinary-course open orders, Microsoft purchase orders including some take-or-pay and open orders, and Oracle data-center power obligations and discretionary capex timing. These categories differ in commencement, cash timing and cancellation rights."
+ },
+ {
+  "region": "us",
+  "claimId": "us_quality_adjusted_price_competition",
+  "statement": "Posted API prices, open-weight releases and vendor serving-cost guidance establish credible competitive channels, but quality-, latency-, context-, modality-, batch-, concurrency- and support-adjusted cost per completed workload remains heterogeneous; no matched realized customer switching/price series was found.",
+  "status": "uncertain",
+  "sourceIds": [
+   "OPENAI_API_PRICING",
+   "META_LLAMA4_COST_ESTIMATE",
+   "META_LLAMA_INFERENCE_COST_GUIDE",
+   "LLM_INFERENCE_COST_METHOD_2026",
+   "META_LLAMA4_LICENSE"
+  ],
+  "counterEvidence": "Meta’s deployment guide identifies GPU, token volume, latency and operating/maintenance costs as determinants; open weights do not eliminate serving, engineering, security, or support costs. Model-cost benchmarks are not end-user willingness to pay."
+ },
+ {
+  "region": "us",
+  "claimId": "us_refinancing_transmission_is_lagged",
+  "statement": "Monetary tightening transmits to corporate investment heterogeneously through debt maturity, rollover needs, floating-rate exposure, and distress; a policy-rate increase does not immediately reset every firm’s effective coupon or imply a 10–12% refinancing rate for these hyperscalers.",
+  "status": "supported",
+  "sourceIds": [
+   "FED_CORP_DEBT_COSTS_2023",
+   "FED_MATURITY_2024",
+   "FED_DISTRESSED_FIRMS_2023",
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026"
+  ],
+  "counterEvidence": "Large cash buffers, fixed-rate long-dated debt, interest income and operating cash generation can delay or absorb financing-cost transmission; the Fed firm samples are not specific to the five highly rated hyperscalers."
+ },
+ {
+  "region": "us",
+  "claimId": "us_rd_displacement_not_yet_observed",
+  "statement": "The inspected 2025 issuer filings disclose substantial R&D spending and, for Meta and Alphabet, increases rather than cuts; they do not establish that a future AI correction or refinancing shock will displace R&D at these firms.",
+  "status": "uncertain",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026",
+   "FED_RND_FINANCIAL_FRICTIONS_NBER31521",
+   "FED_DISTRESSED_FIRMS_2023"
+  ],
+  "counterEvidence": "Firm-level finance literature links financing constraints to investment and innovation responses, especially for more constrained firms, but large liquid parent companies may protect R&D and reallocate other investment first; historic estimates do not identify a current hyperscaler response."
+ },
+ {
+  "region": "us",
+  "claimId": "us_distressed_sales_not_established",
+  "statement": "The inspected evidence finds no realized distressed hyperscaler datacenter/GPU sale price or recovery sample. Third-party IREN reports FY2026 impairment of USD 638.8m, mainly mining hardware and facility equipment amid conversion to AI cloud; Hyperscale Data disclosed a small mining-equipment impairment during power reallocation to AI compute. These are accounting impairments/strategic conversions, not fire-sale prices or recovery discounts.",
+  "status": "uncertain",
+  "sourceIds": [
+   "FED_DISTRESSED_FIRMS_2023",
+   "WORLDCOM_2002_10Q",
+   "MSFT_10K_FY2026",
+   "ORCL_10K_FY2026",
+   "IREN_FY2026_10K",
+   "HYPERSCALE_DATA_IMPAIRMENT_Q2_2026"
+  ],
+  "counterEvidence": "IREN identifies equipment/facility retrofit as strategic AI capacity conversion and does not report a distressed sale; hyperscaler assets may be reused and parent-level liquidity is substantial. Impairment accounting is not cash disposition."
+ },
+ {
+  "region": "us",
+  "claimId": "telecom_analogue_limited",
+  "statement": "WorldCom is a cautionary comparator for network investment, debt service, governance, and restructuring, but its Chapter 11 outcome cannot be attributed to fiber overbuild alone and does not establish that cash-generative hyperscalers face equivalent failure risk.",
+  "status": "supported",
+  "sourceIds": [
+   "WORLDCOM_2001_10K",
+   "WORLDCOM_2002_10Q",
+   "FCC_TELECOM_2003",
+   "WORLDCOM_RESTATED_FY2001_10K",
+   "GLOBAL_CROSSING_REORG_2002",
+   "MCI_POST_EMERGENCE_Q1_2004"
+  ],
+  "counterEvidence": "WorldCom’s fraud/restatement, acquisition history, leverage and post-bankruptcy fresh-start accounting materially differ from current cloud platforms; telecom infrastructure demand and incumbent network cash flows also varied across firms."
+ },
+ {
+  "region": "us",
+  "claimId": "us_utilization_not_comparable_publicly",
+  "statement": "Issuer documents searched through the latest available cutoff filings disclose capacity, capex, revenue, and selected efficiency/throughput indicators but no common named-firm accelerator-hour or server utilization ratio; absence of a comparable public disclosure is a disclosure gap, not evidence of idle capacity.",
+  "status": "uncertain",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10Q_Q1_FY2027",
+   "US_EIA_DATA_CENTER_ENERGY",
+   "CLOUD_COMPUTE_UTILIZATION_ACADEMIC"
+  ],
+  "counterEvidence": "Academic production-cloud traces demonstrate that compute utilization can be measured under a defined workload and platform, but an older single-platform study cannot substitute for current proprietary hyperscaler AI accelerator utilization."
+ },
+ {
+  "region": "us",
+  "claimId": "us_apple_exclusion_scope",
+  "statement": "Apple is excluded from the five-firm infrastructure-operator cohort under an explicit scope rule: it is a major device, software, and services platform with cloud services, but its FY2025 filing does not present an external public-cloud infrastructure segment comparable to AWS, Azure, Google Cloud, or Oracle Cloud, nor a comparable AI infrastructure cash-flow bridge.",
+  "status": "supported",
+  "sourceIds": [
+   "AAPL_10K_FY2025",
+   "MSFT_10K_FY2025",
+   "AMZN_10K_FY2025",
+   "GOOG_10K_FY2025",
+   "ORCL_10K_FY2025"
+  ],
+  "counterEvidence": "Apple operates cloud services and owns data-center/facility infrastructure, so it remains relevant as an ecosystem, device-distribution and potential private-compute comparator. This exclusion is a modeling-scope choice, not a claim that Apple has no AI exposure or infrastructure."
+ },
+ {
+  "region": "us",
+  "claimId": "us_paid_seats_are_adoption_not_elasticity",
+  "statement": "Microsoft reports more than 30 million paid M365 Copilot seats at FY2026 year end and reported rapid net adds, enterprise wins and engagement growth; these are dated adoption indicators, not independent estimates of retention, net price, customer ROI, paid-seat churn, or stand-alone AI revenue.",
+  "status": "supported",
+  "sourceIds": [
+   "MSFT_COPILOT_SEATS_FY26Q4"
+  ],
+  "counterEvidence": "Management reported improved usage/satisfaction and paid seats, but the disclosure is issuer-reported, has no cohort retention or price-elasticity estimate, and is bundled with a broader commercial subscription business."
+ },
+ {
+  "region": "us",
+  "claimId": "us_current_five_company_liquidity_not_uniform",
+  "statement": "The five firms have materially different cash, debt, maturity, financing and contractual exposure; consolidated cash and OCF must be paired with ongoing PPE outlays, scheduled debt, finance lease principal, not-yet-commenced leases, purchase obligations and restricted cash rather than summarized as one sector buffer.",
+  "status": "supported",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026",
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "counterEvidence": "Each issuer discloses current liquidity and generally states it expects funding sufficiency; legacy diversified operating cash flows and market access remain significant resilience channels."
+ },
+ {
+  "region": "us",
+  "claimId": "us_distressed_asset_evidence_is_impairment_not_sale",
+  "statement": "The current non-hyperscaler evidence found impairment and infrastructure conversion events in adjacent GPU/data-center operators, but not a matched distressed sale with observable transaction price, liens, utilization, or recovery timing; no hyperscaler fire-sale observation is established.",
+  "status": "supported",
+  "sourceIds": [
+   "IREN_FY2026_10K",
+   "HYPERSCALE_DATA_IMPAIRMENT_Q2_2026"
+  ],
+  "counterEvidence": "The impairment events demonstrate asset obsolescence, conversion friction and possible book-value loss; private transactions may not be publicly disclosed, so searches cannot prove no sale exists."
+ },
+ {
+  "region": "us",
+  "claimId": "us_contractual_cashflow_bridge_reconciled",
+  "statement": "Issuer filings publish meaningful but non-comparable company debt and contractual obligation schedules. Published face principal, balance-sheet carrying debt, lease liabilities, interest-inclusive obligations, and annual purchase commitments have been kept as distinct measures and dated to the source reporting period.",
+  "status": "supported",
+  "sourceIds": [
+   "MSFT_10K_FY2026",
+   "AMZN_10Q_Q2_2026",
+   "GOOG_10Q_Q2_2026",
+   "META_10Q_Q2_2026",
+   "ORCL_10K_FY2026",
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "counterEvidence": "Several firms do not publish principal-only annual ladders or full annual commitment timing. Their disclosed grouped buckets remain unallocated; principal-plus-interest schedules are not relabeled as principal."
+ },
+ {
+  "region": "us",
+  "claimId": "us_meta_note8_effective_rate_full_range",
+  "statement": "Meta Note 8 at June 30, 2026 reports a full debt effective interest range of 3.63%–6.48% per year; the 4.27% lower bound applies only to the November 2025 issuance subset.",
+  "status": "supported",
+  "sourceIds": [
+   "META_10Q_Q2_2026"
+  ],
+  "counterEvidence": "The filing discloses issuance-level ranges and not a single portfolio-weighted refinancing coupon or market yield."
+ },
+ {
+  "region": "us",
+  "claimId": "us_oracle_observation_vintages_separate",
+  "statement": "Oracle’s latest interim cash/debt/lease balances are dated August 31, 2026, whereas the published detailed principal maturity ladder is dated May 31, 2026; the bridge retains those vintages separately and does not imply a same-date reconciliation.",
+  "status": "supported",
+  "sourceIds": [
+   "ORCL_10K_FY2026",
+   "ORCL_10Q_Q1_FY2027"
+  ],
+  "counterEvidence": "The Q1 FY2027 filing does not provide a complete replacement annual face-principal schedule, so post-May issuance/repayment allocation by maturity remains unavailable."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-FLOW-01",
+  "statement": "Revised SAFE 2025 BOP records a USD 735.0bn current-account surplus and USD 773.5bn capital-and-financial-account deficit; the H1 2026 vintage likewise records a USD 378.0bn current-account surplus and USD 345.2bn capital-and-financial-account deficit. Instrument-specific flows, reserves, errors/omissions and valuation must be separated before interpreting private outflows or risk aversion. The 2025 sector/maturity workbook further shows both resident foreign-debt-asset acquisitions and net decreases in bank/general-government portfolio-debt liabilities, so the aggregate deficit masks distinct simultaneous channels.",
+  "status": "supported",
+  "sourceIds": [
+   "SAFE_BOP_REVISED_2025",
+   "SAFE_BOP_H1_2026",
+   "SAFE_IIP_202606",
+   "SAFE_BOP_TABLES_20260929"
+  ],
+  "counterEvidence": "In H1 2026 the balance-of-payments aggregate combines different instruments and includes reserve assets per table structure; end-June liabilities were mostly direct and portfolio investment positions, while gross external debt (USD 2.498tn) includes trade credit and intercompany loans. These data do not identify investor motivation, usable liquidity or Western risk aversion; BOP flows also differ from valuation-sensitive IIP stocks. SAFE broad-sector/original-maturity flows establish heterogeneity but do not identify foreign holder nationality, individual borrowers, remaining maturity or investor motivation."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-STOCK-01",
+  "statement": "At end-2025 China reported USD 11.786tn external financial assets, USD 7.715tn external liabilities, and USD 4.071tn net external assets; gross position mix and valuation must be kept distinct from liquid private funding capacity.",
+  "status": "supported",
+  "sourceIds": [
+   "SAFE_IIP_2025"
+  ],
+  "counterEvidence": "The aggregate net asset position can coexist with gross maturity, currency and sector mismatches; reserve assets are public-sector claims and the reported positions are valuation-sensitive stocks, not transaction flows."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-ONSHORE-01",
+  "statement": "Domestic RMB financing is large and distinct from cross-border funding: PBOC/SCIO reports end-June 2026 social financing of RMB 462.06tn, with RMB 279.16tn loans to the real economy and RMB 101.36tn government bonds. Weighted-average rates on newly issued corporate and personal housing loans were about 3.0% and 3.1% respectively in June; none is a borrower-specific LGFV/developer rate.",
+  "status": "supported",
+  "sourceIds": [
+   "PBOC_LPR_20260920",
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ],
+  "counterEvidence": "Aggregates conceal borrower allocation, collateral, nonperforming loans, maturity, local-government exposure and credit rationing. New-loan weighted averages do not capture legacy debt repricing or stressed borrower spreads; PBOC/SCIO notes ongoing structural support and low social-financing costs, which is counterevidence to a uniform onshore funding freeze."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-LGFV-01",
+  "statement": "China completed issuance of RMB 2.0tn in 2025 debt-swap bonds; the IMF 2026 Article IV estimates 2025 augmented debt at 126.6% of GDP and its estimated LGFV debt component at 50.9% of GDP. The swap changes maturity, cost and creditor/perimeter classification; it does not by itself extinguish consolidated public-sector liabilities.",
+  "status": "supported",
+  "sourceIds": [
+   "MOF_LOCAL_DEBT_SWAP_2025",
+   "MOF_DEBT_IMPLEMENTATION_2025",
+   "IMF_CHINA_ARTICLEIV_2026"
+  ],
+  "counterEvidence": "MOF reports that swaps reduced local interest expense/debt-service pressure and strengthened disclosure; maturity relief and transfers can prevent near-term distress. IMF augmented debt is a staff perimeter estimate, not a legally consolidated audited balance sheet; do not add it to separate LGFV liabilities or treat 50.9% of GDP as an official observed stock."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-PROPERTY-01",
+  "statement": "NBS Jan-August 2026 reports real-estate investment down 19.9% y/y, new commercial sales area down 12.1%, developer domestic-loan funding down 33.3% and deposits/advance receipts down 14.8% on comparable/cumulative bases, evidence of weak activity and funding flows but not a measurement of losses, household wealth or completion liabilities.",
+  "status": "supported",
+  "sourceIds": [
+   "NBS_PROPERTY_202608",
+   "IMF_CHINA_ARTICLEIV_2026"
+  ],
+  "counterEvidence": "Second-hand housing online transaction floor area rose 10.6% y/y Jan-August and unsold completed inventory was down 1.1% y/y at August end; national measures conceal major city/cohort differences. NBS funding categories are flows and do not reveal cash buffers, presale obligations, mortgage arrears or recovery values."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-DEMO-01",
+  "statement": "NBS's year-end 2025 annual communiqué reports 851.36m people aged 16–59 (60.6% of population), while the later 1% sample estimates 869.87m aged 15–59 (61.89%); the age bins and survey vintages differ and are not a directly comparable revision.",
+  "status": "supported",
+  "sourceIds": [
+   "NBS_COMMUNIQUE_2025",
+   "NBS_POP_SAMPLE_2025"
+  ],
+  "counterEvidence": "The cohort stock does not identify near-term labor hours, participation, retirement timing, migration, productivity or demand; the reported difference is largely definition-bound and cannot be read as an 18.5m workforce increase."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-DEMAND-01",
+  "statement": "Evidence supports China domestic-demand weakness and deflationary pressure in the IMF 2026 diagnosis, but does not establish generalized household and healthy-firm balance-sheet deleveraging. September 2026 CPI was positive and latest September PPI was +5.0% y/y, while the living-materials PPI subcomponent remained -0.1% y/y.",
+  "status": "uncertain",
+  "sourceIds": [
+   "IMF_CHINA_ARTICLEIV_2025",
+   "IMF_CHINA_2023_AIV_DELEVERAGING",
+   "NBS_COMMUNIQUE_2025",
+   "NBS_CPI_202609",
+   "NBS_PPI_202609",
+   "PBOC_SCIO_FINSTATS_H1_2026",
+   "NBS_PROPERTY_202608"
+  ],
+  "counterEvidence": "Headline CPI +0.9% y/y and aggregate PPI +5.0% y/y in September 2026 contradict a claim of contemporaneous economy-wide consumer or producer price declines; living materials PPI was -0.1% y/y, so subcomponent pressure remains. The H1 household-loan decline is a flow, not proof of a stock-wide balance-sheet contraction. NBS 2025 real income and consumption grew; latest GDP deflator and household cohort balance-sheet distributions remain unavailable."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-JAPAN-01",
+  "statement": "Japan's post-bubble balance-sheet repair literature supports analyzing collateral losses, borrower demand and impaired bank transmission as possible channels, but does not identify a Japan-like Chinese trajectory or the probability of prolonged stagnation.",
+  "status": "uncertain",
+  "sourceIds": [
+   "BOJ_BALANCE_SHEET_2001",
+   "BIS_JAPAN_QR_2016",
+   "BIS_DEFLATION_HIST_2015",
+   "IMF_CHINA_ARTICLEIV_2025"
+  ],
+  "counterEvidence": "China's domestic-bank and state balance sheets, capital controls, income level, policy tools, property/LGFV institutions and current external surplus differ; 2026 IMF also reports resilience and strong exports, while historical deflation evidence separates goods-price declines from damaging asset-price collapses."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-EXTDEBT-01",
+  "statement": "At end-June 2026 SAFE measured USD 2.498tn gross external debt, of which USD 1.469tn (59%) was short-term on contractual original maturity; SAFE states 41% of that short-term amount is trade-related credit. Banks held USD 997.4bn and other sectors USD 1,012.7bn, the latter including intercompany lending.",
+  "status": "supported",
+  "sourceIds": [
+   "SAFE_EXTDEBT_202606"
+  ],
+  "counterEvidence": "Original maturity is not remaining maturity; trade credit and intercompany positions are not equivalent to marketable refinancing debt. Gross external debt omits domestic RMB liabilities and cannot be directly mapped to LGFV or property-sector cash needs without matched borrower data."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-LGFV-PERIMETER-01",
+  "statement": "The IMF 2026 Article IV estimate of augmented debt at 126.6% of GDP in 2025 embeds an expanded public perimeter including government-guided funds and LGFV activity; it is not directly comparable to official budgetary debt or an observed stand-alone LGFV balance-sheet total.",
+  "status": "supported",
+  "sourceIds": [
+   "IMF_CHINA_ARTICLEIV_2026",
+   "MOF_DEBT_IMPLEMENTATION_2025"
+  ],
+  "counterEvidence": "The IMF perimeter provides a useful macro-fiscal risk measure and can expose off-budget activity, but it depends on staff estimates, GDP denominator and classifications. Official swap policy reallocates obligations to on-budget local bonds and provides interest relief; perimeter changes must be reconciled before comparing vintages."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-HOUSEHOLD-BS-01",
+  "statement": "The latest populated PBOC national credit balance sheet located in this closure (November 2025) reports household loans of RMB 83.363tn and household deposits of RMB 163.308tn; these aggregate stocks do not identify mortgage-only exposure or liquidity held by distressed borrower cohorts. PBOC separately reports household loan flows down RMB 0.3668tn in H1 2026, but this is not a June-end stock.",
+  "status": "supported",
+  "sourceIds": [
+   "PBOC_CREDIT_RMB_2025NOV",
+   "PBOC_SCIO_FINSTATS_H1_2026"
+  ],
+  "counterEvidence": "Household loans include short- and medium/long-term credit across consumption and operating purposes. Deposits are not matched to indebted households, and H1 deposits +RMB 7.58tn is a flow, not a June-end liquid-asset stock. Mortgage-specific balance and arrears by cohort are not verified."
+ },
+ {
+  "region": "china",
+  "claimId": "CN-DEVELOPER-BS-01",
+  "statement": "China Vanke’s reviewed, unaudited 2026 interim group report text mirror shows 30 June 2026 cash RMB 53.083bn, current borrowings RMB 167.249bn, current bonds RMB 14.461bn, inventory/contract costs RMB 347.967bn, and contract liabilities RMB 77.553bn. The independent review flags RMB 178.86bn principal due within one year and material going-concern uncertainty. These scoped issuer observations demonstrate refinancing/liquidity mismatch for this group, not sector-wide losses or foreign-funding exposure.",
+  "status": "uncertain",
+  "sourceIds": [
+   "VANKE_IR_ANNOUNCEMENTS_2026",
+   "VANKE_INTERIM_2026_TEXT_MIRROR"
+  ],
+  "counterEvidence": "This is a single issuer-group example, the report statements are reviewed but unaudited, and the table source was a secondary text mirror after direct issuer-page anti-bot and mirror HTTP 403 outcomes. JV/associate exposure, presale accounting and restricted deposits complicate net liquidity; it cannot be extrapolated to all developers or treated as a national property-loss measure."
+ },
+ {
+  "region": "eu",
+  "claimId": "eu_fiscal_positions_diverge",
+  "statement": "EU sovereign recession vulnerability is heterogeneous: 2026-Q1 gross debt ratios ranged from 25.2% of GDP in Estonia to 143.5% in Greece, while several large economies including France, Italy and Belgium exceeded 100%.",
+  "status": "supported",
+  "sourceIds": [
+   "EUROSTAT_GOV_DEBT_Q1_2026",
+   "EUROSTAT_GOV_DEBT_METADATA"
+  ],
+  "counterEvidence": "Gross debt/GDP alone omits maturity, interest reset profile, domestic versus foreign holders, public assets, contingent liabilities, private balance sheets and fiscal capacity; it cannot rank recession vulnerability by itself."
+ },
+ {
+  "region": "eu",
+  "claimId": "ea_foreign_holdings_are_not_safe_haven_flows",
+  "statement": "Foreign ownership of euro-area government bonds is material, but the stock of nonresident holdings does not establish a general safe-haven flow or prove that the euro area will anchor capital during a future shock.",
+  "status": "supported",
+  "sourceIds": [
+   "ECB_INTERNATIONAL_ROLE_EURO_2025",
+   "ECB_PORTFOLIO_SAFE_HAVEN_2012",
+   "ECB_EA_SECTOR_ACCOUNTS_2025Q4"
+  ],
+  "counterEvidence": "Foreign debt securities held by nonresidents were EUR 2,591.5bn by IIP (EUR 2,674.2bn in ECB SHS) at end-2024; ECB reports foreign holdings helped absorb sovereign issuance after Eurosystem net purchases ended in 2022. ECB analysis also finds geopolitical-holder reallocation since end-2021 small in aggregate and estimated yield effects negligible in that setting. These provide stabilizing counterevidence, but stock/period-specific evidence does not establish universal future safe-haven behavior; SHS has custodian and attribution limits."
+ },
+ {
+  "region": "eu",
+  "claimId": "crma_benchmarks_are_not_realized_output",
+  "statement": "The CRMA's 2030 extraction, processing and recycling benchmarks express EU capacity ambitions and do not demonstrate that usable annual output, qualified supply or utilization is already available.",
+  "status": "supported",
+  "sourceIds": [
+   "EU_CRMA_2024_1252",
+   "EC_CRMA_PROJECTS_2025",
+   "EC_CRMA_PROJECTS_2026"
+  ],
+  "counterEvidence": "The binding Act, strategic-project designation and new 2026 project cohort establish policy direction and a pipeline; these actions can shorten permitting and mobilize finance even though they do not equal commissioned capacity."
+ },
+ {
+  "region": "eu",
+  "claimId": "kiruna_resource_not_current_mine_output",
+  "statement": "LKAB's Per Geijer rare-earth estimate is a mineral resource and a prospective source, not a reserve or current mine production; conversion to market supply requires permitting, feasibility, construction, recovery and downstream separation.",
+  "status": "supported",
+  "sourceIds": [
+   "LKAB_PER_GEIJER_RESOURCE",
+   "LKAB_PER_GEIJER_2025_ANNUAL"
+  ],
+  "counterEvidence": "LKAB has existing iron-ore operations, processing know-how and a planned by-product pathway at Luleå that could lower some infrastructure barriers; feasibility and planned projects mean the long-run option is not zero."
+ },
+ {
+  "region": "eu",
+  "claimId": "europe_rare_earth_refining_pipeline_is_conditional",
+  "statement": "European rare-earth processing and magnet projects have moved beyond announcement at some stages—Narva began limited commercial magnet production in 2026—but evidence does not establish audited annual output or utilization. Caremag is financed and planned for late-2026 commissioning, not evidenced as operating by the 2026-10-14 cutoff. Narva is magnet manufacturing; Caremag is a planned recycling/separation/refining facility, and project designation is not throughput.",
+  "status": "supported",
+  "sourceIds": [
+   "NEO_NARVA_2025_OPENING",
+   "NEO_2024_AIF",
+   "NEO_2026_NARVA_COMMERCIAL",
+   "CARESTER_CAREMAG_2025_FINANCING",
+   "CARESTER_INFRAVIA_2026",
+   "EC_CRMA_PROJECTS_2026",
+   "EC_CRMA_SELECTED_PROJECTS_LIVE_2026"
+  ],
+  "counterEvidence": "Narva has been reported as commercially producing and shipping magnets in 2026, and Caremag secured disclosed financing with specified design capacities; these are meaningful de-risking milestones, even though audited utilization and feedstock accounting remain unavailable."
+ },
+ {
+  "region": "eu",
+  "claimId": "recycling_30pct_sufficiency_unsubstantiated",
+  "statement": "The alleged roughly 30% EU permanent-magnet recycling sufficiency is not established. A primary source does report Solvay’s corporate objective to satisfy 30% of European rare-earth demand by 2030, but that is a forward-looking company objective for rare-earth production, not an observed EU-wide recycled-magnet input share; the source does not provide a matched denominator or audited throughput.",
+  "status": "supported",
+  "sourceIds": [
+   "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025",
+   "EU_RESOURCEEU_2025",
+   "EU_CRMA_2024_1252",
+   "JRC_MATERIAL_SYSTEM_ANALYSIS_2021",
+   "JRC_MAGNET_RECYCLING_TECH_ASSESSMENT",
+   "MFA_MAGNETS_UK_2024",
+   "CARESTER_CAREMAG_2025_FINANCING",
+   "JRC_FORESIGHT_2023"
+  ],
+  "counterEvidence": "Solvay reported commercial production beginning at its La Rochelle line from April 2025 and a 30% European-demand objective by 2030; Commission RESOurceEU separately projected around 3,800 tonnes of permanent magnets (~20% of then-current demand) from several projects conditional on feedstock and incentives. Both are material positive supply developments, yet neither validates 30% recycled share: they have different scope, stages, denominators and conditionality. JRC132889 reports end-of-life recycling input rate below 1% in its 2023 baseline discussion; this is a broader REE indicator, not an EU magnet-specific capacity/output measure."
+ },
+ {
+  "region": "eu",
+  "claimId": "automotive_hybrid_deal_misstates_status",
+  "statement": "No verified March 2026 EU-wide hybrid agreement was found in the primary legal record as of 2026-10-14. Regulation (EU) 2023/851 remains the enacted baseline; COM(2025) 995 proposes a 90% rather than 100% 2035 fleet reduction, but the ordinary legislative procedure 2025/0420/COD remained ongoing at retrieval. March and June 2026 Council records describe debate/progress, not adoption; the distinct 2025–27 compliance averaging measure is enacted.",
+  "status": "supported",
+  "sourceIds": [
+   "EU_CAR_CO2_REG_2023_851",
+   "EC_AUTO_PACKAGE_2025",
+   "COUNCIL_CAR_REVIEW_JUNE2026",
+   "COUNCIL_CAR_FLEX_2025",
+   "EU_CAR_TARGET_2022_REVIEW_CLAUSE",
+   "EURLEX_AUTO_PROCEDURE_2025_0420"
+  ],
+  "counterEvidence": "The proposal is a live legislative file and would introduce meaningful flexibility after adoption; it is not accurate to say EU law could never change. The already adopted 2025–27 compliance averaging is a real flexibility, and the 2026 statutory review clause explicitly required review. Neither constitutes a March 2026 hybrid-specific agreement or an adopted repeal of the 2035 target."
+ },
+ {
+  "region": "eu",
+  "claimId": "ea_growth_not_broad_demand_proof",
+  "statement": "Euro-area Q2 2026 GDP increased 0.6% quarter on quarter, but the expenditure composition included a negative inventory contribution and a positive net-export contribution, so headline growth alone is not evidence of broad domestic-demand resilience.",
+  "status": "supported",
+  "sourceIds": [
+   "EA_GDP_2026Q2"
+  ],
+  "counterEvidence": "Household consumption contributed positively and employment increased 0.1% in the euro area; these observations qualify a weak-demand interpretation and should be retained alongside the volatile inventory and trade contributions."
+ },
+ {
+  "region": "eu",
+  "claimId": "solvay_30pct_is_a_company_goal_not_recycling_observation",
+  "statement": "Solvay’s April 2025 statement that its La Rochelle expansion is a first step toward satisfying 30% of European rare-earth demand by 2030 is a company objective; the release does not report an achieved 30% share, disclose a tonnes-per-year plant output, or identify the objective as recycled permanent-magnet feed alone.",
+  "status": "supported",
+  "sourceIds": [
+   "SOLVAY_LAROCHELLE_MAGNET_RARE_EARTH_2025"
+  ],
+  "counterEvidence": "The inaugurated line is stated to have begun commercial production, so this is a real process milestone. Without output, demand denominator, product mix, or share attribution between mined and recycled feed, the scale and 2030 realization remain unknown."
+ },
+ {
+  "region": "eu",
+  "claimId": "eu_private_debt_latest_q2_2026",
+  "statement": "ECB Q2 2026 euro-area sector accounts report non-financial corporation debt at 66.0% of GDP on a consolidated basis and 135.6% on a wider non-consolidated basis, while household debt was 80.3% of disposable income; these are euro-area aggregates, not EU27 totals.",
+  "status": "supported",
+  "sourceIds": [
+   "ECB_EA_SECTOR_ACCOUNTS_2026Q2"
+  ],
+  "counterEvidence": "The release revises historical data and the broader measure includes inter-NFC claims; ratios do not measure near-term gross refinancing, debt service, or member-state dispersion."
+ },
+ {
+  "region": "eu",
+  "claimId": "eu_bank_resilience_perimeter_2026q2",
+  "statement": "Q2 2026 bank capital evidence is strong in both the ECB Significant Institution subset and the EBA EU/EEA dashboard, but the measures have different supervisory and geographic perimeters and do not identify country-level US/China credit exposure.",
+  "status": "supported",
+  "sourceIds": [
+   "ECB_SI_BANK_STATS_2026Q2",
+   "EBA_RISK_DASHBOARD_2026Q2"
+  ],
+  "counterEvidence": "ECB Q2 SI CET1 is 16.00%; EBA EU/EEA CET1 is 16.1%. The October 15 full SI+LSI ECB system-wide release falls after the 2026-10-14 cutoff; prudential ratios do not alone measure losses or liquidity stress."
+ },
+ {
+  "region": "eu",
+  "claimId": "eu_crossborder_bank_claims_us_china_partial",
+  "statement": "BIS Q1 2026 consolidated banking data identify material EU-reporter bank claims on US and China counterparties, but published coverage differs by country and risk basis and cannot be interpreted as complete EU totals.",
+  "status": "supported",
+  "sourceIds": [
+   "BIS_CBS_B4_2026Q1"
+  ],
+  "counterEvidence": "Immediate-counterparty US claims cover 12 of 27 EU reporters and China claims 9 of 27; missing/suppressed rows are not zero. All-sector claims are not net exposures, loss estimates, or exposures of non-bank investors."
+ },
+ {
+  "region": "eu",
+  "claimId": "eu_recycling_not_exact_30pct",
+  "statement": "A source-linked cohort and mass-balance review does not establish that EU magnet recycling can supply exactly 30% of demand in the 2030s; a 2022 selected-application model estimates 8–19% secondary supply/demand during 2025–2030, 16–34% in 2040 and 24–48% in 2050, subject to modeled assumptions and incomplete market coverage.",
+  "status": "supported",
+  "sourceIds": [
+   "RIZOS_MAGNET_CESEPS_2022",
+   "JRC_FORESIGHT_2023"
+  ],
+  "counterEvidence": "The model excludes some applications, uses scenario sales, collection and chain-loss assumptions and does not report universal plant-specific separated-element yields or manufacturing scrap; these intervals are feasibility scenarios, not confidence intervals or calibrated probabilities."
+ },
+ {
+  "region": "eu",
+  "claimId": "eu_magnet_stock_flow_known_unknowns",
+  "statement": "Available lifetime and cohort evidence implies substantial lag between magnet deployment and end-of-life feed: modeled EV retirements become material around 2035, while 2020s feed is dominated by earlier product cohorts; manufacturing scrap and complete Nd/Pr/Dy/Tb composition remain unquantified in the located EU evidence.",
+  "status": "supported",
+  "sourceIds": [
+   "RIZOS_MAGNET_CESEPS_2022",
+   "JRC_WIND_DECOMMISSIONING_2025",
+   "JRC_WIND_REE_OUTFLOWS_2026"
+  ],
+  "counterEvidence": "Lifetime and product-adoption parameters are model assumptions and may shift with early failure, repowering, exports, repair, and changing technology; JRC wind elemental outflows are not magnet output or processed secondary supply."
+ },
+ {
+  "region": "swiss",
+  "claimId": "CHF_SAFE_HAVEN_BILATERAL",
+  "statement": "CHF appreciation during global risk episodes is bilateral and time-varying, rather than a universal rise against every currency.",
+  "status": "supported",
+  "sourceIds": [
+   "SNB_SAFEHAVEN_2013",
+   "SNB_DECISION_20260924"
+  ],
+  "counterEvidence": "The SNB study finds CHF appreciation against EUR and carry currencies but depreciation against USD, JPY and GBP in its historical regressions; the 2026 SNB release reports recent CHF depreciation supporting exports."
+ },
+ {
+  "region": "swiss",
+  "claimId": "CHF_IMPORT_DISINFLATION",
+  "statement": "A CHF appreciation can lower Swiss import prices and consumer inflation, but pass-through depends on invoice currency and is attenuated at aggregate CPI level.",
+  "status": "supported",
+  "sourceIds": [
+   "SNB_FX_PASS_2018",
+   "SNB_FX_PASS_2007",
+   "SNB_FX_EXPORTS_2022"
+  ],
+  "counterEvidence": "The 2015 shock produced immediate complete pass-through for euro-invoiced import unit values but only partial fast pass-through for CHF-invoiced goods; aggregate CPI pass-through has historically been weaker, and higher energy prices can dominate current inflation."
+ },
+ {
+  "region": "swiss",
+  "claimId": "SWISS_INFLATION_FORECAST_06",
+  "statement": "SECO's September 2026 forecast supports 0.6% average inflation in both 2026 and 2027, while the SNB's later September policy assessment projects 0.7% and 0.8% conditional averages.",
+  "status": "uncertain",
+  "sourceIds": [
+   "SECO_FORECAST_20260917",
+   "SNB_DECISION_20260924",
+   "CH_CPI_202609"
+  ],
+  "counterEvidence": "September realized CPI was 1.0% year on year, and SNB's conditional forecast differs from SECO's forecast. These are different forecast models and vintages, not a realized 2027 outcome; the 0.6% thesis is a forecast, not an observed fact."
+ },
+ {
+  "region": "swiss",
+  "claimId": "PHARMA_EXPORTS_ANCHOR",
+  "statement": "Chemicals and pharmaceuticals materially support Swiss merchandise exports and drove an unusually large portion of Q2 2026 GDP growth, making aggregate resilience sensitive to volatile sector output.",
+  "status": "supported",
+  "sourceIds": [
+   "SWISS_EXPORTS_2025",
+   "CH_GDP_2026Q2",
+   "SECO_FORECAST_20260917",
+   "SNB_DECISION_20260924"
+  ],
+  "counterEvidence": "SECO and SNB describe Q2 growth as broad-based beyond chemicals/pharma, while noting the sector's exceptional and volatile contribution. Record nominal exports do not establish real volume, domestic value added, firm profitability or CHF resilience."
+ },
+ {
+  "region": "swiss",
+  "claimId": "MERCHANTING_CA_NOT_GDP",
+  "statement": "Swiss commodity merchanting can materially move measured goods and current-account balances without an equivalent change in domestic production or GDP.",
+  "status": "supported",
+  "sourceIds": [
+   "SNB_BOP_2026Q2",
+   "SNB_MERCHANTING_METHOD",
+   "SNB_MERCHANTING_CA_2013",
+   "SECO_COMMODITIES_2018"
+  ],
+  "counterEvidence": "Merchanting firms generate Swiss-resident margins, services, employment and tax receipts; the issue is that gross trade turnover and current-account surplus alone do not measure those domestic contributions, whose current magnitude is not well classified."
+ },
+ {
+  "region": "swiss",
+  "claimId": "EU_PACKAGE_SIGNED_NOT_IN_FORCE",
+  "statement": "The Switzerland–EU package agreements were signed in March 2026 and sent to Parliament, but signature and dispatch do not establish general ratification or entry into force.",
+  "status": "supported",
+  "sourceIds": [
+   "CH_EU_PACKAGE_202603",
+   "CH_EU_PACKAGE_STATUS_202608",
+   "CH_ELECTRICITY_AGREEMENT_STATUS"
+  ],
+  "counterEvidence": "The separate EU programmes agreement was signed in November 2025 and applies immediately, associating Switzerland retroactively to several programmes from 1 January 2025; this is a component-specific exception and cannot be generalized to the rest of the package."
+ },
+ {
+  "region": "swiss",
+  "claimId": "ELECTRICITY_MARKET_ACCESS_STATUS_QUO",
+  "statement": "Switzerland's physical integration with the EU electricity system without legal guarantees creates a plausible security-of-supply and trading friction channel; a signed electricity agreement is a prospective pathway pending process.",
+  "status": "supported",
+  "sourceIds": [
+   "CH_ELECTRICITY_AGREEMENT_STATUS",
+   "CH_EU_PACKAGE_STATUS_202608"
+  ],
+  "counterEvidence": "Physical interconnection and existing coordination already support cross-border trade, so the status quo is not equivalent to isolation or an observed outage. Benefits of the agreement remain prospective until its legal status changes and implementation effects are measured."
+ },
+ {
+  "region": "swiss",
+  "claimId": "FRIENDSHORING_RESILIENCE",
+  "statement": "Swiss openness, specialized exports and EU market access create both supply-chain resilience options and exposure to external demand, regulatory and concentration shocks; a net friendshoring gain is not established by available aggregate evidence.",
+  "status": "uncertain",
+  "sourceIds": [
+   "OECD_CH_GVC_2024",
+   "OECD_SWISS_EU_2024",
+   "CH_EXPORT_SECTOR_2025",
+   "SWISS_EXPORTS_2025",
+   "OECD_SWISS_SURVEY_2026"
+  ],
+  "counterEvidence": "OECD evidence recognizes diversification benefits from open GVC participation as well as concentration and disruption risks; it does not causally estimate the net effect of future near/friendshoring for Switzerland. Pharma export concentration can support current totals while amplifying sector-specific volatility. Latest OECD Switzerland Survey (15 Sep 2026) describes resilience through recent shocks and ongoing exposure to trade/geopolitical uncertainty, but offers no causal relocation or net friendshoring estimate."
+ },
+ {
+  "region": "swiss",
+  "claimId": "HORIZON_PROGRAMME_ACCESS_DISTINCT_FROM_PACKAGE",
+  "statement": "Swiss participation in Horizon Europe, Euratom and Digital Europe from programme year 2025 follows the separately signed EU Programmes Agreement, provisionally applied retroactively from 1 January 2025; this does not put the full March 2026 Bilaterals III package into force, and programme-call exceptions remain.",
+  "status": "supported",
+  "sourceIds": [
+   "CH_HORIZON_STATUS",
+   "CH_EU_PACKAGE_STATUS_202608"
+  ],
+  "counterEvidence": "Access is not universal: call-level eligibility and Commission validation apply; some Horizon space calls and Digital Europe objectives remain inaccessible, and funding eligibility does not itself establish research output or productivity gains."
+ },
+ {
+  "region": "swiss",
+  "claimId": "SWISS_2015_EXPORT_QUANTITY_RESILIENCE",
+  "statement": "The 2015 CHF appreciation did not produce a statistically significant decline in aggregate real Swiss goods export quantities in a synthetic-control study, while nominal CHF exports fell about 7% in the short run and sector responses differed sharply.",
+  "status": "supported",
+  "sourceIds": [
+   "CH_EXPORT_SECTOR_2025"
+  ],
+  "counterEvidence": "The study is a single historical EUR shock over Jan 2015–Jul 2017, cannot directly identify future response or sectoral real quantities, and found material adverse nominal effects in engineering and precision instruments; current composition and trade policy differ."
+ },
+ {
+  "region": "swiss",
+  "claimId": "SWISS_MERCHANTING_GROSS_TURNOVER",
+  "statement": "SNB balance-of-payments data record large gross merchanting sales flows, but those gross flows are not equivalent to Swiss domestic value added, GDP or local financing exposure.",
+  "status": "supported",
+  "sourceIds": [
+   "SNB_MERCHANTING_Q2_2026",
+   "SNB_MERCHANTING_METHOD"
+  ],
+  "counterEvidence": "Merchanting businesses can earn domestic margins, employ Swiss workers and buy local services; current data do not establish their present value-added or financing contribution."
+ },
+ {
+  "region": "swiss",
+  "claimId": "SWISS_INPUT_DIVERSIFICATION",
+  "statement": "Pre-2022 evidence indicates Swiss import dependencies were generally diversified and average product-level import concentration fell, although some critical country-product dependencies persisted and external-input reliance remained concentrated in EU-sourced inputs.",
+  "status": "supported",
+  "sourceIds": [
+   "OECD_CH_GVC_DEPENDENCIES_2024"
+  ],
+  "counterEvidence": "The OECD metrics mostly use 2018–2021 observations and cannot establish 2026 supplier concentration, firm relocation, exposure to a particular shock or a causal net return from friendshoring."
+ },
+ {
+  "region": "swiss",
+  "claimId": "FOCBS_Q1_2026_CHEM_PHARMA_QQ",
+  "statement": "FOCBS Annex Ia reports seasonally adjusted nominal Swiss chemical and pharmaceutical exports of CHF 33,652 million in 2026-Q1, down 8.1% quarter on quarter from 2025-Q4.",
+  "status": "supported",
+  "sourceIds": [
+   "FOCBS_Q1_2026_SECTOR_RELEASE"
+  ],
+  "counterEvidence": "This is a quarterly nominal customs-export series; it does not establish real output, Swiss value added, firm profits, bilateral market-access effects, or a causal CHF contribution."
+ },
+ {
+  "region": "swiss",
+  "claimId": "MERCHANTING_NET_Q2_2026_QUANTIFICATION",
+  "statement": "The SNB reports that the merchanting balance rose significantly year on year in 2026-Q2, but the located current-account cube gives only the aggregate net current-account balance and the located merchanting cube gives gross sales.",
+  "status": "uncertain",
+  "sourceIds": [
+   "SNB_BOP_2026Q2",
+   "SNB_BOP_CURRENT_ACCOUNT_Q2_2026",
+   "SNB_MERCHANTING_Q2_2026"
+  ],
+  "counterEvidence": "SNB release language confirms the direction of the merchanting balance but not its amount; the CHF 23,657.6 million net current-account aggregate includes other goods, services and income, while CHF 238,247.4 million merchanting sales are gross turnover."
+ },
+ {
+  "region": "global",
+  "claimId": "global-bank-credit-not-contracting-q1-2026",
+  "statement": "At end-Q1 2026, the measured BIS cross-border bank-credit aggregate was expanding, so this specific available aggregate contradicts the proposition that the measured global bank-credit stock was already contracting.",
+  "status": "supported",
+  "sourceIds": [
+   "BIS_GLI_2026Q1"
+  ],
+  "counterEvidence": "BIS reports cross-border bank credit of USD 39.5tn, up 11% year on year, and selected foreign-currency nonbank-credit stocks also grew. Aggregate expansion does not rule out funding stress, local credit contraction, declining market depth, concentration, impaired borrowers, or stress in unmeasured nonbank channels."
+ },
+ {
+  "region": "global",
+  "claimId": "global-amplification-through-balance-sheets",
+  "statement": "A common rate, risk or currency shock can amplify real activity losses when repricing, maturity rollover, collateral valuation, leverage and intermediary liquidity constraints jointly weaken financing and cash flow.",
+  "status": "supported",
+  "sourceIds": [
+   "IMF_GFSR_APR2026",
+   "IMF_GFSR_OCT2025",
+   "FED_FINANCIAL_ACCELERATOR",
+   "BIS_SWAPLINES_2008"
+  ],
+  "counterEvidence": "The mechanism is conditional on exposed balance sheets and insufficient buffers; term funding, fixed coupons, hedges, capital, liquidity, policy facilities and borrower cash can attenuate or delay it."
+ },
+ {
+  "region": "global",
+  "claimId": "usd-funding-mismatch-transmits-across-borders",
+  "statement": "Pre-crisis foreign-currency asset growth funded through short-term wholesale and FX-swap markets created dollar rollover needs for non-US banks, and market impairment transmitted dollar funding stress internationally in 2007–09.",
+  "status": "supported",
+  "sourceIds": [
+   "BIS_SWAPLINES_2008",
+   "FED_SWAPLINES_2020"
+  ],
+  "counterEvidence": "This is a documented historical bank funding structure, not proof that current corporates or banks have the same net currency mismatch, maturity profile, collateral terms or reliance on swaps; post-crisis regulation and central-bank arrangements alter the setting."
+ },
+ {
+  "region": "global",
+  "claimId": "risk-sensitive-portfolio-flows-can-amplify-stress",
+  "statement": "Cross-border portfolio funding intermediated by some risk-sensitive nonbank investors can transmit global risk repricing into tighter financing conditions for recipient economies, especially where prior vulnerabilities are high.",
+  "status": "supported",
+  "sourceIds": [
+   "IMF_GFSR_APR2026",
+   "IMF_CPIS",
+   "IMF_IIP"
+  ],
+  "counterEvidence": "The IMF describes heterogeneous sensitivity by investor and recipient vulnerability, not a universal withdrawal. CPIS positions are voluntary reporter data and are not flow or ultimate-risk data; valuation effects, local investors, official flows and buffers can offset gross sales."
+ },
+ {
+  "region": "global",
+  "claimId": "cross-region-network-co-movement-not-causal-multiplier",
+  "statement": "Selected 2024 official merchandise-trade flows and Q1 2026 BIS bank-nationality claims demonstrate cross-region links, but the partial links do not identify a complete bilateral exposure matrix, net positions, or a causal spillover coefficient for US, China, EU and Switzerland.",
+  "status": "uncertain",
+  "sourceIds": [
+   "NBER_GLOBAL_CYCLE_REY",
+   "NBER_US_MONETARY_GLOBAL_CYCLE",
+   "OECD_ICIO_2025",
+   "FED_SPILLOVER_UNION",
+   "BIS_CBS_PUB_2026Q1",
+   "OECD_CH_GVC_DEPENDENCIES_2024",
+   "UN_COMTRADE_BILATERAL_2024"
+  ],
+  "counterEvidence": "UN Comtrade reports US→China USD 143.546bn, China→US USD 525.649bn, EU27→US USD 571.114bn and EU27→China USD 227.172bn in 2024; the accepted OECD source separately reports EU supplier share of Swiss imported intermediate inputs at 54% based on 2018 IO data. Fresh BIS CBS response produced seven FR/GB bank-nationality gross claim edges on US, Swiss and German residents, but no numeric rows for US/China/Swiss reporters or China counterpart residents. Swiss reporter-directed trade requests returned no rows. Reported values differ by reporter, structure and year; no edge is converted to a causal multiplier."
+ },
+ {
+  "region": "global",
+  "claimId": "positions-transactions-and-valuation-must-be-separated",
+  "statement": "External positions are stocks that change through transactions, exchange-rate and price valuation, and other volume/reclassification changes; gross claims and liabilities cannot be interpreted as net funding flows or losses without reconciliation.",
+  "status": "supported",
+  "sourceIds": [
+   "IMF_BOP",
+   "IMF_IIP",
+   "IMF_CPIS",
+   "IMF_CDIS",
+   "BIS_LBS_OVERVIEW",
+   "BIS_IBS_GEOGRAPHY"
+  ],
+  "counterEvidence": "Reported country datasets differ in coverage, residence versus nationality, immediate versus ultimate counterpart, instrument detail, frequency and BPM vintage; incomplete reporting can leave material exposures unobserved."
+ },
+ {
+  "region": "global",
+  "claimId": "historical-credit-booms-inform-stress-not-probability",
+  "statement": "Long-run cross-country evidence finds credit-intensive expansions are followed on average by deeper recessions and slower recoveries, supporting a conditional balance-sheet stress mechanism but not a calibrated probability for this scenario.",
+  "status": "supported",
+  "sourceIds": [
+   "NBER_JST_CREDIT_CYCLES",
+   "NBER_ST_CREDIT_BOOMS",
+   "BIS_DEBT_REDUCTION"
+  ],
+  "counterEvidence": "Historical samples combine heterogeneous institutions, shocks, borrower mixes and policies; observational/local-projection evidence does not make every credit boom end in crisis or supply a transportable 2026–30 probability."
+ },
+ {
+  "region": "global",
+  "claimId": "goods-price-deflation-is-not-automatically-debt-deflation",
+  "statement": "Historical BIS analysis finds a weak unconditional relation between consumer-price deflation and output growth, while asset/property-price deflation has a stronger adverse association and private debt can amplify property-price downturns.",
+  "status": "supported",
+  "sourceIds": [
+   "BIS_DEFLATION_HIST"
+  ],
+  "counterEvidence": "The broad historical sample has few postwar persistent deflations and prewar data limitations; episode-level correlations are not causal universal laws and do not remove possible debt-deflation risk in a specific leveraged borrower sector."
+ },
+ {
+  "region": "global",
+  "claimId": "telecom-overbuild-analogue-has-limits",
+  "statement": "Telecom overbuild and bankrupt carrier cases can inform tests of synchronized capacity investment, utilization, price competition, debt service and asset recovery, but cannot establish hyperscaler losses or crisis likelihood.",
+  "status": "uncertain",
+  "sourceIds": [
+   "GAO_GLOBAL_CROSSING",
+   "FED_FINANCIAL_ACCELERATOR",
+   "BIS_DEBT_REDUCTION"
+  ],
+  "counterEvidence": "Global Crossing was a selected bankrupt firm and the GAO decision is a narrow administrative record; hyperscalers have diversified cash flows, different balance sheets, demand uncertainty, equipment cycles and possible asset reuse, while future data-center utilization and resale values remain unobserved."
+ }
+]

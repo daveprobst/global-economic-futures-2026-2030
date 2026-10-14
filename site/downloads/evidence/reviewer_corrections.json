@@ -1,0 +1,60 @@
+{
+  "createdAt": "2026-10-14T17:35:40.212534Z",
+  "scope": "Only reviewed copies in owned acceptance path; original regional files and stable rejection are unchanged.",
+  "corrections": [
+    {
+      "field": "us/source-registry.sources[32].retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "us/source-registry.sources[33].retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "us/source-registry.sources[34].retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "us/source-registry.sources[35].retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "us/source-registry.sources[36].retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "us/source-registry.sources[37].retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "us/baseline.observations[43].extraction.retrievedAt",
+      "old": "2026-10-14T18:20:00Z",
+      "new": "2026-10-14",
+      "reason": "Exact earlier clock time unsupported. Date-only precision; this does not assert a new retrieval or reconstruct a guessed timezone."
+    },
+    {
+      "field": "eu/source-registry/RIZOS_MAGNET_CESEPS_2022.publishedAt",
+      "old": "2022-12-07",
+      "new": "2022-12-16",
+      "reason": "CEPS publisher landing page explicitly displays 16 Dec 2022; cover December, 2022 - 07 is not sufficient to infer publication day 7. European platform supplies month only.",
+      "verificationUrl": "https://www.ceps.eu/ceps-publications/developing-a-supply-chain-for-recycled-rare-earth-permanent-magnets-in-the-eu/",
+      "verifiedAt": "2026-10-14T17:35:40.212534Z"
+    },
+    {
+      "field": "eu/bank-sector-exposure-bounds.summaryRows[basisCode=Q].interpretation",
+      "reason": "Signed net risk transfers do not support lower-bound language. Numeric sums preserved; primary gross/guarantor claims retain explicit partial coverage."
+    }
+  ]
+}
