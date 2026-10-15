@@ -1,0 +1,512 @@
+{
+ "nearestAnalogs": {
+  "n": 25,
+  "boom": 0.12,
+  "sideways": 0.16,
+  "bust": 0.72,
+  "k": 25,
+  "closest": [
+   {
+    "country": "ESP",
+    "origin": 1988,
+    "runup3": 2.005978663661671,
+    "return1": 0.09105808751034794,
+    "worstDecline": -0.24735408142692827,
+    "realReturn4y": -0.24735408142692827,
+    "outcome": "bust"
+   },
+   {
+    "country": "LVA",
+    "origin": 2005,
+    "runup3": 1.7723687500274146,
+    "return1": 0.24432567545682127,
+    "worstDecline": -0.6886270893115941,
+    "realReturn4y": -0.6886270893115941,
+    "outcome": "bust"
+   },
+   {
+    "country": "IDN",
+    "origin": 2011,
+    "runup3": 1.7749649357680126,
+    "return1": -0.04005632552142191,
+    "worstDecline": -0.4250211174116837,
+    "realReturn4y": -0.4250211174116837,
+    "outcome": "bust"
+   },
+   {
+    "country": "CZE",
+    "origin": 2006,
+    "runup3": 2.0869018377622663,
+    "return1": 0.2766779801574455,
+    "worstDecline": -0.25991019163064744,
+    "realReturn4y": -0.11006180378444774,
+    "outcome": "bust"
+   },
+   {
+    "country": "BRA",
+    "origin": 2005,
+    "runup3": 2.101692957954581,
+    "return1": 0.3815321604946609,
+    "worstDecline": -0.0622094647267879,
+    "realReturn4y": 1.0126803087954066,
+    "outcome": "boom"
+   },
+   {
+    "country": "EST",
+    "origin": 2006,
+    "runup3": 1.4368279872834555,
+    "return1": 0.2480050848982993,
+    "worstDecline": -0.7522833312692115,
+    "realReturn4y": -0.500801210996352,
+    "outcome": "bust"
+   },
+   {
+    "country": "AUT",
+    "origin": 2006,
+    "runup3": 1.545164637861557,
+    "return1": 0.3517283521683745,
+    "worstDecline": -0.6724935158298759,
+    "realReturn4y": -0.4426466971288928,
+    "outcome": "bust"
+   },
+   {
+    "country": "IDN",
+    "origin": 2004,
+    "runup3": 1.4877684955825687,
+    "return1": 0.3137343381715383,
+    "worstDecline": -0.27364230750239393,
+    "realReturn4y": -0.27364230750239393,
+    "outcome": "bust"
+   },
+   {
+    "country": "PHL",
+    "origin": 2011,
+    "runup3": 1.3774420743479143,
+    "return1": -0.04300424499927524,
+    "worstDecline": 0.0,
+    "realReturn4y": 0.31162874819390063,
+    "outcome": "boom"
+   },
+   {
+    "country": "JPN",
+    "origin": 1953,
+    "runup3": 2.0607443341905496,
+    "return1": 0.4732292784257417,
+    "worstDecline": -0.1346000387826657,
+    "realReturn4y": 0.7646373472850616,
+    "outcome": "boom"
+   }
+  ]
+ },
+ "window": "Origin at an annual close; outcome = next four annual closes. Real (inflation-adjusted) equity returns.",
+ "episodes": 301,
+ "countries": 67,
+ "originYears": 87,
+ "boomHurdle": {
+  "realPerYear": 0.05,
+  "fourYear": 0.21550625000000023
+ },
+ "all": {
+  "n": 301,
+  "boom": 0.3521594684385382,
+  "sideways": 0.23255813953488372,
+  "bust": 0.4152823920265781,
+  "yearWeighted": {
+   "boom": 0.36354808984119324,
+   "sideways": 0.26818368413196003,
+   "bust": 0.3682682260268467
+  },
+  "yearClusterInterval80": {
+   "boom": [
+    0.2905367658160954,
+    0.42429309820614175
+   ],
+   "sideways": [
+    0.18747791519434628,
+    0.28657286814335964
+   ],
+   "bust": [
+    0.33473272490221645,
+    0.48300156985871273
+   ]
+  }
+ },
+ "bySource": {
+  "history": {
+   "n": 145,
+   "boom": 0.46206896551724136,
+   "sideways": 0.30344827586206896,
+   "bust": 0.23448275862068965
+  },
+  "modern": {
+   "n": 156,
+   "boom": 0.25,
+   "sideways": 0.16666666666666666,
+   "bust": 0.5833333333333334
+  }
+ },
+ "byRunup": [
+  {
+   "runup": "50\u2013100%",
+   "n": 230,
+   "boom": 0.3739130434782609,
+   "sideways": 0.2565217391304348,
+   "bust": 0.3695652173913043
+  },
+  {
+   "runup": "100\u2013150%",
+   "n": 47,
+   "boom": 0.2553191489361702,
+   "sideways": 0.2127659574468085,
+   "bust": 0.5319148936170213
+  },
+  {
+   "runup": "150%+",
+   "n": 24,
+   "boom": 0.3333333333333333,
+   "sideways": 0.041666666666666664,
+   "bust": 0.625
+  }
+ ],
+ "byEra": [
+  {
+   "era": "1870\u20131913",
+   "n": 22,
+   "boom": 0.45454545454545453,
+   "sideways": 0.4090909090909091,
+   "bust": 0.13636363636363635
+  },
+  {
+   "era": "1914\u20131945",
+   "n": 41,
+   "boom": 0.43902439024390244,
+   "sideways": 0.2926829268292683,
+   "bust": 0.2682926829268293
+  },
+  {
+   "era": "1946\u20131973",
+   "n": 45,
+   "boom": 0.4,
+   "sideways": 0.3111111111111111,
+   "bust": 0.28888888888888886
+  },
+  {
+   "era": "1974\u20131993",
+   "n": 37,
+   "boom": 0.5675675675675675,
+   "sideways": 0.24324324324324326,
+   "bust": 0.1891891891891892
+  },
+  {
+   "era": "1994\u20132008",
+   "n": 114,
+   "boom": 0.2894736842105263,
+   "sideways": 0.13157894736842105,
+   "bust": 0.5789473684210527
+  },
+  {
+   "era": "2009\u20132021",
+   "n": 42,
+   "boom": 0.14285714285714285,
+   "sideways": 0.2619047619047619,
+   "bust": 0.5952380952380952
+  }
+ ],
+ "runupAtLeast100": {
+  "n": 71,
+  "boom": 0.28169014084507044,
+  "sideways": 0.15492957746478872,
+  "bust": 0.5633802816901409,
+  "bySource": {
+   "history": {
+    "n": 24,
+    "boom": 0.25,
+    "sideways": 0.2916666666666667,
+    "bust": 0.4583333333333333
+   },
+   "modern": {
+    "n": 47,
+    "boom": 0.2978723404255319,
+    "sideways": 0.0851063829787234,
+    "bust": 0.6170212765957447
+   }
+  },
+  "yearWeighted": {
+   "boom": 0.259267040149393,
+   "sideways": 0.2274509803921568,
+   "bust": 0.51328197945845
+  },
+  "yearClusterInterval80": {
+   "boom": [
+    0.16666666666666666,
+    0.39436619718309857
+   ],
+   "sideways": [
+    0.09228744939271255,
+    0.23613636363636367
+   ],
+   "bust": [
+    0.4415202444614209,
+    0.6769727047146403
+   ]
+  }
+ },
+ "largestRunups": [
+  {
+   "country": "DEU",
+   "origin": 1951,
+   "runup3": 3.375486894689482,
+   "worstDecline": 0.0,
+   "realReturn4y": 2.1374015480321646,
+   "outcome": "boom"
+  },
+  {
+   "country": "FIN",
+   "origin": 2000,
+   "runup3": 3.1021179521703894,
+   "worstDecline": -0.5689048418639521,
+   "realReturn4y": -0.458223422853959,
+   "outcome": "bust"
+  },
+  {
+   "country": "BGR",
+   "origin": 2003,
+   "runup3": 2.7386506512345288,
+   "worstDecline": 0.0,
+   "realReturn4y": 1.9990749759036959,
+   "outcome": "boom"
+  },
+  {
+   "country": "GRC",
+   "origin": 1999,
+   "runup3": 2.5959263379464543,
+   "worstDecline": -0.7696971731222703,
+   "realReturn4y": -0.6349842196291053,
+   "outcome": "bust"
+  },
+  {
+   "country": "EGY",
+   "origin": 2007,
+   "runup3": 2.5086140895947135,
+   "worstDecline": -0.7904363483326828,
+   "realReturn4y": -0.7904363483326828,
+   "outcome": "bust"
+  },
+  {
+   "country": "SVN",
+   "origin": 2006,
+   "runup3": 2.4076537699326375,
+   "worstDecline": -0.4679390222813429,
+   "realReturn4y": -0.4679390222813429,
+   "outcome": "bust"
+  },
+  {
+   "country": "ROU",
+   "origin": 2005,
+   "runup3": 2.205914555543082,
+   "worstDecline": -0.5268929440170338,
+   "realReturn4y": -0.4347687919750418,
+   "outcome": "bust"
+  },
+  {
+   "country": "EGY",
+   "origin": 2004,
+   "runup3": 2.201599682212531,
+   "worstDecline": 0.0,
+   "realReturn4y": 0.3092509936651193,
+   "outcome": "boom"
+  },
+  {
+   "country": "CIV",
+   "origin": 2007,
+   "runup3": 2.1483150443756167,
+   "worstDecline": -0.34163145279913454,
+   "realReturn4y": -0.34163145279913454,
+   "outcome": "bust"
+  },
+  {
+   "country": "BRA",
+   "origin": 2005,
+   "runup3": 2.101692957954581,
+   "worstDecline": -0.0622094647267879,
+   "realReturn4y": 1.0126803087954066,
+   "outcome": "boom"
+  },
+  {
+   "country": "CZE",
+   "origin": 2006,
+   "runup3": 2.0869018377622663,
+   "worstDecline": -0.25991019163064744,
+   "realReturn4y": -0.11006180378444774,
+   "outcome": "bust"
+  },
+  {
+   "country": "JPN",
+   "origin": 1953,
+   "runup3": 2.0607443341905496,
+   "worstDecline": -0.1346000387826657,
+   "realReturn4y": 0.7646373472850616,
+   "outcome": "boom"
+  },
+  {
+   "country": "ITA",
+   "origin": 1924,
+   "runup3": 2.0547150404340817,
+   "worstDecline": -0.5222634821527834,
+   "realReturn4y": -0.07796967949280387,
+   "outcome": "bust"
+  },
+  {
+   "country": "ESP",
+   "origin": 1988,
+   "runup3": 2.005978663661671,
+   "worstDecline": -0.24735408142692827,
+   "realReturn4y": -0.24735408142692827,
+   "outcome": "bust"
+  },
+  {
+   "country": "IND",
+   "origin": 2007,
+   "runup3": 1.982562480554665,
+   "worstDecline": -0.6690058078163443,
+   "realReturn4y": -0.650533556000611,
+   "outcome": "bust"
+  },
+  {
+   "country": "THA",
+   "origin": 2003,
+   "runup3": 1.892748998616426,
+   "worstDecline": -0.09605985528526728,
+   "realReturn4y": 0.2504780258694066,
+   "outcome": "boom"
+  },
+  {
+   "country": "DEU",
+   "origin": 1954,
+   "runup3": 1.87208894616362,
+   "worstDecline": 0.0,
+   "realReturn4y": 0.6879310911345762,
+   "outcome": "boom"
+  },
+  {
+   "country": "HUN",
+   "origin": 2004,
+   "runup3": 1.8507587934885534,
+   "worstDecline": -0.4756233750485195,
+   "realReturn4y": -0.4756233750485195,
+   "outcome": "bust"
+  }
+ ],
+ "current": {
+  "runup3": 1.9126585878495925,
+  "return1": 0.11087790087399485,
+  "volatility5": 0.4394054967873364
+ },
+ "modelWeights": {
+  "boom": 0.14314970878298883,
+  "sideways": 0.09476107482817572,
+  "bust": 0.7620892163888354
+ },
+ "crossValidation": {
+  "leaveOneCountryOut": {
+   "brier": 0.633564401660165,
+   "baseRateBrier": 0.6546985919276604,
+   "n": 301,
+   "meanPredictedBust": 0.41811643717018926,
+   "observedBust": 0.4152823920265781,
+   "meanPredictedBoom": 0.3500864128946383,
+   "observedBoom": 0.3521594684385382,
+   "calibrationBustQuartiles": [
+    {
+     "predictedBust": 0.3022296460328323,
+     "observedBust": 0.32894736842105265,
+     "n": 76
+    },
+    {
+     "predictedBust": 0.37542222997396435,
+     "observedBust": 0.28,
+     "n": 75
+    },
+    {
+     "predictedBust": 0.42409658958550817,
+     "observedBust": 0.4666666666666667,
+     "n": 75
+    },
+    {
+     "predictedBust": 0.5722624403036171,
+     "observedBust": 0.5866666666666667,
+     "n": 75
+    }
+   ]
+  },
+  "leaveOneEraOut": {
+   "brier": 0.6637963223273251,
+   "baseRateBrier": 0.6858083339554236,
+   "n": 301,
+   "meanPredictedBust": 0.38021144130330675,
+   "observedBust": 0.4152823920265781,
+   "meanPredictedBoom": 0.36668579237208293,
+   "observedBoom": 0.3521594684385382,
+   "calibrationBustQuartiles": [
+    {
+     "predictedBust": 0.25384837343486555,
+     "observedBust": 0.4605263157894737,
+     "n": 76
+    },
+    {
+     "predictedBust": 0.3391991768822925,
+     "observedBust": 0.38666666666666666,
+     "n": 75
+    },
+    {
+     "predictedBust": 0.4020083475746104,
+     "observedBust": 0.36,
+     "n": 75
+    },
+    {
+     "predictedBust": 0.527474708226371,
+     "observedBust": 0.4533333333333333,
+     "n": 75
+    }
+   ],
+   "byEra": [
+    {
+     "era": "1870\u20131913",
+     "n": 22,
+     "observedBust": 0.13636363636363635,
+     "predictedBust": 0.42155085003012366
+    },
+    {
+     "era": "1914\u20131945",
+     "n": 41,
+     "observedBust": 0.2682926829268293,
+     "predictedBust": 0.41628115601054944
+    },
+    {
+     "era": "1946\u20131973",
+     "n": 45,
+     "observedBust": 0.28888888888888886,
+     "predictedBust": 0.4119093721082595
+    },
+    {
+     "era": "1974\u20131993",
+     "n": 37,
+     "observedBust": 0.1891891891891892,
+     "predictedBust": 0.41915997482083406
+    },
+    {
+     "era": "1994\u20132008",
+     "n": 114,
+     "observedBust": 0.5789473684210527,
+     "predictedBust": 0.32459166330503775
+    },
+    {
+     "era": "2009\u20132021",
+     "n": 42,
+     "observedBust": 0.5952380952380952,
+     "predictedBust": 0.4060406501234105
+    }
+   ]
+  }
+ }
+}

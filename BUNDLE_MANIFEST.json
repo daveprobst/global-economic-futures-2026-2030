@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 112,
-      "sha256": "6c728b4f3cda168142299b692bc2afd28ce65b857fe119af12e44f17cad920e4"
+      "bytes": 113,
+      "sha256": "4e9625eb5f32118c2f3b1305a482262090f79f5b844eb8a9cb0ebe3394e9cd9e"
     },
     {
       "path": "Dockerfile",
