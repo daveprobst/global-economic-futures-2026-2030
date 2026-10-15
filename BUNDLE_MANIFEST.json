@@ -20,7 +20,7 @@
     {
       "path": "README.md",
       "bytes": 2263,
-      "sha256": "197e89a93c63ea28da4b3f5774807a2e0ee6004da4e97bfdfa529a3e24ef9ea5"
+      "sha256": "1f3dfc2da4da4eed05e27ec7fddf2fd4129d69a48418341a407e8dad6fcc9efc"
     },
     {
       "path": "docker-compose.yml",
@@ -49,8 +49,8 @@
     },
     {
       "path": "site/app.js",
-      "bytes": 9689,
-      "sha256": "2fb1f3e0f65c3f5a4cf90bef2db7ce70ef9bbc3b4d7295a91be0bddb92dea28b"
+      "bytes": 9682,
+      "sha256": "60241378277487c6657147a50c656b38b3abba05f984c0f50e3d28b59c2d2191"
     },
     {
       "path": "site/data/china.json",
@@ -520,7 +520,7 @@
     {
       "path": "site/manifest.json",
       "bytes": 10901,
-      "sha256": "47ead0ea43f60e4a02eb78401b7a9dedd532fc9b86b9b49fc13d252c722a69d5"
+      "sha256": "9aae60c1c45d327461b68f046cbab2042343faa06c8a0fa81370c5eec788ec8b"
     },
     {
       "path": "site/manifests/content_manifest.json",

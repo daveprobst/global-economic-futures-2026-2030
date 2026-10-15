@@ -2,7 +2,7 @@
 
 An English, static research dashboard testing whether the AI investment cycle can transmit into a broader global liquidity shock. The site presents seven mutually exclusive scenario classes, conditional macro paths, US/AI exposure, China debt ranges, contagion channels, a joint-crisis stress estimate, country balance sheets, and a searchable 69-source register.
 
-The central estimate is **28.5% for a 20% or greater AI-equity adjustment by October 2028**. The full US systemic-crisis branch is **0.7%**. These are model-conditional estimates from a small historical episode panel, not objective frequencies or investment advice.
+The central estimate is **29.5% for a 20% or greater AI-equity adjustment by October 2028**. The full US systemic-crisis branch is **0.7%**. These are model-conditional estimates from a small historical episode panel, not objective frequencies or investment advice.
 
 ## Method in one page
 
