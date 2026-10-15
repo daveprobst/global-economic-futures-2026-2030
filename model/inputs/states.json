@@ -1,0 +1,52 @@
+{
+ "windowStartWeights_pi": [
+  0.008870293073519116,
+  0.009997903008208645,
+  0.008090538552858512,
+  0.01614886524460576,
+  0.07340461917793545,
+  0.007533609000806605,
+  0.07597138146769875,
+  0.7726925616374738,
+  0.027290228836893353
+ ],
+ "states": [
+  [
+   "calm",
+   "ample"
+  ],
+  [
+   "calm",
+   "neutral"
+  ],
+  [
+   "calm",
+   "vacuum"
+  ],
+  [
+   "tense",
+   "ample"
+  ],
+  [
+   "tense",
+   "neutral"
+  ],
+  [
+   "tense",
+   "vacuum"
+  ],
+  [
+   "crisis",
+   "ample"
+  ],
+  [
+   "crisis",
+   "neutral"
+  ],
+  [
+   "crisis",
+   "vacuum"
+  ]
+ ],
+ "note": "Weights over geopolitical x dollar-liquidity regimes at the start of the window, carried from the state model (GPR percentiles, NFCI/STLFSI4, HY OAS, reserves)."
+}

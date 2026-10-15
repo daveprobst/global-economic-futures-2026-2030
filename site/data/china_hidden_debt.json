@@ -1,832 +1,832 @@
 {
-  "asOf": "2026-10-15",
-  "schemaVersion": "v3-china-hidden-debt-1",
-  "components": [
-    {
-      "name": "LGFV",
-      "low": 42694.0,
-      "high": 71399.0,
-      "unit": "CNY bn",
-      "asOfYear": 2025,
-      "sourceRefs": [
-        "imf_cr26-044_t2_row_-12",
-        "imf_cr26-044_t2_row_-15",
-        "imf_cr26-044_t2_row_-9"
-      ],
-      "parameterIds": [
-        "cn.imf.augmented_ex_recognized_rmbbn.2025",
-        "cn.imf.gen_budget_debt_rmbbn.2025",
-        "cn.imf.lgfv_listed_debt_rmbbn.2025"
-      ],
-      "rangeMethod": "recognized IMF perimeter lower stock to total listed-bond LGFV interest-bearing debt",
-      "note": "IMF perimeter: listed-bond LGFVs only (Table 2 footnote 8). Low is the part the IMF recognises as explicit (footnote 10 says about two thirds; the row difference gives 59.8 percent). High is the total listed-bond LGFV stock. LGFVs without listed bonds are not included. Status: sourced from IMF, perimeter-limited.",
-      "status": "sourced_imf_perimeter"
-    },
-    {
-      "name": "Property developer and related",
-      "low": null,
-      "high": null,
-      "unit": "CNY bn",
-      "asOfYear": null,
-      "sourceRefs": [],
-      "note": "No developer aggregate debt has been read. HKEX filings are not fetched. pending source; no number published (SPEC 7.2, rule against invented ranges)",
-      "status": "pending_source"
-    },
-    {
-      "name": "Shadow banking / trust / WMP",
-      "low": null,
-      "high": null,
-      "unit": "CNY bn",
-      "asOfYear": null,
-      "sourceRefs": [],
-      "note": "No keyless trust AUM series. CEIC trust page returned HTTP 403; CTA statistics page is a JS shell. pending source; no number published (SPEC 7.2, rule against invented ranges)",
-      "status": "pending_source"
-    },
-    {
-      "name": "Hidden local-government debt (official legal definition)",
-      "low": 10500.0,
-      "high": 14300.0,
-      "unit": "CNY bn",
-      "asOfYear": 2024,
-      "sourceRefs": [
-        "imf_cr26-044_chn_2026"
-      ],
-      "parameterIds": [
-        "cn.imf.official_hidden_debt_rmbtn.2024",
-        "cn.imf.official_hidden_debt_rmbtn.2023"
-      ],
-      "rangeMethod": "convert the two officially reported year-end stocks from RMB trillion to CNY bn; historical range, not uncertainty interval",
-      "note": "Observed stocks at two dates: CNY 10,500 bn at end-2024 and CNY 14,300 bn at end-2023. The low/high are a 2023\u201324 historical range, not uncertainty bounds. This official legal definition includes LGFV debt and other borrowings such as arrears; it overlaps the broader IMF staff LGFV and augmented-debt perimeters and must not be added to them. IMF staff say their GFSM/economic-perimeter off-budget LGFV estimate is more than three times the official hidden-debt estimate, but that is a different perimeter and not a finite upper bound.",
-      "status": "observed_official_historical_range",
-      "rangeKind": "observed_values_across_years"
-    },
-    {
-      "name": "Bank asset-quality exposure",
-      "low": null,
-      "high": null,
-      "unit": "CNY bn",
-      "asOfYear": null,
-      "sourceRefs": [],
-      "note": "No bank-level LGFV or developer loan stock has been read. pending source; no number published (SPEC 7.2, rule against invented ranges)",
-      "status": "pending_source"
-    }
-  ],
-  "overlapAdjustment": {
-    "low": null,
-    "high": null,
-    "unit": "CNY bn",
-    "status": "pending_source",
-    "assumedShareOfSmallerComponent": {
-      "point": 0.25,
-      "low": 0.1,
-      "high": 0.4,
-      "status": "assumed"
-    },
-    "note": "Overlap matrix entries depend on pending components. The Assumed share is a parameter only."
+ "asOf": "2026-10-15",
+ "schemaVersion": "v3-china-hidden-debt-1",
+ "components": [
+  {
+   "name": "LGFV",
+   "low": 42694.0,
+   "high": 71399.0,
+   "unit": "CNY bn",
+   "asOfYear": 2025,
+   "sourceRefs": [
+    "imf_cr26-044_t2_row_-12",
+    "imf_cr26-044_t2_row_-15",
+    "imf_cr26-044_t2_row_-9"
+   ],
+   "parameterIds": [
+    "cn.imf.augmented_ex_recognized_rmbbn.2025",
+    "cn.imf.gen_budget_debt_rmbbn.2025",
+    "cn.imf.lgfv_listed_debt_rmbbn.2025"
+   ],
+   "rangeMethod": "recognized IMF perimeter lower stock to total listed-bond LGFV interest-bearing debt",
+   "note": "IMF perimeter: listed-bond LGFVs only (Table 2 footnote 8). Low is the part the IMF recognises as explicit (footnote 10 says about two thirds; the row difference gives 59.8 percent). High is the total listed-bond LGFV stock. LGFVs without listed bonds are not included. Status: sourced from IMF, perimeter-limited.",
+   "status": "sourced_imf_perimeter"
   },
-  "totalToGdp": {
-    "point": null,
-    "interval80": null,
-    "status": "pending_source",
-    "intervalKind": "not_computed",
-    "unit": "percent of GDP",
-    "method": "total = sum(components) - sum(overlap); ratio to nominal GDP of the same vintage",
-    "denominatorSource": "IMF Article IV Table 1 memorandum nominal GDP (expenditure side), RMB bn"
+  {
+   "name": "Property developer and related",
+   "low": null,
+   "high": null,
+   "unit": "CNY bn",
+   "asOfYear": null,
+   "sourceRefs": [],
+   "note": "No developer aggregate debt has been read. HKEX filings are not fetched. pending source; no number published (SPEC 7.2, rule against invented ranges)",
+   "status": "pending_source"
   },
-  "subtotalSourced": {
-    "label": "LGFV listed-bond perimeter (IMF), partial",
-    "lowPctGdp": 30.454817816075554,
-    "highPctGdp": 50.93089280109567,
-    "asOfYear": 2025,
-    "status": "sourced_partial_not_total"
+  {
+   "name": "Shadow banking / trust / WMP",
+   "low": null,
+   "high": null,
+   "unit": "CNY bn",
+   "asOfYear": null,
+   "sourceRefs": [],
+   "note": "No keyless trust AUM series. CEIC trust page returned HTTP 403; CTA statistics page is a JS shell. pending source; no number published (SPEC 7.2, rule against invented ranges)",
+   "status": "pending_source"
   },
-  "measuredProxies": [
-    {
-      "label": "Private non-financial credit, China",
-      "value": 289406.889,
-      "unit": "CNY bn",
-      "asOf": "2026-Q1",
-      "sourceRef": "bis_WS_TC_CN",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Credit-to-GDP gap, China (CG_DTYPE C)",
-      "value": -5.1412,
-      "unit": "pp",
-      "asOf": "2026-Q1",
-      "sourceRef": "bis_WS_CREDIT_GAP_CN (CG_DTYPE meaning inferred, audit F19)",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Credit-to-GDP ratio, China (CG_DTYPE A)",
-      "value": 204.11207778046,
-      "unit": "percent of GDP",
-      "asOf": "2026-Q1",
-      "sourceRef": "bis_WS_CREDIT_GAP_CN (CG_DTYPE meaning inferred, audit F19)",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Debt service ratio, private non-financial, China",
-      "value": 19.1,
-      "unit": "percent",
-      "asOf": "2026-Q1",
-      "sourceRef": "bis_WS_DSR_CN",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Residential property index, China (peak to last)",
-      "value": 112.9201,
-      "unit": "index (base 2010=100, to confirm, F19)",
-      "asOf": "2026Q2",
-      "sourceRef": "bis_WS_SPP_CN",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Residential property index fall from in-sample peak",
-      "value": 22.611297561764587,
-      "unit": "percent",
-      "asOf": "2026Q2",
-      "sourceRef": "bis_WS_SPP_CN (peak 145.9129 at 2021Q3)",
-      "label_tag": "Computed"
-    },
-    {
-      "label": "Domestic credit to private sector, % GDP",
-      "value": 194.312528264561,
-      "unit": "percent of GDP",
-      "asOf": "2024",
-      "sourceRef": "wb_FS.AST.PRVT.GD.ZS",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Real GDP growth",
-      "value": 4.95994886240992,
-      "unit": "percent",
-      "asOf": "2025",
-      "sourceRef": "wb_NY.GDP.MKTP.KD.ZG",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Augmented debt, IMF perimeter, % GDP",
-      "value": 126.63209404513938,
-      "unit": "percent of GDP",
-      "asOf": "2025",
-      "sourceRef": "imf_cr26-044_t2_row_-14",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Augmented debt excluding 'possible to be recognized', % GDP",
-      "value": 98.87222872143123,
-      "unit": "percent of GDP",
-      "asOf": "2025",
-      "sourceRef": "imf_cr26-044_t2_row_-15",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "LGFV listed-bond debt, % GDP",
-      "value": 50.9,
-      "unit": "percent of GDP",
-      "asOf": "2025",
-      "sourceRef": "imf_cr26-044_t2_row_-12",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "Gross general budgetary debt (official), % GDP",
-      "value": 68.4,
-      "unit": "percent of GDP",
-      "asOf": "2025",
-      "sourceRef": "imf_cr26-044_t2_row_-9",
-      "label_tag": "Observed"
-    },
-    {
-      "label": "General government gross debt, IMF DataMapper (WEO vintage not stated)",
-      "value": 98.6,
-      "unit": "percent of GDP",
-      "asOf": "2025",
-      "sourceRef": "imf_GGXWDG_NGDP (restricted terms; private)",
-      "label_tag": "Observed",
-      "note": "Not reconciled with the Article IV general budgetary (68.4) or augmented (126.6) perimeters. Vintage and perimeter differ."
-    },
-    {
-      "label": "China 10-year government bond rate (IMF)",
-      "value": 1.8,
-      "unit": "percent",
-      "asOf": "2025",
-      "sourceRef": "imf_cr26-044_t1_gov10y",
-      "label_tag": "Observed"
-    }
-  ],
-  "japanComparison": {
-    "alignment": "t=0 by BIS credit-gap C maximum: Japan 1990Q1 (C=23.7554, sample to 1994Q4); China 2016Q1 (C=25.4573, in-sample maximum). SPEC 7.3 rule returns no quarter; see change log. Offsets are years since t=0.",
-    "offsets": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
-    "china": [
-      25.4573,
-      14.2925,
-      1.0963,
-      -5.5235,
-      -0.5144,
-      -5.0188,
-      -12.2035,
-      -7.0176,
-      -4.9524,
-      -4.4329,
-      -5.1412
-    ],
-    "japan": [
-      23.7554,
-      15.0713,
-      7.5694,
-      5.2622,
-      2.3565,
-      -4.1093,
-      -9.2163,
-      -16.4915,
-      -17.955,
-      -23.0907,
-      -23.1092
-    ],
-    "caveat": "Japan 1990s analogy is conditional: bank bad-loan regime, yen regime and China's policy space, capital controls and state-bank structure differ. China's 10-year yield is annual (IMF, 2020-2025) and spread to quarters. China CPI (FRED) ends 2025-04 and Japan real GDP starts 1994, so cells are null where no read exists. Sensitivity to t=0 shift of plus or minus 4 quarters for the China credit gap: {\"-4\": [20.5133, 25.4573, 14.2925, 1.0963, -5.5235, -0.5144, -5.0188, -12.2035, -7.0176, -4.9524, -4.4329], \"4\": [14.2925, 1.0963, -5.5235, -0.5144, -5.0188, -12.2035, -7.0176, -4.9524, -4.4329, -5.1412, null]}",
-    "mapping": [
-      {
-        "variable": "creditGapC",
-        "japanValue": 23.7554,
-        "chinaValue": 25.4573,
-        "offsetYears": 0
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 18.3,
-        "offsetYears": 0
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": null,
-        "chinaValue": 6.7737,
-        "offsetYears": 0
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 3.5591,
-        "chinaValue": 2.1013,
-        "offsetYears": 0
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 6.7087,
-        "chinaValue": null,
-        "offsetYears": 0
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": 15.0713,
-        "chinaValue": 14.2925,
-        "offsetYears": 1
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 17.9,
-        "offsetYears": 1
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": null,
-        "chinaValue": 6.8912,
-        "offsetYears": 1
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 3.7388,
-        "chinaValue": 1.4431,
-        "offsetYears": 1
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 6.444,
-        "chinaValue": null,
-        "offsetYears": 1
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": 7.5694,
-        "chinaValue": 1.0963,
-        "offsetYears": 2
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 17.2,
-        "offsetYears": 2
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": null,
-        "chinaValue": 6.7578,
-        "offsetYears": 2
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 1.893,
-        "chinaValue": 2.1266,
-        "offsetYears": 2
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 5.5193,
-        "chinaValue": null,
-        "offsetYears": 2
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": 5.2622,
-        "chinaValue": -5.5235,
-        "offsetYears": 3
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 16.9,
-        "offsetYears": 3
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": null,
-        "chinaValue": 6.0674,
-        "offsetYears": 3
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 1.3222,
-        "chinaValue": 1.8309,
-        "offsetYears": 3
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 4.4833,
-        "chinaValue": null,
-        "offsetYears": 3
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": 2.3565,
-        "chinaValue": -0.5144,
-        "offsetYears": 4
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 17.7,
-        "offsetYears": 4
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": null,
-        "chinaValue": 2.3395,
-        "offsetYears": 4
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 1.1987,
-        "chinaValue": 4.9574,
-        "offsetYears": 4
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 4.0303,
-        "chinaValue": 3.0,
-        "offsetYears": 4
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": -4.1093,
-        "chinaValue": -5.0188,
-        "offsetYears": 5
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 17.7,
-        "offsetYears": 5
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": 0.8237,
-        "chinaValue": 8.5704,
-        "offsetYears": 5
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 0.21,
-        "chinaValue": -0.1075,
-        "offsetYears": 5
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 4.411,
-        "chinaValue": 3.1,
-        "offsetYears": 5
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": -9.2163,
-        "chinaValue": -12.2035,
-        "offsetYears": 6
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 17.2,
-        "offsetYears": 6
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": 3.2779,
-        "chinaValue": 3.1339,
-        "offsetYears": 6
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": -0.3474,
-        "chinaValue": 1.1538,
-        "offsetYears": 6
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 3.23,
-        "chinaValue": 2.8,
-        "offsetYears": 6
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": -16.4915,
-        "chinaValue": -7.0176,
-        "offsetYears": 7
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 18.0,
-        "offsetYears": 7
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": 3.0235,
-        "chinaValue": 5.416,
-        "offsetYears": 7
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 0.5932,
-        "chinaValue": 1.2398,
-        "offsetYears": 7
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 2.5797,
-        "chinaValue": 2.8,
-        "offsetYears": 7
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": -17.955,
-        "chinaValue": -4.9524,
-        "offsetYears": 8
-      },
-      {
-        "variable": "dsr",
-        "japanValue": null,
-        "chinaValue": 18.5,
-        "offsetYears": 8
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": -2.1335,
-        "chinaValue": 4.9583,
-        "offsetYears": 8
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": 1.9425,
-        "chinaValue": -0.0307,
-        "offsetYears": 8
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 1.9343,
-        "chinaValue": 2.2,
-        "offsetYears": 8
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": -23.0907,
-        "chinaValue": -4.4329,
-        "offsetYears": 9
-      },
-      {
-        "variable": "dsr",
-        "japanValue": 20.0,
-        "chinaValue": 18.9,
-        "offsetYears": 9
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": -1.0299,
-        "chinaValue": 4.9599,
-        "offsetYears": 9
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": -0.1018,
-        "chinaValue": -0.1265,
-        "offsetYears": 9
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 1.9477,
-        "chinaValue": 1.8,
-        "offsetYears": 9
-      },
-      {
-        "variable": "creditGapC",
-        "japanValue": -23.1092,
-        "chinaValue": -5.1412,
-        "offsetYears": 10
-      },
-      {
-        "variable": "dsr",
-        "japanValue": 19.1,
-        "chinaValue": 19.1,
-        "offsetYears": 10
-      },
-      {
-        "variable": "realGdpYoy",
-        "japanValue": 2.9002,
-        "chinaValue": null,
-        "offsetYears": 10
-      },
-      {
-        "variable": "cpiYoy",
-        "japanValue": -0.613,
-        "chinaValue": null,
-        "offsetYears": 10
-      },
-      {
-        "variable": "gov10y",
-        "japanValue": 1.7687,
-        "chinaValue": null,
-        "offsetYears": 10
-      }
-    ],
-    "t0ShiftSensitivityChinaCreditGapC": {
-      "-4": [
-        20.5133,
-        25.4573,
-        14.2925,
-        1.0963,
-        -5.5235,
-        -0.5144,
-        -5.0188,
-        -12.2035,
-        -7.0176,
-        -4.9524,
-        -4.4329
-      ],
-      "4": [
-        14.2925,
-        1.0963,
-        -5.5235,
-        -0.5144,
-        -5.0188,
-        -12.2035,
-        -7.0176,
-        -4.9524,
-        -4.4329,
-        -5.1412,
-        null
-      ]
-    }
+  {
+   "name": "Hidden local-government debt (official legal definition)",
+   "low": 10500.0,
+   "high": 14300.0,
+   "unit": "CNY bn",
+   "asOfYear": 2024,
+   "sourceRefs": [
+    "imf_cr26-044_chn_2026"
+   ],
+   "parameterIds": [
+    "cn.imf.official_hidden_debt_rmbtn.2024",
+    "cn.imf.official_hidden_debt_rmbtn.2023"
+   ],
+   "rangeMethod": "convert the two officially reported year-end stocks from RMB trillion to CNY bn; historical range, not uncertainty interval",
+   "note": "Observed stocks at two dates: CNY 10,500 bn at end-2024 and CNY 14,300 bn at end-2023. The low/high are a 2023\u201324 historical range, not uncertainty bounds. This official legal definition includes LGFV debt and other borrowings such as arrears; it overlaps the broader IMF staff LGFV and augmented-debt perimeters and must not be added to them. IMF staff say their GFSM/economic-perimeter off-budget LGFV estimate is more than three times the official hidden-debt estimate, but that is a different perimeter and not a finite upper bound.",
+   "status": "observed_official_historical_range",
+   "rangeKind": "observed_values_across_years"
   },
-  "dynamics": {
-    "debtDynamicsIdentity": {
-      "formula": "d_{t+1} = d_t*(1+i)/(1+g_nom) + f_{t+1}; f = primary augmented deficit share of GDP_{t+1}",
-      "identityResidualPp": {
-        "2026": -0.901,
-        "2027": -1.068,
-        "2028": -1.126,
-        "2029": -1.222,
-        "2030": -1.117
-      },
-      "rateSensitivity2026": [
-        {
-          "i": 0.025,
-          "primaryDeficitPct": 11.149983708317006,
-          "modelNextPct": 136.20065166731968,
-          "residualPp": -0.9006516673196643
-        },
-        {
-          "i": 0.03,
-          "primaryDeficitPct": 10.539980449980408,
-          "modelNextPct": 136.2006516673197,
-          "residualPp": -0.9006516673196927
-        },
-        {
-          "i": 0.035,
-          "primaryDeficitPct": 9.929977191643811,
-          "modelNextPct": 136.20065166731968,
-          "residualPp": -0.9006516673196643
-        },
-        {
-          "i": 0.04,
-          "primaryDeficitPct": 9.31997393330721,
-          "modelNextPct": 136.20065166731968,
-          "residualPp": -0.9006516673196643
-        },
-        {
-          "i": 0.045,
-          "primaryDeficitPct": 8.709970674970613,
-          "modelNextPct": 136.2006516673197,
-          "residualPp": -0.9006516673196927
-        }
-      ],
-      "note": "Residual uses the IMF overall augmented balance and is independent of the interest rate. The rate changes the primary split only. The stock-flow residual is the perimeter and asset-side effect. The earlier -0.7 pp value is superseded by this recomputation.",
-      "status": "computed"
-    },
-    "deflationN": 4,
-    "lgfvStressIndex": {
-      "status": "pending_source",
-      "series": null,
-      "reason": "Inputs (land-sale revenue, LGFV funding spread, refinancing gap) are not read. Property index is observed; see HD.lgfv_stress_index."
-    }
-  },
-  "policySpace": [
-    {
-      "item": "Policy rate: 1-year loan prime rate (LPR)",
-      "value": 3.0,
-      "unit": "percent",
-      "asOf": "2026-10-13",
-      "status": "observed",
-      "sourceRef": "bis_WS_CBPOL_CN (WS_CBPOL/D.CN; 1-year LPR per the series title)"
-    },
-    {
-      "item": "7-day reverse repo rate (IMF, 2025)",
-      "value": null,
-      "unit": "percent",
-      "asOf": "2025",
-      "status": "pending_source",
-      "sourceRef": "IMF CR 26/44 Table 1 (7-day repo rate 1.7 for 2025); not used as a space measure"
-    },
-    {
-      "item": "Augmented debt, % of GDP (IMF, 2026)",
-      "value": 135.3,
-      "unit": "percent of GDP",
-      "asOf": "2026 (IMF projection)",
-      "status": "observed",
-      "sourceRef": "IMF CR 26/44 Table 2 row -14 (PDF page 67)"
-    },
-    {
-      "item": "Fiscal headroom to a debt threshold",
-      "value": null,
-      "unit": "percent of GDP",
-      "asOf": null,
-      "status": "assumed",
-      "sourceRef": "No threshold is read from a source. Assumed, not computed; SPEC 7.5 says Assumed."
-    },
-    {
-      "item": "Gross official reserves (IMF, 2025)",
-      "value": 3703.0,
-      "unit": "USD bn",
-      "asOf": "2025",
-      "status": "observed",
-      "sourceRef": "IMF CR 26/44 Table 1 (PDF page 66), balance of payments memo"
-    },
-    {
-      "item": "Quasi-fiscal capacity: LGFV bond issuance and policy-bank lending",
-      "value": null,
-      "unit": "CNY bn",
-      "asOf": null,
-      "status": "pending_source",
-      "sourceRef": "IMF text notes net negative LGFV bond financing; no numeric series read"
-    },
-    {
-      "item": "Bank capital headroom",
-      "value": null,
-      "unit": "percent",
-      "asOf": null,
-      "status": "pending_source",
-      "sourceRef": "Bank filings or BIS capital series not fetched"
-    },
-    {
-      "item": "Capital controls and FX regime",
-      "value": null,
-      "unit": null,
-      "asOf": null,
-      "status": "pending_source",
-      "sourceRef": "SAFE data not probed (SPEC 7.5)"
-    }
-  ],
-  "channels": [
-    {
-      "channel": "Exports",
-      "variable": "China export growth; US share of exports",
-      "source": "Customs data (not fetched)",
-      "status": "pending_source",
-      "value": null
-    },
-    {
-      "channel": "Dollar funding",
-      "variable": "USD credit to non-banks located in China (x19)",
-      "source": "BIS WS_GLI_ALL (codes to confirm, SPEC F10)",
-      "status": "pending_code_check",
-      "value": null,
-      "note": "The file is in data/private-snapshots/bis; the series code is not confirmed in this lane."
-    },
-    {
-      "channel": "Capital flows",
-      "variable": "Cross-border claims on China (BIS LBS, L_CP_COUNTRY = CN)",
-      "source": "BIS WS_LBS_D_PUB (not in snapshots)",
-      "status": "pending_source",
-      "value": null
-    },
-    {
-      "channel": "FX reserves",
-      "variable": "Gross official reserves, USD bn (2025)",
-      "source": "IMF CR 26/44 Table 1 (PDF page 66)",
-      "status": "observed",
-      "value": 3703.0
-    },
-    {
-      "channel": "Equity and property wealth",
-      "variable": "Residential property index (x18, BIS SPP, nominal, base 2010=100)",
-      "source": "BIS WS_SPP_CN (private snapshot)",
-      "status": "observed",
-      "value": 112.9201,
-      "asOf": "2026-Q2"
-    },
-    {
-      "channel": "Equity and property wealth",
-      "variable": "Shanghai and Hong Kong index",
-      "source": "Index source to verify (licence); Yahoo raw data is private only",
-      "status": "pending_source",
-      "value": null
-    }
-  ],
-  "scenarioFlags": {
-    "label": "Assumption-driven diagnostic paths only; not likelihood estimates",
-    "shock": {
-      "flagProbabilities": null,
-      "probabilityStatus": "not_computed_by_china_lane; shared scenario model required",
-      "fanPercentiles": {
-        "maxPropertyFallPct": {
-          "p10": 25.733254027441856,
-          "p50": 30.64535056927307,
-          "p90": 36.24886842912475
-        },
-        "minNominalGrowthYoyPct": {
-          "p10": -0.4822350372424155,
-          "p50": 0.9381398533942376,
-          "p90": 2.4898384924087917
-        },
-        "augmentedDebtPctGdp2030": {
-          "p10": 164.25194398922585,
-          "p50": 170.11209708127222,
-          "p90": 179.29463065642338
-        }
-      },
-      "nDraws": 2000,
-      "seed": 20261015
-    },
-    "noShockBaselineFlags": {
-      "values": {
-        "C1": false,
-        "C2": false,
-        "C3": false,
-        "C4": false,
-        "C5": false,
-        "chinaCrisis": false,
-        "maxPropertyFallPct": 22.611297561764587
-      },
-      "status": "deterministic IMF baseline diagnostics; not a scenario probability"
-    },
-    "propertyMeasured": {
-      "peak": 145.9129,
-      "peakPeriod": "2021Q3",
-      "lastObserved": 112.9201,
-      "lastPeriod": "2026Q2",
-      "measuredFallPct": 22.611297561764587,
-      "additionalFallToC3ThresholdPct": 3.0866293954752155
-    },
-    "definition": "China crisis = (C1 AND C2 AND C3) AND (C4 OR C5), SPEC 9.1. Assumed thresholds; not a fitted likelihood."
+  {
+   "name": "Bank asset-quality exposure",
+   "low": null,
+   "high": null,
+   "unit": "CNY bn",
+   "asOfYear": null,
+   "sourceRefs": [],
+   "note": "No bank-level LGFV or developer loan stock has been read. pending source; no number published (SPEC 7.2, rule against invented ranges)",
+   "status": "pending_source"
   }
+ ],
+ "overlapAdjustment": {
+  "low": null,
+  "high": null,
+  "unit": "CNY bn",
+  "status": "pending_source",
+  "assumedShareOfSmallerComponent": {
+   "point": 0.25,
+   "low": 0.1,
+   "high": 0.4,
+   "status": "assumed"
+  },
+  "note": "Overlap matrix entries depend on pending components. The Assumed share is a parameter only."
+ },
+ "totalToGdp": {
+  "point": null,
+  "interval80": null,
+  "status": "pending_source",
+  "intervalKind": "not_computed",
+  "unit": "percent of GDP",
+  "method": "total = sum(components) - sum(overlap); ratio to nominal GDP of the same vintage",
+  "denominatorSource": "IMF Article IV Table 1 memorandum nominal GDP (expenditure side), RMB bn"
+ },
+ "subtotalSourced": {
+  "label": "LGFV listed-bond perimeter (IMF), partial",
+  "lowPctGdp": 30.454817816075554,
+  "highPctGdp": 50.93089280109567,
+  "asOfYear": 2025,
+  "status": "sourced_partial_not_total"
+ },
+ "measuredProxies": [
+  {
+   "label": "Private non-financial credit, China",
+   "value": 289406.889,
+   "unit": "CNY bn",
+   "asOf": "2026-Q1",
+   "sourceRef": "bis_WS_TC_CN",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Credit-to-GDP gap, China (CG_DTYPE C)",
+   "value": -5.1412,
+   "unit": "pp",
+   "asOf": "2026-Q1",
+   "sourceRef": "bis_WS_CREDIT_GAP_CN (CG_DTYPE meaning inferred, audit F19)",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Credit-to-GDP ratio, China (CG_DTYPE A)",
+   "value": 204.11207778046,
+   "unit": "percent of GDP",
+   "asOf": "2026-Q1",
+   "sourceRef": "bis_WS_CREDIT_GAP_CN (CG_DTYPE meaning inferred, audit F19)",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Debt service ratio, private non-financial, China",
+   "value": 19.1,
+   "unit": "percent",
+   "asOf": "2026-Q1",
+   "sourceRef": "bis_WS_DSR_CN",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Residential property index, China (peak to last)",
+   "value": 112.9201,
+   "unit": "index (base 2010=100, to confirm, F19)",
+   "asOf": "2026Q2",
+   "sourceRef": "bis_WS_SPP_CN",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Residential property index fall from in-sample peak",
+   "value": 22.611297561764587,
+   "unit": "percent",
+   "asOf": "2026Q2",
+   "sourceRef": "bis_WS_SPP_CN (peak 145.9129 at 2021Q3)",
+   "label_tag": "Computed"
+  },
+  {
+   "label": "Domestic credit to private sector, % GDP",
+   "value": 194.312528264561,
+   "unit": "percent of GDP",
+   "asOf": "2024",
+   "sourceRef": "wb_FS.AST.PRVT.GD.ZS",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Real GDP growth",
+   "value": 4.95994886240992,
+   "unit": "percent",
+   "asOf": "2025",
+   "sourceRef": "wb_NY.GDP.MKTP.KD.ZG",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Augmented debt, IMF perimeter, % GDP",
+   "value": 126.63209404513938,
+   "unit": "percent of GDP",
+   "asOf": "2025",
+   "sourceRef": "imf_cr26-044_t2_row_-14",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Augmented debt excluding 'possible to be recognized', % GDP",
+   "value": 98.87222872143123,
+   "unit": "percent of GDP",
+   "asOf": "2025",
+   "sourceRef": "imf_cr26-044_t2_row_-15",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "LGFV listed-bond debt, % GDP",
+   "value": 50.9,
+   "unit": "percent of GDP",
+   "asOf": "2025",
+   "sourceRef": "imf_cr26-044_t2_row_-12",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "Gross general budgetary debt (official), % GDP",
+   "value": 68.4,
+   "unit": "percent of GDP",
+   "asOf": "2025",
+   "sourceRef": "imf_cr26-044_t2_row_-9",
+   "label_tag": "Observed"
+  },
+  {
+   "label": "General government gross debt, IMF DataMapper (WEO vintage not stated)",
+   "value": 98.6,
+   "unit": "percent of GDP",
+   "asOf": "2025",
+   "sourceRef": "imf_GGXWDG_NGDP (restricted terms; private)",
+   "label_tag": "Observed",
+   "note": "Not reconciled with the Article IV general budgetary (68.4) or augmented (126.6) perimeters. Vintage and perimeter differ."
+  },
+  {
+   "label": "China 10-year government bond rate (IMF)",
+   "value": 1.8,
+   "unit": "percent",
+   "asOf": "2025",
+   "sourceRef": "imf_cr26-044_t1_gov10y",
+   "label_tag": "Observed"
+  }
+ ],
+ "japanComparison": {
+  "alignment": "t=0 by BIS credit-gap C maximum: Japan 1990Q1 (C=23.7554, sample to 1994Q4); China 2016Q1 (C=25.4573, in-sample maximum). SPEC 7.3 rule returns no quarter; see change log. Offsets are years since t=0.",
+  "offsets": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "china": [
+   25.4573,
+   14.2925,
+   1.0963,
+   -5.5235,
+   -0.5144,
+   -5.0188,
+   -12.2035,
+   -7.0176,
+   -4.9524,
+   -4.4329,
+   -5.1412
+  ],
+  "japan": [
+   23.7554,
+   15.0713,
+   7.5694,
+   5.2622,
+   2.3565,
+   -4.1093,
+   -9.2163,
+   -16.4915,
+   -17.955,
+   -23.0907,
+   -23.1092
+  ],
+  "caveat": "Japan 1990s analogy is conditional: bank bad-loan regime, yen regime and China's policy space, capital controls and state-bank structure differ. China's 10-year yield is annual (IMF, 2020-2025) and spread to quarters. China CPI (FRED) ends 2025-04 and Japan real GDP starts 1994, so cells are null where no read exists. Sensitivity to t=0 shift of plus or minus 4 quarters for the China credit gap: {\"-4\": [20.5133, 25.4573, 14.2925, 1.0963, -5.5235, -0.5144, -5.0188, -12.2035, -7.0176, -4.9524, -4.4329], \"4\": [14.2925, 1.0963, -5.5235, -0.5144, -5.0188, -12.2035, -7.0176, -4.9524, -4.4329, -5.1412, null]}",
+  "mapping": [
+   {
+    "variable": "creditGapC",
+    "japanValue": 23.7554,
+    "chinaValue": 25.4573,
+    "offsetYears": 0
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 18.3,
+    "offsetYears": 0
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": null,
+    "chinaValue": 6.7737,
+    "offsetYears": 0
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 3.5591,
+    "chinaValue": 2.1013,
+    "offsetYears": 0
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 6.7087,
+    "chinaValue": null,
+    "offsetYears": 0
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": 15.0713,
+    "chinaValue": 14.2925,
+    "offsetYears": 1
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 17.9,
+    "offsetYears": 1
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": null,
+    "chinaValue": 6.8912,
+    "offsetYears": 1
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 3.7388,
+    "chinaValue": 1.4431,
+    "offsetYears": 1
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 6.444,
+    "chinaValue": null,
+    "offsetYears": 1
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": 7.5694,
+    "chinaValue": 1.0963,
+    "offsetYears": 2
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 17.2,
+    "offsetYears": 2
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": null,
+    "chinaValue": 6.7578,
+    "offsetYears": 2
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 1.893,
+    "chinaValue": 2.1266,
+    "offsetYears": 2
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 5.5193,
+    "chinaValue": null,
+    "offsetYears": 2
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": 5.2622,
+    "chinaValue": -5.5235,
+    "offsetYears": 3
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 16.9,
+    "offsetYears": 3
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": null,
+    "chinaValue": 6.0674,
+    "offsetYears": 3
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 1.3222,
+    "chinaValue": 1.8309,
+    "offsetYears": 3
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 4.4833,
+    "chinaValue": null,
+    "offsetYears": 3
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": 2.3565,
+    "chinaValue": -0.5144,
+    "offsetYears": 4
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 17.7,
+    "offsetYears": 4
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": null,
+    "chinaValue": 2.3395,
+    "offsetYears": 4
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 1.1987,
+    "chinaValue": 4.9574,
+    "offsetYears": 4
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 4.0303,
+    "chinaValue": 3.0,
+    "offsetYears": 4
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": -4.1093,
+    "chinaValue": -5.0188,
+    "offsetYears": 5
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 17.7,
+    "offsetYears": 5
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": 0.8237,
+    "chinaValue": 8.5704,
+    "offsetYears": 5
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 0.21,
+    "chinaValue": -0.1075,
+    "offsetYears": 5
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 4.411,
+    "chinaValue": 3.1,
+    "offsetYears": 5
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": -9.2163,
+    "chinaValue": -12.2035,
+    "offsetYears": 6
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 17.2,
+    "offsetYears": 6
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": 3.2779,
+    "chinaValue": 3.1339,
+    "offsetYears": 6
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": -0.3474,
+    "chinaValue": 1.1538,
+    "offsetYears": 6
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 3.23,
+    "chinaValue": 2.8,
+    "offsetYears": 6
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": -16.4915,
+    "chinaValue": -7.0176,
+    "offsetYears": 7
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 18.0,
+    "offsetYears": 7
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": 3.0235,
+    "chinaValue": 5.416,
+    "offsetYears": 7
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 0.5932,
+    "chinaValue": 1.2398,
+    "offsetYears": 7
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 2.5797,
+    "chinaValue": 2.8,
+    "offsetYears": 7
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": -17.955,
+    "chinaValue": -4.9524,
+    "offsetYears": 8
+   },
+   {
+    "variable": "dsr",
+    "japanValue": null,
+    "chinaValue": 18.5,
+    "offsetYears": 8
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": -2.1335,
+    "chinaValue": 4.9583,
+    "offsetYears": 8
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": 1.9425,
+    "chinaValue": -0.0307,
+    "offsetYears": 8
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 1.9343,
+    "chinaValue": 2.2,
+    "offsetYears": 8
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": -23.0907,
+    "chinaValue": -4.4329,
+    "offsetYears": 9
+   },
+   {
+    "variable": "dsr",
+    "japanValue": 20.0,
+    "chinaValue": 18.9,
+    "offsetYears": 9
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": -1.0299,
+    "chinaValue": 4.9599,
+    "offsetYears": 9
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": -0.1018,
+    "chinaValue": -0.1265,
+    "offsetYears": 9
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 1.9477,
+    "chinaValue": 1.8,
+    "offsetYears": 9
+   },
+   {
+    "variable": "creditGapC",
+    "japanValue": -23.1092,
+    "chinaValue": -5.1412,
+    "offsetYears": 10
+   },
+   {
+    "variable": "dsr",
+    "japanValue": 19.1,
+    "chinaValue": 19.1,
+    "offsetYears": 10
+   },
+   {
+    "variable": "realGdpYoy",
+    "japanValue": 2.9002,
+    "chinaValue": null,
+    "offsetYears": 10
+   },
+   {
+    "variable": "cpiYoy",
+    "japanValue": -0.613,
+    "chinaValue": null,
+    "offsetYears": 10
+   },
+   {
+    "variable": "gov10y",
+    "japanValue": 1.7687,
+    "chinaValue": null,
+    "offsetYears": 10
+   }
+  ],
+  "t0ShiftSensitivityChinaCreditGapC": {
+   "-4": [
+    20.5133,
+    25.4573,
+    14.2925,
+    1.0963,
+    -5.5235,
+    -0.5144,
+    -5.0188,
+    -12.2035,
+    -7.0176,
+    -4.9524,
+    -4.4329
+   ],
+   "4": [
+    14.2925,
+    1.0963,
+    -5.5235,
+    -0.5144,
+    -5.0188,
+    -12.2035,
+    -7.0176,
+    -4.9524,
+    -4.4329,
+    -5.1412,
+    null
+   ]
+  }
+ },
+ "dynamics": {
+  "debtDynamicsIdentity": {
+   "formula": "d_{t+1} = d_t*(1+i)/(1+g_nom) + f_{t+1}; f = primary augmented deficit share of GDP_{t+1}",
+   "identityResidualPp": {
+    "2026": -0.901,
+    "2027": -1.068,
+    "2028": -1.126,
+    "2029": -1.222,
+    "2030": -1.117
+   },
+   "rateSensitivity2026": [
+    {
+     "i": 0.025,
+     "primaryDeficitPct": 11.149983708317006,
+     "modelNextPct": 136.20065166731968,
+     "residualPp": -0.9006516673196643
+    },
+    {
+     "i": 0.03,
+     "primaryDeficitPct": 10.539980449980408,
+     "modelNextPct": 136.2006516673197,
+     "residualPp": -0.9006516673196927
+    },
+    {
+     "i": 0.035,
+     "primaryDeficitPct": 9.929977191643811,
+     "modelNextPct": 136.20065166731968,
+     "residualPp": -0.9006516673196643
+    },
+    {
+     "i": 0.04,
+     "primaryDeficitPct": 9.31997393330721,
+     "modelNextPct": 136.20065166731968,
+     "residualPp": -0.9006516673196643
+    },
+    {
+     "i": 0.045,
+     "primaryDeficitPct": 8.709970674970613,
+     "modelNextPct": 136.2006516673197,
+     "residualPp": -0.9006516673196927
+    }
+   ],
+   "note": "Residual uses the IMF overall augmented balance and is independent of the interest rate. The rate changes the primary split only. The stock-flow residual is the perimeter and asset-side effect. The earlier -0.7 pp value is superseded by this recomputation.",
+   "status": "computed"
+  },
+  "deflationN": 4,
+  "lgfvStressIndex": {
+   "status": "pending_source",
+   "series": null,
+   "reason": "Inputs (land-sale revenue, LGFV funding spread, refinancing gap) are not read. Property index is observed; see HD.lgfv_stress_index."
+  }
+ },
+ "policySpace": [
+  {
+   "item": "Policy rate: 1-year loan prime rate (LPR)",
+   "value": 3.0,
+   "unit": "percent",
+   "asOf": "2026-10-13",
+   "status": "observed",
+   "sourceRef": "bis_WS_CBPOL_CN (WS_CBPOL/D.CN; 1-year LPR per the series title)"
+  },
+  {
+   "item": "7-day reverse repo rate (IMF, 2025)",
+   "value": null,
+   "unit": "percent",
+   "asOf": "2025",
+   "status": "pending_source",
+   "sourceRef": "IMF CR 26/44 Table 1 (7-day repo rate 1.7 for 2025); not used as a space measure"
+  },
+  {
+   "item": "Augmented debt, % of GDP (IMF, 2026)",
+   "value": 135.3,
+   "unit": "percent of GDP",
+   "asOf": "2026 (IMF projection)",
+   "status": "observed",
+   "sourceRef": "IMF CR 26/44 Table 2 row -14 (PDF page 67)"
+  },
+  {
+   "item": "Fiscal headroom to a debt threshold",
+   "value": null,
+   "unit": "percent of GDP",
+   "asOf": null,
+   "status": "assumed",
+   "sourceRef": "No threshold is read from a source. Assumed, not computed; SPEC 7.5 says Assumed."
+  },
+  {
+   "item": "Gross official reserves (IMF, 2025)",
+   "value": 3703.0,
+   "unit": "USD bn",
+   "asOf": "2025",
+   "status": "observed",
+   "sourceRef": "IMF CR 26/44 Table 1 (PDF page 66), balance of payments memo"
+  },
+  {
+   "item": "Quasi-fiscal capacity: LGFV bond issuance and policy-bank lending",
+   "value": null,
+   "unit": "CNY bn",
+   "asOf": null,
+   "status": "pending_source",
+   "sourceRef": "IMF text notes net negative LGFV bond financing; no numeric series read"
+  },
+  {
+   "item": "Bank capital headroom",
+   "value": null,
+   "unit": "percent",
+   "asOf": null,
+   "status": "pending_source",
+   "sourceRef": "Bank filings or BIS capital series not fetched"
+  },
+  {
+   "item": "Capital controls and FX regime",
+   "value": null,
+   "unit": null,
+   "asOf": null,
+   "status": "pending_source",
+   "sourceRef": "SAFE data not probed (SPEC 7.5)"
+  }
+ ],
+ "channels": [
+  {
+   "channel": "Exports",
+   "variable": "China export growth; US share of exports",
+   "source": "Customs data (not fetched)",
+   "status": "pending_source",
+   "value": null
+  },
+  {
+   "channel": "Dollar funding",
+   "variable": "USD credit to non-banks located in China (x19)",
+   "source": "BIS WS_GLI_ALL (codes to confirm, SPEC F10)",
+   "status": "pending_code_check",
+   "value": null,
+   "note": "The file is in data/private-snapshots/bis; the series code is not confirmed in this lane."
+  },
+  {
+   "channel": "Capital flows",
+   "variable": "Cross-border claims on China (BIS LBS, L_CP_COUNTRY = CN)",
+   "source": "BIS WS_LBS_D_PUB (not in snapshots)",
+   "status": "pending_source",
+   "value": null
+  },
+  {
+   "channel": "FX reserves",
+   "variable": "Gross official reserves, USD bn (2025)",
+   "source": "IMF CR 26/44 Table 1 (PDF page 66)",
+   "status": "observed",
+   "value": 3703.0
+  },
+  {
+   "channel": "Equity and property wealth",
+   "variable": "Residential property index (x18, BIS SPP, nominal, base 2010=100)",
+   "source": "BIS WS_SPP_CN (private snapshot)",
+   "status": "observed",
+   "value": 112.9201,
+   "asOf": "2026-Q2"
+  },
+  {
+   "channel": "Equity and property wealth",
+   "variable": "Shanghai and Hong Kong index",
+   "source": "Index source to verify (licence); Yahoo raw data is private only",
+   "status": "pending_source",
+   "value": null
+  }
+ ],
+ "scenarioFlags": {
+  "label": "Assumption-driven diagnostic paths only; not likelihood estimates",
+  "shock": {
+   "flagProbabilities": null,
+   "probabilityStatus": "not_computed_by_china_lane; shared scenario model required",
+   "fanPercentiles": {
+    "maxPropertyFallPct": {
+     "p10": 25.733254027441856,
+     "p50": 30.64535056927307,
+     "p90": 36.24886842912475
+    },
+    "minNominalGrowthYoyPct": {
+     "p10": -0.4822350372424155,
+     "p50": 0.9381398533942376,
+     "p90": 2.4898384924087917
+    },
+    "augmentedDebtPctGdp2030": {
+     "p10": 164.25194398922585,
+     "p50": 170.11209708127222,
+     "p90": 179.29463065642338
+    }
+   },
+   "nDraws": 2000,
+   "seed": 20261015
+  },
+  "noShockBaselineFlags": {
+   "values": {
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "C5": false,
+    "chinaCrisis": false,
+    "maxPropertyFallPct": 22.611297561764587
+   },
+   "status": "deterministic IMF baseline diagnostics; not a scenario probability"
+  },
+  "propertyMeasured": {
+   "peak": 145.9129,
+   "peakPeriod": "2021Q3",
+   "lastObserved": 112.9201,
+   "lastPeriod": "2026Q2",
+   "measuredFallPct": 22.611297561764587,
+   "additionalFallToC3ThresholdPct": 3.0866293954752155
+  },
+  "definition": "China crisis = (C1 AND C2 AND C3) AND (C4 OR C5), SPEC 9.1. Assumed thresholds; not a fitted likelihood."
+ }
 }

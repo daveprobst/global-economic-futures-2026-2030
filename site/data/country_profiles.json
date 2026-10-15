@@ -1,56 +1,56 @@
 {
-  "asOf": "2026-10-15",
-  "metricDefinitions": {
-    "growth": "2025 real GDP growth, %",
-    "publicDebt": "latest general/federal government debt, % GDP; perimeter differs",
-    "privateCredit": "latest domestic private credit, % GDP",
-    "policyRate": "policy rate, %, latest 2026 observation",
-    "directExposure": "qualitative direct AI/US-tech exposure"
+ "asOf": "2026-10-31",
+ "metricDefinitions": {
+  "growth": "2025 real GDP growth, %",
+  "publicDebt": "Latest government debt, % GDP; perimeters differ",
+  "privateCredit": "Domestic private credit, % GDP",
+  "policyRate": "Policy rate, %",
+  "directExposure": "Qualitative direct AI/US-tech exposure"
+ },
+ "countries": {
+  "US": {
+   "summary": "Origin of the shock. Funding-market depth decides whether an equity reset becomes a banking crisis.",
+   "metrics": {
+    "growth": 2.34,
+    "publicDebt": 118.8,
+    "privateCredit": 216.3,
+    "policyRate": 4.25,
+    "directExposure": "high"
+   },
+   "shockRole": "Origin and dollar-funding amplifier"
   },
-  "countries": {
-    "US": {
-      "summary": "Largest direct valuation and capex channel; Treasury-market depth and refinancing costs determine whether an equity reset becomes systemic.",
-      "metrics": {
-        "growth": 2.34,
-        "publicDebt": 118.8,
-        "privateCredit": 216.3,
-        "policyRate": 4.25,
-        "directExposure": "high"
-      },
-      "shockRole": "origin + dollar-funding amplifier"
-    },
-    "China": {
-      "summary": "Lower direct US-AI exposure, but property losses, LGFV debt and weak domestic demand create a second balance-sheet channel.",
-      "metrics": {
-        "growth": 4.96,
-        "publicDebt": null,
-        "privateCredit": 194.3,
-        "policyRate": 3.0,
-        "directExposure": "low"
-      },
-      "shockRole": "property/debt amplifier + potential Treasury seller"
-    },
-    "EU": {
-      "summary": "Lower direct AI concentration, but trade, banks and dollar funding transmit the first-round recession before any reallocation benefit.",
-      "metrics": {
-        "growth": 1.5,
-        "publicDebt": 87.4,
-        "privateCredit": null,
-        "policyRate": 2.0,
-        "directExposure": "medium"
-      },
-      "shockRole": "initial loss; conditional medium-term reallocation"
-    },
-    "Switzerland": {
-      "summary": "Low public debt and safe-haven demand cushion funding stress; franc appreciation and EU-market access constrain exports.",
-      "metrics": {
-        "growth": 1.4,
-        "publicDebt": 17.2,
-        "privateCredit": 164.6,
-        "policyRate": 0.0,
-        "directExposure": "medium"
-      },
-      "shockRole": "safe haven with export/currency trade-off"
-    }
+  "China": {
+   "summary": "Little direct AI exposure, but property and LGFV balance sheets make it the second fault line.",
+   "metrics": {
+    "growth": 4.96,
+    "publicDebt": null,
+    "privateCredit": 194.3,
+    "policyRate": 3.0,
+    "directExposure": "low"
+   },
+   "shockRole": "Property-debt amplifier and potential Treasury seller"
+  },
+  "EU": {
+   "summary": "Trade, banks and dollar funding carry the first-round recession before any reallocation gain.",
+   "metrics": {
+    "growth": 1.5,
+    "publicDebt": 87.4,
+    "privateCredit": null,
+    "policyRate": 2.0,
+    "directExposure": "medium"
+   },
+   "shockRole": "First-round loser; conditional later gainer"
+  },
+  "Switzerland": {
+   "summary": "Low debt and safe-haven demand cushion funding stress; a stronger franc hurts exports.",
+   "metrics": {
+    "growth": 1.4,
+    "publicDebt": 17.2,
+    "privateCredit": 164.6,
+    "policyRate": 0.0,
+    "directExposure": "medium"
+   },
+   "shockRole": "Safe haven with an export cost"
   }
+ }
 }

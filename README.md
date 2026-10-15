@@ -1,19 +1,29 @@
 # Fault Lines — Global Economic Futures 2026–2030
 
-An English static research dashboard testing how an AI trust and valuation break could propagate through hyperscaler commitments, funding spreads, forced liquidations, Treasury liquidity, China capital outflows, LGFV refinancing and European demand.
+An English static research dashboard testing how an AI valuation reset could propagate through hyperscaler commitments, funding spreads, forced liquidations, Treasury liquidity, China capital outflows, LGFV refinancing and European demand, and how much output never comes back (hysteresis).
 
-The revised central estimate is **50.5% for a 20% or greater AI-equity adjustment by October 2028**. The full systemic branch is **13.8%** because it additionally requires a liquidity vacuum and financial-system stress. These are model-conditional scenario weights, not objective frequencies or investment advice.
+**One window.** Every probability and every path covers 31 Oct 2026 – 31 Dec 2030.
+
+Central reading: **76%** model weight on a 20%+ fall in AI equities inside the window; **14%** on a continuing boom; **15%** on a full banking-crisis branch; **14%** joint US banking crisis + China crisis. The 25 historical run-ups closest to today's ended in a 20%+ fall 72% of the time. These are model-conditional scenario weights, not objective frequencies or investment advice.
 
 ## Method in one page
 
-- 127 non-overlapping annual equity run-up episodes across 37 countries.
-- A 75% regularised-logit core with capped gradient-boosting (15%) and random-forest (10%) challengers. The nonlinear models perform worse out of sample and therefore cannot dominate the estimate.
-- A transparent monotonic geopolitical × liquidity stress surface replaces the previous unstable historical state multipliers.
-- Seven mutually exclusive outcome classes use explicit drawdown thresholds. The non-bust split is estimated from 93 episodes; the severe-to-systemic transition is estimated on 476 country-years and selected by leave-country-out Brier score.
-- A 4,000-path shared-state simulator links AI trust, cash-flow coverage, marginal funding, equity losses, margin calls, liquidity, Treasury-sale pressure, China outflows and LGFV refinancing.
-- Persistent macro paths are benchmarked to the Federal Reserve 2026 severely adverse design and the 2007–09 US contraction.
+- 301 run-up episodes (three-year real equity return of at least +50%) in 67 economies, 1870–2021: World Bank indices after 1993, JST Macrohistory before. Outcomes use the next four annual closes.
+- Predictors are the 3-year run-up and last-12-month return. Volatility is excluded (not comparable for a 20-stock basket; no out-of-sample skill).
+- 75% ridge-logit, 15% gradient boosting, 10% random forest, calibrated on leave-country-out predictions; geopolitical × dollar-liquidity regime scaling; year-cluster bootstrap for intervals.
+- Equity loss → banking crisis: 16 economies, 1,924 country-years, same window.
+- Connected simulator: one shared financial state per year, then output gaps, hysteresis and unemployment for the US, China and Europe, calibrated to JST output history and to Japan after 1989.
+- Historical checks, cross-validation and nearest analogs are in `site/data/historical_checks.json`; hysteresis calibration and validation in `site/data/hysteresis.json`.
 
 Read [docs/MODEL_RISK.md](docs/MODEL_RISK.md) before reusing any probability.
+
+## Rebuild the model outputs
+
+```sh
+pip install numpy pandas scikit-learn
+python model/fetch_data.py      # World Bank + JST, written to data/ (git-ignored)
+python model/direct_release.py  # writes site/data/*.json
+```
 
 ## Run locally
 
@@ -23,4 +33,4 @@ PORT=8080 HOST=127.0.0.1 python3 serve.py
 
 Open <http://127.0.0.1:8080/> or use `docker compose up --build`. The health endpoint is `/healthz`.
 
-As of 15 October 2026, Europe/Zurich.
+As of 31 October 2026, Europe/Zurich.

@@ -1,7 +1,15 @@
 # Reproducible model source
 
-`direct_release.py` builds the seven scenario weights, nonlinear macro paths, historical crash comparison and joint US–China path simulation. `systemic_transition.py` builds and validates the equity-loss-to-banking-crisis transition model.
+Run `python model/fetch_data.py` (World Bank WDI, JST Macrohistory R6; written to `data/`, git-ignored), then `python model/direct_release.py`, which rewrites `site/data/*.json`.
 
-The transition audit embedded in `site/data/scenario_tree.json` records sample size, features and leave-country-out scores. The connected simulation output, path classifications and generated reverse-stress grid are in `site/data/connected_system.json`; the historical aggregate real-GDP observations are in `site/data/historical_validation.json`.
+| File | Role |
+|---|---|
+| `equity_panel.py` | Pooled real-return run-up episodes, four-year outcome window |
+| `systemic_transition.py` | Equity loss → banking-crisis transition (JST, 1870–2016 origins) |
+| `engine.py` | Connected finance state, output gaps, hysteresis, unemployment |
+| `hysteresis.py` | Empirical output-shortfall targets (JST) and calibration of the engine |
+| `checks.py` | Frequency tables, nearest analogs, leave-country-out and leave-era-out validation |
+| `direct_release.py` | Scenario weights, outputs and site data |
+| `inputs/` | Frozen inputs: regime weights, US AI decomposition, China debt, contagion network |
 
-The full research workspace contains the licensed/open raw series. These two files are published so that the transformations, thresholds and structural coefficients are inspectable in the same commit as the site.
+Seeded (20261014); results are reproducible given the same downloaded data vintage.

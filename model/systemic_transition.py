@@ -1,10 +1,12 @@
-"""Calibrated equity-to-banking-crisis transition model.
+"""Calibrated equity-loss -> banking-crisis transition model on the same four-year window.
 
-The model deliberately uses a small feature set and leave-country-out validation.
-It answers a narrow question: given a two-year equity drawdown and the balance
-sheet state at its start, how often did a systemic banking crisis begin within
-three years?  It is a transition model, not an equity-crash probability model.
+Question answered: given the worst real equity drawdown at annual closes over the next
+four years and the balance-sheet state at the start, how often did a systemic banking
+crisis begin inside that window? Panel: every country-year in the JST Macrohistory
+database (17 economies, 1870-2016 origins) with a consistent annual equity record.
+It is a transition model, not an equity-crash probability model.
 """
+from __future__ import annotations
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -14,36 +16,32 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import LeaveOneGroupOut
 from sklearn.metrics import brier_score_loss, log_loss, roc_auc_score
+import equity_panel as EP
 
-FEATURES = ["drawdown2y", "runup3", "credit", "credit5", "debt", "short"]
+FEATURES = ["drawdown", "runup3", "credit", "credit5", "debt", "short"]
+HORIZON = EP.HORIZON
 
 
-def build_panel(root: Path) -> pd.DataFrame:
-    jst = pd.read_csv(root / "data/derived/panels/JST_ANNUAL_PANEL.csv")
+def build_panel(root: Path, horizon: int = HORIZON) -> pd.DataFrame:
+    j = EP.jst_frame()
+    j["credit"] = 100 * j.tloans / j.gdp
+    j["debt"] = 100 * j.debtgdp
     rows = []
-    for iso in sorted(jst.iso.unique()):
-        path = root / f"data/derived/series/WB_CM.MKT.INDX.ZG_{iso}.csv"
-        if not path.exists():
-            continue
-        market = pd.read_csv(path)
-        market["year"] = market.date.astype(str).str[:4].astype(int)
-        market["ret"] = pd.to_numeric(market.value, errors="coerce") / 100
-        market = market.dropna(subset=["ret"]).sort_values("year")
-        market["level"] = (1 + market.ret).cumprod()
-        wm = market.set_index("year")
-        country = jst[jst.iso == iso].sort_values("year").copy()
-        country["credit5"] = country.creditToGdpPct - country.creditToGdpPct.shift(5)
-        for _, r in country.iterrows():
-            year = int(r.year)
-            if not all(y in wm.index for y in [year - 3, year, year + 1, year + 2]):
-                continue
-            runup = wm.loc[year, "level"] / wm.loc[year - 3, "level"] - 1
-            drawdown = wm.loc[year:year + 2, "level"].min() / wm.loc[year, "level"] - 1
-            future = country[country.year.between(year, year + 2)].crisisJST.fillna(0).max() > 0
-            rows.append({"iso": iso, "year": year, "runup3": runup,
-                         "drawdown2y": drawdown, "credit": r.creditToGdpPct,
-                         "credit5": r.credit5, "debt": r.debtToGdpPct,
-                         "short": r.stir, "crisis": int(future)})
+    for iso, g in j.groupby("iso"):
+        g = g.sort_values("year").set_index("year")
+        g["credit5"] = g.credit - g.credit.shift(5)
+        ok = g.real_ret.dropna()
+        years = ok.index.to_numpy(); ret = ok.to_numpy(); infl = g.infl.reindex(ok.index).to_numpy()
+        index = np.cumprod(1 + ret)
+        for i in range(3, len(ok) - horizon):
+            if np.any(np.diff(years[i - 3:i + horizon + 1]) != 1): continue
+            if np.any(np.isnan(infl[i - 3:i + horizon + 1])) or np.any(infl[i - 3:i + horizon + 1] > EP.INFLATION_CAP): continue
+            y = int(years[i]); fwd = index[i:i + horizon + 1]
+            crisis = g.loc[y:y + horizon, "crisisJST"].fillna(0).max() > 0
+            rows.append({"iso": iso, "year": y, "runup3": float(index[i] / index[i - 3] - 1),
+                         "drawdown": float(fwd.min() / fwd[0] - 1), "credit": g.credit.get(y, np.nan),
+                         "credit5": g.credit5.get(y, np.nan), "debt": g.debt.get(y, np.nan),
+                         "short": g.stir.get(y, np.nan), "crisis": int(crisis)})
     return pd.DataFrame(rows)
 
 
@@ -55,39 +53,37 @@ def _model(c=.2):
 def fit(root: Path):
     panel = build_panel(root)
     oof = np.zeros(len(panel))
-    splitter = LeaveOneGroupOut()
-    for train, test in splitter.split(panel, panel.crisis, panel.iso):
+    for train, test in LeaveOneGroupOut().split(panel, panel.crisis, panel.iso):
         m = _model().fit(panel.iloc[train][FEATURES], panel.iloc[train].crisis)
         oof[test] = m.predict_proba(panel.iloc[test][FEATURES])[:, 1]
+    # Time-block check: leave one 25-year block out so no era trains its own test.
+    block = (panel.year // 25).to_numpy(); oob = np.zeros(len(panel))
+    for b in np.unique(block):
+        tr, te = block != b, block == b
+        m = _model().fit(panel[tr][FEATURES], panel[tr].crisis)
+        oob[te] = m.predict_proba(panel[te][FEATURES])[:, 1]
     base = np.full(len(panel), panel.crisis.mean())
     final = _model().fit(panel[FEATURES], panel.crisis)
-    latest_us = panel[panel.iso == "USA"].sort_values("year").iloc[-1][FEATURES].to_dict()
-    # Comparable JST loan/GDP and five-year credit change stay on the JST perimeter;
-    # current debt, policy-rate and run-up values are overlaid by the release model.
-    latest_us.update({"runup3": 2.17, "debt": 118.8, "short": 4.25})
-    curve = []
-    for dd in [-.20, -.35, -.50, -.65, -.75]:
-        x = pd.DataFrame([{**latest_us, "drawdown2y": dd}])[FEATURES]
-        curve.append({"drawdown": dd, "probability": float(final.predict_proba(x)[0, 1])})
+    us = panel[panel.iso == "USA"].sort_values("year").iloc[-1][FEATURES].to_dict()
+    # Current US overlays: public debt/GDP and policy rate; the run-up is overridden by the caller.
+    us.update({"debt": 118.8, "short": 4.25})
+    curve = [{"drawdown": dd, "probability": float(final.predict_proba(pd.DataFrame([{**us, "drawdown": dd}])[FEATURES])[0, 1])}
+             for dd in (-.20, -.35, -.50, -.65, -.75)]
+    sev = panel.drawdown <= -.5
     audit = {
-        "rows": int(len(panel)), "countries": int(panel.iso.nunique()),
-        "crises": int(panel.crisis.sum()), "crisisRate": float(panel.crisis.mean()),
-        "severeRows": int((panel.drawdown2y <= -.5).sum()),
-        "severeCrisisRows": int(panel.loc[panel.drawdown2y <= -.5, "crisis"].sum()),
+        "rows": int(len(panel)), "countries": int(panel.iso.nunique()), "firstOrigin": int(panel.year.min()), "lastOrigin": int(panel.year.max()),
+        "crisisWindows": int(panel.crisis.sum()), "crisisRate": float(panel.crisis.mean()),
+        "severeRows": int(sev.sum()), "severeCrisisRows": int(panel.loc[sev, "crisis"].sum()),
         "validation": {
-            "scheme": "leave-one-country-out",
-            "brier": float(brier_score_loss(panel.crisis, oof)),
-            "baseRateBrier": float(brier_score_loss(panel.crisis, base)),
-            "logLoss": float(log_loss(panel.crisis, oof)),
-            "auc": float(roc_auc_score(panel.crisis, oof)),
-        },
-        "features": FEATURES, "regularizationC": .2,
-        "currentBalanceSheetCurve": curve,
-        "warning": "Annual equity closes understate intrayear drawdowns. The panel ranks transition risk well, but it contains few independent global crash clusters and no historical AI-capex analogue."
-    }
-    return final, panel, latest_us, audit
+            "leaveOneCountryOut": {"brier": float(brier_score_loss(panel.crisis, oof)), "baseRateBrier": float(brier_score_loss(panel.crisis, base)),
+                                    "logLoss": float(log_loss(panel.crisis, oof)), "auc": float(roc_auc_score(panel.crisis, oof))},
+            "leaveOneEraOut": {"brier": float(brier_score_loss(panel.crisis, oob)), "baseRateBrier": float(brier_score_loss(panel.crisis, base)),
+                                "auc": float(roc_auc_score(panel.crisis, oob)), "blocks": "25-year blocks"}},
+        "features": FEATURES, "regularizationC": .2, "currentBalanceSheetCurve": curve,
+        "warning": "Annual closes understate intrayear drawdowns. Credit inputs are the latest JST vintage; independent global crash clusters are few."}
+    return final, panel, us, audit
 
 
 def predict(model, template, drawdowns):
-    x = pd.DataFrame([{**template, "drawdown2y": float(d)} for d in np.asarray(drawdowns)])[FEATURES]
+    x = pd.DataFrame([{**template, "drawdown": float(d)} for d in np.asarray(drawdowns)])[FEATURES]
     return model.predict_proba(x)[:, 1]

@@ -1,6 +1,6 @@
 {
   "schema": "gef-public-bundle/3",
-  "asOf": "2026-10-15",
+  "asOf": "2026-10-31",
   "files": [
     {
       "path": ".dockerignore",
@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 106,
-      "sha256": "6d696e3333b2945eb5481d33ba486a7a24f6a39254d125cdad215692df10a329"
+      "bytes": 112,
+      "sha256": "6c728b4f3cda168142299b692bc2afd28ce65b857fe119af12e44f17cad920e4"
     },
     {
       "path": "Dockerfile",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1893,
-      "sha256": "c2bbee6b6b025ae60cf1cf0a57372e44896da9b317d6bf6d55a42915401cfb5a"
+      "bytes": 2336,
+      "sha256": "8e3194135bde94be89045e3cb9dc4877f0728982e01793adde64a561ad6bc58f"
     },
     {
       "path": "docker-compose.yml",
@@ -34,23 +34,73 @@
     },
     {
       "path": "docs/MODEL_RISK.md",
-      "bytes": 4270,
-      "sha256": "699305571752f19cb2b32d4171d7c61971dcd7149af1160c2cac5206f7cd3b11"
+      "bytes": 4254,
+      "sha256": "4eca19a236bc866ad58030988c8f1d4448fa8a4f8dc5349246ec0fbb0615f0a6"
     },
     {
       "path": "model/README.md",
-      "bytes": 834,
-      "sha256": "ac441fc18464b3aafc8b15297516bce3edfdeb7b7e111731ff848a638bc83d11"
+      "bytes": 943,
+      "sha256": "0abe977298c131bfbe5c19a7f8d356741db20962a11771e21f822d497c5eee57"
+    },
+    {
+      "path": "model/checks.py",
+      "bytes": 6354,
+      "sha256": "73ed22804aff3de56811fbbfb266a3dfbb9c1d99388a13f1e2213969302ee69d"
     },
     {
       "path": "model/direct_release.py",
-      "bytes": 33883,
-      "sha256": "34be9c54ba418b71a39cfb1ebb1deb5885f114805961e3094bd086b4a3cf2169"
+      "bytes": 40922,
+      "sha256": "3afd255b87dea96d8a9429c00b6175db3f0eadc936f2c6919511a09ce99db4b1"
+    },
+    {
+      "path": "model/engine.py",
+      "bytes": 8307,
+      "sha256": "24b026fdeabfb28f4a41228cf2f4c81cf3c0e8c8848349a458833d99ea9b1605"
+    },
+    {
+      "path": "model/equity_panel.py",
+      "bytes": 4399,
+      "sha256": "439de77bcb948dbed9cf51fa3522751f318354d46e68ccd0a78eab822e6bb5d1"
+    },
+    {
+      "path": "model/fetch_data.py",
+      "bytes": 2307,
+      "sha256": "5aaa7b8833dc510dd1877b275dc69abd8f5ef1bd0380e90f4bb50fc27c3c7633"
+    },
+    {
+      "path": "model/hysteresis.py",
+      "bytes": 8707,
+      "sha256": "8de1baf8efbf3a5827eb1972d195f5eb872f119643226d7a524581920546bc26"
+    },
+    {
+      "path": "model/inputs/china_hidden_debt.json",
+      "bytes": 23764,
+      "sha256": "0f929f3895b7e318136542016cd7657ffc96492f50cdc0393db32520bdd218e5"
+    },
+    {
+      "path": "model/inputs/contagion.json",
+      "bytes": 230847,
+      "sha256": "310feb1ff947adfb2d9076f0e9338fd33c1acc3d158f42b012bb8b629d9daed8"
+    },
+    {
+      "path": "model/inputs/joint_crisis_base.json",
+      "bytes": 10799,
+      "sha256": "37f9c6fa6dfc33eaf17914dd2bc1fc9b315e2f5408291e8a4e09ab005913e55c"
+    },
+    {
+      "path": "model/inputs/states.json",
+      "bytes": 730,
+      "sha256": "283113f0bf3d27ba225079d70c29c7551eade249f7204effffb65789e79df1dd"
+    },
+    {
+      "path": "model/inputs/us_ai_decomposition.json",
+      "bytes": 103879,
+      "sha256": "5e00c48c7c0c68d36075bd92bf6eaf7b8968306df11ed66f52b5d8bedbeae065"
     },
     {
       "path": "model/systemic_transition.py",
-      "bytes": 4739,
-      "sha256": "aea00c4688557a38f165158e11bb1ea3dfb5fbf616a44006705b5bc109fa5620"
+      "bytes": 5079,
+      "sha256": "fe9832ec7b6d96229e56c7b93ce3701ff4f7a1746815c9b4afad826961a13d8f"
     },
     {
       "path": "render.yaml",
@@ -64,8 +114,8 @@
     },
     {
       "path": "site/app.js",
-      "bytes": 14764,
-      "sha256": "36959e70671279873586f98ab19fba6b7b0697abcb4ccaf1c5495f669dde9357"
+      "bytes": 28472,
+      "sha256": "b64513102d515358e26e25434258e60d98aeea86c9d53e4221d6470f84441480"
     },
     {
       "path": "site/data/china.json",
@@ -74,8 +124,8 @@
     },
     {
       "path": "site/data/china_hidden_debt.json",
-      "bytes": 23764,
-      "sha256": "0f929f3895b7e318136542016cd7657ffc96492f50cdc0393db32520bdd218e5"
+      "bytes": 21091,
+      "sha256": "7bb1bc5c580a1e7b26a358fa11d5ea23e95a3d7c4489ac69ece867429356d06e"
     },
     {
       "path": "site/data/claims.json",
@@ -94,18 +144,18 @@
     },
     {
       "path": "site/data/connected_system.json",
-      "bytes": 76725,
-      "sha256": "a142d09af252e29930c047865b40cbe5b758c8f497cd40456cfdd96f3622bd4c"
+      "bytes": 85452,
+      "sha256": "d5cd560d92458ec3677813e79ad15f7736d81085ab104f9f7f7c4e32db3b87db"
     },
     {
       "path": "site/data/contagion.json",
-      "bytes": 230847,
-      "sha256": "310feb1ff947adfb2d9076f0e9338fd33c1acc3d158f42b012bb8b629d9daed8"
+      "bytes": 197967,
+      "sha256": "ba343992910b677442b41071aafb76af2aa62aa479abf083fc45196a23ecea27"
     },
     {
       "path": "site/data/country_profiles.json",
-      "bytes": 2032,
-      "sha256": "7ddec32b7065e6a0556fe1bd0ab98aba029da5541e459139e808867709ae2d35"
+      "bytes": 1667,
+      "sha256": "a5812bba3a359b6539b3c56b7520a7aac1a76eec32ee293a6219bba38ed417b5"
     },
     {
       "path": "site/data/eu.json",
@@ -123,14 +173,24 @@
       "sha256": "9cd920c7413fdc8474de7aae4a81f34d4594f1bec21431e837a0d38666665248"
     },
     {
+      "path": "site/data/historical_checks.json",
+      "bytes": 11296,
+      "sha256": "b4644ee7f98ff8329525992ac64f2cfe6f91e592818bcbc5ef0c440bff41228e"
+    },
+    {
       "path": "site/data/historical_validation.json",
-      "bytes": 7519,
-      "sha256": "c757d42bdbc420d382df0889fae76e80534f9889e13bad5406d60149ba047100"
+      "bytes": 6609,
+      "sha256": "7240e7a20413c0afcafe9c466b634f1eed11d8be7ca4f586b5b20a0a8c4c5331"
+    },
+    {
+      "path": "site/data/hysteresis.json",
+      "bytes": 22515,
+      "sha256": "dff24a5ecc68dd764f4ffc1965167a24efe9ac8507d5d99e01503add71388d88"
     },
     {
       "path": "site/data/joint_crisis.json",
-      "bytes": 11883,
-      "sha256": "c2abf61411e9547ff1dc01375cae637f8d1bf03ff02f1fa939d4cd33867b800e"
+      "bytes": 10721,
+      "sha256": "2ac359d3b0d5074f126c27f890a05a7263cfe52deb4ff773dcd38e0162b67680"
     },
     {
       "path": "site/data/mechanisms.json",
@@ -149,13 +209,13 @@
     },
     {
       "path": "site/data/scenario_paths.json",
-      "bytes": 148472,
-      "sha256": "fd29d93cb39b43dab053151aba3887baa823cbc9727d693a93ddd7fbfa7bed50"
+      "bytes": 147875,
+      "sha256": "51997db307f5ac3e9d7a3f0885c2c26dd1aa04c067874eeec4fe75f6bf2e69e7"
     },
     {
       "path": "site/data/scenario_tree.json",
-      "bytes": 14498,
-      "sha256": "c70f80a67e3cc86fd41f0d58a0aa1256076a80172de3c3489598f53a8d5df1bc"
+      "bytes": 13024,
+      "sha256": "ab80cb78326c57cdd95682465817a1c3a9258ba4394c9f6e2a22d969d24d2492"
     },
     {
       "path": "site/data/search.json",
@@ -179,8 +239,8 @@
     },
     {
       "path": "site/data/us_ai_decomposition.json",
-      "bytes": 103879,
-      "sha256": "5e00c48c7c0c68d36075bd92bf6eaf7b8968306df11ed66f52b5d8bedbeae065"
+      "bytes": 93130,
+      "sha256": "65f948ed644f85064de94c3b29964029bffdfc6cb28dd5ecee51e8744094e956"
     },
     {
       "path": "site/downloads/china/china_deterministic_scenarios.csv",
@@ -539,8 +599,8 @@
     },
     {
       "path": "site/index.html",
-      "bytes": 13498,
-      "sha256": "de92c314f03bb4ec49384537b1ae67594c024b67f7ca8744f7797e211f99e0cb"
+      "bytes": 13735,
+      "sha256": "31fc4b2f61feb317eb46f26976ab2de729dc1271dc462248d479909e048c6a02"
     },
     {
       "path": "site/manifest.json",
@@ -559,8 +619,8 @@
     },
     {
       "path": "site/styles.css",
-      "bytes": 13951,
-      "sha256": "45fe73dba585f8e3a3a404cac7925a595a19e054d23e20b0608b95341ded1136"
+      "bytes": 16864,
+      "sha256": "5648672e0d1bf9678215562148254abb0f771bf82e5a37ed279bdac4de4985f0"
     }
   ]
 }

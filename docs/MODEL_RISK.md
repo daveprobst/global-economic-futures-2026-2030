@@ -2,39 +2,45 @@
 
 ## Intended use
 
-This is a scenario-analysis and stress-testing tool. It is not a trading signal, credit decision, regulatory-capital model, or claim that a crisis will occur.
+Scenario analysis and stress testing. Not a trading signal, credit decision, regulatory-capital model, or claim that a crisis will occur.
+
+## One window
+
+Every probability covers 31 Oct 2026 – 31 Dec 2030 and is measured on annual closes. Every macro path runs 2026 (baseline year) to 2030. A longer view appears only in the hysteresis section, labelled as 2036 with no new shock.
 
 ## Probability architecture
 
-The broad outcome model starts from 127 annual equity run-up episodes in 37 countries. Regularised multinomial logits supply 75% of the estimate. Gradient boosting and random forest are capped at 15% and 10% because their leave-country-out performance is weaker. A monotonic geopolitical × dollar-liquidity surface conditions the broad result.
+An episode starts when an equity market's real three-year return is at least +50%. Outcomes use the next four annual closes. The panel has 301 episodes in 67 economies (World Bank indices for origins from 1994, JST Macrohistory before; windows with inflation above 25% a year are dropped). The seven public outcomes partition the window: boom holds (no 20% fall, real return ≥5% a year), contained repricing (no 20% fall, lower return), mild (20–35% fall), moderate (35–50%), and three severe branches (50%+, split by liquidity vacuum and banking crisis).
 
-The seven public outcomes form an exact partition. “Contained repricing” means a drawdown below 20% and a 24-month return no higher than 10%. Mild is a 20–35% decline; moderate is 35–50%; severe is at least 50%, separated by whether broad liquidity holds, a liquidity vacuum develops, or systemic financial stress follows. Among 93 non-bust historical episodes, 23 met the contained-repricing rule; the Jeffreys posterior mean is 25.0% conditional on no bust.
+A ridge-logit (75%), gradient boosting (15%) and random forest (10%) predict the fall bands from the 3-year run-up and last-12-month return; the blend is calibrated on leave-country-out predictions. A geopolitical × dollar-liquidity surface scales the odds. The AI basket is deflated with US inflation (2025 deflator stands in for 2025–26 as CPI ends in 2024).
+
+## Historical crash check
+
+- Run-ups of 100%+ (n=71): 28% boom, 15% contained, 56% fall of 20%+.
+- The 25 closest to today's state: 12% / 16% / 72%. Model: 14% / 9% / 76%.
+- Out-of-sample Brier skill over the base rate is 3% on held-out countries and 3% on held-out eras. Bust frequency is far higher since 1994 than before, and the model does not separate eras.
+- An earlier release showed 37% for "continued boom". That was a two-year weight labelled as a 2030 outcome; it is not supported on the four-year window.
 
 ## Equity loss to banking crisis
 
-The former fixed severe-tail split has been removed. A separate regularised logit matches World Bank equity returns to JST Macrohistory balance sheets and banking-crisis starts. It uses 476 country-years in 17 countries, including 39 crisis starts. Inputs are the two-year equity drawdown, preceding three-year run-up, loans/GDP, five-year credit growth, public debt/GDP and the short rate.
+Regularised logit on 1,924 country-years (16 economies, 1870–2016 origins): worst four-year drawdown, preceding run-up, loans/GDP, five-year credit growth, public debt/GDP and the short rate. It beats the base rate on held-out countries but not on held-out eras, so the systemic share of the severe tail is uncertain. Credit inputs for the current US state use the latest JST vintage.
 
-Leave-one-country-out validation produces a Brier score of 0.057 versus 0.075 for the constant base rate and AUC of 0.833. At current US balance-sheet inputs, the estimated banking-crisis transition is 6.6% after a 20% drawdown, 28.3% after 50%, 48.3% after 65%, and 62.4% after 75%. Integrating that curve over 50–76% severe declines sets the systemic share of the severe tail. Annual closes understate intrayear losses, and synchronized global events remain a small effective sample.
+## Connected simulator and hysteresis
 
-## Connected stress simulator
+Per scenario, 4,000 paths update one financial state within every year (revenue expectations, coverage, funding, margin calls, forced sales, liquidity, Treasury-sale pressure, China outflows, LGFV refinancing). Macro paths follow: output gap, a permanent hysteresis stock fed by credit impairment, cancelled investment and displaced labour (US) or debt-deflation, balance-sheet stress and lost external funding (China), and unemployment.
 
-For each scenario, 4,000 paths update a shared state within every year. AI trust changes revenue coverage while chip, power and data-centre commitments remain sticky. Funding costs, collateral losses, margin calls, forced sales and liquidity then update together. Chinese outflows, LGFV refinancing and Treasury-sale pressure feed back into US dollar liquidity. US systemic stress raises China crisis risk, while Chinese stress worsens the US funding state.
-
-The current weighted output is 13.8% US systemic, 21.1% China crisis and 12.3% joint by 2028. Within the US systemic branch, 89.2% of paths also cross the China crisis threshold. The 6.8–20.3% joint range is parameter sensitivity, not a frequentist confidence interval. US banking-crisis transition risk is statistically calibrated; China and cross-border elasticities remain transparent structural stress parameters.
-
-## Historical crash lab
-
-The site compares annual aggregate real-GDP growth and chained levels with the US dot-com unwind, the US and euro-area GFC paths, Japan after 1990 and the pandemic. Dot-com demonstrates that a valuation crash can remain non-systemic when losses are dispersed. The GFC demonstrates the nonlinear result when losses are concentrated in leveraged financial nodes. Japan demonstrates persistent level damage without requiring consecutive annual contractions. Annual data hide intrayear troughs, and the pandemic is used only as a magnitude check.
+Calibration: one cyclical scale, one hysteresis scale and one catch-up rate for the US are fitted so scenario medians match JST output shortfalls by equity-drawdown class, the GFC/Fed peak-to-trough benchmark and the post-war finding that most of a five-year banking-crisis shortfall remains at ten years. Parameter uncertainty (lognormal, sd 0.4) widens the bands. The systemic branch gives US output -10.9% against trend in 2030 (p10 -16.5%); history for 35%+ equity falls with a banking crisis: median -8.8%, p10 -19.1%. China is anchored to Japan after 1989 (one analogue) and to the same crisis class.
 
 ## Main limitations
 
-1. Annual country episodes are analogues for a concentrated AI basket.
-2. Global crash clusters are scarce, so tail uncertainty remains wide.
-3. The connected model reproduces accounting mechanisms and historical ranges; most elasticities are not separately causal estimates.
-4. Hyperscaler stress requires a combined revenue, commitment and funding shock; the largest firms remain cash-generative in the baseline.
-5. Treasury holdings indicate potential sale capacity, not intent.
-6. The 47.4% broad technology/platform proxy is not an estimate that the whole sector is an AI bubble.
-7. China debt perimeters overlap and cannot be summed mechanically.
-8. European relative gains arrive only after the acute recessionary hit and require policy execution.
+1. National-index run-ups are analogues for a concentrated AI basket.
+2. Global crash clusters are scarce: 301 episodes contain about 10 independent severe clusters.
+3. Annual closes understate intra-year troughs.
+4. China and cross-border elasticities, the liquidity-vacuum split and regime multipliers are structural assumptions, not identified causal estimates.
+5. Hyperscaler stress needs a combined revenue, commitment and funding shock; the largest firms are cash-generative today.
+6. Treasury holdings indicate sale capacity, not intent.
+7. The 47.4% broad technology proxy is not an estimate that the whole sector is a bubble.
+8. China debt perimeters overlap and cannot be summed.
+9. European relative gains arrive after the acute hit and need policy execution.
 
-As-of date: 15 October 2026, Europe/Zurich.
+As-of date: 31 October 2026, Europe/Zurich.

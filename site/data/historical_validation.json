@@ -1,342 +1,364 @@
 {
-  "asOf": "2026-10-15",
-  "metric": "Annual aggregate real GDP growth and chained level, not per-capita GDP",
-  "analogs": [
+ "asOf": "2026-10-31",
+ "metric": "Annual aggregate real GDP growth and chained level",
+ "analogs": [
+  {
+   "id": "us_dot-com_unwind",
+   "label": "US dot-com unwind",
+   "region": "USA",
+   "startYear": 2000,
+   "growth": [
     {
-      "id": "us_dot-com_unwind",
-      "label": "US dot-com unwind",
-      "region": "USA",
-      "startYear": 2000,
-      "growth": [
-        {
-          "year": 2000,
-          "value": 4.077586
-        },
-        {
-          "year": 2001,
-          "value": 0.955538
-        },
-        {
-          "year": 2002,
-          "value": 1.700447
-        },
-        {
-          "year": 2003,
-          "value": 2.795606
-        },
-        {
-          "year": 2004,
-          "value": 3.847772
-        }
-      ],
-      "realGdpIndex": [
-        {
-          "year": 2000,
-          "value": 104.07758600000001
-        },
-        {
-          "year": 2001,
-          "value": 105.07208688371267
-        },
-        {
-          "year": 2002,
-          "value": 106.85878203296417
-        },
-        {
-          "year": 2003,
-          "value": 109.84613255500464
-        },
-        {
-          "year": 2004,
-          "value": 114.07276128653898
-        }
-      ],
-      "yearsNegative": 0,
-      "cumulativeGrowth": 14.072761286538977,
-      "source": "World Bank NY.GDP.MKTP.KD.ZG"
+     "year": 2000,
+     "value": 4.07758575997799
     },
     {
-      "id": "us_gfc",
-      "label": "US GFC",
-      "region": "USA",
-      "startYear": 2007,
-      "growth": [
-        {
-          "year": 2007,
-          "value": 2.003858
-        },
-        {
-          "year": 2008,
-          "value": 0.113587
-        },
-        {
-          "year": 2009,
-          "value": -2.5765
-        },
-        {
-          "year": 2010,
-          "value": 2.695193
-        },
-        {
-          "year": 2011,
-          "value": 1.564407
-        }
-      ],
-      "realGdpIndex": [
-        {
-          "year": 2007,
-          "value": 102.00385800000001
-        },
-        {
-          "year": 2008,
-          "value": 102.11972112218646
-        },
-        {
-          "year": 2009,
-          "value": 99.48860650747332
-        },
-        {
-          "year": 2010,
-          "value": 102.1700164658603
-        },
-        {
-          "year": 2011,
-          "value": 103.76837135535337
-        }
-      ],
-      "yearsNegative": 1,
-      "cumulativeGrowth": 3.7683713553533664,
-      "source": "World Bank NY.GDP.MKTP.KD.ZG"
+     "year": 2001,
+     "value": 0.955538337599847
     },
     {
-      "id": "euro-area_gfc___sovereign_aftershock",
-      "label": "Euro-area GFC / sovereign aftershock",
-      "region": "EMU",
-      "startYear": 2007,
-      "growth": [
-        {
-          "year": 2007,
-          "value": 3.024994
-        },
-        {
-          "year": 2008,
-          "value": 0.432969
-        },
-        {
-          "year": 2009,
-          "value": -4.47805
-        },
-        {
-          "year": 2010,
-          "value": 2.115869
-        },
-        {
-          "year": 2011,
-          "value": 1.778844
-        },
-        {
-          "year": 2012,
-          "value": -0.913859
-        },
-        {
-          "year": 2013,
-          "value": -0.168322
-        }
-      ],
-      "realGdpIndex": [
-        {
-          "year": 2007,
-          "value": 103.024994
-        },
-        {
-          "year": 2008,
-          "value": 103.47106028627186
-        },
-        {
-          "year": 2009,
-          "value": 98.83757447112247
-        },
-        {
-          "year": 2010,
-          "value": 100.92884806970888
-        },
-        {
-          "year": 2011,
-          "value": 102.724214827866
-        },
-        {
-          "year": 2012,
-          "value": 101.78546034548222
-        },
-        {
-          "year": 2013,
-          "value": 101.61413302291949
-        }
-      ],
-      "yearsNegative": 3,
-      "cumulativeGrowth": 1.6141330229194892,
-      "source": "World Bank NY.GDP.MKTP.KD.ZG"
+     "year": 2002,
+     "value": 1.70044733078285
     },
     {
-      "id": "japan_post-asset-bubble",
-      "label": "Japan post-asset-bubble",
-      "region": "JPN",
-      "startYear": 1990,
-      "growth": [
-        {
-          "year": 1990,
-          "value": 4.892713
-        },
-        {
-          "year": 1991,
-          "value": 3.417497
-        },
-        {
-          "year": 1992,
-          "value": 0.84807
-        },
-        {
-          "year": 1993,
-          "value": -0.51792
-        },
-        {
-          "year": 1994,
-          "value": 0.993066
-        },
-        {
-          "year": 1995,
-          "value": 2.342055
-        }
-      ],
-      "realGdpIndex": [
-        {
-          "year": 1990,
-          "value": 104.892713
-        },
-        {
-          "year": 1991,
-          "value": 108.47741831999362
-        },
-        {
-          "year": 1992,
-          "value": 109.39738276153999
-        },
-        {
-          "year": 1993,
-          "value": 108.8307918367414
-        },
-        {
-          "year": 1994,
-          "value": 109.91155342800285
-        },
-        {
-          "year": 1995,
-          "value": 112.48574246064106
-        }
-      ],
-      "yearsNegative": 1,
-      "cumulativeGrowth": 12.485742460641063,
-      "source": "World Bank NY.GDP.MKTP.KD.ZG"
+     "year": 2003,
+     "value": 2.79560596378604
     },
     {
-      "id": "us_pandemic_stop",
-      "label": "US pandemic stop",
-      "region": "USA",
-      "startYear": 2019,
-      "growth": [
-        {
-          "year": 2019,
-          "value": 2.583825
-        },
-        {
-          "year": 2020,
-          "value": -2.081376
-        },
-        {
-          "year": 2021,
-          "value": 6.152022
-        },
-        {
-          "year": 2022,
-          "value": 2.524214
-        }
-      ],
-      "realGdpIndex": [
-        {
-          "year": 2019,
-          "value": 102.583825
-        },
-        {
-          "year": 2020,
-          "value": 100.448669886568
-        },
-        {
-          "year": 2021,
-          "value": 106.62829415669704
-        },
-        {
-          "year": 2022,
-          "value": 109.31982048576157
-        }
-      ],
-      "yearsNegative": 1,
-      "cumulativeGrowth": 9.319820485761568,
-      "source": "World Bank NY.GDP.MKTP.KD.ZG"
-    },
-    {
-      "id": "model_systemic_2026",
-      "label": "Model: AI bust + financial crisis",
-      "region": "USA model",
-      "startYear": 2026,
-      "growth": [
-        {
-          "year": 2026,
-          "value": 2.396144656371968
-        },
-        {
-          "year": 2027,
-          "value": -4.792927204719545
-        },
-        {
-          "year": 2028,
-          "value": -2.5825170851591612
-        },
-        {
-          "year": 2029,
-          "value": -0.6953066732964162
-        },
-        {
-          "year": 2030,
-          "value": 0.7917598356203295
-        }
-      ],
-      "realGdpIndex": [
-        {
-          "year": 2026,
-          "value": 102.39614465637197
-        },
-        {
-          "year": 2027,
-          "value": 97.48628928840941
-        },
-        {
-          "year": 2028,
-          "value": 94.96314670141332
-        },
-        {
-          "year": 2029,
-          "value": 94.32626005579655
-        },
-        {
-          "year": 2030,
-          "value": 95.07184845763146
-        }
-      ],
-      "yearsNegative": 3,
-      "cumulativeGrowth": -4.928151542368539,
-      "source": "Conditional model path"
+     "year": 2004,
+     "value": 3.84777169267127
     }
-  ],
-  "interpretation": "Dot-com shows that a valuation crash can remain non-systemic. The GFC shows the nonlinear outcome when losses sit in leveraged intermediaries. Japan shows that a balance-sheet recession can suppress the level path for years even without consecutive annual contractions.",
-  "limitations": "Annual observations hide intrayear troughs. The pandemic is an exogenous magnitude check, not a causal analogue. The model is judged against ranges, not fitted to copy one episode."
+   ],
+   "realGdpIndex": [
+    {
+     "year": 2000,
+     "value": 104.07758575997799
+    },
+    {
+     "year": 2001,
+     "value": 105.07208699276293
+    },
+    {
+     "year": 2002,
+     "value": 106.85878249142921
+    },
+    {
+     "year": 2003,
+     "value": 109.84613298758876
+    },
+    {
+     "year": 2004,
+     "value": 114.07276139817925
+    }
+   ],
+   "yearsNegative": 0,
+   "cumulativeGrowth": 14.072761398179253,
+   "source": "World Bank NY.GDP.MKTP.KD.ZG"
+  },
+  {
+   "id": "us_gfc",
+   "label": "US GFC",
+   "region": "USA",
+   "startYear": 2007,
+   "growth": [
+    {
+     "year": 2007,
+     "value": 2.0038583039496
+    },
+    {
+     "year": 2008,
+     "value": 0.113587247501258
+    },
+    {
+     "year": 2009,
+     "value": -2.5765002366652
+    },
+    {
+     "year": 2010,
+     "value": 2.69519258673525
+    },
+    {
+     "year": 2011,
+     "value": 1.56440685205419
+    }
+   ],
+   "realGdpIndex": [
+    {
+     "year": 2007,
+     "value": 102.0038583039496
+    },
+    {
+     "year": 2008,
+     "value": 102.11972167894214
+    },
+    {
+     "year": 2009,
+     "value": 99.48860680820235
+    },
+    {
+     "year": 2010,
+     "value": 102.1700163635432
+    },
+    {
+     "year": 2011,
+     "value": 103.76837110027934
+    }
+   ],
+   "yearsNegative": 1,
+   "cumulativeGrowth": 3.7683711002793387,
+   "source": "World Bank NY.GDP.MKTP.KD.ZG"
+  },
+  {
+   "id": "euro-area_gfc___sovereign_aftershock",
+   "label": "Euro-area GFC / sovereign aftershock",
+   "region": "EMU",
+   "startYear": 2007,
+   "growth": [
+    {
+     "year": 2007,
+     "value": 3.02499371345017
+    },
+    {
+     "year": 2008,
+     "value": 0.432969401075042
+    },
+    {
+     "year": 2009,
+     "value": -4.47805035961746
+    },
+    {
+     "year": 2010,
+     "value": 2.1158694775215
+    },
+    {
+     "year": 2011,
+     "value": 1.77884441456963
+    },
+    {
+     "year": 2012,
+     "value": -0.91385908575316
+    },
+    {
+     "year": 2013,
+     "value": -0.168322337087517
+    }
+   ],
+   "realGdpIndex": [
+    {
+     "year": 2007,
+     "value": 103.02499371345017
+    },
+    {
+     "year": 2008,
+     "value": 103.4710604116889
+    },
+    {
+     "year": 2009,
+     "value": 98.83757421882326
+    },
+    {
+     "year": 2010,
+     "value": 100.928848284042
+    },
+    {
+     "year": 2011,
+     "value": 102.72421546443215
+    },
+    {
+     "year": 2012,
+     "value": 101.7854608881418
+    },
+    {
+     "year": 2013,
+     "value": 101.61413322155958
+    }
+   ],
+   "yearsNegative": 3,
+   "cumulativeGrowth": 1.6141332215595838,
+   "source": "World Bank NY.GDP.MKTP.KD.ZG"
+  },
+  {
+   "id": "japan_post-asset-bubble",
+   "label": "Japan post-asset-bubble",
+   "region": "JPN",
+   "startYear": 1990,
+   "growth": [
+    {
+     "year": 1990,
+     "value": 4.89271306574565
+    },
+    {
+     "year": 1991,
+     "value": 3.41749676183089
+    },
+    {
+     "year": 1992,
+     "value": 0.848069581218368
+    },
+    {
+     "year": 1993,
+     "value": -0.517919847117952
+    },
+    {
+     "year": 1994,
+     "value": 0.99306636322622
+    },
+    {
+     "year": 1995,
+     "value": 2.34205546196849
+    }
+   ],
+   "realGdpIndex": [
+    {
+     "year": 1990,
+     "value": 104.89271306574565
+    },
+    {
+     "year": 1991,
+     "value": 108.4774181381641
+    },
+    {
+     "year": 1992,
+     "value": 109.39738212388492
+    },
+    {
+     "year": 1993,
+     "value": 108.83079136963785
+    },
+    {
+     "year": 1994,
+     "value": 109.91155335156265
+    },
+    {
+     "year": 1995,
+     "value": 112.48574289016733
+    }
+   ],
+   "yearsNegative": 1,
+   "cumulativeGrowth": 12.48574289016733,
+   "source": "World Bank NY.GDP.MKTP.KD.ZG"
+  },
+  {
+   "id": "us_pandemic_stop",
+   "label": "US pandemic stop",
+   "region": "USA",
+   "startYear": 2019,
+   "growth": [
+    {
+     "year": 2019,
+     "value": 2.58382533052225
+    },
+    {
+     "year": 2020,
+     "value": -2.081375977796
+    },
+    {
+     "year": 2021,
+     "value": 6.15202247867526
+    },
+    {
+     "year": 2022,
+     "value": 2.52421385073222
+    }
+   ],
+   "realGdpIndex": [
+    {
+     "year": 2019,
+     "value": 102.58382533052226
+    },
+    {
+     "year": 2020,
+     "value": 100.44867023298856
+    },
+    {
+     "year": 2021,
+     "value": 106.6282950052524
+    },
+    {
+     "year": 2022,
+     "value": 109.3198211965746
+    }
+   ],
+   "yearsNegative": 1,
+   "cumulativeGrowth": 9.319821196574594,
+   "source": "World Bank NY.GDP.MKTP.KD.ZG"
+  },
+  {
+   "id": "model_systemic_2026",
+   "label": "Model: AI bust + banking crisis",
+   "region": "USA model",
+   "startYear": 2026,
+   "growth": [
+    {
+     "year": 2026,
+     "value": 2.4
+    },
+    {
+     "year": 2027,
+     "value": -2.608399294057498
+    },
+    {
+     "year": 2028,
+     "value": -1.4137242796160367
+    },
+    {
+     "year": 2029,
+     "value": 0.4353838360185168
+    },
+    {
+     "year": 2030,
+     "value": 1.9966325585731952
+    }
+   ],
+   "realGdpIndex": [
+    {
+     "year": 2026,
+     "value": 102.4
+    },
+    {
+     "year": 2027,
+     "value": 99.72899912288511
+    },
+    {
+     "year": 2028,
+     "value": 98.32700002830335
+    },
+    {
+     "year": 2029,
+     "value": 98.72663041662767
+    },
+    {
+     "year": 2030,
+     "value": 100.64430292241082
+    }
+   ],
+   "trendIndex": [
+    {
+     "year": 2026,
+     "value": 100.0
+    },
+    {
+     "year": 2027,
+     "value": 102.4
+    },
+    {
+     "year": 2028,
+     "value": 104.85759999999999
+    },
+    {
+     "year": 2029,
+     "value": 107.37418240000001
+    },
+    {
+     "year": 2030,
+     "value": 109.95116277760002
+    }
+   ],
+   "yearsNegative": 2,
+   "cumulativeGrowth": 0.6443029224108159,
+   "source": "Conditional model path"
+  }
+ ],
+ "interpretation": "The dot-com crash stayed non-systemic because losses were dispersed. The GFC was nonlinear because losses sat in leveraged intermediaries. Japan shows a balance-sheet recession can suppress the level for a decade without consecutive contractions.",
+ "limitations": "Annual data hide intra-year troughs. The pandemic is a magnitude check, not a causal analogue. The model is judged against ranges, not fitted to one episode."
 }
