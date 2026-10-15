@@ -2,45 +2,44 @@
 
 ## Intended use
 
-This release is a scenario-analysis tool for examining mechanisms in the 2026–2030 AI investment, China debt, global liquidity, EU, and Swiss outlook. It supports research discussion, stress testing, and monitoring. It is not suitable for trading, credit approval, regulatory capital, portfolio optimisation, or a claim that a crisis will occur.
+This release is a scenario-analysis and stress-testing tool. It is not a trading signal, credit decision, regulatory-capital model, or claim that a crisis will occur.
 
-## What is estimated
+## Probability architecture
 
-The broad equity outcome is estimated from 127 non-overlapping annual run-up episodes in 37 countries. Two L2-regularised multinomial logistic regressions map three frozen run-up features to three outcome bands: continued boom, no-burst/sideways, and a drawdown of at least 20%. Features are scaled inside each training fold. The models are evaluated by leaving one country out at a time and averaging their predicted distributions.
+The broad outcome starts from 127 annual equity run-up episodes in 37 countries. Two regularised multinomial logits are the calibrated core. Gradient boosting and random forest act as capped nonlinear challengers at 15% and 10% weights because their leave-country-out performance is weaker and their current estimates are unstable. The resulting broad probability is conditioned on an explicitly monotonic geopolitical × liquidity surface. Those multipliers are structural stress assumptions rather than fitted frequencies.
 
-The current AI-linked basket is mapped into that historical feature space. Nine combinations of geopolitical risk and liquidity conditions then apply prespecified hazard multipliers. Current state weights average those conditional distributions.
+The seven public classes form an exact partition: boom and sideways remain below a 20% drawdown; mild is 20–35%; moderate is 35–50%; severe is at least 50%, separated by whether broad liquidity holds, a liquidity vacuum develops, or systemic bank/market stress follows.
 
-The seven public scenario classes are an exact partition, but history does not identify all seven separately. Mild, moderate, deep, severe, liquidity-vacuum, and financial-crisis splits use structural calibration. The site therefore gives more evidential weight to the aggregate 20%+ adjustment estimate than to any tail subclass.
+## Connected stress simulator
 
-## What is simulated
+For each scenario, 2,400 paths update a shared state within each year. The system links:
 
-- 10,000 fixed-seed classifications propagate state and classification uncertainty.
-- Country-cluster bootstrap refits the historical layer to form model-conditional intervals.
-- GDP, inflation, unemployment, equity, credit, and policy-rate paths are conditional scenario designs, bounded against public stress-test ranges where inputs were available.
-- China debt blocks are ranges with overlap warnings, not an additive hidden-debt total.
-- The joint US-systemic and China-crisis estimate multiplies the US systemic branch by a conditional China-crisis calibration. It is a stress-model output with a broad uncertainty range, not an empirically identified joint frequency.
+- AI trust and revenue realisation;
+- sticky power, chip and data-centre commitments;
+- cash-flow coverage and hyperscaler marginal funding rates;
+- equity losses, collateral calls, forced sales and liquidity;
+- China capital outflow and Treasury-sale pressure;
+- LGFV refinancing costs and China balance-sheet stress;
+- US, China and EU real GDP growth.
 
-## Validation evidence
+Margin calls depend on incremental collateral losses and run off after deleveraging. Liquidity can recover through policy offsets. This prevents both automatic one-year mean reversion and permanent mechanical collapse. Coefficients are stress-test elasticities chosen to reproduce public crisis ranges and directional accounting relationships; they are not separately econometrically identified.
 
-The leave-one-country-out Brier score improves modestly on the unconditional base-rate predictor. The log-score improvement is small. This means the model contains limited ranking information and does not justify narrow confidence. The website displays this comparison beside the method.
+## Validation and benchmarks
 
-The browser release was checked at 1440×1000 and 390×844: all eight JSON inputs loaded, all nine chapters rendered, source search and scenario switching worked, the light/dark control worked, no horizontal overflow occurred, and Chromium reported no console, page, or Content Security Policy errors.
+The historical logit layer only modestly improves Brier score versus the base rate. Nonlinear challengers do not improve out-of-sample performance, so the site discloses their disagreement rather than presenting them as superior forecasts. Severe GDP paths are bounded against the Federal Reserve's 2026 severely adverse scenario and BEA evidence from the 2007Q4–2009Q2 contraction.
+
+The release checks that probabilities sum to one, the stress surface rises monotonically as geopolitical and liquidity regimes worsen, severe-system coverage falls below one, marginal hyperscaler and LGFV rates exceed 9%, and the systemic equity trough falls below 35 on a 2026=100 index. Browser QA passed at 1440×1000 and 390×844 with no page errors or horizontal overflow.
 
 ## Main limitations
 
-1. Annual country episodes are only an analogue for a concentrated AI-linked equity basket.
-2. The effective crisis sample is small; bootstrap intervals do not span all structural uncertainty.
-3. The historical layer has only three outcomes. The seven-class tail split depends on assumptions.
-4. State weights and hazard multipliers are judgmental and can dominate rare-event results.
-5. Conditional macro paths are internally coherent stories rather than an estimated structural macro model.
-6. AI-linked market-cap exposure is not the size of a bubble premium.
-7. Growth less direct AI investment is an accounting exclusion, not a causal no-AI counterfactual.
-8. China local-government, property, and shadow-credit ranges overlap and cannot be summed mechanically.
-9. The contagion network visualises transmission channels and sensitivities; it does not estimate a causal network.
-10. The reported joint-crisis probability is especially sensitive to dependence assumptions and should be treated as a tail stress indicator.
+1. Annual country episodes are analogues for a concentrated AI basket.
+2. Rare crises are few; subclass probabilities are structurally calibrated.
+3. The connected model reproduces mechanisms and plausible ranges, not identified causal elasticities.
+4. Hyperscaler aggregate cash generation is strong today; commitment stress needs a simultaneous revenue and funding shock.
+5. Treasury holdings show potential sale capacity, not intent to sell.
+6. The 47.4% S&P sector proxy is not an AI-bubble estimate.
+7. China debt perimeters overlap and cannot be summed mechanically.
+8. European relative gains require successful policy execution and follow the initial recessionary hit.
+9. The joint US–China tail is an order-of-magnitude stress weight.
 
-## Monitoring and change control
-
-Re-estimate after a material revision to the World Bank equity series, a change in basket membership, or a regime shift in liquidity/geopolitical inputs. Revisit the model if its rolling Brier score no longer beats the base-rate forecast or if observed outcomes fall outside the scenario taxonomy. Any change to taxonomy, feature definitions, state weights, hazard multipliers, or tail splits requires a new dated release and refreshed validation.
-
-Model owner: repository maintainer. As-of date: 15 October 2026, Europe/Zurich.
+As-of date: 15 October 2026, Europe/Zurich.

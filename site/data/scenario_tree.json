@@ -6,14 +6,14 @@
       "id": "continued_boom",
       "name": "Continued boom",
       "class": "continued_boom",
-      "description": "Maximum drawdown stays above 15% and the AI basket continues to expand.",
-      "probability": 0.3979,
+      "description": "<20% drawdown; 24-month return above +10%.",
+      "probability": 0.2839,
       "interval80": [
-        0.21810062759991408,
-        0.4950265818898861
+        0.14202353762864506,
+        0.4345281335366544
       ],
       "definition": {
-        "drawdownThreshold": -0.15,
+        "drawdownThreshold": -0.2,
         "horizonMonths": 24
       },
       "evidenceRefs": [
@@ -26,11 +26,11 @@
       "id": "no_burst_sideways",
       "name": "Sideways adjustment",
       "class": "no_burst_sideways",
-      "description": "Maximum drawdown stays above 20%; valuation compresses without a bust.",
-      "probability": 0.3075,
+      "description": "<20% drawdown; 24-month return at or below +10%.",
+      "probability": 0.2141,
       "interval80": [
-        0.17396355322229376,
-        0.4043776117295117
+        0.11345509858464428,
+        0.3556712295554186
       ],
       "definition": {
         "drawdownThreshold": -0.2,
@@ -46,11 +46,11 @@
       "id": "mild_adjustment",
       "name": "Mild adjustment",
       "class": "mild_adjustment",
-      "description": "Peak-to-trough decline of 20\u201335%.",
-      "probability": 0.0797,
+      "description": "Mild: 20\u201335% peak-to-trough decline.",
+      "probability": 0.139,
       "interval80": [
-        0.008028010707852997,
-        0.22381724896656408
+        0.011982574077329214,
+        0.30034889143824917
       ],
       "definition": {
         "drawdownThreshold": -0.2,
@@ -66,11 +66,11 @@
       "id": "moderate_burst",
       "name": "Moderate burst",
       "class": "moderate_burst",
-      "description": "Peak-to-trough decline of 35\u201350%.",
-      "probability": 0.0309,
+      "description": "Moderate: 35\u201350% peak-to-trough decline.",
+      "probability": 0.0575,
       "interval80": [
-        0.010453828361285058,
-        0.08915765593220201
+        0.015328057048256571,
+        0.11965716098972516
       ],
       "definition": {
         "drawdownThreshold": -0.35,
@@ -86,11 +86,11 @@
       "id": "deep_drawdown_no_vacuum",
       "name": "Deep drawdown, liquidity holds",
       "class": "deep_drawdown_no_vacuum",
-      "description": "Decline exceeds 50%, but broad funding liquidity holds.",
-      "probability": 0.163,
+      "description": "Severe: \u226550% decline; broad funding markets keep functioning.",
+      "probability": 0.2883,
       "interval80": [
-        0.0541366007839846,
-        0.334471186380116
+        0.094355480886013,
+        0.4641796696484756
       ],
       "definition": {
         "drawdownThreshold": -0.5,
@@ -106,11 +106,11 @@
       "id": "severe_burst",
       "name": "Severe burst + liquidity vacuum",
       "class": "severe_burst",
-      "description": "Decline exceeds 50% alongside a liquidity vacuum.",
-      "probability": 0.014,
+      "description": "Severe: \u226550% decline plus a liquidity vacuum.",
+      "probability": 0.0111,
       "interval80": [
-        0.0077291084693354275,
-        0.030367382334711195
+        0.005417520790866849,
+        0.023921964693636374
       ],
       "definition": {
         "drawdownThreshold": -0.5,
@@ -126,11 +126,11 @@
       "id": "severe_burst_with_financial_crisis",
       "name": "Severe burst + financial crisis",
       "class": "severe_burst_with_financial_crisis",
-      "description": "Decline exceeds 50%, a liquidity vacuum and systemic funding stress coincide.",
-      "probability": 0.007,
+      "description": "Systemic: \u226550% decline, liquidity vacuum and bank/funding stress.",
+      "probability": 0.0061,
       "interval80": [
-        0.0037254983946330275,
-        0.01430899502832381
+        0.002655900443267436,
+        0.011941770845959987
       ],
       "definition": {
         "drawdownThreshold": -0.5,
@@ -224,12 +224,13 @@
     {
       "geopolitics": "calm",
       "liquidity": "ample",
+      "stressMultiplier": 0.5456,
       "probabilities": {
-        "continued_boom": 0.4125054809077914,
-        "no_burst_sideways": 0.32411144928469315,
-        "mild_adjustment": 0.06936735240349952,
-        "moderate_burst": 0.026850833309030816,
-        "deep_drawdown_no_vacuum": 0.1671648840949851,
+        "continued_boom": 0.3768763007585155,
+        "no_burst_sideways": 0.2961170934531193,
+        "mild_adjustment": 0.08866249700992182,
+        "moderate_burst": 0.03791578898993757,
+        "deep_drawdown_no_vacuum": 0.20042831978850575,
         "severe_burst": 0.0,
         "severe_burst_with_financial_crisis": 0.0
       }
@@ -237,12 +238,13 @@
     {
       "geopolitics": "calm",
       "liquidity": "neutral",
+      "stressMultiplier": 0.88,
       "probabilities": {
-        "continued_boom": 0.28205595745641276,
-        "no_burst_sideways": 0.22161539514432427,
-        "mild_adjustment": 0.1307183647652759,
-        "moderate_burst": 0.050598688015724806,
-        "deep_drawdown_no_vacuum": 0.3150115946182622,
+        "continued_boom": 0.3139528100207833,
+        "no_burst_sideways": 0.24667720787347253,
+        "mild_adjustment": 0.11912799018473523,
+        "moderate_burst": 0.05094410704600747,
+        "deep_drawdown_no_vacuum": 0.26929788487500145,
         "severe_burst": 0.0,
         "severe_burst_with_financial_crisis": 0.0
       }
@@ -250,25 +252,27 @@
     {
       "geopolitics": "calm",
       "liquidity": "vacuum",
+      "stressMultiplier": 2.42,
       "probabilities": {
-        "continued_boom": 0.03631069626628562,
-        "no_burst_sideways": 0.02852983278065298,
-        "mild_adjustment": 0.2462934941964147,
-        "moderate_burst": 0.09533570662029549,
+        "continued_boom": 0.17748502419089715,
+        "no_burst_sideways": 0.13945251900713343,
+        "mild_adjustment": 0.18520122212145618,
+        "moderate_burst": 0.0791997822692709,
         "deep_drawdown_no_vacuum": 0.0,
-        "severe_burst": 0.4866948215118081,
-        "severe_burst_with_financial_crisis": 0.10683544862454322
+        "severe_burst": 0.34330239097721876,
+        "severe_burst_with_financial_crisis": 0.07535906143402363
       }
     },
     {
       "geopolitics": "tense",
       "liquidity": "ample",
+      "stressMultiplier": 0.62,
       "probabilities": {
-        "continued_boom": 0.4423630544786222,
-        "no_burst_sideways": 0.34757097137606024,
-        "mild_adjustment": 0.05532519788448025,
-        "moderate_burst": 0.02141537214141072,
-        "deep_drawdown_no_vacuum": 0.13332540411942664,
+        "continued_boom": 0.3607881061232201,
+        "no_burst_sideways": 0.28347636909681573,
+        "mild_adjustment": 0.09645187388825754,
+        "moderate_burst": 0.04124685206668608,
+        "deep_drawdown_no_vacuum": 0.21803679882502056,
         "severe_burst": 0.0,
         "severe_burst_with_financial_crisis": 0.0
       }
@@ -276,12 +280,13 @@
     {
       "geopolitics": "tense",
       "liquidity": "neutral",
+      "stressMultiplier": 1.0,
       "probabilities": {
-        "continued_boom": 0.3231589387924765,
-        "no_burst_sideways": 0.25391059476551714,
-        "mild_adjustment": 0.11138744312343025,
-        "moderate_burst": 0.04311604183231724,
-        "deep_drawdown_no_vacuum": 0.2684269814862589,
+        "continued_boom": 0.2962059033239995,
+        "no_burst_sideways": 0.23273320975457096,
+        "mild_adjustment": 0.1277204611126188,
+        "moderate_burst": 0.05461860670021131,
+        "deep_drawdown_no_vacuum": 0.28872181910859934,
         "severe_burst": 0.0,
         "severe_burst_with_financial_crisis": 0.0
       }
@@ -289,25 +294,27 @@
     {
       "geopolitics": "tense",
       "liquidity": "vacuum",
+      "stressMultiplier": 2.75,
       "probabilities": {
-        "continued_boom": 0.04775510252284169,
-        "no_burst_sideways": 0.037521866267947034,
-        "mild_adjustment": 0.24091113716556775,
-        "moderate_burst": 0.09325229466297721,
+        "continued_boom": 0.1623618491577262,
+        "no_burst_sideways": 0.12757002433821343,
+        "mild_adjustment": 0.1925233681173759,
+        "moderate_burst": 0.0823310378947891,
         "deep_drawdown_no_vacuum": 0.0,
-        "severe_burst": 0.41800291155407976,
-        "severe_burst_with_financial_crisis": 0.1625566878265866
+        "severe_burst": 0.3133538787541647,
+        "severe_burst_with_financial_crisis": 0.12185984173773073
       }
     },
     {
       "geopolitics": "crisis",
       "liquidity": "ample",
+      "stressMultiplier": 0.7315999999999999,
       "probabilities": {
-        "continued_boom": 0.49357856240122877,
-        "no_burst_sideways": 0.3878117276009654,
-        "mild_adjustment": 0.031238308361686156,
-        "moderate_burst": 0.01209177778325331,
-        "deep_drawdown_no_vacuum": 0.07527962385286636,
+        "continued_boom": 0.33907624241664924,
+        "no_burst_sideways": 0.2664170476130815,
+        "mild_adjustment": 0.1069640471292816,
+        "moderate_burst": 0.045742296655707,
+        "deep_drawdown_no_vacuum": 0.24180036618528075,
         "severe_burst": 0.0,
         "severe_burst_with_financial_crisis": 0.0
       }
@@ -315,12 +322,13 @@
     {
       "geopolitics": "crisis",
       "liquidity": "neutral",
+      "stressMultiplier": 1.18,
       "probabilities": {
-        "continued_boom": 0.4084981311367391,
-        "no_burst_sideways": 0.32096281732172355,
-        "mild_adjustment": 0.07125202747809589,
-        "moderate_burst": 0.027580356557594637,
-        "deep_drawdown_no_vacuum": 0.17170666750584676,
+        "continued_boom": 0.2730534401030585,
+        "no_burst_sideways": 0.21454198865240307,
+        "mild_adjustment": 0.13893012545208833,
+        "moderate_burst": 0.05941232763157412,
+        "deep_drawdown_no_vacuum": 0.314062118160876,
         "severe_burst": 0.0,
         "severe_burst_with_financial_crisis": 0.0
       }
@@ -328,14 +336,15 @@
     {
       "geopolitics": "crisis",
       "liquidity": "vacuum",
+      "stressMultiplier": 3.2449999999999997,
       "probabilities": {
-        "continued_boom": 0.08711798918501013,
-        "no_burst_sideways": 0.06844984864536507,
-        "mild_adjustment": 0.22239859007216264,
-        "moderate_burst": 0.0860864262982863,
+        "continued_boom": 0.143961769628969,
+        "no_burst_sideways": 0.1131128189941899,
+        "mild_adjustment": 0.2014320839360174,
+        "moderate_burst": 0.0861407770803788,
         "deep_drawdown_no_vacuum": 0.0,
-        "severe_burst": 0.32156828747950555,
-        "severe_burst_with_financial_crisis": 0.21437885831967038
+        "severe_burst": 0.273211530216267,
+        "severe_burst_with_financial_crisis": 0.182141020144178
       }
     }
   ],
@@ -348,14 +357,19 @@
     ],
     "episodeCount": 127,
     "countries": 37,
-    "estimator": "equal-weight ensemble of two L2 multinomial logits; country-cluster bootstrap",
-    "conditioning": "historical geopolitical/liquidity state model; structural split of the severe tail",
+    "estimator": "75% calibrated L2-logit core, 15% gradient-boosting and 10% random-forest challenger overlay; country-cluster bootstrap",
+    "conditioning": "transparent monotonic geopolitical \u00d7 liquidity stress surface; structural split of the severe tail",
     "currentFeatures": {
       "runup3": 2.16891507200192,
       "return1": 0.14199621047491617,
       "volatility5": 0.44619925618162054
     },
-    "warning": "Weak predictive skill. Tail subclasses are structural calibrations and are not separately backtested."
+    "challengerBustProbabilities": {
+      "logit": 0.41641276666624644,
+      "gradientBoosting": 0.5245106756557754,
+      "randomForest": 0.8007471057337843
+    },
+    "warning": "Nonlinear challengers perform worse out of sample than the logit core, so they are capped. Tail subclasses and stress multipliers are transparent structural calibrations, not fitted probabilities."
   },
   "backtest": {
     "brierScore": 0.4195234446366324,
@@ -368,15 +382,15 @@
   "monteCarlo": {
     "draws": 10000,
     "seed": 20261014,
-    "maxMonteCarloStdError": 0.0048946459524668385,
+    "maxMonteCarloStdError": 0.004529714229396817,
     "classificationCounts": {
-      "continued_boom": 3979,
-      "no_burst_sideways": 3075,
-      "mild_adjustment": 797,
-      "moderate_burst": 309,
-      "deep_drawdown_no_vacuum": 1630,
-      "severe_burst": 140,
-      "severe_burst_with_financial_crisis": 70
+      "continued_boom": 2839,
+      "no_burst_sideways": 2141,
+      "mild_adjustment": 1390,
+      "moderate_burst": 575,
+      "deep_drawdown_no_vacuum": 2883,
+      "severe_burst": 111,
+      "severe_burst_with_financial_crisis": 61
     }
   }
 }

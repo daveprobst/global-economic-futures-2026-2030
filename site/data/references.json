@@ -1934,6 +1934,60 @@
         "officialPublicationUrl": "https://www.elibrary.imf.org/view/journals/002/2026/044/article-A001-en.xml",
         "officialPublicationDate": "2026-02-18"
       }
+    },
+    {
+      "year": 2026,
+      "title": "2026 Stress Test Scenarios",
+      "authors": [
+        "Federal Reserve Board"
+      ],
+      "type": "official stress test",
+      "url": "https://www.federalreserve.gov/publications/2026-stress-test-scenarios.htm"
+    },
+    {
+      "year": 2026,
+      "title": "Financial Stability Report \u2014 Overview",
+      "authors": [
+        "Federal Reserve Board"
+      ],
+      "type": "official report",
+      "url": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-overview.htm"
+    },
+    {
+      "year": 2026,
+      "title": "S&P 500 Factsheet",
+      "authors": [
+        "S&P Dow Jones Indices"
+      ],
+      "type": "index provider",
+      "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+    },
+    {
+      "year": 2026,
+      "title": "S&P 500 Communication Services & Information Technology Index",
+      "authors": [
+        "S&P Dow Jones Indices"
+      ],
+      "type": "index provider",
+      "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500-communication-services-information-technology-index/"
+    },
+    {
+      "year": 2026,
+      "title": "Major Foreign Holders of Treasury Securities",
+      "authors": [
+        "US Treasury"
+      ],
+      "type": "official holdings data",
+      "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html"
+    },
+    {
+      "year": 2009,
+      "title": "How did the economic downturn affect real GDP growth during the recession?",
+      "authors": [
+        "US Bureau of Economic Analysis"
+      ],
+      "type": "official benchmark",
+      "url": "https://www.bea.gov/help/faq/1004"
     }
   ]
 }

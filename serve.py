@@ -13,8 +13,8 @@ Endpoints:
   GET/HEAD /healthz     200 "ok" (used by the Docker HEALTHCHECK and by Render)
   GET/HEAD /<path>      file under the site root; 404 otherwise; no directory listings
 
-Security headers on every response: CSP limited to same-origin, nosniff, no referrer
-leakage, no framing, HSTS (effective only behind HTTPS, which Render terminates).
+Security headers on every response: nosniff, no referrer leakage, no framing, and
+HSTS (effective only behind HTTPS, which Render terminates).
 """
 from __future__ import annotations
 
@@ -42,11 +42,6 @@ CONTENT_TYPES = {
 }
 
 SECURITY_HEADERS = {
-    "Content-Security-Policy": (
-        "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; "
-        "connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; "
-        "form-action 'none'; frame-ancestors 'none'"
-    ),
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "no-referrer",
     "Permissions-Policy": "geolocation=(), microphone=(), camera=(), payment=(), usb=()",

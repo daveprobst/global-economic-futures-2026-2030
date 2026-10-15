@@ -1,249 +1,56 @@
 {
   "asOf": "2026-10-15",
+  "metricDefinitions": {
+    "growth": "2025 real GDP growth, %",
+    "publicDebt": "latest general/federal government debt, % GDP; perimeter differs",
+    "privateCredit": "latest domestic private credit, % GDP",
+    "policyRate": "policy rate, %, latest 2026 observation",
+    "directExposure": "qualitative direct AI/US-tech exposure"
+  },
   "countries": {
     "US": {
-      "summary": "High AI-linked concentration and investment momentum coexist with still-benign broad financial stress.",
-      "keyStats": [
-        {
-          "label": "AI-linked market-cap exposure",
-          "value": 10.535837188925507,
-          "unit": "percent",
-          "asOf": "2026-10-14",
-          "sourceRef": "SEC/Yahoo/FRED"
-        },
-        {
-          "label": "AI-linked earnings exposure",
-          "value": 9.209329262493055,
-          "unit": "percent",
-          "asOf": "2026-Q2",
-          "sourceRef": "SEC/FRED"
-        },
-        {
-          "label": "2025 GDP growth",
-          "value": 2.344,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "Growth less direct AI investment",
-          "value": 1.677,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "BEA/FRED"
-        },
-        {
-          "label": "Federal debt/GDP",
-          "value": 118.8,
-          "unit": "percent",
-          "asOf": "2026-Q2",
-          "sourceRef": "FRED"
-        },
-        {
-          "label": "Private credit/GDP",
-          "value": 216.3,
-          "unit": "percent",
-          "asOf": "2024",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "High-yield OAS",
-          "value": 3.16,
-          "unit": "percent",
-          "asOf": "2026-10-13",
-          "sourceRef": "FRED"
-        },
-        {
-          "label": "Unemployment",
-          "value": 4.3,
-          "unit": "percent",
-          "asOf": "2026-09",
-          "sourceRef": "FRED"
-        }
-      ]
+      "summary": "Largest direct valuation and capex channel; Treasury-market depth and refinancing costs determine whether an equity reset becomes systemic.",
+      "metrics": {
+        "growth": 2.34,
+        "publicDebt": 118.8,
+        "privateCredit": 216.3,
+        "policyRate": 4.25,
+        "directExposure": "high"
+      },
+      "shockRole": "origin + dollar-funding amplifier"
     },
     "China": {
-      "summary": "Property adjustment and a very large augmented public-sector perimeter create balance-sheet-recession risk.",
-      "keyStats": [
-        {
-          "label": "Private non-financial credit, China",
-          "value": 289406.889,
-          "unit": "CNY bn",
-          "asOf": "2026-Q1",
-          "sourceRef": "bis_WS_TC_CN"
-        },
-        {
-          "label": "Credit-to-GDP gap, China (CG_DTYPE C)",
-          "value": -5.1412,
-          "unit": "pp",
-          "asOf": "2026-Q1",
-          "sourceRef": "bis_WS_CREDIT_GAP_CN (CG_DTYPE meaning inferred, audit F19)"
-        },
-        {
-          "label": "Credit-to-GDP ratio, China (CG_DTYPE A)",
-          "value": 204.11207778046,
-          "unit": "percent of GDP",
-          "asOf": "2026-Q1",
-          "sourceRef": "bis_WS_CREDIT_GAP_CN (CG_DTYPE meaning inferred, audit F19)"
-        },
-        {
-          "label": "Debt service ratio, private non-financial, China",
-          "value": 19.1,
-          "unit": "percent",
-          "asOf": "2026-Q1",
-          "sourceRef": "bis_WS_DSR_CN"
-        },
-        {
-          "label": "Residential property index, China (peak to last)",
-          "value": 112.9201,
-          "unit": "index (base 2010=100, to confirm, F19)",
-          "asOf": "2026Q2",
-          "sourceRef": "bis_WS_SPP_CN"
-        },
-        {
-          "label": "Residential property index fall from in-sample peak",
-          "value": 22.611297561764587,
-          "unit": "percent",
-          "asOf": "2026Q2",
-          "sourceRef": "bis_WS_SPP_CN (peak 145.9129 at 2021Q3)"
-        },
-        {
-          "label": "Domestic credit to private sector, % GDP",
-          "value": 194.312528264561,
-          "unit": "percent of GDP",
-          "asOf": "2024",
-          "sourceRef": "wb_FS.AST.PRVT.GD.ZS"
-        },
-        {
-          "label": "Real GDP growth",
-          "value": 4.95994886240992,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "wb_NY.GDP.MKTP.KD.ZG"
-        }
-      ]
+      "summary": "Lower direct US-AI exposure, but property losses, LGFV debt and weak domestic demand create a second balance-sheet channel.",
+      "metrics": {
+        "growth": 4.96,
+        "publicDebt": null,
+        "privateCredit": 194.3,
+        "policyRate": 3.0,
+        "directExposure": "low"
+      },
+      "shockRole": "property/debt amplifier + potential Treasury seller"
     },
     "EU": {
-      "summary": "Lower direct AI-bubble exposure, but bank, trade and dollar-funding channels transmit a global liquidity shock.",
-      "keyStats": [
-        {
-          "label": "Real GDP growth",
-          "value": 1.5,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "HICP inflation",
-          "value": 2.1,
-          "unit": "percent",
-          "asOf": "2026-09",
-          "sourceRef": "Eurostat"
-        },
-        {
-          "label": "Deposit facility rate",
-          "value": 2.0,
-          "unit": "percent",
-          "asOf": "2026-10",
-          "sourceRef": "ECB"
-        },
-        {
-          "label": "Government debt",
-          "value": 87.4,
-          "unit": "percent GDP",
-          "asOf": "2026-Q2",
-          "sourceRef": "Eurostat"
-        },
-        {
-          "label": "Systemic stress index",
-          "value": 0.16,
-          "unit": "index",
-          "asOf": "2026-10",
-          "sourceRef": "ECB CISS"
-        },
-        {
-          "label": "NFC loan growth",
-          "value": 2.8,
-          "unit": "percent y/y",
-          "asOf": "2026-09",
-          "sourceRef": "ECB"
-        },
-        {
-          "label": "Equity return",
-          "value": 23.0,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "World Bank Germany proxy"
-        },
-        {
-          "label": "Critical-material recycling target",
-          "value": 25,
-          "unit": "percent",
-          "asOf": "2030",
-          "sourceRef": "EU CRMA"
-        }
-      ]
+      "summary": "Lower direct AI concentration, but trade, banks and dollar funding transmit the first-round recession before any reallocation benefit.",
+      "metrics": {
+        "growth": 1.5,
+        "publicDebt": 87.4,
+        "privateCredit": null,
+        "policyRate": 2.0,
+        "directExposure": "medium"
+      },
+      "shockRole": "initial loss; conditional medium-term reallocation"
     },
     "Switzerland": {
-      "summary": "Low inflation and safe-haven demand cushion shocks; franc appreciation and EU access remain the key trade-offs.",
-      "keyStats": [
-        {
-          "label": "Real GDP growth",
-          "value": 1.4,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "Inflation",
-          "value": 0.6,
-          "unit": "percent",
-          "asOf": "2026",
-          "sourceRef": "SNB/FSO"
-        },
-        {
-          "label": "Policy rate",
-          "value": 0.0,
-          "unit": "percent",
-          "asOf": "2026-09",
-          "sourceRef": "SNB/BIS"
-        },
-        {
-          "label": "Private credit/GDP",
-          "value": 164.6,
-          "unit": "percent",
-          "asOf": "2024",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "Central government debt",
-          "value": 17.2,
-          "unit": "percent GDP",
-          "asOf": "2024",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "CHF per EUR",
-          "value": 0.93,
-          "unit": "rate",
-          "asOf": "2026-10",
-          "sourceRef": "ECB"
-        },
-        {
-          "label": "Equity return",
-          "value": 12.7,
-          "unit": "percent",
-          "asOf": "2025",
-          "sourceRef": "World Bank"
-        },
-        {
-          "label": "Safe-haven role",
-          "value": "high",
-          "unit": "qualitative",
-          "asOf": "2026",
-          "sourceRef": "SNB"
-        }
-      ]
+      "summary": "Low public debt and safe-haven demand cushion funding stress; franc appreciation and EU-market access constrain exports.",
+      "metrics": {
+        "growth": 1.4,
+        "publicDebt": 17.2,
+        "privateCredit": 164.6,
+        "policyRate": 0.0,
+        "directExposure": "medium"
+      },
+      "shockRole": "safe haven with export/currency trade-off"
     }
   }
 }

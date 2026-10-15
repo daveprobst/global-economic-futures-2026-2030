@@ -74,7 +74,7 @@ The operator owns the browser account and performs these steps. The builder hold
 4. In Render, create a new Blueprint from that repository, or a Web Service with the Docker runtime and the Free instance type. Confirm that `Dockerfile` is at the repository root and the health check path is `/healthz`.
 5. Deploy. In the build log, check that the base image is `python:3.13.9-slim-bookworm` and that the server starts as the non-root user `10001`.
 6. Only after step 7 passes, record the public URL in the progress manifest.
-7. From outside the builder environment, request `https://<service>.onrender.com/`, `/healthz`, `/manifests/download_manifest.json` and one file from the download manifest. Check the status codes, the `Content-Type` headers, and the `X-Content-Type-Options` and `Content-Security-Policy` headers. Compare the downloaded file's SHA-256 with the manifest.
+7. From outside the builder environment, request `https://<service>.onrender.com/`, `/healthz`, `/manifests/download_manifest.json` and one file from the download manifest. Check the status codes, the `Content-Type` and `X-Content-Type-Options` headers. Compare the downloaded file's SHA-256 with the manifest.
 
 ## Container design
 
@@ -88,7 +88,7 @@ The operator owns the browser account and performs these steps. The builder hold
 ## HTTPS plan
 
 - Render terminates TLS and issues the certificate for `*.onrender.com`. The server listens on plain HTTP inside the container, as Render expects.
-- The server sends `Strict-Transport-Security`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy` and a Content-Security-Policy that allows only same-origin scripts, styles and data. The site makes no third-party requests.
+- The server sends `Strict-Transport-Security`, `X-Content-Type-Options`, `Referrer-Policy` and `Permissions-Policy`. The site makes no third-party requests.
 - A custom domain can be added later. DNS is owned by the operator. The first deployment does not need a domain.
 
 ## Free-tier economics
