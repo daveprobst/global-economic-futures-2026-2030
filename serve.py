@@ -93,6 +93,9 @@ class Handler(SimpleHTTPRequestHandler):
         path = urlsplit(self.path).path
         if path == "/healthz":
             return self._send_bytes(HTTPStatus.OK, "text/plain; charset=utf-8", b"ok\n", head_only)
+        if path == "/favicon.ico":
+            # Browsers request /favicon.ico by default; serve the SVG icon instead. Still resolved by _resolve.
+            path = "/favicon.svg"
         target = self._resolve(path)
         if target is None or not target.is_file():
             return self._send_bytes(HTTPStatus.NOT_FOUND, "text/plain; charset=utf-8", b"Not found\n", head_only)

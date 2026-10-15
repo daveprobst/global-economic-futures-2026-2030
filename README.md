@@ -1,28 +1,29 @@
-# Global Economic Futures, 2026–2030: explorer
+# Fault Lines — Global Economic Futures 2026–2030
 
-A static, read-only English research and scenario explorer. Every figure is labelled **Observed**, **Computed**, **Assumed**, **Simulated** or **Uncertain**. Scenario paths are conditional stories, not forecasts. Percentile bands describe spread under stated bounds, not calibrated probabilities. The 70% AI revenue-loss case is a stress test, not an estimated probability.
+An English, static research dashboard testing whether the AI investment cycle can transmit into a broader global liquidity shock. The site presents seven mutually exclusive scenario classes, conditional macro paths, US/AI exposure, China debt ranges, contagion channels, a joint-crisis stress estimate, country balance sheets, and a searchable 69-source register.
 
-As of 2026-10-14 (Europe/Zurich). Each observation carries its own date. Data that is not yet available is marked as unavailable.
+The central estimate is **28.5% for a 20% or greater AI-equity adjustment by October 2028**. The full US systemic-crisis branch is **0.7%**. These are model-conditional estimates from a small historical episode panel, not objective frequencies or investment advice.
 
-## What is in this repository
+## Method in one page
 
-- `site/`: the built website and its data, downloads and manifests. Nothing is computed at runtime.
-- `serve.py`: a standard-library Python server for `site/`. It serves files only, with a health endpoint at `/healthz`.
-- `Dockerfile`, `.dockerignore`, `docker-compose.yml`: container build and local run. The image runs as a non-root user with the site and server only.
-- `render.yaml`: a Render Blueprint for a free Docker web service.
-- `docs/DEPLOYMENT.md`: hosting, free-tier terms, HTTPS, rollback and maintenance.
-- `docs/MODEL_RISK.md`: methods, reproducibility and model limits.
-- `BUNDLE_MANIFEST.json`: the path, size and SHA-256 of every file in this repository.
+- 127 non-overlapping annual equity run-up episodes across 37 countries, built from the World Bank/S&P Global annual equity-index return series.
+- Two regularised multinomial logistic models with fold-local scaling, averaged after leave-one-country-out evaluation.
+- Nine geopolitical-risk and global-liquidity states reweight the episode-model probabilities.
+- Seven final classes split the broad drawdown bands using transparent structural stress assumptions.
+- 10,000 fixed-seed classifications and a country-cluster bootstrap produce the displayed ranges.
+- Conditional paths are scenario designs. They are not expected-value forecasts.
+
+The historical model has weak but positive discrimination against a base-rate benchmark. Subclass splits, contagion paths, and the joint-crisis estimate rely more heavily on assumptions than the broad adjustment probability. Read [docs/MODEL_RISK.md](docs/MODEL_RISK.md) before reusing any probability.
 
 ## Run locally
 
-Python 3.10 or newer, no packages to install:
+No runtime packages are required:
 
 ```sh
 PORT=8080 HOST=127.0.0.1 python3 serve.py
 ```
 
-Then open http://127.0.0.1:8080/ and check http://127.0.0.1:8080/healthz, which returns `ok`.
+Then open <http://127.0.0.1:8080/>. The health endpoint is <http://127.0.0.1:8080/healthz>.
 
 With Docker:
 
@@ -30,24 +31,8 @@ With Docker:
 docker compose up --build
 ```
 
-Then open http://localhost:8080/.
+## Deployment
 
-## Endpoints
+The image uses a small Python slim base, runs as an unprivileged user, serves only static files, and is configured for Render's free Docker service. Render terminates TLS and calls `/healthz`. The site makes no third-party browser requests and stores no cookies, analytics, credentials, or personal data.
 
-| Path | Purpose |
-|---|---|
-| `/` | The explorer |
-| `/healthz` | Health check (`ok`) |
-| `/manifests/content_manifest.json` | Sections, claims, mechanisms and sources |
-| `/manifests/download_manifest.json` | Every downloadable file with size and SHA-256 |
-
-## Security
-
-- Responses carry a Content-Security-Policy that allows same-origin scripts, styles and data only.
-- `X-Content-Type-Options: nosniff`, a strict Referrer-Policy and no framing.
-- The site makes no third-party requests and uses no cookies or storage.
-- No secrets, tokens or credentials are in this repository.
-
-## Licence and sources
-
-The data and text are research outputs. Source titles, URLs, periods and retrieval metadata are listed in `manifests/content_manifest.json` and `manifests/download_manifest.json`. Check the source records before reusing any figure.
+As of 15 October 2026, Europe/Zurich.

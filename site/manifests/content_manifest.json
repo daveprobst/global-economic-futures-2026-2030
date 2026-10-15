@@ -2,7 +2,7 @@
  "schema": "gef-content-manifest/1",
  "asOf": "2026-10-14",
  "timezone": "Europe/Zurich",
- "builtAt": "2026-10-14T21:42:49Z",
+ "builtAt": "2026-10-14T22:44:36Z",
  "title": "Global Economic Futures, 2026–2030",
  "sections": [
   {
@@ -854,5 +854,14 @@
   "computed": "Computed",
   "assumed": "Assumed",
   "simulated": "Simulated"
- }
+ },
+ "assets": [
+  {
+   "path": "favicon.svg",
+   "role": "icon",
+   "mediaType": "image/svg+xml",
+   "sourceArtifact": "website/src/favicon.svg",
+   "sha256": "990bb5a68dbe6bb41fa9205787d2451eeed473fca54daed68d89cca8a01fea0a"
+  }
+ ]
 }

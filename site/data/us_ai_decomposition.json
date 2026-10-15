@@ -1,0 +1,2740 @@
+{
+  "asOf": "2026-10-15",
+  "avgoNetIncomeNote": {
+    "companyfactsSha256": "3bdb6644c12addf1e63c4dc861008d7804fbf3d3f5aa6eb9b97f72c0e89a7adf",
+    "concept": "us-gaap:ProfitLoss (includes noncontrolling interests)",
+    "fy2025Bn": 23.126,
+    "ttmBn": 38.265,
+    "windowEnd": "2026-08-02",
+    "ytd9mFy2025Bn": 14.608,
+    "ytd9mFy2026Bn": 29.747
+  },
+  "basket": {
+    "indexMonthly": [
+      {
+        "month": "2012-05-31",
+        "tag": "Computed",
+        "value": 1.4368386001471374
+      },
+      {
+        "month": "2012-06-30",
+        "tag": "Computed",
+        "value": 1.5141896602650828
+      },
+      {
+        "month": "2012-07-31",
+        "tag": "Computed",
+        "value": 1.4209367342266745
+      },
+      {
+        "month": "2012-08-31",
+        "tag": "Computed",
+        "value": 1.423726687152753
+      },
+      {
+        "month": "2012-09-30",
+        "tag": "Computed",
+        "value": 1.4406103567985342
+      },
+      {
+        "month": "2012-10-31",
+        "tag": "Computed",
+        "value": 1.2952022104470486
+      },
+      {
+        "month": "2012-11-30",
+        "tag": "Computed",
+        "value": 1.382360080336107
+      },
+      {
+        "month": "2012-12-31",
+        "tag": "Computed",
+        "value": 1.3848805377653544
+      },
+      {
+        "month": "2013-01-31",
+        "tag": "Computed",
+        "value": 1.4882854494198856
+      },
+      {
+        "month": "2013-02-28",
+        "tag": "Computed",
+        "value": 1.462084651266955
+      },
+      {
+        "month": "2013-03-31",
+        "tag": "Computed",
+        "value": 1.46188795178953
+      },
+      {
+        "month": "2013-04-30",
+        "tag": "Computed",
+        "value": 1.5196407898454276
+      },
+      {
+        "month": "2013-05-31",
+        "tag": "Computed",
+        "value": 1.6580718027312689
+      },
+      {
+        "month": "2013-06-30",
+        "tag": "Computed",
+        "value": 1.6463856584495313
+      },
+      {
+        "month": "2013-07-31",
+        "tag": "Computed",
+        "value": 1.7454225293205272
+      },
+      {
+        "month": "2013-08-31",
+        "tag": "Computed",
+        "value": 1.7413608618420653
+      },
+      {
+        "month": "2013-09-30",
+        "tag": "Computed",
+        "value": 1.9023706716034796
+      },
+      {
+        "month": "2013-10-31",
+        "tag": "Computed",
+        "value": 1.978922240406919
+      },
+      {
+        "month": "2013-11-30",
+        "tag": "Computed",
+        "value": 2.0475295217642904
+      },
+      {
+        "month": "2013-12-31",
+        "tag": "Computed",
+        "value": 2.1936532784809217
+      },
+      {
+        "month": "2014-01-31",
+        "tag": "Computed",
+        "value": 2.1864412188140685
+      },
+      {
+        "month": "2014-02-28",
+        "tag": "Computed",
+        "value": 2.3468336309080926
+      },
+      {
+        "month": "2014-03-31",
+        "tag": "Computed",
+        "value": 2.329486727898692
+      },
+      {
+        "month": "2014-04-30",
+        "tag": "Computed",
+        "value": 2.2937777909360046
+      },
+      {
+        "month": "2014-05-31",
+        "tag": "Computed",
+        "value": 2.3844304354171277
+      },
+      {
+        "month": "2014-06-30",
+        "tag": "Computed",
+        "value": 2.4294793141834914
+      },
+      {
+        "month": "2014-07-31",
+        "tag": "Computed",
+        "value": 2.40090529160177
+      },
+      {
+        "month": "2014-08-31",
+        "tag": "Computed",
+        "value": 2.5689343676644913
+      },
+      {
+        "month": "2014-09-30",
+        "tag": "Computed",
+        "value": 2.500275663152127
+      },
+      {
+        "month": "2014-10-31",
+        "tag": "Computed",
+        "value": 2.427019199672519
+      },
+      {
+        "month": "2014-11-30",
+        "tag": "Computed",
+        "value": 2.5388270799818806
+      },
+      {
+        "month": "2014-12-31",
+        "tag": "Computed",
+        "value": 2.5099626819839647
+      },
+      {
+        "month": "2015-01-31",
+        "tag": "Computed",
+        "value": 2.469952496538683
+      },
+      {
+        "month": "2015-02-28",
+        "tag": "Computed",
+        "value": 2.7448206482047466
+      },
+      {
+        "month": "2015-03-31",
+        "tag": "Computed",
+        "value": 2.6498905099236802
+      },
+      {
+        "month": "2015-04-30",
+        "tag": "Computed",
+        "value": 2.6871337965820605
+      },
+      {
+        "month": "2015-05-31",
+        "tag": "Computed",
+        "value": 2.771000679941156
+      },
+      {
+        "month": "2015-06-30",
+        "tag": "Computed",
+        "value": 2.7061084184540203
+      },
+      {
+        "month": "2015-07-31",
+        "tag": "Computed",
+        "value": 2.8194668325117895
+      },
+      {
+        "month": "2015-08-31",
+        "tag": "Computed",
+        "value": 2.757790323436486
+      },
+      {
+        "month": "2015-09-30",
+        "tag": "Computed",
+        "value": 2.7642556582844584
+      },
+      {
+        "month": "2015-10-31",
+        "tag": "Computed",
+        "value": 3.159948494913941
+      },
+      {
+        "month": "2015-11-30",
+        "tag": "Computed",
+        "value": 3.3359222952741887
+      },
+      {
+        "month": "2015-12-31",
+        "tag": "Computed",
+        "value": 3.488808937437647
+      },
+      {
+        "month": "2016-01-31",
+        "tag": "Computed",
+        "value": 3.2631465691151065
+      },
+      {
+        "month": "2016-02-29",
+        "tag": "Computed",
+        "value": 3.188918974841573
+      },
+      {
+        "month": "2016-03-31",
+        "tag": "Computed",
+        "value": 3.5971923416351013
+      },
+      {
+        "month": "2016-04-30",
+        "tag": "Computed",
+        "value": 3.6569653991472433
+      },
+      {
+        "month": "2016-05-31",
+        "tag": "Computed",
+        "value": 4.066907108741959
+      },
+      {
+        "month": "2016-06-30",
+        "tag": "Computed",
+        "value": 4.073380840111826
+      },
+      {
+        "month": "2016-07-31",
+        "tag": "Computed",
+        "value": 4.56812950301838
+      },
+      {
+        "month": "2016-08-31",
+        "tag": "Computed",
+        "value": 4.733503309462028
+      },
+      {
+        "month": "2016-09-30",
+        "tag": "Computed",
+        "value": 4.797253581505567
+      },
+      {
+        "month": "2016-10-31",
+        "tag": "Computed",
+        "value": 4.834425869319143
+      },
+      {
+        "month": "2016-11-30",
+        "tag": "Computed",
+        "value": 5.072130021882686
+      },
+      {
+        "month": "2016-12-31",
+        "tag": "Computed",
+        "value": 5.355619382919398
+      },
+      {
+        "month": "2017-01-31",
+        "tag": "Computed",
+        "value": 5.633687255698529
+      },
+      {
+        "month": "2017-02-28",
+        "tag": "Computed",
+        "value": 6.006243871764008
+      },
+      {
+        "month": "2017-03-31",
+        "tag": "Computed",
+        "value": 6.2277671097794425
+      },
+      {
+        "month": "2017-04-30",
+        "tag": "Computed",
+        "value": 6.320364314466515
+      },
+      {
+        "month": "2017-05-31",
+        "tag": "Computed",
+        "value": 6.707979650898727
+      },
+      {
+        "month": "2017-06-30",
+        "tag": "Computed",
+        "value": 6.7863048279115175
+      },
+      {
+        "month": "2017-07-31",
+        "tag": "Computed",
+        "value": 7.195246682348485
+      },
+      {
+        "month": "2017-08-31",
+        "tag": "Computed",
+        "value": 7.263012015624152
+      },
+      {
+        "month": "2017-09-30",
+        "tag": "Computed",
+        "value": 7.2160379508947265
+      },
+      {
+        "month": "2017-10-31",
+        "tag": "Computed",
+        "value": 7.703788989507094
+      },
+      {
+        "month": "2017-11-30",
+        "tag": "Computed",
+        "value": 7.744250558973044
+      },
+      {
+        "month": "2017-12-31",
+        "tag": "Computed",
+        "value": 7.568781227629323
+      },
+      {
+        "month": "2018-01-31",
+        "tag": "Computed",
+        "value": 8.70053741487062
+      },
+      {
+        "month": "2018-02-28",
+        "tag": "Computed",
+        "value": 8.438473258545555
+      },
+      {
+        "month": "2018-03-31",
+        "tag": "Computed",
+        "value": 7.818032397264196
+      },
+      {
+        "month": "2018-04-30",
+        "tag": "Computed",
+        "value": 8.004451409090349
+      },
+      {
+        "month": "2018-05-31",
+        "tag": "Computed",
+        "value": 8.802265182684701
+      },
+      {
+        "month": "2018-06-30",
+        "tag": "Computed",
+        "value": 8.821316346918277
+      },
+      {
+        "month": "2018-07-31",
+        "tag": "Computed",
+        "value": 9.206069580133846
+      },
+      {
+        "month": "2018-08-31",
+        "tag": "Computed",
+        "value": 10.05674936442873
+      },
+      {
+        "month": "2018-09-30",
+        "tag": "Computed",
+        "value": 10.490962867082358
+      },
+      {
+        "month": "2018-10-31",
+        "tag": "Computed",
+        "value": 8.852994840620138
+      },
+      {
+        "month": "2018-11-30",
+        "tag": "Computed",
+        "value": 8.903025389756985
+      },
+      {
+        "month": "2018-12-31",
+        "tag": "Computed",
+        "value": 8.189840798204024
+      },
+      {
+        "month": "2019-01-31",
+        "tag": "Computed",
+        "value": 9.303703138594429
+      },
+      {
+        "month": "2019-02-28",
+        "tag": "Computed",
+        "value": 9.416991966420225
+      },
+      {
+        "month": "2019-03-31",
+        "tag": "Computed",
+        "value": 10.107707478204366
+      },
+      {
+        "month": "2019-04-30",
+        "tag": "Computed",
+        "value": 10.799935331270373
+      },
+      {
+        "month": "2019-05-31",
+        "tag": "Computed",
+        "value": 9.658099306750751
+      },
+      {
+        "month": "2019-06-30",
+        "tag": "Computed",
+        "value": 10.63139525150022
+      },
+      {
+        "month": "2019-07-31",
+        "tag": "Computed",
+        "value": 10.844151638736214
+      },
+      {
+        "month": "2019-08-31",
+        "tag": "Computed",
+        "value": 10.602084995294025
+      },
+      {
+        "month": "2019-09-30",
+        "tag": "Computed",
+        "value": 10.556142445201225
+      },
+      {
+        "month": "2019-10-31",
+        "tag": "Computed",
+        "value": 11.265947890740179
+      },
+      {
+        "month": "2019-11-30",
+        "tag": "Computed",
+        "value": 11.969587669706566
+      },
+      {
+        "month": "2019-12-31",
+        "tag": "Computed",
+        "value": 12.437865849603451
+      },
+      {
+        "month": "2020-01-31",
+        "tag": "Computed",
+        "value": 12.756995694661574
+      },
+      {
+        "month": "2020-02-29",
+        "tag": "Computed",
+        "value": 12.316512334414378
+      },
+      {
+        "month": "2020-03-31",
+        "tag": "Computed",
+        "value": 11.64776485962881
+      },
+      {
+        "month": "2020-04-30",
+        "tag": "Computed",
+        "value": 13.531557580108016
+      },
+      {
+        "month": "2020-05-31",
+        "tag": "Computed",
+        "value": 14.382015653236857
+      },
+      {
+        "month": "2020-06-30",
+        "tag": "Computed",
+        "value": 15.096770189977704
+      },
+      {
+        "month": "2020-07-31",
+        "tag": "Computed",
+        "value": 16.82755964328817
+      },
+      {
+        "month": "2020-08-31",
+        "tag": "Computed",
+        "value": 18.935958408434157
+      },
+      {
+        "month": "2020-09-30",
+        "tag": "Computed",
+        "value": 18.095466818866942
+      },
+      {
+        "month": "2020-10-31",
+        "tag": "Computed",
+        "value": 17.594154325081767
+      },
+      {
+        "month": "2020-11-30",
+        "tag": "Computed",
+        "value": 19.169224055961493
+      },
+      {
+        "month": "2020-12-31",
+        "tag": "Computed",
+        "value": 19.7137998087738
+      },
+      {
+        "month": "2021-01-31",
+        "tag": "Computed",
+        "value": 19.485887583792948
+      },
+      {
+        "month": "2021-02-28",
+        "tag": "Computed",
+        "value": 20.02981436241357
+      },
+      {
+        "month": "2021-03-31",
+        "tag": "Computed",
+        "value": 20.41793884795866
+      },
+      {
+        "month": "2021-04-30",
+        "tag": "Computed",
+        "value": 22.11076557314693
+      },
+      {
+        "month": "2021-05-31",
+        "tag": "Computed",
+        "value": 22.304128570589658
+      },
+      {
+        "month": "2021-06-30",
+        "tag": "Computed",
+        "value": 24.112243313446147
+      },
+      {
+        "month": "2021-07-31",
+        "tag": "Computed",
+        "value": 25.287664386344527
+      },
+      {
+        "month": "2021-08-31",
+        "tag": "Computed",
+        "value": 26.802449485731245
+      },
+      {
+        "month": "2021-09-30",
+        "tag": "Computed",
+        "value": 25.148940816367947
+      },
+      {
+        "month": "2021-10-31",
+        "tag": "Computed",
+        "value": 27.86458770021606
+      },
+      {
+        "month": "2021-11-30",
+        "tag": "Computed",
+        "value": 29.88655883230782
+      },
+      {
+        "month": "2021-12-31",
+        "tag": "Computed",
+        "value": 29.875918454077528
+      },
+      {
+        "month": "2022-01-31",
+        "tag": "Computed",
+        "value": 26.60773290222378
+      },
+      {
+        "month": "2022-02-28",
+        "tag": "Computed",
+        "value": 25.52167877454799
+      },
+      {
+        "month": "2022-03-31",
+        "tag": "Computed",
+        "value": 26.616016070631847
+      },
+      {
+        "month": "2022-04-30",
+        "tag": "Computed",
+        "value": 22.005540543513018
+      },
+      {
+        "month": "2022-05-31",
+        "tag": "Computed",
+        "value": 22.373675592676925
+      },
+      {
+        "month": "2022-06-30",
+        "tag": "Computed",
+        "value": 19.54975977234601
+      },
+      {
+        "month": "2022-07-31",
+        "tag": "Computed",
+        "value": 22.159018893679594
+      },
+      {
+        "month": "2022-08-31",
+        "tag": "Computed",
+        "value": 20.605858963681
+      },
+      {
+        "month": "2022-09-30",
+        "tag": "Computed",
+        "value": 17.41888963683042
+      },
+      {
+        "month": "2022-10-31",
+        "tag": "Computed",
+        "value": 17.36424080185165
+      },
+      {
+        "month": "2022-11-30",
+        "tag": "Computed",
+        "value": 19.88166271077442
+      },
+      {
+        "month": "2022-12-31",
+        "tag": "Computed",
+        "value": 18.389896993405177
+      },
+      {
+        "month": "2023-01-31",
+        "tag": "Computed",
+        "value": 21.251466429984504
+      },
+      {
+        "month": "2023-02-28",
+        "tag": "Computed",
+        "value": 21.898386772441643
+      },
+      {
+        "month": "2023-03-31",
+        "tag": "Computed",
+        "value": 25.187814413406766
+      },
+      {
+        "month": "2023-04-30",
+        "tag": "Computed",
+        "value": 25.69834063137216
+      },
+      {
+        "month": "2023-05-31",
+        "tag": "Computed",
+        "value": 30.686055377119427
+      },
+      {
+        "month": "2023-06-30",
+        "tag": "Computed",
+        "value": 32.434572365480804
+      },
+      {
+        "month": "2023-07-31",
+        "tag": "Computed",
+        "value": 33.89486598234386
+      },
+      {
+        "month": "2023-08-31",
+        "tag": "Computed",
+        "value": 33.88243018205394
+      },
+      {
+        "month": "2023-09-30",
+        "tag": "Computed",
+        "value": 31.73833976645849
+      },
+      {
+        "month": "2023-10-31",
+        "tag": "Computed",
+        "value": 31.556541506436247
+      },
+      {
+        "month": "2023-11-30",
+        "tag": "Computed",
+        "value": 35.396352167985015
+      },
+      {
+        "month": "2023-12-31",
+        "tag": "Computed",
+        "value": 37.860752656225195
+      },
+      {
+        "month": "2024-01-31",
+        "tag": "Computed",
+        "value": 41.08110095814271
+      },
+      {
+        "month": "2024-02-29",
+        "tag": "Computed",
+        "value": 46.00965026585684
+      },
+      {
+        "month": "2024-03-31",
+        "tag": "Computed",
+        "value": 47.975758959401816
+      },
+      {
+        "month": "2024-04-30",
+        "tag": "Computed",
+        "value": 45.45894490976089
+      },
+      {
+        "month": "2024-05-31",
+        "tag": "Computed",
+        "value": 48.83477013822972
+      },
+      {
+        "month": "2024-06-30",
+        "tag": "Computed",
+        "value": 53.84077977394788
+      },
+      {
+        "month": "2024-07-31",
+        "tag": "Computed",
+        "value": 51.23856649651366
+      },
+      {
+        "month": "2024-08-31",
+        "tag": "Computed",
+        "value": 51.73115115798663
+      },
+      {
+        "month": "2024-09-30",
+        "tag": "Computed",
+        "value": 55.45517683373874
+      },
+      {
+        "month": "2024-10-31",
+        "tag": "Computed",
+        "value": 54.81990140914176
+      },
+      {
+        "month": "2024-11-30",
+        "tag": "Computed",
+        "value": 56.23265736335266
+      },
+      {
+        "month": "2024-12-31",
+        "tag": "Computed",
+        "value": 58.86464344414798
+      },
+      {
+        "month": "2025-01-31",
+        "tag": "Computed",
+        "value": 59.982188137065094
+      },
+      {
+        "month": "2025-02-28",
+        "tag": "Computed",
+        "value": 55.732316258119376
+      },
+      {
+        "month": "2025-03-31",
+        "tag": "Computed",
+        "value": 50.092693148534295
+      },
+      {
+        "month": "2025-04-30",
+        "tag": "Computed",
+        "value": 50.783043095907246
+      },
+      {
+        "month": "2025-05-31",
+        "tag": "Computed",
+        "value": 59.34837612781389
+      },
+      {
+        "month": "2025-06-30",
+        "tag": "Computed",
+        "value": 68.4499423052826
+      },
+      {
+        "month": "2025-07-31",
+        "tag": "Computed",
+        "value": 75.90241225078654
+      },
+      {
+        "month": "2025-08-31",
+        "tag": "Computed",
+        "value": 73.98395813908739
+      },
+      {
+        "month": "2025-09-30",
+        "tag": "Computed",
+        "value": 78.94161195471571
+      },
+      {
+        "month": "2025-10-31",
+        "tag": "Computed",
+        "value": 87.56596482786358
+      },
+      {
+        "month": "2025-11-30",
+        "tag": "Computed",
+        "value": 83.47012372811503
+      },
+      {
+        "month": "2025-12-31",
+        "tag": "Computed",
+        "value": 81.70871960016987
+      },
+      {
+        "month": "2026-01-31",
+        "tag": "Computed",
+        "value": 81.95014781108246
+      },
+      {
+        "month": "2026-02-28",
+        "tag": "Computed",
+        "value": 74.14540613899865
+      },
+      {
+        "month": "2026-03-31",
+        "tag": "Computed",
+        "value": 71.55050563522298
+      },
+      {
+        "month": "2026-04-30",
+        "tag": "Computed",
+        "value": 90.4630990939229
+      },
+      {
+        "month": "2026-05-31",
+        "tag": "Computed",
+        "value": 103.24529753584115
+      },
+      {
+        "month": "2026-06-30",
+        "tag": "Computed",
+        "value": 91.72250711238745
+      },
+      {
+        "month": "2026-07-31",
+        "tag": "Computed",
+        "value": 92.98152094111661
+      },
+      {
+        "month": "2026-08-31",
+        "tag": "Computed",
+        "value": 95.50385914166182
+      },
+      {
+        "month": "2026-09-30",
+        "tag": "Computed",
+        "value": 100.92649904179008
+      },
+      {
+        "month": "2026-10-31",
+        "tag": "Computed",
+        "value": 100.0
+      }
+    ],
+    "members": [
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "NVDA",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "MSFT",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "AMZN",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "AVGO",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "AMD",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "ORCL",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "GOOGL",
+        "tier": 1
+      },
+      {
+        "included": true,
+        "reason": "Tier 1; verified price and verified share count",
+        "ticker": "META",
+        "tier": 1
+      },
+      {
+        "included": false,
+        "reason": "Tier 2 (high case only in spec); price not fetched (gap)",
+        "ticker": "AAPL",
+        "tier": 2
+      },
+      {
+        "included": false,
+        "reason": "Fetched by data lane but outside spec basket (6.1)",
+        "ticker": "MU",
+        "tier": null
+      },
+      {
+        "included": false,
+        "reason": "Fetched by data lane but outside spec basket (6.1)",
+        "ticker": "PLTR",
+        "tier": null
+      }
+    ],
+    "priceDates": {
+      "AMD": "2026-10-14",
+      "AMZN": "2026-10-14",
+      "AVGO": "2026-10-14",
+      "GOOGL": "2026-10-14",
+      "META": "2026-10-14",
+      "MSFT": "2026-10-14",
+      "NVDA": "2026-10-14",
+      "ORCL": "2026-10-14"
+    },
+    "rebase": {
+      "date": "2026-10-14",
+      "value": 100.0
+    },
+    "sample": {
+      "end": "2026-10-14",
+      "monthlyObs": 173,
+      "start": "2012-05-18"
+    },
+    "tag": "Computed",
+    "volatilityMonthly": 0.06885310890705965,
+    "weighting": "equal weight, monthly rebalanced (6.1)"
+  },
+  "bubblePremium": {
+    "interval80": null,
+    "intervalKind": "assumption_range",
+    "method": "Valuation premium of the basket or S&P 500 over a no-AI fundamental benchmark (6.6). Requires a dated current CAPE and current earnings; neither is verified.",
+    "point": null,
+    "reason": "Current CAPE from a dated, verified source is not available (Shiller series ends 2023-09, stale), and current full-index earnings are not verified (SPEC 6.6).",
+    "sourceRefs": [
+      "SHILLER:CAPE(to 2023-09, labelled stale)",
+      "FRED:CP"
+    ],
+    "status": "not_computed",
+    "unit": "percent above no-AI fundamental benchmark"
+  },
+  "capexShareOfGdpGrowth": {
+    "aiSpecificStatus": "not_identified",
+    "contributionPp": 0.7418816915344023,
+    "growthYoyPct": 2.1915745328897174,
+    "interval80": [
+      19.34373614953156,
+      48.35934037382889
+    ],
+    "intervalKind": "assumption_range",
+    "method": "Central: broad real info-processing equipment and software proxy (A679RX1Q020SBEA), not AI-specific; contribution net of central import leakage (0.3, Assumed). Interval: leakage 0.0 to 0.6 (Assumed) and, on the high side, adding all nonresidential structures (B009RX1Q020SBEA) as an outer bound that is not AI-specific. Data-centre structures are not separately identified.",
+    "point": 33.85153826168022,
+    "proxyName": "real information-processing equipment and software",
+    "quarter": "2026-Q2",
+    "quarterFredLabel": "2026-04-01",
+    "sharePct": 7.203348113863108,
+    "sourceRefs": [
+      "FRED:A679RX1Q020SBEA",
+      "FRED:GDPC1",
+      "FRED:B009RX1Q020SBEA"
+    ],
+    "tag": "Computed",
+    "unit": "percent of y/y real GDP growth"
+  },
+  "circularity": {
+    "reason": "No vendor-financing arrangement has been verified against a filing reference in this lane (6.8). Table is empty by design, not by omission.",
+    "rows": [],
+    "status": "not_computed",
+    "verifiedCount": 0
+  },
+  "dataAsOf": {
+    "companyfacts": "per filing",
+    "gdp": "2026-04-01",
+    "prices": "2026-10-14",
+    "z1Denominator": "2026-04-01",
+    "z1StockDate": "2026-06-30"
+  },
+  "earningsShare": {
+    "coverage": 0.8706885319248836,
+    "denominatorBn": 3900.587,
+    "denominatorFredLabel": "2026-04-01",
+    "denominatorLabel": "CP (after tax, SAAR); FRED label 2026-04-01",
+    "denominatorQuarter": "2026-Q2",
+    "interpretation": "AI-linked listed-company earnings exposure using global GAAP net income divided by domestic NIPA profits; attribution is Assumed and the denominator perimeter differs.",
+    "interval80": [
+      6.691672304706959,
+      12.922970311904335
+    ],
+    "intervalKind": "assumption_range",
+    "method": "Numerator: sum of a_i x TTM net income (us-gaap:NetIncomeLoss, SEC table). Denominator: FRED CP (corporate profits after tax without IVA and CCAdj), mean of last four SAAR quarters. Concept mismatch: GAAP net income of listed names (global) vs NIPA domestic profits. Non-operating items in GAAP net income are not separated from AI activity. Stale rows (last 10-K annual, not TTM): MSFT, MU.",
+    "netIncomeSources": {
+      "AMD": "SEC_AI_BASKET_TTM_FUNDAMENTALS (us-gaap:NetIncomeLoss)",
+      "AMZN": "SEC_AI_BASKET_TTM_FUNDAMENTALS (us-gaap:NetIncomeLoss)",
+      "AVGO": "SEC companyfacts ProfitLoss, FY2025 + 9M FY2026 - 9M FY2025 (see note)",
+      "GOOGL": "SEC_AI_BASKET_TTM_FUNDAMENTALS (us-gaap:NetIncomeLoss)",
+      "META": "SEC_AI_BASKET_TTM_FUNDAMENTALS (us-gaap:NetIncomeLoss)",
+      "NVDA": "SEC_AI_BASKET_TTM_FUNDAMENTALS (us-gaap:NetIncomeLoss)",
+      "ORCL": "SEC_AI_BASKET_TTM_FUNDAMENTALS (us-gaap:NetIncomeLoss)"
+    },
+    "numeratorBn": 359.2179,
+    "point": 9.209329262493055,
+    "reason": "Missing TTM net income for MSFT; numerator excludes them.",
+    "sourceRefs": [
+      "SEC:companyfacts-TTM(data-lane table)",
+      "FRED:CP",
+      "Attribution:6.2.1 (Assumed)"
+    ],
+    "status": "computed_partial",
+    "tag": "Computed",
+    "unit": "percent of US corporate profits after tax (CP, SAAR, mean of last four quarters)"
+  },
+  "financing": {
+    "acceptedFilingEvidence": [
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon net cash provided by operating activities",
+        "period": "FY2025, year ended 2025-12-31; reported in USD millions as 139,514",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "Does not disclose AI-only AWS revenue, GPU utilization, or customer AI unit economics.",
+            "id": "AMZN_10K_FY2025",
+            "publishedAt": "2026-02-06",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Amazon.com FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 139.514
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon cash capital expenditures (management definition)",
+        "period": "FY2025, year ended 2025-12-31; primarily technology infrastructure and fulfillment capacity; differs from gross cash purchases of PPE",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "Does not disclose AI-only AWS revenue, GPU utilization, or customer AI unit economics.",
+            "id": "AMZN_10K_FY2025",
+            "publishedAt": "2026-02-06",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Amazon.com FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 128.3
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet operating cash flow",
+        "period": "FY2025, year ended 2025-12-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "No common AI utilization metric or stand-alone AI revenue/margin series.",
+            "id": "GOOG_10K_FY2025",
+            "publishedAt": "2026-02-05",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Alphabet FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 164.7
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet capital expenditures",
+        "period": "FY2025, year ended 2025-12-31; primarily technical infrastructure",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "No common AI utilization metric or stand-alone AI revenue/margin series.",
+            "id": "GOOG_10K_FY2025",
+            "publishedAt": "2026-02-05",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Alphabet FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 91.4
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta capital expenditures including principal payments on finance leases",
+        "period": "FY2025, year ended 2025-12-31; includes USD 69.691bn purchases of property and equipment and USD 2.524bn finance-lease principal payments",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "No AI-specific revenue, returns on AI capex, or data-center utilization disclosure.",
+            "id": "META_10K_FY2025",
+            "publishedAt": "2026-01-29",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Meta Platforms FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 72.22
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta net cash provided by operating activities",
+        "period": "FY2025, year ended 2025-12-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "No AI-specific revenue, returns on AI capex, or data-center utilization disclosure.",
+            "id": "META_10K_FY2025",
+            "publishedAt": "2026-01-29",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Meta Platforms FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 115.8
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle net cash provided by operating activities",
+        "period": "FY2025, year ended 2025-05-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "Cloud revenue is not equivalent to AI revenue; physical utilization and workload attribution not reported as comparable series.",
+            "id": "ORCL_10K_FY2025",
+            "publishedAt": "2025-06-18",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Oracle FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 20.821
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle capital expenditures",
+        "period": "FY2025, year ended 2025-05-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "Cloud revenue is not equivalent to AI revenue; physical utilization and workload attribution not reported as comparable series.",
+            "id": "ORCL_10K_FY2025",
+            "publishedAt": "2025-06-18",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Oracle FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 21.215
+      },
+      {
+        "aiSpecific": false,
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle additional lease commitments primarily for data centers",
+        "period": "As of 2025-05-31; expected commencement FY2026\u2013FY2028 with 10\u201316 year terms; off-balance-sheet as of reporting date per filing",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": "Cloud revenue is not equivalent to AI revenue; physical utilization and workload attribution not reported as comparable series.",
+            "id": "ORCL_10K_FY2025",
+            "publishedAt": "2025-06-18",
+            "retrievedAt": "2026-10-14T16:21:48Z",
+            "title": "Oracle FY2025 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2025"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 43.4
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Contractual Obligations table, long-term debt principal and interest; not debt stock",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon debt principal and interest contractual payments",
+        "period": "Contractual payment schedule as of 2026-06-30, includes principal and interest through thereafter",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 220.309
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A Financing",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet long-term debt carrying value",
+        "period": "As of 2026-06-30; rounded issuer disclosure",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 98.2
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A Leases; Note 4 leases",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet uncommenced data-center-related lease payments",
+        "period": "As of 2026-06-30; future leases commencing 2026\u20132031, non-cancelable terms 1\u201326 years",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 85.2
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A Financing",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet new debt issued during first half 2026",
+        "period": "Six months ended 2026-06-30; USD 20.0bn US-dollar plus USD 31.8bn FX-denominated fixed-rate senior unsecured notes",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 51.8
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A liquidity bridge",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta capex including finance lease principal payments",
+        "period": "Six months ended 2026-06-30; issuer definition includes PPE purchases and finance lease principal",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 50.92
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 9 Commitments and Contingencies; lease obligations not on balance sheet yet",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta finance lease and operating lease commitments not yet commenced",
+        "period": "As of 2026-06-30; commencement remainder 2026 through 2036, lease terms >1 to 30 years",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 278.99
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 9 Commitments and Contingencies; overlapping categories may not be additive to uncommenced lease amount",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta non-cancelable contractual commitments",
+        "period": "As of 2026-06-30; USD 53.52bn due 2026 and USD 81.65bn due 2027; includes third-party cloud, servers, network, data centers and Reality Labs products",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 349.31
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 8 Long-term Debt",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta long-term debt carrying value",
+        "period": "As of 2026-06-30; face amount USD 84.0bn, net of discount/issuance cost USD 0.336bn",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 83.664
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Condensed consolidated balance sheets",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:36.370291Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle cash and cash equivalents",
+        "period": "As of 2026-08-31; includes USD 0.708bn marketable securities separately reported",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10Q_Q1_FY2027",
+            "publishedAt": "2026-09-10",
+            "retrievedAt": "2026-10-14T17:14:36.370291Z",
+            "title": "Oracle Q1 FY2027 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10Q_Q1_FY2027"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 36.369
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "FY2026 audited cash-flow summary/MD&A; issuer reports USD 32.0bn",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:35.938638Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle FY2026 operating cash flow",
+        "period": "FY2026 ended 2026-05-31; rounded issuer value",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10K_FY2026",
+            "publishedAt": "2026-06-22",
+            "retrievedAt": "2026-10-14T17:14:35.938638Z",
+            "title": "Oracle FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 32.0
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A liquidity discussion; property/equipment cash purchase and capital expenditure definition need separation",
+          "method": "SEC filing HTML search and table/section review; source amounts in USD millions divided by 1,000 when shown in USD billions.",
+          "retrievedAt": "2026-10-14T17:14:35.938638Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle FY2026 cash capital expenditures",
+        "period": "FY2026 ended 2026-05-31; cash used for capital expenditures",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10K_FY2026",
+            "publishedAt": "2026-06-22",
+            "retrievedAt": "2026-10-14T17:14:35.938638Z",
+            "title": "Oracle FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 55.7
+      },
+      {
+        "aiSpecific": false,
+        "correctionHistory": {
+          "correction": "4.27% corresponds to November 2025 Notes alone; full Note 8 range minimum is 3.63%.",
+          "previousPeriod": "As of 2026-06-30",
+          "previousValue": 4.27
+        },
+        "extraction": {
+          "locator": "Note 8 long-term debt tranche table, full note including May 2026 Notes row",
+          "method": "Re-extracted from archived SEC filing HTML; 4.27% identified only in November 2025 Notes subset",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta June 2026 debt note effective interest rate range",
+        "period": "As of 2026-06-30; full Note 8 effective-rate range is 3.63%\u20136.48%; Nov-2025 subset lower endpoint 4.27% is not full-note bound",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "percent per year lower endpoint",
+        "value": 3.63
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 10\u2014Debt: total debt, current portion, long-term debt; Balance Sheet",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Microsoft total debt principal",
+        "period": "As of 2026-06-30; includes current USD 9.227bn and long-term USD 31.067bn; debt table total USD 40.294bn",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 40.294
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Material Cash Requirements table; Note 6 property and equipment; primarily data centers",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Microsoft construction commitments",
+        "period": "As of 2026-06-30; obligations by 2027 USD 29.848bn and thereafter USD 4.718bn",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 34.566
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Material Cash Requirements table; Note 13 Leases; undiscounted future cash obligations",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Microsoft operating and finance lease cash obligations including imputed interest",
+        "period": "As of 2026-06-30; USD 32.411bn in 2027 and USD 411.095bn thereafter",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 443.506
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Material Cash Requirements table; includes datacenter open purchase orders and take-or-pay contracts; section notes category definition",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Microsoft purchase commitments",
+        "period": "As of 2026-06-30; USD 169.008bn in 2027, USD 25.052bn thereafter",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 194.06
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A Cash Flows; cash capital expenditures are not PPE additions; include capex and other adjustments",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon cash capital expenditures",
+        "period": "Six months ended 2026-06-30; issuer cash capex definition; compared with USD 53.1bn Q2 cash capex",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 96.3
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Consolidated statements of cash flows, financing activities; principal payments on finance leases",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon finance lease principal repayments",
+        "period": "Six months ended 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 1.599
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Condensed consolidated balance sheets, long-term debt; Note 7 debt for individual coupons and maturity schedule",
+          "method": "Read SEC filing table/section; amounts in USD millions converted to USD billions where applicable.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet long-term debt carrying value",
+        "period": "As of 2026-06-30; current portion reported separately",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 98.165
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 5 Long-Term Debt: total debt note table; USD 129.665bn gross outstanding before unamortized issuance/discounts; long-term balance after current portion",
+          "method": "Direct SEC filing HTML extraction; source values in USD millions converted to billions where stated.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon long-term debt carrying value",
+        "period": "As of 2026-06-30; current portion of long-term debt USD 3.330bn; excludes separate short-term debt",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 128.894
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Consolidated cash flow statement; MD&A Financing activities",
+          "method": "SEC reported USD 62,913 million divided by 1,000",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon cash provided by financing activities",
+        "period": "Six months ended 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 62.913
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 13 Leases: supplemental cash flow information; financing cash flows from finance leases",
+          "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Microsoft cash financing outflow for finance leases",
+        "period": "FY2026 ended 2026-06-30; cash paid through financing cash flow",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 3.101
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 13 Leases: ROU assets obtained in exchange for lease obligations",
+          "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Microsoft right-of-use assets obtained under finance leases",
+        "period": "FY2026 ended 2026-06-30; noncash ROU asset additions",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 24.608
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "MD&A financing activities; PPE acquired under finance leases",
+          "method": "Direct SEC filing HTML table extraction; USD millions converted to billions.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon property and equipment acquired under finance leases",
+        "period": "Six months ended 2026-06-30; noncash additions reported approximately USD 2.1bn",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 2.1
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 7 Debt; Future principal payments for all borrowings table",
+          "method": "USD millions divided by 1,000; includes all borrowing principal, not carrying debt.",
+          "retrievedAt": "2026-10-14T17:14:35.938638Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle future principal payments on borrowings",
+        "period": "As of 2026-05-31; fiscal 2027 USD 7.210bn, FY2028 USD 10.145bn, FY2029 USD 5.500bn, FY2030 USD 7.250bn, FY2031 USD 9.750bn, thereafter USD 90.250bn",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10K_FY2026",
+            "publishedAt": "2026-06-22",
+            "retrievedAt": "2026-10-14T17:14:35.938638Z",
+            "title": "Oracle FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 130.105
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 9 Leases; cash paid for amounts included in measurement of lease liabilities",
+          "method": "USD millions divided by 1,000; cash payment is not equal to principal only.",
+          "retrievedAt": "2026-10-14T17:14:35.938638Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle finance-lease cash payments",
+        "period": "FY2026 ended 2026-05-31; cash paid related to finance lease liabilities",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10K_FY2026",
+            "publishedAt": "2026-06-22",
+            "retrievedAt": "2026-10-14T17:14:35.938638Z",
+            "title": "Oracle FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 0.452
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Balance-sheet table; excludes restricted/noncurrent assets",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "MSFT unrestricted cash and short-term investments",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 76.843
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Current portion 9.227 plus long-term 31.067",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "MSFT debt carrying value total",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 40.294
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 10 principal schedule; FY2027 9.250 plus thereafter 36.886",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.198942Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "MSFT face principal debt",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "MSFT_10K_FY2026",
+            "publishedAt": "2026-07-29",
+            "retrievedAt": "2026-10-14T17:14:34.198942Z",
+            "title": "Microsoft FY2026 Form 10-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "MSFT_10K_FY2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 46.136
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 5 cash table excludes separately listed restricted 2.714",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon unrestricted cash and marketable securities",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 122.988
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Cash table restricted amount; not general liquidity",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon restricted cash and securities",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 2.714
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Current portion 3.330 plus long-term debt 128.894",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.568071Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Amazon total debt carrying value",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "AMZN_10Q_Q2_2026",
+            "publishedAt": "2026-07-31",
+            "retrievedAt": "2026-10-14T17:14:34.568071Z",
+            "title": "Amazon Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "AMZN_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 132.224
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Balance sheet table",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet cash and marketable securities",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 242.474
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 7 face value",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet face long-term debt",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 101.085
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Face 101.085 less 0.921 unamortized discount/issuance costs",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:34.951160Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Alphabet debt carrying value total",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "GOOG_10Q_Q2_2026",
+            "publishedAt": "2026-07-23",
+            "retrievedAt": "2026-10-14T17:14:34.951160Z",
+            "title": "Alphabet Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "GOOG_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 100.164
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Cash flow reconciliation; restricted from general use",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta restricted cash and equivalents",
+        "period": "As of 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 13.809
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Cash-flow statement financing activities",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:35.465587Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Meta finance-lease principal payments",
+        "period": "Six months ended 2026-06-30",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "META_10Q_Q2_2026",
+            "publishedAt": "2026-07-30",
+            "retrievedAt": "2026-10-14T17:14:35.465587Z",
+            "title": "Meta Platforms Q2 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          }
+        ],
+        "sourceIds": [
+          "META_10Q_Q2_2026"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 1.805
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Interim balance sheet",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:36.370291Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle Q1 FY2027 current debt carrying value",
+        "period": "As of 2026-08-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10Q_Q1_FY2027",
+            "publishedAt": "2026-09-10",
+            "retrievedAt": "2026-10-14T17:14:36.370291Z",
+            "title": "Oracle Q1 FY2027 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10Q_Q1_FY2027"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 7.625
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Interim balance sheet",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:36.370291Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle Q1 FY2027 noncurrent debt carrying value",
+        "period": "As of 2026-08-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10Q_Q1_FY2027",
+            "publishedAt": "2026-09-10",
+            "retrievedAt": "2026-10-14T17:14:36.370291Z",
+            "title": "Oracle Q1 FY2027 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10Q_Q1_FY2027"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 117.712
+      },
+      {
+        "aiSpecific": false,
+        "extraction": {
+          "locator": "Note 9 current 0.749 plus noncurrent 8.436",
+          "method": "Re-extracted from SEC filing HTML archived for this closure.",
+          "retrievedAt": "2026-10-14T17:14:36.370291Z"
+        },
+        "interpretation": "Consolidated/company segment evidence; does not identify AI-only revenue, AI capex funding allocation, utilization, or project-level financing. Source locators and retrieval timestamps are retained in linked accepted evidence.",
+        "metric": "Oracle finance lease liabilities",
+        "period": "As of 2026-08-31",
+        "sourceEvidence": [
+          {
+            "availabilityLimit": null,
+            "id": "ORCL_10Q_Q1_FY2027",
+            "publishedAt": "2026-09-10",
+            "retrievedAt": "2026-10-14T17:14:36.370291Z",
+            "title": "Oracle Q1 FY2027 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+          }
+        ],
+        "sourceIds": [
+          "ORCL_10Q_Q1_FY2027"
+        ],
+        "status": "Observed in accepted company research",
+        "unit": "USD billion",
+        "value": 9.185
+      }
+    ],
+    "coverage": 0.75,
+    "coverageNote": "Fraction of Tier 1 names with a reported capex observation; not financing-source coverage.",
+    "leasePrivateCreditAndAbs": {
+      "reason": "Lease additions, SPV/off-balance-sheet, private-credit and ABS funding are not isolated in the companyfacts extraction; filing commitments are not a cash-flow split.",
+      "status": "not_computed"
+    },
+    "perName": [
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": null,
+        "changeInCash": null,
+        "debtProceeds": null,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 134.36,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "NVDA"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": 115.948,
+        "changeInCash": null,
+        "debtProceeds": null,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 182.935,
+        "sourcesUsesResidual": null,
+        "stale": true,
+        "ticker": "MSFT"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": null,
+        "changeInCash": null,
+        "debtProceeds": 81.925,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 161.403,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "AMZN"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": 1.25,
+        "changeInCash": null,
+        "debtProceeds": 9.445,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 40.653,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "AVGO"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": 1.677,
+        "changeInCash": null,
+        "debtProceeds": null,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 10.08,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "AMD"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": 75.66,
+        "changeInCash": null,
+        "debtProceeds": null,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 46.94,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "ORCL"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": 132.402,
+        "changeInCash": null,
+        "debtProceeds": null,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 185.675,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "GOOGL"
+      },
+      {
+        "acquisitions": null,
+        "aiCapexFundingAllocation": null,
+        "capex": 89.325,
+        "changeInCash": null,
+        "debtProceeds": 54.816,
+        "debtRepayments": null,
+        "equityIssuanceNet": null,
+        "leaseAdditions": null,
+        "note": "incomplete sources-and-uses: debt repayments, lease additions, equity flows, acquisitions, cash change and AI-capex allocation unavailable",
+        "operatingCashFlow": 130.301,
+        "sourcesUsesResidual": null,
+        "stale": false,
+        "ticker": "META"
+      }
+    ],
+    "period": "TTM, mixed issuer period ends; see per-name source row",
+    "reconciliation": {
+      "aiCapexAllocation": "Assumption required; not observed or inferred here",
+      "identity": "OCF + debt issuance - debt repayment + lease additions + net equity issuance - capex - acquisitions + change in cash = residual",
+      "missingFields": [
+        "debtRepayments",
+        "leaseAdditions",
+        "equityIssuanceNet",
+        "acquisitions",
+        "changeInCash"
+      ],
+      "status": "not_computed"
+    },
+    "sourcesAndUses": {
+      "aiCapexFundingAllocation": null,
+      "names": [
+        "NVDA",
+        "MSFT",
+        "AMZN",
+        "AVGO",
+        "AMD",
+        "ORCL",
+        "GOOGL",
+        "META"
+      ],
+      "namesWithCapexObservation": 6,
+      "reason": "Issuer-wide sources and uses not fully observed; AI capex is not separately attributed.",
+      "sourcesUsesResidual": null,
+      "status": "not_computed"
+    },
+    "tag": "Computed",
+    "unitNote": "USD billions, trailing four quarters with mixed issuer period ends; MSFT annual row is stale"
+  },
+  "growthLessDirectAIInvestmentContribution": [
+    {
+      "accountingExclusionRange": [
+        2.7739101019641152,
+        2.860697184376279
+      ],
+      "basis": "2023 vs 2022 (annual averages)",
+      "chainingResidualPp": -5.125721788346027e-06,
+      "contributionGrossPp": 0.1446451373536064,
+      "contributionPp": 0.10125159614752448,
+      "growthLessDirectAIInvestmentContribution": 2.817303643170197,
+      "interpretation": "Accounting exclusion only; not a causal no-AI counterfactual (omits imports beyond the leakage proxy, crowding out, productivity, prices and multiplier effects).",
+      "quartersUsed": 4,
+      "reported": 2.9185552393177217,
+      "status": "full_year",
+      "tag": "Computed",
+      "unit": "percent y/y, real (chained 2017)",
+      "year": 2023
+    },
+    {
+      "accountingExclusionRange": [
+        2.624980004739458,
+        2.8210349920910116
+      ],
+      "basis": "2024 vs 2023 (annual averages)",
+      "chainingResidualPp": -0.0002747667211712712,
+      "contributionGrossPp": 0.3267583122525893,
+      "contributionPp": 0.2287308185768125,
+      "growthLessDirectAIInvestmentContribution": 2.723007498415235,
+      "interpretation": "Accounting exclusion only; not a causal no-AI counterfactual (omits imports beyond the leakage proxy, crowding out, productivity, prices and multiplier effects).",
+      "quartersUsed": 4,
+      "reported": 2.9517383169920475,
+      "status": "full_year",
+      "tag": "Computed",
+      "unit": "percent y/y, real (chained 2017)",
+      "year": 2024
+    },
+    {
+      "accountingExclusionRange": [
+        1.3905428586718795,
+        1.962711988582802
+      ],
+      "basis": "2025 vs 2024 (annual averages)",
+      "chainingResidualPp": -0.0012868346137655529,
+      "contributionGrossPp": 0.9536152165182041,
+      "contributionPp": 0.6675306515627428,
+      "growthLessDirectAIInvestmentContribution": 1.6766274236273409,
+      "interpretation": "Accounting exclusion only; not a causal no-AI counterfactual (omits imports beyond the leakage proxy, crowding out, productivity, prices and multiplier effects).",
+      "quartersUsed": 4,
+      "reported": 2.3441580751900837,
+      "status": "full_year",
+      "tag": "Computed",
+      "unit": "percent y/y, real (chained 2017)",
+      "year": 2025
+    },
+    {
+      "accountingExclusionRange": [
+        1.2737874267041958,
+        1.9580771770124752
+      ],
+      "basis": "2026 Q1-Q2 vs 2025 Q1-Q2",
+      "chainingResidualPp": 0.00039959005074119425,
+      "contributionGrossPp": 1.1404829171804656,
+      "contributionPp": 0.7983380420263259,
+      "growthLessDirectAIInvestmentContribution": 1.6159323018583356,
+      "interpretation": "Accounting exclusion only; not a causal no-AI counterfactual (omits imports beyond the leakage proxy, crowding out, productivity, prices and multiplier effects).",
+      "quartersUsed": 2,
+      "reported": 2.4142703438846613,
+      "status": "partial_year",
+      "tag": "Computed",
+      "unit": "percent y/y, real (chained 2017)",
+      "year": 2026
+    }
+  ],
+  "limits": [
+    "Attribution fractions a_i and f are Assumed judgements; intervals are assumption ranges, not sampling intervals (6.2.2).",
+    "Interval labels: marketCapShare.interval80 and capexShareOfGdpGrowth.interval80 are assumption_range.",
+    "Earnings numerator uses GAAP net income of listed names; the denominator is NIPA domestic profits. Concept mismatch.",
+    "AVGO TTM uses us-gaap:ProfitLoss (includes noncontrolling interests), because NetIncomeLoss is not current in the snapshot.",
+    "MSFT TTM net income is the last 10-K annual value (stale) per the SEC table.",
+    "Basket sample 2012-05-18 to 2026-10-14 (173 monthly returns). Basket volatility is the full-sample monthly sd, which includes crisis months, so the normal-regime variance is conservative and the drawdown probabilities are upper-leaning.",
+    "Bubble premium is not computed (6.6). A diagnostic proxy is kept out of site outputs (internal/bubble_proxy.json).",
+    "Circularity table is empty: no arrangement verified against a filing.",
+    "Off-balance-sheet and private financing not extracted (6.7).",
+    "Capex contribution uses one proxy (information processing and software). Data-centre structures are not separated; the high case adds all nonresidential structures as an outer bound."
+  ],
+  "marketCapShare": {
+    "allCorporateShare": {
+      "interval80": [
+        6.047217997666315,
+        11.847302029343856
+      ],
+      "point": 8.428669751140406
+    },
+    "coverage": 1.0,
+    "coverageNote": "Share of a_i-weighted Tier 1 market value in the numerator. Excludes Tier 2 (AAPL) and any AI-exposed names outside the spec basket.",
+    "denominatorBn": 101847.02059388725,
+    "denominatorDate": "2026-04-01",
+    "denominatorStockDate": "2026-06-30",
+    "fCentral": 0.8,
+    "fScaling": [
+      0.7,
+      0.9
+    ],
+    "interpretation": "AI-linked exposure estimate from Assumed issuer attribution fractions; this is not the share of an observed AI product line and is not a bubble-premium estimate.",
+    "interval80": [
+      7.559022497082894,
+      14.809127536679819
+    ],
+    "intervalFull": [
+      6.719131108518128,
+      16.924717184776938
+    ],
+    "intervalFullKind": "assumption_range",
+    "intervalKind": "assumption_range",
+    "method": "Numerator: sum over included Tier 1 names of a_i x shares x close on price_date (USD bn). Denominator: Z.1 all-sector corporate equities (stock dated 2026-06-30; FRED label 2026-04-01) rolled forward by the S&P 500 price change to price_date, scaled by f (Assumed, central 0.80). interval80 is the low and high attribution cases at central f (assumption range, not sampling). intervalFull also spans f in [0.70, 0.90].",
+    "missingTier1": [],
+    "numeratorBn": 10730.436271543394,
+    "perName": {
+      "AMD": {
+        "attributionCentral": 0.5,
+        "mcapBn": 930.7794686968558
+      },
+      "AMZN": {
+        "attributionCentral": 0.35,
+        "mcapBn": 2733.166385195736
+      },
+      "AVGO": {
+        "attributionCentral": 0.5,
+        "mcapBn": 1647.3121435575
+      },
+      "GOOGL": {
+        "attributionCentral": 0.35,
+        "mcapBn": 4251.63737915039
+      },
+      "META": {
+        "attributionCentral": 0.35,
+        "mcapBn": 1878.8876852110216
+      },
+      "MSFT": {
+        "attributionCentral": 0.35,
+        "mcapBn": 3964.481335313587
+      },
+      "NVDA": {
+        "attributionCentral": 0.9,
+        "mcapBn": 5355.460073852539
+      },
+      "ORCL": {
+        "attributionCentral": 0.35,
+        "mcapBn": 376.0454978404999
+      }
+    },
+    "point": 10.535837188925507,
+    "priceDate": "2026-10-14",
+    "rollForwardDetail": {
+      "priceDateUsed": "2026-10-14",
+      "rollFactor": 1.0292798428303354,
+      "stockDateUsed": "2026-06-30"
+    },
+    "rollForwardFactor": 1.0292798428303354,
+    "rollForwardMethod": "Z.1 2026-06-30 stock x (S&P 500 close 2026-10-14 / S&P 500 close 2026-06-30)",
+    "sourceRefs": [
+      "FRED:BOGZ1LM893064105Q",
+      "YAHOO:chart-close(private,derived-only)",
+      "SEC:dei-cover-page(10-Q/10-K)",
+      "Attribution:6.2.1 (Assumed)"
+    ],
+    "tag": "Computed",
+    "unit": "percent of S&P-scaled market cap"
+  },
+  "method": "US AI module (SPEC 6). Market-cap share: Tier 1 names with verified shares and prices, attribution a_i (Assumed), Z.1 denominator rolled forward by the S&P 500 price change and scaled by f (Assumed). Earnings share: TTM net income (SEC) times a_i over FRED CP (after tax). Capex share and ex-AI growth: FRED A679RX1Q020SBEA (real), direct-investment accounting exclusion net of import leakage (Assumed), not a causal no-AI counterfactual. AI-linked exposure shares do not measure bubble premium. Bubble premium not computed. Financing: issuer sources-and-uses is incomplete; no FCF/debt funding allocation to AI capex is inferred.",
+  "s_AI": [
+    {
+      "quarter": "2023-Q3",
+      "shareOfGdpPct": 5.3244595115747675,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2023-Q4",
+      "shareOfGdpPct": 5.419665049439398,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2024-Q1",
+      "shareOfGdpPct": 5.449170973753,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2024-Q2",
+      "shareOfGdpPct": 5.4880057413196885,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2024-Q3",
+      "shareOfGdpPct": 5.586139080647577,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2024-Q4",
+      "shareOfGdpPct": 5.57687353127997,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2025-Q1",
+      "shareOfGdpPct": 6.025138124548816,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2025-Q2",
+      "shareOfGdpPct": 6.301383868735635,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2025-Q3",
+      "shareOfGdpPct": 6.371895518784375,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2025-Q4",
+      "shareOfGdpPct": 6.618181549887569,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2026-Q1",
+      "shareOfGdpPct": 7.060727351957824,
+      "tag": "Computed"
+    },
+    {
+      "quarter": "2026-Q2",
+      "shareOfGdpPct": 7.203348113863108,
+      "tag": "Computed"
+    }
+  ],
+  "schemaVersion": "gef-v3-us-ai/0.1"
+}

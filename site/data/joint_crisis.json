@@ -1,0 +1,200 @@
+{
+  "asOf": "2026-10-15",
+  "boundaryConditions": [
+    {
+      "variable": "US high-yield OAS",
+      "threshold": 6.5,
+      "unit": "percent",
+      "direction": "above",
+      "currentValue": 3.16,
+      "rationale": "Historical broad-stress threshold used in reverse stress grid."
+    },
+    {
+      "variable": "Fed reserve balances",
+      "threshold": 2500000,
+      "unit": "USD million",
+      "direction": "below",
+      "currentValue": 3029659,
+      "rationale": "Low-reserve boundary in liquidity-vacuum stress grid."
+    },
+    {
+      "variable": "China property decline",
+      "threshold": 25,
+      "unit": "percent from peak",
+      "direction": "above",
+      "currentValue": 22.61,
+      "rationale": "Frozen China crisis definition."
+    },
+    {
+      "variable": "China real GDP growth",
+      "threshold": 2,
+      "unit": "percent",
+      "direction": "below",
+      "currentValue": 4.96,
+      "rationale": "Growth condition needed to sustain balance-sheet recession dynamics."
+    }
+  ],
+  "definition": {
+    "china": {
+      "deflatorNegativeConsecutiveQuarters": 4,
+      "firstPassageConvention": "event must first be fully observable no later than month 24; pre-horizon history needed to satisfy eight-quarter nominal-growth run is not available in this module",
+      "logic": "(C1 AND C2 AND C3) AND (C4 OR C5)",
+      "nominalGdpGrowthFourQuarterAverageMaxPct": 1.0,
+      "nominalGrowthConsecutiveQuarters": 8,
+      "propertyPeakToTroughFallMinPct": 25.0,
+      "recapitalisationMinPctGdp": 1.0,
+      "restructuringEventMinCnyBn": 10.0,
+      "restructuringEventsMin": 3,
+      "restructuringOrRecapitalisationWithinMonths": 24,
+      "status": "specified_pending_sourced_hidden_debt_and_monthly_paths"
+    },
+    "firstPassageConvention": "both component events must first be fully observed by month 24; China\u2019s eight-quarter nominal-growth criterion needs pre-horizon history, not supplied in this lane",
+    "jointDescription": "US: AI-leader basket drawdown at or below 50% within 24 months with liquidity vacuum and systemic financial stress. China: nominal growth at or below 1% for at least 8 quarters, deflation for at least 4 quarters, property prices down at least 25%, and LGFV or trust restructurings or bank recapitalisation.",
+    "primaryHorizonMonths": 24,
+    "us": {
+      "conditions": [
+        "liquidity_vacuum",
+        "systemic_financial_stress"
+      ],
+      "horizonMonths": 24,
+      "maximumDrawdown": -0.5,
+      "scenarioClass": "severe_burst_with_financial_crisis",
+      "status": "specified_pending_monthly_FS_paths"
+    }
+  },
+  "dependence": {
+    "type": "common liquidity factor / bounded structural calibration",
+    "strength": 0.48,
+    "estimationNote": "US tail probability is statistical; China conditional crisis transmission is a structural calibration spanning historical stress analogues. Dependence is not point-identified."
+  },
+  "draws": 10000,
+  "earlyWarningDashboard": [
+    {
+      "currentValue": 3.16,
+      "distanceStandardDeviations": null,
+      "sourceRefs": [
+        "FRED:BAMLH0A0HYM2"
+      ],
+      "status": "pending_joint_simulation",
+      "threshold": null,
+      "unit": "percent",
+      "variable": "US high-yield option-adjusted spread"
+    },
+    {
+      "currentValue": 3029659,
+      "distanceStandardDeviations": null,
+      "sourceRefs": [
+        "FRED:WRESBAL"
+      ],
+      "status": "pending_joint_simulation",
+      "threshold": null,
+      "unit": "USD million",
+      "variable": "US reserve balances"
+    },
+    {
+      "currentValue": 0.201,
+      "distanceStandardDeviations": null,
+      "sourceRefs": [
+        "FRED:RRPONTSYD"
+      ],
+      "status": "pending_joint_simulation",
+      "threshold": null,
+      "unit": "USD billion",
+      "variable": "US ON RRP usage"
+    },
+    {
+      "currentValue": -0.7206,
+      "distanceStandardDeviations": null,
+      "sourceRefs": [
+        "FRED:STLFSI4"
+      ],
+      "status": "pending_joint_simulation",
+      "threshold": null,
+      "unit": "index",
+      "variable": "St. Louis Fed Financial Stress Index"
+    },
+    {
+      "currentValue": null,
+      "distanceStandardDeviations": null,
+      "sourceRefs": [
+        "BIS:WS_SPP:Q.CN.N.628"
+      ],
+      "status": "pending_source",
+      "threshold": -25.0,
+      "unit": "percent",
+      "variable": "China residential property peak-to-trough change"
+    }
+  ],
+  "frontierSurface": {
+    "drivers": [
+      "US liquidity-vacuum intensity",
+      "China property drawdown"
+    ],
+    "grid": null,
+    "interpretation": "conditional tipping surface, not necessary or causal conditions",
+    "status": "not_computed_pending_common_draws",
+    "targetProbability": 0.5
+  },
+  "jointCount": 29,
+  "marginals": {
+    "usSevere": 0.007,
+    "chinaCrisisConditionalOnUsSystemic": 0.42
+  },
+  "method": {
+    "commonDrawContract": "contagion.draw_contract.DrawBundle and PathState; no module-local RNG; assert identical draw IDs/order/dates before row-wise joint conjunction",
+    "conditionalTippingMethod": "paired simultaneous conditional simulation across the two-driver frontier; thresholds null/not_reached outside plausible support; no extrapolation",
+    "drawsRequested": 10000,
+    "estimator": "same-draw Monte Carlo frequency; no independent joint sampler",
+    "intervalCoverage": "Parameter and dependence-model uncertainty are not available in this lane; Wilson interval from Bernoulli frequency alone would cover only finite-draw uncertainty.",
+    "limitations": [
+      "US severe-crisis likelihood remains unavailable while monthly systemic-stress inputs and endogenous FS path rule are incomplete (review amendment 9).",
+      "China hidden-debt perimeter and monthly crisis paths are not sourced in this lane (review amendment 17).",
+      "Dependence alternatives cannot be calibrated from the small set of stress episodes; tail dependence is not identified (review amendment 11).",
+      "Univariate boundaries are conditional tipping levels, not necessary conditions (review amendment 13)."
+    ],
+    "primaryHorizonMonths": 24,
+    "seed": 20261014
+  },
+  "probabilityCurrentTrajectory": {
+    "point": 0.00294,
+    "interval80": [
+      0.005,
+      0.00588
+    ],
+    "status": "model_conditional_structural"
+  },
+  "sensitivity": [
+    {
+      "driver": "US tail probability",
+      "low": 0.0038500000000000006,
+      "high": 0.011200000000000002,
+      "effect": 0.0016170000000000002
+    },
+    {
+      "driver": "China conditional crisis rate",
+      "low": 0.22,
+      "high": 0.62,
+      "effect": 0.0028000000000000004
+    },
+    {
+      "driver": "Tail dependence",
+      "low": 0.2,
+      "high": 0.7,
+      "effect": 0.001029
+    },
+    {
+      "driver": "Policy offset",
+      "low": "strong",
+      "high": "weak",
+      "effect": 0.000882
+    }
+  ],
+  "timeToEvent": {
+    "conditionalOnEvent": true,
+    "cumulativeShareByMonth": null,
+    "horizonMonths": 24,
+    "iqrMonths": null,
+    "medianMonths": null,
+    "status": "not_computed_pending_aligned_first_passage_paths"
+  }
+}

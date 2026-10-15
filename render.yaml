@@ -4,10 +4,10 @@
 # Free-plan limits and sleep behaviour: see docs/DEPLOYMENT.md. No secrets are stored here.
 services:
   - type: web
-    name: global-economic-futures
+    name: global-economic-futures-2026-2030
     runtime: docker
     plan: free
-    region: frankfurt
+    region: oregon
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /healthz

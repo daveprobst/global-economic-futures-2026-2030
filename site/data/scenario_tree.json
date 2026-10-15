@@ -1,0 +1,382 @@
+{
+  "asOf": "2026-10-15",
+  "status": "model_conditional_weak_skill",
+  "scenarios": [
+    {
+      "id": "continued_boom",
+      "name": "Continued boom",
+      "class": "continued_boom",
+      "description": "Maximum drawdown stays above 15% and the AI basket continues to expand.",
+      "probability": 0.3979,
+      "interval80": [
+        0.21810062759991408,
+        0.4950265818898861
+      ],
+      "definition": {
+        "drawdownThreshold": -0.15,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    },
+    {
+      "id": "no_burst_sideways",
+      "name": "Sideways adjustment",
+      "class": "no_burst_sideways",
+      "description": "Maximum drawdown stays above 20%; valuation compresses without a bust.",
+      "probability": 0.3075,
+      "interval80": [
+        0.17396355322229376,
+        0.4043776117295117
+      ],
+      "definition": {
+        "drawdownThreshold": -0.2,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    },
+    {
+      "id": "mild_adjustment",
+      "name": "Mild adjustment",
+      "class": "mild_adjustment",
+      "description": "Peak-to-trough decline of 20\u201335%.",
+      "probability": 0.0797,
+      "interval80": [
+        0.008028010707852997,
+        0.22381724896656408
+      ],
+      "definition": {
+        "drawdownThreshold": -0.2,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    },
+    {
+      "id": "moderate_burst",
+      "name": "Moderate burst",
+      "class": "moderate_burst",
+      "description": "Peak-to-trough decline of 35\u201350%.",
+      "probability": 0.0309,
+      "interval80": [
+        0.010453828361285058,
+        0.08915765593220201
+      ],
+      "definition": {
+        "drawdownThreshold": -0.35,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    },
+    {
+      "id": "deep_drawdown_no_vacuum",
+      "name": "Deep drawdown, liquidity holds",
+      "class": "deep_drawdown_no_vacuum",
+      "description": "Decline exceeds 50%, but broad funding liquidity holds.",
+      "probability": 0.163,
+      "interval80": [
+        0.0541366007839846,
+        0.334471186380116
+      ],
+      "definition": {
+        "drawdownThreshold": -0.5,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    },
+    {
+      "id": "severe_burst",
+      "name": "Severe burst + liquidity vacuum",
+      "class": "severe_burst",
+      "description": "Decline exceeds 50% alongside a liquidity vacuum.",
+      "probability": 0.014,
+      "interval80": [
+        0.0077291084693354275,
+        0.030367382334711195
+      ],
+      "definition": {
+        "drawdownThreshold": -0.5,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    },
+    {
+      "id": "severe_burst_with_financial_crisis",
+      "name": "Severe burst + financial crisis",
+      "class": "severe_burst_with_financial_crisis",
+      "description": "Decline exceeds 50%, a liquidity vacuum and systemic funding stress coincide.",
+      "probability": 0.007,
+      "interval80": [
+        0.0037254983946330275,
+        0.01430899502832381
+      ],
+      "definition": {
+        "drawdownThreshold": -0.5,
+        "horizonMonths": 24
+      },
+      "evidenceRefs": [
+        "World Bank:CM.MKT.INDX.ZG",
+        "GPR",
+        "FRED:NFCI/STLFSI4"
+      ]
+    }
+  ],
+  "drivers": [
+    {
+      "id": "ai_runup_36m",
+      "label": "AI basket 36-month run-up",
+      "currentValue": 216.89150720019202,
+      "unit": "percent",
+      "sourceRef": "Yahoo-derived private prices"
+    },
+    {
+      "id": "ai_return_12m",
+      "label": "AI basket 12-month return",
+      "currentValue": 14.199621047491618,
+      "unit": "percent",
+      "sourceRef": "Yahoo-derived private prices"
+    },
+    {
+      "id": "hy_oas",
+      "label": "US high-yield spread",
+      "currentValue": 3.16,
+      "unit": "percent",
+      "sourceRef": "FRED:BAMLH0A0HYM2"
+    },
+    {
+      "id": "china_property",
+      "label": "China property decline from peak",
+      "currentValue": 22.61,
+      "unit": "percent",
+      "sourceRef": "BIS:WS_SPP"
+    }
+  ],
+  "stateProbabilities": [
+    {
+      "geopolitics": "calm",
+      "liquidity": "ample",
+      "probability": 0.008870293073519116
+    },
+    {
+      "geopolitics": "calm",
+      "liquidity": "neutral",
+      "probability": 0.009997903008208645
+    },
+    {
+      "geopolitics": "calm",
+      "liquidity": "vacuum",
+      "probability": 0.008090538552858512
+    },
+    {
+      "geopolitics": "tense",
+      "liquidity": "ample",
+      "probability": 0.01614886524460576
+    },
+    {
+      "geopolitics": "tense",
+      "liquidity": "neutral",
+      "probability": 0.07340461917793545
+    },
+    {
+      "geopolitics": "tense",
+      "liquidity": "vacuum",
+      "probability": 0.007533609000806605
+    },
+    {
+      "geopolitics": "crisis",
+      "liquidity": "ample",
+      "probability": 0.07597138146769875
+    },
+    {
+      "geopolitics": "crisis",
+      "liquidity": "neutral",
+      "probability": 0.7726925616374738
+    },
+    {
+      "geopolitics": "crisis",
+      "liquidity": "vacuum",
+      "probability": 0.027290228836893353
+    }
+  ],
+  "conditionalProbabilities": [
+    {
+      "geopolitics": "calm",
+      "liquidity": "ample",
+      "probabilities": {
+        "continued_boom": 0.4125054809077914,
+        "no_burst_sideways": 0.32411144928469315,
+        "mild_adjustment": 0.06936735240349952,
+        "moderate_burst": 0.026850833309030816,
+        "deep_drawdown_no_vacuum": 0.1671648840949851,
+        "severe_burst": 0.0,
+        "severe_burst_with_financial_crisis": 0.0
+      }
+    },
+    {
+      "geopolitics": "calm",
+      "liquidity": "neutral",
+      "probabilities": {
+        "continued_boom": 0.28205595745641276,
+        "no_burst_sideways": 0.22161539514432427,
+        "mild_adjustment": 0.1307183647652759,
+        "moderate_burst": 0.050598688015724806,
+        "deep_drawdown_no_vacuum": 0.3150115946182622,
+        "severe_burst": 0.0,
+        "severe_burst_with_financial_crisis": 0.0
+      }
+    },
+    {
+      "geopolitics": "calm",
+      "liquidity": "vacuum",
+      "probabilities": {
+        "continued_boom": 0.03631069626628562,
+        "no_burst_sideways": 0.02852983278065298,
+        "mild_adjustment": 0.2462934941964147,
+        "moderate_burst": 0.09533570662029549,
+        "deep_drawdown_no_vacuum": 0.0,
+        "severe_burst": 0.4866948215118081,
+        "severe_burst_with_financial_crisis": 0.10683544862454322
+      }
+    },
+    {
+      "geopolitics": "tense",
+      "liquidity": "ample",
+      "probabilities": {
+        "continued_boom": 0.4423630544786222,
+        "no_burst_sideways": 0.34757097137606024,
+        "mild_adjustment": 0.05532519788448025,
+        "moderate_burst": 0.02141537214141072,
+        "deep_drawdown_no_vacuum": 0.13332540411942664,
+        "severe_burst": 0.0,
+        "severe_burst_with_financial_crisis": 0.0
+      }
+    },
+    {
+      "geopolitics": "tense",
+      "liquidity": "neutral",
+      "probabilities": {
+        "continued_boom": 0.3231589387924765,
+        "no_burst_sideways": 0.25391059476551714,
+        "mild_adjustment": 0.11138744312343025,
+        "moderate_burst": 0.04311604183231724,
+        "deep_drawdown_no_vacuum": 0.2684269814862589,
+        "severe_burst": 0.0,
+        "severe_burst_with_financial_crisis": 0.0
+      }
+    },
+    {
+      "geopolitics": "tense",
+      "liquidity": "vacuum",
+      "probabilities": {
+        "continued_boom": 0.04775510252284169,
+        "no_burst_sideways": 0.037521866267947034,
+        "mild_adjustment": 0.24091113716556775,
+        "moderate_burst": 0.09325229466297721,
+        "deep_drawdown_no_vacuum": 0.0,
+        "severe_burst": 0.41800291155407976,
+        "severe_burst_with_financial_crisis": 0.1625566878265866
+      }
+    },
+    {
+      "geopolitics": "crisis",
+      "liquidity": "ample",
+      "probabilities": {
+        "continued_boom": 0.49357856240122877,
+        "no_burst_sideways": 0.3878117276009654,
+        "mild_adjustment": 0.031238308361686156,
+        "moderate_burst": 0.01209177778325331,
+        "deep_drawdown_no_vacuum": 0.07527962385286636,
+        "severe_burst": 0.0,
+        "severe_burst_with_financial_crisis": 0.0
+      }
+    },
+    {
+      "geopolitics": "crisis",
+      "liquidity": "neutral",
+      "probabilities": {
+        "continued_boom": 0.4084981311367391,
+        "no_burst_sideways": 0.32096281732172355,
+        "mild_adjustment": 0.07125202747809589,
+        "moderate_burst": 0.027580356557594637,
+        "deep_drawdown_no_vacuum": 0.17170666750584676,
+        "severe_burst": 0.0,
+        "severe_burst_with_financial_crisis": 0.0
+      }
+    },
+    {
+      "geopolitics": "crisis",
+      "liquidity": "vacuum",
+      "probabilities": {
+        "continued_boom": 0.08711798918501013,
+        "no_burst_sideways": 0.06844984864536507,
+        "mild_adjustment": 0.22239859007216264,
+        "moderate_burst": 0.0860864262982863,
+        "deep_drawdown_no_vacuum": 0.0,
+        "severe_burst": 0.32156828747950555,
+        "severe_burst_with_financial_crisis": 0.21437885831967038
+      }
+    }
+  ],
+  "method": {
+    "datasets": [
+      "World Bank CM.MKT.INDX.ZG (CC BY 4.0)",
+      "Shiller US benchmark",
+      "Caldara-Iacoviello GPR",
+      "FRED financial conditions"
+    ],
+    "episodeCount": 127,
+    "countries": 37,
+    "estimator": "equal-weight ensemble of two L2 multinomial logits; country-cluster bootstrap",
+    "conditioning": "historical geopolitical/liquidity state model; structural split of the severe tail",
+    "currentFeatures": {
+      "runup3": 2.16891507200192,
+      "return1": 0.14199621047491617,
+      "volatility5": 0.44619925618162054
+    },
+    "warning": "Weak predictive skill. Tail subclasses are structural calibrations and are not separately backtested."
+  },
+  "backtest": {
+    "brierScore": 0.4195234446366324,
+    "baseRateBrierScore": 0.4454534957418825,
+    "logScore": 0.8746838796558323,
+    "baseRateLogScore": 0.8960357917723553,
+    "outOfSampleEpisodes": 127,
+    "skillDisclosure": "Brier improves modestly versus the base rate; log score is essentially unchanged. Treat odds as disciplined scenario weights, not precise forecasts."
+  },
+  "monteCarlo": {
+    "draws": 10000,
+    "seed": 20261014,
+    "maxMonteCarloStdError": 0.0048946459524668385,
+    "classificationCounts": {
+      "continued_boom": 3979,
+      "no_burst_sideways": 3075,
+      "mild_adjustment": 797,
+      "moderate_burst": 309,
+      "deep_drawdown_no_vacuum": 1630,
+      "severe_burst": 140,
+      "severe_burst_with_financial_crisis": 70
+    }
+  }
+}

@@ -1,0 +1,1939 @@
+{
+  "references": [
+    {
+      "id": "kindleberger_1978",
+      "type": "book_chapter",
+      "authors": [
+        "Charles P. Kindleberger"
+      ],
+      "year": 1978,
+      "title": "Speculative Manias",
+      "venue": "Manias, Panics and Crashes",
+      "doi": "10.1007/978-1-349-04338-5_3",
+      "url": "https://doi.org/10.1007/978-1-349-04338-5_3",
+      "supports": [
+        "M01"
+      ],
+      "relevance": "Historical framework of manias, panics and crashes",
+      "keyResult": "Title-level only (no abstract retrieved): Historical framework of manias, panics and crashes.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Speculative Manias",
+        "crossrefType": "book-chapter",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Speculative Manias"
+      }
+    },
+    {
+      "id": "shiller_2015_irrational_exuberance",
+      "type": "book",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "year": 2015,
+      "title": "Irrational Exuberance",
+      "venue": "Princeton University Press",
+      "doi": "10.1515/9781400865536",
+      "url": "https://doi.org/10.1515/9781400865536",
+      "supports": [
+        "M01",
+        "M02"
+      ],
+      "relevance": "Narrative and valuation evidence on speculative bubbles",
+      "keyResult": "Title-level only (no abstract retrieved): Narrative and valuation evidence on speculative bubbles.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Irrational Exuberance",
+        "crossrefType": "edited-book",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Irrational Exuberance"
+      }
+    },
+    {
+      "id": "greenwood_shleifer_you_2019",
+      "type": "journal_article",
+      "authors": [
+        "Robin Greenwood",
+        "Andrei Shleifer",
+        "Yang You"
+      ],
+      "year": 2019,
+      "title": "Bubbles for Fama",
+      "venue": "Journal of Financial Economics",
+      "doi": "10.1016/j.jfineco.2018.09.002",
+      "url": "https://doi.org/10.1016/j.jfineco.2018.09.002",
+      "supports": [
+        "M01"
+      ],
+      "relevance": "Run-up episodes and subsequent crash evidence",
+      "keyResult": "Title-level only (no abstract retrieved): Run-up episodes and subsequent crash evidence.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Bubbles for Fama",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Bubbles for Fama"
+      }
+    },
+    {
+      "id": "brunnermeier_oehmke_2013",
+      "type": "book_chapter",
+      "authors": [
+        "Markus K. Brunnermeier",
+        "Martin Oehmke"
+      ],
+      "year": 2013,
+      "title": "Bubbles, Financial Crises, and Systemic Risk",
+      "venue": "Handbook of the Economics of Finance",
+      "doi": "10.1016/b978-0-44-459406-8.00018-4",
+      "url": "https://doi.org/10.1016/b978-0-44-459406-8.00018-4",
+      "supports": [
+        "M03",
+        "M10"
+      ],
+      "relevance": "Bubble mechanisms linked to financial-crisis and systemic-risk channels",
+      "keyResult": "Title-level only (no abstract retrieved): Bubble mechanisms linked to financial-crisis and systemic-risk channels.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Bubbles, Financial Crises, and Systemic Risk",
+        "crossrefType": "book-chapter",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Bubbles, Financial Crises, and Systemic Risk"
+      }
+    },
+    {
+      "id": "jorda_schularick_taylor_2015_leveraged_bubbles",
+      "type": "working_paper",
+      "authors": [
+        "Oscar Jorda",
+        "Moritz Schularick",
+        "Alan M. Taylor"
+      ],
+      "year": 2015,
+      "title": "Leveraged Bubbles",
+      "venue": "SSRN working paper",
+      "doi": "10.2139/ssrn.2663964",
+      "url": "https://doi.org/10.2139/ssrn.2663964",
+      "supports": [
+        "M03",
+        "M04"
+      ],
+      "relevance": "Leverage and bubble-bust costs across countries",
+      "keyResult": "Studies housing and equity bubbles in 17 countries over 140 years; finds not all bubbles carry equal economic costs.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Leveraged Bubbles",
+        "crossrefType": "posted-content",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Leveraged Bubbles"
+      }
+    },
+    {
+      "id": "campbell_shiller_1998_valuation_ratios",
+      "type": "journal_article",
+      "authors": [
+        "John Y. Campbell",
+        "Robert J. Shiller"
+      ],
+      "year": 1998,
+      "title": "Valuation Ratios and the Long-Run Stock Market Outlook",
+      "venue": "The Journal of Portfolio Management",
+      "doi": "10.3905/jpm.24.2.11",
+      "url": "https://doi.org/10.3905/jpm.24.2.11",
+      "supports": [
+        "M02"
+      ],
+      "relevance": "Cyclically adjusted valuation ratios and long-run return outlook",
+      "keyResult": "Title-level only (no abstract retrieved): Cyclically adjusted valuation ratios and long-run return outlook.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Valuation Ratios and the Long-Run Stock Market Outlook",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Valuation Ratios and the Long-Run Stock Market Outlook"
+      }
+    },
+    {
+      "id": "campbell_shiller_1988_dividend_price",
+      "type": "journal_article",
+      "authors": [
+        "John Y. Campbell",
+        "Robert J. Shiller"
+      ],
+      "year": 1988,
+      "title": "The Dividend-Price Ratio and Expectations of Future Dividends and Discount Factors",
+      "venue": "Review of Financial Studies",
+      "doi": "10.1093/rfs/1.3.195",
+      "url": "https://doi.org/10.1093/rfs/1.3.195",
+      "supports": [
+        "M02"
+      ],
+      "relevance": "Present-value identity linking price ratios to expected returns",
+      "keyResult": "Title-level only (no abstract retrieved): Present-value identity linking price ratios to expected returns.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "The Dividend-Price Ratio and Expectations of Future Dividends and Discount Factors",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Dividend-Price Ratio and Expectations of Future Dividends"
+      }
+    },
+    {
+      "id": "jorda_schularick_taylor_2017_macrofinancial",
+      "type": "journal_article",
+      "authors": [
+        "\u00d2scar Jord\u00e0",
+        "Moritz Schularick",
+        "Alan M. Taylor"
+      ],
+      "year": 2017,
+      "title": "Macrofinancial History and the New Business Cycle Facts",
+      "venue": "NBER Macroeconomics Annual",
+      "doi": "10.1086/690241",
+      "url": "https://doi.org/10.1086/690241",
+      "supports": [
+        "M04"
+      ],
+      "relevance": "Macro-financial history facts underpinning the JST macrohistory data",
+      "keyResult": "Title-level only (no abstract retrieved): Macro-financial history facts underpinning the JST macrohistory data.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Macrofinancial History and the New Business Cycle Facts",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Macrofinancial History and the New Business Cycle Facts"
+      }
+    },
+    {
+      "id": "reinhart_rogoff_2009_this_time_is_different",
+      "type": "book",
+      "authors": [
+        "Carmen M. Reinhart",
+        "Kenneth S. Rogoff"
+      ],
+      "year": 2009,
+      "title": "This Time Is Different",
+      "venue": "Princeton University Press",
+      "doi": "10.1515/9781400831722",
+      "url": "https://doi.org/10.1515/9781400831722",
+      "supports": [
+        "M04"
+      ],
+      "relevance": "Eight centuries of financial crisis history and crisis dating",
+      "keyResult": "Title-level only (no abstract retrieved): Eight centuries of financial crisis history and crisis dating.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "This Time Is Different",
+        "crossrefType": "edited-book",
+        "retrievedAt": null,
+        "expectedTitleFragment": "This Time Is Different"
+      }
+    },
+    {
+      "id": "reinhart_rogoff_2009_aftermath",
+      "type": "working_paper",
+      "authors": [
+        "Carmen Reinhart",
+        "Kenneth Rogoff"
+      ],
+      "year": 2009,
+      "title": "The Aftermath of Financial Crises",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w14656",
+      "url": "https://doi.org/10.3386/w14656",
+      "supports": [
+        "M04"
+      ],
+      "relevance": "Post-crisis growth and recovery after financial crises",
+      "keyResult": "Title-level only (no abstract retrieved): Post-crisis growth and recovery after financial crises.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "The Aftermath of Financial Crises",
+        "crossrefType": "report",
+        "retrievedAt": null,
+        "expectedTitleFragment": "The Aftermath of Financial Crises"
+      }
+    },
+    {
+      "id": "schularick_taylor_2012",
+      "type": "journal_article",
+      "authors": [
+        "Moritz Schularick",
+        "Alan M Taylor"
+      ],
+      "year": 2012,
+      "title": "Credit Booms Gone Bust: Monetary Policy, Leverage Cycles, and Financial Crises, 1870\u20132008",
+      "venue": "American Economic Review",
+      "doi": "10.1257/aer.102.2.1029",
+      "url": "https://doi.org/10.1257/aer.102.2.1029",
+      "supports": [
+        "M04",
+        "M05"
+      ],
+      "relevance": "Credit growth predicts financial crises over the long run",
+      "keyResult": "Builds a long-run historical database of money, credit and macro indicators to study behaviour around financial crises.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Credit Booms Gone Bust: Monetary Policy, Leverage Cycles, and Financial Crises, 1870\u20132008",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Credit Booms Gone Bust"
+      }
+    },
+    {
+      "id": "laeven_valencia_2018_systemic_banking_crises",
+      "type": "journal_article",
+      "authors": [
+        "Luc Laeven",
+        "Fabian Valencia"
+      ],
+      "year": 2018,
+      "title": "Systemic Banking Crises Revisited",
+      "venue": "IMF Working Papers",
+      "doi": "10.5089/9781484376379.001",
+      "url": "https://doi.org/10.5089/9781484376379.001",
+      "supports": [
+        "M04"
+      ],
+      "relevance": "Systemic banking-crisis database and dating (dataset file not yet pulled)",
+      "keyResult": "Updates the systemic banking crisis database: 151 episodes worldwide during 1970-2017, with crisis information.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Systemic Banking Crises Revisited",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Systemic Banking Crises Revisited"
+      }
+    },
+    {
+      "id": "drehmann_juselius_2014_early_warning",
+      "type": "journal_article",
+      "authors": [
+        "Mathias Drehmann",
+        "Mikael Juselius"
+      ],
+      "year": 2014,
+      "title": "Evaluating early warning indicators of banking crises: Satisfying policy requirements",
+      "venue": "International Journal of Forecasting",
+      "doi": "10.1016/j.ijforecast.2013.10.002",
+      "url": "https://doi.org/10.1016/j.ijforecast.2013.10.002",
+      "supports": [
+        "M05"
+      ],
+      "relevance": "Early-warning indicator evaluation for banking crises",
+      "keyResult": "Title-level only (no abstract retrieved): Early-warning indicator evaluation for banking crises.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Evaluating early warning indicators of banking crises: Satisfying policy requirements",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Evaluating early warning indicators of banking crises"
+      }
+    },
+    {
+      "id": "borio_2014_financial_cycle",
+      "type": "journal_article",
+      "authors": [
+        "Claudio Borio"
+      ],
+      "year": 2014,
+      "title": "The financial cycle and macroeconomics: What have we learnt?",
+      "venue": "Journal of Banking & Finance",
+      "doi": "10.1016/j.jbankfin.2013.07.031",
+      "url": "https://doi.org/10.1016/j.jbankfin.2013.07.031",
+      "supports": [
+        "M05"
+      ],
+      "relevance": "Financial-cycle concept and credit-based indicators",
+      "keyResult": "Title-level only (no abstract retrieved): Financial-cycle concept and credit-based indicators.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "The financial cycle and macroeconomics: What have we learnt?",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "The financial cycle and macroeconomics"
+      }
+    },
+    {
+      "id": "shumway_2001_hazard_model",
+      "type": "journal_article",
+      "authors": [
+        "Tyler Shumway"
+      ],
+      "year": 2001,
+      "title": "Forecasting Bankruptcy More Accurately: A Simple Hazard Model",
+      "venue": "The Journal of Business",
+      "doi": "10.1086/209665",
+      "url": "https://doi.org/10.1086/209665",
+      "supports": [
+        "M06"
+      ],
+      "relevance": "Discrete-time hazard model with time-varying covariates",
+      "keyResult": "Title-level only (no abstract retrieved): Discrete-time hazard model with time-varying covariates.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Forecasting Bankruptcy More Accurately: A Simple Hazard Model",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Forecasting Bankruptcy More Accurately"
+      }
+    },
+    {
+      "id": "bernanke_gertler_gilchrist_1999",
+      "type": "book_chapter",
+      "authors": [],
+      "year": 1999,
+      "title": "Chapter 21 The financial accelerator in a quantitative business cycle framework",
+      "venue": "Handbook of Macroeconomics",
+      "doi": "10.1016/S1574-0048(99)10034-X",
+      "url": "https://doi.org/10.1016/s1574-0048(99)10034-x",
+      "supports": [
+        "M07"
+      ],
+      "relevance": "Financial accelerator: net worth amplifies business-cycle shocks",
+      "keyResult": "Title-level only (no abstract retrieved): Financial accelerator: net worth amplifies business-cycle shocks.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Chapter 21 The financial accelerator in a quantitative business cycle framework",
+        "crossrefType": "book-chapter",
+        "retrievedAt": null,
+        "expectedTitleFragment": "financial accelerator in a quantitative business cycle framework"
+      }
+    },
+    {
+      "id": "kiyotaki_moore_1997_credit_cycles",
+      "type": "journal_article",
+      "authors": [
+        "Nobuhiro Kiyotaki",
+        "John Moore"
+      ],
+      "year": 1997,
+      "title": "Credit Cycles",
+      "venue": "Journal of Political Economy",
+      "doi": "10.1086/262072",
+      "url": "https://doi.org/10.1086/262072",
+      "supports": [
+        "M07"
+      ],
+      "relevance": "Collateral constraints amplify and propagate shocks",
+      "keyResult": "Title-level only (no abstract retrieved): Collateral constraints amplify and propagate shocks.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Credit Cycles",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Credit Cycles"
+      }
+    },
+    {
+      "id": "koo_2013_balance_sheet_recession",
+      "type": "journal_article",
+      "authors": [
+        "Richard C. Koo"
+      ],
+      "year": 2013,
+      "title": "Balance sheet recession as the 'other half' of macroeconomics",
+      "venue": "European Journal of Economics and Economic Policies: Intervention",
+      "doi": "10.4337/ejeep.2013.02.01",
+      "url": "https://doi.org/10.4337/ejeep.2013.02.01",
+      "supports": [
+        "M08",
+        "M37"
+      ],
+      "relevance": "Balance-sheet recession and debt minimisation after a bubble",
+      "keyResult": "Not read. Title, year and venue checked only.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Manual lane check on 2026-10-15 with curl to api.crossref.org/works/10.4337/ejeep.2013.02.01. Title, year and author list were compared with the records below. Results are recorded by hand; this generator does not call the network.",
+        "laneCheck": "title and year 2013 match (Crossref date 2013-09)"
+      }
+    },
+    {
+      "id": "hoshi_kashyap_2004_japan",
+      "type": "journal_article",
+      "authors": [
+        "Takeo Hoshi",
+        "Anil K Kashyap"
+      ],
+      "year": 2004,
+      "title": "Japan's Financial Crisis and Economic Stagnation",
+      "venue": "Journal of Economic Perspectives",
+      "doi": "10.1257/089533004773563412",
+      "url": "https://doi.org/10.1257/089533004773563412",
+      "supports": [
+        "M09",
+        "M37"
+      ],
+      "relevance": "Japanese banking problems and stagnation after the 1990s bubble",
+      "keyResult": "Surveys Japan's macroeconomic stagnation and financial problems, separately analysing banks, insurers and fiscal lending.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "checkedTitle": "Japan's Financial Crisis and Economic Stagnation",
+        "crossrefType": "journal-article",
+        "expectedTitleFragment": "Japan's Financial Crisis and Economic Stagnation",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "retrievedAt": null,
+        "status": "verified_crossref_metadata"
+      }
+    },
+    {
+      "id": "brunnermeier_sannikov_2014",
+      "type": "journal_article",
+      "authors": [
+        "Markus K. Brunnermeier",
+        "Yuliy Sannikov"
+      ],
+      "year": 2014,
+      "title": "A Macroeconomic Model with a Financial Sector",
+      "venue": "American Economic Review",
+      "doi": "10.1257/aer.104.2.379",
+      "url": "https://doi.org/10.1257/aer.104.2.379",
+      "supports": [
+        "M07",
+        "M41"
+      ],
+      "relevance": "Nonlinear financial amplification and crisis episodes",
+      "keyResult": "Equilibrium model with financial frictions; nonlinear amplification makes the economy prone to instability and crisis episodes.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "A Macroeconomic Model with a Financial Sector",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "A Macroeconomic Model with a Financial Sector"
+      }
+    },
+    {
+      "id": "brunnermeier_pedersen_2009_funding_liquidity",
+      "type": "journal_article",
+      "authors": [
+        "Markus K. Brunnermeier",
+        "Lasse Heje Pedersen"
+      ],
+      "year": 2008,
+      "title": "Market Liquidity and Funding Liquidity",
+      "venue": "Review of Financial Studies",
+      "doi": "10.1093/rfs/hhn098",
+      "url": "https://doi.org/10.1093/rfs/hhn098",
+      "supports": [
+        "M10",
+        "M41"
+      ],
+      "relevance": "Margin spirals linking funding and market liquidity",
+      "keyResult": "Title-level only (no abstract retrieved): Margin spirals linking funding and market liquidity.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "checkedTitle": "Market Liquidity and Funding Liquidity",
+        "crossrefType": "journal-article",
+        "expectedTitleFragment": "Market Liquidity and Funding Liquidity",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "note": "Crossref year 2008 used; expected-year check tolerance applied",
+        "retrievedAt": null,
+        "status": "verified_crossref_metadata"
+      }
+    },
+    {
+      "id": "brunnermeier_2009_crunch",
+      "type": "journal_article",
+      "authors": [
+        "Markus K Brunnermeier"
+      ],
+      "year": 2009,
+      "title": "Deciphering the Liquidity and Credit Crunch 2007\u20132008",
+      "venue": "Journal of Economic Perspectives",
+      "doi": "10.1257/jep.23.1.77",
+      "url": "https://doi.org/10.1257/jep.23.1.77",
+      "supports": [
+        "M10"
+      ],
+      "relevance": "Anatomy of the 2007-08 liquidity and credit crunch",
+      "keyResult": "Documents how the 2007-08 market turmoil, after the housing bubble burst, became the most severe crisis since the Great Depression.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Deciphering the Liquidity and Credit Crunch 2007\u20132008",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Deciphering the Liquidity and Credit Crunch"
+      }
+    },
+    {
+      "id": "du_tepper_verdelhan_2018_cip",
+      "type": "journal_article",
+      "authors": [
+        "WENXIN DU",
+        "ALEXANDER TEPPER",
+        "ADRIEN VERDELHAN"
+      ],
+      "year": 2018,
+      "title": "Deviations from Covered Interest Rate Parity",
+      "venue": "The Journal of Finance",
+      "doi": "10.1111/jofi.12620",
+      "url": "https://doi.org/10.1111/jofi.12620",
+      "supports": [
+        "M11"
+      ],
+      "relevance": "Persistent covered-interest-parity deviations and dollar funding costs",
+      "keyResult": "Finds large, persistent, systematic covered-interest-parity deviations, implying arbitrage opportunities in a large asset market.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Deviations from Covered Interest Rate Parity",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "duffie_2018_regulatory_reform",
+      "type": "journal_article",
+      "authors": [
+        "Darrell Duffie"
+      ],
+      "year": 2018,
+      "title": "Financial Regulatory Reform After the Crisis: An Assessment",
+      "venue": "Management Science",
+      "doi": "10.1287/mnsc.2017.2768",
+      "url": "https://doi.org/10.1287/mnsc.2017.2768",
+      "supports": [
+        "M10",
+        "M43"
+      ],
+      "relevance": "Post-crisis reform of financial institutions, derivatives and market structure",
+      "keyResult": "Surveys post-crisis G20 reform: resilience of institutions, ending too-big-to-fail, and derivatives market reform.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Financial Regulatory Reform After the Crisis: An Assessment",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Financial Regulatory Reform After the Crisis"
+      }
+    },
+    {
+      "id": "bruno_shin_2014_cross_border_banking",
+      "type": "journal_article",
+      "authors": [
+        "V. Bruno",
+        "H. S. Shin"
+      ],
+      "year": 2015,
+      "title": "Cross-Border Banking and Global Liquidity",
+      "venue": "The Review of Economic Studies",
+      "doi": "10.1093/restud/rdu042",
+      "url": "https://doi.org/10.1093/restud/rdu042",
+      "supports": [
+        "M12"
+      ],
+      "relevance": "Cross-border bank leverage and global liquidity transmission",
+      "keyResult": "Title-level only (no abstract retrieved): Cross-border bank leverage and global liquidity transmission.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Cross-Border Banking and Global Liquidity",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "adrian_shin_2010_liquidity_leverage",
+      "type": "journal_article",
+      "authors": [
+        "Tobias Adrian",
+        "Hyun Song Shin"
+      ],
+      "year": 2010,
+      "title": "Liquidity and leverage",
+      "venue": "Journal of Financial Intermediation",
+      "doi": "10.1016/j.jfi.2008.12.002",
+      "url": "https://doi.org/10.1016/j.jfi.2008.12.002",
+      "supports": [
+        "M12",
+        "M10"
+      ],
+      "relevance": "Balance-sheet adjustment of intermediaries and liquidity",
+      "keyResult": "Title-level only (no abstract retrieved): Balance-sheet adjustment of intermediaries and liquidity.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Liquidity and leverage",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "avdjiev_2018_currency_networks",
+      "type": "journal_article",
+      "authors": [
+        "Stefan Avdjiev",
+        "El\u0151d Tak\u00e1ts"
+      ],
+      "year": 2019,
+      "title": "Monetary Policy Spillovers and Currency Networks in Cross-Border Bank Lending: Lessons from the 2013 Fed Taper Tantrum",
+      "venue": "Review of Finance",
+      "doi": "10.1093/rof/rfy030",
+      "url": "https://doi.org/10.1093/rof/rfy030",
+      "supports": [
+        "M12",
+        "M38"
+      ],
+      "relevance": "Monetary-policy spillovers through currency networks in cross-border bank lending",
+      "keyResult": "Title-level only (no abstract retrieved): Monetary-policy spillovers through currency networks in cross-border bank lending.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Monetary Policy Spillovers and Currency Networks in Cross-Border Bank Lending: Lessons from the 2013 Fed Taper Tantrum",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "caballero_farhi_gourinchas_2016_safe_asset",
+      "type": "journal_article",
+      "authors": [
+        "Ricardo J. Caballero",
+        "Emmanuel Farhi",
+        "Pierre-Olivier Gourinchas"
+      ],
+      "year": 2016,
+      "title": "Safe Asset Scarcity and Aggregate Demand",
+      "venue": "American Economic Review",
+      "doi": "10.1257/aer.p20161108",
+      "url": "https://doi.org/10.1257/aer.p20161108",
+      "supports": [
+        "M13"
+      ],
+      "relevance": "Safe-asset scarcity as a driver of recession risk",
+      "keyResult": "Safe asset scarcity forces the economy into a safety-trap recession; open-economy consequences are also analysed.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Safe Asset Scarcity and Aggregate Demand",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Safe Asset Scarcity and Aggregate Demand"
+      }
+    },
+    {
+      "id": "caballero_farhi_gourinchas_2017_rents_risk_premia",
+      "type": "working_paper",
+      "authors": [
+        "Ricardo Caballero",
+        "Emmanuel Farhi",
+        "Pierre-Olivier Gourinchas"
+      ],
+      "year": 2017,
+      "title": "Rents, Technical Change, and Risk Premia: Accounting for Secular Trends in Interest Rates, Returns on Capital, Earning Yields, and Factor Shares",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w23127",
+      "url": "https://doi.org/10.3386/w23127",
+      "supports": [
+        "M13"
+      ],
+      "relevance": "Secular decline in rates and risk premia",
+      "keyResult": "Title-level only (no abstract retrieved): Secular decline in rates and risk premia.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Rents, Technical Change, and Risk Premia: Accounting for Secular Trends in Interest Rates, Returns on Capital, Earning Yields, and Factor Shares",
+        "crossrefType": "report",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Rents, Technical Change, and Risk Premia"
+      }
+    },
+    {
+      "id": "schrimpf_shin_sushko_2021_margin_spirals",
+      "type": "working_paper",
+      "authors": [
+        "Andreas Schrimpf",
+        "Hyun Song Shin",
+        "Vladyslav Sushko"
+      ],
+      "year": 2021,
+      "title": "Leverage and Margin Spirals in Fixed Income Markets during the COVID-19 Crisis",
+      "venue": "SSRN working paper",
+      "doi": "10.2139/ssrn.3761873",
+      "url": "https://doi.org/10.2139/ssrn.3761873",
+      "supports": [
+        "M14"
+      ],
+      "relevance": "Dash-for-cash margin spirals in government bond markets (March 2020)",
+      "keyResult": "Describes mid-March 2020 government bond turbulence, with sharp sell-offs in risk-off episodes that normally attract safe-haven flows.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Leverage and Margin Spirals in Fixed Income Markets during the COVID-19 Crisis",
+        "crossrefType": "posted-content",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "ma_xiao_zeng_2022_mutual_fund_liquidity",
+      "type": "journal_article",
+      "authors": [
+        "Yiming Ma",
+        "Kairong Xiao",
+        "Yao Zeng"
+      ],
+      "year": 2022,
+      "title": "Mutual Fund Liquidity Transformation and Reverse Flight to Liquidity",
+      "venue": "The Review of Financial Studies",
+      "doi": "10.1093/rfs/hhac007",
+      "url": "https://doi.org/10.1093/rfs/hhac007",
+      "supports": [
+        "M14"
+      ],
+      "relevance": "Mutual-fund selling pressure in liquid markets during COVID-19",
+      "keyResult": "Identifies fixed-income mutual funds as an important contributor to high selling pressure in liquid asset markets during COVID-19.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Mutual Fund Liquidity Transformation and Reverse Flight to Liquidity",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Mutual Fund Liquidity Transformation and Reverse Flight to Liquidity"
+      }
+    },
+    {
+      "id": "brunnermeier_nagel_pedersen_2008_carry",
+      "type": "journal_article",
+      "authors": [
+        "Markus K. Brunnermeier",
+        "Stefan Nagel",
+        "Lasse H. Pedersen"
+      ],
+      "year": 2008,
+      "title": "Carry Trades and Currency Crashes",
+      "venue": "NBER Macroeconomics Annual",
+      "doi": "10.1086/593088",
+      "url": "https://doi.org/10.1086/593088",
+      "supports": [
+        "M15"
+      ],
+      "relevance": "Carry-trade unwinds and currency crash risk (Japan funding currency)",
+      "keyResult": "Title-level only (no abstract retrieved): Carry-trade unwinds and currency crash risk (Japan funding currency).",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Carry Trades and Currency Crashes",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "jiang_2023_svb_bank_fragility",
+      "type": "working_paper",
+      "authors": [
+        "Erica Xuewei Jiang",
+        "Gregor Matvos",
+        "Tomasz Piskorski",
+        "Amit Seru"
+      ],
+      "year": 2023,
+      "title": "Monetary Tightening and U.S. Bank Fragility in 2023: Mark-to-Market Losses and Uninsured Depositor Runs?",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w31048",
+      "url": "https://doi.org/10.3386/w31048",
+      "supports": [
+        "M16"
+      ],
+      "relevance": "Mark-to-market losses and uninsured-deposit runs under rate rises",
+      "keyResult": "Title-level only (no abstract retrieved): Mark-to-market losses and uninsured-deposit runs under rate rises.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Monetary Tightening and U.S. Bank Fragility in 2023: Mark-to-Market Losses and Uninsured Depositor Runs?",
+        "crossrefType": "report",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Monetary Tightening and U.S. Bank Fragility in 2023"
+      }
+    },
+    {
+      "id": "case_quigley_shiller_2005_wealth",
+      "type": "journal_article",
+      "authors": [
+        "Karl E. Case",
+        "John M. Quigley",
+        "Robert J. Shiller"
+      ],
+      "year": 2005,
+      "title": "Comparing Wealth Effects: The Stock Market versus the Housing Market",
+      "venue": "Topics in Macroeconomics",
+      "doi": "10.2202/1534-6013.1235",
+      "url": "https://doi.org/10.2202/1534-6013.1235",
+      "supports": [
+        "M17"
+      ],
+      "relevance": "Housing and stock wealth effects on consumer spending",
+      "keyResult": "Panel of 14 countries and US state data links changes in housing and financial wealth to consumer spending.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Comparing Wealth Effects: The Stock Market versus the Housing Market",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Comparing Wealth Effects"
+      }
+    },
+    {
+      "id": "diebold_yilmaz_2009_volatility_spillovers",
+      "type": "journal_article",
+      "authors": [
+        "Francis X. Diebold",
+        "Kamil Yilmaz"
+      ],
+      "year": 2009,
+      "title": "Measuring Financial Asset Return and Volatility Spillovers, with Application to Global Equity Markets",
+      "venue": "The Economic Journal",
+      "doi": "10.1111/j.1468-0297.2008.02208.x",
+      "url": "https://doi.org/10.1111/j.1468-0297.2008.02208.x",
+      "supports": [
+        "M18"
+      ],
+      "relevance": "Spillover index from variance decomposition of forecast errors",
+      "keyResult": "Title-level only (no abstract retrieved): Spillover index from variance decomposition of forecast errors.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Measuring Financial Asset Return and Volatility Spillovers, with Application to Global Equity Markets",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "diebold_yilmaz_2012_directional_spillovers",
+      "type": "journal_article",
+      "authors": [
+        "Francis X. Diebold",
+        "Kamil Yilmaz"
+      ],
+      "year": 2012,
+      "title": "Better to give than to receive: Predictive directional measurement of volatility spillovers",
+      "venue": "International Journal of Forecasting",
+      "doi": "10.1016/j.ijforecast.2011.02.006",
+      "url": "https://doi.org/10.1016/j.ijforecast.2011.02.006",
+      "supports": [
+        "M18"
+      ],
+      "relevance": "Directional volatility spillover measurement",
+      "keyResult": "Title-level only (no abstract retrieved): Directional volatility spillover measurement.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Better to give than to receive: Predictive directional measurement of volatility spillovers",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "forbes_rigobon_2002_no_contagion",
+      "type": "journal_article",
+      "authors": [
+        "Kristin J. Forbes",
+        "Roberto Rigobon"
+      ],
+      "year": 2002,
+      "title": "No Contagion, Only Interdependence: Measuring Stock Market Comovements",
+      "venue": "The Journal of Finance",
+      "doi": "10.1111/0022-1082.00494",
+      "url": "https://doi.org/10.1111/0022-1082.00494",
+      "supports": [
+        "M18"
+      ],
+      "relevance": "Heteroskedasticity-adjusted tests of contagion versus interdependence",
+      "keyResult": "Abstract opening: heteroskedasticity biases tests for contagion based on correlation coefficients.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "No Contagion, Only Interdependence: Measuring Stock Market Comovements",
+        "crossrefType": "journal-article",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "jorda_2005_local_projections",
+      "type": "journal_article",
+      "authors": [
+        "\u00d2scar Jord\u00e0"
+      ],
+      "year": 2005,
+      "title": "Estimation and Inference of Impulse Responses by Local Projections",
+      "venue": "American Economic Review",
+      "doi": "10.1257/0002828053828518",
+      "url": "https://doi.org/10.1257/0002828053828518",
+      "supports": [
+        "M19"
+      ],
+      "relevance": "Local projections for impulse responses without a full system",
+      "keyResult": "Introduces local projections: impulse responses estimated by a regression at each horizon, without specifying the full multivariate system.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Estimation and Inference of Impulse Responses by Local Projections",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Estimation and Inference of Impulse Responses by Local Projections"
+      }
+    },
+    {
+      "id": "montiel_olea_plagborg_moller_2021",
+      "type": "journal_article",
+      "authors": [
+        "Jos\u00e9 Luis Montiel Olea",
+        "Mikkel Plagborg-M\u00f8ller"
+      ],
+      "year": 2021,
+      "title": "Local Projection Inference Is Simpler and More Robust Than You Think",
+      "venue": "Econometrica",
+      "doi": "10.3982/ecta18756",
+      "url": "https://doi.org/10.3982/ecta18756",
+      "supports": [
+        "M19"
+      ],
+      "relevance": "Valid inference for local-projection impulse responses",
+      "keyResult": "Abstract states a proof about local-projection inference, which it describes as simpler and more robust than commonly thought.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Local Projection Inference Is Simpler and More Robust Than You Think",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Local Projection Inference Is Simpler and More Robust Than You Think"
+      }
+    },
+    {
+      "id": "nelsen_2006_introduction_to_copulas",
+      "type": "book",
+      "authors": [],
+      "year": 2006,
+      "title": "An Introduction to Copulas",
+      "venue": "Springer Series in Statistics",
+      "doi": "10.1007/0-387-28678-0",
+      "url": "https://doi.org/10.1007/0-387-28678-0",
+      "supports": [
+        "M20"
+      ],
+      "relevance": "Copula theory and tail dependence measures",
+      "keyResult": "Title-level only (no abstract retrieved): Copula theory and tail dependence measures.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "An Introduction to Copulas",
+        "crossrefType": "book",
+        "retrievedAt": null,
+        "expectedTitleFragment": "An Introduction to Copulas"
+      }
+    },
+    {
+      "id": "embrechts_mcneil_straumann_2002",
+      "type": "book_chapter",
+      "authors": [
+        "Paul Embrechts",
+        "Alexander J. McNeil",
+        "Daniel Straumann"
+      ],
+      "year": 2002,
+      "title": "Correlation and Dependence in Risk Management: Properties and Pitfalls",
+      "venue": "Risk Management",
+      "doi": "10.1017/cbo9780511615337.008",
+      "url": "https://doi.org/10.1017/cbo9780511615337.008",
+      "supports": [
+        "M20"
+      ],
+      "relevance": "Pitfalls of linear correlation for dependent risks",
+      "keyResult": "Title-level only (no abstract retrieved): Pitfalls of linear correlation for dependent risks.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Correlation and Dependence in Risk Management: Properties and Pitfalls",
+        "crossrefType": "book-chapter",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Correlation and Dependence in Risk Management"
+      }
+    },
+    {
+      "id": "demarta_mcneil_2005_t_copula",
+      "type": "journal_article",
+      "authors": [
+        "Stefano Demarta",
+        "Alexander J. McNeil"
+      ],
+      "year": 2007,
+      "title": "The t Copula and Related Copulas",
+      "venue": "International Statistical Review",
+      "doi": "10.1111/j.1751-5823.2005.tb00254.x",
+      "url": "https://doi.org/10.1111/j.1751-5823.2005.tb00254.x",
+      "supports": [
+        "M20"
+      ],
+      "relevance": "Student-t copula with tail dependence (Crossref issued year 2007; volume 73)",
+      "keyResult": "Title-level only (no abstract retrieved): Student-t copula with tail dependence (Crossref issued year 2007; volume 73).",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "checkedTitle": "The t Copula and Related Copulas",
+        "crossrefType": "journal-article",
+        "expectedTitleFragment": "The t Copula and Related Copulas",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "retrievedAt": null,
+        "status": "verified_crossref_metadata"
+      }
+    },
+    {
+      "id": "glasserman_kang_kang_2014_stress_scenarios",
+      "type": "journal_article",
+      "authors": [
+        "Paul Glasserman",
+        "Chulmin Kang",
+        "Wanmo Kang"
+      ],
+      "year": 2014,
+      "title": "Stress scenario selection by empirical likelihood",
+      "venue": "Quantitative Finance",
+      "doi": "10.1080/14697688.2014.926019",
+      "url": "https://doi.org/10.1080/14697688.2014.926019",
+      "supports": [
+        "M22"
+      ],
+      "relevance": "Stress-scenario selection by empirical likelihood (reverse-stress logic)",
+      "keyResult": "Title-level only (no abstract retrieved): Stress-scenario selection by empirical likelihood (reverse-stress logic).",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Stress scenario selection by empirical likelihood",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Stress scenario selection by empirical likelihood"
+      }
+    },
+    {
+      "id": "gneiting_raftery_2007_scoring_rules",
+      "type": "journal_article",
+      "authors": [
+        "Tilmann Gneiting",
+        "Adrian E Raftery"
+      ],
+      "year": 2007,
+      "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+      "venue": "Journal of the American Statistical Association",
+      "doi": "10.1198/016214506000001437",
+      "url": "https://doi.org/10.1198/016214506000001437",
+      "supports": [
+        "M25"
+      ],
+      "relevance": "Strictly proper scoring rules for probabilistic forecasts",
+      "keyResult": "Title-level only (no abstract retrieved): Strictly proper scoring rules for probabilistic forecasts.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Strictly Proper Scoring Rules, Prediction, and Estimation"
+      }
+    },
+    {
+      "id": "brier_1950_verification",
+      "type": "journal_article",
+      "authors": [
+        "GLENN W. BRIER"
+      ],
+      "year": 1950,
+      "title": "VERIFICATION OF FORECASTS EXPRESSED IN TERMS OF PROBABILITY",
+      "venue": "Monthly Weather Review",
+      "doi": "10.1175/1520-0493(1950)078<0001:vofeit>2.0.co;2",
+      "url": "https://doi.org/10.1175/1520-0493(1950)078<0001:vofeit>2.0.co;2",
+      "supports": [
+        "M25"
+      ],
+      "relevance": "Brier score for probability forecasts",
+      "keyResult": "Title-level only (no abstract retrieved): Brier score for probability forecasts.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "VERIFICATION OF FORECASTS EXPRESSED IN TERMS OF PROBABILITY",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Verification of Forecasts Expressed in Terms of Probability"
+      }
+    },
+    {
+      "id": "hoeting_1999_bma_tutorial",
+      "type": "journal_article",
+      "authors": [
+        "Jennifer A. Hoeting",
+        "David Madigan",
+        "Adrian E. Raftery",
+        "Chris T. Volinsky"
+      ],
+      "year": 1999,
+      "title": "Bayesian model averaging: a tutorial (with comments by M. Clyde, David Draper and E. I. George, and a rejoinder by the authors",
+      "venue": "Statistical Science",
+      "doi": "10.1214/ss/1009212519",
+      "url": "https://doi.org/10.1214/ss/1009212519",
+      "supports": [
+        "M26"
+      ],
+      "relevance": "Bayesian model averaging tutorial",
+      "keyResult": "Title-level only (no abstract retrieved): Bayesian model averaging tutorial.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Bayesian model averaging: a tutorial (with comments by M. Clyde, David Draper and E. I. George, and a rejoinder by the authors",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Bayesian Model Averaging: A Tutorial"
+      }
+    },
+    {
+      "id": "yao_2018_stacking",
+      "type": "journal_article",
+      "authors": [
+        "Yuling Yao",
+        "Aki Vehtari",
+        "Daniel Simpson",
+        "Andrew Gelman"
+      ],
+      "year": 2018,
+      "title": "Using Stacking to Average Bayesian Predictive Distributions (with Discussion)",
+      "venue": "Bayesian Analysis",
+      "doi": "10.1214/17-ba1091",
+      "url": "https://doi.org/10.1214/17-ba1091",
+      "supports": [
+        "M26"
+      ],
+      "relevance": "Stacking weights for combining predictive distributions",
+      "keyResult": "Title-level only (no abstract retrieved): Stacking weights for combining predictive distributions.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Using Stacking to Average Bayesian Predictive Distributions (with Discussion)",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Using Stacking to Average Bayesian Predictive Distributions"
+      }
+    },
+    {
+      "id": "vehtari_2021_rhat",
+      "type": "journal_article",
+      "authors": [
+        "Aki Vehtari",
+        "Andrew Gelman",
+        "Daniel Simpson",
+        "Bob Carpenter",
+        "Paul-Christian B\u00fcrkner"
+      ],
+      "year": 2021,
+      "title": "Rank-Normalization, Folding, and Localization: An Improved R\u02c6 for Assessing Convergence of MCMC (with Discussion)",
+      "venue": "Bayesian Analysis",
+      "doi": "10.1214/20-ba1221",
+      "url": "https://doi.org/10.1214/20-ba1221",
+      "supports": [
+        "M27"
+      ],
+      "relevance": "Improved split-R-hat convergence diagnostics",
+      "keyResult": "Title-level only (no abstract retrieved): Improved split-R-hat convergence diagnostics.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Rank-Normalization, Folding, and Localization: An Improved R\u02c6 for Assessing Convergence of MCMC (with Discussion)",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Rank-Normalization, Folding, and Localization"
+      }
+    },
+    {
+      "id": "efron_1979_bootstrap",
+      "type": "journal_article",
+      "authors": [
+        "B. Efron"
+      ],
+      "year": 1979,
+      "title": "Bootstrap Methods: Another Look at the Jackknife",
+      "venue": "The Annals of Statistics",
+      "doi": "10.1214/aos/1176344552",
+      "url": "https://doi.org/10.1214/aos/1176344552",
+      "supports": [
+        "M28"
+      ],
+      "relevance": "Bootstrap resampling for sampling uncertainty",
+      "keyResult": "Title-level only (no abstract retrieved): Bootstrap resampling for sampling uncertainty.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Bootstrap Methods: Another Look at the Jackknife",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Bootstrap Methods: Another Look at the Jackknife"
+      }
+    },
+    {
+      "id": "gelman_2008_weakly_informative_prior",
+      "type": "journal_article",
+      "authors": [
+        "Andrew Gelman",
+        "Aleks Jakulin",
+        "Maria Grazia Pittau",
+        "Yu-Sung Su"
+      ],
+      "year": 2008,
+      "title": "A weakly informative default prior distribution for logistic and other regression models",
+      "venue": "The Annals of Applied Statistics",
+      "doi": "10.1214/08-aoas191",
+      "url": "https://doi.org/10.1214/08-aoas191",
+      "supports": [
+        "M29"
+      ],
+      "relevance": "Student-t priors for logistic regression coefficients",
+      "keyResult": "Proposes a default prior for logistic regression: scaled predictors with independent Student-t coefficient priors.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "A weakly informative default prior distribution for logistic and other regression models",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "A weakly informative default prior distribution for logistic and other regression models"
+      }
+    },
+    {
+      "id": "saltelli_2002_sensitivity_indices",
+      "type": "journal_article",
+      "authors": [
+        "Andrea Saltelli"
+      ],
+      "year": 2002,
+      "title": "Making best use of model evaluations to compute sensitivity indices",
+      "venue": "Computer Physics Communications",
+      "doi": "10.1016/s0010-4655(02)00280-1",
+      "url": "https://doi.org/10.1016/s0010-4655(02)00280-1",
+      "supports": [
+        "M30"
+      ],
+      "relevance": "Variance-based (Sobol) global sensitivity indices",
+      "keyResult": "Title-level only (no abstract retrieved): Variance-based (Sobol) global sensitivity indices.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Making best use of model evaluations to compute sensitivity indices",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Making best use of model evaluations to compute sensitivity indices"
+      }
+    },
+    {
+      "id": "morris_1991_factorial_sampling",
+      "type": "journal_article",
+      "authors": [
+        "Max D. Morris"
+      ],
+      "year": 1991,
+      "title": "Factorial Sampling Plans for Preliminary Computational Experiments",
+      "venue": "Technometrics",
+      "doi": "10.1080/00401706.1991.10484804",
+      "url": "https://doi.org/10.1080/00401706.1991.10484804",
+      "supports": [
+        "M30"
+      ],
+      "relevance": "Morris elementary-effects screening design",
+      "keyResult": "Title-level only (no abstract retrieved): Morris elementary-effects screening design.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Factorial Sampling Plans for Preliminary Computational Experiments",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Factorial Sampling Plans for Preliminary Computational Experiments"
+      }
+    },
+    {
+      "id": "caldara_iacoviello_2022_geopolitical_risk",
+      "type": "journal_article",
+      "authors": [
+        "Dario Caldara",
+        "Matteo Iacoviello"
+      ],
+      "year": 2022,
+      "title": "Measuring Geopolitical Risk",
+      "venue": "American Economic Review",
+      "doi": "10.1257/aer.20191823",
+      "url": "https://doi.org/10.1257/aer.20191823",
+      "supports": [
+        "M31"
+      ],
+      "relevance": "News-based geopolitical risk index",
+      "keyResult": "News-based index of adverse geopolitical events; it spikes around world wars, the Korean War and the Cuban Missile Crisis.",
+      "keyResultBasis": "crossref_abstract",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "Measuring Geopolitical Risk",
+        "crossrefType": "journal-article",
+        "retrievedAt": null,
+        "expectedTitleFragment": "Measuring Geopolitical Risk"
+      }
+    },
+    {
+      "id": "acemoglu_2024_simple_macro_ai",
+      "type": "working_paper",
+      "authors": [
+        "Daron Acemoglu"
+      ],
+      "year": 2024,
+      "title": "The Simple Macroeconomics of AI",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w32487",
+      "url": "https://doi.org/10.3386/w32487",
+      "supports": [
+        "M32"
+      ],
+      "relevance": "Modest aggregate productivity and GDP effects of AI in task-based models",
+      "keyResult": "Title-level only (no abstract retrieved): Modest aggregate productivity and GDP effects of AI in task-based models.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "The Simple Macroeconomics of AI",
+        "crossrefType": "report",
+        "retrievedAt": null,
+        "expectedTitleFragment": "The Simple Macroeconomics of AI"
+      }
+    },
+    {
+      "id": "brynjolfsson_rock_syverson_2018_j_curve",
+      "type": "working_paper",
+      "authors": [
+        "Erik Brynjolfsson",
+        "Daniel Rock",
+        "Chad Syverson"
+      ],
+      "year": 2018,
+      "title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w25148",
+      "url": "https://doi.org/10.3386/w25148",
+      "supports": [
+        "M32"
+      ],
+      "relevance": "Intangible investment and delayed measured productivity from general-purpose technologies",
+      "keyResult": "Title-level only (no abstract retrieved): Intangible investment and delayed measured productivity from general-purpose technologies.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+        "crossrefType": "report",
+        "retrievedAt": null,
+        "expectedTitleFragment": "The Productivity J-Curve"
+      }
+    },
+    {
+      "id": "chen_he_liu_2017_local_government_financing",
+      "type": "working_paper",
+      "authors": [
+        "Zhuo Chen",
+        "Zhiguo He",
+        "Chun Liu"
+      ],
+      "year": 2017,
+      "title": "The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w23598",
+      "url": "https://doi.org/10.3386/w23598",
+      "supports": [
+        "M34",
+        "M35"
+      ],
+      "relevance": "Shift of local stimulus financing into shadow banking",
+      "keyResult": "Title-level only (no abstract retrieved): Shift of local stimulus financing into shadow banking.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes",
+        "crossrefType": "report",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "china_lgfv_infrastructure_financing_ssrn",
+      "type": "working_paper",
+      "authors": [
+        "Helen X. H. Bao",
+        "Ziyou Wang",
+        "Robert Wu"
+      ],
+      "year": 2021,
+      "title": "Understanding Local Government Debt Financing of Infrastructure Projects in China: Evidence based on Accounting Data from Local Government Financing Vehicles",
+      "venue": "SSRN working paper",
+      "doi": "10.2139/ssrn.3757729",
+      "url": "https://doi.org/10.2139/ssrn.3757729",
+      "supports": [
+        "M34"
+      ],
+      "relevance": "Local-government debt for infrastructure, land finance and state control",
+      "keyResult": "Develops an analytical framework on local-government debt for infrastructure financing, state control and land finance.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; exact title compared",
+        "checkedTitle": "Understanding Local Government Debt Financing of Infrastructure Projects in China: Evidence based on Accounting Data from Local Government Financing Vehicles",
+        "crossrefType": "posted-content",
+        "retrievedAt": "2026-10-15T11:32:29Z"
+      }
+    },
+    {
+      "id": "china_fiscal_hierarchy_cje_2022",
+      "type": "journal_article",
+      "authors": [
+        "Jiaxuan Liu"
+      ],
+      "year": 2022,
+      "title": "Fiscal Hierarchical Reform, Intergovernmental Financial Decentralization and Regional Government Financing Disparity: Evidence from Debt of Local Government Financing Vehicles",
+      "venue": "China Journal of Economics",
+      "doi": "10.26599/cje.2022.9300303",
+      "url": "https://doi.org/10.26599/cje.2022.9300303",
+      "supports": [
+        "M34"
+      ],
+      "relevance": "Regional government financing disparity and LGFV debt",
+      "keyResult": "Not read. Title, year and author checked only.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": true,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Manual lane check on 2026-10-15 with curl to api.crossref.org/works/10.26599/cje.2022.9300303. Title, year and author list were compared with the records below. Results are recorded by hand; this generator does not call the network.",
+        "laneCheck": "title and year 2022 match; no number is taken from this paper"
+      }
+    },
+    {
+      "id": "china_lgfv_implicit_debt_ssrn_2026",
+      "type": "working_paper",
+      "authors": [
+        "Li Wei"
+      ],
+      "year": 2026,
+      "title": "Local Government Financing Vehicles, Implicit Debt, and Provincial Fiscal Risk in China: A System-GMM and Panel-Threshold Analysis, 2012-2026",
+      "venue": "SSRN working paper",
+      "doi": "10.2139/ssrn.7417551",
+      "url": "https://doi.org/10.2139/ssrn.7417551",
+      "supports": [],
+      "relevance": "Not used in any parameter. Listed for transparency only.",
+      "keyResult": "Not read. Title, year and author checked only.",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "metadata_only",
+        "method": "Manual lane check on 2026-10-15 with curl to api.crossref.org/works/10.2139/ssrn.7417551. Title, year and author list were compared with the records below. Results are recorded by hand; this generator does not call the network.",
+        "laneCheck": "title, year 2026 and author match; not used for any number"
+      }
+    },
+    {
+      "id": "acharya_2011_bank_bailouts_sovereign_nber",
+      "type": "working_paper",
+      "authors": [
+        "Viral Acharya",
+        "Itamar Drechsler",
+        "Philipp Schnabl"
+      ],
+      "year": 2011,
+      "title": "A Pyrrhic Victory? - Bank Bailouts and Sovereign Credit Risk",
+      "venue": "NBER working paper",
+      "doi": "10.3386/w17136",
+      "url": "https://doi.org/10.3386/w17136",
+      "supports": [
+        "M36"
+      ],
+      "relevance": "Bank bailouts transfer risk to sovereigns (NBER working paper)",
+      "keyResult": "Title-level only (no abstract retrieved): Bank bailouts transfer risk to sovereigns (NBER working paper).",
+      "keyResultBasis": "title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and year compared",
+        "checkedTitle": "A Pyrrhic Victory? - Bank Bailouts and Sovereign Credit Risk",
+        "crossrefType": "report",
+        "retrievedAt": null,
+        "expectedTitleFragment": "A Pyrrhic Victory"
+      }
+    },
+    {
+      "id": "sr_11_7_model_risk",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2011,
+      "yearBasis": "publication year",
+      "title": "FRB: Supervisory Letter SR 11-7 on guidance on Model Risk Management -- April 4, 2011",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.htm",
+      "supports": [
+        "M24"
+      ],
+      "relevance": "Federal Reserve supervisory guidance on model risk management",
+      "keyResult": "Federal Reserve supervisory letter SR 11-7 on model risk management (page title checked; body not read).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "FRB: Supervisory Letter SR 11-7 on guidance on Model Risk Management -- April 4, 2011",
+        "httpStatus": 200,
+        "bodySha256": "f9a4ce3c8209139acccd500631cffb2a7c6f8868ae574c34ad26ea9f94d2e4b3",
+        "retrievedAt": "2026-10-15T10:18:54Z"
+      }
+    },
+    {
+      "id": "fed_2026_stress_test_scenarios",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "publication year",
+      "title": "The Fed - 2026 Stress Test Scenarios",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.federalreserve.gov/publications/2026-stress-test-scenarios.htm",
+      "supports": [
+        "M23"
+      ],
+      "relevance": "Federal Reserve severity benchmark for US macro-financial scenarios",
+      "keyResult": "Federal Reserve 2026 stress-test scenarios page (page title checked; body not read).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "The Fed - 2026 Stress Test Scenarios",
+        "httpStatus": 200,
+        "bodySha256": "405d781a83f7ff78641ee45e013b7a6d8336e4ddd0ab0c9b9414db6f51a17a2a",
+        "retrievedAt": "2026-10-15T10:18:55Z"
+      }
+    },
+    {
+      "id": "eba_eu_wide_stress_testing",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "retrieval year (living page)",
+      "title": "EU-wide stress testing | European Banking Authority",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.eba.europa.eu/risk-and-data-analysis/risk-analysis/eu-wide-stress-testing",
+      "supports": [
+        "M23"
+      ],
+      "relevance": "EBA EU-wide stress testing framework (living page)",
+      "keyResult": "EBA EU-wide stress testing page (page title checked; body not read; living page).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "EU-wide stress testing | European Banking Authority",
+        "httpStatus": 200,
+        "bodySha256": "f3c0b07c52afbedddfbcade9ece6ea8fdf68a0a60b018d3f01c8cb9289704a2c",
+        "retrievedAt": "2026-10-15T10:18:56Z"
+      }
+    },
+    {
+      "id": "boe_stress_testing",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "retrieval year (living page)",
+      "title": "Stress testing | Bank of England \u2013 the UK&#39;s central bank",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.bankofengland.co.uk/stress-testing",
+      "supports": [
+        "M23"
+      ],
+      "relevance": "Bank of England stress-testing framework (living page)",
+      "keyResult": "Bank of England stress-testing page (page title checked; body not read; living page).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "Stress testing | Bank of England \u2013 the UK&#39;s central bank",
+        "httpStatus": 200,
+        "bodySha256": "d4e7b04a0f5728c6fa459f1d203874249355cc86915e637224a78f8cc2b2e7ac",
+        "retrievedAt": "2026-10-15T10:18:57Z"
+      }
+    },
+    {
+      "id": "ngfs_scenarios_portal",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "retrieval year (living page)",
+      "title": "NGFS Scenarios Portal",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.ngfs.net/ngfs-scenarios-portal/",
+      "supports": [
+        "M23"
+      ],
+      "relevance": "NGFS climate and transition scenario portal (living page)",
+      "keyResult": "NGFS Scenarios Portal (page title checked; body not read; living page).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "NGFS Scenarios Portal",
+        "httpStatus": 200,
+        "bodySha256": "bc31758d3adc5f15117e73242ac15540e904b8718788a10dc88f872c88ec7cd7",
+        "retrievedAt": "2026-10-15T10:18:58Z"
+      }
+    },
+    {
+      "id": "bis_credit_to_gdp_gaps",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "retrieval year (living page)",
+      "title": "Credit-to-GDP gaps - overview | BIS Data Portal",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.bis.org/statistics/c_gaps.htm",
+      "supports": [
+        "M05",
+        "M35"
+      ],
+      "relevance": "BIS credit-to-GDP gap statistics (living data page)",
+      "keyResult": "BIS credit-to-GDP gap statistics overview (page title checked; body not read; living page).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "Credit-to-GDP gaps - overview | BIS Data Portal",
+        "httpStatus": 200,
+        "bodySha256": "c875a47b71d1a48f877c1e4d2b90c3bca9aed3a7690edd59d8962a4a54674fa5",
+        "retrievedAt": "2026-10-15T10:18:59Z"
+      }
+    },
+    {
+      "id": "jst_macrohistory_database",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "retrieval year (living page)",
+      "title": "DOWNLOAD - MacroFinance &amp; MacroHistory Lab",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.macrohistory.net/database/",
+      "supports": [
+        "M04"
+      ],
+      "relevance": "JST Macrohistory database download page",
+      "keyResult": "JST MacroFinance and MacroHistory Lab database page (page title checked; body not read; living page).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "DOWNLOAD - MacroFinance &amp; MacroHistory Lab",
+        "httpStatus": 200,
+        "bodySha256": "b5447f6e3fe71f05507774771d8088551e6bac8325a526bf8df263111e0cac16",
+        "retrievedAt": "2026-10-15T10:19:00Z"
+      }
+    },
+    {
+      "id": "snb_monetary_policy",
+      "type": "official_publication",
+      "authors": [
+        "Institutional page (see title)"
+      ],
+      "year": 2026,
+      "yearBasis": "retrieval year (living page)",
+      "title": "The SNB\u2019s monetary policy | Swiss National Bank",
+      "venue": "Official website",
+      "doi": null,
+      "url": "https://www.snb.ch/en/the-snb/mandates-goals/monetary-policy",
+      "supports": [
+        "M39"
+      ],
+      "relevance": "Swiss National Bank monetary policy mandate page",
+      "keyResult": "Swiss National Bank monetary policy page (page title checked; body not read; living page).",
+      "keyResultBasis": "official_page_title_only",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_official_url",
+        "method": "HTTP GET; page title compared",
+        "checkedTitle": "The SNB\u2019s monetary policy | Swiss National Bank",
+        "httpStatus": 200,
+        "bodySha256": "aa54b2cb9054b07b28c072fe227fff01227d4ea37a93f6dd06f89299a0d96c55",
+        "retrievedAt": "2026-10-15T10:19:01Z"
+      }
+    },
+    {
+      "id": "imf_cr26-044_chn_2026",
+      "type": "official_publication",
+      "authors": [
+        "International Monetary Fund. Asia and Pacific Department"
+      ],
+      "year": 2026,
+      "title": "People\u2019s Republic of China: 2025 Article IV Consultation-Press Release; Staff Report; and Statement by the Executive Director for the People\u2019s Republic of China",
+      "venue": "IMF Staff Country Reports, Volume 2026, Issue 044, Article A001 (IMF Country Report No. 26/44)",
+      "doi": "10.5089/9798229038911.002.A001",
+      "url": "https://doi.org/10.5089/9798229038911.002.a001",
+      "supports": [
+        "M34",
+        "M35",
+        "M37",
+        "M40"
+      ],
+      "relevance": "Primary source for the general government, LGFV and augmented debt perimeters and the macro baseline",
+      "keyResult": "Table 2 (PDF page 67): augmented debt 126.6 percent of GDP in 2025 (177,523 RMB bn); listed-bond LGFV debt 50.9 percent; augmented excluding 'possible to be recognized' 98.9 percent. Annex VIII reports officially defined hidden debt declining from RMB 14.3tn in 2023 to RMB 10.5tn in 2024 and says staff's broader economic- perimeter off-budget LGFV estimate is more than three times the official hidden-debt figure. These perimeters overlap.",
+      "keyResultBasis": "pdf_text_extraction_pages_66_67",
+      "peerReviewed": false,
+      "verification": {
+        "status": "verified_crossref_metadata",
+        "method": "Crossref REST /works/{doi}; title and author compared; official IMF eLibrary search result confirms publication date and report number",
+        "checkedTitle": "People\u2019s Republic of China: 2025 Article IV Consultation-Press Release; Staff Report; and Statement by the Executive Director for the People\u2019s Republic of China",
+        "httpStatus": 200,
+        "bodySha256": null,
+        "retrievedAt": "2026-10-15T12:11:29Z",
+        "crossrefUrl": "https://api.crossref.org/works/10.5089%2F9798229038911.002.A001",
+        "officialPublicationUrl": "https://www.elibrary.imf.org/view/journals/002/2026/044/article-A001-en.xml",
+        "officialPublicationDate": "2026-02-18"
+      }
+    }
+  ]
+}
