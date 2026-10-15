@@ -2,7 +2,7 @@
 
 Entries marked `reg` come from the verified reference register (site/data/references.json,
 Crossref-checked). Entries marked `new` were added for the methods section and checked
-against Crossref / the World Bank API on 2026-10-31.
+against Crossref / the World Bank API on 2026-10-15.
 """
 from __future__ import annotations
 import json
@@ -28,7 +28,7 @@ SPEC = [
  ("imfchn", "data", ("reg", "imf_cr26-044_chn_2026"),
   "China augmented debt (IMF perimeter), reserves and policy-space inputs."),
  ("tic", "data", ("reg", "Major Foreign Holders of Treasury Securities"),
-  "Japanese and Chinese Treasury holdings: sale capacity for the Treasury-pressure channel."),
+  "Japanese and Chinese Treasury holdings (latest month: July 2026): sale capacity for the Treasury-pressure channel."),
  ("spdji", "data", ("reg", "S&P 500 Communication Services & Information Technology Index"),
   "Sector weights behind the 47.4% broad technology and platform proxy and the 73% top-10 concentration."),
  ("wb2023", "data", ("reg", "Falling Long-Term Growth Prospects"),
@@ -46,6 +46,14 @@ SPEC = [
   "Market-liquidity breakdown and forced selling in 1987."),
  ("sr117", "benchmark", ("reg", "sr_11_7_model_risk"),
   "Model-risk standard behind the validation, limitations and disclosure practice."),
+ ("imfweo", "benchmark", ("new", {"authors": ["International Monetary Fund"], "year": 2026, "title": "World Economic Outlook, October 2026: adverse AI scenario (figures as reported by Reuters, 13 Oct 2026)", "venue": "IMF / Reuters", "url": "https://www.reuters.com/world/china/imf-says-ai-investment-propping-up-global-growth-war-debt-threaten-outlook-2026-10-13/"}),
+  "Benchmark for a correction-type AI scenario: global GDP 1.1% and US GDP 1.8% below baseline by 2028."),
+ ("bisai", "theory", ("new", {"authors": ["Phurichai Rungcharoenkitkul"], "year": 2026, "title": "The AI investment race", "venue": "BIS Working Paper 1367, 14 July 2026", "url": "https://www.bis.org/publications/working-paper-1367-ai-investment-race"}),
+  "Calibrated model of over-investment, debt financing and contagion between AI firms: independent support for the transmission mechanism."),
+ ("crma", "benchmark", ("new", {"authors": ["European Commission"], "year": 2024, "title": "Critical Raw Materials Act: 2030 benchmarks (10% extraction, 40% processing, 25% recycling, at most 65% from one supplier)", "venue": "DG GROW", "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/critical-raw-materials-act_en"}),
+  "Policy targets behind Europe's supply-independence strategy. Objectives, not operating capacity."),
+ ("shiller", "data", ("new", {"authors": ["Robert J. Shiller"], "year": 2026, "title": "Monthly S&P 500 price, dividend, earnings and CPI data (as redistributed in the Open Data Commons datasets/s-and-p-500 repository)", "venue": "ODC-PDDL-1.0", "url": "https://github.com/datasets/s-and-p-500"}),
+  "Monthly US equity history used only to measure how much annual closes understate falls."),
  # ---- statistical methods
  ("ridge", "method", ("new", {"authors": ["Arthur E. Hoerl", "Robert W. Kennard"], "year": 1970, "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems", "venue": "Technometrics", "doi": "10.1080/00401706.1970.10488634"}),
   "L2 penalty of the outcome logit (C = 0.2 and 1.0, averaged)."),
@@ -154,4 +162,4 @@ def build() -> dict:
         items.append({"key": key, "kind": kind, "authors": a, "year": r.get("year"), "title": r["title"].replace("&amp;", "&").replace("&#39;", "'"),
                       "venue": r.get("venue"), "doi": r.get("doi"), "url": r.get("url") or (f"https://doi.org/{r['doi']}" if r.get("doi") else None),
                       "use": use, "source": "register" if src == "reg" else "added"})
-    return {"asOf": "2026-10-31", "items": items}
+    return {"asOf": "2026-10-15", "items": items}

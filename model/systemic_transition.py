@@ -39,7 +39,7 @@ def build_panel(root: Path, horizon: int = HORIZON) -> pd.DataFrame:
             y = int(years[i]); fwd = index[i:i + horizon + 1]
             crisis = g.loc[y:y + horizon, "crisisJST"].fillna(0).max() > 0
             rows.append({"iso": iso, "year": y, "runup3": float(index[i] / index[i - 3] - 1),
-                         "drawdown": float(fwd.min() / fwd[0] - 1), "credit": g.credit.get(y, np.nan),
+                         "drawdown": EP.drawdown_of(fwd), "credit": g.credit.get(y, np.nan),
                          "credit5": g.credit5.get(y, np.nan), "debt": g.debt.get(y, np.nan),
                          "short": g.stir.get(y, np.nan), "crisis": int(crisis)})
     return pd.DataFrame(rows)

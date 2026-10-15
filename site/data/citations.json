@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-31",
+ "asOf": "2026-10-15",
  "items": [
   {
    "key": "wdi",
@@ -115,7 +115,7 @@
    "venue": null,
    "doi": null,
    "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html",
-   "use": "Japanese and Chinese Treasury holdings: sale capacity for the Treasury-pressure channel.",
+   "use": "Japanese and Chinese Treasury holdings (latest month: July 2026): sale capacity for the Treasury-pressure channel.",
    "source": "register"
   },
   {
@@ -231,6 +231,62 @@
    "url": "https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.htm",
    "use": "Model-risk standard behind the validation, limitations and disclosure practice.",
    "source": "register"
+  },
+  {
+   "key": "imfweo",
+   "kind": "benchmark",
+   "authors": [
+    "International Monetary Fund"
+   ],
+   "year": 2026,
+   "title": "World Economic Outlook, October 2026: adverse AI scenario (figures as reported by Reuters, 13 Oct 2026)",
+   "venue": "IMF / Reuters",
+   "doi": null,
+   "url": "https://www.reuters.com/world/china/imf-says-ai-investment-propping-up-global-growth-war-debt-threaten-outlook-2026-10-13/",
+   "use": "Benchmark for a correction-type AI scenario: global GDP 1.1% and US GDP 1.8% below baseline by 2028.",
+   "source": "added"
+  },
+  {
+   "key": "bisai",
+   "kind": "theory",
+   "authors": [
+    "Phurichai Rungcharoenkitkul"
+   ],
+   "year": 2026,
+   "title": "The AI investment race",
+   "venue": "BIS Working Paper 1367, 14 July 2026",
+   "doi": null,
+   "url": "https://www.bis.org/publications/working-paper-1367-ai-investment-race",
+   "use": "Calibrated model of over-investment, debt financing and contagion between AI firms: independent support for the transmission mechanism.",
+   "source": "added"
+  },
+  {
+   "key": "crma",
+   "kind": "benchmark",
+   "authors": [
+    "European Commission"
+   ],
+   "year": 2024,
+   "title": "Critical Raw Materials Act: 2030 benchmarks (10% extraction, 40% processing, 25% recycling, at most 65% from one supplier)",
+   "venue": "DG GROW",
+   "doi": null,
+   "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/critical-raw-materials-act_en",
+   "use": "Policy targets behind Europe's supply-independence strategy. Objectives, not operating capacity.",
+   "source": "added"
+  },
+  {
+   "key": "shiller",
+   "kind": "data",
+   "authors": [
+    "Robert J. Shiller"
+   ],
+   "year": 2026,
+   "title": "Monthly S&P 500 price, dividend, earnings and CPI data (as redistributed in the Open Data Commons datasets/s-and-p-500 repository)",
+   "venue": "ODC-PDDL-1.0",
+   "doi": null,
+   "url": "https://github.com/datasets/s-and-p-500",
+   "use": "Monthly US equity history used only to measure how much annual closes understate falls.",
+   "source": "added"
   },
   {
    "key": "ridge",

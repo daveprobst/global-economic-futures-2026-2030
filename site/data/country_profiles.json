@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-31",
+ "asOf": "2026-10-15",
  "metricDefinitions": {
   "growth": "2025 real GDP growth, %",
   "publicDebt": "Latest government debt, % GDP; perimeters differ",
@@ -31,7 +31,7 @@
    "shockRole": "Property-debt amplifier and potential Treasury seller"
   },
   "EU": {
-   "summary": "Trade, banks and dollar funding carry the first-round recession before any reallocation gain.",
+   "summary": "Mostly conventional industry with little direct AI exposure and no property-debt loop. Trade, bank and dollar-funding links carry the first-round hit.",
    "metrics": {
     "growth": 1.5,
     "publicDebt": 87.4,
@@ -39,7 +39,7 @@
     "policyRate": 2.0,
     "directExposure": "medium"
    },
-   "shockRole": "First-round loser; conditional later gainer"
+   "shockRole": "Cushioned loser; conditional safe-asset and geopolitical gainer"
   },
   "Switzerland": {
    "summary": "Low debt and safe-haven demand cushion funding stress; a stronger franc hurts exports.",

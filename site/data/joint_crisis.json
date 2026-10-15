@@ -137,11 +137,11 @@
  },
  "jointCount": null,
  "marginals": {
-  "usSystemic": 0.14878807005858316,
-  "chinaCrisis": 0.27889361553391956,
-  "eitherCrisis": 0.2966365928884056,
+  "usSystemic": 0.14178108874005138,
+  "chinaCrisis": 0.27946334919000315,
+  "eitherCrisis": 0.2963707440222543,
   "chinaCrisisConditionalOnUsSystemic": 0.88075,
-  "usSystemicConditionalOnChinaCrisis": 0.46987483902498717
+  "usSystemicConditionalOnChinaCrisis": 0.44683388454956363
  },
  "method": {
   "commonDrawContract": "contagion.draw_contract.DrawBundle and PathState; no module-local RNG; assert identical draw IDs/order/dates before row-wise joint conjunction",
@@ -159,20 +159,20 @@
   "seed": 20261014
  },
  "probabilityCurrentTrajectory": {
-  "point": 0.13104509270409712,
+  "point": 0.12487369390780026,
   "interval80": [
-   0.07295839552607501,
-   0.2089508491825811
+   0.05197328606939773,
+   0.21263693831735092
   ],
   "status": "Probability-weighted path simulation; the interval comes from the year-cluster bootstrap of scenario weights.",
-  "window": "31 Oct 2026 \u2013 31 Dec 2030"
+  "window": "15 Oct 2026 \u2013 31 Dec 2030"
  },
  "sensitivity": [
   {
    "driver": "Banking-crisis transition",
    "low": "20% drawdown",
    "high": "75% drawdown",
-   "effect": "19% \u2192 48% before liquidity feedback"
+   "effect": "17% \u2192 49% before liquidity feedback"
   },
   {
    "driver": "China property loss",
@@ -199,62 +199,62 @@
   "continued_boom": {
    "paths": 4000,
    "usSystemic": 0.0,
-   "chinaCrisis": 0.00675,
+   "chinaCrisis": 0.00725,
    "joint": 0.0,
-   "either": 0.00675,
+   "either": 0.00725,
    "chinaGivenUs": 0.0,
    "usGivenChina": 0.0,
-   "medianMaxLiquidity": 0.030261348863463412,
-   "medianDrawdown": 0.023317823213961808,
+   "medianMaxLiquidity": 0.044199276905469556,
+   "medianDrawdown": 0.0426787440862616,
    "medianMinCoverage": 1.65
   },
   "no_burst_sideways": {
    "paths": 4000,
    "usSystemic": 0.0,
-   "chinaCrisis": 0.01225,
+   "chinaCrisis": 0.0155,
    "joint": 0.0,
-   "either": 0.01225,
+   "either": 0.0155,
    "chinaGivenUs": 0.0,
    "usGivenChina": 0.0,
-   "medianMaxLiquidity": 0.1279477367665851,
-   "medianDrawdown": 0.10385751821614647,
+   "medianMaxLiquidity": 0.15554606363751133,
+   "medianDrawdown": 0.12346322996577852,
    "medianMinCoverage": 1.65
   },
   "mild_adjustment": {
    "paths": 4000,
    "usSystemic": 0.0,
-   "chinaCrisis": 0.04725,
+   "chinaCrisis": 0.07475,
    "joint": 0.0,
-   "either": 0.04725,
+   "either": 0.07475,
    "chinaGivenUs": 0.0,
    "usGivenChina": 0.0,
-   "medianMaxLiquidity": 0.37534813670261913,
-   "medianDrawdown": 0.2408541242098065,
-   "medianMinCoverage": 1.481096830767145
+   "medianMaxLiquidity": 0.45713775956535174,
+   "medianDrawdown": 0.2770910535242043,
+   "medianMinCoverage": 1.457629673918535
   },
   "moderate_burst": {
    "paths": 4000,
    "usSystemic": 0.0,
-   "chinaCrisis": 0.2775,
+   "chinaCrisis": 0.492,
    "joint": 0.0,
-   "either": 0.2775,
+   "either": 0.492,
    "chinaGivenUs": 0.0,
    "usGivenChina": 0.0,
-   "medianMaxLiquidity": 0.7429888358976846,
-   "medianDrawdown": 0.4194407503545307,
-   "medianMinCoverage": 1.2019460624513814
+   "medianMaxLiquidity": 0.9394810858671407,
+   "medianDrawdown": 0.4976928608120352,
+   "medianMinCoverage": 1.1520908314060456
   },
   "deep_drawdown_no_vacuum": {
    "paths": 4000,
    "usSystemic": 0.0,
-   "chinaCrisis": 0.28775,
+   "chinaCrisis": 0.2905,
    "joint": 0.0,
-   "either": 0.28775,
+   "either": 0.2905,
    "chinaGivenUs": 0.0,
    "usGivenChina": 0.0,
    "medianMaxLiquidity": 0.58,
-   "medianDrawdown": 0.509778563456728,
-   "medianMinCoverage": 1.0541450684511382
+   "medianDrawdown": 0.5251476499931679,
+   "medianMinCoverage": 1.053893285917356
   },
   "severe_burst": {
    "paths": 4000,
@@ -265,8 +265,8 @@
    "chinaGivenUs": 0.0,
    "usGivenChina": 0.0,
    "medianMaxLiquidity": 1.0,
-   "medianDrawdown": 0.7043388377967342,
-   "medianMinCoverage": 0.8333900008815733
+   "medianDrawdown": 0.7290930875452593,
+   "medianMinCoverage": 0.8335442295828785
   },
   "severe_burst_with_financial_crisis": {
    "paths": 4000,
@@ -277,7 +277,7 @@
    "chinaGivenUs": 0.88075,
    "usGivenChina": 1.0,
    "medianMaxLiquidity": 1.0,
-   "medianDrawdown": 0.8253044627480113,
+   "medianDrawdown": 0.851377378415352,
    "medianMinCoverage": 0.7014920095535334
   }
  },
@@ -311,62 +311,62 @@
    [
     0.0003333333333333333,
     0.0006666666666666666,
-    0.0028333333333333335,
-    0.007333333333333333,
-    0.015333333333333332,
-    0.041,
-    0.10066666666666667,
-    0.19816666666666666
+    0.0025,
+    0.006666666666666667,
+    0.015,
+    0.04066666666666666,
+    0.09983333333333333,
+    0.1975
    ],
    [
-    0.0015,
-    0.005333333333333333,
-    0.006333333333333333,
-    0.02033333333333333,
-    0.04583333333333333,
-    0.10933333333333334,
-    0.22783333333333333,
-    0.38166666666666665
+    0.0011666666666666668,
+    0.004666666666666667,
+    0.0055,
+    0.019,
+    0.04466666666666667,
+    0.10833333333333334,
+    0.22616666666666665,
+    0.37933333333333336
    ],
    [
-    0.0065,
-    0.014,
+    0.0055,
+    0.011833333333333333,
+    0.021,
+    0.05533333333333333,
+    0.10416666666666667,
+    0.22183333333333333,
+    0.3725,
+    0.5733333333333334
+   ],
+   [
+    0.014666666666666666,
+    0.025833333333333333,
+    0.04666666666666667,
+    0.1,
+    0.1815,
+    0.35283333333333333,
+    0.5531666666666667,
+    0.7308333333333333
+   ],
+   [
     0.024,
-    0.06,
-    0.10916666666666666,
-    0.22833333333333333,
-    0.3785,
-    0.5758333333333333
-   ],
-   [
-    0.018333333333333333,
-    0.03183333333333333,
-    0.0555,
-    0.11383333333333333,
-    0.19433333333333333,
-    0.3685,
-    0.5655,
-    0.7355
+    0.03933333333333333,
+    0.072,
+    0.15116666666666667,
+    0.268,
+    0.4555,
+    0.6648333333333334,
+    0.8311666666666667
    ],
    [
     0.0325,
-    0.051833333333333335,
-    0.08783333333333333,
-    0.17583333333333334,
-    0.29483333333333334,
-    0.4826666666666667,
-    0.6806666666666666,
-    0.8386666666666667
-   ],
-   [
-    0.0465,
-    0.07333333333333333,
-    0.12616666666666668,
-    0.222,
-    0.3441666666666667,
-    0.5585,
-    0.7406666666666667,
-    0.8768333333333334
+    0.056,
+    0.10033333333333333,
+    0.18966666666666668,
+    0.30566666666666664,
+    0.5221666666666667,
+    0.7183333333333334,
+    0.8676666666666667
    ]
   ],
   "copulaCorrelation": 0.62
@@ -374,20 +374,20 @@
  "drawsPerScenario": 4000,
  "marginalIntervals80": {
   "usSystemic": [
-   0.08283666821013341,
-   0.23724195195297315
+   0.05901025951677289,
+   0.24142712269923466
   ],
   "chinaCrisis": [
-   0.2177166407166594,
-   0.34857213729004655
+   0.17674665592911018,
+   0.3786316673008809
   ],
   "joint": [
-   0.07295839552607501,
-   0.2089508491825811
+   0.05197328606939773,
+   0.21263693831735092
   ],
   "either": [
-   0.22884192229989048,
-   0.37680630260902376
+   0.18368979004852307,
+   0.40602373505220324
   ]
  }
 }

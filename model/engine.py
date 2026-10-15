@@ -26,11 +26,12 @@ BETA = {"China": .82, "EU": .68, "Switzerland": .48}   # equity / spread beta to
 def logistic(x): return 1 / (1 + np.exp(-x))
 
 
-def simulate_finance(sc: str, n: int, seed: int) -> dict:
+def simulate_finance(sc: str, n: int, seed: int, iters: int = 40, l0=None) -> dict:
     sev = SEVERITY[sc]; rng = np.random.default_rng(seed)
     exp = np.ones((n, 5)); equity = np.full((n, 5), 100.); liq = np.zeros((n, 5)); marg = np.zeros((n, 5))
     cov = np.full((n, 5), 1.65); tech = np.full((n, 5), 5.0); sale_a = np.zeros((n, 5)); out_a = np.full((n, 5), OUT0)
     lgfv = np.full((n, 5), 4.5); ch_a = np.full((n, 5), CH0); sale_a[:] = SALE0
+    resid = np.zeros(5)
     eps = {k: rng.normal(0, s, (n, 5)) for k, s in (("us", .30), ("cn", .32), ("eu", .25))}
     # Parameter uncertainty: how hard and how lasting the macro damage is for a given financial state.
     mult = {k: np.exp(rng.normal(0, UNC, n)) for k in ("phi_us", "kap_us", "phi_cn", "kap_cn")}
@@ -38,8 +39,10 @@ def simulate_finance(sc: str, n: int, seed: int) -> dict:
         common = rng.normal(0, .07, n)
         exp[:, t] = np.clip(1 - sev * SHAPE[t] + common, .03, 1.12)
         prev_eq, prev_liq, prev_ch = equity[:, t - 1], liq[:, t - 1], ch_a[:, t - 1]
-        l = prev_liq * .52; e = prev_eq.copy(); ch = prev_ch.copy()
-        for _ in range(8):
+        l = prev_liq * .52 if l0 is None else np.full(n, float(l0)); e = prev_eq.copy(); ch = prev_ch.copy()
+        eq_noise = rng.normal(0, 1.45, n)   # drawn once per year, so the fixed point is deterministic given the shocks
+        for it in range(iters):
+            l_prev_it = l
             revenue = np.clip(.70 + .40 * exp[:, t] - .15 * l, .12, 1.15)
             commitment = 1 + .48 * sev * np.exp(-.18 * (t - 1))
             c = 1.82 * revenue / commitment
@@ -51,14 +54,15 @@ def simulate_finance(sc: str, n: int, seed: int) -> dict:
             l = np.clip(.44 * prev_liq + .76 * np.maximum(0, 1 - c) + 1.12 * m + .34 * s - policy, 0, 1)
             if sc == "deep_drawdown_no_vacuum": l = np.minimum(l, .58)
             target = 100 * (1 - .52 * sev * SHAPE[t] - .20 * l - .10 * m)
-            e = np.clip(.54 * e + .46 * target + rng.normal(0, 1.45, n), 10, 150)
+            e = np.clip(.54 * e + .46 * target + eq_noise, 10, 150)
             ch = np.clip(.58 * prev_ch + .35 * o + .24 * l + .11 * sev, 0, 1)
+        resid[t] = float(np.max(np.abs(l - l_prev_it)))
         exp[:, t] = np.clip(exp[:, t] - .09 * l, 0, 1.12)
         equity[:, t] = e; liq[:, t] = l; marg[:, t] = m; cov[:, t] = c; sale_a[:, t] = s; out_a[:, t] = o; ch_a[:, t] = ch
         tech[:, t] = 4.8 + 5.2 * l + 1.3 * np.maximum(0, 1 - c)
         lgfv[:, t] = 4.5 + 5.1 * o + 1.35 * s
     return {"exp": exp, "equity": equity, "liq": liq, "marg": marg, "cov": cov, "tech": tech, "sale": sale_a,
-            "out": out_a, "lgfv": lgfv, "ch": ch_a, "eps": eps, "mult": mult, "sev": sev}
+            "out": out_a, "lgfv": lgfv, "ch": ch_a, "eps": eps, "mult": mult, "sev": sev, "resid": resid}
 
 
 def china_baseline(trend_slope: float, last_growth: float) -> np.ndarray:

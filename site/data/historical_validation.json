@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-31",
+ "asOf": "2026-10-15",
  "metric": "Annual aggregate real GDP growth and chained level",
  "analogs": [
   {
@@ -295,19 +295,19 @@
     },
     {
      "year": 2027,
-     "value": -2.608399294057498
+     "value": -1.925683923184179
     },
     {
      "year": 2028,
-     "value": -1.4137242796160367
+     "value": -0.6805631964678786
     },
     {
      "year": 2029,
-     "value": 0.4353838360185168
+     "value": 1.0018818703727517
     },
     {
      "year": 2030,
-     "value": 1.9966325585731952
+     "value": 2.4028391419364494
     }
    ],
    "realGdpIndex": [
@@ -317,19 +317,19 @@
     },
     {
      "year": 2027,
-     "value": 99.72899912288511
+     "value": 100.4280996626594
     },
     {
      "year": 2028,
-     "value": 98.32700002830335
+     "value": 99.7627583918231
     },
     {
      "year": 2029,
-     "value": 98.72663041662767
+     "value": 100.76220436081073
     },
     {
      "year": 2030,
-     "value": 100.64430292241082
+     "value": 103.16421112356745
     }
    ],
    "trendIndex": [
@@ -355,7 +355,7 @@
     }
    ],
    "yearsNegative": 2,
-   "cumulativeGrowth": 0.6443029224108159,
+   "cumulativeGrowth": 3.164211123567455,
    "source": "Conditional model path"
   }
  ],

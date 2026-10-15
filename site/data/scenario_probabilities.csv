@@ -1,0 +1,8 @@
+outcome,technical_name,chance_in_100,p10_in_100,p90_in_100,definition
+The boom keeps going,Boom holds,18.4,8.9,27.8,"No 20% peak-to-trough fall at annual closes to end-2030, and real returns of at least 5% a year."
+A quiet pause,Contained repricing,4.8,1.3,12.6,"No 20% peak-to-trough fall at annual closes, but real returns below 5% a year."
+A modest pullback,Mild adjustment,29.4,15.8,45.3,Peak-to-trough fall of 20–35% at annual closes.
+A sizeable fall,Moderate burst,5.7,2.3,10.3,Peak-to-trough fall of 35–50% at annual closes.
+"A deep fall, markets keep working","Deep drawdown, liquidity holds",22.1,10.5,34.4,Fall of 50% or more; funding markets keep working.
+A deep fall and a funding freeze,Severe burst + liquidity vacuum,5.5,1.4,10.1,Fall of 50% or more plus a dollar-liquidity vacuum.
+"A deep fall, a freeze and a banking crisis",Severe burst + banking crisis,14.2,5.9,24.1,"Fall of 50% or more, liquidity vacuum and a banking crisis."

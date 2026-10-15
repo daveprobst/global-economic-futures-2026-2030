@@ -1,0 +1,356 @@
+{
+ "asOf": "2026-10-15",
+ "validation": {
+  "target": "a 20%+ peak-to-trough fall at annual closes within four years",
+  "n": 301,
+  "schemes": {
+   "Leave one economy out": {
+    "Base rate (training frequency)": {
+     "brier": 0.2404111270842396,
+     "logLoss": 0.6739995512004472,
+     "auc": 0.2691025284801334
+    },
+    "Run-up only (ridge logit)": {
+     "brier": 0.2332776401325322,
+     "logLoss": 0.663697253419749,
+     "auc": 0.5964619801796796
+    },
+    "Last-12-month return only (ridge logit)": {
+     "brier": 0.23972024177408796,
+     "logLoss": 0.6724533652298804,
+     "auc": 0.5254237288135595
+    },
+    "Run-up + return (ridge logit)": {
+     "brier": 0.2269361007174399,
+     "logLoss": 0.6468286130651753,
+     "auc": 0.6523108270815967
+    },
+    "Full blend (logit + boosting + forest)": {
+     "brier": 0.22428346896153598,
+     "logLoss": 0.6393913747341492,
+     "auc": 0.6503658423636196,
+     "reliability": [
+      {
+       "predicted": 0.4786883011669999,
+       "observed": 0.4426229508196721,
+       "n": 61
+      },
+      {
+       "predicted": 0.5596772437522274,
+       "observed": 0.5333333333333333,
+       "n": 60
+      },
+      {
+       "predicted": 0.6119861773247787,
+       "observed": 0.55,
+       "n": 60
+      },
+      {
+       "predicted": 0.6701834067722633,
+       "observed": 0.7166666666666667,
+       "n": 60
+      },
+      {
+       "predicted": 0.7999586284985839,
+       "observed": 0.8,
+       "n": 60
+      }
+     ]
+    }
+   },
+   "Leave one global wave out": {
+    "Base rate (training frequency)": {
+     "brier": 0.29590304283506114,
+     "logLoss": 0.7865901338067454,
+     "auc": 0.28281003982587755
+    },
+    "Run-up only (ridge logit)": {
+     "brier": 0.28000992083522624,
+     "logLoss": 0.7608029298275738,
+     "auc": 0.38978419931462444
+    },
+    "Last-12-month return only (ridge logit)": {
+     "brier": 0.2968869788926836,
+     "logLoss": 0.7887234410219496,
+     "auc": 0.3379179401685653
+    },
+    "Run-up + return (ridge logit)": {
+     "brier": 0.27540755957072555,
+     "logLoss": 0.7503516548031476,
+     "auc": 0.4149300731684727
+    },
+    "Full blend (logit + boosting + forest)": {
+     "brier": 0.2675945784035194,
+     "logLoss": 0.7321360021335479,
+     "auc": 0.43859405390386214,
+     "reliability": [
+      {
+       "predicted": 0.37852080576465025,
+       "observed": 0.6885245901639344,
+       "n": 61
+      },
+      {
+       "predicted": 0.4599968745990818,
+       "observed": 0.7333333333333333,
+       "n": 60
+      },
+      {
+       "predicted": 0.5293877012755404,
+       "observed": 0.48333333333333334,
+       "n": 60
+      },
+      {
+       "predicted": 0.6059322925331079,
+       "observed": 0.5166666666666667,
+       "n": 60
+      },
+      {
+       "predicted": 0.725977017887187,
+       "observed": 0.6166666666666667,
+       "n": 60
+      }
+     ]
+    }
+   }
+  },
+  "waveCount": 17,
+  "waveDefinition": "origin years within two years of each other form one global wave; a whole wave is held out together",
+  "outOfTime": {
+   "Train before 1994, test 1994\u20132021": {
+    "n": 156,
+    "observedBust": 0.8012820512820513,
+    "models": {
+     "Base rate (training frequency)": {
+      "brier": 0.3202564102564102,
+      "logLoss": 0.8357175373141994,
+      "auc": null
+     },
+     "Run-up only (ridge logit)": {
+      "brier": 0.2992095266395027,
+      "logLoss": 0.7935988419311288,
+      "auc": 0.5223225806451613
+     },
+     "Last-12-month return only (ridge logit)": {
+      "brier": 0.31780475262382485,
+      "logLoss": 0.8308381846343579,
+      "auc": 0.6250322580645161
+     },
+     "Run-up + return (ridge logit)": {
+      "brier": 0.2872250744346865,
+      "logLoss": 0.7684469594491116,
+      "auc": 0.6015483870967742
+     },
+     "Full blend (logit + boosting + forest)": {
+      "brier": 0.2689737620519683,
+      "logLoss": 0.7303226089328377,
+      "auc": 0.5788387096774193
+     }
+    }
+   },
+   "Train 1994\u20132021, test before 1994": {
+    "n": 145,
+    "observedBust": 0.4,
+    "models": {
+     "Base rate (training frequency)": {
+      "brier": 0.4010272846811309,
+      "logLoss": 1.058138189637529,
+      "auc": null
+     },
+     "Run-up only (ridge logit)": {
+      "brier": 0.39575887743336896,
+      "logLoss": 1.0422874236896769,
+      "auc": 0.643281807372176
+     },
+     "Last-12-month return only (ridge logit)": {
+      "brier": 0.4051083101808509,
+      "logLoss": 1.0764899359696611,
+      "auc": 0.5281411018628617
+     },
+     "Run-up + return (ridge logit)": {
+      "brier": 0.3885115692944712,
+      "logLoss": 1.0253387213431802,
+      "auc": 0.5836305984938566
+     },
+     "Full blend (logit + boosting + forest)": {
+      "brier": 0.3780020412587611,
+      "logLoss": 1.0015370292900718,
+      "auc": 0.5735235830360682
+     }
+    }
+   }
+  }
+ },
+ "sensitivity": [
+  {
+   "variant": "As released",
+   "episodes": 301,
+   "fall20": 0.9140125480853115,
+   "boom": 0.06105831669572418,
+   "observedFall": 0.6079734219269103
+  },
+  {
+   "variant": "Drawdown measured from the origin level (earlier definition)",
+   "episodes": 301,
+   "fall20": 0.7779459750273274,
+   "boom": 0.1336087777377945,
+   "observedFall": 0.4152823920265781
+  },
+  {
+   "variant": "Run-up trigger +40%",
+   "episodes": 384,
+   "fall20": 0.892612195106623,
+   "boom": 0.07548730991034439,
+   "observedFall": 0.5598958333333334
+  },
+  {
+   "variant": "Run-up trigger +75%",
+   "episodes": 188,
+   "fall20": 0.8563425586392162,
+   "boom": 0.11186440105962676,
+   "observedFall": 0.6808510638297872
+  },
+  {
+   "variant": "Run-up trigger +100%",
+   "episodes": 106,
+   "fall20": 0.8118758176706135,
+   "boom": 0.1394713765545452,
+   "observedFall": 0.7358490566037735
+  },
+  {
+   "variant": "Boom hurdle 3% a year",
+   "episodes": 301,
+   "fall20": 0.9140125480853115,
+   "boom": 0.07117448750921693,
+   "observedFall": 0.6079734219269103
+  },
+  {
+   "variant": "Boom hurdle 7% a year",
+   "episodes": 301,
+   "fall20": 0.9140125480853115,
+   "boom": 0.0538324804003722,
+   "observedFall": 0.6079734219269103
+  },
+  {
+   "variant": "Window of 3 annual closes",
+   "episodes": 308,
+   "fall20": 0.7168167645988993,
+   "boom": 0.19021042618808873,
+   "observedFall": 0.4642857142857143
+  },
+  {
+   "variant": "Window of 5 annual closes",
+   "episodes": 286,
+   "fall20": 0.9228046870034974,
+   "boom": 0.05625403127936627,
+   "observedFall": 0.6748251748251748
+  },
+  {
+   "variant": "Modern era only (1994\u20132021)",
+   "episodes": 156,
+   "fall20": 0.9328944060087856,
+   "boom": 0.05557182002397443,
+   "observedFall": 0.8012820512820513
+  },
+  {
+   "variant": "Pre-1994 history only",
+   "episodes": 145,
+   "fall20": 0.7622279350908595,
+   "boom": 0.15806438405891726,
+   "observedFall": 0.4
+  },
+  {
+   "variant": "Run-up as the only predictor",
+   "episodes": 301,
+   "fall20": 0.8001267970250642,
+   "boom": 0.14192677017968133,
+   "observedFall": 0.6079734219269103
+  }
+ ],
+ "samplingResolution": {
+  "source": "Shiller monthly real S&P 500 (1871\u20132022 origins), US only",
+  "windows": 148,
+  "monthlyFall20": 0.6351351351351351,
+  "annualFall20": 0.3581081081081081,
+  "annualCatchesMonthlyFalls": 0.5638297872340425,
+  "medianDepthUnderstatedPp": 8.004723791323137,
+  "afterRunup50": {
+   "windows": 15,
+   "monthlyFall20": 0.8666666666666667,
+   "annualFall20": 0.6666666666666666
+  }
+ },
+ "engineChecks": {
+  "method": "Same shocks; iteration cap 8 vs 60; fixed-point start from liquidity 0 vs 1",
+  "scenarios": {
+   "continued_boom": {
+    "residualAfter8": 3.087311185590025e-07,
+    "residualAfter60": 4.54942472583042e-10,
+    "meanAbsLiquidityGap8vs60": 6.627016130946185e-08,
+    "p99AbsLiquidityGap8vs60": 4.842500486655633e-07,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 9.023384817119506e-11,
+    "medianEquityTroughShift": -4.672039139563822e-06
+   },
+   "no_burst_sideways": {
+    "residualAfter8": 2.617275875582692e-06,
+    "residualAfter60": 9.60841989305905e-09,
+    "meanAbsLiquidityGap8vs60": 1.038631716239367e-06,
+    "p99AbsLiquidityGap8vs60": 5.726214587831736e-06,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 1.7382699724066697e-09,
+    "medianEquityTroughShift": -8.893035105472791e-05
+   },
+   "mild_adjustment": {
+    "residualAfter8": 1.1414689389477317e-05,
+    "residualAfter60": 6.786685091686451e-08,
+    "meanAbsLiquidityGap8vs60": 1.2280788968735222e-05,
+    "p99AbsLiquidityGap8vs60": 3.055183055577171e-05,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 1.0684471779542903e-08,
+    "medianEquityTroughShift": -0.0009159932734803533
+   },
+   "moderate_burst": {
+    "residualAfter8": 0.0001360956227451915,
+    "residualAfter60": 4.883885416639977e-06,
+    "meanAbsLiquidityGap8vs60": 4.4314163029160846e-05,
+    "p99AbsLiquidityGap8vs60": 0.00012813090195403,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 6.251051426486853e-07,
+    "medianEquityTroughShift": -0.004850127208641197
+   },
+   "deep_drawdown_no_vacuum": {
+    "residualAfter8": 0.0,
+    "residualAfter60": 0.0,
+    "meanAbsLiquidityGap8vs60": 4.744068619962535e-10,
+    "p99AbsLiquidityGap8vs60": 1.2981880737061858e-09,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 1.454392162258955e-14,
+    "medianEquityTroughShift": -2.7118592527131113e-07
+   },
+   "severe_burst": {
+    "residualAfter8": 0.0,
+    "residualAfter60": 0.0,
+    "meanAbsLiquidityGap8vs60": 1.0830588383174226e-09,
+    "p99AbsLiquidityGap8vs60": 2.990990743967359e-09,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 7.049916206369744e-14,
+    "medianEquityTroughShift": -6.013647855240833e-07
+   },
+   "severe_burst_with_financial_crisis": {
+    "residualAfter8": 0.0,
+    "residualAfter60": 0.0,
+    "meanAbsLiquidityGap8vs60": 1.4706606573156033e-09,
+    "p99AbsLiquidityGap8vs60": 5.167799923544437e-09,
+    "pathsWithDifferentEquilibrium": 0.0,
+    "maxStartGap": 3.5860203695392556e-14,
+    "medianEquityTroughShift": -8.513665203935261e-07
+   }
+  },
+  "worstResidualAfter8": 0.0001360956227451915,
+  "worstMultiEquilibriumShare": 0.0,
+  "timeResolution": "Annual state updates. Within-year dynamics (margin calls in days, funding in weeks) are collapsed into one fixed point per year; see methodology limitations."
+ },
+ "headline": {
+  "fall20": 0.7686020552635794
+ }
+}

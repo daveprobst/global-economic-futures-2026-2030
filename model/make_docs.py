@@ -14,18 +14,18 @@ def main():
 
 An English static research dashboard testing how an AI valuation reset could propagate through hyperscaler commitments, funding spreads, forced liquidations, Treasury liquidity, China capital outflows, LGFV refinancing and European demand, and how much output never comes back (hysteresis).
 
-**One window.** Every probability and every path covers 31 Oct 2026 – 31 Dec 2030.
+**One window.** Every probability and every path covers 15 Oct 2026 – 31 Dec 2030.
 
 Central reading: **{bust:.0%}** model weight on a 20%+ fall in AI equities inside the window; **{P['continued_boom']:.0%}** on a continuing boom; **{P['severe_burst_with_financial_crisis']:.0%}** on a full banking-crisis branch; **{c['joint']:.0%}** joint US banking crisis + China crisis. The 25 historical run-ups closest to today's ended in a 20%+ fall {n['bust']:.0%} of the time. These are model-conditional scenario weights, not objective frequencies or investment advice.
 
 ## Method in one page
 
-- {chk['episodes']} run-up episodes (three-year real equity return of at least +50%) in {chk['countries']} economies, 1870–2021: World Bank indices after 1993, JST Macrohistory before. Outcomes use the next four annual closes.
-- Predictors: 3-year run-up and last-12-month return. Volatility is excluded (an 8-stock basket is not comparable with a national index; no out-of-sample skill).
-- 75% ridge-logit, 15% gradient boosting, 10% random forest, recalibrated on leave-one-economy-out predictions; geopolitical × dollar-liquidity scaling; year-cluster bootstrap for ranges.
+- {chk['episodes']} run-up episodes (three-year real equity return of at least +50%) in {chk['countries']} economies, 1870–2021: World Bank indices after 1993, JST Macrohistory before. A fall is a peak-to-trough decline of 20%+ at annual closes within four years.
+- Headline odds: what happened after comparable run-ups (100%+), with each global wave counted once ({t['method']['calibration']['anchorEpisodes']} episodes, {t['method']['calibration']['anchorWaves']} waves), then scaled by a funding-regime surface. Ranges come from a wave bootstrap.
+- Four statistical models (ridge logit, boosting, forest, blend) were tested against that frequency with whole waves held out. None had reliable skill, so they are shown for validation, not used for the headline.
 - Equity loss → banking crisis: JST country-years, same window.
-- Connected simulator: one shared financial state per year, then output gaps, a hysteresis stock and unemployment for the US, China and Europe, calibrated to JST output history and to Japan after 1989.
-- The full parameter list, with the status of each (data, fixed rule, estimated, calibrated, assumed) and its source, is in the methodology section of the site and in `site/data/methodology.json`. Citations are in `site/data/citations.json`.
+- Connected simulator: one shared financial state per year (converged fixed point), then output gaps, a hysteresis stock and unemployment for the US, China and Europe, calibrated to JST output history and to Japan after 1989.
+- The full parameter list, with the status of each (data, fixed rule, estimated, calibrated, assumed) and its source, is in the methodology section and in `site/data/methodology.json`. Static tables and CSV downloads: `site/tables.html`.
 
 Read [docs/MODEL_RISK.md](docs/MODEL_RISK.md) before reusing any probability.
 
@@ -45,7 +45,7 @@ PORT=8080 HOST=127.0.0.1 python3 serve.py
 
 Open <http://127.0.0.1:8080/> or use `docker compose up --build`. The health endpoint is `/healthz`.
 
-As of 31 October 2026, Europe/Zurich.
+As of 15 October 2026 (latest prices 14 October 2026), Europe/Zurich.
 """)
     (ROOT / "docs/MODEL_RISK.md").write_text(f"""# Model risk and interpretation
 
@@ -55,7 +55,7 @@ Scenario analysis and stress testing. Not a trading signal, credit decision, reg
 
 ## One window
 
-Every probability covers 31 Oct 2026 – 31 Dec 2030 and is measured on annual closes. Every macro path runs 2026 (baseline year) to 2030. A longer view appears only in the hysteresis section, labelled 2036 with no new shock.
+Every probability covers 15 Oct 2026 – 31 Dec 2030 and is measured on annual closes. Every macro path runs 2026 (baseline year) to 2030. A longer view appears only in the hysteresis section, labelled 2036 with no new shock.
 
 ## Where the parameters are documented
 
@@ -65,7 +65,8 @@ The methodology section of the site lists every model and parameter with a statu
 
 - Run-ups of 100%+ (n={b['n']}): {b['boom']:.0%} boom, {b['sideways']:.0%} contained, {b['bust']:.0%} fall of 20%+.
 - The 25 closest to today's state: {n['boom']:.0%} / {n['sideways']:.0%} / {n['bust']:.0%}. Model: {P['continued_boom']:.0%} / {P['no_burst_sideways']:.0%} / {bust:.0%}.
-- Out-of-sample Brier skill over the base rate (logit core) is {sk(cv['leaveOneCountryOut']):.0%} on held-out economies and {sk(cv['leaveOneEraOut']):.0%} on held-out eras. Falls are far more common since 1994 than before, and the model does not separate eras.
+- Models were tested with whole global waves held out; the best has Brier skill of a few percent over the base rate and a ranking no better than chance, so the headline is a frequency, not a model output.
+- Annual closes miss falls inside the year; in US monthly data they catch only about half of 20% falls, so fall probabilities are conservative.
 - An earlier release showed 37% for "continued boom". That was a two-year weight labelled as a 2030 outcome; it is not supported on the four-year window.
 
 ## Main limitations
@@ -79,7 +80,7 @@ The methodology section of the site lists every model and parameter with a statu
 7. The systemic branch gives US output {s['us']['outputVsTrend2030'][1]:.1f}% against trend in 2030 (10th percentile {s['us']['outputVsTrend2030'][0]:.1f}%); history for 35%+ equity falls with a banking crisis has median {h['empiricalClasses']['deep_with_crisis']['p50']:.1f}% and 10th percentile {h['empiricalClasses']['deep_with_crisis']['p10']:.1f}%.
 8. Treasury holdings indicate sale capacity, not intent; China debt perimeters overlap and cannot be summed; European relative gains need policy execution.
 
-As-of date: 31 October 2026, Europe/Zurich.
+As-of date: 15 October 2026 (latest prices 14 October 2026), Europe/Zurich.
 """)
 
 

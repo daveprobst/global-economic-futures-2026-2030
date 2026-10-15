@@ -1,0 +1,13 @@
+variant,fall_20pct_in_100,boom_in_100,episodes,observed_fall_in_100
+As released,91.4,6.1,301,60.8
+Drawdown measured from the origin level (earlier definition),77.8,13.4,301,41.5
+Run-up trigger +40%,89.3,7.5,384,56.0
+Run-up trigger +75%,85.6,11.2,188,68.1
+Run-up trigger +100%,81.2,13.9,106,73.6
+Boom hurdle 3% a year,91.4,7.1,301,60.8
+Boom hurdle 7% a year,91.4,5.4,301,60.8
+Window of 3 annual closes,71.7,19.0,308,46.4
+Window of 5 annual closes,92.3,5.6,286,67.5
+Modern era only (1994–2021),93.3,5.6,156,80.1
+Pre-1994 history only,76.2,15.8,145,40.0
+Run-up as the only predictor,80.0,14.2,301,60.8

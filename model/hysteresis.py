@@ -36,7 +36,7 @@ def shortfall_panel() -> pd.DataFrame:
             fwd = idx[i:i + 5]
             lv = np.exp(y.loc[t:t + 4].to_numpy() - y[t]) if all(k in y.index for k in range(t, t + 5)) else None
             if lv is None or np.isnan(lv).any(): continue
-            rows.append({"iso": iso, "year": t, "trough": float(100 * (lv.min() - 1)), "drawdown": float(fwd.min() / fwd[0] - 1),
+            rows.append({"iso": iso, "year": t, "trough": float(100 * (lv.min() - 1)), "drawdown": EP.drawdown_of(fwd),
                          "crisis": bool(g.loc[t:t + 4, "crisisJST"].fillna(0).max() > 0),
                          "shortfall": float(100 * (np.exp(y[t + 4] - np.polyval(b, t + 4)) - 1))})
     d = pd.DataFrame(rows)
@@ -78,9 +78,15 @@ def crisis_cohorts() -> dict:
                        "p75": float(d[f"h{h}"].quantile(.75))} for h in (3, 5, 7, 10)}
     g = j[j.iso == "JPN"].set_index("year"); y = np.log(g.rgdpmad); pre = y.loc[1980:1989]; b = np.polyfit(pre.index.to_numpy(), pre.to_numpy(), 1)
     japan = [{"yearsAfter": k, "shortfall": float(100 * (np.exp(y[1989 + k] - np.polyval(b, 1989 + k)) - 1))} for k in range(0, 31) if (1989 + k) in y.index]
+    sens = []
+    for lo in (1980, 1975, 1970, 1960):
+        for label, ser in (("per head", np.log(g.rgdpmad)), ("total", np.log(g.rgdpmad * g["pop"]))):
+            pre = ser.loc[lo:1989]; bb = np.polyfit(pre.index.to_numpy(), pre.to_numpy(), 1)
+            sens.append({"trendYears": f"{lo}–1989", "measure": label, "h4": float(100 * (np.exp(ser[1993] - np.polyval(bb, 1993)) - 1)), "h10": float(100 * (np.exp(ser[1999] - np.polyval(bb, 1999)) - 1)),
+                         "trendGrowth": float(100 * (np.exp(bb[0]) - 1))})
     gfc = d[d.start.isin([2007, 2008])]
     gfc_rows = [{"iso": r.iso, "h3": r.h3, "h5": r.h5, "h7": r.h7} for r in gfc.itertuples()]
-    return {"postwarBankingCrises": stat, "japanAfter1989": japan, "gfcCohort": gfc_rows, "trendWindow": "10 years before the crisis start"}
+    return {"postwarBankingCrises": stat, "japanAfter1989": japan, "japanSensitivity": sens, "gfcCohort": gfc_rows, "trendWindow": "10 years before the crisis start"}
 
 
 def pava(y):

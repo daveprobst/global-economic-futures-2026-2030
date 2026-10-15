@@ -1,21 +1,21 @@
 {
- "asOf": "2026-10-31",
- "window": "31 Oct 2026 \u2013 31 Dec 2030",
+ "asOf": "2026-10-15",
+ "window": "15 Oct 2026 \u2013 31 Dec 2030",
  "status": "model_conditional",
  "scenarios": [
   {
    "id": "continued_boom",
    "name": "Boom holds",
    "class": "continued_boom",
-   "description": "No 20% fall at any annual close to end-2030, and real returns of at least 5% a year.",
-   "probability": 0.16092013210661577,
+   "description": "No 20% peak-to-trough fall at annual closes to end-2030, and real returns of at least 5% a year.",
+   "probability": 0.18375719140833408,
    "interval80": [
-    0.10116017671092312,
-    0.23237656816858762
+    0.08858592799254274,
+    0.2777399465207718
    ],
    "definition": {
     "drawdownThreshold": -0.2,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   },
@@ -23,15 +23,15 @@
    "id": "no_burst_sideways",
    "name": "Contained repricing",
    "class": "no_burst_sideways",
-   "description": "No 20% fall at any annual close, but real returns below 5% a year.",
-   "probability": 0.10652459449311188,
+   "description": "No 20% peak-to-trough fall at annual closes, but real returns below 5% a year.",
+   "probability": 0.04764075332808663,
    "interval80": [
-    0.06480972291608693,
-    0.15871472522400284
+    0.01312106320171735,
+    0.12576945202753734
    ],
    "definition": {
     "drawdownThreshold": -0.2,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   },
@@ -39,15 +39,15 @@
    "id": "mild_adjustment",
    "name": "Mild adjustment",
    "class": "mild_adjustment",
-   "description": "Worst annual-close fall of 20\u201335%.",
-   "probability": 0.17891491032970602,
+   "description": "Peak-to-trough fall of 20\u201335% at annual closes.",
+   "probability": 0.2938039914286702,
    "interval80": [
-    0.11326695247282285,
-    0.24284961504335917
+    0.15821560894981132,
+    0.45342130104425565
    ],
    "definition": {
     "drawdownThreshold": -0.2,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   },
@@ -55,15 +55,15 @@
    "id": "moderate_burst",
    "name": "Moderate burst",
    "class": "moderate_burst",
-   "description": "Worst annual-close fall of 35\u201350%.",
-   "probability": 0.13596303639629875,
+   "description": "Peak-to-trough fall of 35\u201350% at annual closes.",
+   "probability": 0.05700357428178997,
    "interval80": [
-    0.06618796445394994,
-    0.19677561687502862
+    0.023183773749260974,
+    0.10328641113966677
    ],
    "definition": {
     "drawdownThreshold": -0.35,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   },
@@ -72,14 +72,14 @@
    "name": "Deep drawdown, liquidity holds",
    "class": "deep_drawdown_no_vacuum",
    "description": "Fall of 50% or more; funding markets keep working.",
-   "probability": 0.21511140529254746,
+   "probability": 0.22081072065045418,
    "interval80": [
-    0.13241561369309698,
-    0.3229011021978172
+    0.10525898047386956,
+    0.3443589775386521
    ],
    "definition": {
     "drawdownThreshold": -0.5,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   },
@@ -88,14 +88,14 @@
    "name": "Severe burst + liquidity vacuum",
    "class": "severe_burst",
    "description": "Fall of 50% or more plus a dollar-liquidity vacuum.",
-   "probability": 0.053777851323136866,
+   "probability": 0.055202680162613545,
    "interval80": [
-    0.0179913872211531,
-    0.09309429511762046
+    0.014085583091118486,
+    0.10119321129095685
    ],
    "definition": {
     "drawdownThreshold": -0.5,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   },
@@ -104,14 +104,14 @@
    "name": "Severe burst + banking crisis",
    "class": "severe_burst_with_financial_crisis",
    "description": "Fall of 50% or more, liquidity vacuum and a banking crisis.",
-   "probability": 0.14878807005858316,
+   "probability": 0.14178108874005138,
    "interval80": [
-    0.08283666821013341,
-    0.23724195195297315
+    0.05901025951677289,
+    0.24142712269923466
    ],
    "definition": {
     "drawdownThreshold": -0.5,
-    "window": "31 Oct 2026 \u2013 31 Dec 2030",
+    "window": "15 Oct 2026 \u2013 31 Dec 2030",
     "closes": 4
    }
   }
@@ -197,13 +197,13 @@
    "liquidity": "ample",
    "stressMultiplier": 0.5456,
    "probabilities": {
-    "continued_boom": 0.258877304478623,
-    "no_burst_sideways": 0.17136948324641244,
-    "mild_adjustment": 0.13915311046916468,
-    "moderate_burst": 0.10574680102687846,
-    "deep_drawdown_no_vacuum": 0.1673053469310609,
-    "severe_burst": 0.04182633673276522,
-    "severe_burst_with_financial_crisis": 0.11572161711509525
+    "continued_boom": 0.3043497872565041,
+    "no_burst_sideways": 0.0789055003998344,
+    "mild_adjustment": 0.23575536513099035,
+    "moderate_burst": 0.045741034365210875,
+    "deep_drawdown_no_vacuum": 0.17718381502799777,
+    "severe_burst": 0.04429595375699944,
+    "severe_burst_with_financial_crisis": 0.11376854406246296
    }
   },
   {
@@ -211,13 +211,13 @@
    "liquidity": "neutral",
    "stressMultiplier": 0.88,
    "probabilities": {
-    "continued_boom": 0.19187416042076588,
-    "no_burst_sideways": 0.12701528929261968,
-    "mild_adjustment": 0.1663503594254531,
-    "moderate_burst": 0.12641484117461496,
-    "deep_drawdown_no_vacuum": 0.200004904683387,
-    "severe_burst": 0.05000122617084675,
-    "severe_burst_with_financial_crisis": 0.13833921883231273
+    "continued_boom": 0.22086264287560797,
+    "no_burst_sideways": 0.05726068518997245,
+    "mild_adjustment": 0.27594285766103543,
+    "moderate_burst": 0.05353817389519398,
+    "deep_drawdown_no_vacuum": 0.20738704386618861,
+    "severe_burst": 0.051846760966547153,
+    "severe_burst_with_financial_crisis": 0.13316183554545424
    }
   },
   {
@@ -225,13 +225,13 @@
    "liquidity": "vacuum",
    "stressMultiplier": 2.42,
    "probabilities": {
-    "continued_boom": 0.08753609007689446,
-    "no_burst_sideways": 0.05794642582554986,
-    "mild_adjustment": 0.20870222984381198,
-    "moderate_burst": 0.15859935217222398,
-    "deep_drawdown_no_vacuum": 0.2509250339541804,
-    "severe_burst": 0.0627312584885451,
-    "severe_burst_with_financial_crisis": 0.17355960963879408
+    "continued_boom": 0.09758502499546812,
+    "no_burst_sideways": 0.025299821295121372,
+    "mild_adjustment": 0.3352839500461946,
+    "moderate_burst": 0.06505147686732608,
+    "deep_drawdown_no_vacuum": 0.25198531263046225,
+    "severe_burst": 0.06299632815761556,
+    "severe_burst_with_financial_crisis": 0.1617980860078121
    }
   },
   {
@@ -239,13 +239,13 @@
    "liquidity": "ample",
    "stressMultiplier": 0.62,
    "probabilities": {
-    "continued_boom": 0.24021419419119452,
-    "no_burst_sideways": 0.15901502995755132,
-    "mild_adjustment": 0.14672865433241325,
-    "moderate_burst": 0.11150369375372018,
-    "deep_drawdown_no_vacuum": 0.17641350836531874,
-    "severe_burst": 0.044103377091329686,
-    "severe_burst_with_financial_crisis": 0.12202154230847222
+    "continued_boom": 0.28073918608820037,
+    "no_burst_sideways": 0.07278423343027418,
+    "mild_adjustment": 0.2471205982470269,
+    "moderate_burst": 0.0479461062126338,
+    "deep_drawdown_no_vacuum": 0.18572544614236508,
+    "severe_burst": 0.04643136153559127,
+    "severe_burst_with_financial_crisis": 0.11925306834390847
    }
   },
   {
@@ -253,13 +253,13 @@
    "liquidity": "neutral",
    "stressMultiplier": 1.0,
    "probabilities": {
-    "continued_boom": 0.1755676621923522,
-    "no_burst_sideways": 0.11622084680338811,
-    "mild_adjustment": 0.17296933079104285,
-    "moderate_burst": 0.13144480454115234,
-    "deep_drawdown_no_vacuum": 0.20796296826466887,
-    "severe_burst": 0.05199074206616722,
-    "severe_burst_with_financial_crisis": 0.1438436453412285
+    "continued_boom": 0.20106978961797478,
+    "no_burst_sideways": 0.05212920471577125,
+    "mild_adjustment": 0.2854703741228565,
+    "moderate_burst": 0.05538669368456604,
+    "deep_drawdown_no_vacuum": 0.214547524449566,
+    "severe_burst": 0.0536368811123915,
+    "severe_burst_with_financial_crisis": 0.137759532296874
    }
   },
   {
@@ -267,13 +267,13 @@
    "liquidity": "vacuum",
    "stressMultiplier": 2.75,
    "probabilities": {
-    "continued_boom": 0.07840046692887585,
-    "no_burst_sideways": 0.05189890064305867,
-    "mild_adjustment": 0.2124104710110167,
-    "moderate_burst": 0.16141736062022757,
-    "deep_drawdown_no_vacuum": 0.255383493940389,
-    "severe_burst": 0.06384587348509725,
-    "severe_burst_with_financial_crisis": 0.17664343337133503
+    "continued_boom": 0.08716010066475526,
+    "no_burst_sideways": 0.022597063135306922,
+    "mild_adjustment": 0.3403021066950244,
+    "moderate_burst": 0.0660250949039574,
+    "deep_drawdown_no_vacuum": 0.2557567480714065,
+    "severe_burst": 0.06393918701785163,
+    "severe_burst_with_financial_crisis": 0.1642196995116979
    }
   },
   {
@@ -281,13 +281,13 @@
    "liquidity": "ample",
    "stressMultiplier": 0.7315999999999999,
    "probabilities": {
-    "continued_boom": 0.21677267078160786,
-    "no_burst_sideways": 0.14349740178500806,
-    "mild_adjustment": 0.1562438040623225,
-    "moderate_burst": 0.11873455364493789,
-    "deep_drawdown_no_vacuum": 0.18785367970820957,
-    "severe_burst": 0.04696341992705239,
-    "severe_burst_with_financial_crisis": 0.12993447009086168
+    "continued_boom": 0.2514759857292557,
+    "no_burst_sideways": 0.06519747778165891,
+    "mild_adjustment": 0.26120677468234643,
+    "moderate_burst": 0.05067909292555285,
+    "deep_drawdown_no_vacuum": 0.19631202379492732,
+    "severe_burst": 0.04907800594873183,
+    "severe_burst_with_financial_crisis": 0.12605063913752695
    }
   },
   {
@@ -295,13 +295,13 @@
    "liquidity": "neutral",
    "stressMultiplier": 1.18,
    "probabilities": {
-    "continued_boom": 0.15571714174848164,
-    "no_burst_sideways": 0.10308036143913576,
-    "mild_adjustment": 0.18102685635965873,
-    "moderate_burst": 0.13756797024115455,
-    "deep_drawdown_no_vacuum": 0.2176506217142976,
-    "severe_burst": 0.0544126554285744,
-    "severe_burst_with_financial_crisis": 0.1505443930686972
+    "continued_boom": 0.1772439207327184,
+    "no_burst_sideways": 0.04595212759737145,
+    "mild_adjustment": 0.2969392288183726,
+    "moderate_burst": 0.05761187009344961,
+    "deep_drawdown_no_vacuum": 0.2231670331840724,
+    "severe_burst": 0.0557917582960181,
+    "severe_burst_with_financial_crisis": 0.14329406127799746
    }
   },
   {
@@ -309,30 +309,35 @@
    "liquidity": "vacuum",
    "stressMultiplier": 3.2449999999999997,
    "probabilities": {
-    "continued_boom": 0.06778844871889117,
-    "no_burst_sideways": 0.044874043518139235,
-    "mild_adjustment": 0.21671799575845835,
-    "moderate_burst": 0.16469078340503124,
-    "deep_drawdown_no_vacuum": 0.26056247930302345,
-    "severe_burst": 0.06514061982575586,
-    "severe_burst_with_financial_crisis": 0.1802256294707007
+    "continued_boom": 0.0751222349880208,
+    "no_burst_sideways": 0.01947613499689429,
+    "mild_adjustment": 0.34609667112226505,
+    "moderate_burst": 0.06714935084803986,
+    "deep_drawdown_no_vacuum": 0.26011169893784203,
+    "severe_burst": 0.06502792473446051,
+    "severe_burst_with_financial_crisis": 0.16701598437247733
    }
   }
  ],
  "method": {
   "estimator": "75% ridge-logit core, 15% gradient boosting, 10% random forest, calibrated on country-out predictions; year-cluster bootstrap",
   "calibration": {
-   "intercept": -0.17368522189542515,
-   "slope": 0.8450423357914931,
-   "countryOutBrierBlend": 0.2331726651069176,
-   "countryOutBrierByModel": {
-    "logit": 0.23064263249129902,
-    "gradientBoosting": 0.24723441870905136,
-    "randomForest": 0.3286869827008297
+   "anchor": "wave-weighted frequency of each outcome after run-ups of 100% or more",
+   "anchorRunup": 1.0,
+   "anchorEpisodes": 71,
+   "anchorWaves": 9,
+   "anchorFall": 0.746801005666254,
+   "modelRawFall": 0.9092754746481426,
+   "waveOutPlattIntercept": 0.47471205666962585,
+   "waveOutPlattSlope": -0.1884855312216965,
+   "foldScheme": "global waves",
+   "heldOutBrierBlend": 0.26759457840351947,
+   "heldOutBrierByModel": {
+    "logit": 0.2753618787762215,
+    "gradientBoosting": 0.2828606401069828,
+    "randomForest": 0.257591606722175
    },
-   "countryOutBrierBaseRate": 0.24282292689926166,
-   "bustProbabilityRawBlend": 0.7781377500702483,
-   "bustProbabilityCalibrated": 0.7082114910042598
+   "heldOutBrierBaseRate": 0.2383417401573934
   },
   "predictors": [
    "runup3",
@@ -367,16 +372,16 @@
    ]
   },
   "challengerBustProbabilities": {
-   "logit": 0.7779459750273274,
-   "gradientBoosting": 0.7262537353307222,
-   "randomForest": 0.8574020850014443
+   "logit": 0.9140125480853114,
+   "gradientBoosting": 0.8882789641880071,
+   "randomForest": 0.9052421895595806
   },
   "transitionAudit": {
-   "boomObserved": 106,
-   "sidewaysObserved": 70,
-   "nonBustObserved": 176,
-   "boomShareOfNonBust": 0.6016949152542372,
-   "severeEpisodes": 36,
+   "boomObserved": 13,
+   "sidewaysObserved": 3,
+   "nonBustObserved": 16,
+   "boomShareOfNonBust": 0.7941176470588235,
+   "severeEpisodes": 64,
    "independentSevereClusters": 10,
    "severeClusters": [
     [
@@ -402,9 +407,11 @@
     ],
     [
      2003,
+     2004,
      2005,
      2006,
-     2007
+     2007,
+     2008
     ],
     [
      2011
@@ -413,13 +420,14 @@
      2014
     ],
     [
+     2018,
      2019
     ]
    ],
    "tailShare": {
-    "deepNoVacuum": 0.5150181529013319,
-    "vacuumNoSystemic": 0.12875453822533298,
-    "systemic": 0.3562273088733351
+    "deepNoVacuum": 0.5285151579826664,
+    "vacuumNoSystemic": 0.1321287894956666,
+    "systemic": 0.3393560525216671
    },
    "tailMethod": "Banking-crisis transition integrated over 50\u201376% drawdowns; 20% of non-systemic severe paths are assigned a temporary liquidity vacuum.",
    "systemicTransition": {
@@ -429,19 +437,19 @@
     "lastOrigin": 2016,
     "crisisWindows": 314,
     "crisisRate": 0.1632016632016632,
-    "severeRows": 47,
-    "severeCrisisRows": 19,
+    "severeRows": 75,
+    "severeCrisisRows": 29,
     "validation": {
      "leaveOneCountryOut": {
-      "brier": 0.12903963768837823,
+      "brier": 0.12807903476933588,
       "baseRateBrier": 0.13656688032987413,
-      "logLoss": 0.4197307670471311,
-      "auc": 0.6597222771689678
+      "logLoss": 0.41666797673456624,
+      "auc": 0.6691992720655142
      },
      "leaveOneEraOut": {
-      "brier": 0.14804992364050745,
+      "brier": 0.14858681485981215,
       "baseRateBrier": 0.13656688032987413,
-      "auc": 0.5711733987419393,
+      "auc": 0.5739110653954187,
       "blocks": "25-year blocks"
      }
     },
@@ -457,23 +465,23 @@
     "currentBalanceSheetCurve": [
      {
       "drawdown": -0.2,
-      "probability": 0.18715374549827005
+      "probability": 0.16980409532806887
      },
      {
       "drawdown": -0.35,
-      "probability": 0.25083173425267147
+      "probability": 0.23813200487008798
      },
      {
       "drawdown": -0.5,
-      "probability": 0.3274478116608517
+      "probability": 0.3232491105134565
      },
      {
       "drawdown": -0.65,
-      "probability": 0.41451758084751783
+      "probability": 0.42194066723329493
      },
      {
       "drawdown": -0.75,
-      "probability": 0.4760930942289127
+      "probability": 0.49197576428210243
      }
     ],
     "warning": "Annual closes understate intrayear drawdowns. Credit inputs are the latest JST vintage; independent global crash clusters are few."
@@ -484,28 +492,28 @@
  "monteCarlo": {
   "draws": 10000,
   "seed": 20261014,
-  "maxStdError": 0.004108996089139205,
+  "maxStdError": 0.004555032448284558,
   "classificationCounts": {
-   "continued_boom": 1665,
-   "no_burst_sideways": 1057,
-   "mild_adjustment": 1785,
-   "moderate_burst": 1349,
-   "deep_drawdown_no_vacuum": 2157,
-   "severe_burst": 548,
-   "severe_burst_with_financial_crisis": 1439
+   "continued_boom": 1876,
+   "no_burst_sideways": 459,
+   "mild_adjustment": 2937,
+   "moderate_burst": 584,
+   "deep_drawdown_no_vacuum": 2222,
+   "severe_burst": 558,
+   "severe_burst_with_financial_crisis": 1364
   }
  },
  "backtest": {
   "leaveOneCountryOut": {
-   "brier": 0.633564401660165,
-   "baseRateBrier": 0.6546985919276604,
+   "brier": 0.5232504638199055,
+   "baseRateBrier": 0.5439969387416632,
    "n": 301
   },
   "leaveOneEraOut": {
-   "brier": 0.6637963223273251,
-   "baseRateBrier": 0.6858083339554236,
+   "brier": 0.5663859419333843,
+   "baseRateBrier": 0.5914745220214113,
    "n": 301
   },
-  "skillDisclosure": "Skill over the base rate is modest and unstable across eras. Treat the odds as disciplined scenario weights, not precise forecasts."
+  "skillDisclosure": "Models show little skill over history once whole global waves are held out, so the odds rest on what happened after comparable run-ups. Read them as ranges."
  }
 }

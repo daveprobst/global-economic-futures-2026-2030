@@ -1,0 +1,6 @@
+forecast,brier_waves_out,log_loss_waves_out,auc_waves_out
+Base rate (training frequency),0.2959,0.7866,0.28281003982587755
+Run-up only (ridge logit),0.28,0.7608,0.38978419931462444
+Last-12-month return only (ridge logit),0.2969,0.7887,0.3379179401685653
+Run-up + return (ridge logit),0.2754,0.7504,0.4149300731684727
+Full blend (logit + boosting + forest),0.2676,0.7321,0.43859405390386214

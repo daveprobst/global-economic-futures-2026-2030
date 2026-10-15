@@ -39,22 +39,29 @@ def build(c: dict) -> dict:
         r("Episode trigger", "3-year real return ≥ +50%", "Fixed rule", "Bubble-scale threshold kept from the original design; origins must be ≥3 years apart within an economy. Run-ups of 100%+ are reported separately.", [], "equity_panel.py:THRESHOLD"),
         r("Inflation screen", "drop windows above 25% a year", "Fixed rule", "Index returns are not comparable in hyperinflation; removes the affected windows.", [], "equity_panel.py:INFLATION_CAP"),
         r("Outcome window", "next 4 annual closes", "Fixed rule", "End-2026 origin to end-2030. All probabilities and all paths use this window.", [], "equity_panel.py:HORIZON"),
-        r("Fall bands", "20% / 35% / 50%", "Fixed rule", "Worst annual-close fall from the origin level: mild 20–35%, moderate 35–50%, severe 50%+.", [], "equity_panel.py:band_of"),
+        r("Fall bands", "20% / 35% / 50%", "Fixed rule", "Worst peak-to-trough fall at annual closes inside the window, measured from the highest close reached since the origin (so an index that rises then falls counts): mild 20–35%, moderate 35–50%, severe 50%+. Measuring from the origin level only, as an earlier release did, lowers the share of falls from 61% to 42%.", [], "equity_panel.py:drawdown_of"),
         r("Boom hurdle", "5% a year real (21.6% over four years)", "Assumed", "A round figure for “keeps earning normal returns”. It splits no-fall cases into boom and contained repricing; no sensitivity run.", [], "equity_panel.py:BOOM_REAL_PER_YEAR"),
         r("Panel size", f"{ck['episodes']} episodes · {ck['countries']} economies · {ck['originYears']} origin years", "Data", "Simultaneous crashes make countries non-independent, so intervals resample whole origin years.", ["cameron"]),
         r("Predictors", "3-year real run-up; last-12-month real return", "Fixed rule", "Volatility is excluded: an 8-stock basket (NVDA, MSFT, AMZN, AVGO, AMD, ORCL, GOOGL, META) is not comparable with a national index and added no held-out skill.", ["roberts"], "equity_panel.py:PREDICTORS"),
         r("Current state", f"run-up {p(feat['realFeatures'][0])}, last 12 months {p(feat['realFeatures'][1])}", "Data", f"Equal-weight monthly-rebalanced basket to 31 Oct 2026, nominal run-up {p(feat['nominalRunup3'])}, deflated by US inflation of {', '.join(f'{x:.1f}' for x in infl)}% (windows ending Oct 2026 back to Oct 2022). CPI ends in 2024, so the 2025 GDP deflator stands in for 2025–26.", ["wdi"], "direct_release.py:current_features")]}]})
 
-    sec.append({"id": "outcome", "title": "2 · Outcome model: probability of a 20%+ fall",
-      "summary": "A regularised logit supplies most of the estimate. Two non-linear models can only nudge it, because a logit cannot represent thresholds. The blend is then recalibrated on predictions for countries it never saw.",
-      "tables": [{"title": "Models and parameters", "rows": [
-        r("Core: multinomial ridge logit", "C = 0.2 and C = 1.0, averaged; weight 75%", "Estimated", "Four-band target (none / mild / moderate / severe), standardised predictors, L-BFGS. Penalty strengths chosen a priori, not tuned.", ["ridge", "gelman"], "direct_release.py:fit_probs"),
-        r("Challenger: gradient boosting", "80 trees · depth 2 · learning rate 0.035 · subsample 0.8; weight 15%", "Fixed rule", "Shallow and slow by design to limit overfit; hyperparameters not tuned.", ["gbm"], "direct_release.py:make_gb"),
-        r("Challenger: random forest", "500 trees · depth 4 · min leaf 5 · max features 0.8 · balanced classes; weight 10%", "Fixed rule", "Same reasoning; adds sensitivity to thresholds.", ["rf"], "direct_release.py:make_rf"),
-        r("Blend weights", "75 / 15 / 10", "Assumed", f"Set before testing. Held-out Brier for a 20%+ fall: logit {f(cb['countryOutBrierByModel']['logit'])}, boosting {f(cb['countryOutBrierByModel']['gradientBoosting'])}, forest {f(cb['countryOutBrierByModel']['randomForest'])}, blend {f(cb['countryOutBrierBlend'])}, base rate {f(cb['countryOutBrierBaseRate'])}. The challengers add tail sensitivity, not measured skill.", ["brier", "gneiting"]),
-        r("Recalibration (Platt)", f"intercept {f(cb['intercept'])} · slope {f(cb['slope'])}", "Estimated", f"Logistic regression of the realised fall on the logit of the blend, using leave-one-economy-out predictions only. Lowers the raw {p(cb['bustProbabilityRawBlend'])} to {p(cb['bustProbabilityCalibrated'])}.", ["platt"], "direct_release.py:platt"),
-        r("Boom share of no-fall cases", f"{ta['boomObserved']} of {ta['nonBustObserved']} observed → {p(ta['boomShareOfNonBust'])}", "Estimated", "Beta(½, ½) Jeffreys prior on the share that clears the hurdle; the posterior mean splits “no fall” into boom and contained repricing.", ["jeffreys"], "direct_release.py:build_scenarios"),
-        r("Validation folds", "67 economies out; 6 eras out", "Fixed rule", "Folds hold out whole economies, or whole eras (to 1913, 1914–45, 1946–73, 1974–93, 1994–2008, 2009–21).", ["roberts"], "checks.py:cross_validate")]}]})
+    va = c["val"]["validation"]; vw = va["schemes"]["Leave one global wave out"]; fb = "Full blend (logit + boosting + forest)"; bs = "Base rate (training frequency)"
+    sens = c["val"]["sensitivity"]
+    sec.append({"id": "outcome", "title": "2 · Outcome probabilities: history first, models as a check",
+      "summary": f"The headline weights are what happened after comparable run-ups, with each global wave counted once. Four statistical models were tested against that simple frequency; none held up once whole waves were held out, so they are used for validation, not for the headline.",
+      "tables": [{"title": "What sets the probabilities", "rows": [
+        r("Comparable run-ups", f"3-year real gain ≥ {p(cb['anchorRunup'])}: {cb['anchorEpisodes']} episodes in {cb['anchorWaves']} global waves", "Fixed rule", "Today's gain is about 190%, inside this group. A global wave is a cluster of origin years within two years of each other; simultaneous crashes count once.", ["greenwood", "cameron"], "direct_release.py:build_scenarios"),
+        r("Chance of a 20%+ fall", f"{p(cb['anchorFall'])} (before the funding-regime surface)", "Estimated", "Mean over waves of the share of episodes that fell 20%+ peak to trough at annual closes within four years. 10th–90th percentile from a wave bootstrap is shown with each scenario.", ["efron", "cameron"]),
+        r("Split of falls into mild / moderate / severe", "same wave-weighted frequencies", "Estimated", "Taken from the same episodes; with nine waves this split is lumpy, hence the wide ranges.", []),
+        r("Boom share of no-fall cases", f"{ta['boomObserved']} boom vs {ta['sidewaysObserved']} contained → {p(ta['boomShareOfNonBust'])}", "Estimated", "Beta(½, ½) Jeffreys prior on the share that clears the real-return hurdle.", ["jeffreys"], "direct_release.py:build_scenarios"),
+        r("Model extrapolation (not used)", f"{p(cb['modelRawFall'])} for the blend below", "Estimated", f"Held out by whole global wave the blend reaches Brier {f(vw[fb]['brier'])} against {f(vw[bs]['brier'])} for the base rate, but its ranking is no better than chance (AUC {f(vw[fb]['auc'],2)}). A recalibration fitted on those held-out predictions has slope {f(cb['waveOutPlattSlope'],2)}, so the model's extra confidence is not trusted.", ["platt", "roberts"], "direct_release.py:platt")]},
+        {"title": "Models tested (validation only)", "rows": [
+        r("Ridge logit (run-up + 12-month return)", "C = 0.2 and 1.0, averaged", "Estimated", "Four-band target, standardised predictors, L-BFGS; penalties chosen a priori.", ["ridge", "gelman"], "direct_release.py:fit_probs"),
+        r("Gradient boosting", "80 trees · depth 2 · learning rate 0.035 · subsample 0.8", "Fixed rule", "Shallow and slow to limit overfit; not tuned.", ["gbm"], "models.py:make_gb"),
+        r("Random forest", "500 trees · depth 4 · min leaf 5 · max features 0.8 · balanced classes", "Fixed rule", "Same reasoning.", ["rf"], "models.py:make_rf"),
+        r("Blend", "75% logit · 15% boosting · 10% forest", "Assumed", "Set before testing.", []),
+        r("Folds", f"67 economies; {va['waveCount']} global waves; 6 eras; before/after 1994", "Fixed rule", "Whole waves are held out together, because the same global crash seen in many countries is not independent evidence.", ["roberts"], "checks.py:validation_report"),
+        r("Sensitivity of the headline", f"fall probability from {p(min(x['fall20'] for x in sens))} to {p(max(x['fall20'] for x in sens))} across {len(sens)} reasonable variants", "Data", "Window length, trigger size, era and predictors all move the number; the full table is in the validation section.", [])]}]})
 
     geo = {"calm": .88, "tense": 1.0, "crisis": 1.18}; liq = {"ample": .62, "neutral": 1.0, "vacuum": 2.75}
     w = {(x["geopolitics"], x["liquidity"]): x["probability"] for x in tree["stateProbabilities"]}
@@ -64,7 +71,7 @@ def build(c: dict) -> dict:
         r("Geopolitical factor on fall odds", "calm 0.88 · tense 1.00 · crisis 1.18", "Assumed", "Monotone, set by judgment. Applied as a shift in the log-odds of a fall. Rows are percentile bands of the news-based GPR index (calm below 40th, tense 40–80th, crisis above 80th).", ["gpr"], "direct_release.py:geo"),
         r("Liquidity factor on fall odds", "ample 0.62 · neutral 1.00 · vacuum 2.75", "Assumed", "Monotone, set by judgment. A vacuum means a high-yield spread above 6.5%, reserves below $2.5tn, or equivalent repo and Treasury dysfunction, with two or more signals active (2008 and March 2020 are the analogues).", ["bp09", "sss21", "fred"], "direct_release.py:liq"),
         r("Window-start state weights", f"crisis × neutral {p(w[('crisis','neutral')])}; tense × neutral {p(w[('tense','neutral')])}; all nine sum to 100%", "Assumed", "Carried from the first release’s state model; not re-estimated here.", ["gpr", "fred"], "inputs/states.json"),
-        r("Net effect", f"{p(cb['bustProbabilityCalibrated'])} before the surface → {p(1 - scen['continued_boom']['probability'] - scen['no_burst_sideways']['probability'])} after", "Assumed", "The surface is the only judgment-set multiplier on the headline; the bootstrap perturbs it by a lognormal factor (sd 0.16).", [])]}]})
+        r("Net effect", f"{p(cb['anchorFall'])} before the surface → {p(1 - scen['continued_boom']['probability'] - scen['no_burst_sideways']['probability'])} after", "Assumed", "The surface is the only judgment-set multiplier on the headline; the bootstrap perturbs it by a lognormal factor (sd 0.16).", [])]}]})
 
     cur = sa["currentBalanceSheetCurve"]
     sec.append({"id": "tail", "title": "4 · From equity loss to banking crisis",
@@ -79,10 +86,9 @@ def build(c: dict) -> dict:
         r("Vacuum without banking crisis", "20% of non-systemic severe paths", "Assumed", "No dataset identifies a vacuum that spares the banks; 20% is a central guess, drawn from Beta(2.5, 10.5) in the bootstrap.", ["sss21"], "direct_release.py:vac")]}]})
 
     sec.append({"id": "uncertainty", "title": "5 · Uncertainty and sampling",
-      "summary": "Every 10th–90th percentile range comes from one bootstrap that resamples whole origin years and perturbs the judgment-set inputs.",
+      "summary": "Every 10th–90th percentile range comes from one bootstrap that resamples whole global waves and perturbs the judgment-set inputs.",
       "tables": [{"title": "Procedure", "rows": [
-        r("Bootstrap", "300 replications; whole origin years resampled with replacement", "Fixed rule", "Refits the logit core on each resample and recomputes all seven scenario weights.", ["efron", "cameron"], "direct_release.py:build_scenarios"),
-        r("Feature noise", "run-up ×N(1, 0.05); last-12-month return ×N(1, 0.10)", "Assumed", "Measurement error in the basket features.", []),
+        r("Bootstrap", "500 replications; whole global waves among comparable run-ups resampled with replacement", "Fixed rule", f"With only {cb['anchorWaves']} waves the ranges are wide on purpose.", ["efron", "cameron"], "direct_release.py:build_scenarios"),
         r("State weights", "Dirichlet(250·w + 1)", "Assumed", "Concentration set so state weights move by a few points.", []),
         r("Regime multiplier", "× lognormal(0, 0.16)", "Assumed", "Judgment uncertainty in the surface.", []),
         r("Boom share, systemic share, vacuum share", "Beta from resampled counts; Beta(16·s+½, 16·(1−s)+½); Beta(2.5, 10.5)", "Assumed", "Widths set by judgment.", []),
@@ -143,7 +149,10 @@ def build(c: dict) -> dict:
        {"title": "Persistence and out-of-fit checks", "rows": [
         r("Persistence share", f(cal["persistenceShare"], 2), "Data", "Post-war banking crises: median shortfall at 10 years ÷ at 5 years.", ["cerra"]),
         r("Spread of outcomes", f"model p10/p25/p50 {f(hy['validation']['modelSystemicUS']['p10'],1)} / {f(hy['validation']['modelSystemicUS']['p25'],1)} / {f(hy['validation']['modelSystemicUS']['p50'],1)} vs history {f(hy['validation']['historicalSameClass']['p10'],1)} / {f(hy['validation']['historicalSameClass']['p25'],1)} / {f(hy['validation']['historicalSameClass']['p50'],1)}", "Data", "The spread was not fitted; it checks that the multipliers give a plausible range.", ["rr"]),
-        r("Severity benchmark", f"systemic trough {f(M['severe_burst_with_financial_crisis']['us']['troughFromOrigin'],1)}% vs GFC −4.0% and Fed severe −4.6%", "Data", "Peak-to-trough fall in the real-GDP level.", ["bea", "fedscen"])]}]})
+        r("Severity benchmark", f"systemic trough {f(M['severe_burst_with_financial_crisis']['us']['troughFromOrigin'],1)}% vs GFC −4.0% and Fed severe −4.6%", "Data", "Peak-to-trough fall in the real-GDP level.", ["bea", "fedscen"]),
+        r("Japan counterfactual", "log-linear trend of 1970–89, 1975–89 or 1980–89 real GDP, per head or total", "Data", "Shortfall against that trend: " + "; ".join(f"{x['trendYears']} {x['measure']}: {f(x['h4'],1)}% at +4, {f(x['h10'],1)}% at +10" for x in hy["cohorts"]["japanSensitivity"] if x["trendYears"] != "1960–1989") + ". A 1960–89 trend is rejected: it extrapolates catch-up growth.", ["hoshi", "jstdb"], "hysteresis.py:crisis_cohorts"),
+        r("IMF adverse-AI scenario", "global GDP −1.1% and US −1.8% by 2028 vs baseline", "Data", "As reported by Reuters on 13 Oct 2026 (primary chapter not retrieved). Our 2028 US output vs trend: " + ", ".join(f"{NAMES[k]} {f(v['usOutputVsBaseline2028'],1)}%" for k, v in hy["imfBenchmark"]["ours"].items() if k in ("no_burst_sideways", "mild_adjustment", "moderate_burst", "severe_burst_with_financial_crisis")) + ". The IMF case sits between our contained and mild branches; ours is a harsher family because it adds forced selling and banking-crisis branches.", ["imfweo"]),
+        r("Europe rebound term", "+0.28·severity points a year from 2029", "Assumed", "A small placeholder for safe-asset inflows and reallocation toward Europe. It is not estimated, and Europe’s possible gains as a safe-asset destination are not otherwise simulated.", ["crma"], "engine.py:macro")]}]})
 
     jb = c["joint"]
     sec.append({"id": "joint", "title": "8 · Joint US–China crisis",
@@ -159,27 +168,36 @@ def build(c: dict) -> dict:
         r("Intervals", f"joint {p(jb['point'],1)} (10th–90th {p(jb['interval80'][0],1)}–{p(jb['interval80'][1],1)})", "Estimated", "Bootstrap of scenario weights multiplied by per-scenario path rates.", ["efron"]),
         r("Selection of stress points", "grid cells are conditional on a revenue-expectation reset", "Fixed rule", "Reported as conditional odds, not as current-trajectory odds.", ["glasserman"])]}]})
 
-    near = ck["nearestAnalogs"]; big = ck["runupAtLeast100"]
+    near = ck["nearestAnalogs"]; big = ck["runupAtLeast100"]; ot = va["outOfTime"]; sr = c["val"]["samplingResolution"]; ec = c["val"]["engineChecks"]
+    rel = vw[fb]["reliability"]
     sec.append({"id": "validation", "title": "9 · Validation and known weaknesses",
-      "summary": "What was tested, what held, and where the model is weak.",
+      "summary": "What was tested, what held, and where the work is weak.",
       "tables": [{"title": "Tests", "rows": [
-        r("Frequency check", f"run-ups of 100%+ (n {big['n']}): boom {p(big['boom'])}, contained {p(big['sideways'])}, 20%+ fall {p(big['bust'])}", "Data", "Same window, same definitions, no model.", ["greenwood"], "checks.py:run"),
+        r("Frequency check", f"run-ups of 100%+ (n {big['n']}): boom {p(big['boom'])}, contained {p(big['sideways'])}, 20%+ fall {p(big['bust'])} (unweighted)", "Data", "Same window, same definitions, no model.", ["greenwood"], "checks.py:run"),
         r("Nearest analogs", f"25 closest by run-up and 12-month return: {p(near['boom'])} / {p(near['sideways'])} / {p(near['bust'])}", "Data", "Model-free comparison with today’s state.", []),
-        r("Out-of-sample Brier (3 outcomes)", f"economies out {f(cv['leaveOneCountryOut']['brier'])} vs base {f(cv['leaveOneCountryOut']['baseRateBrier'])}; eras out {f(cv['leaveOneEraOut']['brier'])} vs base {f(cv['leaveOneEraOut']['baseRateBrier'])}", "Estimated", "Logit core only. Skill is small, as expected when few independent crashes exist.", ["brier", "gneiting", "roberts"]),
-        r("Era calibration", " · ".join(f"{e['era']}: {p(e['observedBust'])} fell vs {p(e['predictedBust'])} predicted" for e in cv["leaveOneEraOut"]["byEra"]), "Data", "The model does not separate eras: it over-predicts before 1994 and under-predicts after.", []),
+        *[r(m_, f"Brier {f(x['brier'])} · log loss {f(x['logLoss'])} · AUC {f(x['auc'],2) if x['auc'] else 'n/a'}", "Estimated", "Leave one global wave out; target is a 20%+ peak-to-trough fall.", ["brier", "gneiting"]) for m_, x in vw.items()],
+        r("Out of time", " · ".join(f"{k}: blend {f(v['models'][fb]['brier'])} vs base {f(v['models'][bs]['brier'])}" for k, v in ot.items()), "Estimated", "Models trained on one era and tested on the other; they beat the base rate there, which is why they are kept for comparison.", ["roberts"]),
+        r("Reliability by wave", " · ".join(f"said {p(b['predicted'])} → happened {p(b['observed'])} (n {b['n']})" for b in rel), "Data", "Low predictions came true more often than said, and the top bin less often: the model is over-spread, so its extreme outputs are not used.", ["platt"]),
+        r("Parameter sensitivity", "; ".join(f"{x['variant']}: {p(x['fall20'])}" for x in sens), "Data", "Core logit before the regime surface, so the first row is the model extrapolation, not the headline.", []),
+        r("Annual-close resolution", f"US monthly data: {p(sr['monthlyFall20'])} of 4-year windows contain a 20% fall; annual closes catch {p(sr['annualFall20'])}", "Data", f"Annual closes miss {p(1 - sr['annualCatchesMonthlyFalls'])} of the falls monthly data see and understate their depth by a median {f(sr['medianDepthUnderstatedPp'],0)} points, so every fall probability here is conservative. Source: Shiller monthly real S&P 500, 1871–2022 origins.", ["wdi"]),
+        r("Engine convergence", f"fixed point converged (largest residual {ec['worstResidualAfter8']:.4f}); multiple equilibria in {p(ec['worstMultiEquilibriumShare'])} of paths", "Data", "Same shocks, 40 vs 60 iterations, and starts from liquidity 0 and 1 give the same state.", []),
         r("Model risk standard", "limitations, ranges and challenger models disclosed", "Fixed rule", "Practice follows SR 11-7.", ["sr117"])]},
         {"title": "Known weaknesses", "rows": [
-        r("Few independent crashes", f"about {ta['independentSevereClusters']} global clusters of 50%+ falls", "Data", "Every tail estimate rests on a handful of events.", []),
+        r("Few independent crashes", f"{cb['anchorWaves']} global waves behind the headline; about {ta['independentSevereClusters']} clusters of 50%+ falls", "Data", "Every tail estimate rests on a handful of events.", []),
+        r("Models do not beat history", "wave-out AUC about 0.44", "Data", "Why the headline is a frequency, not a model output.", ["roberts"]),
+        r("Annual time step", "state updates once a year", "Fixed rule", "Margin calls (days) and funding stress (weeks) are collapsed into one fixed point per year. Short, severe liquidity episodes that recover within a year are not resolved. A higher-frequency contagion layer is the main modelling gap.", ["bp09", "sss21"]),
         r("Finance-engine coefficients untested", "section 6", "Assumed", "They reproduce the loops qualitatively and land median falls in each band, but are not estimated or bootstrapped.", []),
+        r("Non-AI shocks", "energy, bond-yield and fiscal shocks only through the regime surface", "Assumed", "The scenarios are conditional on an AI reset. A rate or energy shock that also hits AI valuations would be attributed to AI here; the IMF lists those risks separately.", ["imfweo"]),
+        r("Policy response", "one liquidity-support term; no alternative policy scenarios", "Assumed", "Central-bank and fiscal responses beyond that term are not simulated.", ["bern13"]),
+        r("Treasury channel", "sale-pressure index 0–1", "Assumed", "Holdings are attributed by custodian and dealers, the Fed and other buyers can absorb sales; the index is a stress trigger, not a forecast.", ["tic", "cfg16"]),
         r("One China analogue", "Japan after 1989", "Assumed", "China differs in policy space, capital controls and state-bank structure.", ["hoshi"]),
-        r("Annual closes", "—", "Fixed rule", "Intra-year troughs are understated, so falls and banking-crisis links are conservative.", []),
-        r("Basket is not an index", "8 names", "Fixed rule", "National-index episodes are analogues for a concentrated basket.", ["bo13", "greenwood"])]}]})
+        r("Basket is not an index", "8 names", "Fixed rule", "National-index episodes are analogues for a concentrated basket. Attribution of each name’s value to AI is an assumption (see the US section).", ["bo13", "greenwood"])]}]})
 
     sec.append({"id": "repro", "title": "10 · Reproduce it",
       "summary": "All code and frozen inputs are in the repository.",
       "equations": ["python model/fetch_data.py      # World Bank + JST → data/ (git-ignored)", "python model/direct_release.py  # → site/data/*.json  (seed 20261014)",
                     "Modules: equity_panel · systemic_transition · engine · hysteresis · checks · spec · direct_release;  frozen inputs in model/inputs"]})
-    return {"asOf": "2026-10-31", "statusLegend": [
+    return {"asOf": "2026-10-15", "statusLegend": [
         {"status": "Data", "meaning": "Observed input or measured statistic."}, {"status": "Fixed rule", "meaning": "Definition or threshold set by design."},
         {"status": "Estimated", "meaning": "Fitted to data by the model code."}, {"status": "Calibrated", "meaning": "Searched so outputs match stated historical targets."},
         {"status": "Assumed", "meaning": "Structural parameter set by judgment; not estimated and not validated on its own."}], "sections": sec}

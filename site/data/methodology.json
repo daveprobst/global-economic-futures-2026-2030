@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-31",
+ "asOf": "2026-10-15",
  "statusLegend": [
   {
    "status": "Data",
@@ -80,9 +80,9 @@
        "name": "Fall bands",
        "value": "20% / 35% / 50%",
        "status": "Fixed rule",
-       "how": "Worst annual-close fall from the origin level: mild 20\u201335%, moderate 35\u201350%, severe 50%+.",
+       "how": "Worst peak-to-trough fall at annual closes inside the window, measured from the highest close reached since the origin (so an index that rises then falls counts): mild 20\u201335%, moderate 35\u201350%, severe 50%+. Measuring from the origin level only, as an earlier release did, lowers the share of falls from 61% to 42%.",
        "cite": [],
-       "src": "equity_panel.py:band_of"
+       "src": "equity_panel.py:drawdown_of"
       },
       {
        "name": "Boom hurdle",
@@ -128,17 +128,73 @@
   },
   {
    "id": "outcome",
-   "title": "2 \u00b7 Outcome model: probability of a 20%+ fall",
-   "summary": "A regularised logit supplies most of the estimate. Two non-linear models can only nudge it, because a logit cannot represent thresholds. The blend is then recalibrated on predictions for countries it never saw.",
+   "title": "2 \u00b7 Outcome probabilities: history first, models as a check",
+   "summary": "The headline weights are what happened after comparable run-ups, with each global wave counted once. Four statistical models were tested against that simple frequency; none held up once whole waves were held out, so they are used for validation, not for the headline.",
    "tables": [
     {
-     "title": "Models and parameters",
+     "title": "What sets the probabilities",
      "rows": [
       {
-       "name": "Core: multinomial ridge logit",
-       "value": "C = 0.2 and C = 1.0, averaged; weight 75%",
+       "name": "Comparable run-ups",
+       "value": "3-year real gain \u2265 100%: 71 episodes in 9 global waves",
+       "status": "Fixed rule",
+       "how": "Today's gain is about 190%, inside this group. A global wave is a cluster of origin years within two years of each other; simultaneous crashes count once.",
+       "cite": [
+        "greenwood",
+        "cameron"
+       ],
+       "src": "direct_release.py:build_scenarios"
+      },
+      {
+       "name": "Chance of a 20%+ fall",
+       "value": "75% (before the funding-regime surface)",
        "status": "Estimated",
-       "how": "Four-band target (none / mild / moderate / severe), standardised predictors, L-BFGS. Penalty strengths chosen a priori, not tuned.",
+       "how": "Mean over waves of the share of episodes that fell 20%+ peak to trough at annual closes within four years. 10th\u201390th percentile from a wave bootstrap is shown with each scenario.",
+       "cite": [
+        "efron",
+        "cameron"
+       ],
+       "src": null
+      },
+      {
+       "name": "Split of falls into mild / moderate / severe",
+       "value": "same wave-weighted frequencies",
+       "status": "Estimated",
+       "how": "Taken from the same episodes; with nine waves this split is lumpy, hence the wide ranges.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Boom share of no-fall cases",
+       "value": "13 boom vs 3 contained \u2192 79%",
+       "status": "Estimated",
+       "how": "Beta(\u00bd, \u00bd) Jeffreys prior on the share that clears the real-return hurdle.",
+       "cite": [
+        "jeffreys"
+       ],
+       "src": "direct_release.py:build_scenarios"
+      },
+      {
+       "name": "Model extrapolation (not used)",
+       "value": "91% for the blend below",
+       "status": "Estimated",
+       "how": "Held out by whole global wave the blend reaches Brier 0.268 against 0.296 for the base rate, but its ranking is no better than chance (AUC 0.44). A recalibration fitted on those held-out predictions has slope -0.19, so the model's extra confidence is not trusted.",
+       "cite": [
+        "platt",
+        "roberts"
+       ],
+       "src": "direct_release.py:platt"
+      }
+     ]
+    },
+    {
+     "title": "Models tested (validation only)",
+     "rows": [
+      {
+       "name": "Ridge logit (run-up + 12-month return)",
+       "value": "C = 0.2 and 1.0, averaged",
+       "status": "Estimated",
+       "how": "Four-band target, standardised predictors, L-BFGS; penalties chosen a priori.",
        "cite": [
         "ridge",
         "gelman"
@@ -146,65 +202,50 @@
        "src": "direct_release.py:fit_probs"
       },
       {
-       "name": "Challenger: gradient boosting",
-       "value": "80 trees \u00b7 depth 2 \u00b7 learning rate 0.035 \u00b7 subsample 0.8; weight 15%",
+       "name": "Gradient boosting",
+       "value": "80 trees \u00b7 depth 2 \u00b7 learning rate 0.035 \u00b7 subsample 0.8",
        "status": "Fixed rule",
-       "how": "Shallow and slow by design to limit overfit; hyperparameters not tuned.",
+       "how": "Shallow and slow to limit overfit; not tuned.",
        "cite": [
         "gbm"
        ],
-       "src": "direct_release.py:make_gb"
+       "src": "models.py:make_gb"
       },
       {
-       "name": "Challenger: random forest",
-       "value": "500 trees \u00b7 depth 4 \u00b7 min leaf 5 \u00b7 max features 0.8 \u00b7 balanced classes; weight 10%",
+       "name": "Random forest",
+       "value": "500 trees \u00b7 depth 4 \u00b7 min leaf 5 \u00b7 max features 0.8 \u00b7 balanced classes",
        "status": "Fixed rule",
-       "how": "Same reasoning; adds sensitivity to thresholds.",
+       "how": "Same reasoning.",
        "cite": [
         "rf"
        ],
-       "src": "direct_release.py:make_rf"
+       "src": "models.py:make_rf"
       },
       {
-       "name": "Blend weights",
-       "value": "75 / 15 / 10",
+       "name": "Blend",
+       "value": "75% logit \u00b7 15% boosting \u00b7 10% forest",
        "status": "Assumed",
-       "how": "Set before testing. Held-out Brier for a 20%+ fall: logit 0.231, boosting 0.247, forest 0.329, blend 0.233, base rate 0.243. The challengers add tail sensitivity, not measured skill.",
-       "cite": [
-        "brier",
-        "gneiting"
-       ],
+       "how": "Set before testing.",
+       "cite": [],
        "src": null
       },
       {
-       "name": "Recalibration (Platt)",
-       "value": "intercept -0.174 \u00b7 slope 0.845",
-       "status": "Estimated",
-       "how": "Logistic regression of the realised fall on the logit of the blend, using leave-one-economy-out predictions only. Lowers the raw 78% to 71%.",
-       "cite": [
-        "platt"
-       ],
-       "src": "direct_release.py:platt"
-      },
-      {
-       "name": "Boom share of no-fall cases",
-       "value": "106 of 176 observed \u2192 60%",
-       "status": "Estimated",
-       "how": "Beta(\u00bd, \u00bd) Jeffreys prior on the share that clears the hurdle; the posterior mean splits \u201cno fall\u201d into boom and contained repricing.",
-       "cite": [
-        "jeffreys"
-       ],
-       "src": "direct_release.py:build_scenarios"
-      },
-      {
-       "name": "Validation folds",
-       "value": "67 economies out; 6 eras out",
+       "name": "Folds",
+       "value": "67 economies; 17 global waves; 6 eras; before/after 1994",
        "status": "Fixed rule",
-       "how": "Folds hold out whole economies, or whole eras (to 1913, 1914\u201345, 1946\u201373, 1974\u201393, 1994\u20132008, 2009\u201321).",
+       "how": "Whole waves are held out together, because the same global crash seen in many countries is not independent evidence.",
        "cite": [
         "roberts"
        ],
-       "src": "checks.py:cross_validate"
+       "src": "checks.py:validation_report"
+      },
+      {
+       "name": "Sensitivity of the headline",
+       "value": "fall probability from 72% to 93% across 12 reasonable variants",
+       "status": "Data",
+       "how": "Window length, trigger size, era and predictors all move the number; the full table is in the validation section.",
+       "cite": [],
+       "src": null
       }
      ]
     }
@@ -253,7 +294,7 @@
       },
       {
        "name": "Net effect",
-       "value": "71% before the surface \u2192 73% after",
+       "value": "75% before the surface \u2192 77% after",
        "status": "Assumed",
        "how": "The surface is the only judgment-set multiplier on the headline; the bootstrap perturbs it by a lognormal factor (sd 0.16).",
        "cite": [],
@@ -306,9 +347,9 @@
       },
       {
        "name": "Held-out skill (Brier vs base rate)",
-       "value": "countries 0.129 vs 0.137; eras 0.148 vs 0.137",
+       "value": "countries 0.128 vs 0.137; eras 0.149 vs 0.137",
        "status": "Estimated",
-       "how": "Beats the base rate on held-out economies (AUC 0.66) but not on held-out eras (AUC 0.57). The systemic share is therefore wide: the bootstrap draws it from Beta(16\u00b7s + \u00bd, 16\u00b7(1\u2212s) + \u00bd).",
+       "how": "Beats the base rate on held-out economies (AUC 0.67) but not on held-out eras (AUC 0.57). The systemic share is therefore wide: the bootstrap draws it from Beta(16\u00b7s + \u00bd, 16\u00b7(1\u2212s) + \u00bd).",
        "cite": [
         "brier"
        ],
@@ -316,7 +357,7 @@
       },
       {
        "name": "Current balance-sheet curve",
-       "value": "20% fall \u2192 19% \u00b7 35% fall \u2192 25% \u00b7 50% fall \u2192 33% \u00b7 65% fall \u2192 41% \u00b7 75% fall \u2192 48%",
+       "value": "20% fall \u2192 17% \u00b7 35% fall \u2192 24% \u00b7 50% fall \u2192 32% \u00b7 65% fall \u2192 42% \u00b7 75% fall \u2192 49%",
        "status": "Estimated",
        "how": "Latest JST US row for credit variables (vintage 2016 origin), overridden by public debt 118.8% of GDP, short rate 4.25% and the current real run-up.",
        "cite": [],
@@ -326,7 +367,7 @@
        "name": "Severity integration",
        "value": "Gaussian over falls of 50\u201376%, centre 62%, sd 7.5%",
        "status": "Assumed",
-       "how": "Weights the curve over plausible severe falls; gives a systemic share of 36% of severe outcomes.",
+       "how": "Weights the curve over plausible severe falls; gives a systemic share of 34% of severe outcomes.",
        "cite": [],
        "src": "direct_release.py:build_scenarios"
       },
@@ -347,29 +388,21 @@
   {
    "id": "uncertainty",
    "title": "5 \u00b7 Uncertainty and sampling",
-   "summary": "Every 10th\u201390th percentile range comes from one bootstrap that resamples whole origin years and perturbs the judgment-set inputs.",
+   "summary": "Every 10th\u201390th percentile range comes from one bootstrap that resamples whole global waves and perturbs the judgment-set inputs.",
    "tables": [
     {
      "title": "Procedure",
      "rows": [
       {
        "name": "Bootstrap",
-       "value": "300 replications; whole origin years resampled with replacement",
+       "value": "500 replications; whole global waves among comparable run-ups resampled with replacement",
        "status": "Fixed rule",
-       "how": "Refits the logit core on each resample and recomputes all seven scenario weights.",
+       "how": "With only 9 waves the ranges are wide on purpose.",
        "cite": [
         "efron",
         "cameron"
        ],
        "src": "direct_release.py:build_scenarios"
-      },
-      {
-       "name": "Feature noise",
-       "value": "run-up \u00d7N(1, 0.05); last-12-month return \u00d7N(1, 0.10)",
-       "status": "Assumed",
-       "how": "Measurement error in the basket features.",
-       "cite": [],
-       "src": null
       },
       {
        "name": "State weights",
@@ -399,7 +432,7 @@
        "name": "Scenario draws",
        "value": "10,000 draws, seed 20261014",
        "status": "Fixed rule",
-       "how": "Largest Monte Carlo standard error 0.41%.",
+       "how": "Largest Monte Carlo standard error 0.46%.",
        "cite": [],
        "src": null
       },
@@ -439,7 +472,7 @@
        "name": "Boom holds",
        "value": "sev = 0.00",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 2%; target band under 20%.",
+       "how": "Median simulated annual-close fall 4%; target band under 20%.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       },
@@ -447,7 +480,7 @@
        "name": "Contained repricing",
        "value": "sev = 0.14",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 10%; target band under 20%.",
+       "how": "Median simulated annual-close fall 12%; target band under 20%.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       },
@@ -455,7 +488,7 @@
        "name": "Mild adjustment",
        "value": "sev = 0.30",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 24%; target band 20\u201335%.",
+       "how": "Median simulated annual-close fall 28%; target band 20\u201335%.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       },
@@ -463,7 +496,7 @@
        "name": "Moderate burst",
        "value": "sev = 0.48",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 42%; target band 35\u201350%.",
+       "how": "Median simulated annual-close fall 50%; target band 35\u201350%.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       },
@@ -471,7 +504,7 @@
        "name": "Deep drawdown, liquidity holds",
        "value": "sev = 0.66",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 51%; target band 50%+.",
+       "how": "Median simulated annual-close fall 53%; target band 50%+.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       },
@@ -479,7 +512,7 @@
        "name": "Severe burst + liquidity vacuum",
        "value": "sev = 0.82",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 70%; target band 50%+.",
+       "how": "Median simulated annual-close fall 73%; target band 50%+.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       },
@@ -487,7 +520,7 @@
        "name": "Severe burst + banking crisis",
        "value": "sev = 1.00",
        "status": "Assumed",
-       "how": "Median simulated annual-close fall 83%; target band 50%+.",
+       "how": "Median simulated annual-close fall 85%; target band 50%+.",
        "cite": [],
        "src": "engine.py:SEVERITY"
       }
@@ -590,7 +623,7 @@
       },
       {
        "name": "\u03ba, US hysteresis scale",
-       "value": "3.0",
+       "value": "2.0",
        "status": "Calibrated",
        "how": "Grid search (0\u20135.0) jointly with \u03c6 and catch-up; pinned by the persistence target.",
        "cite": [
@@ -652,9 +685,9 @@
       },
       {
        "name": "\u03c6_cn, \u03ba_cn, catch_cn (China)",
-       "value": "0.05, 4.0, 0.05",
+       "value": "0.10, 3.0, 0.05",
        "status": "Calibrated",
-       "how": "Fitted on the systemic branch to two anchors: the 2030 shortfall of the banking-crisis class (-10.2%) and Japan\u2019s ten-year shortfall after 1989 (-16.4%). Japan is a single analogue.",
+       "how": "Fitted on the systemic branch to two anchors: the 2030 shortfall of the banking-crisis class (-8.2%) and Japan\u2019s ten-year shortfall after 1989 (-16.4%). Japan is a single analogue.",
        "cite": [
         "hoshi",
         "koo"
@@ -678,7 +711,7 @@
      "rows": [
       {
        "name": "Drawdown 35%+ with a banking crisis",
-       "value": "n 52 \u00b7 median -8.8% \u00b7 mean -10.2% \u00b7 p10 -19.1% \u00b7 trough median -2.7%",
+       "value": "n 79 \u00b7 median -8.0% \u00b7 mean -8.2% \u00b7 p10 -16.2% \u00b7 trough median -1.0%",
        "status": "Data",
        "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
        "cite": [
@@ -688,7 +721,7 @@
       },
       {
        "name": "Drawdown 20\u201350%, no banking crisis",
-       "value": "n 264 \u00b7 median -3.6% \u00b7 mean -3.3% \u00b7 p10 -13.4% \u00b7 trough median 0.0%",
+       "value": "n 398 \u00b7 median -2.6% \u00b7 mean -2.1% \u00b7 p10 -13.2% \u00b7 trough median 0.0%",
        "status": "Data",
        "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
        "cite": [
@@ -698,7 +731,7 @@
       },
       {
        "name": "Drawdown 10\u201320%",
-       "value": "n 173 \u00b7 median -2.5% \u00b7 mean -1.3% \u00b7 p10 -11.4% \u00b7 trough median 0.0%",
+       "value": "n 287 \u00b7 median -0.1% \u00b7 mean 0.1% \u00b7 p10 -11.0% \u00b7 trough median 0.0%",
        "status": "Data",
        "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
        "cite": [
@@ -708,7 +741,7 @@
       },
       {
        "name": "Drawdown under 10%",
-       "value": "n 998 \u00b7 median 0.7% \u00b7 mean 1.9% \u00b7 p10 -9.3% \u00b7 trough median 0.0%",
+       "value": "n 707 \u00b7 median 0.8% \u00b7 mean 2.6% \u00b7 p10 -8.7% \u00b7 trough median 0.0%",
        "status": "Data",
        "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
        "cite": [
@@ -718,7 +751,7 @@
       },
       {
        "name": "Drawdown 50%+, no banking crisis",
-       "value": "n 23 \u00b7 median -5.9% \u00b7 mean -4.1% \u00b7 p10 -12.9% \u00b7 trough median 0.0%",
+       "value": "n 39 \u00b7 median -5.2% \u00b7 mean -3.5% \u00b7 p10 -12.9% \u00b7 trough median 0.0%",
        "status": "Data",
        "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
        "cite": [
@@ -733,7 +766,7 @@
      "rows": [
       {
        "name": "Boom holds",
-       "value": "model -0.2% \u00b7 target 0.0%",
+       "value": "model -0.3% \u00b7 target 0.0%",
        "status": "Calibrated",
        "how": "Trough 0.0% (target 0.0%).",
        "cite": [],
@@ -741,7 +774,7 @@
       },
       {
        "name": "Contained repricing",
-       "value": "model -0.8% \u00b7 target -2.5%",
+       "value": "model -0.9% \u00b7 target -0.1%",
        "status": "Calibrated",
        "how": "Trough 0.0% (target 0.0%).",
        "cite": [],
@@ -749,7 +782,7 @@
       },
       {
        "name": "Mild adjustment",
-       "value": "model -2.7% \u00b7 target -3.6%",
+       "value": "model -2.6% \u00b7 target -2.6%",
        "status": "Calibrated",
        "how": "Trough 0.0% (target 0.0%).",
        "cite": [],
@@ -757,33 +790,33 @@
       },
       {
        "name": "Moderate burst",
-       "value": "model -5.9% \u00b7 target -3.6%",
+       "value": "model -5.7% \u00b7 target -2.6%",
        "status": "Calibrated",
-       "how": "Trough -0.7% (target 0.0%).",
+       "how": "Trough -0.8% (target 0.0%).",
        "cite": [],
        "src": null
       },
       {
        "name": "Deep drawdown, liquidity holds",
-       "value": "model -6.2% \u00b7 target -5.9%",
+       "value": "model -4.9% \u00b7 target -5.2%",
        "status": "Calibrated",
-       "how": "Trough -0.7% (target 0.0%).",
+       "how": "Trough -0.2% (target 0.0%).",
        "cite": [],
        "src": null
       },
       {
        "name": "Severe burst + liquidity vacuum",
-       "value": "model -10.1% \u00b7 target -8.0%",
+       "value": "model -7.9% \u00b7 target -6.7%",
        "status": "Calibrated",
-       "how": "Trough -3.5% (target -2.3%).",
+       "how": "Trough -2.1% (target -1.7%).",
        "cite": [],
        "src": null
       },
       {
        "name": "Severe burst + banking crisis",
-       "value": "model -10.9% \u00b7 target -10.2%",
+       "value": "model -8.6% \u00b7 target -8.2%",
        "status": "Calibrated",
-       "how": "Trough -4.1% (target -4.6%).",
+       "how": "Trough -2.6% (target -3.4%).",
        "cite": [],
        "src": null
       }
@@ -804,7 +837,7 @@
       },
       {
        "name": "Spread of outcomes",
-       "value": "model p10/p25/p50 -16.5 / -13.6 / -10.9 vs history -19.1 / -14.1 / -8.8",
+       "value": "model p10/p25/p50 -13.1 / -10.8 / -8.6 vs history -16.2 / -11.1 / -8.0",
        "status": "Data",
        "how": "The spread was not fitted; it checks that the multipliers give a plausible range.",
        "cite": [
@@ -814,7 +847,7 @@
       },
       {
        "name": "Severity benchmark",
-       "value": "systemic trough -4.1% vs GFC \u22124.0% and Fed severe \u22124.6%",
+       "value": "systemic trough -2.6% vs GFC \u22124.0% and Fed severe \u22124.6%",
        "status": "Data",
        "how": "Peak-to-trough fall in the real-GDP level.",
        "cite": [
@@ -822,6 +855,37 @@
         "fedscen"
        ],
        "src": null
+      },
+      {
+       "name": "Japan counterfactual",
+       "value": "log-linear trend of 1970\u201389, 1975\u201389 or 1980\u201389 real GDP, per head or total",
+       "status": "Data",
+       "how": "Shortfall against that trend: 1980\u20131989 per head: -2.3% at +4, -16.4% at +10; 1980\u20131989 total: -3.7% at +4, -19.3% at +10; 1975\u20131989 per head: -1.8% at +4, -15.6% at +10; 1975\u20131989 total: -3.9% at +4, -19.6% at +10; 1970\u20131989 per head: -1.0% at +4, -14.4% at +10; 1970\u20131989 total: -4.6% at +4, -20.5% at +10. A 1960\u201389 trend is rejected: it extrapolates catch-up growth.",
+       "cite": [
+        "hoshi",
+        "jstdb"
+       ],
+       "src": "hysteresis.py:crisis_cohorts"
+      },
+      {
+       "name": "IMF adverse-AI scenario",
+       "value": "global GDP \u22121.1% and US \u22121.8% by 2028 vs baseline",
+       "status": "Data",
+       "how": "As reported by Reuters on 13 Oct 2026 (primary chapter not retrieved). Our 2028 US output vs trend: Contained repricing -0.8%, Mild adjustment -2.5%, Moderate burst -5.1%, Severe burst + banking crisis -7.3%. The IMF case sits between our contained and mild branches; ours is a harsher family because it adds forced selling and banking-crisis branches.",
+       "cite": [
+        "imfweo"
+       ],
+       "src": null
+      },
+      {
+       "name": "Europe rebound term",
+       "value": "+0.28\u00b7severity points a year from 2029",
+       "status": "Assumed",
+       "how": "A small placeholder for safe-asset inflows and reallocation toward Europe. It is not estimated, and Europe\u2019s possible gains as a safe-asset destination are not otherwise simulated.",
+       "cite": [
+        "crma"
+       ],
+       "src": "engine.py:macro"
       }
      ]
     }
@@ -876,7 +940,7 @@
       },
       {
        "name": "Intervals",
-       "value": "joint 13.1% (10th\u201390th 7.3%\u201320.9%)",
+       "value": "joint 12.5% (10th\u201390th 5.2%\u201321.3%)",
        "status": "Estimated",
        "how": "Bootstrap of scenario weights multiplied by per-scenario path rates.",
        "cite": [
@@ -901,14 +965,14 @@
   {
    "id": "validation",
    "title": "9 \u00b7 Validation and known weaknesses",
-   "summary": "What was tested, what held, and where the model is weak.",
+   "summary": "What was tested, what held, and where the work is weak.",
    "tables": [
     {
      "title": "Tests",
      "rows": [
       {
        "name": "Frequency check",
-       "value": "run-ups of 100%+ (n 71): boom 28%, contained 15%, 20%+ fall 56%",
+       "value": "run-ups of 100%+ (n 71): boom 18%, contained 4%, 20%+ fall 77% (unweighted)",
        "status": "Data",
        "how": "Same window, same definitions, no model.",
        "cite": [
@@ -918,29 +982,110 @@
       },
       {
        "name": "Nearest analogs",
-       "value": "25 closest by run-up and 12-month return: 12% / 16% / 72%",
+       "value": "25 closest by run-up and 12-month return: 8% / 8% / 84%",
        "status": "Data",
        "how": "Model-free comparison with today\u2019s state.",
        "cite": [],
        "src": null
       },
       {
-       "name": "Out-of-sample Brier (3 outcomes)",
-       "value": "economies out 0.634 vs base 0.655; eras out 0.664 vs base 0.686",
+       "name": "Base rate (training frequency)",
+       "value": "Brier 0.296 \u00b7 log loss 0.787 \u00b7 AUC 0.28",
        "status": "Estimated",
-       "how": "Logit core only. Skill is small, as expected when few independent crashes exist.",
+       "how": "Leave one global wave out; target is a 20%+ peak-to-trough fall.",
        "cite": [
         "brier",
-        "gneiting",
+        "gneiting"
+       ],
+       "src": null
+      },
+      {
+       "name": "Run-up only (ridge logit)",
+       "value": "Brier 0.280 \u00b7 log loss 0.761 \u00b7 AUC 0.39",
+       "status": "Estimated",
+       "how": "Leave one global wave out; target is a 20%+ peak-to-trough fall.",
+       "cite": [
+        "brier",
+        "gneiting"
+       ],
+       "src": null
+      },
+      {
+       "name": "Last-12-month return only (ridge logit)",
+       "value": "Brier 0.297 \u00b7 log loss 0.789 \u00b7 AUC 0.34",
+       "status": "Estimated",
+       "how": "Leave one global wave out; target is a 20%+ peak-to-trough fall.",
+       "cite": [
+        "brier",
+        "gneiting"
+       ],
+       "src": null
+      },
+      {
+       "name": "Run-up + return (ridge logit)",
+       "value": "Brier 0.275 \u00b7 log loss 0.750 \u00b7 AUC 0.41",
+       "status": "Estimated",
+       "how": "Leave one global wave out; target is a 20%+ peak-to-trough fall.",
+       "cite": [
+        "brier",
+        "gneiting"
+       ],
+       "src": null
+      },
+      {
+       "name": "Full blend (logit + boosting + forest)",
+       "value": "Brier 0.268 \u00b7 log loss 0.732 \u00b7 AUC 0.44",
+       "status": "Estimated",
+       "how": "Leave one global wave out; target is a 20%+ peak-to-trough fall.",
+       "cite": [
+        "brier",
+        "gneiting"
+       ],
+       "src": null
+      },
+      {
+       "name": "Out of time",
+       "value": "Train before 1994, test 1994\u20132021: blend 0.269 vs base 0.320 \u00b7 Train 1994\u20132021, test before 1994: blend 0.378 vs base 0.401",
+       "status": "Estimated",
+       "how": "Models trained on one era and tested on the other; they beat the base rate there, which is why they are kept for comparison.",
+       "cite": [
         "roberts"
        ],
        "src": null
       },
       {
-       "name": "Era calibration",
-       "value": "1870\u20131913: 14% fell vs 42% predicted \u00b7 1914\u20131945: 27% fell vs 42% predicted \u00b7 1946\u20131973: 29% fell vs 41% predicted \u00b7 1974\u20131993: 19% fell vs 42% predicted \u00b7 1994\u20132008: 58% fell vs 32% predicted \u00b7 2009\u20132021: 60% fell vs 41% predicted",
+       "name": "Reliability by wave",
+       "value": "said 38% \u2192 happened 69% (n 61) \u00b7 said 46% \u2192 happened 73% (n 60) \u00b7 said 53% \u2192 happened 48% (n 60) \u00b7 said 61% \u2192 happened 52% (n 60) \u00b7 said 73% \u2192 happened 62% (n 60)",
        "status": "Data",
-       "how": "The model does not separate eras: it over-predicts before 1994 and under-predicts after.",
+       "how": "Low predictions came true more often than said, and the top bin less often: the model is over-spread, so its extreme outputs are not used.",
+       "cite": [
+        "platt"
+       ],
+       "src": null
+      },
+      {
+       "name": "Parameter sensitivity",
+       "value": "As released: 91%; Drawdown measured from the origin level (earlier definition): 78%; Run-up trigger +40%: 89%; Run-up trigger +75%: 86%; Run-up trigger +100%: 81%; Boom hurdle 3% a year: 91%; Boom hurdle 7% a year: 91%; Window of 3 annual closes: 72%; Window of 5 annual closes: 92%; Modern era only (1994\u20132021): 93%; Pre-1994 history only: 76%; Run-up as the only predictor: 80%",
+       "status": "Data",
+       "how": "Core logit before the regime surface, so the first row is the model extrapolation, not the headline.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Annual-close resolution",
+       "value": "US monthly data: 64% of 4-year windows contain a 20% fall; annual closes catch 36%",
+       "status": "Data",
+       "how": "Annual closes miss 44% of the falls monthly data see and understate their depth by a median 8 points, so every fall probability here is conservative. Source: Shiller monthly real S&P 500, 1871\u20132022 origins.",
+       "cite": [
+        "wdi"
+       ],
+       "src": null
+      },
+      {
+       "name": "Engine convergence",
+       "value": "fixed point converged (largest residual 0.0001); multiple equilibria in 0% of paths",
+       "status": "Data",
+       "how": "Same shocks, 40 vs 60 iterations, and starts from liquidity 0 and 1 give the same state.",
        "cite": [],
        "src": null
       },
@@ -961,10 +1106,31 @@
      "rows": [
       {
        "name": "Few independent crashes",
-       "value": "about 10 global clusters of 50%+ falls",
+       "value": "9 global waves behind the headline; about 10 clusters of 50%+ falls",
        "status": "Data",
        "how": "Every tail estimate rests on a handful of events.",
        "cite": [],
+       "src": null
+      },
+      {
+       "name": "Models do not beat history",
+       "value": "wave-out AUC about 0.44",
+       "status": "Data",
+       "how": "Why the headline is a frequency, not a model output.",
+       "cite": [
+        "roberts"
+       ],
+       "src": null
+      },
+      {
+       "name": "Annual time step",
+       "value": "state updates once a year",
+       "status": "Fixed rule",
+       "how": "Margin calls (days) and funding stress (weeks) are collapsed into one fixed point per year. Short, severe liquidity episodes that recover within a year are not resolved. A higher-frequency contagion layer is the main modelling gap.",
+       "cite": [
+        "bp09",
+        "sss21"
+       ],
        "src": null
       },
       {
@@ -973,6 +1139,37 @@
        "status": "Assumed",
        "how": "They reproduce the loops qualitatively and land median falls in each band, but are not estimated or bootstrapped.",
        "cite": [],
+       "src": null
+      },
+      {
+       "name": "Non-AI shocks",
+       "value": "energy, bond-yield and fiscal shocks only through the regime surface",
+       "status": "Assumed",
+       "how": "The scenarios are conditional on an AI reset. A rate or energy shock that also hits AI valuations would be attributed to AI here; the IMF lists those risks separately.",
+       "cite": [
+        "imfweo"
+       ],
+       "src": null
+      },
+      {
+       "name": "Policy response",
+       "value": "one liquidity-support term; no alternative policy scenarios",
+       "status": "Assumed",
+       "how": "Central-bank and fiscal responses beyond that term are not simulated.",
+       "cite": [
+        "bern13"
+       ],
+       "src": null
+      },
+      {
+       "name": "Treasury channel",
+       "value": "sale-pressure index 0\u20131",
+       "status": "Assumed",
+       "how": "Holdings are attributed by custodian and dealers, the Fed and other buyers can absorb sales; the index is a stress trigger, not a forecast.",
+       "cite": [
+        "tic",
+        "cfg16"
+       ],
        "src": null
       },
       {
@@ -986,18 +1183,10 @@
        "src": null
       },
       {
-       "name": "Annual closes",
-       "value": "\u2014",
-       "status": "Fixed rule",
-       "how": "Intra-year troughs are understated, so falls and banking-crisis links are conservative.",
-       "cite": [],
-       "src": null
-      },
-      {
        "name": "Basket is not an index",
        "value": "8 names",
        "status": "Fixed rule",
-       "how": "National-index episodes are analogues for a concentrated basket.",
+       "how": "National-index episodes are analogues for a concentrated basket. Attribution of each name\u2019s value to AI is an assumption (see the US section).",
        "cite": [
         "bo13",
         "greenwood"

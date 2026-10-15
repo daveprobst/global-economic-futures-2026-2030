@@ -1,0 +1,131 @@
+{
+ "source": "US Treasury TIC, Table 5 (major foreign holders)",
+ "latestMonth": "2026-07",
+ "priorMonth": "2026-06",
+ "unit": "USD billion",
+ "holders": [
+  {
+   "name": "Japan",
+   "latest": 1103.9,
+   "prior": 1116.7,
+   "series": [
+    {
+     "month": "2025-07",
+     "value": 1155.4
+    },
+    {
+     "month": "2025-08",
+     "value": 1183.9
+    },
+    {
+     "month": "2025-09",
+     "value": 1189.3
+    },
+    {
+     "month": "2025-10",
+     "value": 1200.0
+    },
+    {
+     "month": "2025-11",
+     "value": 1202.7
+    },
+    {
+     "month": "2025-12",
+     "value": 1185.5
+    },
+    {
+     "month": "2026-01",
+     "value": 1225.3
+    },
+    {
+     "month": "2026-02",
+     "value": 1239.3
+    },
+    {
+     "month": "2026-03",
+     "value": 1191.6
+    },
+    {
+     "month": "2026-04",
+     "value": 1209.9
+    },
+    {
+     "month": "2026-05",
+     "value": 1143.1
+    },
+    {
+     "month": "2026-06",
+     "value": 1116.7
+    },
+    {
+     "month": "2026-07",
+     "value": 1103.9
+    }
+   ]
+  },
+  {
+   "name": "China (mainland)",
+   "latest": 618.0,
+   "prior": 633.4,
+   "series": [
+    {
+     "month": "2025-07",
+     "value": 695.6
+    },
+    {
+     "month": "2025-08",
+     "value": 699.7
+    },
+    {
+     "month": "2025-09",
+     "value": 699.2
+    },
+    {
+     "month": "2025-10",
+     "value": 687.7
+    },
+    {
+     "month": "2025-11",
+     "value": 683.9
+    },
+    {
+     "month": "2025-12",
+     "value": 684.4
+    },
+    {
+     "month": "2026-01",
+     "value": 695.3
+    },
+    {
+     "month": "2026-02",
+     "value": 694.2
+    },
+    {
+     "month": "2026-03",
+     "value": 653.3
+    },
+    {
+     "month": "2026-04",
+     "value": 651.1
+    },
+    {
+     "month": "2026-05",
+     "value": 659.3
+    },
+    {
+     "month": "2026-06",
+     "value": 633.4
+    },
+    {
+     "month": "2026-07",
+     "value": 618.0
+    }
+   ]
+  }
+ ],
+ "grandTotal": {
+  "latest": 9248.1,
+  "prior": 9298.5
+ },
+ "caveat": "Treasury attributes holdings by the country of the custodian, so a security can belong to an investor elsewhere. Holdings show sale capacity, not intent."
+}

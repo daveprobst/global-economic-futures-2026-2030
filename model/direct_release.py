@@ -1,6 +1,6 @@
 """Release model: scenario weights, connected stress paths, hysteresis and historical checks.
 
-One window throughout: from the 31 Oct 2026 as-of date to 31 December 2030. Every scenario
+One window throughout: from the 15 Oct 2026 as-of date (latest prices 14 Oct 2026) to 31 December 2030. Every scenario
 probability is the probability of that outcome over the whole window; every macro path runs
 2026 (baseline year) to 2030. Inputs are open data (World Bank, JST Macrohistory) fetched by
 fetch_data.py plus the frozen state/US/China inputs in model/inputs. Outputs go to site/data.
@@ -25,13 +25,16 @@ import systemic_transition as ST
 import engine as E
 import hysteresis as H
 import checks as CK
+from models import make_gb, make_rf, BLEND, blend_rows
 import spec as SP
 import citations as CI
 import make_docs as MD
+import robustness as RB
+import make_static as MS
 
 OUT = ROOT / "site/data"
 SEED = 20261014; DRAWS = 10_000; PATHS = 4000
-ASOF = "2026-10-31"; WINDOW = "31 Oct 2026 – 31 Dec 2030"
+ASOF = "2026-10-15"; CUTOFF = "2026-10-14"; WINDOW = "15 Oct 2026 – 31 Dec 2030"
 STATES = [("calm", "ample"), ("calm", "neutral"), ("calm", "vacuum"), ("tense", "ample"), ("tense", "neutral"), ("tense", "vacuum"),
           ("crisis", "ample"), ("crisis", "neutral"), ("crisis", "vacuum")]
 SCEN = list(E.SEVERITY)
@@ -79,11 +82,6 @@ def fit_probs(df, features):
     return {b: float(np.mean([p[b] for p in ps])) for b in EP.BANDS}
 
 
-def make_gb(): return GradientBoostingClassifier(n_estimators=80, max_depth=2, learning_rate=.035, subsample=.8, random_state=SEED)
-def make_rf(): return RandomForestClassifier(n_estimators=500, max_depth=4, min_samples_leaf=5, max_features=.8, class_weight="balanced", random_state=SEED, n_jobs=-1)
-BLEND = (.75, .15, .10)   # ridge-logit core, gradient boosting, random forest
-
-
 def fit_challengers(df, features):
     X = df[list(EP.PREDICTORS)]; y = df.band; out = []
     for m in (make_gb(), make_rf()):
@@ -95,24 +93,12 @@ def fit_challengers(df, features):
 def bust_of(p): return sum(p[b] for b in EP.BANDS[1:])
 
 
-def blend_rows(train, test):
-    """Blended probability of a 20%+ fall for each test row, fitted exactly like the point estimate."""
-    F = list(EP.PREDICTORS); parts = []
-    sc = StandardScaler().fit(train[F]); lgs = []
-    for _, c in EP.MODEL_CONFIGS:
-        m = LogisticRegression(C=c, solver="lbfgs", max_iter=3000, random_state=SEED).fit(sc.transform(train[F]), train.band)
-        lgs.append(1 - m.predict_proba(sc.transform(test[F]))[:, list(m.classes_).index("none")])
-    gb = make_gb().fit(train[F], train.band); rf = make_rf().fit(train[F], train.band)
-    bust = lambda m: 1 - m.predict_proba(test[F])[:, list(m.classes_).index("none")]
-    parts = (np.mean(lgs, axis=0), bust(gb), bust(rf))
-    return BLEND[0] * parts[0] + BLEND[1] * parts[1] + BLEND[2] * parts[2], parts
-
-
 def platt(df):
-    """Calibrate the blended bust probability on country-out predictions (no in-sample fit)."""
+    """Calibrate the blended bust probability on predictions for held-out global waves (no in-sample fit)."""
     y = (df.band != "none").astype(int).to_numpy(); oof = np.zeros(len(df)); comp = np.zeros((3, len(df)))
-    for c in df.country.unique():
-        te = (df.country == c).to_numpy()
+    wave = df.originYear.map(CK.waves(df.originYear)).to_numpy()   # hold out whole global waves: simultaneous crashes are not independent
+    for c in np.unique(wave):
+        te = wave == c
         oof[te], parts = blend_rows(df[~te], df[te])
         for k in range(3): comp[k][te] = parts[k]
     z = logit(oof).reshape(-1, 1); pl = LogisticRegression(C=1e6).fit(z, y)
@@ -137,16 +123,30 @@ def conditional(base, mult, continue_share, tail_share):
     z = sum(out.values()); return {k: v / z for k, v in out.items()}
 
 
+ANCHOR_RUNUP = 1.0   # comparable run-ups: three-year real gain of 100% or more (today: about 190%)
+
+
+def wave_table(sub, wmap):
+    """Per-wave band frequencies plus boom / contained counts, so each global wave counts once however many countries it touched."""
+    rows = []
+    for _, g in sub.groupby(sub.originYear.map(wmap)):
+        rows.append([float((g.band == b).mean()) for b in EP.BANDS] +
+                    [int(((g.band == "none") & (g.outcome == "boom")).sum()), int(((g.band == "none") & (g.outcome != "boom")).sum())])
+    return np.array(rows)
+
+
 def build_scenarios(df, features, feat_audit, systemic_bundle):
     systemic_model, _, systemic_template, systemic_audit = systemic_bundle
+    # Model extrapolation, kept for comparison and validation only: it has no skill once whole global waves are held out.
     linear = fit_probs(df, features); gb, rf = fit_challengers(df, features)
     raw_base = {b: BLEND[0] * linear[b] + BLEND[1] * gb[b] + BLEND[2] * rf[b] for b in EP.BANDS}
     cal_a, cal_b, oof_brier, base_brier, comp_brier = platt(df)
-    base = apply_cal(raw_base, cal_a, cal_b)
-    shift = float(logit(bust_of(raw_base)) - logit(bust_of(linear)))
+    # Headline anchor: what happened after comparable run-ups, each global wave counted once.
+    wmap = CK.waves(df.originYear); sub = df[df.runup3 >= ANCHOR_RUNUP]; wt = wave_table(sub, wmap)
+    base = {b: max(float(wt[:, k].mean()), 1e-3) for k, b in enumerate(EP.BANDS)}; z = sum(base.values()); base = {b: v / z for b, v in base.items()}
     st = inp("states.json"); weights = np.array(st["windowStartWeights_pi"], float); weights /= weights.sum()
     geo = {"calm": .88, "tense": 1.0, "crisis": 1.18}; liq = {"ample": .62, "neutral": 1.0, "vacuum": 2.75}
-    none = df[df.band == "none"]; boom_n = int((none.outcome == "boom").sum()); side_n = int(len(none) - boom_n)
+    boom_n = int(wt[:, 4].sum()); side_n = int(wt[:, 5].sum()); none = sub[sub.band == "none"]
     side_alpha = np.array([boom_n + .5, side_n + .5]); continue_share = float(side_alpha[0] / side_alpha.sum())
     grid = np.linspace(-.76, -.50, 81); w = np.exp(-.5 * ((grid + .62) / .075) ** 2); w /= w.sum()
     systemic_share = float(np.sum(ST.predict(systemic_model, systemic_template, grid) * w))
@@ -157,16 +157,12 @@ def build_scenarios(df, features, feat_audit, systemic_bundle):
     point = {k: sum(weights[i] * rows[i]["probabilities"][k] for i in range(9)) for k in SCEN}
     rng = np.random.default_rng(SEED)
     labels = rng.choice(SCEN, size=DRAWS, p=[point[k] for k in SCEN])
-    # Year-cluster bootstrap: simultaneous global crashes are one draw, not thirty.
-    ys = df.originYear.unique(); groups = {y: df[df.originYear == y] for y in ys}; boots = []
-    for _ in range(300):
-        sample = pd.concat([groups[y] for y in rng.choice(ys, len(ys))], ignore_index=True)
-        try:
-            pb = fit_probs(sample, features * rng.normal(1, [.05, .10, .10], 3))
-            rb = bust_of(pb); pb = apply_cal({k: v * float(logistic(logit(rb) + shift)) / rb for k, v in pb.items() if k != 'none'} | {'none': 1 - float(logistic(logit(rb) + shift))}, cal_a, cal_b)
-        except Exception: continue
-        nb = sample[sample.band == "none"]; bn = int((nb.outcome == "boom").sum())
-        cb = float(rng.beta(bn + .5, len(nb) - bn + .5)); wb = rng.dirichlet(weights * 250 + 1)
+    # Wave bootstrap: resample whole global waves among the comparable run-ups.
+    boots = []
+    for _ in range(500):
+        pick = rng.integers(0, len(wt), len(wt)); s_ = wt[pick]
+        pb = {b: max(float(s_[:, k].mean()), 1e-3) for k, b in enumerate(EP.BANDS)}; zb = sum(pb.values()); pb = {b: v / zb for b, v in pb.items()}
+        bn, sn = int(s_[:, 4].sum()), int(s_[:, 5].sum()); cb = float(rng.beta(bn + .5, sn + .5)); wb = rng.dirichlet(weights * 250 + 1)
         ps = float(rng.beta(systemic_share * 16 + .5, (1 - systemic_share) * 16 + .5)); pv = float(rng.beta(2.5, 10.5))
         tb = np.array([(1 - ps) * (1 - pv), (1 - ps) * pv, ps]); vals = {k: 0. for k in SCEN}
         for i, (g, l) in enumerate(STATES):
@@ -174,10 +170,11 @@ def build_scenarios(df, features, feat_audit, systemic_bundle):
             for k in SCEN: vals[k] += wb[i] * q[k]
         boots.append(vals)
     intervals = {k: [float(np.quantile([x[k] for x in boots], .1)), float(np.quantile([x[k] for x in boots], .9))] for k in SCEN}
+    clusters = None
     defs = {
-        "continued_boom": (-.20, f"No 20% fall at any annual close to end-2030, and real returns of at least {HURDLE} a year."),
-        "no_burst_sideways": (-.20, f"No 20% fall at any annual close, but real returns below {HURDLE} a year."),
-        "mild_adjustment": (-.20, "Worst annual-close fall of 20–35%."), "moderate_burst": (-.35, "Worst annual-close fall of 35–50%."),
+        "continued_boom": (-.20, f"No 20% peak-to-trough fall at annual closes to end-2030, and real returns of at least {HURDLE} a year."),
+        "no_burst_sideways": (-.20, f"No 20% peak-to-trough fall at annual closes, but real returns below {HURDLE} a year."),
+        "mild_adjustment": (-.20, "Peak-to-trough fall of 20–35% at annual closes."), "moderate_burst": (-.35, "Peak-to-trough fall of 35–50% at annual closes."),
         "deep_drawdown_no_vacuum": (-.50, "Fall of 50% or more; funding markets keep working."),
         "severe_burst": (-.50, "Fall of 50% or more plus a dollar-liquidity vacuum."),
         "severe_burst_with_financial_crisis": (-.50, "Fall of 50% or more, liquidity vacuum and a banking crisis.")}
@@ -197,7 +194,7 @@ def build_scenarios(df, features, feat_audit, systemic_bundle):
             "stateProbabilities": [{"geopolitics": g, "liquidity": l, "probability": float(weights[i])} for i, (g, l) in enumerate(STATES)],
             "conditionalProbabilities": rows,
             "method": {"estimator": "75% ridge-logit core, 15% gradient boosting, 10% random forest, calibrated on country-out predictions; year-cluster bootstrap",
-                       "calibration": {"intercept": cal_a, "slope": cal_b, "countryOutBrierBlend": oof_brier, "countryOutBrierByModel": comp_brier, "countryOutBrierBaseRate": base_brier, "bustProbabilityRawBlend": bust_of(raw_base), "bustProbabilityCalibrated": bust_of(base)},
+                       "calibration": {"anchor": "wave-weighted frequency of each outcome after run-ups of 100% or more", "anchorRunup": ANCHOR_RUNUP, "anchorEpisodes": int(len(sub)), "anchorWaves": int(len(wt)), "anchorFall": float(1 - base["none"]), "modelRawFall": bust_of(raw_base), "waveOutPlattIntercept": cal_a, "waveOutPlattSlope": cal_b, "foldScheme": "global waves", "heldOutBrierBlend": oof_brier, "heldOutBrierByModel": comp_brier, "heldOutBrierBaseRate": base_brier},
                        "predictors": list(EP.PREDICTORS),
                        "episodeCount": int(len(df)), "countries": int(df.country.nunique()), "originYears": int(df.originYear.nunique()),
                        "sources": {"modern": int((df.source == "modern").sum()), "history": int((df.source == "history").sum())},
@@ -425,13 +422,41 @@ def patch_other(tree, us, connected, hyst, checks):
     profiles = {
         "US": {"summary": "Origin of the shock. Funding-market depth decides whether an equity reset becomes a banking crisis.", "metrics": {"growth": 2.34, "publicDebt": 118.8, "privateCredit": 216.3, "policyRate": 4.25, "directExposure": "high"}, "shockRole": "Origin and dollar-funding amplifier"},
         "China": {"summary": "Little direct AI exposure, but property and LGFV balance sheets make it the second fault line.", "metrics": {"growth": 4.96, "publicDebt": None, "privateCredit": 194.3, "policyRate": 3.0, "directExposure": "low"}, "shockRole": "Property-debt amplifier and potential Treasury seller"},
-        "EU": {"summary": "Trade, banks and dollar funding carry the first-round recession before any reallocation gain.", "metrics": {"growth": 1.5, "publicDebt": 87.4, "privateCredit": None, "policyRate": 2.0, "directExposure": "medium"}, "shockRole": "First-round loser; conditional later gainer"},
+        "EU": {"summary": "Mostly conventional industry with little direct AI exposure and no property-debt loop. Trade, bank and dollar-funding links carry the first-round hit.", "metrics": {"growth": 1.5, "publicDebt": 87.4, "privateCredit": None, "policyRate": 2.0, "directExposure": "medium"}, "shockRole": "Cushioned loser; conditional safe-asset and geopolitical gainer"},
         "Switzerland": {"summary": "Low debt and safe-haven demand cushion funding stress; a stronger franc hurts exports.", "metrics": {"growth": 1.4, "publicDebt": 17.2, "privateCredit": 164.6, "policyRate": 0.0, "directExposure": "medium"}, "shockRole": "Safe haven with an export cost"}}
     dump("country_profiles", {"asOf": ASOF, "metricDefinitions": {"growth": "2025 real GDP growth, %", "publicDebt": "Latest government debt, % GDP; perimeters differ", "privateCredit": "Domestic private credit, % GDP",
                                                                       "policyRate": "Policy rate, %", "directExposure": "Qualitative direct AI/US-tech exposure"}, "countries": profiles})
 
 
 ST_CURVE = [0, 0]
+
+
+def build_treasury():
+    rows = {}; header = None
+    for line in (ROOT / "data/raw/tic_slt_table5.txt").read_text(errors="ignore").splitlines():
+        cells = [c.strip() for c in line.split("\t")]
+        if cells and cells[0] == "Country" and len(cells) > 3 and cells[1][:2] == "20": header = cells[1:]
+        elif header and cells[0] in ("Japan", "China, Mainland", "Grand Total"):
+            vals = [float(x) if x.replace(".", "", 1).replace("-", "", 1).isdigit() else None for x in cells[1:len(header) + 1]]
+            rows[cells[0]] = dict(zip(header, vals))
+    months = header[:13]; latest, prior = months[0], months[1]
+    doc = {"source": "US Treasury TIC, Table 5 (major foreign holders)", "latestMonth": latest, "priorMonth": prior, "unit": "USD billion",
+           "holders": [{"name": n, "latest": rows[k][latest], "prior": rows[k][prior], "series": [{"month": m, "value": rows[k][m]} for m in reversed(months)]} for n, k in (("Japan", "Japan"), ("China (mainland)", "China, Mainland"))],
+           "grandTotal": {"latest": rows["Grand Total"][latest], "prior": rows["Grand Total"][prior]},
+           "caveat": "Treasury attributes holdings by the country of the custodian, so a security can belong to an investor elsewhere. Holdings show sale capacity, not intent."}
+    dump("treasury", doc); return doc
+
+
+def build_extras(tree, paths, hyst, df, features, checks):
+    imf = {"source": "IMF World Economic Outlook, October 2026 (13 Oct), adverse AI scenario as reported by Reuters; the primary scenario chapter was not retrieved", "adverseAI": {"globalGdp2028": -1.1, "usGdp2028": -1.8, "usDirect2028": -0.8},
+           "baseline": {"globalGrowth2026": 3.1, "globalGrowth2027": 3.4, "usGrowth2026": 2.3, "usGrowth2027": 2.3},
+           "reading": "The IMF scenario is a market correction with tighter financial conditions and higher bond yields; it is not a banking crisis. Compare it with the 'mild' and 'moderate' rows, not with the systemic row.",
+           "ours": {s: {"usOutputVsBaseline2028": paths["scenarios"][s]["US"]["outputVsTrend"][2]["p50"], "usOutputVsBaseline2030": paths["scenarios"][s]["US"]["outputVsTrend"][4]["p50"]} for s in SCEN}}
+    hyst["imfBenchmark"] = imf; dump("hysteresis", hyst)
+    cur = {"runup3": float(features[0]), "return1": float(features[1])}
+    val = {"asOf": ASOF, "validation": CK.validation_report(df), "sensitivity": CK.sensitivity(cur), "samplingResolution": CK.resolution_check(ROOT / "data/raw/sp500_monthly.csv"),
+           "engineChecks": RB.run(SEED), "headline": {"fall20": 1 - tree["scenarios"][0]["probability"] - tree["scenarios"][1]["probability"]}}
+    dump("validation", val); return val
 
 
 def main():
@@ -453,14 +478,15 @@ def main():
     dump("historical_checks", checks)
     cvc = checks["crossValidation"]; cve = cvc["leaveOneEraOut"]; cvk = cvc["leaveOneCountryOut"]
     tree["backtest"] = {"leaveOneCountryOut": {k: cvk[k] for k in ("brier", "baseRateBrier", "n")}, "leaveOneEraOut": {k: cve[k] for k in ("brier", "baseRateBrier", "n")},
-                        "skillDisclosure": "Skill over the base rate is modest and unstable across eras. Treat the odds as disciplined scenario weights, not precise forecasts."}
+                        "skillDisclosure": "Models show little skill over history once whole global waves are held out, so the odds rest on what happened after comparable run-ups. Read them as ranges."}
     dump("scenario_tree", tree)
     patch_other(tree, us, connected, hyst, checks)
     mix, mi = connected["mixture"], connected["mixtureInterval80"]
-    dump("methodology", SP.build({"tree": tree, "params": params, "calib": calib, "targets": targets, "cohorts": cohorts, "checks": checks, "hyst": hyst,
+    treasury = build_treasury(); validation = build_extras(tree, paths, hyst, df, features, checks)
+    dump("methodology", SP.build({"val": validation, "tree": tree, "params": params, "calib": calib, "targets": targets, "cohorts": cohorts, "checks": checks, "hyst": hyst,
                                   "pathStats": connected["pathClassification"], "cnBase": cn_base, "slope": slope, "joint": {"point": mix["joint"], "interval80": mi["joint"]}}))
     dump("citations", CI.build())
-    MD.main()
+    MD.main(); MS.main(df)
     print(json.dumps({"status": "released", "probabilitySum": sum(x["probability"] for x in tree["scenarios"]), "scenarios": {x["id"]: round(x["probability"], 4) for x in tree["scenarios"]},
                       "mixture": connected["mixture"], "episodes": len(df), "params": params}, indent=1))
 

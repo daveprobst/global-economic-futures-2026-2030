@@ -28,21 +28,29 @@ MODEL_CONFIGS = (("ridge_logit_C0_2", 0.2), ("ridge_logit_C1", 1.0))
 BOOM_REAL_PER_YEAR = 0.05
 
 
-def boom_hurdle(horizon: int = HORIZON) -> float:
-    return (1 + BOOM_REAL_PER_YEAR) ** horizon - 1
+def boom_hurdle(horizon: int = HORIZON, per_year: float = BOOM_REAL_PER_YEAR) -> float:
+    return (1 + per_year) ** horizon - 1
 
 
 def band_of(depth: float) -> str:
     return "severe" if depth <= -0.50 else "moderate" if depth <= -0.35 else "mild" if depth <= -0.20 else "none"
 
 
-def outcome(row_depth: float, row_cum: float, horizon: int = HORIZON) -> str:
+def outcome(row_depth: float, row_cum: float, horizon: int = HORIZON, per_year: float = BOOM_REAL_PER_YEAR) -> str:
     """Seven-way partition collapsed to the three observable groups used for checks."""
     if row_depth <= -0.20: return "bust"
-    return "boom" if row_cum > boom_hurdle(horizon) else "sideways"
+    return "boom" if row_cum > boom_hurdle(horizon, per_year) else "sideways"
 
 
-def _episodes(iso: str, real_ret: pd.Series, infl: pd.Series, horizon: int, lo: int, hi: int, source: str) -> list[dict]:
+def drawdown_of(fwd: np.ndarray, mode: str = "peak") -> float:
+    """Worst fall at annual closes inside the window.
+    peak: from the highest close reached since the origin (conventional peak-to-trough; an index that rises then falls counts).
+    origin: from the origin level only (earlier release; ignores falls from a higher interim peak)."""
+    if mode == "origin": return float(fwd.min() / fwd[0] - 1)
+    return float((fwd / np.maximum.accumulate(fwd)).min() - 1)
+
+
+def _episodes(iso: str, real_ret: pd.Series, infl: pd.Series, horizon: int, lo: int, hi: int, source: str, threshold: float = THRESHOLD, dd_mode: str = "peak") -> list[dict]:
     """real_ret / infl are indexed by calendar year, with gaps where data are missing."""
     d = pd.DataFrame({"ret": real_ret, "infl": infl}).dropna().sort_index()
     years = d.index.to_numpy(); ret = d.ret.to_numpy(); inf = d.infl.to_numpy()
@@ -53,10 +61,10 @@ def _episodes(iso: str, real_ret: pd.Series, infl: pd.Series, horizon: int, lo: 
         if np.any(np.diff(years[i - 4:i + horizon + 1]) != 1): continue
         if np.any(inf[i - 3:i + horizon + 1] > INFLATION_CAP): continue
         run = index[i] / index[i - 3] - 1
-        if run < THRESHOLD or i - last < 3: continue
+        if run < threshold or i - last < 3: continue
         fwd = index[i:i + horizon + 1]
         rows.append({"country": iso, "originYear": y, "runup3": float(run), "return1": float(ret[i]),
-                     "volatility5": float(np.std(ret[i - 4:i + 1])), "drawdown": float(fwd.min() / fwd[0] - 1),
+                     "volatility5": float(np.std(ret[i - 4:i + 1])), "drawdown": drawdown_of(fwd, dd_mode),
                      "cumReturn": float(fwd[-1] / fwd[0] - 1), "source": source})
         last = i
     return rows
@@ -79,16 +87,16 @@ def jst_frame() -> pd.DataFrame:
     return j
 
 
-def load_panel(horizon: int = HORIZON) -> pd.DataFrame:
+def load_panel(horizon: int = HORIZON, threshold: float = THRESHOLD, hurdle_per_year: float = BOOM_REAL_PER_YEAR, dd_mode: str = "peak", sources=("modern", "history")) -> pd.DataFrame:
     rows = []
     for path in sorted(SERIES.glob("WB_CM.MKT.INDX.ZG_*.csv")):
         iso = path.stem.rsplit("_", 1)[-1]; got = _wb(iso)
         if got is None: continue
-        rows += _episodes(iso, got[0], got[1], horizon, MODERN_FROM, 2100, "modern")
+        if "modern" in sources: rows += _episodes(iso, got[0], got[1], horizon, MODERN_FROM, 2100, "modern", threshold, dd_mode)
     j = jst_frame()
     for iso, g in j.groupby("iso"):
-        rows += _episodes(iso, g.set_index("year").real_ret, g.set_index("year").infl, horizon, 1870, MODERN_FROM - 1, "history")
+        if "history" in sources: rows += _episodes(iso, g.set_index("year").real_ret, g.set_index("year").infl, horizon, 1870, MODERN_FROM - 1, "history", threshold, dd_mode)
     df = pd.DataFrame(rows)
     df["band"] = df.drawdown.map(band_of)
-    df["outcome"] = [outcome(a, b, horizon) for a, b in zip(df.drawdown, df.cumReturn)]
+    df["outcome"] = [outcome(a, b, horizon, hurdle_per_year) for a, b in zip(df.drawdown, df.cumReturn)]
     return df.reset_index(drop=True)

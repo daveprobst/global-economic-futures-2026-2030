@@ -1,6 +1,6 @@
 {
- "asOf": "2026-10-31",
- "window": "31 Oct 2026 \u2013 31 Dec 2030",
+ "asOf": "2026-10-15",
+ "window": "15 Oct 2026 \u2013 31 Dec 2030",
  "definition": "Hysteresis = output that does not return to its pre-shock trend. It is measured as real GDP relative to the pre-shock trend, and as the permanent part that survives a further six years without a new shock (to 2036).",
  "channels": {
   "US": [
@@ -46,23 +46,23 @@
  },
  "parameters": {
   "phi": 0.4,
-  "phi_cn": 0.05,
+  "phi_cn": 0.1,
   "okun": 0.55,
   "rho": 0.03,
-  "kappa_us": 3.0,
+  "kappa_us": 2.0,
   "catch_us": 0.3,
-  "kappa_cn": 4.0,
+  "kappa_cn": 3.0,
   "catch_cn": 0.05
  },
  "calibration": {
   "usTargets": {
    "continued_boom": 0.0,
-   "no_burst_sideways": -2.5327046426167565,
-   "mild_adjustment": -3.5734525100849845,
-   "moderate_burst": -3.5734525100849845,
-   "deep_drawdown_no_vacuum": -5.874604226379065,
-   "severe_burst": -8.030107540894281,
-   "severe_burst_with_financial_crisis": -10.185610855409497
+   "no_burst_sideways": -0.13521682550698966,
+   "mild_adjustment": -2.612554204949541,
+   "moderate_burst": -2.612554204949541,
+   "deep_drawdown_no_vacuum": -5.233316993204995,
+   "severe_burst": -6.734793518830715,
+   "severe_burst_with_financial_crisis": -8.236270044456436
   },
   "usTroughTargets": {
    "continued_boom": 0.0,
@@ -70,85 +70,85 @@
    "mild_adjustment": 0.0,
    "moderate_burst": 0.0,
    "deep_drawdown_no_vacuum": 0.0,
-   "severe_burst": -2.303401216254895,
-   "severe_burst_with_financial_crisis": -4.60680243250979
+   "severe_burst": -1.6803432704159662,
+   "severe_burst_with_financial_crisis": -3.3606865408319324
   },
-  "usFitError": 25.037038917981988,
+  "usFitError": 22.683106780764973,
   "persistenceShare": 0.8437844432508091,
-  "chinaFitError": 10.781071468550225,
-  "chinaTarget2030": -10.185610855409497,
+  "chinaFitError": 20.168443924634573,
+  "chinaTarget2030": -8.236270044456436,
   "japanTarget10y": -16.41360968552852
  },
  "empiricalClasses": {
   "deep_with_crisis": {
    "label": "Drawdown 35%+ with a banking crisis",
-   "n": 52,
-   "troughP50": -2.746875239153168,
-   "troughMean": -4.60680243250979,
-   "troughP25": -5.909965503681408,
+   "n": 79,
+   "troughP50": -0.9594096480460168,
+   "troughMean": -3.3606865408319324,
+   "troughP25": -4.18262529395475,
    "countries": 14,
-   "mean": -10.185610855409497,
-   "p10": -19.051506643355076,
-   "p25": -14.060199023849897,
-   "p50": -8.8442663615537,
-   "p75": -4.810748533525139,
-   "p90": -1.152178791634593
+   "mean": -8.236270044456436,
+   "p10": -16.233442623906146,
+   "p25": -11.080329322534073,
+   "p50": -7.986907814087029,
+   "p75": -2.6562543879498413,
+   "p90": 0.7030141075134336
   },
   "mild_moderate_no_crisis": {
    "label": "Drawdown 20\u201350%, no banking crisis",
-   "n": 264,
+   "n": 398,
    "troughP50": 0.0,
-   "troughMean": -1.3853274537281972,
-   "troughP25": -0.9800282615071237,
+   "troughMean": -1.262903850877284,
+   "troughP25": 0.0,
    "countries": 16,
-   "mean": -3.3005564857241922,
-   "p10": -13.39417615628704,
-   "p25": -7.986263839303481,
-   "p50": -3.5734525100849845,
-   "p75": 0.8867414021440645,
-   "p90": 5.348398013917649
+   "mean": -2.098363483760972,
+   "p10": -13.198809867149713,
+   "p25": -7.218303890250005,
+   "p50": -2.612554204949541,
+   "p75": 2.802563099275707,
+   "p90": 6.727146971781073
   },
   "minor_decline": {
    "label": "Drawdown 10\u201320%",
-   "n": 173,
+   "n": 287,
    "troughP50": 0.0,
-   "troughMean": -1.4006195951459874,
-   "troughP25": -0.6925446583789019,
+   "troughMean": -1.3084011099406727,
+   "troughP25": -0.7411767552964632,
    "countries": 16,
-   "mean": -1.279707673797164,
-   "p10": -11.372977523319523,
-   "p25": -7.091904254588243,
-   "p50": -2.5327046426167565,
-   "p75": 3.5762931231045014,
-   "p90": 7.627527663442005
+   "mean": 0.08299184661716835,
+   "p10": -10.980613639252667,
+   "p25": -6.101407817284876,
+   "p50": -0.13521682550698966,
+   "p75": 5.093301677968698,
+   "p90": 13.428317622577191
   },
   "no_decline": {
    "label": "Drawdown under 10%",
-   "n": 998,
+   "n": 707,
    "troughP50": 0.0,
-   "troughMean": -0.8440817301077724,
-   "troughP25": -0.05222827644777717,
+   "troughMean": -0.7492887742908249,
+   "troughP25": -0.1186263334754245,
    "countries": 16,
-   "mean": 1.9419216958100864,
-   "p10": -9.34626537874415,
-   "p25": -4.287619490221803,
-   "p50": 0.7055259201266817,
-   "p75": 5.845420610249813,
-   "p90": 12.19051581532317
+   "mean": 2.571724886617398,
+   "p10": -8.738052401232949,
+   "p25": -4.158562935866621,
+   "p50": 0.8170578766089953,
+   "p75": 6.258446133197026,
+   "p90": 12.197848132668792
   },
   "severe_no_crisis": {
    "label": "Drawdown 50%+, no banking crisis",
-   "n": 23,
+   "n": 39,
    "troughP50": 0.0,
-   "troughMean": -1.2991632283089918,
-   "troughP25": -0.05009723037930902,
+   "troughMean": -1.1916265072360184,
+   "troughP25": 0.0,
    "countries": 10,
-   "mean": -4.123383747514999,
-   "p10": -12.85793096393656,
-   "p25": -9.388451229337331,
-   "p50": -5.874604226379065,
-   "p75": 1.403368929252724,
-   "p90": 8.53812649293238
+   "mean": -3.4718521236531004,
+   "p10": -12.881515527892244,
+   "p25": -9.288362375398274,
+   "p50": -5.233316993204995,
+   "p75": 2.167777460426601,
+   "p90": 8.665715960232959
   }
  },
  "cohorts": {
@@ -304,6 +304,64 @@
     "shortfall": -46.68293067809014
    }
   ],
+  "japanSensitivity": [
+   {
+    "trendYears": "1980\u20131989",
+    "measure": "per head",
+    "h4": -2.311686826361581,
+    "h10": -16.41360968552852,
+    "trendGrowth": 3.199722403274441
+   },
+   {
+    "trendYears": "1980\u20131989",
+    "measure": "total",
+    "h4": -3.6503099090175906,
+    "h10": -19.264423062781898,
+    "trendGrowth": 3.8111669208129806
+   },
+   {
+    "trendYears": "1975\u20131989",
+    "measure": "per head",
+    "h4": -1.8030631604787128,
+    "h10": -15.563372075271452,
+    "trendGrowth": 3.115004652907616
+   },
+   {
+    "trendYears": "1975\u20131989",
+    "measure": "total",
+    "h4": -3.9433100235548357,
+    "h10": -19.62920761001874,
+    "trendGrowth": 3.8368263348483422
+   },
+   {
+    "trendYears": "1970\u20131989",
+    "measure": "per head",
+    "h4": -0.9900551623782672,
+    "h10": -14.361470594580727,
+    "trendGrowth": 3.013851598049677
+   },
+   {
+    "trendYears": "1970\u20131989",
+    "measure": "total",
+    "h4": -4.581179943690438,
+    "h10": -20.456338079580526,
+    "trendGrowth": 3.90056796350271
+   },
+   {
+    "trendYears": "1960\u20131989",
+    "measure": "per head",
+    "h4": -20.13622927267873,
+    "h10": -38.040890004799536,
+    "trendGrowth": 4.898222513570394
+   },
+   {
+    "trendYears": "1960\u20131989",
+    "measure": "total",
+    "h4": -24.224133809372905,
+    "h10": -43.807073977831955,
+    "trendGrowth": 5.94685154165755
+   }
+  ],
   "gfcCohort": [
    {
     "iso": "BEL",
@@ -388,16 +446,16 @@
  },
  "validation": {
   "modelSystemicUS": {
-   "p10": -16.529162212793395,
-   "p25": -13.577013002369442,
-   "p50": -10.90524000407883
+   "p10": -13.072148875380995,
+   "p25": -10.762620671957007,
+   "p50": -8.56115648327104
   },
   "historicalSameClass": {
-   "n": 52,
-   "p10": -19.051506643355076,
-   "p25": -14.060199023849897,
-   "p50": -8.8442663615537,
-   "mean": -10.185610855409497
+   "n": 79,
+   "p10": -16.233442623906146,
+   "p25": -11.080329322534073,
+   "p50": -7.986907814087029,
+   "mean": -8.236270044456436
   },
   "gfcUS": [
    {
@@ -410,339 +468,339 @@
  },
  "scenarios": {
   "continued_boom": {
-   "probability": 0.16092013210661577,
+   "probability": 0.18375719140833408,
    "us": {
     "outputVsTrend2030": [
-     -0.8042831960961446,
-     -0.23777158707227825,
-     0.29504163563303604
+     -0.9485647986066735,
+     -0.3209426593500412,
+     0.24137485564531624
     ],
     "troughFromOrigin": 0.0,
-    "permanentLoss2030": 0.08740760543530926,
-    "outputVsTrend2036NoNewShock": -0.14224751681489065,
-    "permanentLoss2036": 0.12118238241217857,
-    "peakUnemployment": 4.520513856526009,
-    "potentialGrowth2030": 2.37431837563097,
+    "permanentLoss2030": 0.08319480661463094,
+    "outputVsTrend2036NoNewShock": -0.1484888251021369,
+    "permanentLoss2036": 0.11670882889194516,
+    "peakUnemployment": 4.555365810074369,
+    "potentialGrowth2030": 2.3761490145945037,
     "firstYearLossAbove1pct": null,
     "channelShare": {
-     "creditAllocation": 0.9989821792339211,
+     "creditAllocation": 0.995638606836448,
      "investmentCancelled": 0.0,
-     "labourDisplaced": 0.0010178207660789453
+     "labourDisplaced": 0.004361393163551989
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -0.885765157880284,
-     -0.06115856393073169,
-     0.7204957340182219
+     -0.8911970268372522,
+     -0.07923989786833367,
+     0.7007182111920813
     ],
-    "permanentLoss2030": 0.05417410489254361,
-    "outputVsTrend2036NoNewShock": -0.1200614042083373,
-    "permanentLoss2036": 0.08926924223774346,
-    "potentialGrowth2030": 4.014979915136652,
+    "permanentLoss2030": 0.05499472459225492,
+    "outputVsTrend2036NoNewShock": -0.13381841940343442,
+    "permanentLoss2036": 0.09709850908246559,
+    "potentialGrowth2030": 4.009005839699565,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": null,
     "channelShare": {
-     "debtDeflation": 1.0,
-     "balanceSheet": 0.0,
-     "capitalOutflow": 0.0
+     "debtDeflation": 0.9988802893616439,
+     "balanceSheet": 0.0008315460043780002,
+     "capitalOutflow": 0.00028816463397809744
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -0.6687698894653733,
-     -0.1585515005087039,
-     0.30152641835936755
+     -0.6972500377938537,
+     -0.19264378351708572,
+     0.27573437835436
     ],
-    "permanentLoss2030": 0.08639995257360644
+    "permanentLoss2030": 0.08078251549543597
    }
   },
   "no_burst_sideways": {
-   "probability": 0.10652459449311188,
+   "probability": 0.04764075332808663,
    "us": {
     "outputVsTrend2030": [
-     -1.5754785014836696,
-     -0.8435053213773777,
-     -0.22327244502019458
+     -1.8050694208495262,
+     -0.8891502040425545,
+     -0.19893990242581655
     ],
     "troughFromOrigin": 0.0,
-    "permanentLoss2030": 0.3214538174385514,
-    "outputVsTrend2036NoNewShock": -0.3696796038902447,
-    "permanentLoss2036": 0.3125327075740695,
-    "peakUnemployment": 4.8602439230132894,
-    "potentialGrowth2030": 2.3764114740539624,
+    "permanentLoss2030": 0.26838200013125113,
+    "outputVsTrend2036NoNewShock": -0.35606065992590374,
+    "permanentLoss2036": 0.2822866597620785,
+    "peakUnemployment": 4.874526046015246,
+    "potentialGrowth2030": 2.3724184574445104,
     "firstYearLossAbove1pct": null,
     "channelShare": {
-     "creditAllocation": 0.9579358286524575,
-     "investmentCancelled": 0.0005171361849915583,
-     "labourDisplaced": 0.04154703516255095
+     "creditAllocation": 0.942202155273406,
+     "investmentCancelled": 0.0010846518930136277,
+     "labourDisplaced": 0.05671319283358043
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -1.2884821600058292,
-     -0.3412394105396725,
-     0.5626050674718867
+     -1.6862565445061413,
+     -0.4981651084596243,
+     0.4410704152841654
     ],
-    "permanentLoss2030": 0.26047221084272665,
-    "outputVsTrend2036NoNewShock": -0.40718618896333547,
-    "permanentLoss2036": 0.3491634936959459,
-    "potentialGrowth2030": 3.967320706460824,
+    "permanentLoss2030": 0.2943721853669457,
+    "outputVsTrend2036NoNewShock": -0.5507217117867795,
+    "permanentLoss2036": 0.3896139963880124,
+    "potentialGrowth2030": 3.961261684143255,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": null,
     "channelShare": {
-     "debtDeflation": 0.9659850851897188,
-     "balanceSheet": 0.0246488026418638,
-     "capitalOutflow": 0.009366112168417385
+     "debtDeflation": 0.7057218907156615,
+     "balanceSheet": 0.22667745375531606,
+     "capitalOutflow": 0.06760065552902245
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -0.9686097901918186,
-     -0.4022058467796587,
-     0.0947400028137042
+     -1.0014524869336523,
+     -0.4036721399047841,
+     0.12157061451421275
     ],
-    "permanentLoss2030": 0.25859713685527774
+    "permanentLoss2030": 0.21124829665935513
    }
   },
   "mild_adjustment": {
-   "probability": 0.17891491032970602,
+   "probability": 0.2938039914286702,
    "us": {
     "outputVsTrend2030": [
-     -4.43730412456608,
-     -2.658362650132385,
-     -1.4639475709252212
+     -4.478156822119984,
+     -2.5932879284079835,
+     -1.3608475146306032
     ],
     "troughFromOrigin": 0.0,
-    "permanentLoss2030": 1.3278167456116903,
-    "outputVsTrend2036NoNewShock": -1.562537356828344,
-    "permanentLoss2036": 1.399228718998193,
-    "peakUnemployment": 5.754161534156669,
-    "potentialGrowth2030": 2.2423105534336454,
-    "firstYearLossAbove1pct": 2029,
+    "permanentLoss2030": 1.0650019843610528,
+    "outputVsTrend2036NoNewShock": -1.2924524547916831,
+    "permanentLoss2036": 1.1101381340274703,
+    "peakUnemployment": 5.7525038764279035,
+    "potentialGrowth2030": 2.277727300991335,
+    "firstYearLossAbove1pct": 2030,
     "channelShare": {
-     "creditAllocation": 0.6822038361260021,
-     "investmentCancelled": 0.10444097275712837,
-     "labourDisplaced": 0.21335519111686949
+     "creditAllocation": 0.7059848175915334,
+     "investmentCancelled": 0.10176422262916096,
+     "labourDisplaced": 0.19225095977930565
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -6.5686456892466,
-     -3.8134830810173055,
-     -1.9805982691512785
+     -7.319719981887087,
+     -4.122084899659708,
+     -2.071928116491943
     ],
-    "permanentLoss2030": 3.5660657594362064,
-    "outputVsTrend2036NoNewShock": -4.245270673703049,
-    "permanentLoss2036": 4.0623678396640415,
-    "potentialGrowth2030": 3.4522021132454244,
+    "permanentLoss2030": 3.5541126631556574,
+    "outputVsTrend2036NoNewShock": -4.489309190634625,
+    "permanentLoss2036": 4.094196231781741,
+    "potentialGrowth2030": 3.435298768614647,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": 2028,
     "channelShare": {
-     "debtDeflation": 0.3362658843957106,
-     "balanceSheet": 0.47254873677463266,
-     "capitalOutflow": 0.19118537882965672
+     "debtDeflation": 0.3190669484494376,
+     "balanceSheet": 0.4715692143248726,
+     "capitalOutflow": 0.20936383722568985
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -1.9486966405765818,
-     -1.1121564656263123,
-     -0.4449187829214097
+     -1.9859600583749502,
+     -1.0906124804040274,
+     -0.3929493330401626
     ],
-    "permanentLoss2030": 0.7236856162765234
+    "permanentLoss2030": 0.5966318367931944
    }
   },
   "moderate_burst": {
-   "probability": 0.13596303639629875,
+   "probability": 0.05700357428178997,
    "us": {
     "outputVsTrend2030": [
-     -9.669570189224324,
-     -5.918958554611836,
-     -3.7126763625951558
+     -9.135260868460874,
+     -5.710852921508323,
+     -3.5434818807974704
     ],
-    "troughFromOrigin": -0.7189189566752083,
-    "permanentLoss2030": 3.32964078159352,
-    "outputVsTrend2036NoNewShock": -4.015833357499371,
-    "permanentLoss2036": 3.714590020566849,
-    "peakUnemployment": 7.338790318453054,
-    "potentialGrowth2030": 1.893308015321376,
-    "firstYearLossAbove1pct": 2027,
+    "troughFromOrigin": -0.7932071882160674,
+    "permanentLoss2030": 2.618014457505012,
+    "outputVsTrend2036NoNewShock": -3.240987467646376,
+    "permanentLoss2036": 2.874951490344521,
+    "peakUnemployment": 7.320209764811231,
+    "potentialGrowth2030": 2.022772554449066,
+    "firstYearLossAbove1pct": 2028,
     "channelShare": {
-     "creditAllocation": 0.5625735734375751,
-     "investmentCancelled": 0.15676973715142223,
-     "labourDisplaced": 0.2806566894110028
+     "creditAllocation": 0.6008348776080531,
+     "investmentCancelled": 0.14883656432906586,
+     "labourDisplaced": 0.2503285580628809
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -16.69889150214374,
-     -10.18072967337396,
-     -6.130374908795916
+     -15.4686188005889,
+     -9.646805170729133,
+     -6.084422200628274
     ],
-    "permanentLoss2030": 9.633071727361877,
-    "outputVsTrend2036NoNewShock": -11.908849177619832,
-    "permanentLoss2036": 11.50293350011927,
-    "potentialGrowth2030": 2.1734720422932843,
+    "permanentLoss2030": 8.4223768645937,
+    "outputVsTrend2036NoNewShock": -11.10370540096277,
+    "permanentLoss2036": 10.233047842901957,
+    "potentialGrowth2030": 2.3023263321454452,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": 2027,
     "channelShare": {
-     "debtDeflation": 0.27462591809418946,
-     "balanceSheet": 0.4771980829015576,
-     "capitalOutflow": 0.24817599900425305
+     "debtDeflation": 0.2968985295885854,
+     "balanceSheet": 0.4473957349787537,
+     "capitalOutflow": 0.25570573543266095
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -3.6235454931252433,
-     -2.2897043920962545,
-     -1.3336802427933543
+     -3.5972867148663354,
+     -2.2493000787934054,
+     -1.2876154224461684
     ],
-    "permanentLoss2030": 1.468043876483733
+    "permanentLoss2030": 1.228412328912913
    }
   },
   "deep_drawdown_no_vacuum": {
-   "probability": 0.21511140529254746,
+   "probability": 0.22081072065045418,
    "us": {
     "outputVsTrend2030": [
-     -10.151571286780884,
-     -6.235831712372631,
-     -3.898994913014968
+     -7.772863820929257,
+     -4.920995206006168,
+     -3.1105445657530555
     ],
-    "troughFromOrigin": -0.739939529805566,
-    "permanentLoss2030": 3.6454068896037954,
-    "outputVsTrend2036NoNewShock": -4.37835186211554,
-    "permanentLoss2036": 4.083625465807545,
-    "peakUnemployment": 7.493646139209604,
-    "potentialGrowth2030": 1.8297885221000294,
-    "firstYearLossAbove1pct": 2027,
+    "troughFromOrigin": -0.24366384361365806,
+    "permanentLoss2030": 2.339311638268936,
+    "outputVsTrend2036NoNewShock": -2.855341864597813,
+    "permanentLoss2036": 2.547501344080712,
+    "peakUnemployment": 6.925589046228117,
+    "potentialGrowth2030": 2.0752578965345108,
+    "firstYearLossAbove1pct": 2028,
     "channelShare": {
-     "creditAllocation": 0.5131888755014432,
-     "investmentCancelled": 0.2182394892180959,
-     "labourDisplaced": 0.26857163528046085
+     "creditAllocation": 0.5454402724229648,
+     "investmentCancelled": 0.22786368191616102,
+     "labourDisplaced": 0.2266960456608742
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -17.18433677192594,
-     -10.441538786579954,
-     -6.3912821034165335
+     -13.897848924277932,
+     -8.638602918260712,
+     -5.367179902950754
     ],
-    "permanentLoss2030": 9.910139908132393,
-    "outputVsTrend2036NoNewShock": -12.374363964893671,
-    "permanentLoss2036": 12.023688708755815,
-    "potentialGrowth2030": 2.014626583816841,
+    "permanentLoss2030": 7.5509563508805515,
+    "outputVsTrend2036NoNewShock": -9.959121788770542,
+    "permanentLoss2036": 9.168603727892886,
+    "potentialGrowth2030": 2.482398332497562,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": 2027,
     "channelShare": {
-     "debtDeflation": 0.2759767557990585,
-     "balanceSheet": 0.46955329780188954,
-     "capitalOutflow": 0.254469946399052
+     "debtDeflation": 0.283145944965429,
+     "balanceSheet": 0.46417434326563106,
+     "capitalOutflow": 0.2526797117689399
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -3.4832015299297976,
-     -2.1401669563388905,
-     -1.1664207399708197
+     -2.749013409259174,
+     -1.6773610324480452,
+     -0.833996854082211
     ],
-    "permanentLoss2030": 1.4479699718229435
+    "permanentLoss2030": 0.9812520957679991
    }
   },
   "severe_burst": {
-   "probability": 0.053777851323136866,
+   "probability": 0.055202680162613545,
    "us": {
     "outputVsTrend2030": [
-     -15.2041780876919,
-     -10.070385131258941,
-     -6.429820240205559
+     -12.035267465249136,
+     -7.942566455364857,
+     -5.153147486889189
     ],
-    "troughFromOrigin": -3.4672024905402035,
-    "permanentLoss2030": 5.840422717423959,
-    "outputVsTrend2036NoNewShock": -7.249251160868994,
-    "permanentLoss2036": 6.723017765721426,
-    "peakUnemployment": 9.366933350695557,
-    "potentialGrowth2030": 1.3929355436295077,
+    "troughFromOrigin": -2.1165668332659755,
+    "permanentLoss2030": 3.750907155158684,
+    "outputVsTrend2036NoNewShock": -4.722568095312835,
+    "permanentLoss2036": 4.220682592773129,
+    "peakUnemployment": 8.4251674578417,
+    "potentialGrowth2030": 1.8098549083503714,
     "firstYearLossAbove1pct": 2027,
     "channelShare": {
-     "creditAllocation": 0.5185923480140047,
-     "investmentCancelled": 0.20013774537563864,
-     "labourDisplaced": 0.2812699066103566
+     "creditAllocation": 0.5411050592788711,
+     "investmentCancelled": 0.20678862063405945,
+     "labourDisplaced": 0.25210632008706946
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -21.114373401195873,
-     -12.958463506148568,
-     -8.074264322517744
+     -17.001408209597017,
+     -10.782670430985458,
+     -6.8998552936434745
     ],
-    "permanentLoss2030": 12.269478162342052,
-    "outputVsTrend2036NoNewShock": -15.587005267791346,
-    "permanentLoss2036": 15.019915550937569,
-    "potentialGrowth2030": 1.4471606884735468,
+    "permanentLoss2030": 9.36274295547442,
+    "outputVsTrend2036NoNewShock": -12.512945290006469,
+    "permanentLoss2036": 11.463331901638078,
+    "potentialGrowth2030": 2.0570216914411694,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": 2027,
     "channelShare": {
-     "debtDeflation": 0.3107117463371246,
-     "balanceSheet": 0.42490302608752656,
-     "capitalOutflow": 0.26438522757534877
+     "debtDeflation": 0.3184353413136348,
+     "balanceSheet": 0.4194805412108153,
+     "capitalOutflow": 0.2620841174755498
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -5.506368813840573,
-     -3.5555110907385923,
-     -2.1464991726510387
+     -4.367552178368254,
+     -2.7875912861105125,
+     -1.6238025981000042
     ],
-    "permanentLoss2030": 2.3168116303592408
+    "permanentLoss2030": 1.564321280032423
    }
   },
   "severe_burst_with_financial_crisis": {
-   "probability": 0.14878807005858316,
+   "probability": 0.14178108874005138,
    "us": {
     "outputVsTrend2030": [
-     -16.529162212793395,
-     -10.90524000407883,
-     -6.953963482286038
+     -13.072148875380995,
+     -8.56115648327104,
+     -5.535653838733662
     ],
-    "troughFromOrigin": -4.0574092057791695,
-    "permanentLoss2030": 6.32771672717224,
-    "outputVsTrend2036NoNewShock": -7.84278444137041,
-    "permanentLoss2036": 7.300918394471553,
-    "peakUnemployment": 9.755383576761718,
-    "potentialGrowth2030": 1.3021231981380406,
+    "troughFromOrigin": -2.5912908422351606,
+    "permanentLoss2030": 4.0843834389952285,
+    "outputVsTrend2036NoNewShock": -5.183161871639612,
+    "permanentLoss2036": 4.614852924671563,
+    "peakUnemployment": 8.738320595952395,
+    "potentialGrowth2030": 1.739119281799693,
     "firstYearLossAbove1pct": 2027,
     "channelShare": {
-     "creditAllocation": 0.49958211972762984,
-     "investmentCancelled": 0.2231893106219305,
-     "labourDisplaced": 0.27722856965043974
+     "creditAllocation": 0.5192869659735899,
+     "investmentCancelled": 0.22973073917333187,
+     "labourDisplaced": 0.25098229485307816
     }
    },
    "china": {
     "outputVsTrend2030": [
-     -22.010172880105394,
-     -13.431609272788492,
-     -8.308811787415175
+     -17.74344324989953,
+     -11.108850592194903,
+     -7.074654959974897
     ],
-    "permanentLoss2030": 12.660268500094201,
-    "outputVsTrend2036NoNewShock": -16.171399177598538,
-    "permanentLoss2036": 15.588432184526981,
-    "potentialGrowth2030": 1.308556833914385,
+    "permanentLoss2030": 9.613842370755982,
+    "outputVsTrend2036NoNewShock": -13.000755738097542,
+    "permanentLoss2036": 11.882590397649182,
+    "potentialGrowth2030": 1.9392362439734532,
     "baselineGrowth2030": 4.035980504412183,
     "firstYearLossAbove1pct": 2027,
     "channelShare": {
-     "debtDeflation": 0.3149788790232837,
-     "balanceSheet": 0.41894462381195074,
-     "capitalOutflow": 0.26607649716476567
+     "debtDeflation": 0.3228396564215046,
+     "balanceSheet": 0.4134523269053951,
+     "capitalOutflow": 0.26370801667310034
     }
    },
    "eu": {
     "outputVsTrend2030": [
-     -5.75801908667624,
-     -3.657519190818398,
-     -2.199471475459897
+     -4.539373130125694,
+     -2.8616737580108187,
+     -1.6630320321314749
     ],
-    "permanentLoss2030": 2.4081296598305366
+    "permanentLoss2030": 1.624735459612922
    }
   }
  },
@@ -750,68 +808,68 @@
   "US": {
    "level": [
     0.0,
-    -5.008399294057497,
-    -8.756123322136276,
-    -10.620401272135236,
-    -10.90524000407883
+    -4.325683923184179,
+    -7.342700470547564,
+    -8.658237191462879,
+    -8.56115648327104
    ],
    "scar": [
     0.0,
-    1.9995382570368898,
-    3.9315198095928654,
-    5.388827947096792,
-    6.32771672717224
+    1.33437578142745,
+    2.6028639262272026,
+    3.526514352528904,
+    4.0843834389952285
    ],
    "growth": [
     2.4,
-    -2.608399294057498,
-    -1.4137242796160367,
-    0.4353838360185168,
-    1.9966325585731952
+    -1.925683923184179,
+    -0.6805631964678786,
+    1.0018818703727517,
+    2.4028391419364494
    ]
   },
   "China": {
    "level": [
     0.0,
-    -3.6780656642668097,
-    -7.38584101136533,
-    -10.83146788323669,
-    -13.431609272788492
+    -3.039638015375155,
+    -6.1248668566680475,
+    -8.984805635161829,
+    -11.108850592194903
    ],
    "scar": [
     0.0,
-    3.4769511629755234,
-    6.9677401582987395,
-    10.232297996710592,
-    12.660268500094201
+    2.638857050357627,
+    5.283089643514748,
+    7.755464473833041,
+    9.613842370755982
    ],
    "growth": [
     4.95994886240992,
-    1.0508911086436763,
-    0.6904938845589048,
-    0.5889281242214139,
-    1.1509155012271053
+    1.689318757535331,
+    1.3386562815401506,
+    1.2298858747552472,
+    1.644953401886537
    ]
   }
  },
  "weighted": {
   "us": {
    "outputVsTrend2030": [
-    -11.426794063624952,
-    -4.449979462117367,
-    -0.277396455254953
+    -8.81876378869751,
+    -3.5229465477224275,
+    -0.31507865125066087
    ],
-   "probabilityLoss5pct": 0.45592279613980696,
-   "probabilityLoss10pct": 0.1502575128756438
+   "probabilityLoss5pct": 0.34115,
+   "probabilityLoss10pct": 0.06445
   },
   "china": {
    "outputVsTrend2030": [
-    -16.341516892387656,
-    -7.024652808238306,
-    0.05324524021157709
+    -13.167338778147695,
+    -5.74586455263142,
+    -0.03293428834810923
    ],
-   "probabilityLoss5pct": 0.5853792689634482,
-   "probabilityLoss10pct": 0.34371718585929295
+   "probabilityLoss5pct": 0.54795,
+   "probabilityLoss10pct": 0.22925
   }
  },
  "chinaBaseline": {
@@ -888,5 +946,50 @@
   "Targets: JST real GDP per head four years after each origin, vs the ten-year pre-origin trend, grouped by equity drawdown and banking crisis (1900\u20132016, wars excluded).",
   "Fitted: one cyclical scale, one hysteresis scale and one catch-up rate for the US so that scenario medians match those classes, the GFC/Fed peak-to-trough benchmark, and the post-war finding that 84% of a five-year banking-crisis shortfall remains after ten years.",
   "China: a separate scale, anchored to the same banking-crisis class in 2030 and to Japan's ten-year shortfall after 1989 for 2036. One analogue, so the Chinese figures carry wider uncertainty."
- ]
+ ],
+ "imfBenchmark": {
+  "source": "IMF World Economic Outlook, October 2026 (13 Oct), adverse AI scenario as reported by Reuters; the primary scenario chapter was not retrieved",
+  "adverseAI": {
+   "globalGdp2028": -1.1,
+   "usGdp2028": -1.8,
+   "usDirect2028": -0.8
+  },
+  "baseline": {
+   "globalGrowth2026": 3.1,
+   "globalGrowth2027": 3.4,
+   "usGrowth2026": 2.3,
+   "usGrowth2027": 2.3
+  },
+  "reading": "The IMF scenario is a market correction with tighter financial conditions and higher bond yields; it is not a banking crisis. Compare it with the 'mild' and 'moderate' rows, not with the systemic row.",
+  "ours": {
+   "continued_boom": {
+    "usOutputVsBaseline2028": -0.1782906479806431,
+    "usOutputVsBaseline2030": -0.3209426593500412
+   },
+   "no_burst_sideways": {
+    "usOutputVsBaseline2028": -0.8251258226916598,
+    "usOutputVsBaseline2030": -0.8891502040425545
+   },
+   "mild_adjustment": {
+    "usOutputVsBaseline2028": -2.484310354538504,
+    "usOutputVsBaseline2030": -2.5932879284079835
+   },
+   "moderate_burst": {
+    "usOutputVsBaseline2028": -5.127688992329743,
+    "usOutputVsBaseline2030": -5.710852921508323
+   },
+   "deep_drawdown_no_vacuum": {
+    "usOutputVsBaseline2028": -4.411932337783789,
+    "usOutputVsBaseline2030": -4.920995206006168
+   },
+   "severe_burst": {
+    "usOutputVsBaseline2028": -6.8696986188978695,
+    "usOutputVsBaseline2030": -7.942566455364857
+   },
+   "severe_burst_with_financial_crisis": {
+    "usOutputVsBaseline2028": -7.342700470547564,
+    "usOutputVsBaseline2030": -8.56115648327104
+   }
+  }
+ }
 }

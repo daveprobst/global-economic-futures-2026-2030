@@ -36,6 +36,9 @@ if __name__ == "__main__":
     gdp = wb("NY.GDP.MKTP.KD.ZG", "USA;EMU;JPN;CHN;DEU;GBR;KOR;CHE"); write("NY.GDP.MKTP.KD.ZG", gdp)
     dfl = wb("NY.GDP.DEFL.KD.ZG", "CHN;USA"); write("NY.GDP.DEFL.KD.ZG", dfl)
     lvl = wb("NY.GDP.MKTP.KD", "USA;EMU;JPN;CHN;DEU;GBR;KOR;CHE"); write("NY.GDP.MKTP.KD", lvl)
+    sp = RAW/"sp500_monthly.csv"
+    if not sp.exists(): sp.write_bytes(get("https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv"))
+    tic = RAW/"tic_slt_table5.txt"; tic.write_bytes(get("https://ticdata.treasury.gov/Publish/slt_table5.txt"))
     dta = RAW/"JSTdatasetR6.dta"
     if not dta.exists(): dta.write_bytes(get(JST_URL))
     j = pd.read_stata(dta)
