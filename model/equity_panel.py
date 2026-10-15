@@ -22,7 +22,7 @@ THRESHOLD = 0.50
 INFLATION_CAP = 25.0
 MODERN_FROM = 1994
 BANDS = ("none", "mild", "moderate", "severe")
-# Volatility is stored but not used: a 20-stock basket is not comparable with national indices and adds no out-of-sample skill.
+# Volatility is stored but not used: an 8-stock basket is not comparable with national indices and adds no out-of-sample skill.
 PREDICTORS = ("runup3", "return1")
 MODEL_CONFIGS = (("ridge_logit_C0_2", 0.2), ("ridge_logit_C1", 1.0))
 BOOM_REAL_PER_YEAR = 0.05

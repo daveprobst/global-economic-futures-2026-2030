@@ -1,0 +1,1022 @@
+{
+ "asOf": "2026-10-31",
+ "statusLegend": [
+  {
+   "status": "Data",
+   "meaning": "Observed input or measured statistic."
+  },
+  {
+   "status": "Fixed rule",
+   "meaning": "Definition or threshold set by design."
+  },
+  {
+   "status": "Estimated",
+   "meaning": "Fitted to data by the model code."
+  },
+  {
+   "status": "Calibrated",
+   "meaning": "Searched so outputs match stated historical targets."
+  },
+  {
+   "status": "Assumed",
+   "meaning": "Structural parameter set by judgment; not estimated and not validated on its own."
+  }
+ ],
+ "sections": [
+  {
+   "id": "data",
+   "title": "1 \u00b7 Data and episode panel",
+   "summary": "A run-up episode is a market whose real three-year equity return reached +50%. The outcome is what happened over the next four annual closes, which is the same geometry as today (end-2026 to end-2030).",
+   "tables": [
+    {
+     "title": "Inputs and rules",
+     "rows": [
+      {
+       "name": "Modern equity returns",
+       "value": "1994\u20132021 origins, 156 episodes",
+       "status": "Data",
+       "how": "World Bank S&P Global equity indices (CM.MKT.INDX.ZG), deflated by WB consumer-price inflation.",
+       "cite": [
+        "wdi"
+       ],
+       "src": "equity_panel.py:_wb"
+      },
+      {
+       "name": "Historical equity returns",
+       "value": "1870\u20131993 origins, 145 episodes",
+       "status": "Data",
+       "how": "JST total equity return, deflated by JST CPI. Origins before 1994 only, so the two sources never double-count a market.",
+       "cite": [
+        "jst",
+        "jstdb"
+       ],
+       "src": "equity_panel.py:load_panel"
+      },
+      {
+       "name": "Episode trigger",
+       "value": "3-year real return \u2265 +50%",
+       "status": "Fixed rule",
+       "how": "Bubble-scale threshold kept from the original design; origins must be \u22653 years apart within an economy. Run-ups of 100%+ are reported separately.",
+       "cite": [],
+       "src": "equity_panel.py:THRESHOLD"
+      },
+      {
+       "name": "Inflation screen",
+       "value": "drop windows above 25% a year",
+       "status": "Fixed rule",
+       "how": "Index returns are not comparable in hyperinflation; removes the affected windows.",
+       "cite": [],
+       "src": "equity_panel.py:INFLATION_CAP"
+      },
+      {
+       "name": "Outcome window",
+       "value": "next 4 annual closes",
+       "status": "Fixed rule",
+       "how": "End-2026 origin to end-2030. All probabilities and all paths use this window.",
+       "cite": [],
+       "src": "equity_panel.py:HORIZON"
+      },
+      {
+       "name": "Fall bands",
+       "value": "20% / 35% / 50%",
+       "status": "Fixed rule",
+       "how": "Worst annual-close fall from the origin level: mild 20\u201335%, moderate 35\u201350%, severe 50%+.",
+       "cite": [],
+       "src": "equity_panel.py:band_of"
+      },
+      {
+       "name": "Boom hurdle",
+       "value": "5% a year real (21.6% over four years)",
+       "status": "Assumed",
+       "how": "A round figure for \u201ckeeps earning normal returns\u201d. It splits no-fall cases into boom and contained repricing; no sensitivity run.",
+       "cite": [],
+       "src": "equity_panel.py:BOOM_REAL_PER_YEAR"
+      },
+      {
+       "name": "Panel size",
+       "value": "301 episodes \u00b7 67 economies \u00b7 87 origin years",
+       "status": "Data",
+       "how": "Simultaneous crashes make countries non-independent, so intervals resample whole origin years.",
+       "cite": [
+        "cameron"
+       ],
+       "src": null
+      },
+      {
+       "name": "Predictors",
+       "value": "3-year real run-up; last-12-month real return",
+       "status": "Fixed rule",
+       "how": "Volatility is excluded: an 8-stock basket (NVDA, MSFT, AMZN, AVGO, AMD, ORCL, GOOGL, META) is not comparable with a national index and added no held-out skill.",
+       "cite": [
+        "roberts"
+       ],
+       "src": "equity_panel.py:PREDICTORS"
+      },
+      {
+       "name": "Current state",
+       "value": "run-up 191%, last 12 months 11%",
+       "status": "Data",
+       "how": "Equal-weight monthly-rebalanced basket to 31 Oct 2026, nominal run-up 217%, deflated by US inflation of 2.8, 2.8, 2.9, 4.1, 8.0% (windows ending Oct 2026 back to Oct 2022). CPI ends in 2024, so the 2025 GDP deflator stands in for 2025\u201326.",
+       "cite": [
+        "wdi"
+       ],
+       "src": "direct_release.py:current_features"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "outcome",
+   "title": "2 \u00b7 Outcome model: probability of a 20%+ fall",
+   "summary": "A regularised logit supplies most of the estimate. Two non-linear models can only nudge it, because a logit cannot represent thresholds. The blend is then recalibrated on predictions for countries it never saw.",
+   "tables": [
+    {
+     "title": "Models and parameters",
+     "rows": [
+      {
+       "name": "Core: multinomial ridge logit",
+       "value": "C = 0.2 and C = 1.0, averaged; weight 75%",
+       "status": "Estimated",
+       "how": "Four-band target (none / mild / moderate / severe), standardised predictors, L-BFGS. Penalty strengths chosen a priori, not tuned.",
+       "cite": [
+        "ridge",
+        "gelman"
+       ],
+       "src": "direct_release.py:fit_probs"
+      },
+      {
+       "name": "Challenger: gradient boosting",
+       "value": "80 trees \u00b7 depth 2 \u00b7 learning rate 0.035 \u00b7 subsample 0.8; weight 15%",
+       "status": "Fixed rule",
+       "how": "Shallow and slow by design to limit overfit; hyperparameters not tuned.",
+       "cite": [
+        "gbm"
+       ],
+       "src": "direct_release.py:make_gb"
+      },
+      {
+       "name": "Challenger: random forest",
+       "value": "500 trees \u00b7 depth 4 \u00b7 min leaf 5 \u00b7 max features 0.8 \u00b7 balanced classes; weight 10%",
+       "status": "Fixed rule",
+       "how": "Same reasoning; adds sensitivity to thresholds.",
+       "cite": [
+        "rf"
+       ],
+       "src": "direct_release.py:make_rf"
+      },
+      {
+       "name": "Blend weights",
+       "value": "75 / 15 / 10",
+       "status": "Assumed",
+       "how": "Set before testing. Held-out Brier for a 20%+ fall: logit 0.231, boosting 0.247, forest 0.329, blend 0.233, base rate 0.243. The challengers add tail sensitivity, not measured skill.",
+       "cite": [
+        "brier",
+        "gneiting"
+       ],
+       "src": null
+      },
+      {
+       "name": "Recalibration (Platt)",
+       "value": "intercept -0.174 \u00b7 slope 0.845",
+       "status": "Estimated",
+       "how": "Logistic regression of the realised fall on the logit of the blend, using leave-one-economy-out predictions only. Lowers the raw 78% to 71%.",
+       "cite": [
+        "platt"
+       ],
+       "src": "direct_release.py:platt"
+      },
+      {
+       "name": "Boom share of no-fall cases",
+       "value": "106 of 176 observed \u2192 60%",
+       "status": "Estimated",
+       "how": "Beta(\u00bd, \u00bd) Jeffreys prior on the share that clears the hurdle; the posterior mean splits \u201cno fall\u201d into boom and contained repricing.",
+       "cite": [
+        "jeffreys"
+       ],
+       "src": "direct_release.py:build_scenarios"
+      },
+      {
+       "name": "Validation folds",
+       "value": "67 economies out; 6 eras out",
+       "status": "Fixed rule",
+       "how": "Folds hold out whole economies, or whole eras (to 1913, 1914\u201345, 1946\u201373, 1974\u201393, 1994\u20132008, 2009\u201321).",
+       "cite": [
+        "roberts"
+       ],
+       "src": "checks.py:cross_validate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regime",
+   "title": "3 \u00b7 Funding-regime surface",
+   "summary": "The historical panel cannot see the dollar-liquidity regime today, so a 3 \u00d7 3 surface scales the odds of a fall. Its numbers are structural assumptions, not estimates.",
+   "tables": [
+    {
+     "title": "Parameters",
+     "rows": [
+      {
+       "name": "Geopolitical factor on fall odds",
+       "value": "calm 0.88 \u00b7 tense 1.00 \u00b7 crisis 1.18",
+       "status": "Assumed",
+       "how": "Monotone, set by judgment. Applied as a shift in the log-odds of a fall. Rows are percentile bands of the news-based GPR index (calm below 40th, tense 40\u201380th, crisis above 80th).",
+       "cite": [
+        "gpr"
+       ],
+       "src": "direct_release.py:geo"
+      },
+      {
+       "name": "Liquidity factor on fall odds",
+       "value": "ample 0.62 \u00b7 neutral 1.00 \u00b7 vacuum 2.75",
+       "status": "Assumed",
+       "how": "Monotone, set by judgment. A vacuum means a high-yield spread above 6.5%, reserves below $2.5tn, or equivalent repo and Treasury dysfunction, with two or more signals active (2008 and March 2020 are the analogues).",
+       "cite": [
+        "bp09",
+        "sss21",
+        "fred"
+       ],
+       "src": "direct_release.py:liq"
+      },
+      {
+       "name": "Window-start state weights",
+       "value": "crisis \u00d7 neutral 77%; tense \u00d7 neutral 7%; all nine sum to 100%",
+       "status": "Assumed",
+       "how": "Carried from the first release\u2019s state model; not re-estimated here.",
+       "cite": [
+        "gpr",
+        "fred"
+       ],
+       "src": "inputs/states.json"
+      },
+      {
+       "name": "Net effect",
+       "value": "71% before the surface \u2192 73% after",
+       "status": "Assumed",
+       "how": "The surface is the only judgment-set multiplier on the headline; the bootstrap perturbs it by a lognormal factor (sd 0.16).",
+       "cite": [],
+       "src": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tail",
+   "title": "4 \u00b7 From equity loss to banking crisis",
+   "summary": "How a 50%+ fall splits into liquidity holds / vacuum / banking crisis. A second logit, fitted on 150 years of country-years, gives the chance that a banking crisis starts inside the window.",
+   "tables": [
+    {
+     "title": "Transition model",
+     "rows": [
+      {
+       "name": "Panel",
+       "value": "1,924 country-years \u00b7 16 economies \u00b7 origins 1874\u20132016 \u00b7 314 windows with a crisis (16.3%)",
+       "status": "Data",
+       "how": "Every origin year with a consistent real equity record; a crisis counts if JST flags one starting in the window.",
+       "cite": [
+        "jstdb",
+        "lv"
+       ],
+       "src": "systemic_transition.py:build_panel"
+      },
+      {
+       "name": "Features",
+       "value": "worst 4-year drawdown \u00b7 3-year run-up \u00b7 loans/GDP \u00b7 5-year credit change \u00b7 public debt/GDP \u00b7 short rate",
+       "status": "Fixed rule",
+       "how": "Credit and leverage variables because credit-financed booms end worse.",
+       "cite": [
+        "scht",
+        "jordabubbles",
+        "rr"
+       ],
+       "src": "systemic_transition.py:FEATURES"
+      },
+      {
+       "name": "Model",
+       "value": "ridge logit, C = 0.2, median imputation, standardised",
+       "status": "Estimated",
+       "how": "Penalty chosen a priori.",
+       "cite": [
+        "ridge"
+       ],
+       "src": "systemic_transition.py:_model"
+      },
+      {
+       "name": "Held-out skill (Brier vs base rate)",
+       "value": "countries 0.129 vs 0.137; eras 0.148 vs 0.137",
+       "status": "Estimated",
+       "how": "Beats the base rate on held-out economies (AUC 0.66) but not on held-out eras (AUC 0.57). The systemic share is therefore wide: the bootstrap draws it from Beta(16\u00b7s + \u00bd, 16\u00b7(1\u2212s) + \u00bd).",
+       "cite": [
+        "brier"
+       ],
+       "src": null
+      },
+      {
+       "name": "Current balance-sheet curve",
+       "value": "20% fall \u2192 19% \u00b7 35% fall \u2192 25% \u00b7 50% fall \u2192 33% \u00b7 65% fall \u2192 41% \u00b7 75% fall \u2192 48%",
+       "status": "Estimated",
+       "how": "Latest JST US row for credit variables (vintage 2016 origin), overridden by public debt 118.8% of GDP, short rate 4.25% and the current real run-up.",
+       "cite": [],
+       "src": "systemic_transition.py:fit"
+      },
+      {
+       "name": "Severity integration",
+       "value": "Gaussian over falls of 50\u201376%, centre 62%, sd 7.5%",
+       "status": "Assumed",
+       "how": "Weights the curve over plausible severe falls; gives a systemic share of 36% of severe outcomes.",
+       "cite": [],
+       "src": "direct_release.py:build_scenarios"
+      },
+      {
+       "name": "Vacuum without banking crisis",
+       "value": "20% of non-systemic severe paths",
+       "status": "Assumed",
+       "how": "No dataset identifies a vacuum that spares the banks; 20% is a central guess, drawn from Beta(2.5, 10.5) in the bootstrap.",
+       "cite": [
+        "sss21"
+       ],
+       "src": "direct_release.py:vac"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uncertainty",
+   "title": "5 \u00b7 Uncertainty and sampling",
+   "summary": "Every 10th\u201390th percentile range comes from one bootstrap that resamples whole origin years and perturbs the judgment-set inputs.",
+   "tables": [
+    {
+     "title": "Procedure",
+     "rows": [
+      {
+       "name": "Bootstrap",
+       "value": "300 replications; whole origin years resampled with replacement",
+       "status": "Fixed rule",
+       "how": "Refits the logit core on each resample and recomputes all seven scenario weights.",
+       "cite": [
+        "efron",
+        "cameron"
+       ],
+       "src": "direct_release.py:build_scenarios"
+      },
+      {
+       "name": "Feature noise",
+       "value": "run-up \u00d7N(1, 0.05); last-12-month return \u00d7N(1, 0.10)",
+       "status": "Assumed",
+       "how": "Measurement error in the basket features.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "State weights",
+       "value": "Dirichlet(250\u00b7w + 1)",
+       "status": "Assumed",
+       "how": "Concentration set so state weights move by a few points.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Regime multiplier",
+       "value": "\u00d7 lognormal(0, 0.16)",
+       "status": "Assumed",
+       "how": "Judgment uncertainty in the surface.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Boom share, systemic share, vacuum share",
+       "value": "Beta from resampled counts; Beta(16\u00b7s+\u00bd, 16\u00b7(1\u2212s)+\u00bd); Beta(2.5, 10.5)",
+       "status": "Assumed",
+       "how": "Widths set by judgment.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Scenario draws",
+       "value": "10,000 draws, seed 20261014",
+       "status": "Fixed rule",
+       "how": "Largest Monte Carlo standard error 0.41%.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Not in the bootstrap",
+       "value": "finance-engine coefficients (section 6)",
+       "status": "Fixed rule",
+       "how": "They are fixed structural parameters; only the macro-damage multipliers (section 7) are randomised. Ranges are therefore narrower than total model uncertainty.",
+       "cite": [],
+       "src": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "engine",
+   "title": "6 \u00b7 Connected finance engine",
+   "summary": "One shared state per simulated year, solved by iterating eight times to a fixed point: AI revenue expectations \u2192 coverage of commitments \u2192 funding cost \u2192 equity loss \u2192 margin calls \u2192 forced sales \u2192 liquidity \u2192 China outflow \u2192 LGFV refinancing \u2192 back to liquidity. These coefficients are stress parameters set so each loop behaves as the cited mechanisms describe. They are not estimated.",
+   "equations": [
+    "expectations_t = clip(1 \u2212 sev \u00b7 shape_t + \u03b5_t, 0.03, 1.12),  shape = [0, .95, .82, .58, .38],  \u03b5 ~ N(0, 0.07)",
+    "revenue = clip(0.70 + 0.40\u00b7expectations \u2212 0.15\u00b7liquidity, 0.12, 1.15);  commitments = 1 + 0.48\u00b7sev\u00b7e^(\u22120.18(t\u22121))",
+    "coverage = 1.82 \u00b7 revenue / commitments",
+    "margin_t = 0.36\u00b7margin_{t\u22121} + max(0, drawdown_t \u2212 drawdown_{t\u22121} \u2212 0.025) \u00b7 (1.18 + 0.72\u00b7sev)",
+    "outflow = clip(0.08 + 0.50\u00b7liq + 0.34\u00b7(1 \u2212 expectations) + 0.25\u00b7chinaStress, 0, 1)",
+    "sale = clip(0.025 + 0.40\u00b7max(0, outflow \u2212 0.30) + 0.18\u00b7chinaStress, 0, 0.72)",
+    "liquidity_t = clip(0.44\u00b7liquidity_{t\u22121} + 0.76\u00b7max(0, 1 \u2212 coverage) + 1.12\u00b7margin + 0.34\u00b7sale \u2212 policy, 0, 1);  policy = 0.075\u00b7(t\u22121)\u00b7sev\u00b7(1 \u2212 0.55\u00b7margin)",
+    "equity_t = clip(0.54\u00b7equity_prev + 0.46\u00b7100\u00b7(1 \u2212 0.52\u00b7sev\u00b7shape \u2212 0.20\u00b7liquidity \u2212 0.10\u00b7margin) + N(0, 1.45), 10, 150)",
+    "chinaStress_t = clip(0.58\u00b7chinaStress_{t\u22121} + 0.35\u00b7outflow + 0.24\u00b7liquidity + 0.11\u00b7sev, 0, 1);  start 0.22",
+    "hyperscaler rate = 4.8 + 5.2\u00b7liquidity + 1.3\u00b7max(0, 1 \u2212 coverage);  LGFV rate = 4.5 + 5.1\u00b7outflow + 1.35\u00b7sale"
+   ],
+   "tables": [
+    {
+     "title": "Scenario severity index",
+     "rows": [
+      {
+       "name": "Boom holds",
+       "value": "sev = 0.00",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 2%; target band under 20%.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      },
+      {
+       "name": "Contained repricing",
+       "value": "sev = 0.14",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 10%; target band under 20%.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      },
+      {
+       "name": "Mild adjustment",
+       "value": "sev = 0.30",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 24%; target band 20\u201335%.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      },
+      {
+       "name": "Moderate burst",
+       "value": "sev = 0.48",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 42%; target band 35\u201350%.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      },
+      {
+       "name": "Deep drawdown, liquidity holds",
+       "value": "sev = 0.66",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 51%; target band 50%+.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      },
+      {
+       "name": "Severe burst + liquidity vacuum",
+       "value": "sev = 0.82",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 70%; target band 50%+.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      },
+      {
+       "name": "Severe burst + banking crisis",
+       "value": "sev = 1.00",
+       "status": "Assumed",
+       "how": "Median simulated annual-close fall 83%; target band 50%+.",
+       "cite": [],
+       "src": "engine.py:SEVERITY"
+      }
+     ]
+    },
+    {
+     "title": "Structural mechanisms",
+     "rows": [
+      {
+       "name": "Funding and margin spirals",
+       "value": "coefficients above",
+       "status": "Assumed",
+       "how": "Equity losses cut collateral, which forces sales and lowers market liquidity.",
+       "cite": [
+        "bp09",
+        "km97",
+        "bs14",
+        "as10",
+        "sss21",
+        "bern13",
+        "fed87"
+       ],
+       "src": null
+      },
+      {
+       "name": "Revenue-expectation reset and sticky commitments",
+       "value": "0.70/0.40/0.15; 0.48",
+       "status": "Assumed",
+       "how": "Expected AI revenue falls short of what capex and power contracts need; commitments decay slowly.",
+       "cite": [
+        "aischool",
+        "jcurve"
+       ],
+       "src": null
+      },
+      {
+       "name": "Dollar funding and Treasury channel",
+       "value": "0.25, 0.40, 0.18, 0.34",
+       "status": "Assumed",
+       "how": "Outflow from China and dollar scarcity feed back to US liquidity through Treasury sales.",
+       "cite": [
+        "bruno",
+        "du18",
+        "cfg16",
+        "tic"
+       ],
+       "src": null
+      },
+      {
+       "name": "LGFV refinancing",
+       "value": "4.5% + 5.1\u00b7outflow + 1.35\u00b7sale",
+       "status": "Assumed",
+       "how": "Marginal refinancing cost for local-government vehicles.",
+       "cite": [
+        "chen",
+        "bao",
+        "imfchn"
+       ],
+       "src": null
+      },
+      {
+       "name": "Paths",
+       "value": "4,000 per scenario; 8 fixed-point iterations per year",
+       "status": "Fixed rule",
+       "how": "Common random numbers across scenarios; seed 20261014 + 7 + index.",
+       "cite": [],
+       "src": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hysteresis",
+   "title": "7 \u00b7 Macro paths and hysteresis",
+   "summary": "The finance state drives an output gap and a permanent loss stock. Each of the three US channels (and three China channels) adds to the stock, which decays only slowly. The scales were searched so scenario medians reproduce what happened after equity crashes and banking crises in 1900\u20132016.",
+   "equations": [
+    "US output gap:  gap_t = (1 \u2212 catch)\u00b7gap_{t\u22121} \u2212 \u03c6\u00b7m\u00b7(4.15\u00b7liq + 1.85\u00b7(1 \u2212 exp) + 0.70\u00b7margin) + \u03b5,   m ~ lognormal(0, 0.4)",
+    "US channels:  C = clip(0.6\u00b7liq + 0.4\u00b7margin);  I = clip((1.65 \u2212 coverage)/1.65);  U = clip(max(0, u \u2212 5)/5)",
+    "Hysteresis flow and stock:  flow_t = \u03ba\u00b7m'\u00b7(0.45\u00b7C + 0.30\u00b7I + 0.25\u00b7U);  scar_t = (1 \u2212 \u03c1)\u00b7scar_{t\u22121} + flow_t",
+    "Unemployment:  u_t = 4.3 + okun \u00b7 max(0, \u2212(gap_t \u2212 scar_{t\u22121}))",
+    "Growth:  g_t = 2.4 + (gap_t \u2212 gap_{t\u22121}) \u2212 flow_t;   output vs trend = gap \u2212 scar",
+    "China channels:  D = clip((LGFV rate \u2212 nominal growth \u2212 2)/8);  B = clip((chinaStress \u2212 0.30)/0.5);  F = clip((outflow \u2212 0.30)/0.5);  flow = \u03ba_cn\u00b7m'\u00b7(0.40\u00b7D + 0.35\u00b7B + 0.25\u00b7F)",
+    "China output gap uses 2.85\u00b7max(0, chinaStress \u2212 0.22) + 1.85\u00b7max(0, outflow \u2212 0.135) + 0.45\u00b7max(0, sale \u2212 0.065); deflator = \u22120.92 \u2212 1.5\u00b7max(0, chinaStress \u2212 0.22)",
+    "Europe: same structure at half the hysteresis scale (credit and labour channels only); Switzerland scales the US path by 0.48."
+   ],
+   "tables": [
+    {
+     "title": "Fitted and fixed parameters",
+     "rows": [
+      {
+       "name": "\u03c6, US cyclical scale",
+       "value": "0.40",
+       "status": "Calibrated",
+       "how": "Grid search (0.30\u20131.20) minimising squared distance to the 2030 shortfall and trough targets below.",
+       "cite": [
+        "rww"
+       ],
+       "src": "hysteresis.py:calibrate"
+      },
+      {
+       "name": "\u03ba, US hysteresis scale",
+       "value": "3.0",
+       "status": "Calibrated",
+       "how": "Grid search (0\u20135.0) jointly with \u03c6 and catch-up; pinned by the persistence target.",
+       "cite": [
+        "cerra",
+        "bcs",
+        "rww"
+       ],
+       "src": null
+      },
+      {
+       "name": "catch, US output-gap closure",
+       "value": "0.30",
+       "status": "Calibrated",
+       "how": "Searched over {0.20, 0.30}; a rebound penalty stops growth exceeding 1.9% after 2028 because history shows no catch-up above trend.",
+       "cite": [
+        "cerra"
+       ],
+       "src": null
+      },
+      {
+       "name": "\u03c1, decay of the permanent stock",
+       "value": "0.03",
+       "status": "Assumed",
+       "how": "3% a year: slow enough that most of the loss survives a decade.",
+       "cite": [
+        "cerra",
+        "bcs"
+       ],
+       "src": null
+      },
+      {
+       "name": "Okun coefficient",
+       "value": "0.55",
+       "status": "Assumed",
+       "how": "Literature range about 0.4\u20130.6 unemployment points per point of output gap.",
+       "cite": [
+        "okun"
+       ],
+       "src": null
+      },
+      {
+       "name": "Macro-damage multipliers",
+       "value": "lognormal sd 0.40 on \u03c6 and \u03ba (US and China, separate draws)",
+       "status": "Assumed",
+       "how": "Widens bands toward the historical spread; check below.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Channel weights",
+       "value": "US 0.45 / 0.30 / 0.25; China 0.40 / 0.35 / 0.25",
+       "status": "Assumed",
+       "how": "Credit allocation weighs most because the post-crisis evidence points to impaired intermediation; not separately identified.",
+       "cite": [
+        "rr",
+        "koo"
+       ],
+       "src": null
+      },
+      {
+       "name": "\u03c6_cn, \u03ba_cn, catch_cn (China)",
+       "value": "0.05, 4.0, 0.05",
+       "status": "Calibrated",
+       "how": "Fitted on the systemic branch to two anchors: the 2030 shortfall of the banking-crisis class (-10.2%) and Japan\u2019s ten-year shortfall after 1989 (-16.4%). Japan is a single analogue.",
+       "cite": [
+        "hoshi",
+        "koo"
+       ],
+       "src": null
+      },
+      {
+       "name": "China baseline growth",
+       "value": "4.96% in 2025, then -0.231 points a year to 4.04% in 2030",
+       "status": "Estimated",
+       "how": "Linear trend of 2012\u20132025 growth, 2020\u201322 excluded.",
+       "cite": [
+        "wdi"
+       ],
+       "src": "direct_release.py:classify_paths"
+      }
+     ]
+    },
+    {
+     "title": "Historical targets (JST, 1900\u20132016, war years excluded)",
+     "rows": [
+      {
+       "name": "Drawdown 35%+ with a banking crisis",
+       "value": "n 52 \u00b7 median -8.8% \u00b7 mean -10.2% \u00b7 p10 -19.1% \u00b7 trough median -2.7%",
+       "status": "Data",
+       "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
+       "cite": [
+        "jstdb"
+       ],
+       "src": "hysteresis.py:shortfall_panel"
+      },
+      {
+       "name": "Drawdown 20\u201350%, no banking crisis",
+       "value": "n 264 \u00b7 median -3.6% \u00b7 mean -3.3% \u00b7 p10 -13.4% \u00b7 trough median 0.0%",
+       "status": "Data",
+       "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
+       "cite": [
+        "jstdb"
+       ],
+       "src": "hysteresis.py:shortfall_panel"
+      },
+      {
+       "name": "Drawdown 10\u201320%",
+       "value": "n 173 \u00b7 median -2.5% \u00b7 mean -1.3% \u00b7 p10 -11.4% \u00b7 trough median 0.0%",
+       "status": "Data",
+       "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
+       "cite": [
+        "jstdb"
+       ],
+       "src": "hysteresis.py:shortfall_panel"
+      },
+      {
+       "name": "Drawdown under 10%",
+       "value": "n 998 \u00b7 median 0.7% \u00b7 mean 1.9% \u00b7 p10 -9.3% \u00b7 trough median 0.0%",
+       "status": "Data",
+       "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
+       "cite": [
+        "jstdb"
+       ],
+       "src": "hysteresis.py:shortfall_panel"
+      },
+      {
+       "name": "Drawdown 50%+, no banking crisis",
+       "value": "n 23 \u00b7 median -5.9% \u00b7 mean -4.1% \u00b7 p10 -12.9% \u00b7 trough median 0.0%",
+       "status": "Data",
+       "how": "Real GDP per head four years after the origin against the ten-year pre-origin trend.",
+       "cite": [
+        "jstdb"
+       ],
+       "src": "hysteresis.py:shortfall_panel"
+      }
+     ]
+    },
+    {
+     "title": "Fit by scenario (US output vs trend, 2030)",
+     "rows": [
+      {
+       "name": "Boom holds",
+       "value": "model -0.2% \u00b7 target 0.0%",
+       "status": "Calibrated",
+       "how": "Trough 0.0% (target 0.0%).",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Contained repricing",
+       "value": "model -0.8% \u00b7 target -2.5%",
+       "status": "Calibrated",
+       "how": "Trough 0.0% (target 0.0%).",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Mild adjustment",
+       "value": "model -2.7% \u00b7 target -3.6%",
+       "status": "Calibrated",
+       "how": "Trough 0.0% (target 0.0%).",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Moderate burst",
+       "value": "model -5.9% \u00b7 target -3.6%",
+       "status": "Calibrated",
+       "how": "Trough -0.7% (target 0.0%).",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Deep drawdown, liquidity holds",
+       "value": "model -6.2% \u00b7 target -5.9%",
+       "status": "Calibrated",
+       "how": "Trough -0.7% (target 0.0%).",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Severe burst + liquidity vacuum",
+       "value": "model -10.1% \u00b7 target -8.0%",
+       "status": "Calibrated",
+       "how": "Trough -3.5% (target -2.3%).",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Severe burst + banking crisis",
+       "value": "model -10.9% \u00b7 target -10.2%",
+       "status": "Calibrated",
+       "how": "Trough -4.1% (target -4.6%).",
+       "cite": [],
+       "src": null
+      }
+     ]
+    },
+    {
+     "title": "Persistence and out-of-fit checks",
+     "rows": [
+      {
+       "name": "Persistence share",
+       "value": "0.84",
+       "status": "Data",
+       "how": "Post-war banking crises: median shortfall at 10 years \u00f7 at 5 years.",
+       "cite": [
+        "cerra"
+       ],
+       "src": null
+      },
+      {
+       "name": "Spread of outcomes",
+       "value": "model p10/p25/p50 -16.5 / -13.6 / -10.9 vs history -19.1 / -14.1 / -8.8",
+       "status": "Data",
+       "how": "The spread was not fitted; it checks that the multipliers give a plausible range.",
+       "cite": [
+        "rr"
+       ],
+       "src": null
+      },
+      {
+       "name": "Severity benchmark",
+       "value": "systemic trough -4.1% vs GFC \u22124.0% and Fed severe \u22124.6%",
+       "status": "Data",
+       "how": "Peak-to-trough fall in the real-GDP level.",
+       "cite": [
+        "bea",
+        "fedscen"
+       ],
+       "src": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "joint",
+   "title": "8 \u00b7 Joint US\u2013China crisis",
+   "summary": "A US banking crisis is the systemic branch of the scenario partition. A China crisis is a latent threshold on each simulated path. Both flags come from the same path, so the overlap is generated, not multiplied.",
+   "equations": [
+    "US flag = scenario is \u201csevere burst + banking crisis\u201d",
+    "P(China crisis | path) = logistic(\u22125.80 + 2.6\u00b7max outflow + 1.5\u00b7max chinaStress + 0.25\u00b7(max LGFV rate \u2212 5) + 0.70\u00b7max liquidity + 0.24\u00b7low-growth + 1.30\u00b7US flag)",
+    "Reverse-stress cell (property loss P, spread S): drawdown = clip(0.30 + 0.035\u00b7(S \u2212 3) + N(0, 0.055), 0.20, 0.82);  P(US) = logistic(logit(transition(drawdown)) + 0.17\u00b7(S \u2212 4));  P(China) = logistic(\u22123.7 + 0.105\u00b7(P \u2212 20) + 0.22\u00b7(S \u2212 4) + 1.2\u00b7US flag);  Gaussian copula \u03c1 = 0.62;  monotone envelope"
+   ],
+   "tables": [
+    {
+     "title": "Parameters",
+     "rows": [
+      {
+       "name": "China-crisis threshold coefficients",
+       "value": "see equation",
+       "status": "Assumed",
+       "how": "Structural stress parameters from the first joint-crisis release. No comparable historical China crisis exists, so this layer cannot be validated.",
+       "cite": [
+        "forbes",
+        "koo",
+        "chen"
+       ],
+       "src": "direct_release.py:build_connected"
+      },
+      {
+       "name": "Crisis definition (research stage)",
+       "value": "property decline \u226525%, growth <2%, plus restructuring or recapitalisation stress",
+       "status": "Fixed rule",
+       "how": "Motivates the inputs of the threshold above; the simulated flag is the logistic, not a literal test of these conditions. China is currently 22.6% below its 2021 property peak.",
+       "cite": [
+        "bisgap",
+        "imfchn"
+       ],
+       "src": null
+      },
+      {
+       "name": "Copula correlation",
+       "value": "\u03c1 = 0.62",
+       "status": "Assumed",
+       "how": "Strength of the shared shock in the reverse-stress surface; tail dependence beyond a Gaussian copula is not modelled.",
+       "cite": [
+        "embrechts",
+        "forbes"
+       ],
+       "src": "direct_release.py:build_connected"
+      },
+      {
+       "name": "Intervals",
+       "value": "joint 13.1% (10th\u201390th 7.3%\u201320.9%)",
+       "status": "Estimated",
+       "how": "Bootstrap of scenario weights multiplied by per-scenario path rates.",
+       "cite": [
+        "efron"
+       ],
+       "src": null
+      },
+      {
+       "name": "Selection of stress points",
+       "value": "grid cells are conditional on a revenue-expectation reset",
+       "status": "Fixed rule",
+       "how": "Reported as conditional odds, not as current-trajectory odds.",
+       "cite": [
+        "glasserman"
+       ],
+       "src": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "validation",
+   "title": "9 \u00b7 Validation and known weaknesses",
+   "summary": "What was tested, what held, and where the model is weak.",
+   "tables": [
+    {
+     "title": "Tests",
+     "rows": [
+      {
+       "name": "Frequency check",
+       "value": "run-ups of 100%+ (n 71): boom 28%, contained 15%, 20%+ fall 56%",
+       "status": "Data",
+       "how": "Same window, same definitions, no model.",
+       "cite": [
+        "greenwood"
+       ],
+       "src": "checks.py:run"
+      },
+      {
+       "name": "Nearest analogs",
+       "value": "25 closest by run-up and 12-month return: 12% / 16% / 72%",
+       "status": "Data",
+       "how": "Model-free comparison with today\u2019s state.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Out-of-sample Brier (3 outcomes)",
+       "value": "economies out 0.634 vs base 0.655; eras out 0.664 vs base 0.686",
+       "status": "Estimated",
+       "how": "Logit core only. Skill is small, as expected when few independent crashes exist.",
+       "cite": [
+        "brier",
+        "gneiting",
+        "roberts"
+       ],
+       "src": null
+      },
+      {
+       "name": "Era calibration",
+       "value": "1870\u20131913: 14% fell vs 42% predicted \u00b7 1914\u20131945: 27% fell vs 42% predicted \u00b7 1946\u20131973: 29% fell vs 41% predicted \u00b7 1974\u20131993: 19% fell vs 42% predicted \u00b7 1994\u20132008: 58% fell vs 32% predicted \u00b7 2009\u20132021: 60% fell vs 41% predicted",
+       "status": "Data",
+       "how": "The model does not separate eras: it over-predicts before 1994 and under-predicts after.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Model risk standard",
+       "value": "limitations, ranges and challenger models disclosed",
+       "status": "Fixed rule",
+       "how": "Practice follows SR 11-7.",
+       "cite": [
+        "sr117"
+       ],
+       "src": null
+      }
+     ]
+    },
+    {
+     "title": "Known weaknesses",
+     "rows": [
+      {
+       "name": "Few independent crashes",
+       "value": "about 10 global clusters of 50%+ falls",
+       "status": "Data",
+       "how": "Every tail estimate rests on a handful of events.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Finance-engine coefficients untested",
+       "value": "section 6",
+       "status": "Assumed",
+       "how": "They reproduce the loops qualitatively and land median falls in each band, but are not estimated or bootstrapped.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "One China analogue",
+       "value": "Japan after 1989",
+       "status": "Assumed",
+       "how": "China differs in policy space, capital controls and state-bank structure.",
+       "cite": [
+        "hoshi"
+       ],
+       "src": null
+      },
+      {
+       "name": "Annual closes",
+       "value": "\u2014",
+       "status": "Fixed rule",
+       "how": "Intra-year troughs are understated, so falls and banking-crisis links are conservative.",
+       "cite": [],
+       "src": null
+      },
+      {
+       "name": "Basket is not an index",
+       "value": "8 names",
+       "status": "Fixed rule",
+       "how": "National-index episodes are analogues for a concentrated basket.",
+       "cite": [
+        "bo13",
+        "greenwood"
+       ],
+       "src": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "repro",
+   "title": "10 \u00b7 Reproduce it",
+   "summary": "All code and frozen inputs are in the repository.",
+   "equations": [
+    "python model/fetch_data.py      # World Bank + JST \u2192 data/ (git-ignored)",
+    "python model/direct_release.py  # \u2192 site/data/*.json  (seed 20261014)",
+    "Modules: equity_panel \u00b7 systemic_transition \u00b7 engine \u00b7 hysteresis \u00b7 checks \u00b7 spec \u00b7 direct_release;  frozen inputs in model/inputs"
+   ]
+  }
+ ]
+}

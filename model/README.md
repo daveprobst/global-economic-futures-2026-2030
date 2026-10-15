@@ -8,6 +8,9 @@ Run `python model/fetch_data.py` (World Bank WDI, JST Macrohistory R6; written t
 | `systemic_transition.py` | Equity loss → banking-crisis transition (JST, 1870–2016 origins) |
 | `engine.py` | Connected finance state, output gaps, hysteresis, unemployment |
 | `hysteresis.py` | Empirical output-shortfall targets (JST) and calibration of the engine |
+| `spec.py` | Methodology specification: every model, parameter, status and source |
+| `citations.py` | Curated citation list with what each source is used for |
+| `make_docs.py` | Regenerates README and MODEL_RISK from the released data |
 | `checks.py` | Frequency tables, nearest analogs, leave-country-out and leave-era-out validation |
 | `direct_release.py` | Scenario weights, outputs and site data |
 | `inputs/` | Frozen inputs: regime weights, US AI decomposition, China debt, contagion network |

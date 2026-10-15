@@ -1,0 +1,817 @@
+{
+ "asOf": "2026-10-31",
+ "items": [
+  {
+   "key": "wdi",
+   "kind": "data",
+   "authors": [
+    "World Bank"
+   ],
+   "year": 2026,
+   "title": "World Development Indicators: S&P Global Equity Indices (CM.MKT.INDX.ZG), Inflation, consumer prices (FP.CPI.TOTL.ZG), GDP growth (NY.GDP.MKTP.KD.ZG), GDP deflator inflation (NY.GDP.DEFL.KD.ZG)",
+   "venue": "World Bank DataBank (CC BY 4.0)",
+   "doi": null,
+   "url": "https://databank.worldbank.org/source/world-development-indicators",
+   "use": "Annual equity-index returns, CPI and deflator inflation and real GDP growth. Supplies the run-up panel from 1994, the 25% inflation screen, the US deflation of the AI basket, and China's baseline growth and deflator.",
+   "source": "added"
+  },
+  {
+   "key": "jst",
+   "kind": "data",
+   "authors": [
+    "\u00d2scar Jord\u00e0",
+    "Moritz Schularick",
+    "Alan M. Taylor"
+   ],
+   "year": 2017,
+   "title": "Macrofinancial History and the New Business Cycle Facts",
+   "venue": "NBER Macroeconomics Annual",
+   "doi": "10.1086/690241",
+   "url": "https://doi.org/10.1086/690241",
+   "use": "The paper behind the JST Macrohistory database: banking-crisis dates, credit, debt, interest rates, real GDP per head and equity returns for 16\u201318 economies since 1870.",
+   "source": "register"
+  },
+  {
+   "key": "jstdb",
+   "kind": "data",
+   "authors": [
+    "\u00d2scar Jord\u00e0",
+    "Moritz Schularick",
+    "Alan M. Taylor"
+   ],
+   "year": 2026,
+   "title": "The JST Macrohistory Database, Release R6 (MacroFinance & MacroHistory Lab)",
+   "venue": "Official website",
+   "doi": null,
+   "url": "https://www.macrohistory.net/database/",
+   "use": "Release R6 (data to 2020) used directly: pre-1994 run-up episodes, the banking-crisis transition panel and every hysteresis target.",
+   "source": "register"
+  },
+  {
+   "key": "gpr",
+   "kind": "data",
+   "authors": [
+    "Dario Caldara",
+    "Matteo Iacoviello"
+   ],
+   "year": 2022,
+   "title": "Measuring Geopolitical Risk",
+   "venue": "American Economic Review",
+   "doi": "10.1257/aer.20191823",
+   "url": "https://doi.org/10.1257/aer.20191823",
+   "use": "News-based geopolitical risk index; its percentiles define the calm / tense / crisis rows of the funding-regime surface.",
+   "source": "register"
+  },
+  {
+   "key": "fred",
+   "kind": "data",
+   "authors": [
+    "Federal Reserve Bank of St. Louis"
+   ],
+   "year": 2026,
+   "title": "Federal Reserve Economic Data (FRED): BAMLH0A0HYM2, NFCI, STLFSI4, WRESBAL",
+   "venue": "FRED",
+   "doi": null,
+   "url": "https://fred.stlouisfed.org/",
+   "use": "Current gauges of dollar-market liquidity: high-yield spread, financial-conditions and stress indices, reserve balances.",
+   "source": "added"
+  },
+  {
+   "key": "bisgap",
+   "kind": "data",
+   "authors": [
+    "Bank for International Settlements"
+   ],
+   "year": 2026,
+   "title": "Credit-to-GDP gaps",
+   "venue": "Official website",
+   "doi": null,
+   "url": "https://www.bis.org/statistics/c_gaps.htm",
+   "use": "China credit-to-GDP level, credit gap and debt-service ratio shown in the China section and the early-warning gauges.",
+   "source": "register"
+  },
+  {
+   "key": "imfchn",
+   "kind": "data",
+   "authors": [
+    "International Monetary Fund. Asia and Pacific Department"
+   ],
+   "year": 2026,
+   "title": "People\u2019s Republic of China: 2025 Article IV Consultation-Press Release; Staff Report; and Statement by the Executive Director for the People\u2019s Republic of China",
+   "venue": "IMF Staff Country Reports, Volume 2026, Issue 044, Article A001 (IMF Country Report No. 26/44)",
+   "doi": "10.5089/9798229038911.002.A001",
+   "url": "https://doi.org/10.5089/9798229038911.002.a001",
+   "use": "China augmented debt (IMF perimeter), reserves and policy-space inputs.",
+   "source": "register"
+  },
+  {
+   "key": "tic",
+   "kind": "data",
+   "authors": [
+    "US Department of the Treasury"
+   ],
+   "year": 2026,
+   "title": "Major Foreign Holders of Treasury Securities",
+   "venue": null,
+   "doi": null,
+   "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html",
+   "use": "Japanese and Chinese Treasury holdings: sale capacity for the Treasury-pressure channel.",
+   "source": "register"
+  },
+  {
+   "key": "spdji",
+   "kind": "data",
+   "authors": [
+    "S&P Dow Jones Indices"
+   ],
+   "year": 2026,
+   "title": "S&P 500 Communication Services & Information Technology Index",
+   "venue": null,
+   "doi": null,
+   "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500-communication-services-information-technology-index/",
+   "use": "Sector weights behind the 47.4% broad technology and platform proxy and the 73% top-10 concentration.",
+   "source": "register"
+  },
+  {
+   "key": "wb2023",
+   "kind": "data",
+   "authors": [
+    "World Bank"
+   ],
+   "year": 2023,
+   "title": "Falling Long-Term Growth Prospects: Trends, Expectations, and Policies",
+   "venue": null,
+   "doi": null,
+   "url": "https://www.worldbank.org/en/news/press-release/2023/03/27/global-economy-s-speed-limit-set-to-fall-to-three-decade-low",
+   "use": "Counterexample and baseline constraint: weak potential growth is the counterfactual, not a crash input.",
+   "source": "register"
+  },
+  {
+   "key": "fedscen",
+   "kind": "benchmark",
+   "authors": [
+    "Board of Governors of the Federal Reserve System"
+   ],
+   "year": 2026,
+   "title": "2026 Stress Test Scenarios",
+   "venue": "Official website",
+   "doi": null,
+   "url": "https://www.federalreserve.gov/publications/2026-stress-test-scenarios.htm",
+   "use": "Severely adverse path: US real GDP level falls 4.6% to its trough. Used as the peak-to-trough check for the systemic branch.",
+   "source": "register"
+  },
+  {
+   "key": "bea",
+   "kind": "benchmark",
+   "authors": [
+    "US Bureau of Economic Analysis"
+   ],
+   "year": 2009,
+   "title": "How did the economic downturn affect real GDP growth during the recession?",
+   "venue": null,
+   "doi": null,
+   "url": "https://www.bea.gov/help/faq/1004",
+   "use": "The 2007\u201309 contraction (\u22124.0% peak to trough): second severity check.",
+   "source": "register"
+  },
+  {
+   "key": "bern12",
+   "kind": "benchmark",
+   "authors": [
+    "Ben Bernanke",
+    "Federal Reserve Board"
+   ],
+   "year": 2012,
+   "title": "Some Reflections on the Crisis and the Policy Response",
+   "venue": null,
+   "doi": null,
+   "url": "https://www.federalreserve.gov/newsevents/speech/bernanke20120413a.htm",
+   "use": "Why the dot-com crash stayed dispersed while the GFC concentrated losses in leveraged intermediaries.",
+   "source": "register"
+  },
+  {
+   "key": "bern13",
+   "kind": "benchmark",
+   "authors": [
+    "Ben Bernanke",
+    "Federal Reserve Board"
+   ],
+   "year": 2013,
+   "title": "The Crisis as a Classic Financial Panic",
+   "venue": null,
+   "doi": null,
+   "url": "https://www.federalreserve.gov/newsevents/speech/bernanke20131108a.htm",
+   "use": "Funding-run mechanics behind the margin-call and liquidity loops.",
+   "source": "register"
+  },
+  {
+   "key": "fed87",
+   "kind": "benchmark",
+   "authors": [
+    "Federal Reserve Board"
+   ],
+   "year": 2007,
+   "title": "The October 1987 Crash Ten Years Later",
+   "venue": null,
+   "doi": null,
+   "url": "https://www.federalreserve.gov/pubs/feds/2007/200713/",
+   "use": "Market-liquidity breakdown and forced selling in 1987.",
+   "source": "register"
+  },
+  {
+   "key": "sr117",
+   "kind": "benchmark",
+   "authors": [
+    "Board of Governors of the Federal Reserve System"
+   ],
+   "year": 2011,
+   "title": "Supervisory Letter SR 11-7 on Guidance on Model Risk Management",
+   "venue": "Official website",
+   "doi": null,
+   "url": "https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.htm",
+   "use": "Model-risk standard behind the validation, limitations and disclosure practice.",
+   "source": "register"
+  },
+  {
+   "key": "ridge",
+   "kind": "method",
+   "authors": [
+    "Arthur E. Hoerl",
+    "Robert W. Kennard"
+   ],
+   "year": 1970,
+   "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+   "venue": "Technometrics",
+   "doi": "10.1080/00401706.1970.10488634",
+   "url": "https://doi.org/10.1080/00401706.1970.10488634",
+   "use": "L2 penalty of the outcome logit (C = 0.2 and 1.0, averaged).",
+   "source": "added"
+  },
+  {
+   "key": "gelman",
+   "kind": "method",
+   "authors": [
+    "Andrew Gelman",
+    "Aleks Jakulin",
+    "Maria Grazia Pittau",
+    "Yu-Sung Su"
+   ],
+   "year": 2008,
+   "title": "A weakly informative default prior distribution for logistic and other regression models",
+   "venue": "The Annals of Applied Statistics",
+   "doi": "10.1214/08-aoas191",
+   "url": "https://doi.org/10.1214/08-aoas191",
+   "use": "Argues for weakly informative regularisation of logistic regressions with few events; motivates the ridge core.",
+   "source": "register"
+  },
+  {
+   "key": "gbm",
+   "kind": "method",
+   "authors": [
+    "Jerome H. Friedman"
+   ],
+   "year": 2001,
+   "title": "Greedy function approximation: A gradient boosting machine",
+   "venue": "The Annals of Statistics",
+   "doi": "10.1214/aos/1013203451",
+   "url": "https://doi.org/10.1214/aos/1013203451",
+   "use": "Gradient-boosting challenger (15% of the blend) for thresholds the logit cannot represent.",
+   "source": "added"
+  },
+  {
+   "key": "rf",
+   "kind": "method",
+   "authors": [
+    "Leo Breiman"
+   ],
+   "year": 2001,
+   "title": "Random Forests",
+   "venue": "Machine Learning",
+   "doi": "10.1023/A:1010933404324",
+   "url": "https://doi.org/10.1023/A:1010933404324",
+   "use": "Random-forest challenger (10% of the blend).",
+   "source": "added"
+  },
+  {
+   "key": "platt",
+   "kind": "method",
+   "authors": [
+    "Alexandru Niculescu-Mizil",
+    "Rich Caruana"
+   ],
+   "year": 2005,
+   "title": "Predicting good probabilities with supervised learning",
+   "venue": "Proceedings of the 22nd International Conference on Machine Learning",
+   "doi": "10.1145/1102351.1102430",
+   "url": "https://doi.org/10.1145/1102351.1102430",
+   "use": "Logistic (Platt) recalibration of the blended fall probability on out-of-fold predictions.",
+   "source": "added"
+  },
+  {
+   "key": "jeffreys",
+   "kind": "method",
+   "authors": [
+    "Harold Jeffreys"
+   ],
+   "year": 1946,
+   "title": "An invariant form for the prior probability in estimation problems",
+   "venue": "Proceedings of the Royal Society of London. Series A",
+   "doi": "10.1098/rspa.1946.0056",
+   "url": "https://doi.org/10.1098/rspa.1946.0056",
+   "use": "Beta(\u00bd, \u00bd) prior for the share of no-fall run-ups that keep booming.",
+   "source": "added"
+  },
+  {
+   "key": "brier",
+   "kind": "method",
+   "authors": [
+    "GLENN W. BRIER"
+   ],
+   "year": 1950,
+   "title": "VERIFICATION OF FORECASTS EXPRESSED IN TERMS OF PROBABILITY",
+   "venue": "Monthly Weather Review",
+   "doi": "10.1175/1520-0493(1950)078<0001:vofeit>2.0.co;2",
+   "url": "https://doi.org/10.1175/1520-0493(1950)078<0001:vofeit>2.0.co;2",
+   "use": "Brier score: the loss for every out-of-sample comparison.",
+   "source": "register"
+  },
+  {
+   "key": "gneiting",
+   "kind": "method",
+   "authors": [
+    "Tilmann Gneiting",
+    "Adrian E Raftery"
+   ],
+   "year": 2007,
+   "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+   "venue": "Journal of the American Statistical Association",
+   "doi": "10.1198/016214506000001437",
+   "url": "https://doi.org/10.1198/016214506000001437",
+   "use": "Why a strictly proper score (Brier) is used to compare probability forecasts.",
+   "source": "register"
+  },
+  {
+   "key": "roberts",
+   "kind": "method",
+   "authors": [
+    "David R. Roberts",
+    "Volker Bahn",
+    "Simone Ciuti",
+    "et al."
+   ],
+   "year": 2017,
+   "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+   "venue": "Ecography",
+   "doi": "10.1111/ecog.02881",
+   "url": "https://doi.org/10.1111/ecog.02881",
+   "use": "Justifies leave-country-out and leave-era-out folds when observations are clustered.",
+   "source": "added"
+  },
+  {
+   "key": "efron",
+   "kind": "method",
+   "authors": [
+    "B. Efron"
+   ],
+   "year": 1979,
+   "title": "Bootstrap Methods: Another Look at the Jackknife",
+   "venue": "The Annals of Statistics",
+   "doi": "10.1214/aos/1176344552",
+   "url": "https://doi.org/10.1214/aos/1176344552",
+   "use": "Bootstrap behind every 10th\u201390th percentile interval.",
+   "source": "register"
+  },
+  {
+   "key": "cameron",
+   "kind": "method",
+   "authors": [
+    "A. Colin Cameron",
+    "Jonah B. Gelbach",
+    "Douglas L. Miller"
+   ],
+   "year": 2008,
+   "title": "Bootstrap-Based Improvements for Inference with Clustered Errors",
+   "venue": "The Review of Economics and Statistics",
+   "doi": "10.1162/rest.90.3.414",
+   "url": "https://doi.org/10.1162/rest.90.3.414",
+   "use": "Resampling whole origin years, because simultaneous crashes are one draw, not thirty.",
+   "source": "added"
+  },
+  {
+   "key": "embrechts",
+   "kind": "method",
+   "authors": [
+    "Paul Embrechts",
+    "Alexander J. McNeil",
+    "Daniel Straumann"
+   ],
+   "year": 2002,
+   "title": "Correlation and Dependence in Risk Management: Properties and Pitfalls",
+   "venue": "Risk Management",
+   "doi": "10.1017/cbo9780511615337.008",
+   "url": "https://doi.org/10.1017/cbo9780511615337.008",
+   "use": "Copula dependence in the China/US reverse-stress surface; warns that correlation alone misses tail dependence.",
+   "source": "register"
+  },
+  {
+   "key": "forbes",
+   "kind": "method",
+   "authors": [
+    "Kristin J. Forbes",
+    "Roberto Rigobon"
+   ],
+   "year": 2002,
+   "title": "No Contagion, Only Interdependence: Measuring Stock Market Comovements",
+   "venue": "The Journal of Finance",
+   "doi": "10.1111/0022-1082.00494",
+   "url": "https://doi.org/10.1111/0022-1082.00494",
+   "use": "Separates contagion from interdependence; the joint-crisis model draws both flags from shared shocks plus explicit feedback.",
+   "source": "register"
+  },
+  {
+   "key": "glasserman",
+   "kind": "method",
+   "authors": [
+    "Paul Glasserman",
+    "Chulmin Kang",
+    "Wanmo Kang"
+   ],
+   "year": 2014,
+   "title": "Stress scenario selection by empirical likelihood",
+   "venue": "Quantitative Finance",
+   "doi": "10.1080/14697688.2014.926019",
+   "url": "https://doi.org/10.1080/14697688.2014.926019",
+   "use": "Stress-scenario selection by likelihood: the reverse-stress grid reports conditional, not current-trajectory, odds.",
+   "source": "register"
+  },
+  {
+   "key": "greenwood",
+   "kind": "theory",
+   "authors": [
+    "Robin Greenwood",
+    "Andrei Shleifer",
+    "Yang You"
+   ],
+   "year": 2019,
+   "title": "Bubbles for Fama",
+   "venue": "Journal of Financial Economics",
+   "doi": "10.1016/j.jfineco.2018.09.002",
+   "url": "https://doi.org/10.1016/j.jfineco.2018.09.002",
+   "use": "Closest published test of whether large price run-ups predict crashes; compare with the frequency table on this page.",
+   "source": "register"
+  },
+  {
+   "key": "jordabubbles",
+   "kind": "theory",
+   "authors": [
+    "Oscar Jorda",
+    "Moritz Schularick",
+    "Alan M. Taylor"
+   ],
+   "year": 2015,
+   "title": "Leveraged Bubbles",
+   "venue": "SSRN working paper",
+   "doi": "10.2139/ssrn.2663964",
+   "url": "https://doi.org/10.2139/ssrn.2663964",
+   "use": "Credit-financed bubbles are followed by deeper recessions: why balance-sheet variables enter the banking-crisis link.",
+   "source": "register"
+  },
+  {
+   "key": "scht",
+   "kind": "theory",
+   "authors": [
+    "Moritz Schularick",
+    "Alan M Taylor"
+   ],
+   "year": 2012,
+   "title": "Credit Booms Gone Bust: Monetary Policy, Leverage Cycles, and Financial Crises, 1870\u20132008",
+   "venue": "American Economic Review",
+   "doi": "10.1257/aer.102.2.1029",
+   "url": "https://doi.org/10.1257/aer.102.2.1029",
+   "use": "Credit growth predicts financial crises: source of the five-year credit-growth feature.",
+   "source": "register"
+  },
+  {
+   "key": "lv",
+   "kind": "theory",
+   "authors": [
+    "Luc Laeven",
+    "Fabian Valencia"
+   ],
+   "year": 2018,
+   "title": "Systemic Banking Crises Revisited",
+   "venue": "IMF Working Papers",
+   "doi": "10.5089/9781484376379.001",
+   "url": "https://doi.org/10.5089/9781484376379.001",
+   "use": "Definition and dating of systemic banking crises.",
+   "source": "register"
+  },
+  {
+   "key": "rr",
+   "kind": "theory",
+   "authors": [
+    "Carmen Reinhart",
+    "Kenneth Rogoff"
+   ],
+   "year": 2009,
+   "title": "The Aftermath of Financial Crises",
+   "venue": "NBER working paper",
+   "doi": "10.3386/w14656",
+   "url": "https://doi.org/10.3386/w14656",
+   "use": "Deep and long output and employment losses after banking crises.",
+   "source": "register"
+  },
+  {
+   "key": "bo13",
+   "kind": "theory",
+   "authors": [
+    "Markus K. Brunnermeier",
+    "Martin Oehmke"
+   ],
+   "year": 2013,
+   "title": "Bubbles, Financial Crises, and Systemic Risk",
+   "venue": "Handbook of the Economics of Finance",
+   "doi": "10.1016/b978-0-44-459406-8.00018-4",
+   "url": "https://doi.org/10.1016/b978-0-44-459406-8.00018-4",
+   "use": "Survey of how bubbles and leverage turn into systemic risk.",
+   "source": "register"
+  },
+  {
+   "key": "aischool",
+   "kind": "theory",
+   "authors": [
+    "Daron Acemoglu"
+   ],
+   "year": 2024,
+   "title": "The Simple Macroeconomics of AI",
+   "venue": "NBER working paper",
+   "doi": "10.3386/w32487",
+   "url": "https://doi.org/10.3386/w32487",
+   "use": "Bounds on near-term economy-wide gains from AI: why expected AI revenue can reset.",
+   "source": "register"
+  },
+  {
+   "key": "jcurve",
+   "kind": "theory",
+   "authors": [
+    "Erik Brynjolfsson",
+    "Daniel Rock",
+    "Chad Syverson"
+   ],
+   "year": 2018,
+   "title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+   "venue": "NBER working paper",
+   "doi": "10.3386/w25148",
+   "url": "https://doi.org/10.3386/w25148",
+   "use": "Delayed productivity payoff of general-purpose technology: the gap between capex and revenue.",
+   "source": "register"
+  },
+  {
+   "key": "bp09",
+   "kind": "theory",
+   "authors": [
+    "Markus K. Brunnermeier",
+    "Lasse Heje Pedersen"
+   ],
+   "year": 2008,
+   "title": "Market Liquidity and Funding Liquidity",
+   "venue": "Review of Financial Studies",
+   "doi": "10.1093/rfs/hhn098",
+   "url": "https://doi.org/10.1093/rfs/hhn098",
+   "use": "Margin and funding spirals: the loop from equity losses to forced sales to lower liquidity.",
+   "source": "register"
+  },
+  {
+   "key": "km97",
+   "kind": "theory",
+   "authors": [
+    "Nobuhiro Kiyotaki",
+    "John Moore"
+   ],
+   "year": 1997,
+   "title": "Credit Cycles",
+   "venue": "Journal of Political Economy",
+   "doi": "10.1086/262072",
+   "url": "https://doi.org/10.1086/262072",
+   "use": "Collateral-constrained credit cycles: why asset falls cut borrowing and investment.",
+   "source": "register"
+  },
+  {
+   "key": "bs14",
+   "kind": "theory",
+   "authors": [
+    "Markus K. Brunnermeier",
+    "Yuliy Sannikov"
+   ],
+   "year": 2014,
+   "title": "A Macroeconomic Model with a Financial Sector",
+   "venue": "American Economic Review",
+   "doi": "10.1257/aer.104.2.379",
+   "url": "https://doi.org/10.1257/aer.104.2.379",
+   "use": "Nonlinear amplification when intermediary balance sheets are impaired.",
+   "source": "register"
+  },
+  {
+   "key": "as10",
+   "kind": "theory",
+   "authors": [
+    "Tobias Adrian",
+    "Hyun Song Shin"
+   ],
+   "year": 2010,
+   "title": "Liquidity and leverage",
+   "venue": "Journal of Financial Intermediation",
+   "doi": "10.1016/j.jfi.2008.12.002",
+   "url": "https://doi.org/10.1016/j.jfi.2008.12.002",
+   "use": "Procyclical leverage of market-based intermediaries.",
+   "source": "register"
+  },
+  {
+   "key": "sss21",
+   "kind": "theory",
+   "authors": [
+    "Andreas Schrimpf",
+    "Hyun Song Shin",
+    "Vladyslav Sushko"
+   ],
+   "year": 2021,
+   "title": "Leverage and Margin Spirals in Fixed Income Markets during the COVID-19 Crisis",
+   "venue": "SSRN working paper",
+   "doi": "10.2139/ssrn.3761873",
+   "url": "https://doi.org/10.2139/ssrn.3761873",
+   "use": "Margin spirals in March 2020: the liquidity-vacuum analogue.",
+   "source": "register"
+  },
+  {
+   "key": "bruno",
+   "kind": "theory",
+   "authors": [
+    "V. Bruno",
+    "H. S. Shin"
+   ],
+   "year": 2015,
+   "title": "Cross-Border Banking and Global Liquidity",
+   "venue": "The Review of Economic Studies",
+   "doi": "10.1093/restud/rdu042",
+   "url": "https://doi.org/10.1093/restud/rdu042",
+   "use": "Dollar funding and cross-border bank leverage: the transmission to Europe and China.",
+   "source": "register"
+  },
+  {
+   "key": "du18",
+   "kind": "theory",
+   "authors": [
+    "WENXIN DU",
+    "ALEXANDER TEPPER",
+    "ADRIEN VERDELHAN"
+   ],
+   "year": 2018,
+   "title": "Deviations from Covered Interest Rate Parity",
+   "venue": "The Journal of Finance",
+   "doi": "10.1111/jofi.12620",
+   "url": "https://doi.org/10.1111/jofi.12620",
+   "use": "Dollar funding premia when balance sheets are scarce.",
+   "source": "register"
+  },
+  {
+   "key": "cfg16",
+   "kind": "theory",
+   "authors": [
+    "Ricardo J. Caballero",
+    "Emmanuel Farhi",
+    "Pierre-Olivier Gourinchas"
+   ],
+   "year": 2016,
+   "title": "Safe Asset Scarcity and Aggregate Demand",
+   "venue": "American Economic Review",
+   "doi": "10.1257/aer.p20161108",
+   "url": "https://doi.org/10.1257/aer.p20161108",
+   "use": "Safe-asset scarcity and the role of Treasuries in the dollar-liquidity channel.",
+   "source": "register"
+  },
+  {
+   "key": "cerra",
+   "kind": "theory",
+   "authors": [
+    "Valerie Cerra",
+    "Sweta Chaman Saxena"
+   ],
+   "year": 2008,
+   "title": "Growth Dynamics: The Myth of Economic Recovery",
+   "venue": "American Economic Review",
+   "doi": "10.1257/aer.98.1.439",
+   "url": "https://doi.org/10.1257/aer.98.1.439",
+   "use": "Output losses after financial crises are largely permanent: supports a persistent loss share rather than a mechanical rebound.",
+   "source": "added"
+  },
+  {
+   "key": "bcs",
+   "kind": "theory",
+   "authors": [
+    "Olivier Blanchard",
+    "Eugenio Cerutti",
+    "Lawrence Summers"
+   ],
+   "year": 2015,
+   "title": "Inflation and Activity \u2013 Two Explorations and their Monetary Policy Implications",
+   "venue": "NBER Working Paper 21726",
+   "doi": "10.3386/w21726",
+   "url": "https://doi.org/10.3386/w21726",
+   "use": "Most recessions leave output below its earlier trend, evidence for hysteresis.",
+   "source": "added"
+  },
+  {
+   "key": "rww",
+   "kind": "theory",
+   "authors": [
+    "David Reifschneider",
+    "William L. Wascher",
+    "David Wilcox"
+   ],
+   "year": 2013,
+   "title": "Aggregate Supply in the United States: Recent Developments and Implications for the Conduct of Monetary Policy",
+   "venue": "Finance and Economics Discussion Series 2013-77, Federal Reserve Board",
+   "doi": "10.17016/feds.2013.77",
+   "url": "https://doi.org/10.17016/feds.2013.77",
+   "use": "Potential output fell after the 2007\u201309 crisis: the US precedent for the hysteresis stock.",
+   "source": "added"
+  },
+  {
+   "key": "okun",
+   "kind": "theory",
+   "authors": [
+    "Laurence Ball",
+    "Daniel Leigh",
+    "Prakash Loungani"
+   ],
+   "year": 2017,
+   "title": "Okun's Law: Fit at 50?",
+   "venue": "Journal of Money, Credit and Banking",
+   "doi": "10.1111/jmcb.12420",
+   "url": "https://doi.org/10.1111/jmcb.12420",
+   "use": "Unemployment responds to the output gap at roughly half a point per point; the engine uses 0.55.",
+   "source": "added"
+  },
+  {
+   "key": "koo",
+   "kind": "theory",
+   "authors": [
+    "Richard C. Koo"
+   ],
+   "year": 2013,
+   "title": "Balance sheet recession as the 'other half' of macroeconomics",
+   "venue": "European Journal of Economics and Economic Policies: Intervention",
+   "doi": "10.4337/ejeep.2013.02.01",
+   "url": "https://doi.org/10.4337/ejeep.2013.02.01",
+   "use": "Balance-sheet recession: why a debt-burdened private sector stays on the sidelines.",
+   "source": "register"
+  },
+  {
+   "key": "hoshi",
+   "kind": "theory",
+   "authors": [
+    "Takeo Hoshi",
+    "Anil K Kashyap"
+   ],
+   "year": 2004,
+   "title": "Japan's Financial Crisis and Economic Stagnation",
+   "venue": "Journal of Economic Perspectives",
+   "doi": "10.1257/089533004773563412",
+   "url": "https://doi.org/10.1257/089533004773563412",
+   "use": "Japan's financial crisis and stagnation: the analogue behind the China anchor.",
+   "source": "register"
+  },
+  {
+   "key": "chen",
+   "kind": "theory",
+   "authors": [
+    "Zhuo Chen",
+    "Zhiguo He",
+    "Chun Liu"
+   ],
+   "year": 2017,
+   "title": "The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes",
+   "venue": "NBER working paper",
+   "doi": "10.3386/w23598",
+   "url": "https://doi.org/10.3386/w23598",
+   "use": "How LGFV financing grew and shifted to shadow banking: the refinancing channel.",
+   "source": "register"
+  },
+  {
+   "key": "bao",
+   "kind": "theory",
+   "authors": [
+    "Helen X. H. Bao",
+    "Ziyou Wang",
+    "Robert Wu"
+   ],
+   "year": 2021,
+   "title": "Understanding Local Government Debt Financing of Infrastructure Projects in China: Evidence based on Accounting Data from Local Government Financing Vehicles",
+   "venue": "SSRN working paper",
+   "doi": "10.2139/ssrn.3757729",
+   "url": "https://doi.org/10.2139/ssrn.3757729",
+   "use": "LGFV balance-sheet evidence for the refinancing premium.",
+   "source": "register"
+  }
+ ]
+}

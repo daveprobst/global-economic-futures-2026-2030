@@ -403,9 +403,9 @@
   "volatility5": 0.4394054967873364
  },
  "modelWeights": {
-  "boom": 0.14314970878298883,
-  "sideways": 0.09476107482817572,
-  "bust": 0.7620892163888354
+  "boom": 0.16092013210661577,
+  "sideways": 0.10652459449311188,
+  "bust": 0.7325552734002723
  },
  "crossValidation": {
   "leaveOneCountryOut": {

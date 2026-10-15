@@ -137,11 +137,11 @@
  },
  "jointCount": null,
  "marginals": {
-  "usSystemic": 0.15478665956854834,
-  "chinaCrisis": 0.2897771282970128,
-  "eitherCrisis": 0.30823543745056214,
-  "chinaCrisisConditionalOnUsSystemic": 0.8807500000000001,
-  "usSystemicConditionalOnChinaCrisis": 0.47045931891238335
+  "usSystemic": 0.14878807005858316,
+  "chinaCrisis": 0.27889361553391956,
+  "eitherCrisis": 0.2966365928884056,
+  "chinaCrisisConditionalOnUsSystemic": 0.88075,
+  "usSystemicConditionalOnChinaCrisis": 0.46987483902498717
  },
  "method": {
   "commonDrawContract": "contagion.draw_contract.DrawBundle and PathState; no module-local RNG; assert identical draw IDs/order/dates before row-wise joint conjunction",
@@ -159,10 +159,10 @@
   "seed": 20261014
  },
  "probabilityCurrentTrajectory": {
-  "point": 0.13632835041499897,
+  "point": 0.13104509270409712,
   "interval80": [
-   0.07581163269284438,
-   0.21638520014078708
+   0.07295839552607501,
+   0.2089508491825811
   ],
   "status": "Probability-weighted path simulation; the interval comes from the year-cluster bootstrap of scenario weights.",
   "window": "31 Oct 2026 \u2013 31 Dec 2030"
@@ -374,20 +374,20 @@
  "drawsPerScenario": 4000,
  "marginalIntervals80": {
   "usSystemic": [
-   0.08607622218886672,
-   0.2456828840656112
+   0.08283666821013341,
+   0.23724195195297315
   ],
   "chinaCrisis": [
-   0.22776832351105206,
-   0.3598895866451275
+   0.2177166407166594,
+   0.34857213729004655
   ],
   "joint": [
-   0.07581163269284438,
-   0.21638520014078708
+   0.07295839552607501,
+   0.2089508491825811
   ],
   "either": [
-   0.23987848739427967,
-   0.39076579192429667
+   0.22884192229989048,
+   0.37680630260902376
   ]
  }
 }

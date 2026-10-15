@@ -410,7 +410,7 @@
  },
  "scenarios": {
   "continued_boom": {
-   "probability": 0.14314970878298883,
+   "probability": 0.16092013210661577,
    "us": {
     "outputVsTrend2030": [
      -0.8042831960961446,
@@ -458,7 +458,7 @@
    }
   },
   "no_burst_sideways": {
-   "probability": 0.09476107482817572,
+   "probability": 0.10652459449311188,
    "us": {
     "outputVsTrend2030": [
      -1.5754785014836696,
@@ -506,7 +506,7 @@
    }
   },
   "mild_adjustment": {
-   "probability": 0.18612810359081597,
+   "probability": 0.17891491032970602,
    "us": {
     "outputVsTrend2030": [
      -4.43730412456608,
@@ -554,7 +554,7 @@
    }
   },
   "moderate_burst": {
-   "probability": 0.1414445675671025,
+   "probability": 0.13596303639629875,
    "us": {
     "outputVsTrend2030": [
      -9.669570189224324,
@@ -602,7 +602,7 @@
    }
   },
   "deep_drawdown_no_vacuum": {
-   "probability": 0.2237839085298949,
+   "probability": 0.21511140529254746,
    "us": {
     "outputVsTrend2030": [
      -10.151571286780884,
@@ -650,7 +650,7 @@
    }
   },
   "severe_burst": {
-   "probability": 0.05594597713247373,
+   "probability": 0.053777851323136866,
    "us": {
     "outputVsTrend2030": [
      -15.2041780876919,
@@ -698,7 +698,7 @@
    }
   },
   "severe_burst_with_financial_crisis": {
-   "probability": 0.15478665956854834,
+   "probability": 0.14878807005858316,
    "us": {
     "outputVsTrend2030": [
      -16.529162212793395,
@@ -797,21 +797,21 @@
  "weighted": {
   "us": {
    "outputVsTrend2030": [
-    -11.5560089375785,
-    -4.690198410646918,
-    -0.3440327769978503
+    -11.426794063624952,
+    -4.449979462117367,
+    -0.277396455254953
    ],
-   "probabilityLoss5pct": 0.47462626868656566,
-   "probabilityLoss10pct": 0.1559422028898555
+   "probabilityLoss5pct": 0.45592279613980696,
+   "probabilityLoss10pct": 0.1502575128756438
   },
   "china": {
    "outputVsTrend2030": [
-    -16.559776370181805,
-    -7.403878748836624,
-    -0.01900271095350292
+    -16.341516892387656,
+    -7.024652808238306,
+    0.05324524021157709
    ],
-   "probabilityLoss5pct": 0.6092195390230488,
-   "probabilityLoss10pct": 0.3575321233938303
+   "probabilityLoss5pct": 0.5853792689634482,
+   "probabilityLoss10pct": 0.34371718585929295
   }
  },
  "chinaBaseline": {

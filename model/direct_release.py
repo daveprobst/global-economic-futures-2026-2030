@@ -25,6 +25,9 @@ import systemic_transition as ST
 import engine as E
 import hysteresis as H
 import checks as CK
+import spec as SP
+import citations as CI
+import make_docs as MD
 
 OUT = ROOT / "site/data"
 SEED = 20261014; DRAWS = 10_000; PATHS = 4000
@@ -76,10 +79,14 @@ def fit_probs(df, features):
     return {b: float(np.mean([p[b] for p in ps])) for b in EP.BANDS}
 
 
+def make_gb(): return GradientBoostingClassifier(n_estimators=80, max_depth=2, learning_rate=.035, subsample=.8, random_state=SEED)
+def make_rf(): return RandomForestClassifier(n_estimators=500, max_depth=4, min_samples_leaf=5, max_features=.8, class_weight="balanced", random_state=SEED, n_jobs=-1)
+BLEND = (.75, .15, .10)   # ridge-logit core, gradient boosting, random forest
+
+
 def fit_challengers(df, features):
     X = df[list(EP.PREDICTORS)]; y = df.band; out = []
-    for m in (GradientBoostingClassifier(n_estimators=80, max_depth=2, learning_rate=.035, subsample=.8, random_state=SEED),
-              RandomForestClassifier(n_estimators=500, max_depth=4, min_samples_leaf=5, max_features=.8, class_weight="balanced", random_state=SEED, n_jobs=-1)):
+    for m in (make_gb(), make_rf()):
         m.fit(X, y); raw = m.predict_proba(pd.DataFrame([features[:2]], columns=EP.PREDICTORS))[0]
         p = {b: 1e-9 for b in EP.BANDS}; p.update(dict(zip(m.classes_, raw))); out.append(p)
     return out
@@ -88,17 +95,29 @@ def fit_challengers(df, features):
 def bust_of(p): return sum(p[b] for b in EP.BANDS[1:])
 
 
+def blend_rows(train, test):
+    """Blended probability of a 20%+ fall for each test row, fitted exactly like the point estimate."""
+    F = list(EP.PREDICTORS); parts = []
+    sc = StandardScaler().fit(train[F]); lgs = []
+    for _, c in EP.MODEL_CONFIGS:
+        m = LogisticRegression(C=c, solver="lbfgs", max_iter=3000, random_state=SEED).fit(sc.transform(train[F]), train.band)
+        lgs.append(1 - m.predict_proba(sc.transform(test[F]))[:, list(m.classes_).index("none")])
+    gb = make_gb().fit(train[F], train.band); rf = make_rf().fit(train[F], train.band)
+    bust = lambda m: 1 - m.predict_proba(test[F])[:, list(m.classes_).index("none")]
+    parts = (np.mean(lgs, axis=0), bust(gb), bust(rf))
+    return BLEND[0] * parts[0] + BLEND[1] * parts[1] + BLEND[2] * parts[2], parts
+
+
 def platt(df):
     """Calibrate the blended bust probability on country-out predictions (no in-sample fit)."""
-    F = list(EP.PREDICTORS); y = (df.band != "none").astype(int).to_numpy(); oof = np.zeros(len(df))
+    y = (df.band != "none").astype(int).to_numpy(); oof = np.zeros(len(df)); comp = np.zeros((3, len(df)))
     for c in df.country.unique():
-        te = (df.country == c).to_numpy(); tr = ~te
-        sc = StandardScaler().fit(df[tr][F]); lg = LogisticRegression(C=.2, max_iter=3000, random_state=SEED).fit(sc.transform(df[tr][F]), y[tr])
-        gb = GradientBoostingClassifier(n_estimators=80, max_depth=2, learning_rate=.035, subsample=.8, random_state=SEED).fit(df[tr][F], y[tr])
-        rf = RandomForestClassifier(n_estimators=200, max_depth=4, min_samples_leaf=5, max_features=1.0, random_state=SEED, n_jobs=-1).fit(df[tr][F], y[tr])
-        oof[te] = .75 * lg.predict_proba(sc.transform(df[te][F]))[:, 1] + .15 * gb.predict_proba(df[te][F])[:, 1] + .10 * rf.predict_proba(df[te][F])[:, 1]
+        te = (df.country == c).to_numpy()
+        oof[te], parts = blend_rows(df[~te], df[te])
+        for k in range(3): comp[k][te] = parts[k]
     z = logit(oof).reshape(-1, 1); pl = LogisticRegression(C=1e6).fit(z, y)
-    return float(pl.intercept_[0]), float(pl.coef_[0][0]), float(np.mean((oof - y) ** 2)), float(np.mean((y.mean() - y) ** 2))
+    brier = {n: float(np.mean((comp[k] - y) ** 2)) for k, n in enumerate(("logit", "gradientBoosting", "randomForest"))}
+    return float(pl.intercept_[0]), float(pl.coef_[0][0]), float(np.mean((oof - y) ** 2)), float(np.mean((y.mean() - y) ** 2)), brier
 
 
 def apply_cal(base, a, b):
@@ -121,8 +140,8 @@ def conditional(base, mult, continue_share, tail_share):
 def build_scenarios(df, features, feat_audit, systemic_bundle):
     systemic_model, _, systemic_template, systemic_audit = systemic_bundle
     linear = fit_probs(df, features); gb, rf = fit_challengers(df, features)
-    raw_base = {b: .75 * linear[b] + .15 * gb[b] + .10 * rf[b] for b in EP.BANDS}
-    cal_a, cal_b, oof_brier, base_brier = platt(df)
+    raw_base = {b: BLEND[0] * linear[b] + BLEND[1] * gb[b] + BLEND[2] * rf[b] for b in EP.BANDS}
+    cal_a, cal_b, oof_brier, base_brier, comp_brier = platt(df)
     base = apply_cal(raw_base, cal_a, cal_b)
     shift = float(logit(bust_of(raw_base)) - logit(bust_of(linear)))
     st = inp("states.json"); weights = np.array(st["windowStartWeights_pi"], float); weights /= weights.sum()
@@ -178,7 +197,7 @@ def build_scenarios(df, features, feat_audit, systemic_bundle):
             "stateProbabilities": [{"geopolitics": g, "liquidity": l, "probability": float(weights[i])} for i, (g, l) in enumerate(STATES)],
             "conditionalProbabilities": rows,
             "method": {"estimator": "75% ridge-logit core, 15% gradient boosting, 10% random forest, calibrated on country-out predictions; year-cluster bootstrap",
-                       "calibration": {"intercept": cal_a, "slope": cal_b, "countryOutBrierBlend": oof_brier, "countryOutBrierBaseRate": base_brier, "bustProbabilityRawBlend": bust_of(raw_base), "bustProbabilityCalibrated": bust_of(base)},
+                       "calibration": {"intercept": cal_a, "slope": cal_b, "countryOutBrierBlend": oof_brier, "countryOutBrierByModel": comp_brier, "countryOutBrierBaseRate": base_brier, "bustProbabilityRawBlend": bust_of(raw_base), "bustProbabilityCalibrated": bust_of(base)},
                        "predictors": list(EP.PREDICTORS),
                        "episodeCount": int(len(df)), "countries": int(df.country.nunique()), "originYears": int(df.originYear.nunique()),
                        "sources": {"modern": int((df.source == "modern").sum()), "history": int((df.source == "history").sum())},
@@ -437,6 +456,11 @@ def main():
                         "skillDisclosure": "Skill over the base rate is modest and unstable across eras. Treat the odds as disciplined scenario weights, not precise forecasts."}
     dump("scenario_tree", tree)
     patch_other(tree, us, connected, hyst, checks)
+    mix, mi = connected["mixture"], connected["mixtureInterval80"]
+    dump("methodology", SP.build({"tree": tree, "params": params, "calib": calib, "targets": targets, "cohorts": cohorts, "checks": checks, "hyst": hyst,
+                                  "pathStats": connected["pathClassification"], "cnBase": cn_base, "slope": slope, "joint": {"point": mix["joint"], "interval80": mi["joint"]}}))
+    dump("citations", CI.build())
+    MD.main()
     print(json.dumps({"status": "released", "probabilitySum": sum(x["probability"] for x in tree["scenarios"]), "scenarios": {x["id"]: round(x["probability"], 4) for x in tree["scenarios"]},
                       "mixture": connected["mixture"], "episodes": len(df), "params": params}, indent=1))
 
