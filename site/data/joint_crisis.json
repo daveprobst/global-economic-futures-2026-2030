@@ -135,9 +135,9 @@
     "status": "not_computed_pending_common_draws",
     "targetProbability": 0.5
   },
-  "jointCount": 26,
+  "jointCount": 557,
   "marginals": {
-    "usSevere": 0.0061,
+    "usSevere": 0.13256605993297763,
     "chinaCrisisConditionalOnUsSystemic": 0.42
   },
   "method": {
@@ -156,37 +156,37 @@
     "seed": 20261014
   },
   "probabilityCurrentTrajectory": {
-    "point": 0.002562,
+    "point": 0.055677745171850604,
     "interval80": [
-      0.00107604,
-      0.005124
+      0.023384652972177254,
+      0.11135549034370121
     ],
     "status": "model_conditional_structural"
   },
   "sensitivity": [
     {
       "driver": "US tail probability",
-      "low": 0.0033550000000000003,
-      "high": 0.009760000000000001,
-      "effect": 0.0014091000000000002
+      "low": 0.0729113329631377,
+      "high": 0.2121056958927642,
+      "effect": 0.030622759844517834
     },
     {
       "driver": "China conditional crisis rate",
       "low": 0.22,
       "high": 0.62,
-      "effect": 0.0024400000000000003
+      "effect": 0.05302642397319105
     },
     {
       "driver": "Tail dependence",
       "low": 0.2,
       "high": 0.7,
-      "effect": 0.0008967
+      "effect": 0.01948721081014771
     },
     {
       "driver": "Policy offset",
       "low": "strong",
       "high": "weak",
-      "effect": 0.0007686
+      "effect": 0.01670332355155518
     }
   ],
   "timeToEvent": {

@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1727,
-      "sha256": "960bc9bbb28e77e061fb0883542f0287b4dd42cb9e31e3c43b834a59242dd421"
+      "bytes": 1923,
+      "sha256": "af01e8e7d2a7c0bf4f90e92d533dbe0a699e18855b1ba456bf2b32d019e907f7"
     },
     {
       "path": "docker-compose.yml",
@@ -34,8 +34,8 @@
     },
     {
       "path": "docs/MODEL_RISK.md",
-      "bytes": 3529,
-      "sha256": "56c4c427cdc19c2767467625c23454417082a19e2b0d11773a2ca7b20d219d75"
+      "bytes": 4330,
+      "sha256": "2ba9d497ccb8c12d6d349889de842879d8e97d7351f5cb7bb6bfe65edf83badd"
     },
     {
       "path": "render.yaml",
@@ -49,8 +49,8 @@
     },
     {
       "path": "site/app.js",
-      "bytes": 11556,
-      "sha256": "73657beddf29a56173dd18581521b4efc4a41963e3c1de69bc2fe6e0645283b2"
+      "bytes": 12290,
+      "sha256": "7fb9b562fdefa96d71a48f64469be9df2c274e8db6101ba6e78b1bac190bd72c"
     },
     {
       "path": "site/data/china.json",
@@ -109,8 +109,8 @@
     },
     {
       "path": "site/data/joint_crisis.json",
-      "bytes": 7075,
-      "sha256": "16145bf5c878f8ea3a70394cad9fc99e9f228ff698e15d9515bfc6306a4770eb"
+      "bytes": 7134,
+      "sha256": "c2778194a63532b4521a462e353733f3469dce57afa07c17f47ce03971023be6"
     },
     {
       "path": "site/data/mechanisms.json",
@@ -124,8 +124,8 @@
     },
     {
       "path": "site/data/references.json",
-      "bytes": 80074,
-      "sha256": "5d48ebd3ff3d83bbfcc4c9a9351d700026aa3a9b56beaff500b16d8bb1986e62"
+      "bytes": 80759,
+      "sha256": "542abe63089168f0ab6d732b05c051b7de712770c42169b789eaf9cb65bb1ac5"
     },
     {
       "path": "site/data/scenario_paths.json",
@@ -134,8 +134,8 @@
     },
     {
       "path": "site/data/scenario_tree.json",
-      "bytes": 11653,
-      "sha256": "03a35810a08bfeeff0251fea46932ec707d64dae2ef84146371fbcfb1faa1f63"
+      "bytes": 12977,
+      "sha256": "76135ac9c7f3c46ae8dc3c6bd245c82f88854bcf64aaa7e42db0d66f81620409"
     },
     {
       "path": "site/data/search.json",
@@ -519,13 +519,13 @@
     },
     {
       "path": "site/index.html",
-      "bytes": 11454,
-      "sha256": "7103679f39be7e2e8a8114888734d62be1e9979a37f7d7034643b7d04a8711b3"
+      "bytes": 12205,
+      "sha256": "4d2db1244d83f3db7882d54c6320f64cbaeb95dafce57e52304ad4fa637a3673"
     },
     {
       "path": "site/manifest.json",
       "bytes": 10914,
-      "sha256": "5023b242bf6a4a67d52c574a7520b614dbc9adfed1b320f50a07747443b4b271"
+      "sha256": "0dd91f0b67e2d3bd7010c08452f595fd85de17b69386744dd0516ee647fd2284"
     },
     {
       "path": "site/manifests/content_manifest.json",
@@ -539,8 +539,8 @@
     },
     {
       "path": "site/styles.css",
-      "bytes": 12590,
-      "sha256": "fa6b6f1e17e47f8f785ae03217225c03971744bcd10378c23c32a1a25ddf7ba6"
+      "bytes": 13019,
+      "sha256": "2b1250eea255dfac7d8c9c32aa4bf25d48c4b3765050aa0ac054b887f9649820"
     }
   ]
 }
