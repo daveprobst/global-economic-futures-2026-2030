@@ -7,6 +7,8 @@
       "unit": "percent",
       "direction": "above",
       "currentValue": 3.16,
+      "displayThreshold": "> 6.5%",
+      "displayCurrent": "3.16%",
       "rationale": "Historical broad-stress threshold used in reverse stress grid."
     },
     {
@@ -15,6 +17,8 @@
       "unit": "USD million",
       "direction": "below",
       "currentValue": 3029659,
+      "displayThreshold": "< $2.50tn",
+      "displayCurrent": "$3.03tn",
       "rationale": "Low-reserve boundary in liquidity-vacuum stress grid."
     },
     {
@@ -23,6 +27,8 @@
       "unit": "percent from peak",
       "direction": "above",
       "currentValue": 22.61,
+      "displayThreshold": "> 25%",
+      "displayCurrent": "22.6%",
       "rationale": "Frozen China crisis definition."
     },
     {
@@ -31,6 +37,8 @@
       "unit": "percent",
       "direction": "below",
       "currentValue": 4.96,
+      "displayThreshold": "< 2.0%",
+      "displayCurrent": "5.0%",
       "rationale": "Growth condition needed to sustain balance-sheet recession dynamics."
     }
   ],
@@ -63,9 +71,9 @@
     }
   },
   "dependence": {
-    "type": "common liquidity factor / bounded structural calibration",
-    "strength": 0.48,
-    "estimationNote": "US tail probability is statistical; China conditional crisis transmission is a structural calibration spanning historical stress analogues. Dependence is not point-identified."
+    "type": "same-path common shocks plus two-way fixed-point feedback",
+    "strength": 0.62,
+    "estimationNote": "US transition is calibrated on a 17-country panel. China and cross-border elasticities are structural stress parameters. No fixed 42% conditional multiplier remains."
   },
   "draws": 10000,
   "earlyWarningDashboard": [
@@ -135,10 +143,13 @@
     "status": "not_computed_pending_common_draws",
     "targetProbability": 0.5
   },
-  "jointCount": 557,
+  "jointCount": null,
   "marginals": {
-    "usSevere": 0.13256605993297763,
-    "chinaCrisisConditionalOnUsSystemic": 0.42
+    "usSystemic": 0.1379401273610138,
+    "chinaCrisis": 0.21123521401777134,
+    "eitherCrisis": 0.22616723280460105,
+    "chinaCrisisConditionalOnUsSystemic": 0.89175,
+    "usSystemicConditionalOnChinaCrisis": 0.5823276632457471
   },
   "method": {
     "commonDrawContract": "contagion.draw_contract.DrawBundle and PathState; no module-local RNG; assert identical draw IDs/order/dates before row-wise joint conjunction",
@@ -156,37 +167,37 @@
     "seed": 20261014
   },
   "probabilityCurrentTrajectory": {
-    "point": 0.055677745171850604,
+    "point": 0.12300810857418407,
     "interval80": [
-      0.023384652972177254,
-      0.11135549034370121
+      0.06765445971580124,
+      0.2029633791474037
     ],
-    "status": "model_conditional_structural"
+    "status": "weighted path simulation; interval is parameter sensitivity, not sampling error"
   },
   "sensitivity": [
     {
-      "driver": "US tail probability",
-      "low": 0.0729113329631377,
-      "high": 0.2121056958927642,
-      "effect": 0.030622759844517834
+      "driver": "Banking-crisis transition",
+      "low": "20% drawdown",
+      "high": "75% drawdown",
+      "effect": "6.6% \u2192 62.4% before liquidity feedback"
     },
     {
-      "driver": "China conditional crisis rate",
-      "low": 0.22,
-      "high": 0.62,
-      "effect": 0.05302642397319105
+      "driver": "China property loss",
+      "low": 15,
+      "high": 40,
+      "effect": "shown in generated reverse-stress surface"
     },
     {
-      "driver": "Tail dependence",
-      "low": 0.2,
-      "high": 0.7,
-      "effect": 0.01948721081014771
+      "driver": "US high-yield OAS",
+      "low": 3,
+      "high": 14,
+      "effect": "shown in generated reverse-stress surface"
     },
     {
       "driver": "Policy offset",
-      "low": "strong",
-      "high": "weak",
-      "effect": 0.01670332355155518
+      "low": "early/strong",
+      "high": "late/weak",
+      "effect": "changes persistence and tail overlap"
     }
   ],
   "timeToEvent": {
@@ -196,5 +207,182 @@
     "iqrMonths": null,
     "medianMonths": null,
     "status": "not_computed_pending_aligned_first_passage_paths"
-  }
+  },
+  "scenarioPathRates": {
+    "continued_boom": {
+      "paths": 4000,
+      "usSystemic": 0.0,
+      "chinaCrisis": 0.0045,
+      "joint": 0.0,
+      "either": 0.0045,
+      "chinaGivenUs": 0.0,
+      "usGivenChina": 0.0,
+      "medianMaxLiquidity": 0.03023276651576288,
+      "medianDrawdown": 0.022962657694619137,
+      "medianMinCoverage": 1.65
+    },
+    "no_burst_sideways": {
+      "paths": 4000,
+      "usSystemic": 0.0,
+      "chinaCrisis": 0.01375,
+      "joint": 0.0,
+      "either": 0.01375,
+      "chinaGivenUs": 0.0,
+      "usGivenChina": 0.0,
+      "medianMaxLiquidity": 0.12794283799705286,
+      "medianDrawdown": 0.1040059020382808,
+      "medianMinCoverage": 1.65
+    },
+    "mild_adjustment": {
+      "paths": 4000,
+      "usSystemic": 0.0,
+      "chinaCrisis": 0.048,
+      "joint": 0.0,
+      "either": 0.048,
+      "chinaGivenUs": 0.0,
+      "usGivenChina": 0.0,
+      "medianMaxLiquidity": 0.3749133616388026,
+      "medianDrawdown": 0.240570017396445,
+      "medianMinCoverage": 1.4806002358688577
+    },
+    "moderate_burst": {
+      "paths": 4000,
+      "usSystemic": 0.0,
+      "chinaCrisis": 0.2845,
+      "joint": 0.0,
+      "either": 0.2845,
+      "chinaGivenUs": 0.0,
+      "usGivenChina": 0.0,
+      "medianMaxLiquidity": 0.7426381146251576,
+      "medianDrawdown": 0.4194654046732701,
+      "medianMinCoverage": 1.2038931615505826
+    },
+    "deep_drawdown_no_vacuum": {
+      "paths": 4000,
+      "usSystemic": 0.0,
+      "chinaCrisis": 0.276,
+      "joint": 0.0,
+      "either": 0.276,
+      "chinaGivenUs": 0.0,
+      "usGivenChina": 0.0,
+      "medianMaxLiquidity": 0.58,
+      "medianDrawdown": 0.510155176468194,
+      "medianMinCoverage": 1.0522851254870782
+    },
+    "severe_burst": {
+      "paths": 4000,
+      "usSystemic": 0.0,
+      "chinaCrisis": 0.69425,
+      "joint": 0.0,
+      "either": 0.69425,
+      "chinaGivenUs": 0.0,
+      "usGivenChina": 0.0,
+      "medianMaxLiquidity": 1.0,
+      "medianDrawdown": 0.7053798214961557,
+      "medianMinCoverage": 0.8326646947268868
+    },
+    "severe_burst_with_financial_crisis": {
+      "paths": 4000,
+      "usSystemic": 1.0,
+      "chinaCrisis": 0.89175,
+      "joint": 0.89175,
+      "either": 1.0,
+      "chinaGivenUs": 0.89175,
+      "usGivenChina": 1.0,
+      "medianMaxLiquidity": 1.0,
+      "medianDrawdown": 0.825215961595698,
+      "medianMinCoverage": 0.700457114051035
+    }
+  },
+  "reverseStress": {
+    "condition": "AI trust break; probabilities are conditional, not current-trajectory odds",
+    "x": {
+      "label": "US high-yield OAS (%)",
+      "values": [
+        3,
+        4,
+        5,
+        6.5,
+        8,
+        10,
+        12,
+        14
+      ]
+    },
+    "y": {
+      "label": "China property decline from peak (%)",
+      "values": [
+        15,
+        20,
+        25,
+        30,
+        35,
+        40
+      ]
+    },
+    "values": [
+      [
+        0.0,
+        0.0006666666666666666,
+        0.0015,
+        0.004333333333333333,
+        0.0135,
+        0.0375,
+        0.09866666666666667,
+        0.19233333333333333
+      ],
+      [
+        0.0008333333333333334,
+        0.0035,
+        0.0065,
+        0.018166666666666668,
+        0.04566666666666667,
+        0.11233333333333333,
+        0.23416666666666666,
+        0.3908333333333333
+      ],
+      [
+        0.0035,
+        0.008,
+        0.02,
+        0.04633333333333333,
+        0.09966666666666667,
+        0.2375,
+        0.40066666666666667,
+        0.585
+      ],
+      [
+        0.005333333333333333,
+        0.015,
+        0.037333333333333336,
+        0.08566666666666667,
+        0.18716666666666668,
+        0.3845,
+        0.5865,
+        0.7513333333333333
+      ],
+      [
+        0.012333333333333333,
+        0.024666666666666667,
+        0.049833333333333334,
+        0.12533333333333332,
+        0.2658333333333333,
+        0.5028333333333334,
+        0.734,
+        0.8768333333333334
+      ],
+      [
+        0.012833333333333334,
+        0.03216666666666667,
+        0.066,
+        0.16283333333333333,
+        0.31466666666666665,
+        0.5836666666666667,
+        0.8125,
+        0.9326666666666666
+      ]
+    ],
+    "copulaCorrelation": 0.62
+  },
+  "drawsPerScenario": 4000
 }

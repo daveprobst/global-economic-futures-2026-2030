@@ -2007,6 +2007,35 @@
       ],
       "type": "official benchmark",
       "url": "https://www.bea.gov/help/faq/1004"
+    },
+    {
+      "year": 2012,
+      "title": "Some Reflections on the Crisis and the Policy Response",
+      "authors": [
+        "Ben Bernanke",
+        "Federal Reserve Board"
+      ],
+      "type": "official speech",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bernanke20120413a.htm"
+    },
+    {
+      "year": 2007,
+      "title": "The October 1987 Crash Ten Years Later",
+      "authors": [
+        "Federal Reserve Board"
+      ],
+      "type": "official research",
+      "url": "https://www.federalreserve.gov/pubs/feds/2007/200713/"
+    },
+    {
+      "year": 2013,
+      "title": "The Crisis as a Classic Financial Panic",
+      "authors": [
+        "Ben Bernanke",
+        "Federal Reserve Board"
+      ],
+      "type": "official speech",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bernanke20131108a.htm"
     }
   ]
 }

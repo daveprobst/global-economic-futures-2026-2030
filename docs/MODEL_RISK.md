@@ -2,46 +2,39 @@
 
 ## Intended use
 
-This release is a scenario-analysis and stress-testing tool. It is not a trading signal, credit decision, regulatory-capital model, or claim that a crisis will occur.
+This is a scenario-analysis and stress-testing tool. It is not a trading signal, credit decision, regulatory-capital model, or claim that a crisis will occur.
 
 ## Probability architecture
 
-The broad outcome starts from 127 annual equity run-up episodes in 37 countries. Two regularised multinomial logits are the calibrated core. Gradient boosting and random forest act as capped nonlinear challengers at 15% and 10% weights because their leave-country-out performance is weaker and their current estimates are unstable. The resulting broad probability is conditioned on an explicitly monotonic geopolitical × liquidity surface. Those multipliers are structural stress assumptions rather than fitted frequencies.
+The broad outcome model starts from 127 annual equity run-up episodes in 37 countries. Regularised multinomial logits supply 75% of the estimate. Gradient boosting and random forest are capped at 15% and 10% because their leave-country-out performance is weaker. A monotonic geopolitical × dollar-liquidity surface conditions the broad result.
 
-The seven public classes form an exact partition. “Contained repricing” replaces the misleading sideways label: it has a drawdown below 20% and a 24-month return at or below 10%. Mild is 20–35%; moderate is 35–50%; severe is at least 50%, separated by whether broad liquidity holds, a liquidity vacuum develops, or systemic bank/market stress follows.
+The seven public outcomes form an exact partition. “Contained repricing” means a drawdown below 20% and a 24-month return no higher than 10%. Mild is a 20–35% decline; moderate is 35–50%; severe is at least 50%, separated by whether broad liquidity holds, a liquidity vacuum develops, or systemic financial stress follows. Among 93 non-bust historical episodes, 23 met the contained-repricing rule; the Jeffreys posterior mean is 25.0% conditional on no bust.
 
-Among 93 historical non-bust episodes, 23 met the contained-repricing rule. A Jeffreys posterior gives a 25% transition rate conditional on no bust. Eleven severe country rows reduce to two independent global clusters: the 2000 technology unwind and the synchronized 2006–08 global crash. Their classifications, combined with a symmetric Jeffreys-Dirichlet prior, assign 42.9% of severe probability to deep/no-vacuum, 14.3% to vacuum/non-systemic, and 42.9% to systemic. This avoids counting the GFC once for every affected country, but the two-cluster sample leaves exceptional uncertainty.
+## Equity loss to banking crisis
+
+The former fixed severe-tail split has been removed. A separate regularised logit matches World Bank equity returns to JST Macrohistory balance sheets and banking-crisis starts. It uses 476 country-years in 17 countries, including 39 crisis starts. Inputs are the two-year equity drawdown, preceding three-year run-up, loans/GDP, five-year credit growth, public debt/GDP and the short rate.
+
+Leave-one-country-out validation produces a Brier score of 0.057 versus 0.075 for the constant base rate and AUC of 0.833. At current US balance-sheet inputs, the estimated banking-crisis transition is 6.6% after a 20% drawdown, 28.3% after 50%, 48.3% after 65%, and 62.4% after 75%. Integrating that curve over 50–76% severe declines sets the systemic share of the severe tail. Annual closes understate intrayear losses, and synchronized global events remain a small effective sample.
 
 ## Connected stress simulator
 
-For each scenario, 2,400 paths update a shared state within each year. The system links:
+For each scenario, 4,000 paths update a shared state within every year. AI trust changes revenue coverage while chip, power and data-centre commitments remain sticky. Funding costs, collateral losses, margin calls, forced sales and liquidity then update together. Chinese outflows, LGFV refinancing and Treasury-sale pressure feed back into US dollar liquidity. US systemic stress raises China crisis risk, while Chinese stress worsens the US funding state.
 
-- AI trust and revenue realisation;
-- sticky power, chip and data-centre commitments;
-- cash-flow coverage and hyperscaler marginal funding rates;
-- equity losses, collateral calls, forced sales and liquidity;
-- China capital outflow and Treasury-sale pressure;
-- LGFV refinancing costs and China balance-sheet stress;
-- US, China and EU real GDP growth.
+The current weighted output is 13.8% US systemic, 21.1% China crisis and 12.3% joint by 2028. Within the US systemic branch, 89.2% of paths also cross the China crisis threshold. The 6.8–20.3% joint range is parameter sensitivity, not a frequentist confidence interval. US banking-crisis transition risk is statistically calibrated; China and cross-border elasticities remain transparent structural stress parameters.
 
-Margin calls depend on incremental collateral losses and run off after deleveraging. Liquidity can recover through policy offsets. This prevents both automatic one-year mean reversion and permanent mechanical collapse. Coefficients are stress-test elasticities chosen to reproduce public crisis ranges and directional accounting relationships; they are not separately econometrically identified.
+## Historical crash lab
 
-## Validation and benchmarks
-
-The historical logit layer only modestly improves Brier score versus the base rate. Nonlinear challengers do not improve out-of-sample performance, so the site discloses their disagreement rather than presenting them as superior forecasts. Severe GDP paths are bounded against the Federal Reserve's 2026 severely adverse scenario and BEA evidence from the 2007Q4–2009Q2 contraction.
-
-The release checks that probabilities sum to one, the stress surface rises monotonically as geopolitical and liquidity regimes worsen, severe-system coverage falls below one, marginal hyperscaler and LGFV rates exceed 9%, and the systemic equity trough falls below 35 on a 2026=100 index. Browser QA passed at 1440×1000 and 390×844 with no page errors or horizontal overflow.
+The site compares annual aggregate real-GDP growth and chained levels with the US dot-com unwind, the US and euro-area GFC paths, Japan after 1990 and the pandemic. Dot-com demonstrates that a valuation crash can remain non-systemic when losses are dispersed. The GFC demonstrates the nonlinear result when losses are concentrated in leveraged financial nodes. Japan demonstrates persistent level damage without requiring consecutive annual contractions. Annual data hide intrayear troughs, and the pandemic is used only as a magnitude check.
 
 ## Main limitations
 
 1. Annual country episodes are analogues for a concentrated AI basket.
-2. Rare crises are few; subclass probabilities are structurally calibrated.
-3. Only two independent severe clusters identify the tail transition; its central split is fragile and its uncertainty is much wider than the broad 20%+ probability.
-4. The connected model reproduces mechanisms and plausible ranges, not identified causal elasticities. Hyperscaler commitment stress needs a simultaneous revenue and funding shock.
-5. Treasury holdings show potential sale capacity, not intent to sell.
-6. The 47.4% S&P sector proxy is not an AI-bubble estimate.
+2. Global crash clusters are scarce, so tail uncertainty remains wide.
+3. The connected model reproduces accounting mechanisms and historical ranges; most elasticities are not separately causal estimates.
+4. Hyperscaler stress requires a combined revenue, commitment and funding shock; the largest firms remain cash-generative in the baseline.
+5. Treasury holdings indicate potential sale capacity, not intent.
+6. The 47.4% broad technology/platform proxy is not an estimate that the whole sector is an AI bubble.
 7. China debt perimeters overlap and cannot be summed mechanically.
-8. European relative gains require successful policy execution and follow the initial recessionary hit.
-9. The joint US–China tail is an order-of-magnitude stress weight.
+8. European relative gains arrive only after the acute recessionary hit and require policy execution.
 
 As-of date: 15 October 2026, Europe/Zurich.
