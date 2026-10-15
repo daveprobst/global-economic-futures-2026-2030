@@ -158,7 +158,7 @@
   "probabilityCurrentTrajectory": {
     "point": 0.00294,
     "interval80": [
-      0.005,
+      0.0012347999999999999,
       0.00588
     ],
     "status": "model_conditional_structural"

@@ -104,8 +104,8 @@
     },
     {
       "path": "site/data/joint_crisis.json",
-      "bytes": 7065,
-      "sha256": "07a021fec4f41baa9c5f965a82438c973f52cc22efd97891d1d6d26a785ee89d"
+      "bytes": 7081,
+      "sha256": "018214b0831dfa91ed2bcdc6fc507fc34886c3ec638b4487395471a284dad995"
     },
     {
       "path": "site/data/mechanisms.json",
@@ -520,7 +520,7 @@
     {
       "path": "site/manifest.json",
       "bytes": 10901,
-      "sha256": "9aae60c1c45d327461b68f046cbab2042343faa06c8a0fa81370c5eec788ec8b"
+      "sha256": "62c148e7727e05484d9cc36aae9a734b7410a2c483064c957251a1b2a102b3e4"
     },
     {
       "path": "site/manifests/content_manifest.json",
